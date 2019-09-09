@@ -1,0 +1,19 @@
+{
+  "id": "636",
+  "title": "Exclusive Time of Functions",
+  "slug": "exclusive-time-of-functions",
+  "difficulty": "Medium",
+  "likes": 496,
+  "dislikes": 814,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "220",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Stack"
+  ]
+}

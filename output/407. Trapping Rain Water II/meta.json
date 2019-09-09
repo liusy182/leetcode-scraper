@@ -1,0 +1,16 @@
+{
+  "id": "407",
+  "title": "Trapping Rain Water II",
+  "slug": "trapping-rain-water-ii",
+  "difficulty": "Hard",
+  "likes": 795,
+  "dislikes": 23,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Trapping Rain Water\", \"titleSlug\": \"trapping-rain-water\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Heap",
+    "Breadth-first Search"
+  ]
+}

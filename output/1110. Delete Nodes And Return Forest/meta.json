@@ -1,0 +1,16 @@
+{
+  "id": "1110",
+  "title": "Delete Nodes And Return Forest",
+  "slug": "delete-nodes-and-return-forest",
+  "difficulty": "Medium",
+  "likes": 254,
+  "dislikes": 5,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Tree",
+    "Depth-first Search"
+  ]
+}

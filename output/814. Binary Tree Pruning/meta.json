@@ -1,0 +1,19 @@
+{
+  "id": "814",
+  "title": "Binary Tree Pruning",
+  "slug": "binary-tree-pruning",
+  "difficulty": "Medium",
+  "likes": 640,
+  "dislikes": 21,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "445",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

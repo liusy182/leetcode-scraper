@@ -1,0 +1,16 @@
+{
+  "id": "81",
+  "title": "Search in Rotated Sorted Array II",
+  "slug": "search-in-rotated-sorted-array-ii",
+  "difficulty": "Medium",
+  "likes": 783,
+  "dislikes": 349,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Search in Rotated Sorted Array\", \"titleSlug\": \"search-in-rotated-sorted-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Binary Search"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "546",
+  "title": "Remove Boxes",
+  "slug": "remove-boxes",
+  "difficulty": "Hard",
+  "likes": 412,
+  "dislikes": 39,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Strange Printer\", \"titleSlug\": \"strange-printer\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "98",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming",
+    "Depth-first Search"
+  ]
+}

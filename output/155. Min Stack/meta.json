@@ -1,0 +1,18 @@
+{
+  "id": "155",
+  "title": "Min Stack",
+  "slug": "min-stack",
+  "difficulty": "Easy",
+  "likes": 2059,
+  "dislikes": 225,
+  "hints": [
+    "Consider each node in the stack having a minimum value. (Credits to @aakarshmadhavan)"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Sliding Window Maximum\", \"titleSlug\": \"sliding-window-maximum\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Max Stack\", \"titleSlug\": \"max-stack\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Stack",
+    "Design"
+  ]
+}

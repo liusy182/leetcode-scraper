@@ -1,0 +1,20 @@
+{
+  "id": "782",
+  "title": "Transform to Chessboard",
+  "slug": "transform-to-chessboard",
+  "difficulty": "Hard",
+  "likes": 90,
+  "dislikes": 100,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "412",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Math"
+  ]
+}

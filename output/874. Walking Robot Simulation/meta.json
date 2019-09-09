@@ -1,0 +1,19 @@
+{
+  "id": "874",
+  "title": "Walking Robot Simulation",
+  "slug": "walking-robot-simulation",
+  "difficulty": "Easy",
+  "likes": 86,
+  "dislikes": 517,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "513",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Greedy"
+  ]
+}

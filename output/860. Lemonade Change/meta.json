@@ -1,0 +1,19 @@
+{
+  "id": "860",
+  "title": "Lemonade Change",
+  "slug": "lemonade-change",
+  "difficulty": "Easy",
+  "likes": 333,
+  "dislikes": 62,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "499",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Greedy"
+  ]
+}

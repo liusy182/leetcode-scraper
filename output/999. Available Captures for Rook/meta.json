@@ -1,0 +1,15 @@
+{
+  "id": "999",
+  "title": "Available Captures for Rook",
+  "slug": "available-captures-for-rook",
+  "difficulty": "Easy",
+  "likes": 106,
+  "dislikes": 262,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "127",
+  "title": "Word Ladder",
+  "slug": "word-ladder",
+  "difficulty": "Medium",
+  "likes": 1783,
+  "dislikes": 887,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Word Ladder II\", \"titleSlug\": \"word-ladder-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Minimum Genetic Mutation\", \"titleSlug\": \"minimum-genetic-mutation\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "699",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Breadth-first Search"
+  ]
+}

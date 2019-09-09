@@ -1,0 +1,15 @@
+{
+  "id": "241",
+  "title": "Different Ways to Add Parentheses",
+  "slug": "different-ways-to-add-parentheses",
+  "difficulty": "Medium",
+  "likes": 1094,
+  "dislikes": 55,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Unique Binary Search Trees II\", \"titleSlug\": \"unique-binary-search-trees-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Basic Calculator\", \"titleSlug\": \"basic-calculator\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Expression Add Operators\", \"titleSlug\": \"expression-add-operators\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Divide and Conquer"
+  ]
+}

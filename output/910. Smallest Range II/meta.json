@@ -1,0 +1,20 @@
+{
+  "id": "910",
+  "title": "Smallest Range II",
+  "slug": "smallest-range-ii",
+  "difficulty": "Medium",
+  "likes": 206,
+  "dislikes": 124,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "566",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math",
+    "Greedy"
+  ]
+}

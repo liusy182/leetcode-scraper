@@ -1,0 +1,24 @@
+{
+  "id": "566",
+  "title": "Reshape the Matrix",
+  "slug": "reshape-the-matrix",
+  "difficulty": "Easy",
+  "likes": 618,
+  "dislikes": 90,
+  "hints": [
+    "Do you know how 2d matrix is stored in 1d memory? Try to map 2-dimensions into one.",
+    "M[i][j]=M[n*i+j] , where n is the number of cols. \r\nThis is the one way of converting 2-d indices into one 1-d index.  \r\nNow, how will you convert 1-d index into 2-d indices?",
+    "Try to use division and modulus to convert 1-d index into 2-d indices.",
+    "M[i] =>  M[n/i][n%i]   Will it result in right mapping? Take some example and check this formulae."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "120",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

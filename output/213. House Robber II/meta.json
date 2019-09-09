@@ -1,0 +1,17 @@
+{
+  "id": "213",
+  "title": "House Robber II",
+  "slug": "house-robber-ii",
+  "difficulty": "Medium",
+  "likes": 1035,
+  "dislikes": 35,
+  "hints": [
+    "Since House[1] and House[n] are adjacent, they cannot be robbed together. Therefore, the problem becomes to rob either House[1]-House[n-1] or House[2]-House[n], depending on which choice offers more money. Now the problem has degenerated to the <a href =\"https://leetcode.com/problems/house-robber/description/\">House Robber</a>, which is already been solved."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"House Robber\", \"titleSlug\": \"house-robber\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Paint House\", \"titleSlug\": \"paint-house\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Paint Fence\", \"titleSlug\": \"paint-fence\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"House Robber III\", \"titleSlug\": \"house-robber-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Non-negative Integers without Consecutive Ones\", \"titleSlug\": \"non-negative-integers-without-consecutive-ones\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Coin Path\", \"titleSlug\": \"coin-path\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

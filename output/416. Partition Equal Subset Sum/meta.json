@@ -1,0 +1,15 @@
+{
+  "id": "416",
+  "title": "Partition Equal Subset Sum",
+  "slug": "partition-equal-subset-sum",
+  "difficulty": "Medium",
+  "likes": 1443,
+  "dislikes": 40,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Partition to K Equal Sum Subsets\", \"titleSlug\": \"partition-to-k-equal-sum-subsets\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

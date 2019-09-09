@@ -1,0 +1,20 @@
+{
+  "id": "676",
+  "title": "Implement Magic Dictionary",
+  "slug": "implement-magic-dictionary",
+  "difficulty": "Medium",
+  "likes": 400,
+  "dislikes": 103,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Implement Trie (Prefix Tree)\", \"titleSlug\": \"implement-trie-prefix-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Longest Word in Dictionary\", \"titleSlug\": \"longest-word-in-dictionary\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "276",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "Trie"
+  ]
+}

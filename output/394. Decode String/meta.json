@@ -1,0 +1,16 @@
+{
+  "id": "394",
+  "title": "Decode String",
+  "slug": "decode-string",
+  "difficulty": "Medium",
+  "likes": 1823,
+  "dislikes": 96,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Encode String with Shortest Length\", \"titleSlug\": \"encode-string-with-shortest-length\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Number of Atoms\", \"titleSlug\": \"number-of-atoms\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Brace Expansion\", \"titleSlug\": \"brace-expansion\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Stack",
+    "Depth-first Search"
+  ]
+}

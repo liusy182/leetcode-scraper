@@ -1,0 +1,21 @@
+{
+  "id": "559",
+  "title": "Maximum Depth of N-ary Tree",
+  "slug": "maximum-depth-of-n-ary-tree",
+  "difficulty": "Easy",
+  "likes": 438,
+  "dislikes": 23,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Maximum Depth of Binary Tree\", \"titleSlug\": \"maximum-depth-of-binary-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "576",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Depth-first Search",
+    "Breadth-first Search"
+  ]
+}

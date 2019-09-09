@@ -1,0 +1,19 @@
+{
+  "id": "805",
+  "title": "Split Array With Same Average",
+  "slug": "split-array-with-same-average",
+  "difficulty": "Hard",
+  "likes": 248,
+  "dislikes": 51,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "438",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

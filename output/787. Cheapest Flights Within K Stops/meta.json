@@ -1,0 +1,21 @@
+{
+  "id": "787",
+  "title": "Cheapest Flights Within K Stops",
+  "slug": "cheapest-flights-within-k-stops",
+  "difficulty": "Medium",
+  "likes": 910,
+  "dislikes": 34,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Maximum Vacation Days\", \"titleSlug\": \"maximum-vacation-days\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "418",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming",
+    "Heap",
+    "Breadth-first Search"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "1008",
+  "title": "Construct Binary Search Tree from Preorder Traversal",
+  "slug": "construct-binary-search-tree-from-preorder-traversal",
+  "difficulty": "Medium",
+  "likes": 333,
+  "dislikes": 13,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "724",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

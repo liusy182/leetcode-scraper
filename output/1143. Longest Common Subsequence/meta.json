@@ -1,0 +1,18 @@
+{
+  "id": "1143",
+  "title": "Longest Common Subsequence",
+  "slug": "longest-common-subsequence",
+  "difficulty": "Medium",
+  "likes": 167,
+  "dislikes": 8,
+  "hints": [
+    "Try dynamic programming. \r\nDP[i][j] represents the longest common subsequence of text1[0 ... i] & text2[0 ... j].",
+    "DP[i][j] = DP[i - 1][j - 1] + 1 , if text1[i] == text2[j]\r\nDP[i][j] = max(DP[i - 1][j], DP[i][j - 1]) , otherwise"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Longest Palindromic Subsequence\", \"titleSlug\": \"longest-palindromic-subsequence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Delete Operation for Two Strings\", \"titleSlug\": \"delete-operation-for-two-strings\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Shortest Common Supersequence \", \"titleSlug\": \"shortest-common-supersequence\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

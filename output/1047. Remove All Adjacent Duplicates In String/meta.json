@@ -1,0 +1,21 @@
+{
+  "id": "1047",
+  "title": "Remove All Adjacent Duplicates In String",
+  "slug": "remove-all-adjacent-duplicates-in-string",
+  "difficulty": "Easy",
+  "likes": 223,
+  "dislikes": 20,
+  "hints": [
+    "Use a stack to process everything greedily."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "743",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Stack"
+  ]
+}

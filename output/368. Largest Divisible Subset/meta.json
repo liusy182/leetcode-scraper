@@ -1,0 +1,20 @@
+{
+  "id": "368",
+  "title": "Largest Divisible Subset",
+  "slug": "largest-divisible-subset",
+  "difficulty": "Medium",
+  "likes": 612,
+  "dislikes": 32,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "766",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math",
+    "Dynamic Programming"
+  ]
+}

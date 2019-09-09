@@ -1,0 +1,21 @@
+{
+  "id": "696",
+  "title": "Count Binary Substrings",
+  "slug": "count-binary-substrings",
+  "difficulty": "Easy",
+  "likes": 688,
+  "dislikes": 124,
+  "hints": [
+    "How many valid binary substrings exist in \"000111\", and how many in \"11100\"?  What about \"00011100\"?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Encode and Decode Strings\", \"titleSlug\": \"encode-and-decode-strings\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "261",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

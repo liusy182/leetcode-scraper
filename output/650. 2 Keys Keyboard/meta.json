@@ -1,0 +1,21 @@
+{
+  "id": "650",
+  "title": "2 Keys Keyboard",
+  "slug": "2-keys-keyboard",
+  "difficulty": "Medium",
+  "likes": 738,
+  "dislikes": 49,
+  "hints": [
+    "How many characters may be there in the clipboard at the last step if n = 3? n = 7? n = 10? n = 24?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"4 Keys Keyboard\", \"titleSlug\": \"4-keys-keyboard\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Broken Calculator\", \"titleSlug\": \"broken-calculator\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "320",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

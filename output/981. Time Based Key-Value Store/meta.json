@@ -1,0 +1,20 @@
+{
+  "id": "981",
+  "title": "Time Based Key-Value Store",
+  "slug": "time-based-key-value-store",
+  "difficulty": "Medium",
+  "likes": 288,
+  "dislikes": 46,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "677",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "Binary Search"
+  ]
+}

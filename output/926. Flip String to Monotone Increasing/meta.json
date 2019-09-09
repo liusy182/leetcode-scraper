@@ -1,0 +1,19 @@
+{
+  "id": "926",
+  "title": "Flip String to Monotone Increasing",
+  "slug": "flip-string-to-monotone-increasing",
+  "difficulty": "Medium",
+  "likes": 362,
+  "dislikes": 13,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "592",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

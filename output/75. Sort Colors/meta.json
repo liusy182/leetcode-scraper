@@ -1,0 +1,21 @@
+{
+  "id": "75",
+  "title": "Sort Colors",
+  "slug": "sort-colors",
+  "difficulty": "Medium",
+  "likes": 1935,
+  "dislikes": 170,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Sort List\", \"titleSlug\": \"sort-list\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Wiggle Sort\", \"titleSlug\": \"wiggle-sort\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Wiggle Sort II\", \"titleSlug\": \"wiggle-sort-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "716",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Two Pointers",
+    "Sort"
+  ]
+}

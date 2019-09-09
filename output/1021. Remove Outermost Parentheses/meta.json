@@ -1,0 +1,17 @@
+{
+  "id": "1021",
+  "title": "Remove Outermost Parentheses",
+  "slug": "remove-outermost-parentheses",
+  "difficulty": "Easy",
+  "likes": 209,
+  "dislikes": 306,
+  "hints": [
+    "Can you find the primitive decomposition?  The number of ( and ) characters must be equal."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Stack"
+  ]
+}

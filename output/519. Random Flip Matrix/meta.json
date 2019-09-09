@@ -1,0 +1,19 @@
+{
+  "id": "519",
+  "title": "Random Flip Matrix",
+  "slug": "random-flip-matrix",
+  "difficulty": "Medium",
+  "likes": 105,
+  "dislikes": 43,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "518",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Random"
+  ]
+}

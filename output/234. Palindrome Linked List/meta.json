@@ -1,0 +1,16 @@
+{
+  "id": "234",
+  "title": "Palindrome Linked List",
+  "slug": "palindrome-linked-list",
+  "difficulty": "Easy",
+  "likes": 1924,
+  "dislikes": 279,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Palindrome Number\", \"titleSlug\": \"palindrome-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Valid Palindrome\", \"titleSlug\": \"valid-palindrome\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Reverse Linked List\", \"titleSlug\": \"reverse-linked-list\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Linked List",
+    "Two Pointers"
+  ]
+}

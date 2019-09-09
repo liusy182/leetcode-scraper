@@ -1,0 +1,17 @@
+{
+  "id": "513",
+  "title": "Find Bottom Left Tree Value",
+  "slug": "find-bottom-left-tree-value",
+  "difficulty": "Medium",
+  "likes": 623,
+  "dislikes": 107,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Tree",
+    "Depth-first Search",
+    "Breadth-first Search"
+  ]
+}

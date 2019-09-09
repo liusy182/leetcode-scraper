@@ -1,0 +1,20 @@
+{
+  "id": "870",
+  "title": "Advantage Shuffle",
+  "slug": "advantage-shuffle",
+  "difficulty": "Medium",
+  "likes": 292,
+  "dislikes": 21,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "507",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Greedy"
+  ]
+}

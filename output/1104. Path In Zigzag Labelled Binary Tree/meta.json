@@ -1,0 +1,18 @@
+{
+  "id": "1104",
+  "title": "Path In Zigzag Labelled Binary Tree",
+  "slug": "path-in-zigzag-labelled-binary-tree",
+  "difficulty": "Medium",
+  "likes": 106,
+  "dislikes": 83,
+  "hints": [
+    "Based on the label of the current node, find what the label must be for the parent of that node."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Math",
+    "Tree"
+  ]
+}

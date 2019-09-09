@@ -1,0 +1,21 @@
+{
+  "id": "887",
+  "title": "Super Egg Drop",
+  "slug": "super-egg-drop",
+  "difficulty": "Hard",
+  "likes": 438,
+  "dislikes": 46,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "528",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math",
+    "Binary Search",
+    "Dynamic Programming"
+  ]
+}

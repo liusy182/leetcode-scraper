@@ -1,0 +1,17 @@
+{
+  "id": "1073",
+  "title": "Adding Two Negabinary Numbers",
+  "slug": "adding-two-negabinary-numbers",
+  "difficulty": "Medium",
+  "likes": 61,
+  "dislikes": 32,
+  "hints": [
+    "We can try to determine the last digit of the answer, then divide everything by 2 and repeat."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Math"
+  ]
+}

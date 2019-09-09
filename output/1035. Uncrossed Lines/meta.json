@@ -1,0 +1,17 @@
+{
+  "id": "1035",
+  "title": "Uncrossed Lines",
+  "slug": "uncrossed-lines",
+  "difficulty": "Medium",
+  "likes": 232,
+  "dislikes": 7,
+  "hints": [
+    "Think dynamic programming.  Given an oracle dp(i,j) that tells us how many lines A[i:], B[j:]  [the sequence A[i], A[i+1], ... and B[j], B[j+1], ...] are uncrossed, can we write this as a recursion?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Edit Distance\", \"titleSlug\": \"edit-distance\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Array"
+  ]
+}

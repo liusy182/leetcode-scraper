@@ -1,0 +1,19 @@
+{
+  "id": "833",
+  "title": "Find And Replace in String",
+  "slug": "find-and-replace-in-string",
+  "difficulty": "Medium",
+  "likes": 189,
+  "dislikes": 264,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "466",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

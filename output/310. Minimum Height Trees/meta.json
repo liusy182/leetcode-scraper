@@ -1,0 +1,18 @@
+{
+  "id": "310",
+  "title": "Minimum Height Trees",
+  "slug": "minimum-height-trees",
+  "difficulty": "Medium",
+  "likes": 1165,
+  "dislikes": 71,
+  "hints": [
+    "How many MHTs can a graph have at most?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Course Schedule\", \"titleSlug\": \"course-schedule\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Course Schedule II\", \"titleSlug\": \"course-schedule-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Breadth-first Search",
+    "Graph"
+  ]
+}

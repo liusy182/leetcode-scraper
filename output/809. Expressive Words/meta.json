@@ -1,0 +1,19 @@
+{
+  "id": "809",
+  "title": "Expressive Words",
+  "slug": "expressive-words",
+  "difficulty": "Medium",
+  "likes": 129,
+  "dislikes": 396,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "442",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

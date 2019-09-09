@@ -1,0 +1,19 @@
+{
+  "id": "1170",
+  "title": "Compare Strings by Frequency of the Smallest Character",
+  "slug": "compare-strings-by-frequency-of-the-smallest-character",
+  "difficulty": "Easy",
+  "likes": 35,
+  "dislikes": 64,
+  "hints": [
+    "For each string from words calculate the leading count and store it in an array, then sort the integer array.",
+    "For each string from queries calculate the leading count \"p\" and in base of the sorted array calculated on the step 1 do a binary search to count the number of items greater than \"p\"."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "String"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "304",
+  "title": "Range Sum Query 2D - Immutable",
+  "slug": "range-sum-query-2d-immutable",
+  "difficulty": "Medium",
+  "likes": 547,
+  "dislikes": 139,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Range Sum Query - Immutable\", \"titleSlug\": \"range-sum-query-immutable\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Range Sum Query 2D - Mutable\", \"titleSlug\": \"range-sum-query-2d-mutable\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "10",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

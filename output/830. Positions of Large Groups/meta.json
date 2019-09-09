@@ -1,0 +1,19 @@
+{
+  "id": "830",
+  "title": "Positions of Large Groups",
+  "slug": "positions-of-large-groups",
+  "difficulty": "Easy",
+  "likes": 233,
+  "dislikes": 64,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "463",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

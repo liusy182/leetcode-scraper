@@ -1,0 +1,19 @@
+{
+  "id": "869",
+  "title": "Reordered Power of 2",
+  "slug": "reordered-power-of-2",
+  "difficulty": "Medium",
+  "likes": 145,
+  "dislikes": 67,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "508",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

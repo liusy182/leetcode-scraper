@@ -1,0 +1,17 @@
+{
+  "id": "1081",
+  "title": "Smallest Subsequence of Distinct Characters",
+  "slug": "smallest-subsequence-of-distinct-characters",
+  "difficulty": "Medium",
+  "likes": 163,
+  "dislikes": 30,
+  "hints": [
+    "Greedily try to add one missing character. How to check if adding some character will not cause problems ? Use bit-masks to check whether you will be able to complete the sub-sequence if you add the character at some index i."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "String"
+  ]
+}

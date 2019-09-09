@@ -1,0 +1,20 @@
+{
+  "id": "1178",
+  "title": "Number of Valid Words for Each Puzzle",
+  "slug": "number-of-valid-words-for-each-puzzle",
+  "difficulty": "Hard",
+  "likes": 91,
+  "dislikes": 8,
+  "hints": [
+    "Exploit the fact that the length of the puzzle is only 7.",
+    "Use bit-masks to represent the word and puzzle strings.",
+    "For each puzzle, count the number of words whose bit-mask is a sub-mask of the puzzle's bit-mask."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table",
+    "Bit Manipulation"
+  ]
+}

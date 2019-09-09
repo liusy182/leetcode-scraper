@@ -1,0 +1,19 @@
+{
+  "id": "808",
+  "title": "Soup Servings",
+  "slug": "soup-servings",
+  "difficulty": "Medium",
+  "likes": 104,
+  "dislikes": 378,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "441",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

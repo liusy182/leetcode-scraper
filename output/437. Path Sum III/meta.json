@@ -1,0 +1,15 @@
+{
+  "id": "437",
+  "title": "Path Sum III",
+  "slug": "path-sum-iii",
+  "difficulty": "Easy",
+  "likes": 2145,
+  "dislikes": 123,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Path Sum\", \"titleSlug\": \"path-sum\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Path Sum II\", \"titleSlug\": \"path-sum-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Path Sum IV\", \"titleSlug\": \"path-sum-iv\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Longest Univalue Path\", \"titleSlug\": \"longest-univalue-path\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Tree"
+  ]
+}

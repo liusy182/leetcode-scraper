@@ -1,0 +1,25 @@
+{
+  "id": "230",
+  "title": "Kth Smallest Element in a BST",
+  "slug": "kth-smallest-element-in-a-bst",
+  "difficulty": "Medium",
+  "likes": 1356,
+  "dislikes": 43,
+  "hints": [
+    "Try to utilize the property of a BST.",
+    "Try in-order traversal. (Credits to @chan13)",
+    "What if you could modify the BST node's structure?",
+    "The optimal runtime complexity is O(height of BST)."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Binary Tree Inorder Traversal\", \"titleSlug\": \"binary-tree-inorder-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Second Minimum Node In a Binary Tree\", \"titleSlug\": \"second-minimum-node-in-a-binary-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "723",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Binary Search",
+    "Tree"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "720",
+  "title": "Longest Word in Dictionary",
+  "slug": "longest-word-in-dictionary",
+  "difficulty": "Easy",
+  "likes": 396,
+  "dislikes": 497,
+  "hints": [
+    "For every word in the input list, we can check whether all prefixes of that word are in the input list by using a Set."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Longest Word in Dictionary through Deleting\", \"titleSlug\": \"longest-word-in-dictionary-through-deleting\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Implement Magic Dictionary\", \"titleSlug\": \"implement-magic-dictionary\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "284",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "Trie"
+  ]
+}

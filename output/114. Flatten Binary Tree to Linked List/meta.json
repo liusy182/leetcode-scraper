@@ -1,0 +1,18 @@
+{
+  "id": "114",
+  "title": "Flatten Binary Tree to Linked List",
+  "slug": "flatten-binary-tree-to-linked-list",
+  "difficulty": "Medium",
+  "likes": 1736,
+  "dislikes": 228,
+  "hints": [
+    "If you notice carefully in the flattened tree, each node's right child points to the next node of a pre-order traversal."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Flatten a Multilevel Doubly Linked List\", \"titleSlug\": \"flatten-a-multilevel-doubly-linked-list\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Tree",
+    "Depth-first Search"
+  ]
+}

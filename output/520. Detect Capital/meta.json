@@ -1,0 +1,15 @@
+{
+  "id": "520",
+  "title": "Detect Capital",
+  "slug": "detect-capital",
+  "difficulty": "Easy",
+  "likes": 335,
+  "dislikes": 215,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "String"
+  ]
+}

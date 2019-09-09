@@ -1,0 +1,20 @@
+{
+  "id": "376",
+  "title": "Wiggle Subsequence",
+  "slug": "wiggle-subsequence",
+  "difficulty": "Medium",
+  "likes": 611,
+  "dislikes": 51,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "60",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming",
+    "Greedy"
+  ]
+}

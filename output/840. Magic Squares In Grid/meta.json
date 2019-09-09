@@ -1,0 +1,19 @@
+{
+  "id": "840",
+  "title": "Magic Squares In Grid",
+  "slug": "magic-squares-in-grid",
+  "difficulty": "Easy",
+  "likes": 86,
+  "dislikes": 751,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "474",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

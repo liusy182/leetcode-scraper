@@ -1,0 +1,19 @@
+{
+  "id": "83",
+  "title": "Remove Duplicates from Sorted List",
+  "slug": "remove-duplicates-from-sorted-list",
+  "difficulty": "Easy",
+  "likes": 896,
+  "dislikes": 86,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Remove Duplicates from Sorted List II\", \"titleSlug\": \"remove-duplicates-from-sorted-list-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "43",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Linked List"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "331",
+  "title": "Verify Preorder Serialization of a Binary Tree",
+  "slug": "verify-preorder-serialization-of-a-binary-tree",
+  "difficulty": "Medium",
+  "likes": 556,
+  "dislikes": 32,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "756",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Stack"
+  ]
+}

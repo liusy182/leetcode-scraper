@@ -1,0 +1,21 @@
+{
+  "id": "735",
+  "title": "Asteroid Collision",
+  "slug": "asteroid-collision",
+  "difficulty": "Medium",
+  "likes": 518,
+  "dislikes": 66,
+  "hints": [
+    "Say a row of asteroids is stable.  What happens when a new asteroid is added on the right?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Can Place Flowers\", \"titleSlug\": \"can-place-flowers\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "309",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Stack"
+  ]
+}

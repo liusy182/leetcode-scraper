@@ -1,0 +1,20 @@
+{
+  "id": "93",
+  "title": "Restore IP Addresses",
+  "slug": "restore-ip-addresses",
+  "difficulty": "Medium",
+  "likes": 772,
+  "dislikes": 321,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"IP to CIDR\", \"titleSlug\": \"ip-to-cidr\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "673",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String",
+    "Backtracking"
+  ]
+}

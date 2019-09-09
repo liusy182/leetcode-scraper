@@ -1,0 +1,19 @@
+{
+  "id": "662",
+  "title": "Maximum Width of Binary Tree",
+  "slug": "maximum-width-of-binary-tree",
+  "difficulty": "Medium",
+  "likes": 735,
+  "dislikes": 144,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "330",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

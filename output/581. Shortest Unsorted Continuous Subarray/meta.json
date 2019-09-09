@@ -1,0 +1,19 @@
+{
+  "id": "581",
+  "title": "Shortest Unsorted Continuous Subarray",
+  "slug": "shortest-unsorted-continuous-subarray",
+  "difficulty": "Easy",
+  "likes": 1653,
+  "dislikes": 74,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "136",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

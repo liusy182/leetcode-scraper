@@ -1,0 +1,20 @@
+{
+  "id": "689",
+  "title": "Maximum Sum of 3 Non-Overlapping Subarrays",
+  "slug": "maximum-sum-of-3-non-overlapping-subarrays",
+  "difficulty": "Hard",
+  "likes": 634,
+  "dislikes": 33,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Best Time to Buy and Sell Stock III\", \"titleSlug\": \"best-time-to-buy-and-sell-stock-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "255",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Dynamic Programming"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "189",
+  "title": "Rotate Array",
+  "slug": "rotate-array",
+  "difficulty": "Easy",
+  "likes": 1583,
+  "dislikes": 649,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Rotate List\", \"titleSlug\": \"rotate-list\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Reverse Words in a String II\", \"titleSlug\": \"reverse-words-in-a-string-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "59",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

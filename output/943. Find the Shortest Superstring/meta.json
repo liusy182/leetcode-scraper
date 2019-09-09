@@ -1,0 +1,19 @@
+{
+  "id": "943",
+  "title": "Find the Shortest Superstring",
+  "slug": "find-the-shortest-superstring",
+  "difficulty": "Hard",
+  "likes": 194,
+  "dislikes": 55,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "619",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

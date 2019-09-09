@@ -1,0 +1,15 @@
+{
+  "id": "223",
+  "title": "Rectangle Area",
+  "slug": "rectangle-area",
+  "difficulty": "Medium",
+  "likes": 272,
+  "dislikes": 546,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Rectangle Overlap\", \"titleSlug\": \"rectangle-overlap\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Math"
+  ]
+}

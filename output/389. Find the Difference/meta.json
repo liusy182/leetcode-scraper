@@ -1,0 +1,16 @@
+{
+  "id": "389",
+  "title": "Find the Difference",
+  "slug": "find-the-difference",
+  "difficulty": "Easy",
+  "likes": 554,
+  "dislikes": 242,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Single Number\", \"titleSlug\": \"single-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table",
+    "Bit Manipulation"
+  ]
+}

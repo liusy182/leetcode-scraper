@@ -1,0 +1,22 @@
+{
+  "id": "732",
+  "title": "My Calendar III",
+  "slug": "my-calendar-iii",
+  "difficulty": "Hard",
+  "likes": 255,
+  "dislikes": 89,
+  "hints": [
+    "Treat each interval [start, end) as two events \"start\" and \"end\", and process them in sorted order."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"My Calendar I\", \"titleSlug\": \"my-calendar-i\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"My Calendar II\", \"titleSlug\": \"my-calendar-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "304",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Segment Tree",
+    "Ordered Map"
+  ]
+}

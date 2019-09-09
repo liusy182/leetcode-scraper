@@ -1,0 +1,20 @@
+{
+  "id": "542",
+  "title": "01 Matrix",
+  "slug": "01-matrix",
+  "difficulty": "Medium",
+  "likes": 805,
+  "dislikes": 82,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "113",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Depth-first Search",
+    "Breadth-first Search"
+  ]
+}

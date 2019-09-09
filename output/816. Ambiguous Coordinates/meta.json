@@ -1,0 +1,19 @@
+{
+  "id": "816",
+  "title": "Ambiguous Coordinates",
+  "slug": "ambiguous-coordinates",
+  "difficulty": "Medium",
+  "likes": 85,
+  "dislikes": 176,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "451",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

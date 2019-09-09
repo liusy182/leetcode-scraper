@@ -1,0 +1,19 @@
+{
+  "id": "939",
+  "title": "Minimum Area Rectangle",
+  "slug": "minimum-area-rectangle",
+  "difficulty": "Medium",
+  "likes": 329,
+  "dislikes": 63,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "612",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table"
+  ]
+}

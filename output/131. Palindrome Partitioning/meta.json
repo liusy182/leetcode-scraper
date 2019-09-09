@@ -1,0 +1,15 @@
+{
+  "id": "131",
+  "title": "Palindrome Partitioning",
+  "slug": "palindrome-partitioning",
+  "difficulty": "Medium",
+  "likes": 1105,
+  "dislikes": 45,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Palindrome Partitioning II\", \"titleSlug\": \"palindrome-partitioning-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Backtracking"
+  ]
+}

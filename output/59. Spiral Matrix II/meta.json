@@ -1,0 +1,15 @@
+{
+  "id": "59",
+  "title": "Spiral Matrix II",
+  "slug": "spiral-matrix-ii",
+  "difficulty": "Medium",
+  "likes": 541,
+  "dislikes": 86,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Spiral Matrix\", \"titleSlug\": \"spiral-matrix\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Array"
+  ]
+}

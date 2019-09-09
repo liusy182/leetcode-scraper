@@ -1,0 +1,20 @@
+{
+  "id": "240",
+  "title": "Search a 2D Matrix II",
+  "slug": "search-a-2d-matrix-ii",
+  "difficulty": "Medium",
+  "likes": 1766,
+  "dislikes": 54,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Search a 2D Matrix\", \"titleSlug\": \"search-a-2d-matrix\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "341",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Binary Search",
+    "Divide and Conquer"
+  ]
+}

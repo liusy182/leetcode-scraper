@@ -1,0 +1,19 @@
+{
+  "id": "789",
+  "title": "Escape The Ghosts",
+  "slug": "escape-the-ghosts",
+  "difficulty": "Medium",
+  "likes": 138,
+  "dislikes": 275,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "422",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "174",
+  "title": "Dungeon Game",
+  "slug": "dungeon-game",
+  "difficulty": "Hard",
+  "likes": 801,
+  "dislikes": 19,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Unique Paths\", \"titleSlug\": \"unique-paths\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Path Sum\", \"titleSlug\": \"minimum-path-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Cherry Pickup\", \"titleSlug\": \"cherry-pickup\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Binary Search",
+    "Dynamic Programming"
+  ]
+}

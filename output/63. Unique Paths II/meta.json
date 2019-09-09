@@ -1,0 +1,24 @@
+{
+  "id": "63",
+  "title": "Unique Paths II",
+  "slug": "unique-paths-ii",
+  "difficulty": "Medium",
+  "likes": 988,
+  "dislikes": 165,
+  "hints": [
+    "The robot can only move either down or right. Hence any cell in the first row can only be reached from the cell left to it. However, if any cell has an obstacle, you don't let that cell contribute to any path. So, for the first row, the number of ways will simply be \r\n\r\n<pre>\r\nif obstacleGrid[i][j] is not an obstacle\r\n     obstacleGrid[i,j] = obstacleGrid[i,j - 1] \r\nelse\r\n     obstacleGrid[i,j] = 0\r\n</pre>\r\n\r\nYou can do a similar processing for finding out the number of ways of reaching the cells in the first column.",
+    "For any other cell, we can find out the number of ways of reaching it, by making use of the number of ways of reaching the cell directly above it and the cell to the left of it in the grid. This is because these are the only two directions from which the robot can come to the current cell.",
+    "Since we are making use of pre-computed values along the iteration, this becomes a dynamic programming problem.\r\n\r\n<pre>\r\nif obstacleGrid[i][j] is not an obstacle\r\n     obstacleGrid[i,j] = obstacleGrid[i,j - 1]  + obstacleGrid[i - 1][j]\r\nelse\r\n     obstacleGrid[i,j] = 0\r\n</pre>\r\n\r\n</pre>"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Unique Paths\", \"titleSlug\": \"unique-paths\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Unique Paths III\", \"titleSlug\": \"unique-paths-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "597",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Dynamic Programming"
+  ]
+}

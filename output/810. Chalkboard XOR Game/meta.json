@@ -1,0 +1,19 @@
+{
+  "id": "810",
+  "title": "Chalkboard XOR Game",
+  "slug": "chalkboard-xor-game",
+  "difficulty": "Hard",
+  "likes": 44,
+  "dislikes": 156,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "443",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

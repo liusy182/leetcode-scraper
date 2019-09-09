@@ -1,0 +1,15 @@
+{
+  "id": "442",
+  "title": "Find All Duplicates in an Array",
+  "slug": "find-all-duplicates-in-an-array",
+  "difficulty": "Medium",
+  "likes": 1267,
+  "dislikes": 120,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Find All Numbers Disappeared in an Array\", \"titleSlug\": \"find-all-numbers-disappeared-in-an-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Array"
+  ]
+}

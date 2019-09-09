@@ -1,0 +1,15 @@
+{
+  "id": "982",
+  "title": "Triples with Bitwise AND Equal To Zero",
+  "slug": "triples-with-bitwise-and-equal-to-zero",
+  "difficulty": "Hard",
+  "likes": 64,
+  "dislikes": 91,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "997",
+  "title": "Find the Town Judge",
+  "slug": "find-the-town-judge",
+  "difficulty": "Easy",
+  "likes": 228,
+  "dislikes": 36,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Find the Celebrity\", \"titleSlug\": \"find-the-celebrity\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Graph"
+  ]
+}

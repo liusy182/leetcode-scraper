@@ -1,0 +1,20 @@
+{
+  "id": "838",
+  "title": "Push Dominoes",
+  "slug": "push-dominoes",
+  "difficulty": "Medium",
+  "likes": 340,
+  "dislikes": 39,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "470",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Two Pointers",
+    "Dynamic Programming"
+  ]
+}

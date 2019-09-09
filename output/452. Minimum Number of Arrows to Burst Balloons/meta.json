@@ -1,0 +1,19 @@
+{
+  "id": "452",
+  "title": "Minimum Number of Arrows to Burst Balloons",
+  "slug": "minimum-number-of-arrows-to-burst-balloons",
+  "difficulty": "Medium",
+  "likes": 563,
+  "dislikes": 27,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Meeting Rooms II\", \"titleSlug\": \"meeting-rooms-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Non-overlapping Intervals\", \"titleSlug\": \"non-overlapping-intervals\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "725",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Greedy"
+  ]
+}

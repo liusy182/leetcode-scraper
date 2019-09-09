@@ -1,0 +1,19 @@
+{
+  "id": "221",
+  "title": "Maximal Square",
+  "slug": "maximal-square",
+  "difficulty": "Medium",
+  "likes": 1541,
+  "dislikes": 36,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Maximal Rectangle\", \"titleSlug\": \"maximal-rectangle\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Largest Plus Sign\", \"titleSlug\": \"largest-plus-sign\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "54",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

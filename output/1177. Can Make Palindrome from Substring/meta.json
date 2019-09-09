@@ -1,0 +1,22 @@
+{
+  "id": "1177",
+  "title": "Can Make Palindrome from Substring",
+  "slug": "can-make-palindrome-from-substring",
+  "difficulty": "Medium",
+  "likes": 73,
+  "dislikes": 68,
+  "hints": [
+    "Since we can rearrange the substring, all we care about is the frequency of each character in that substring.",
+    "How to find the character frequencies efficiently ?",
+    "As a preprocess, calculate the accumulate frequency of all characters for all prefixes of the string.",
+    "How to check if a substring can be changed to a palindrome given its characters frequency ?",
+    "Count the number of odd frequencies, there can be at most one odd frequency in a palindrome."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "String"
+  ]
+}

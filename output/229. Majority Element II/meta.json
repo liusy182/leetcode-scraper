@@ -1,0 +1,17 @@
+{
+  "id": "229",
+  "title": "Majority Element II",
+  "slug": "majority-element-ii",
+  "difficulty": "Medium",
+  "likes": 1005,
+  "dislikes": 119,
+  "hints": [
+    "How many majority elements could it possibly have?\r\n<br/>\r\nDo you have a better hint? <a href=\"mailto:admin@leetcode.com?subject=Hints for Majority Element II\" target=\"_blank\">Suggest it</a>!"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Majority Element\", \"titleSlug\": \"majority-element\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Check If a Number Is Majority Element in a Sorted Array\", \"titleSlug\": \"check-if-a-number-is-majority-element-in-a-sorted-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Array"
+  ]
+}

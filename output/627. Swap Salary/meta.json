@@ -1,0 +1,17 @@
+{
+  "id": "627",
+  "title": "Swap Salary",
+  "slug": "swap-salary",
+  "difficulty": "Easy",
+  "likes": 335,
+  "dislikes": 240,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "177",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

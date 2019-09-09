@@ -1,0 +1,19 @@
+{
+  "id": "836",
+  "title": "Rectangle Overlap",
+  "slug": "rectangle-overlap",
+  "difficulty": "Easy",
+  "likes": 400,
+  "dislikes": 78,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Rectangle Area\", \"titleSlug\": \"rectangle-area\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "468",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

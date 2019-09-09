@@ -1,0 +1,17 @@
+{
+  "id": "184",
+  "title": "Department Highest Salary",
+  "slug": "department-highest-salary",
+  "difficulty": "Medium",
+  "likes": 322,
+  "dislikes": 82,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Highest Grade For Each Student\", \"titleSlug\": \"highest-grade-for-each-student\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "213",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

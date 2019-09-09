@@ -1,0 +1,21 @@
+{
+  "id": "621",
+  "title": "Task Scheduler",
+  "slug": "task-scheduler",
+  "difficulty": "Medium",
+  "likes": 1901,
+  "dislikes": 340,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Rearrange String k Distance Apart\", \"titleSlug\": \"rearrange-string-k-distance-apart\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Reorganize String\", \"titleSlug\": \"reorganize-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "172",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Greedy",
+    "Queue"
+  ]
+}

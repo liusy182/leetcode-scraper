@@ -1,0 +1,16 @@
+{
+  "id": "1111",
+  "title": "Maximum Nesting Depth of Two Valid Parentheses Strings",
+  "slug": "maximum-nesting-depth-of-two-valid-parentheses-strings",
+  "difficulty": "Medium",
+  "likes": 48,
+  "dislikes": 227,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Binary Search",
+    "Greedy"
+  ]
+}

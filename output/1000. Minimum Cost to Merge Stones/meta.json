@@ -1,0 +1,15 @@
+{
+  "id": "1000",
+  "title": "Minimum Cost to Merge Stones",
+  "slug": "minimum-cost-to-merge-stones",
+  "difficulty": "Hard",
+  "likes": 254,
+  "dislikes": 21,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Burst Balloons\", \"titleSlug\": \"burst-balloons\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Minimum Cost to Connect Sticks\", \"titleSlug\": \"minimum-cost-to-connect-sticks\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

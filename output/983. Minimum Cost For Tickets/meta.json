@@ -1,0 +1,19 @@
+{
+  "id": "983",
+  "title": "Minimum Cost For Tickets",
+  "slug": "minimum-cost-for-tickets",
+  "difficulty": "Medium",
+  "likes": 636,
+  "dislikes": 13,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Coin Change\", \"titleSlug\": \"coin-change\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "675",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

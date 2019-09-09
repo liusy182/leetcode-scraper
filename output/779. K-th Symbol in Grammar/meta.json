@@ -1,0 +1,21 @@
+{
+  "id": "779",
+  "title": "K-th Symbol in Grammar",
+  "slug": "k-th-symbol-in-grammar",
+  "difficulty": "Medium",
+  "likes": 254,
+  "dislikes": 91,
+  "hints": [
+    "Try to represent the current (N, K) in terms of some (N-1, prevK).  What is prevK ?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "409",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Recursion"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "876",
+  "title": "Middle of the Linked List",
+  "slug": "middle-of-the-linked-list",
+  "difficulty": "Easy",
+  "likes": 610,
+  "dislikes": 42,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "520",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Linked List"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "958",
+  "title": "Check Completeness of a Binary Tree",
+  "slug": "check-completeness-of-a-binary-tree",
+  "difficulty": "Medium",
+  "likes": 331,
+  "dislikes": 7,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "642",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

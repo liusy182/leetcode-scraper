@@ -1,0 +1,20 @@
+{
+  "id": "312",
+  "title": "Burst Balloons",
+  "slug": "burst-balloons",
+  "difficulty": "Hard",
+  "likes": 1537,
+  "dislikes": 47,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Minimum Cost to Merge Stones\", \"titleSlug\": \"minimum-cost-to-merge-stones\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "740",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Divide and Conquer",
+    "Dynamic Programming"
+  ]
+}

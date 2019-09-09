@@ -1,0 +1,17 @@
+{
+  "id": "1032",
+  "title": "Stream of Characters",
+  "slug": "stream-of-characters",
+  "difficulty": "Hard",
+  "likes": 123,
+  "dislikes": 32,
+  "hints": [
+    "Put the words into a trie, and manage a set of pointers within that trie."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Trie"
+  ]
+}

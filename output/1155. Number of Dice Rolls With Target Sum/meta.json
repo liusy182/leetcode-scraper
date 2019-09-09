@@ -1,0 +1,17 @@
+{
+  "id": "1155",
+  "title": "Number of Dice Rolls With Target Sum",
+  "slug": "number-of-dice-rolls-with-target-sum",
+  "difficulty": "Medium",
+  "likes": 138,
+  "dislikes": 12,
+  "hints": [
+    "Use dynamic programming.  The states are how many dice are remaining, and what sum total you have rolled so far."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

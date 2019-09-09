@@ -1,0 +1,19 @@
+{
+  "id": "884",
+  "title": "Uncommon Words from Two Sentences",
+  "slug": "uncommon-words-from-two-sentences",
+  "difficulty": "Easy",
+  "likes": 257,
+  "dislikes": 66,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "530",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table"
+  ]
+}

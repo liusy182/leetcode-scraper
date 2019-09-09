@@ -1,0 +1,16 @@
+{
+  "id": "354",
+  "title": "Russian Doll Envelopes",
+  "slug": "russian-doll-envelopes",
+  "difficulty": "Hard",
+  "likes": 658,
+  "dislikes": 29,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Longest Increasing Subsequence\", \"titleSlug\": \"longest-increasing-subsequence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Binary Search",
+    "Dynamic Programming"
+  ]
+}

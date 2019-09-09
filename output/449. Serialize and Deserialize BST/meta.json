@@ -1,0 +1,19 @@
+{
+  "id": "449",
+  "title": "Serialize and Deserialize BST",
+  "slug": "serialize-and-deserialize-bst",
+  "difficulty": "Medium",
+  "likes": 767,
+  "dislikes": 54,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Serialize and Deserialize Binary Tree\", \"titleSlug\": \"serialize-and-deserialize-binary-tree\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Find Duplicate Subtrees\", \"titleSlug\": \"find-duplicate-subtrees\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Serialize and Deserialize N-ary Tree\", \"titleSlug\": \"serialize-and-deserialize-n-ary-tree\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "733",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

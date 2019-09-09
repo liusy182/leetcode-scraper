@@ -1,0 +1,19 @@
+{
+  "id": "543",
+  "title": "Diameter of Binary Tree",
+  "slug": "diameter-of-binary-tree",
+  "difficulty": "Easy",
+  "likes": 1653,
+  "dislikes": 103,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "316",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

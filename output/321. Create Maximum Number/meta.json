@@ -1,0 +1,16 @@
+{
+  "id": "321",
+  "title": "Create Maximum Number",
+  "slug": "create-maximum-number",
+  "difficulty": "Hard",
+  "likes": 449,
+  "dislikes": 165,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Remove K Digits\", \"titleSlug\": \"remove-k-digits\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Maximum Swap\", \"titleSlug\": \"maximum-swap\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming",
+    "Greedy"
+  ]
+}

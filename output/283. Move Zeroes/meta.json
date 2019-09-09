@@ -1,0 +1,20 @@
+{
+  "id": "283",
+  "title": "Move Zeroes",
+  "slug": "move-zeroes",
+  "difficulty": "Easy",
+  "likes": 2333,
+  "dislikes": 83,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Remove Element\", \"titleSlug\": \"remove-element\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "52",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Two Pointers"
+  ]
+}

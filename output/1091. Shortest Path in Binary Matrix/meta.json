@@ -1,0 +1,17 @@
+{
+  "id": "1091",
+  "title": "Shortest Path in Binary Matrix",
+  "slug": "shortest-path-in-binary-matrix",
+  "difficulty": "Medium",
+  "likes": 111,
+  "dislikes": 19,
+  "hints": [
+    "Do a breadth first search to find the shortest path."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Breadth-first Search"
+  ]
+}

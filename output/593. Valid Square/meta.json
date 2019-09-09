@@ -1,0 +1,19 @@
+{
+  "id": "593",
+  "title": "Valid Square",
+  "slug": "valid-square",
+  "difficulty": "Medium",
+  "likes": 147,
+  "dislikes": 296,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "139",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "790",
+  "title": "Domino and Tromino Tiling",
+  "slug": "domino-and-tromino-tiling",
+  "difficulty": "Medium",
+  "likes": 273,
+  "dislikes": 139,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "420",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

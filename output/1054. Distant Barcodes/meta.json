@@ -1,0 +1,18 @@
+{
+  "id": "1054",
+  "title": "Distant Barcodes",
+  "slug": "distant-barcodes",
+  "difficulty": "Medium",
+  "likes": 153,
+  "dislikes": 10,
+  "hints": [
+    "We want to always choose the most common or second most common element to write next.  What data structure allows us to query this effectively?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Heap",
+    "Sort"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "90",
+  "title": "Subsets II",
+  "slug": "subsets-ii",
+  "difficulty": "Medium",
+  "likes": 1055,
+  "dislikes": 51,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Subsets\", \"titleSlug\": \"subsets\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Backtracking"
+  ]
+}

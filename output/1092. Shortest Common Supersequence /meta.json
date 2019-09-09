@@ -1,0 +1,17 @@
+{
+  "id": "1092",
+  "title": "Shortest Common Supersequence ",
+  "slug": "shortest-common-supersequence",
+  "difficulty": "Hard",
+  "likes": 173,
+  "dislikes": 6,
+  "hints": [
+    "We can find the length of the longest common subsequence between str1[i:] and str2[j:] (for all (i, j)) by using dynamic programming.  We can use this information to recover the longest common supersequence."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Longest Common Subsequence\", \"titleSlug\": \"longest-common-subsequence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

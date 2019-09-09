@@ -1,0 +1,20 @@
+{
+  "id": "402",
+  "title": "Remove K Digits",
+  "slug": "remove-k-digits",
+  "difficulty": "Medium",
+  "likes": 1092,
+  "dislikes": 66,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Create Maximum Number\", \"titleSlug\": \"create-maximum-number\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Monotone Increasing Digits\", \"titleSlug\": \"monotone-increasing-digits\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "768",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Stack",
+    "Greedy"
+  ]
+}

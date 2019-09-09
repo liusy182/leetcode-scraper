@@ -1,0 +1,19 @@
+{
+  "id": "948",
+  "title": "Bag of Tokens",
+  "slug": "bag-of-tokens",
+  "difficulty": "Medium",
+  "likes": 110,
+  "dislikes": 96,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "626",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Greedy"
+  ]
+}

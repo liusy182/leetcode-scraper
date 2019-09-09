@@ -1,0 +1,17 @@
+{
+  "id": "1039",
+  "title": "Minimum Score Triangulation of Polygon",
+  "slug": "minimum-score-triangulation-of-polygon",
+  "difficulty": "Medium",
+  "likes": 199,
+  "dislikes": 24,
+  "hints": [
+    "Without loss of generality, there is a triangle that uses adjacent vertices A[0] and A[N-1] (where N = A.length).  Depending on your choice K of it, this breaks down the triangulation into two subproblems A[1:K] and A[K+1:N-1]."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "914",
+  "title": "X of a Kind in a Deck of Cards",
+  "slug": "x-of-a-kind-in-a-deck-of-cards",
+  "difficulty": "Easy",
+  "likes": 269,
+  "dislikes": 66,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "573",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Math"
+  ]
+}

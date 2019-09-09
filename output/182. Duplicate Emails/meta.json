@@ -1,0 +1,17 @@
+{
+  "id": "182",
+  "title": "Duplicate Emails",
+  "slug": "duplicate-emails",
+  "difficulty": "Easy",
+  "likes": 313,
+  "dislikes": 21,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "214",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

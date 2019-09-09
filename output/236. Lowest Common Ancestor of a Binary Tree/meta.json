@@ -1,0 +1,19 @@
+{
+  "id": "236",
+  "title": "Lowest Common Ancestor of a Binary Tree",
+  "slug": "lowest-common-ancestor-of-a-binary-tree",
+  "difficulty": "Medium",
+  "likes": 2310,
+  "dislikes": 144,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Lowest Common Ancestor of a Binary Search Tree\", \"titleSlug\": \"lowest-common-ancestor-of-a-binary-search-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "615",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

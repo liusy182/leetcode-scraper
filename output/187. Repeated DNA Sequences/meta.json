@@ -1,0 +1,16 @@
+{
+  "id": "187",
+  "title": "Repeated DNA Sequences",
+  "slug": "repeated-dna-sequences",
+  "difficulty": "Medium",
+  "likes": 494,
+  "dislikes": 203,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table",
+    "Bit Manipulation"
+  ]
+}

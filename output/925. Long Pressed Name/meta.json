@@ -1,0 +1,20 @@
+{
+  "id": "925",
+  "title": "Long Pressed Name",
+  "slug": "long-pressed-name",
+  "difficulty": "Easy",
+  "likes": 277,
+  "dislikes": 35,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "591",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Two Pointers",
+    "String"
+  ]
+}

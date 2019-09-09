@@ -1,0 +1,19 @@
+{
+  "id": "160",
+  "title": "Intersection of Two Linked Lists",
+  "slug": "intersection-of-two-linked-lists",
+  "difficulty": "Easy",
+  "likes": 2389,
+  "dislikes": 233,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Minimum Index Sum of Two Lists\", \"titleSlug\": \"minimum-index-sum-of-two-lists\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "18",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Linked List"
+  ]
+}

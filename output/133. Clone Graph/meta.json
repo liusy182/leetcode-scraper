@@ -1,0 +1,17 @@
+{
+  "id": "133",
+  "title": "Clone Graph",
+  "slug": "clone-graph",
+  "difficulty": "Medium",
+  "likes": 942,
+  "dislikes": 982,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Copy List with Random Pointer\", \"titleSlug\": \"copy-list-with-random-pointer\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Depth-first Search",
+    "Breadth-first Search",
+    "Graph"
+  ]
+}

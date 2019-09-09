@@ -1,0 +1,20 @@
+{
+  "id": "144",
+  "title": "Binary Tree Preorder Traversal",
+  "slug": "binary-tree-preorder-traversal",
+  "difficulty": "Medium",
+  "likes": 907,
+  "dislikes": 45,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Binary Tree Inorder Traversal\", \"titleSlug\": \"binary-tree-inorder-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Verify Preorder Sequence in Binary Search Tree\", \"titleSlug\": \"verify-preorder-sequence-in-binary-search-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"N-ary Tree Preorder Traversal\", \"titleSlug\": \"n-ary-tree-preorder-traversal\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "594",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Stack",
+    "Tree"
+  ]
+}

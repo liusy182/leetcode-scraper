@@ -1,0 +1,20 @@
+{
+  "id": "988",
+  "title": "Smallest String Starting From Leaf",
+  "slug": "smallest-string-starting-from-leaf",
+  "difficulty": "Medium",
+  "likes": 177,
+  "dislikes": 37,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Sum Root to Leaf Numbers\", \"titleSlug\": \"sum-root-to-leaf-numbers\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Binary Tree Paths\", \"titleSlug\": \"binary-tree-paths\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "682",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Depth-first Search"
+  ]
+}

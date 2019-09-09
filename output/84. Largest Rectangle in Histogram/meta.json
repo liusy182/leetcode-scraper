@@ -1,0 +1,20 @@
+{
+  "id": "84",
+  "title": "Largest Rectangle in Histogram",
+  "slug": "largest-rectangle-in-histogram",
+  "difficulty": "Hard",
+  "likes": 2258,
+  "dislikes": 60,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Maximal Rectangle\", \"titleSlug\": \"maximal-rectangle\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "67",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Stack"
+  ]
+}

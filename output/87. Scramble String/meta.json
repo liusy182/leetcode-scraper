@@ -1,0 +1,16 @@
+{
+  "id": "87",
+  "title": "Scramble String",
+  "slug": "scramble-string",
+  "difficulty": "Hard",
+  "likes": 335,
+  "dislikes": 539,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "String",
+    "Dynamic Programming"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "135",
+  "title": "Candy",
+  "slug": "candy",
+  "difficulty": "Hard",
+  "likes": 595,
+  "dislikes": 130,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "90",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Greedy"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "1162",
+  "title": "As Far from Land as Possible",
+  "slug": "as-far-from-land-as-possible",
+  "difficulty": "Medium",
+  "likes": 115,
+  "dislikes": 7,
+  "hints": [
+    "Can you think of this problem in a backwards way ?",
+    "Imagine expanding outward from each land cell. What kind of search does that ?",
+    "Use BFS starting from all land cells in the same time.",
+    "When do you reach the furthest water cell?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Shortest Distance from All Buildings\", \"titleSlug\": \"shortest-distance-from-all-buildings\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Breadth-first Search",
+    "Graph"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "740",
+  "title": "Delete and Earn",
+  "slug": "delete-and-earn",
+  "difficulty": "Medium",
+  "likes": 655,
+  "dislikes": 57,
+  "hints": [
+    "If you take a number, you might as well take them all.  Keep track of what the value is of the subset of the input with maximum M when you either take or don't take M."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"House Robber\", \"titleSlug\": \"house-robber\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "314",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

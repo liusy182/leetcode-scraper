@@ -1,0 +1,19 @@
+{
+  "id": "434",
+  "title": "Number of Segments in a String",
+  "slug": "number-of-segments-in-a-string",
+  "difficulty": "Easy",
+  "likes": 152,
+  "dislikes": 598,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "282",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

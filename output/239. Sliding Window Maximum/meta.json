@@ -1,0 +1,24 @@
+{
+  "id": "239",
+  "title": "Sliding Window Maximum",
+  "slug": "sliding-window-maximum",
+  "difficulty": "Hard",
+  "likes": 2037,
+  "dislikes": 119,
+  "hints": [
+    "How about using a data structure such as deque (double-ended queue)?",
+    "The queue size need not be the same as the window\u2019s size.",
+    "Remove redundant elements and the queue should store only elements that need to be considered."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Minimum Window Substring\", \"titleSlug\": \"minimum-window-substring\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Min Stack\", \"titleSlug\": \"min-stack\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Longest Substring with At Most Two Distinct Characters\", \"titleSlug\": \"longest-substring-with-at-most-two-distinct-characters\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Paint House II\", \"titleSlug\": \"paint-house-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "705",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Heap",
+    "Sliding Window"
+  ]
+}

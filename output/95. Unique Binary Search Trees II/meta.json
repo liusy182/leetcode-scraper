@@ -1,0 +1,20 @@
+{
+  "id": "95",
+  "title": "Unique Binary Search Trees II",
+  "slug": "unique-binary-search-trees-ii",
+  "difficulty": "Medium",
+  "likes": 1443,
+  "dislikes": 122,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Unique Binary Search Trees\", \"titleSlug\": \"unique-binary-search-trees\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Different Ways to Add Parentheses\", \"titleSlug\": \"different-ways-to-add-parentheses\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "604",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming",
+    "Tree"
+  ]
+}

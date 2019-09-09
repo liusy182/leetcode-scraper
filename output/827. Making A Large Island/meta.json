@@ -1,0 +1,19 @@
+{
+  "id": "827",
+  "title": "Making A Large Island",
+  "slug": "making-a-large-island",
+  "difficulty": "Hard",
+  "likes": 297,
+  "dislikes": 9,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "456",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Depth-first Search"
+  ]
+}

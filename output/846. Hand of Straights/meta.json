@@ -1,0 +1,19 @@
+{
+  "id": "846",
+  "title": "Hand of Straights",
+  "slug": "hand-of-straights",
+  "difficulty": "Medium",
+  "likes": 318,
+  "dislikes": 45,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "479",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Ordered Map"
+  ]
+}

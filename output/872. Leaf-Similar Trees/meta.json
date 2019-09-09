@@ -1,0 +1,20 @@
+{
+  "id": "872",
+  "title": "Leaf-Similar Trees",
+  "slug": "leaf-similar-trees",
+  "difficulty": "Easy",
+  "likes": 443,
+  "dislikes": 26,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "511",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Depth-first Search"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "212",
+  "title": "Word Search II",
+  "slug": "word-search-ii",
+  "difficulty": "Hard",
+  "likes": 1354,
+  "dislikes": 76,
+  "hints": [
+    "You would need to optimize your backtracking to pass the larger test. Could you stop backtracking earlier?",
+    "If the current candidate does not exist in all words&#39; prefix, you could stop backtracking immediately. What kind of data structure could answer such query efficiently? Does a hash table work? Why or why not? How about a Trie? If you would like to learn how to implement a basic trie, please work on this problem: <a href=\"https://leetcode.com/problems/implement-trie-prefix-tree/\">Implement Trie (Prefix Tree)</a> first."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Word Search\", \"titleSlug\": \"word-search\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Unique Paths III\", \"titleSlug\": \"unique-paths-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Backtracking",
+    "Trie"
+  ]
+}

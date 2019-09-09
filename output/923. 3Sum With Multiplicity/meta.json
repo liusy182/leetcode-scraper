@@ -1,0 +1,19 @@
+{
+  "id": "923",
+  "title": "3Sum With Multiplicity",
+  "slug": "3sum-with-multiplicity",
+  "difficulty": "Medium",
+  "likes": 222,
+  "dislikes": 44,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "587",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Two Pointers"
+  ]
+}

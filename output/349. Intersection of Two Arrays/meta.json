@@ -1,0 +1,22 @@
+{
+  "id": "349",
+  "title": "Intersection of Two Arrays",
+  "slug": "intersection-of-two-arrays",
+  "difficulty": "Easy",
+  "likes": 470,
+  "dislikes": 877,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Intersection of Two Arrays II\", \"titleSlug\": \"intersection-of-two-arrays-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "704",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "Two Pointers",
+    "Binary Search",
+    "Sort"
+  ]
+}

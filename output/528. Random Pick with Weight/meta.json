@@ -1,0 +1,20 @@
+{
+  "id": "528",
+  "title": "Random Pick with Weight",
+  "slug": "random-pick-with-weight",
+  "difficulty": "Medium",
+  "likes": 336,
+  "dislikes": 631,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Random Pick Index\", \"titleSlug\": \"random-pick-index\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Random Pick with Blacklist\", \"titleSlug\": \"random-pick-with-blacklist\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Random Point in Non-overlapping Rectangles\", \"titleSlug\": \"random-point-in-non-overlapping-rectangles\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "517",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Binary Search",
+    "Random"
+  ]
+}

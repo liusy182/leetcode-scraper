@@ -1,0 +1,19 @@
+{
+  "id": "984",
+  "title": "String Without AAA or BBB",
+  "slug": "string-without-aaa-or-bbb",
+  "difficulty": "Medium",
+  "likes": 115,
+  "dislikes": 184,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "676",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Greedy"
+  ]
+}

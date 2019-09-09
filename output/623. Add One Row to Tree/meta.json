@@ -1,0 +1,19 @@
+{
+  "id": "623",
+  "title": "Add One Row to Tree",
+  "slug": "add-one-row-to-tree",
+  "difficulty": "Medium",
+  "likes": 311,
+  "dislikes": 110,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "170",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

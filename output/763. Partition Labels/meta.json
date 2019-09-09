@@ -1,0 +1,22 @@
+{
+  "id": "763",
+  "title": "Partition Labels",
+  "slug": "partition-labels",
+  "difficulty": "Medium",
+  "likes": 1213,
+  "dislikes": 63,
+  "hints": [
+    "Try to greedily choose the smallest partition that includes the first letter.  If you have something like \"abaccbdeffed\", then you might need to add b.  You can use an map like \"last['b'] = 5\" to help you expand the width of your partition."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Merge Intervals\", \"titleSlug\": \"merge-intervals\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "374",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Two Pointers",
+    "Greedy"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "167",
+  "title": "Two Sum II - Input array is sorted",
+  "slug": "two-sum-ii-input-array-is-sorted",
+  "difficulty": "Easy",
+  "likes": 1062,
+  "dislikes": 436,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Two Sum\", \"titleSlug\": \"two-sum\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Two Sum IV - Input is a BST\", \"titleSlug\": \"two-sum-iv-input-is-a-bst\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Two Sum Less Than K\", \"titleSlug\": \"two-sum-less-than-k\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "20",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "672",
+  "title": "Bulb Switcher II",
+  "slug": "bulb-switcher-ii",
+  "difficulty": "Medium",
+  "likes": 102,
+  "dislikes": 744,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Bulb Switcher\", \"titleSlug\": \"bulb-switcher\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "302",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

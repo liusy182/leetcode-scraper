@@ -1,0 +1,19 @@
+{
+  "id": "118",
+  "title": "Pascal's Triangle",
+  "slug": "pascals-triangle",
+  "difficulty": "Easy",
+  "likes": 835,
+  "dislikes": 84,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Pascal's Triangle II\", \"titleSlug\": \"pascals-triangle-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "340",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

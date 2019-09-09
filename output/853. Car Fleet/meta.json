@@ -1,0 +1,19 @@
+{
+  "id": "853",
+  "title": "Car Fleet",
+  "slug": "car-fleet",
+  "difficulty": "Medium",
+  "likes": 281,
+  "dislikes": 154,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "490",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Sort"
+  ]
+}

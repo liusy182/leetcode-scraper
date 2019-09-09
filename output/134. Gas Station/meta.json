@@ -1,0 +1,19 @@
+{
+  "id": "134",
+  "title": "Gas Station",
+  "slug": "gas-station",
+  "difficulty": "Medium",
+  "likes": 880,
+  "dislikes": 306,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "707",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Greedy"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "208",
+  "title": "Implement Trie (Prefix Tree)",
+  "slug": "implement-trie-prefix-tree",
+  "difficulty": "Medium",
+  "likes": 1833,
+  "dislikes": 35,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Add and Search Word - Data structure design\", \"titleSlug\": \"add-and-search-word-data-structure-design\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Design Search Autocomplete System\", \"titleSlug\": \"design-search-autocomplete-system\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Replace Words\", \"titleSlug\": \"replace-words\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Implement Magic Dictionary\", \"titleSlug\": \"implement-magic-dictionary\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "40",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Design",
+    "Trie"
+  ]
+}

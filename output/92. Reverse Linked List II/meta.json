@@ -1,0 +1,19 @@
+{
+  "id": "92",
+  "title": "Reverse Linked List II",
+  "slug": "reverse-linked-list-ii",
+  "difficulty": "Medium",
+  "likes": 1430,
+  "dislikes": 100,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Reverse Linked List\", \"titleSlug\": \"reverse-linked-list\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "661",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Linked List"
+  ]
+}

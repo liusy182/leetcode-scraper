@@ -1,0 +1,15 @@
+{
+  "id": "468",
+  "title": "Validate IP Address",
+  "slug": "validate-ip-address",
+  "difficulty": "Medium",
+  "likes": 144,
+  "dislikes": 848,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"IP to CIDR\", \"titleSlug\": \"ip-to-cidr\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "String"
+  ]
+}

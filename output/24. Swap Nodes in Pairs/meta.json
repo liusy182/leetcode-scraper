@@ -1,0 +1,15 @@
+{
+  "id": "24",
+  "title": "Swap Nodes in Pairs",
+  "slug": "swap-nodes-in-pairs",
+  "difficulty": "Medium",
+  "likes": 1373,
+  "dislikes": 120,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Reverse Nodes in k-Group\", \"titleSlug\": \"reverse-nodes-in-k-group\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Linked List"
+  ]
+}

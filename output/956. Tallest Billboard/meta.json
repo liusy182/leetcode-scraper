@@ -1,0 +1,19 @@
+{
+  "id": "956",
+  "title": "Tallest Billboard",
+  "slug": "tallest-billboard",
+  "difficulty": "Hard",
+  "likes": 203,
+  "dislikes": 10,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "635",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

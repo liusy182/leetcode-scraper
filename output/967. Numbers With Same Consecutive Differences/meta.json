@@ -1,0 +1,19 @@
+{
+  "id": "967",
+  "title": "Numbers With Same Consecutive Differences",
+  "slug": "numbers-with-same-consecutive-differences",
+  "difficulty": "Medium",
+  "likes": 107,
+  "dislikes": 35,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "650",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

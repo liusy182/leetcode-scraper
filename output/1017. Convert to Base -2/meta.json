@@ -1,0 +1,17 @@
+{
+  "id": "1017",
+  "title": "Convert to Base -2",
+  "slug": "convert-to-base-2",
+  "difficulty": "Medium",
+  "likes": 89,
+  "dislikes": 110,
+  "hints": [
+    "Figure out whether you need the ones digit placed or not, then shift by two."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Math"
+  ]
+}

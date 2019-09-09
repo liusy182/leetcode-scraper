@@ -1,0 +1,18 @@
+{
+  "id": "1053",
+  "title": "Previous Permutation With One Swap",
+  "slug": "previous-permutation-with-one-swap",
+  "difficulty": "Medium",
+  "likes": 53,
+  "dislikes": 150,
+  "hints": [
+    "You need to swap two values, one larger than the other.  Where is the larger one located?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Greedy"
+  ]
+}

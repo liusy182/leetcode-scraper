@@ -1,0 +1,21 @@
+{
+  "id": "927",
+  "title": "Three Equal Parts",
+  "slug": "three-equal-parts",
+  "difficulty": "Hard",
+  "likes": 107,
+  "dislikes": 39,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "590",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math",
+    "Binary Search",
+    "Greedy"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "825",
+  "title": "Friends Of Appropriate Ages",
+  "slug": "friends-of-appropriate-ages",
+  "difficulty": "Medium",
+  "likes": 188,
+  "dislikes": 410,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "458",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

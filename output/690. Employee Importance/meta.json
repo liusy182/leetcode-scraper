@@ -1,0 +1,21 @@
+{
+  "id": "690",
+  "title": "Employee Importance",
+  "slug": "employee-importance",
+  "difficulty": "Easy",
+  "likes": 438,
+  "dislikes": 461,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Nested List Weight Sum\", \"titleSlug\": \"nested-list-weight-sum\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "303",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "Depth-first Search",
+    "Breadth-first Search"
+  ]
+}

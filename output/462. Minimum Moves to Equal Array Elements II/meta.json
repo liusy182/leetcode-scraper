@@ -1,0 +1,19 @@
+{
+  "id": "462",
+  "title": "Minimum Moves to Equal Array Elements II",
+  "slug": "minimum-moves-to-equal-array-elements-ii",
+  "difficulty": "Medium",
+  "likes": 377,
+  "dislikes": 31,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Best Meeting Point\", \"titleSlug\": \"best-meeting-point\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Minimum Moves to Equal Array Elements\", \"titleSlug\": \"minimum-moves-to-equal-array-elements\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "92",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

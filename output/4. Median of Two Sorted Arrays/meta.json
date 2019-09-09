@@ -1,0 +1,21 @@
+{
+  "id": "4",
+  "title": "Median of Two Sorted Arrays",
+  "slug": "median-of-two-sorted-arrays",
+  "difficulty": "Hard",
+  "likes": 4937,
+  "dislikes": 709,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "232",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Binary Search",
+    "Divide and Conquer"
+  ]
+}

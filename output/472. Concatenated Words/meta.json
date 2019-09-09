@@ -1,0 +1,17 @@
+{
+  "id": "472",
+  "title": "Concatenated Words",
+  "slug": "concatenated-words",
+  "difficulty": "Hard",
+  "likes": 313,
+  "dislikes": 72,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Word Break II\", \"titleSlug\": \"word-break-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming",
+    "Depth-first Search",
+    "Trie"
+  ]
+}

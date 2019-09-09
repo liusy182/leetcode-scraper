@@ -1,0 +1,13 @@
+{
+  "id": "192",
+  "title": "Word Frequency",
+  "slug": "word-frequency",
+  "difficulty": "Medium",
+  "likes": 147,
+  "dislikes": 83,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Top K Frequent Elements\", \"titleSlug\": \"top-k-frequent-elements\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": []
+}

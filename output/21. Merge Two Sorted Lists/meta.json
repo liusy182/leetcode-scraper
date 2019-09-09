@@ -1,0 +1,19 @@
+{
+  "id": "21",
+  "title": "Merge Two Sorted Lists",
+  "slug": "merge-two-sorted-lists",
+  "difficulty": "Easy",
+  "likes": 2608,
+  "dislikes": 377,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Merge k Sorted Lists\", \"titleSlug\": \"merge-k-sorted-lists\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Merge Sorted Array\", \"titleSlug\": \"merge-sorted-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Sort List\", \"titleSlug\": \"sort-list\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Shortest Word Distance II\", \"titleSlug\": \"shortest-word-distance-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "310",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Linked List"
+  ]
+}

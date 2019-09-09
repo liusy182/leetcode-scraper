@@ -1,0 +1,19 @@
+{
+  "id": "456",
+  "title": "132 Pattern",
+  "slug": "132-pattern",
+  "difficulty": "Medium",
+  "likes": 716,
+  "dislikes": 45,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "189",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Stack"
+  ]
+}

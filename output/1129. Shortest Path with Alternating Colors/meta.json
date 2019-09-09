@@ -1,0 +1,18 @@
+{
+  "id": "1129",
+  "title": "Shortest Path with Alternating Colors",
+  "slug": "shortest-path-with-alternating-colors",
+  "difficulty": "Medium",
+  "likes": 120,
+  "dislikes": 5,
+  "hints": [
+    "Do a breadth-first search, where the \"nodes\" are actually (Node, color of last edge taken)."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Breadth-first Search",
+    "Graph"
+  ]
+}

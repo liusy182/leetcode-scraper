@@ -1,0 +1,22 @@
+{
+  "id": "88",
+  "title": "Merge Sorted Array",
+  "slug": "merge-sorted-array",
+  "difficulty": "Easy",
+  "likes": 1278,
+  "dislikes": 3045,
+  "hints": [
+    "What if you fill the longer array from the end instead of start ?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Merge Two Sorted Lists\", \"titleSlug\": \"merge-two-sorted-lists\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Squares of a Sorted Array\", \"titleSlug\": \"squares-of-a-sorted-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Interval List Intersections\", \"titleSlug\": \"interval-list-intersections\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "686",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Two Pointers"
+  ]
+}

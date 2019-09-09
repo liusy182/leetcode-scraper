@@ -1,0 +1,21 @@
+{
+  "id": "443",
+  "title": "String Compression",
+  "slug": "string-compression",
+  "difficulty": "Easy",
+  "likes": 429,
+  "dislikes": 1373,
+  "hints": [
+    "How do you know if you are at the end of a consecutive group of characters?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Count and Say\", \"titleSlug\": \"count-and-say\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Encode and Decode Strings\", \"titleSlug\": \"encode-and-decode-strings\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Design Compressed String Iterator\", \"titleSlug\": \"design-compressed-string-iterator\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "272",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

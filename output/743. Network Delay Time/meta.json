@@ -1,0 +1,24 @@
+{
+  "id": "743",
+  "title": "Network Delay Time",
+  "slug": "network-delay-time",
+  "difficulty": "Medium",
+  "likes": 749,
+  "dislikes": 181,
+  "hints": [
+    "We visit each node at some time, and if that time is better than the fastest time we've reached this node, we travel along outgoing edges in sorted order.  Alternatively, we could use Dijkstra's algorithm."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "335",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Heap",
+    "Depth-first Search",
+    "Breadth-first Search",
+    "Graph"
+  ]
+}

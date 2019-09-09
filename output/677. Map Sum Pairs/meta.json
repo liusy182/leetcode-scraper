@@ -1,0 +1,19 @@
+{
+  "id": "677",
+  "title": "Map Sum Pairs",
+  "slug": "map-sum-pairs",
+  "difficulty": "Medium",
+  "likes": 333,
+  "dislikes": 62,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "245",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Trie"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "417",
+  "title": "Pacific Atlantic Water Flow",
+  "slug": "pacific-atlantic-water-flow",
+  "difficulty": "Medium",
+  "likes": 753,
+  "dislikes": 137,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Depth-first Search",
+    "Breadth-first Search"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "945",
+  "title": "Minimum Increment to Make Array Unique",
+  "slug": "minimum-increment-to-make-array-unique",
+  "difficulty": "Medium",
+  "likes": 204,
+  "dislikes": 8,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "624",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

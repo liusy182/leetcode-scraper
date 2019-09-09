@@ -1,0 +1,23 @@
+{
+  "id": "69",
+  "title": "Sqrt(x)",
+  "slug": "sqrtx",
+  "difficulty": "Easy",
+  "likes": 873,
+  "dislikes": 1503,
+  "hints": [
+    "Try exploring all integers. (Credits: @annujoshi)",
+    "Use the sorted property of integers to reduced the search space. (Credits: @annujoshi)"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Pow(x, n)\", \"titleSlug\": \"powx-n\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Valid Perfect Square\", \"titleSlug\": \"valid-perfect-square\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "757",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math",
+    "Binary Search"
+  ]
+}

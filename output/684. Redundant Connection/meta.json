@@ -1,0 +1,21 @@
+{
+  "id": "684",
+  "title": "Redundant Connection",
+  "slug": "redundant-connection",
+  "difficulty": "Medium",
+  "likes": 770,
+  "dislikes": 199,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Redundant Connection II\", \"titleSlug\": \"redundant-connection-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Accounts Merge\", \"titleSlug\": \"accounts-merge\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "250",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Union Find",
+    "Graph"
+  ]
+}

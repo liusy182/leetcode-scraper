@@ -1,0 +1,21 @@
+{
+  "id": "173",
+  "title": "Binary Search Tree Iterator",
+  "slug": "binary-search-tree-iterator",
+  "difficulty": "Medium",
+  "likes": 1603,
+  "dislikes": 251,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Binary Tree Inorder Traversal\", \"titleSlug\": \"binary-tree-inorder-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Flatten 2D Vector\", \"titleSlug\": \"flatten-2d-vector\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Zigzag Iterator\", \"titleSlug\": \"zigzag-iterator\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Peeking Iterator\", \"titleSlug\": \"peeking-iterator\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Inorder Successor in BST\", \"titleSlug\": \"inorder-successor-in-bst\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "737",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Stack",
+    "Tree",
+    "Design"
+  ]
+}

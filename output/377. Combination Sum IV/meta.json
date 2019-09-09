@@ -1,0 +1,15 @@
+{
+  "id": "377",
+  "title": "Combination Sum IV",
+  "slug": "combination-sum-iv",
+  "difficulty": "Medium",
+  "likes": 902,
+  "dislikes": 104,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Combination Sum\", \"titleSlug\": \"combination-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

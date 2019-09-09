@@ -1,0 +1,17 @@
+{
+  "id": "1079",
+  "title": "Letter Tile Possibilities",
+  "slug": "letter-tile-possibilities",
+  "difficulty": "Medium",
+  "likes": 252,
+  "dislikes": 11,
+  "hints": [
+    "Try to build the string with a backtracking DFS by considering what you can put in every position."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Backtracking"
+  ]
+}

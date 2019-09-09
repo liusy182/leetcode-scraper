@@ -1,0 +1,16 @@
+{
+  "id": "1002",
+  "title": "Find Common Characters",
+  "slug": "find-common-characters",
+  "difficulty": "Easy",
+  "likes": 402,
+  "dislikes": 52,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Intersection of Two Arrays II\", \"titleSlug\": \"intersection-of-two-arrays-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Hash Table"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "1024",
+  "title": "Video Stitching",
+  "slug": "video-stitching",
+  "difficulty": "Medium",
+  "likes": 200,
+  "dislikes": 16,
+  "hints": [
+    "What if we sort the intervals?  Considering the sorted intervals, how can we solve the problem with dynamic programming?",
+    "Let's consider a DP(pos, limit) where pos represents the position of the current interval we are gonna take the decision and limit is the current covered area from [0 - limit]. This DP returns the minimum number of taken intervals or infinite if it's not possible to cover the [0 - T] section."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

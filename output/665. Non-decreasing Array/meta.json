@@ -1,0 +1,19 @@
+{
+  "id": "665",
+  "title": "Non-decreasing Array",
+  "slug": "non-decreasing-array",
+  "difficulty": "Easy",
+  "likes": 1208,
+  "dislikes": 273,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "239",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

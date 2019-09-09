@@ -1,0 +1,19 @@
+{
+  "id": "795",
+  "title": "Number of Subarrays with Bounded Maximum",
+  "slug": "number-of-subarrays-with-bounded-maximum",
+  "difficulty": "Medium",
+  "likes": 384,
+  "dislikes": 37,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "424",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

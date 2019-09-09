@@ -1,0 +1,19 @@
+{
+  "id": "817",
+  "title": "Linked List Components",
+  "slug": "linked-list-components",
+  "difficulty": "Medium",
+  "likes": 243,
+  "dislikes": 617,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "449",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Linked List"
+  ]
+}

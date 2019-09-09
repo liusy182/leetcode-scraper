@@ -1,0 +1,19 @@
+{
+  "id": "589",
+  "title": "N-ary Tree Preorder Traversal",
+  "slug": "n-ary-tree-preorder-traversal",
+  "difficulty": "Easy",
+  "likes": 290,
+  "dislikes": 40,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Binary Tree Preorder Traversal\", \"titleSlug\": \"binary-tree-preorder-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"N-ary Tree Level Order Traversal\", \"titleSlug\": \"n-ary-tree-level-order-traversal\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"N-ary Tree Postorder Traversal\", \"titleSlug\": \"n-ary-tree-postorder-traversal\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "603",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

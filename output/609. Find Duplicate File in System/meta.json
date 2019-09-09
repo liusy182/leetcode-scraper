@@ -1,0 +1,20 @@
+{
+  "id": "609",
+  "title": "Find Duplicate File in System",
+  "slug": "find-duplicate-file-in-system",
+  "difficulty": "Medium",
+  "likes": 271,
+  "dislikes": 424,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "151",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "String"
+  ]
+}

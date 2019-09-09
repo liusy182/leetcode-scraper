@@ -1,0 +1,19 @@
+{
+  "id": "629",
+  "title": "K Inverse Pairs Array",
+  "slug": "k-inverse-pairs-array",
+  "difficulty": "Hard",
+  "likes": 226,
+  "dislikes": 73,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "185",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

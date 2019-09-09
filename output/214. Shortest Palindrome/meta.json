@@ -1,0 +1,19 @@
+{
+  "id": "214",
+  "title": "Shortest Palindrome",
+  "slug": "shortest-palindrome",
+  "difficulty": "Hard",
+  "likes": 741,
+  "dislikes": 88,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Longest Palindromic Substring\", \"titleSlug\": \"longest-palindromic-substring\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Implement strStr()\", \"titleSlug\": \"implement-strstr\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Palindrome Pairs\", \"titleSlug\": \"palindrome-pairs\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "174",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

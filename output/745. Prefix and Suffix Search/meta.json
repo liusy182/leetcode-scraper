@@ -1,0 +1,21 @@
+{
+  "id": "745",
+  "title": "Prefix and Suffix Search",
+  "slug": "prefix-and-suffix-search",
+  "difficulty": "Hard",
+  "likes": 225,
+  "dislikes": 164,
+  "hints": [
+    "For a word like \"test\", consider \"#test\", \"t#test\", \"st#test\", \"est#test\", \"test#test\".  Then if we have a query like prefix = \"te\", suffix = \"t\", we can find it by searching for something we've inserted starting with \"t#te\"."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Add and Search Word - Data structure design\", \"titleSlug\": \"add-and-search-word-data-structure-design\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "337",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Trie"
+  ]
+}

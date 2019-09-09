@@ -1,0 +1,20 @@
+{
+  "id": "818",
+  "title": "Race Car",
+  "slug": "race-car",
+  "difficulty": "Hard",
+  "likes": 319,
+  "dislikes": 36,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "448",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming",
+    "Heap"
+  ]
+}

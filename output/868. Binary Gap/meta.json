@@ -1,0 +1,19 @@
+{
+  "id": "868",
+  "title": "Binary Gap",
+  "slug": "binary-gap",
+  "difficulty": "Easy",
+  "likes": 142,
+  "dislikes": 365,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "509",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

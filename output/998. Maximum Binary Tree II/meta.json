@@ -1,0 +1,15 @@
+{
+  "id": "998",
+  "title": "Maximum Binary Tree II",
+  "slug": "maximum-binary-tree-ii",
+  "difficulty": "Medium",
+  "likes": 88,
+  "dislikes": 229,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Maximum Binary Tree\", \"titleSlug\": \"maximum-binary-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Tree"
+  ]
+}

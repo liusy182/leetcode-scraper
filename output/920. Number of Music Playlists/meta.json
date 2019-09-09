@@ -1,0 +1,19 @@
+{
+  "id": "920",
+  "title": "Number of Music Playlists",
+  "slug": "number-of-music-playlists",
+  "difficulty": "Hard",
+  "likes": 234,
+  "dislikes": 31,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "580",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

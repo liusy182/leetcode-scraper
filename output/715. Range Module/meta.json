@@ -1,0 +1,22 @@
+{
+  "id": "715",
+  "title": "Range Module",
+  "slug": "range-module",
+  "difficulty": "Hard",
+  "likes": 318,
+  "dislikes": 25,
+  "hints": [
+    "Maintain a sorted set of disjoint intervals.  addRange and removeRange can be performed with time complexity linear to the size of this set; queryRange can be performed with time complexity logarithmic to the size of this set."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Merge Intervals\", \"titleSlug\": \"merge-intervals\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Insert Interval\", \"titleSlug\": \"insert-interval\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Data Stream as Disjoint Intervals\", \"titleSlug\": \"data-stream-as-disjoint-intervals\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "268",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Segment Tree",
+    "Ordered Map"
+  ]
+}

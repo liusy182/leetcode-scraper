@@ -1,0 +1,20 @@
+{
+  "id": "902",
+  "title": "Numbers At Most N Given Digit Set",
+  "slug": "numbers-at-most-n-given-digit-set",
+  "difficulty": "Hard",
+  "likes": 111,
+  "dislikes": 27,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "551",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math",
+    "Dynamic Programming"
+  ]
+}

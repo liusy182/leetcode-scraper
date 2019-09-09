@@ -1,0 +1,19 @@
+{
+  "id": "466",
+  "title": "Count The Repetitions",
+  "slug": "count-the-repetitions",
+  "difficulty": "Hard",
+  "likes": 122,
+  "dislikes": 95,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "230",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

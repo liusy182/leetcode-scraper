@@ -1,0 +1,20 @@
+{
+  "id": "547",
+  "title": "Friend Circles",
+  "slug": "friend-circles",
+  "difficulty": "Medium",
+  "likes": 1180,
+  "dislikes": 96,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Number of Connected Components in an Undirected Graph\", \"titleSlug\": \"number-of-connected-components-in-an-undirected-graph\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Robot Return to Origin\", \"titleSlug\": \"robot-return-to-origin\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Sentence Similarity\", \"titleSlug\": \"sentence-similarity\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Sentence Similarity II\", \"titleSlug\": \"sentence-similarity-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"The Earliest Moment When Everyone Become Friends\", \"titleSlug\": \"the-earliest-moment-when-everyone-become-friends\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "101",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Depth-first Search",
+    "Union Find"
+  ]
+}

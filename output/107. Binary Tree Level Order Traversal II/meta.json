@@ -1,0 +1,16 @@
+{
+  "id": "107",
+  "title": "Binary Tree Level Order Traversal II",
+  "slug": "binary-tree-level-order-traversal-ii",
+  "difficulty": "Easy",
+  "likes": 832,
+  "dislikes": 160,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Binary Tree Level Order Traversal\", \"titleSlug\": \"binary-tree-level-order-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Average of Levels in Binary Tree\", \"titleSlug\": \"average-of-levels-in-binary-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Tree",
+    "Breadth-first Search"
+  ]
+}

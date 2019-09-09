@@ -1,0 +1,17 @@
+{
+  "id": "336",
+  "title": "Palindrome Pairs",
+  "slug": "palindrome-pairs",
+  "difficulty": "Hard",
+  "likes": 893,
+  "dislikes": 124,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Longest Palindromic Substring\", \"titleSlug\": \"longest-palindromic-substring\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Shortest Palindrome\", \"titleSlug\": \"shortest-palindrome\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table",
+    "String",
+    "Trie"
+  ]
+}

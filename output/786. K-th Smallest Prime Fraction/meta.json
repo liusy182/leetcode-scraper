@@ -1,0 +1,20 @@
+{
+  "id": "786",
+  "title": "K-th Smallest Prime Fraction",
+  "slug": "k-th-smallest-prime-fraction",
+  "difficulty": "Hard",
+  "likes": 248,
+  "dislikes": 14,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Kth Smallest Element in a Sorted Matrix\", \"titleSlug\": \"kth-smallest-element-in-a-sorted-matrix\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Kth Smallest Number in Multiplication Table\", \"titleSlug\": \"kth-smallest-number-in-multiplication-table\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Find K-th Smallest Pair Distance\", \"titleSlug\": \"find-k-th-smallest-pair-distance\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "427",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Binary Search",
+    "Heap"
+  ]
+}

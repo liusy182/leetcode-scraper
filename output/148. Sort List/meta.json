@@ -1,0 +1,16 @@
+{
+  "id": "148",
+  "title": "Sort List",
+  "slug": "sort-list",
+  "difficulty": "Medium",
+  "likes": 1693,
+  "dislikes": 88,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Merge Two Sorted Lists\", \"titleSlug\": \"merge-two-sorted-lists\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Sort Colors\", \"titleSlug\": \"sort-colors\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Insertion Sort List\", \"titleSlug\": \"insertion-sort-list\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Linked List",
+    "Sort"
+  ]
+}

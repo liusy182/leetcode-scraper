@@ -1,0 +1,19 @@
+{
+  "id": "649",
+  "title": "Dota2 Senate",
+  "slug": "dota2-senate",
+  "difficulty": "Medium",
+  "likes": 219,
+  "dislikes": 167,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Teemo Attacking\", \"titleSlug\": \"teemo-attacking\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "333",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Greedy"
+  ]
+}

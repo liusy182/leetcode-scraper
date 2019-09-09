@@ -1,0 +1,19 @@
+{
+  "id": "857",
+  "title": "Minimum Cost to Hire K Workers",
+  "slug": "minimum-cost-to-hire-k-workers",
+  "difficulty": "Hard",
+  "likes": 607,
+  "dislikes": 64,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "492",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Heap"
+  ]
+}

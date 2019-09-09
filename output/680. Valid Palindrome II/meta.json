@@ -1,0 +1,19 @@
+{
+  "id": "680",
+  "title": "Valid Palindrome II",
+  "slug": "valid-palindrome-ii",
+  "difficulty": "Easy",
+  "likes": 877,
+  "dislikes": 60,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Valid Palindrome\", \"titleSlug\": \"valid-palindrome\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "248",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

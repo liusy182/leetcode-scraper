@@ -1,0 +1,19 @@
+{
+  "id": "704",
+  "title": "Binary Search",
+  "slug": "binary-search",
+  "difficulty": "Easy",
+  "likes": 320,
+  "dislikes": 34,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Search in a Sorted Array of Unknown Size\", \"titleSlug\": \"search-in-a-sorted-array-of-unknown-size\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "719",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Binary Search"
+  ]
+}

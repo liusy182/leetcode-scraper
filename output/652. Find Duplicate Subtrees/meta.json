@@ -1,0 +1,19 @@
+{
+  "id": "652",
+  "title": "Find Duplicate Subtrees",
+  "slug": "find-duplicate-subtrees",
+  "difficulty": "Medium",
+  "likes": 857,
+  "dislikes": 167,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Serialize and Deserialize Binary Tree\", \"titleSlug\": \"serialize-and-deserialize-binary-tree\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Serialize and Deserialize BST\", \"titleSlug\": \"serialize-and-deserialize-bst\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Construct String from Binary Tree\", \"titleSlug\": \"construct-string-from-binary-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "326",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

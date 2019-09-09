@@ -1,0 +1,17 @@
+{
+  "id": "1105",
+  "title": "Filling Bookcase Shelves",
+  "slug": "filling-bookcase-shelves",
+  "difficulty": "Medium",
+  "likes": 214,
+  "dislikes": 11,
+  "hints": [
+    "Use dynamic programming:  dp(i) will be the answer to the problem for books[i:]."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

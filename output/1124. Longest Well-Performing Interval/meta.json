@@ -1,0 +1,18 @@
+{
+  "id": "1124",
+  "title": "Longest Well-Performing Interval",
+  "slug": "longest-well-performing-interval",
+  "difficulty": "Medium",
+  "likes": 191,
+  "dislikes": 41,
+  "hints": [
+    "Make a new array A of +1/-1s corresponding to if hours[i] is > 8 or not. The goal is to find the longest subarray with positive sum.",
+    "Using prefix sums (PrefixSum[i+1] = A[0] + A[1] + ... + A[i]), you need to find for each j, the smallest i < j with PrefixSum[i] + 1 == PrefixSum[j]."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Stack"
+  ]
+}

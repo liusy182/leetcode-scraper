@@ -1,0 +1,21 @@
+{
+  "id": "42",
+  "title": "Trapping Rain Water",
+  "slug": "trapping-rain-water",
+  "difficulty": "Hard",
+  "likes": 4298,
+  "dislikes": 80,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Container With Most Water\", \"titleSlug\": \"container-with-most-water\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Product of Array Except Self\", \"titleSlug\": \"product-of-array-except-self\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Trapping Rain Water II\", \"titleSlug\": \"trapping-rain-water-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Pour Water\", \"titleSlug\": \"pour-water\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "150",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Two Pointers",
+    "Stack"
+  ]
+}

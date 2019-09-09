@@ -1,0 +1,19 @@
+{
+  "id": "879",
+  "title": "Profitable Schemes",
+  "slug": "profitable-schemes",
+  "difficulty": "Hard",
+  "likes": 164,
+  "dislikes": 20,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "523",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "503",
+  "title": "Next Greater Element II",
+  "slug": "next-greater-element-ii",
+  "difficulty": "Medium",
+  "likes": 790,
+  "dislikes": 48,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Next Greater Element I\", \"titleSlug\": \"next-greater-element-i\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Next Greater Element III\", \"titleSlug\": \"next-greater-element-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "88",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Stack"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "385",
+  "title": "Mini Parser",
+  "slug": "mini-parser",
+  "difficulty": "Medium",
+  "likes": 182,
+  "dislikes": 648,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Flatten Nested List Iterator\", \"titleSlug\": \"flatten-nested-list-iterator\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Ternary Expression Parser\", \"titleSlug\": \"ternary-expression-parser\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Remove Comments\", \"titleSlug\": \"remove-comments\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "String",
+    "Stack"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "780",
+  "title": "Reaching Points",
+  "slug": "reaching-points",
+  "difficulty": "Hard",
+  "likes": 272,
+  "dislikes": 54,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "413",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

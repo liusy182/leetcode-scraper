@@ -1,0 +1,17 @@
+{
+  "id": "1038",
+  "title": "Binary Search Tree to Greater Sum Tree",
+  "slug": "binary-search-tree-to-greater-sum-tree",
+  "difficulty": "Medium",
+  "likes": 289,
+  "dislikes": 44,
+  "hints": [
+    "What traversal method organizes all nodes in sorted order?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Binary Search Tree"
+  ]
+}

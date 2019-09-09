@@ -1,0 +1,15 @@
+{
+  "id": "150",
+  "title": "Evaluate Reverse Polish Notation",
+  "slug": "evaluate-reverse-polish-notation",
+  "difficulty": "Medium",
+  "likes": 614,
+  "dislikes": 377,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Basic Calculator\", \"titleSlug\": \"basic-calculator\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Expression Add Operators\", \"titleSlug\": \"expression-add-operators\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Stack"
+  ]
+}

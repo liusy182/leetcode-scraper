@@ -1,0 +1,20 @@
+{
+  "id": "995",
+  "title": "Minimum Number of K Consecutive Bit Flips",
+  "slug": "minimum-number-of-k-consecutive-bit-flips",
+  "difficulty": "Hard",
+  "likes": 156,
+  "dislikes": 21,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Bulb Switcher\", \"titleSlug\": \"bulb-switcher\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "697",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Greedy",
+    "Sliding Window"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "606",
+  "title": "Construct String from Binary Tree",
+  "slug": "construct-string-from-binary-tree",
+  "difficulty": "Easy",
+  "likes": 574,
+  "dislikes": 798,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Construct Binary Tree from String\", \"titleSlug\": \"construct-binary-tree-from-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find Duplicate Subtrees\", \"titleSlug\": \"find-duplicate-subtrees\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "152",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String",
+    "Tree"
+  ]
+}

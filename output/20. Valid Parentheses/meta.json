@@ -1,0 +1,24 @@
+{
+  "id": "20",
+  "title": "Valid Parentheses",
+  "slug": "valid-parentheses",
+  "difficulty": "Easy",
+  "likes": 3313,
+  "dislikes": 155,
+  "hints": [
+    "An interesting property about a valid parenthesis expression is that a sub-expression of a valid expression should also be a valid expression. (Not every sub-expression) e.g.\r\n\r\n<pre>\r\n{ { } [ ] [ [ [ ] ] ] } is VALID expression\r\n          [ [ [ ] ] ]    is VALID sub-expression\r\n  { } [ ]                is VALID sub-expression\r\n</pre>\r\n\r\nCan we exploit this recursive structure somehow?",
+    "What if whenever we encounter a matching pair of parenthesis in the expression, we simply remove it from the expression? This would keep on shortening the expression. e.g.\r\n\r\n<pre>\r\n{ { ( { } ) } }\r\n      |_|\r\n\r\n{ { (      ) } }\r\n    |______|\r\n\r\n{ {          } }\r\n  |__________|\r\n\r\n{                }\r\n|________________|\r\n\r\nVALID EXPRESSION!\r\n</pre>",
+    "The <b>stack</b> data structure can come in handy here in representing this recursive structure of the problem. We can't really process this from the inside out because we don't have an idea about the overall structure. But, the stack can help us process this recursively i.e. from outside to inwards."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Generate Parentheses\", \"titleSlug\": \"generate-parentheses\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Longest Valid Parentheses\", \"titleSlug\": \"longest-valid-parentheses\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Remove Invalid Parentheses\", \"titleSlug\": \"remove-invalid-parentheses\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Check If Word Is Valid After Substitutions\", \"titleSlug\": \"check-if-word-is-valid-after-substitutions\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "570",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String",
+    "Stack"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "931",
+  "title": "Minimum Falling Path Sum",
+  "slug": "minimum-falling-path-sum",
+  "difficulty": "Medium",
+  "likes": 325,
+  "dislikes": 36,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "598",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

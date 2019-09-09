@@ -1,0 +1,19 @@
+{
+  "id": "932",
+  "title": "Beautiful Array",
+  "slug": "beautiful-array",
+  "difficulty": "Medium",
+  "likes": 207,
+  "dislikes": 300,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "601",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Divide and Conquer"
+  ]
+}

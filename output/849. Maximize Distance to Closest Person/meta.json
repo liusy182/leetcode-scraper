@@ -1,0 +1,19 @@
+{
+  "id": "849",
+  "title": "Maximize Distance to Closest Person",
+  "slug": "maximize-distance-to-closest-person",
+  "difficulty": "Easy",
+  "likes": 485,
+  "dislikes": 78,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Exam Room\", \"titleSlug\": \"exam-room\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "481",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "646",
+  "title": "Maximum Length of Pair Chain",
+  "slug": "maximum-length-of-pair-chain",
+  "difficulty": "Medium",
+  "likes": 617,
+  "dislikes": 56,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Longest Increasing Subsequence\", \"titleSlug\": \"longest-increasing-subsequence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Increasing Subsequences\", \"titleSlug\": \"increasing-subsequences\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "317",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

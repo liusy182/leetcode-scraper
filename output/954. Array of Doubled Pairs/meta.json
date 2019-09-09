@@ -1,0 +1,20 @@
+{
+  "id": "954",
+  "title": "Array of Doubled Pairs",
+  "slug": "array-of-doubled-pairs",
+  "difficulty": "Medium",
+  "likes": 137,
+  "dislikes": 23,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "636",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Hash Table"
+  ]
+}

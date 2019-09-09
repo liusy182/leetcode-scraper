@@ -1,0 +1,24 @@
+{
+  "id": "575",
+  "title": "Distribute Candies",
+  "slug": "distribute-candies",
+  "difficulty": "Easy",
+  "likes": 325,
+  "dislikes": 716,
+  "hints": [
+    "To maximize the number of kinds of candies, we should try to distribute candies such that sister will gain all kinds.",
+    "What is the upper limit of the number of kinds of candies sister will gain? Remember candies are to distributed equally.",
+    "Which data structure is the most suitable for finding the number of kinds of candies?",
+    "Will hashset solves the problem? Inserting all candies kind in the hashset and then checking its size with upper limit."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "125",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table"
+  ]
+}

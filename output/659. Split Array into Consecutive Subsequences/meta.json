@@ -1,0 +1,20 @@
+{
+  "id": "659",
+  "title": "Split Array into Consecutive Subsequences",
+  "slug": "split-array-into-consecutive-subsequences",
+  "difficulty": "Medium",
+  "likes": 595,
+  "dislikes": 242,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Top K Frequent Elements\", \"titleSlug\": \"top-k-frequent-elements\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "323",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Heap",
+    "Greedy"
+  ]
+}

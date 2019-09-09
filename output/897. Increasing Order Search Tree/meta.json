@@ -1,0 +1,20 @@
+{
+  "id": "897",
+  "title": "Increasing Order Search Tree",
+  "slug": "increasing-order-search-tree",
+  "difficulty": "Easy",
+  "likes": 338,
+  "dislikes": 346,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "547",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Depth-first Search"
+  ]
+}

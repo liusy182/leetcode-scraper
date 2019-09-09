@@ -1,0 +1,17 @@
+{
+  "id": "796",
+  "title": "Rotate String",
+  "slug": "rotate-string",
+  "difficulty": "Easy",
+  "likes": 445,
+  "dislikes": 39,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "429",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "605",
+  "title": "Can Place Flowers",
+  "slug": "can-place-flowers",
+  "difficulty": "Easy",
+  "likes": 540,
+  "dislikes": 284,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Teemo Attacking\", \"titleSlug\": \"teemo-attacking\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Asteroid Collision\", \"titleSlug\": \"asteroid-collision\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "154",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

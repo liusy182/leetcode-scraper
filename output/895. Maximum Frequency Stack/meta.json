@@ -1,0 +1,20 @@
+{
+  "id": "895",
+  "title": "Maximum Frequency Stack",
+  "slug": "maximum-frequency-stack",
+  "difficulty": "Hard",
+  "likes": 553,
+  "dislikes": 11,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "539",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "Stack"
+  ]
+}

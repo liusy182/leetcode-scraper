@@ -1,0 +1,20 @@
+{
+  "id": "687",
+  "title": "Longest Univalue Path",
+  "slug": "longest-univalue-path",
+  "difficulty": "Easy",
+  "likes": 1097,
+  "dislikes": 281,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Binary Tree Maximum Path Sum\", \"titleSlug\": \"binary-tree-maximum-path-sum\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Count Univalue Subtrees\", \"titleSlug\": \"count-univalue-subtrees\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Path Sum III\", \"titleSlug\": \"path-sum-iii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "253",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Recursion"
+  ]
+}

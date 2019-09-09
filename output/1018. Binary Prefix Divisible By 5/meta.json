@@ -1,0 +1,17 @@
+{
+  "id": "1018",
+  "title": "Binary Prefix Divisible By 5",
+  "slug": "binary-prefix-divisible-by-5",
+  "difficulty": "Easy",
+  "likes": 99,
+  "dislikes": 62,
+  "hints": [
+    "If X is the first i digits of the array as a binary number, then 2X + A[i] is the first i+1 digits."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array"
+  ]
+}

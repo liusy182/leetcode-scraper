@@ -1,0 +1,19 @@
+{
+  "id": "935",
+  "title": "Knight Dialer",
+  "slug": "knight-dialer",
+  "difficulty": "Medium",
+  "likes": 287,
+  "dislikes": 96,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "609",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "169",
+  "title": "Majority Element",
+  "slug": "majority-element",
+  "difficulty": "Easy",
+  "likes": 1939,
+  "dislikes": 166,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Majority Element II\", \"titleSlug\": \"majority-element-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Check If a Number Is Majority Element in a Sorted Array\", \"titleSlug\": \"check-if-a-number-is-majority-element-in-a-sorted-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "293",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Divide and Conquer",
+    "Bit Manipulation"
+  ]
+}

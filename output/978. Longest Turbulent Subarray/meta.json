@@ -1,0 +1,21 @@
+{
+  "id": "978",
+  "title": "Longest Turbulent Subarray",
+  "slug": "longest-turbulent-subarray",
+  "difficulty": "Medium",
+  "likes": 125,
+  "dislikes": 49,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Maximum Subarray\", \"titleSlug\": \"maximum-subarray\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "669",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Dynamic Programming",
+    "Sliding Window"
+  ]
+}

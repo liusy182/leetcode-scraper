@@ -1,0 +1,19 @@
+{
+  "id": "661",
+  "title": "Image Smoother",
+  "slug": "image-smoother",
+  "difficulty": "Easy",
+  "likes": 192,
+  "dislikes": 868,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "327",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

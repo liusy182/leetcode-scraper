@@ -1,0 +1,19 @@
+{
+  "id": "374",
+  "title": "Guess Number Higher or Lower",
+  "slug": "guess-number-higher-or-lower",
+  "difficulty": "Easy",
+  "likes": 259,
+  "dislikes": 1287,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"First Bad Version\", \"titleSlug\": \"first-bad-version\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Guess Number Higher or Lower II\", \"titleSlug\": \"guess-number-higher-or-lower-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find K Closest Elements\", \"titleSlug\": \"find-k-closest-elements\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "57",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Binary Search"
+  ]
+}

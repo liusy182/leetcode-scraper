@@ -1,0 +1,19 @@
+{
+  "id": "673",
+  "title": "Number of Longest Increasing Subsequence",
+  "slug": "number-of-longest-increasing-subsequence",
+  "difficulty": "Medium",
+  "likes": 898,
+  "dislikes": 63,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Longest Increasing Subsequence\", \"titleSlug\": \"longest-increasing-subsequence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Longest Continuous Increasing Subsequence\", \"titleSlug\": \"longest-continuous-increasing-subsequence\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "279",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

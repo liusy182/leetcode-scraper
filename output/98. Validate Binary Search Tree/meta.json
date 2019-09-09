@@ -1,0 +1,20 @@
+{
+  "id": "98",
+  "title": "Validate Binary Search Tree",
+  "slug": "validate-binary-search-tree",
+  "difficulty": "Medium",
+  "likes": 2327,
+  "dislikes": 348,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Binary Tree Inorder Traversal\", \"titleSlug\": \"binary-tree-inorder-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find Mode in Binary Search Tree\", \"titleSlug\": \"find-mode-in-binary-search-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "639",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Depth-first Search"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "203",
+  "title": "Remove Linked List Elements",
+  "slug": "remove-linked-list-elements",
+  "difficulty": "Easy",
+  "likes": 944,
+  "dislikes": 59,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Remove Element\", \"titleSlug\": \"remove-element\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Delete Node in a Linked List\", \"titleSlug\": \"delete-node-in-a-linked-list\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Linked List"
+  ]
+}

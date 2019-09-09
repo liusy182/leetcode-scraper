@@ -1,0 +1,24 @@
+{
+  "id": "27",
+  "title": "Remove Element",
+  "slug": "remove-element",
+  "difficulty": "Easy",
+  "likes": 947,
+  "dislikes": 2006,
+  "hints": [
+    "Try two pointers.",
+    "Did you use the property of \"the order of elements can be changed\"?",
+    "What happens when the elements to remove are rare?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Remove Duplicates from Sorted Array\", \"titleSlug\": \"remove-duplicates-from-sorted-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Remove Linked List Elements\", \"titleSlug\": \"remove-linked-list-elements\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Move Zeroes\", \"titleSlug\": \"move-zeroes\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "22",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Two Pointers"
+  ]
+}

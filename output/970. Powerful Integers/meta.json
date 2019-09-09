@@ -1,0 +1,20 @@
+{
+  "id": "970",
+  "title": "Powerful Integers",
+  "slug": "powerful-integers",
+  "difficulty": "Easy",
+  "likes": 79,
+  "dislikes": 177,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "659",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "Math"
+  ]
+}

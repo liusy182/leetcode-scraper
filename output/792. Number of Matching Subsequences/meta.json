@@ -1,0 +1,19 @@
+{
+  "id": "792",
+  "title": "Number of Matching Subsequences",
+  "slug": "number-of-matching-subsequences",
+  "difficulty": "Medium",
+  "likes": 544,
+  "dislikes": 43,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Is Subsequence\", \"titleSlug\": \"is-subsequence\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Shortest Way to Form String\", \"titleSlug\": \"shortest-way-to-form-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "423",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

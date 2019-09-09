@@ -1,0 +1,15 @@
+{
+  "id": "530",
+  "title": "Minimum Absolute Difference in BST",
+  "slug": "minimum-absolute-difference-in-bst",
+  "difficulty": "Easy",
+  "likes": 596,
+  "dislikes": 43,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"K-diff Pairs in an Array\", \"titleSlug\": \"k-diff-pairs-in-an-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Tree"
+  ]
+}

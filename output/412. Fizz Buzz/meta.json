@@ -1,0 +1,17 @@
+{
+  "id": "412",
+  "title": "Fizz Buzz",
+  "slug": "fizz-buzz",
+  "difficulty": "Easy",
+  "likes": 585,
+  "dislikes": 867,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "569",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

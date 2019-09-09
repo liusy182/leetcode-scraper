@@ -1,0 +1,16 @@
+{
+  "id": "706",
+  "title": "Design HashMap",
+  "slug": "design-hashmap",
+  "difficulty": "Easy",
+  "likes": 398,
+  "dislikes": 67,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Design HashSet\", \"titleSlug\": \"design-hashset\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table",
+    "Design"
+  ]
+}

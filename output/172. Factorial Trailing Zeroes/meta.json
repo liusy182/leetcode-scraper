@@ -1,0 +1,15 @@
+{
+  "id": "172",
+  "title": "Factorial Trailing Zeroes",
+  "slug": "factorial-trailing-zeroes",
+  "difficulty": "Easy",
+  "likes": 543,
+  "dislikes": 782,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Number of Digit One\", \"titleSlug\": \"number-of-digit-one\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Preimage Size of Factorial Zeroes Function\", \"titleSlug\": \"preimage-size-of-factorial-zeroes-function\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Math"
+  ]
+}

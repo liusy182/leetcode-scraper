@@ -1,0 +1,19 @@
+{
+  "id": "77",
+  "title": "Combinations",
+  "slug": "combinations",
+  "difficulty": "Medium",
+  "likes": 909,
+  "dislikes": 51,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Combination Sum\", \"titleSlug\": \"combination-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Permutations\", \"titleSlug\": \"permutations\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "710",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Backtracking"
+  ]
+}

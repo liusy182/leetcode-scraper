@@ -1,0 +1,15 @@
+{
+  "id": "290",
+  "title": "Word Pattern",
+  "slug": "word-pattern",
+  "difficulty": "Easy",
+  "likes": 733,
+  "dislikes": 94,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Isomorphic Strings\", \"titleSlug\": \"isomorphic-strings\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Word Pattern II\", \"titleSlug\": \"word-pattern-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table"
+  ]
+}

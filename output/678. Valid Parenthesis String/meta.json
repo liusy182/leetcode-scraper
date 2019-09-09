@@ -1,0 +1,19 @@
+{
+  "id": "678",
+  "title": "Valid Parenthesis String",
+  "slug": "valid-parenthesis-string",
+  "difficulty": "Medium",
+  "likes": 749,
+  "dislikes": 25,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Special Binary String\", \"titleSlug\": \"special-binary-string\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "246",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

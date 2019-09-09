@@ -1,0 +1,21 @@
+{
+  "id": "200",
+  "title": "Number of Islands",
+  "slug": "number-of-islands",
+  "difficulty": "Medium",
+  "likes": 3097,
+  "dislikes": 109,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Surrounded Regions\", \"titleSlug\": \"surrounded-regions\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Walls and Gates\", \"titleSlug\": \"walls-and-gates\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Islands II\", \"titleSlug\": \"number-of-islands-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Number of Connected Components in an Undirected Graph\", \"titleSlug\": \"number-of-connected-components-in-an-undirected-graph\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Distinct Islands\", \"titleSlug\": \"number-of-distinct-islands\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Max Area of Island\", \"titleSlug\": \"max-area-of-island\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "342",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Depth-first Search",
+    "Breadth-first Search",
+    "Union Find"
+  ]
+}

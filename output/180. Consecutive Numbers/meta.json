@@ -1,0 +1,17 @@
+{
+  "id": "180",
+  "title": "Consecutive Numbers",
+  "slug": "consecutive-numbers",
+  "difficulty": "Medium",
+  "likes": 280,
+  "dislikes": 67,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "216",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

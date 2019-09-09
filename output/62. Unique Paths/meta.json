@@ -1,0 +1,16 @@
+{
+  "id": "62",
+  "title": "Unique Paths",
+  "slug": "unique-paths",
+  "difficulty": "Medium",
+  "likes": 1854,
+  "dislikes": 128,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Unique Paths II\", \"titleSlug\": \"unique-paths-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Path Sum\", \"titleSlug\": \"minimum-path-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Dungeon Game\", \"titleSlug\": \"dungeon-game\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Dynamic Programming"
+  ]
+}

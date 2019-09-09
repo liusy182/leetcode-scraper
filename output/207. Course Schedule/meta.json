@@ -1,0 +1,22 @@
+{
+  "id": "207",
+  "title": "Course Schedule",
+  "slug": "course-schedule",
+  "difficulty": "Medium",
+  "likes": 2153,
+  "dislikes": 102,
+  "hints": [
+    "This problem is equivalent to finding if a cycle exists in a directed graph. If a cycle exists, no topological ordering exists and therefore it will be impossible to take all courses.",
+    "<a href=\"https://class.coursera.org/algo-003/lecture/52\" target=\"_blank\">Topological Sort via DFS</a> - A great video tutorial (21 minutes) on Coursera explaining the basic concepts of Topological Sort.",
+    "Topological sort could also be done via <a href=\"http://en.wikipedia.org/wiki/Topological_sorting#Algorithms\" target=\"_blank\">BFS</a>."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Course Schedule II\", \"titleSlug\": \"course-schedule-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Graph Valid Tree\", \"titleSlug\": \"graph-valid-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Height Trees\", \"titleSlug\": \"minimum-height-trees\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Course Schedule III\", \"titleSlug\": \"course-schedule-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Depth-first Search",
+    "Breadth-first Search",
+    "Graph",
+    "Topological Sort"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "488",
+  "title": "Zuma Game",
+  "slug": "zuma-game",
+  "difficulty": "Hard",
+  "likes": 148,
+  "dislikes": 141,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Depth-first Search"
+  ]
+}

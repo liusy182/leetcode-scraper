@@ -1,0 +1,15 @@
+{
+  "id": "485",
+  "title": "Max Consecutive Ones",
+  "slug": "max-consecutive-ones",
+  "difficulty": "Easy",
+  "likes": 404,
+  "dislikes": 327,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Max Consecutive Ones II\", \"titleSlug\": \"max-consecutive-ones-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Max Consecutive Ones III\", \"titleSlug\": \"max-consecutive-ones-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Array"
+  ]
+}

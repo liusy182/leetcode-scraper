@@ -1,0 +1,19 @@
+{
+  "id": "1125",
+  "title": "Smallest Sufficient Team",
+  "slug": "smallest-sufficient-team",
+  "difficulty": "Hard",
+  "likes": 154,
+  "dislikes": 6,
+  "hints": [
+    "Do a bitmask DP.",
+    "For each person, for each set of skills, we can update our understanding of a minimum set of people needed to perform this set of skills."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming",
+    "Bit Manipulation"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "289",
+  "title": "Game of Life",
+  "slug": "game-of-life",
+  "difficulty": "Medium",
+  "likes": 1094,
+  "dislikes": 201,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Set Matrix Zeroes\", \"titleSlug\": \"set-matrix-zeroes\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "729",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

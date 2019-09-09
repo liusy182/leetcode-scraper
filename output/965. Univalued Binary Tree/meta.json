@@ -1,0 +1,19 @@
+{
+  "id": "965",
+  "title": "Univalued Binary Tree",
+  "slug": "univalued-binary-tree",
+  "difficulty": "Easy",
+  "likes": 240,
+  "dislikes": 37,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "652",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "315",
+  "title": "Count of Smaller Numbers After Self",
+  "slug": "count-of-smaller-numbers-after-self",
+  "difficulty": "Hard",
+  "likes": 1352,
+  "dislikes": 62,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Count of Range Sum\", \"titleSlug\": \"count-of-range-sum\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Queue Reconstruction by Height\", \"titleSlug\": \"queue-reconstruction-by-height\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Reverse Pairs\", \"titleSlug\": \"reverse-pairs\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Binary Search",
+    "Divide and Conquer",
+    "Sort",
+    "Binary Indexed Tree",
+    "Segment Tree"
+  ]
+}

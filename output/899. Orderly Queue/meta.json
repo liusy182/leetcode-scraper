@@ -1,0 +1,20 @@
+{
+  "id": "899",
+  "title": "Orderly Queue",
+  "slug": "orderly-queue",
+  "difficulty": "Hard",
+  "likes": 121,
+  "dislikes": 148,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "544",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math",
+    "String"
+  ]
+}

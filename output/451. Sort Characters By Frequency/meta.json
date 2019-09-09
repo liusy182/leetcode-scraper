@@ -1,0 +1,16 @@
+{
+  "id": "451",
+  "title": "Sort Characters By Frequency",
+  "slug": "sort-characters-by-frequency",
+  "difficulty": "Medium",
+  "likes": 821,
+  "dislikes": 74,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Top K Frequent Elements\", \"titleSlug\": \"top-k-frequent-elements\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"First Unique Character in a String\", \"titleSlug\": \"first-unique-character-in-a-string\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table",
+    "Heap"
+  ]
+}

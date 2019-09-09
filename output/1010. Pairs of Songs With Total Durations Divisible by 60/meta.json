@@ -1,0 +1,18 @@
+{
+  "id": "1010",
+  "title": "Pairs of Songs With Total Durations Divisible by 60",
+  "slug": "pairs-of-songs-with-total-durations-divisible-by-60",
+  "difficulty": "Easy",
+  "likes": 234,
+  "dislikes": 18,
+  "hints": [
+    "We only need to consider each song length modulo 60.",
+    "We can count the number of songs with (length % 60) equal to r, and store that in an array of size 60."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array"
+  ]
+}

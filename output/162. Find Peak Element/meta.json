@@ -1,0 +1,20 @@
+{
+  "id": "162",
+  "title": "Find Peak Element",
+  "slug": "find-peak-element",
+  "difficulty": "Medium",
+  "likes": 993,
+  "dislikes": 1491,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Peak Index in a Mountain Array\", \"titleSlug\": \"peak-index-in-a-mountain-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "149",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Binary Search"
+  ]
+}

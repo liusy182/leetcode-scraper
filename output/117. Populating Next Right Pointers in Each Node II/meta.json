@@ -1,0 +1,16 @@
+{
+  "id": "117",
+  "title": "Populating Next Right Pointers in Each Node II",
+  "slug": "populating-next-right-pointers-in-each-node-ii",
+  "difficulty": "Medium",
+  "likes": 1014,
+  "dislikes": 147,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Populating Next Right Pointers in Each Node\", \"titleSlug\": \"populating-next-right-pointers-in-each-node\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Tree",
+    "Depth-first Search"
+  ]
+}

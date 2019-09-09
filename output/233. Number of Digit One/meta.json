@@ -1,0 +1,21 @@
+{
+  "id": "233",
+  "title": "Number of Digit One",
+  "slug": "number-of-digit-one",
+  "difficulty": "Hard",
+  "likes": 191,
+  "dislikes": 489,
+  "hints": [
+    "Beware of overflow."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Factorial Trailing Zeroes\", \"titleSlug\": \"factorial-trailing-zeroes\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Digit Count in Range\", \"titleSlug\": \"digit-count-in-range\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "183",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

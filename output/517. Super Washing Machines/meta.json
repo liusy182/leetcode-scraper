@@ -1,0 +1,20 @@
+{
+  "id": "517",
+  "title": "Super Washing Machines",
+  "slug": "super-washing-machines",
+  "difficulty": "Hard",
+  "likes": 216,
+  "dislikes": 117,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "734",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math",
+    "Dynamic Programming"
+  ]
+}

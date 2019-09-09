@@ -1,0 +1,15 @@
+{
+  "id": "460",
+  "title": "LFU Cache",
+  "slug": "lfu-cache",
+  "difficulty": "Hard",
+  "likes": 806,
+  "dislikes": 86,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"LRU Cache\", \"titleSlug\": \"lru-cache\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Design In-Memory File System\", \"titleSlug\": \"design-in-memory-file-system\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Design"
+  ]
+}

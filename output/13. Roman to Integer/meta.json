@@ -1,0 +1,19 @@
+{
+  "id": "13",
+  "title": "Roman to Integer",
+  "slug": "roman-to-integer",
+  "difficulty": "Easy",
+  "likes": 1429,
+  "dislikes": 2847,
+  "hints": [
+    "I - 1</br>\r\nV - 5</br>\r\nX - 10</br>\r\nL - 50</br>\r\nC - 100</br>\r\nD - 500</br>\r\nM - 1000</br>",
+    "<b>Rules:</b></br>\r\n* If I comes before V or X, subtract 1 eg: IV = 4 and IX = 9</br>\r\n* If X comes before L or C, subtract 10 eg: XL = 40 and XC = 90</br>\r\n* If C comes before D or M, subtract 100 eg: CD = 400 and CM = 900</br>"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Integer to Roman\", \"titleSlug\": \"integer-to-roman\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Math",
+    "String"
+  ]
+}

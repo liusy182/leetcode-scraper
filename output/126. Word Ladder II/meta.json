@@ -1,0 +1,18 @@
+{
+  "id": "126",
+  "title": "Word Ladder II",
+  "slug": "word-ladder-ii",
+  "difficulty": "Hard",
+  "likes": 1145,
+  "dislikes": 201,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Word Ladder\", \"titleSlug\": \"word-ladder\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "String",
+    "Backtracking",
+    "Breadth-first Search"
+  ]
+}

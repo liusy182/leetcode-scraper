@@ -1,0 +1,20 @@
+{
+  "id": "898",
+  "title": "Bitwise ORs of Subarrays",
+  "slug": "bitwise-ors-of-subarrays",
+  "difficulty": "Medium",
+  "likes": 292,
+  "dislikes": 63,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "545",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming",
+    "Bit Manipulation"
+  ]
+}

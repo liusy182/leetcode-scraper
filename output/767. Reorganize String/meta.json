@@ -1,0 +1,24 @@
+{
+  "id": "767",
+  "title": "Reorganize String",
+  "slug": "reorganize-string",
+  "difficulty": "Medium",
+  "likes": 679,
+  "dislikes": 36,
+  "hints": [
+    "Alternate placing the most common letters."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Rearrange String k Distance Apart\", \"titleSlug\": \"rearrange-string-k-distance-apart\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Task Scheduler\", \"titleSlug\": \"task-scheduler\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "383",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String",
+    "Heap",
+    "Greedy",
+    "Sort"
+  ]
+}

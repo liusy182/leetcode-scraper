@@ -1,0 +1,16 @@
+{
+  "id": "108",
+  "title": "Convert Sorted Array to Binary Search Tree",
+  "slug": "convert-sorted-array-to-binary-search-tree",
+  "difficulty": "Easy",
+  "likes": 1385,
+  "dislikes": 146,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Convert Sorted List to Binary Search Tree\", \"titleSlug\": \"convert-sorted-list-to-binary-search-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Tree",
+    "Depth-first Search"
+  ]
+}

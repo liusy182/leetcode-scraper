@@ -1,0 +1,19 @@
+{
+  "id": "901",
+  "title": "Online Stock Span",
+  "slug": "online-stock-span",
+  "difficulty": "Medium",
+  "likes": 255,
+  "dislikes": 54,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "550",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Stack"
+  ]
+}

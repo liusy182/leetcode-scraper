@@ -1,0 +1,20 @@
+{
+  "id": "971",
+  "title": "Flip Binary Tree To Match Preorder Traversal",
+  "slug": "flip-binary-tree-to-match-preorder-traversal",
+  "difficulty": "Medium",
+  "likes": 142,
+  "dislikes": 68,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "658",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Depth-first Search"
+  ]
+}

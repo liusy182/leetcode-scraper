@@ -1,0 +1,17 @@
+{
+  "id": "355",
+  "title": "Design Twitter",
+  "slug": "design-twitter",
+  "difficulty": "Medium",
+  "likes": 559,
+  "dislikes": 144,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table",
+    "Heap",
+    "Design"
+  ]
+}

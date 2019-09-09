@@ -1,0 +1,20 @@
+{
+  "id": "638",
+  "title": "Shopping Offers",
+  "slug": "shopping-offers",
+  "difficulty": "Medium",
+  "likes": 397,
+  "dislikes": 359,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "199",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming",
+    "Depth-first Search"
+  ]
+}

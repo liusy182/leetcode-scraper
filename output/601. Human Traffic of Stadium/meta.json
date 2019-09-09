@@ -1,0 +1,17 @@
+{
+  "id": "601",
+  "title": "Human Traffic of Stadium",
+  "slug": "human-traffic-of-stadium",
+  "difficulty": "Hard",
+  "likes": 105,
+  "dislikes": 216,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "203",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

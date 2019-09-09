@@ -1,0 +1,19 @@
+{
+  "id": "937",
+  "title": "Reorder Data in Log Files",
+  "slug": "reorder-data-in-log-files",
+  "difficulty": "Easy",
+  "likes": 228,
+  "dislikes": 673,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "610",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "438",
+  "title": "Find All Anagrams in a String",
+  "slug": "find-all-anagrams-in-a-string",
+  "difficulty": "Medium",
+  "likes": 1808,
+  "dislikes": 140,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Valid Anagram\", \"titleSlug\": \"valid-anagram\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Permutation in String\", \"titleSlug\": \"permutation-in-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table"
+  ]
+}

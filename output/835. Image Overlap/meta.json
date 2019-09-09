@@ -1,0 +1,19 @@
+{
+  "id": "835",
+  "title": "Image Overlap",
+  "slug": "image-overlap",
+  "difficulty": "Medium",
+  "likes": 212,
+  "dislikes": 293,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "464",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

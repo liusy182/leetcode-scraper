@@ -1,0 +1,19 @@
+{
+  "id": "639",
+  "title": "Decode Ways II",
+  "slug": "decode-ways-ii",
+  "difficulty": "Hard",
+  "likes": 293,
+  "dislikes": 392,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Decode Ways\", \"titleSlug\": \"decode-ways\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "198",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

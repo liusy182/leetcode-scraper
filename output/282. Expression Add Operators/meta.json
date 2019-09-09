@@ -1,0 +1,25 @@
+{
+  "id": "282",
+  "title": "Expression Add Operators",
+  "slug": "expression-add-operators",
+  "difficulty": "Hard",
+  "likes": 796,
+  "dislikes": 112,
+  "hints": [
+    "Note that a number can contain multiple digits.",
+    "Since the question asks us to find <b>all</b> of the valid expressions, we need a way to iterate over all of them. (<b>Hint:</b> Recursion!)",
+    "We can keep track of the expression string and evaluate it at the very end. But that would take a lot of time. Can we keep track of the expression's value as well so as to avoid the evaluation at the very end of recursion?",
+    "Think carefully about the multiply operator. It has a higher precedence than the addition and subtraction operators. \r\n\r\n<br> 1 + 2 = 3  <br>\r\n1 + 2 - 4 --> 3 - 4 --> -1 <br>\r\n1 + 2 - 4 * 12 --> -1 * 12 --> -12 (WRONG!) <br>\r\n1 + 2 - 4 * 12 --> -1 - (-4) + (-4 * 12) --> 3 + (-48) --> -45 (CORRECT!)",
+    "We simply need to keep track of the last operand in our expression and reverse it's effect on the expression's value while considering the multiply operator."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Evaluate Reverse Polish Notation\", \"titleSlug\": \"evaluate-reverse-polish-notation\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Basic Calculator\", \"titleSlug\": \"basic-calculator\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Basic Calculator II\", \"titleSlug\": \"basic-calculator-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Different Ways to Add Parentheses\", \"titleSlug\": \"different-ways-to-add-parentheses\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Target Sum\", \"titleSlug\": \"target-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "548",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Divide and Conquer"
+  ]
+}

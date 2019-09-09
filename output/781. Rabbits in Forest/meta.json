@@ -1,0 +1,20 @@
+{
+  "id": "781",
+  "title": "Rabbits in Forest",
+  "slug": "rabbits-in-forest",
+  "difficulty": "Medium",
+  "likes": 173,
+  "dislikes": 225,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "414",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "Math"
+  ]
+}

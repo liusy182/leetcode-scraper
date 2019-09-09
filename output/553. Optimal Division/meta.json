@@ -1,0 +1,20 @@
+{
+  "id": "553",
+  "title": "Optimal Division",
+  "slug": "optimal-division",
+  "difficulty": "Medium",
+  "likes": 131,
+  "dislikes": 992,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "108",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math",
+    "String"
+  ]
+}

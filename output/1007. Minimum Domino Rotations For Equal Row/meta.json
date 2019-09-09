@@ -1,0 +1,20 @@
+{
+  "id": "1007",
+  "title": "Minimum Domino Rotations For Equal Row",
+  "slug": "minimum-domino-rotations-for-equal-row",
+  "difficulty": "Medium",
+  "likes": 99,
+  "dislikes": 78,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "731",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Greedy"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "837",
+  "title": "New 21 Game",
+  "slug": "new-21-game",
+  "difficulty": "Medium",
+  "likes": 368,
+  "dislikes": 187,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "469",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

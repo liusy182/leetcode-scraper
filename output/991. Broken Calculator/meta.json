@@ -1,0 +1,20 @@
+{
+  "id": "991",
+  "title": "Broken Calculator",
+  "slug": "broken-calculator",
+  "difficulty": "Medium",
+  "likes": 181,
+  "dislikes": 54,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"2 Keys Keyboard\", \"titleSlug\": \"2-keys-keyboard\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "690",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math",
+    "Greedy"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "936",
+  "title": "Stamping The Sequence",
+  "slug": "stamping-the-sequence",
+  "difficulty": "Hard",
+  "likes": 106,
+  "dislikes": 30,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "608",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String",
+    "Greedy"
+  ]
+}

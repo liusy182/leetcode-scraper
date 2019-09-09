@@ -1,0 +1,19 @@
+{
+  "id": "14",
+  "title": "Longest Common Prefix",
+  "slug": "longest-common-prefix",
+  "difficulty": "Easy",
+  "likes": 1591,
+  "dislikes": 1453,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "46",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

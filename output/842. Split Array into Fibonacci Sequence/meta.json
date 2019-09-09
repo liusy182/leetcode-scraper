@@ -1,0 +1,21 @@
+{
+  "id": "842",
+  "title": "Split Array into Fibonacci Sequence",
+  "slug": "split-array-into-fibonacci-sequence",
+  "difficulty": "Medium",
+  "likes": 296,
+  "dislikes": 101,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Additive Number\", \"titleSlug\": \"additive-number\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Fibonacci Number\", \"titleSlug\": \"fibonacci-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "475",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String",
+    "Backtracking",
+    "Greedy"
+  ]
+}

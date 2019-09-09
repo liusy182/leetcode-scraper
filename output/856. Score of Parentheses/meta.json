@@ -1,0 +1,20 @@
+{
+  "id": "856",
+  "title": "Score of Parentheses",
+  "slug": "score-of-parentheses",
+  "difficulty": "Medium",
+  "likes": 647,
+  "dislikes": 25,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "495",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String",
+    "Stack"
+  ]
+}

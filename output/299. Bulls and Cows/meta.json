@@ -1,0 +1,15 @@
+{
+  "id": "299",
+  "title": "Bulls and Cows",
+  "slug": "bulls-and-cows",
+  "difficulty": "Easy",
+  "likes": 387,
+  "dislikes": 405,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table"
+  ]
+}

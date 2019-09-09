@@ -1,0 +1,19 @@
+{
+  "id": "909",
+  "title": "Snakes and Ladders",
+  "slug": "snakes-and-ladders",
+  "difficulty": "Medium",
+  "likes": 166,
+  "dislikes": 465,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "565",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Breadth-first Search"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "8",
+  "title": "String to Integer (atoi)",
+  "slug": "string-to-integer-atoi",
+  "difficulty": "Medium",
+  "likes": 1075,
+  "dislikes": 6708,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Reverse Integer\", \"titleSlug\": \"reverse-integer\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Valid Number\", \"titleSlug\": \"valid-number\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Math",
+    "String"
+  ]
+}

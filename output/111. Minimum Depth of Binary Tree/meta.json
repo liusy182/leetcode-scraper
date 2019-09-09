@@ -1,0 +1,21 @@
+{
+  "id": "111",
+  "title": "Minimum Depth of Binary Tree",
+  "slug": "minimum-depth-of-binary-tree",
+  "difficulty": "Easy",
+  "likes": 842,
+  "dislikes": 463,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Binary Tree Level Order Traversal\", \"titleSlug\": \"binary-tree-level-order-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Maximum Depth of Binary Tree\", \"titleSlug\": \"maximum-depth-of-binary-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "602",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Depth-first Search",
+    "Breadth-first Search"
+  ]
+}

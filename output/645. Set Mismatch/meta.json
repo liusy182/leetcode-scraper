@@ -1,0 +1,20 @@
+{
+  "id": "645",
+  "title": "Set Mismatch",
+  "slug": "set-mismatch",
+  "difficulty": "Easy",
+  "likes": 457,
+  "dislikes": 251,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Find the Duplicate Number\", \"titleSlug\": \"find-the-duplicate-number\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "224",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "Math"
+  ]
+}

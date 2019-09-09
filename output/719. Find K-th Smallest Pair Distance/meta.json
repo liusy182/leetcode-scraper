@@ -1,0 +1,23 @@
+{
+  "id": "719",
+  "title": "Find K-th Smallest Pair Distance",
+  "slug": "find-k-th-smallest-pair-distance",
+  "difficulty": "Hard",
+  "likes": 611,
+  "dislikes": 21,
+  "hints": [
+    "Binary search for the answer.  How can you check how many pairs have distance <= X?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Find K Pairs with Smallest Sums\", \"titleSlug\": \"find-k-pairs-with-smallest-sums\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Kth Smallest Element in a Sorted Matrix\", \"titleSlug\": \"kth-smallest-element-in-a-sorted-matrix\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find K Closest Elements\", \"titleSlug\": \"find-k-closest-elements\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Kth Smallest Number in Multiplication Table\", \"titleSlug\": \"kth-smallest-number-in-multiplication-table\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"K-th Smallest Prime Fraction\", \"titleSlug\": \"k-th-smallest-prime-fraction\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "270",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Binary Search",
+    "Heap"
+  ]
+}

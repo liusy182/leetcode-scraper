@@ -1,0 +1,19 @@
+{
+  "id": "916",
+  "title": "Word Subsets",
+  "slug": "word-subsets",
+  "difficulty": "Medium",
+  "likes": 192,
+  "dislikes": 53,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "571",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "39",
+  "title": "Combination Sum",
+  "slug": "combination-sum",
+  "difficulty": "Medium",
+  "likes": 2384,
+  "dislikes": 74,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Letter Combinations of a Phone Number\", \"titleSlug\": \"letter-combinations-of-a-phone-number\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Combination Sum II\", \"titleSlug\": \"combination-sum-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Combinations\", \"titleSlug\": \"combinations\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Combination Sum III\", \"titleSlug\": \"combination-sum-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Factor Combinations\", \"titleSlug\": \"factor-combinations\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Combination Sum IV\", \"titleSlug\": \"combination-sum-iv\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Backtracking"
+  ]
+}

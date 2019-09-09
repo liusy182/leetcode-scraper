@@ -1,0 +1,20 @@
+{
+  "id": "149",
+  "title": "Max Points on a Line",
+  "slug": "max-points-on-a-line",
+  "difficulty": "Hard",
+  "likes": 554,
+  "dislikes": 1462,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Line Reflection\", \"titleSlug\": \"line-reflection\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "678",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "Math"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "934",
+  "title": "Shortest Bridge",
+  "slug": "shortest-bridge",
+  "difficulty": "Medium",
+  "likes": 344,
+  "dislikes": 26,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "607",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Depth-first Search",
+    "Breadth-first Search"
+  ]
+}

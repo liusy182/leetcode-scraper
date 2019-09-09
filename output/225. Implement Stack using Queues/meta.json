@@ -1,0 +1,20 @@
+{
+  "id": "225",
+  "title": "Implement Stack using Queues",
+  "slug": "implement-stack-using-queues",
+  "difficulty": "Easy",
+  "likes": 382,
+  "dislikes": 461,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Implement Queue using Stacks\", \"titleSlug\": \"implement-queue-using-stacks\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "41",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Stack",
+    "Design"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "337",
+  "title": "House Robber III",
+  "slug": "house-robber-iii",
+  "difficulty": "Medium",
+  "likes": 1740,
+  "dislikes": 35,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"House Robber\", \"titleSlug\": \"house-robber\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"House Robber II\", \"titleSlug\": \"house-robber-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Tree",
+    "Depth-first Search"
+  ]
+}

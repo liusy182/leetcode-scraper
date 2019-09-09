@@ -1,0 +1,23 @@
+{
+  "id": "1157",
+  "title": "Online Majority Element In Subarray",
+  "slug": "online-majority-element-in-subarray",
+  "difficulty": "Hard",
+  "likes": 86,
+  "dislikes": 14,
+  "hints": [
+    "What's special about a majority element ?",
+    "A majority element appears more than half the length of the array number of times.",
+    "If we tried a random index of the array, what's the probability that this index has a majority element ?",
+    "It's more than 50% if that array has a majority element.",
+    "Try a random index for a proper number of times so that the probability of not finding the answer tends to zero."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Binary Search",
+    "Segment Tree"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "467",
+  "title": "Unique Substrings in Wraparound String",
+  "slug": "unique-substrings-in-wraparound-string",
+  "difficulty": "Medium",
+  "likes": 409,
+  "dislikes": 67,
+  "hints": [
+    "One possible solution might be to consider allocating an array size of 26 for each character in the alphabet. (Credits to @r2ysxu)"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

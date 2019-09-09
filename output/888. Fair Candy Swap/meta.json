@@ -1,0 +1,19 @@
+{
+  "id": "888",
+  "title": "Fair Candy Swap",
+  "slug": "fair-candy-swap",
+  "difficulty": "Easy",
+  "likes": 345,
+  "dislikes": 88,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "532",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

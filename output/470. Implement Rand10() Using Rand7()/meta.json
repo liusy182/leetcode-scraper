@@ -1,0 +1,20 @@
+{
+  "id": "470",
+  "title": "Implement Rand10() Using Rand7()",
+  "slug": "implement-rand10-using-rand7",
+  "difficulty": "Medium",
+  "likes": 234,
+  "dislikes": 83,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "510",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Random",
+    "Rejection Sampling"
+  ]
+}

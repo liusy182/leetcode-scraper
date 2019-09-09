@@ -1,0 +1,16 @@
+{
+  "id": "529",
+  "title": "Minesweeper",
+  "slug": "minesweeper",
+  "difficulty": "Medium",
+  "likes": 359,
+  "dislikes": 357,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Depth-first Search",
+    "Breadth-first Search"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "1144",
+  "title": "Decrease Elements To Make Array Zigzag",
+  "slug": "decrease-elements-to-make-array-zigzag",
+  "difficulty": "Medium",
+  "likes": 42,
+  "dislikes": 61,
+  "hints": [
+    "Do each case (even indexed is greater, odd indexed is greater) separately. In say the even case, you should decrease each even-indexed element until it is lower than its immediate neighbors."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array"
+  ]
+}

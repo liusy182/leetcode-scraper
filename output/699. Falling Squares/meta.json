@@ -1,0 +1,22 @@
+{
+  "id": "699",
+  "title": "Falling Squares",
+  "slug": "falling-squares",
+  "difficulty": "Hard",
+  "likes": 182,
+  "dislikes": 35,
+  "hints": [
+    "If positions = [[10, 20], [20, 30]], this is the same as [[1, 2], [2, 3]].  Currently, the values of positions are very large.  Can you generalize this approach so as to make the values in positions manageable?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"The Skyline Problem\", \"titleSlug\": \"the-skyline-problem\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "264",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Segment Tree",
+    "Ordered Map"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "669",
+  "title": "Trim a Binary Search Tree",
+  "slug": "trim-a-binary-search-tree",
+  "difficulty": "Easy",
+  "likes": 1252,
+  "dislikes": 137,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "242",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "985",
+  "title": "Sum of Even Numbers After Queries",
+  "slug": "sum-of-even-numbers-after-queries",
+  "difficulty": "Easy",
+  "likes": 189,
+  "dislikes": 88,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "683",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "674",
+  "title": "Longest Continuous Increasing Subsequence",
+  "slug": "longest-continuous-increasing-subsequence",
+  "difficulty": "Easy",
+  "likes": 492,
+  "dislikes": 101,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Number of Longest Increasing Subsequence\", \"titleSlug\": \"number-of-longest-increasing-subsequence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Window Subsequence\", \"titleSlug\": \"minimum-window-subsequence\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "278",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

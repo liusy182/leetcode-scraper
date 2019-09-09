@@ -1,0 +1,21 @@
+{
+  "id": "975",
+  "title": "Odd Even Jump",
+  "slug": "odd-even-jump",
+  "difficulty": "Hard",
+  "likes": 407,
+  "dislikes": 119,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "664",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming",
+    "Stack",
+    "Ordered Map"
+  ]
+}

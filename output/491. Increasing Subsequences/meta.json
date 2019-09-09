@@ -1,0 +1,15 @@
+{
+  "id": "491",
+  "title": "Increasing Subsequences",
+  "slug": "increasing-subsequences",
+  "difficulty": "Medium",
+  "likes": 469,
+  "dislikes": 87,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Maximum Length of Pair Chain\", \"titleSlug\": \"maximum-length-of-pair-chain\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Depth-first Search"
+  ]
+}

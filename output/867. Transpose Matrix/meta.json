@@ -1,0 +1,19 @@
+{
+  "id": "867",
+  "title": "Transpose Matrix",
+  "slug": "transpose-matrix",
+  "difficulty": "Easy",
+  "likes": 235,
+  "dislikes": 242,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "502",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

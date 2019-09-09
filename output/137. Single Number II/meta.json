@@ -1,0 +1,19 @@
+{
+  "id": "137",
+  "title": "Single Number II",
+  "slug": "single-number-ii",
+  "difficulty": "Medium",
+  "likes": 947,
+  "dislikes": 268,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Single Number\", \"titleSlug\": \"single-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Single Number III\", \"titleSlug\": \"single-number-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "758",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Bit Manipulation"
+  ]
+}

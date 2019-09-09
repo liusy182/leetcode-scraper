@@ -1,0 +1,15 @@
+{
+  "id": "398",
+  "title": "Random Pick Index",
+  "slug": "random-pick-index",
+  "difficulty": "Medium",
+  "likes": 290,
+  "dislikes": 488,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Linked List Random Node\", \"titleSlug\": \"linked-list-random-node\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Random Pick with Blacklist\", \"titleSlug\": \"random-pick-with-blacklist\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Random Pick with Weight\", \"titleSlug\": \"random-pick-with-weight\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Reservoir Sampling"
+  ]
+}

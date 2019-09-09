@@ -1,0 +1,21 @@
+{
+  "id": "717",
+  "title": "1-bit and 2-bit Characters",
+  "slug": "1-bit-and-2-bit-characters",
+  "difficulty": "Easy",
+  "likes": 283,
+  "dislikes": 726,
+  "hints": [
+    "Keep track of where the next character starts.  At the end, you want to know if you started on the last bit."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Gray Code\", \"titleSlug\": \"gray-code\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "271",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

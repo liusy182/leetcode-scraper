@@ -1,0 +1,18 @@
+{
+  "id": "1019",
+  "title": "Next Greater Node In Linked List",
+  "slug": "next-greater-node-in-linked-list",
+  "difficulty": "Medium",
+  "likes": 300,
+  "dislikes": 22,
+  "hints": [
+    "We can use a stack that stores nodes in monotone decreasing order of value.  When we see a node_j with a larger value, every node_i in the stack has next_larger(node_i) = node_j ."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Linked List",
+    "Stack"
+  ]
+}

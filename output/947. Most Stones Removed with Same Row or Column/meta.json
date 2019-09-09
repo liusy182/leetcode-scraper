@@ -1,0 +1,20 @@
+{
+  "id": "947",
+  "title": "Most Stones Removed with Same Row or Column",
+  "slug": "most-stones-removed-with-same-row-or-column",
+  "difficulty": "Medium",
+  "likes": 550,
+  "dislikes": 158,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "625",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Depth-first Search",
+    "Union Find"
+  ]
+}

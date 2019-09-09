@@ -1,0 +1,20 @@
+{
+  "id": "22",
+  "title": "Generate Parentheses",
+  "slug": "generate-parentheses",
+  "difficulty": "Medium",
+  "likes": 3223,
+  "dislikes": 195,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Letter Combinations of a Phone Number\", \"titleSlug\": \"letter-combinations-of-a-phone-number\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Valid Parentheses\", \"titleSlug\": \"valid-parentheses\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "349",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String",
+    "Backtracking"
+  ]
+}

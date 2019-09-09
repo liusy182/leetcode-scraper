@@ -1,0 +1,22 @@
+{
+  "id": "730",
+  "title": "Count Different Palindromic Subsequences",
+  "slug": "count-different-palindromic-subsequences",
+  "difficulty": "Hard",
+  "likes": 338,
+  "dislikes": 36,
+  "hints": [
+    "Let dp(i, j) be the answer for the string T = S[i:j+1] including the empty sequence. The answer is the number of unique characters in T, plus palindromes of the form \"a_a\", \"b_b\", \"c_c\", and \"d_d\", where \"_\" represents zero or more characters."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Longest Palindromic Subsequence\", \"titleSlug\": \"longest-palindromic-subsequence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "298",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String",
+    "Dynamic Programming"
+  ]
+}

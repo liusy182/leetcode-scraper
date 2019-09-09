@@ -1,0 +1,24 @@
+{
+  "id": "576",
+  "title": "Out of Boundary Paths",
+  "slug": "out-of-boundary-paths",
+  "difficulty": "Medium",
+  "likes": 327,
+  "dislikes": 112,
+  "hints": [
+    "WIll traversing every path is fesaible? There are many possible paths for a small matrix. Try to optimize it.",
+    "Can we use some space to store the number of paths and updating them after every move?",
+    "One obvious thing: ball will go out of boundary only by crossing it. Also, there is only one possible way ball can go out of boundary from boundary cell except corner cells. From corner cell ball can go out in two different ways. Can you use this thing to solve the problem?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Knight Probability in Chessboard\", \"titleSlug\": \"knight-probability-in-chessboard\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "126",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming",
+    "Depth-first Search"
+  ]
+}

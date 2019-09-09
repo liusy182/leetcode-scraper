@@ -1,0 +1,26 @@
+{
+  "id": "375",
+  "title": "Guess Number Higher or Lower II",
+  "slug": "guess-number-higher-or-lower-ii",
+  "difficulty": "Medium",
+  "likes": 577,
+  "dislikes": 817,
+  "hints": [
+    "The best strategy to play the game is to minimize the maximum loss you could possibly face. Another strategy is to minimize the expected loss. Here, we are interested in the <b>first</b> scenario.",
+    "Take a small example (n = 3). What do you end up paying in the worst case?",
+    "Check out <a href=\"https://en.wikipedia.org/wiki/Minimax\">this article</a> if you're still stuck.",
+    "The purely recursive implementation of minimax would be worthless for even a small n. You MUST use dynamic programming.",
+    "As a follow-up, how would you modify your code to solve the problem of minimizing the expected loss, instead of the worst-case loss?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Flip Game II\", \"titleSlug\": \"flip-game-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Guess Number Higher or Lower\", \"titleSlug\": \"guess-number-higher-or-lower\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Can I Win\", \"titleSlug\": \"can-i-win\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find K Closest Elements\", \"titleSlug\": \"find-k-closest-elements\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "66",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming",
+    "Minimax"
+  ]
+}

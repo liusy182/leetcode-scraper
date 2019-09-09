@@ -1,0 +1,20 @@
+{
+  "id": "979",
+  "title": "Distribute Coins in Binary Tree",
+  "slug": "distribute-coins-in-binary-tree",
+  "difficulty": "Medium",
+  "likes": 703,
+  "dislikes": 23,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Sum of Distances in Tree\", \"titleSlug\": \"sum-of-distances-in-tree\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Binary Tree Cameras\", \"titleSlug\": \"binary-tree-cameras\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "668",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Depth-first Search"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "474",
+  "title": "Ones and Zeroes",
+  "slug": "ones-and-zeroes",
+  "difficulty": "Medium",
+  "likes": 629,
+  "dislikes": 154,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Non-negative Integers without Consecutive Ones\", \"titleSlug\": \"non-negative-integers-without-consecutive-ones\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "112",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

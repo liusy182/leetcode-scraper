@@ -1,0 +1,17 @@
+{
+  "id": "620",
+  "title": "Not Boring Movies",
+  "slug": "not-boring-movies",
+  "difficulty": "Easy",
+  "likes": 193,
+  "dislikes": 229,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "204",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

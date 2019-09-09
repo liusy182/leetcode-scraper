@@ -1,0 +1,22 @@
+{
+  "id": "292",
+  "title": "Nim Game",
+  "slug": "nim-game",
+  "difficulty": "Easy",
+  "likes": 407,
+  "dislikes": 1219,
+  "hints": [
+    "If there are 5 stones in the heap, could you figure out a way to remove the stones such that you will always be the winner?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Flip Game II\", \"titleSlug\": \"flip-game-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "31",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Brainteaser",
+    "Minimax"
+  ]
+}

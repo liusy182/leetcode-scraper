@@ -1,0 +1,21 @@
+{
+  "id": "712",
+  "title": "Minimum ASCII Delete Sum for Two Strings",
+  "slug": "minimum-ascii-delete-sum-for-two-strings",
+  "difficulty": "Medium",
+  "likes": 626,
+  "dislikes": 38,
+  "hints": [
+    "Let dp(i, j) be the answer for inputs s1[i:] and s2[j:]."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Edit Distance\", \"titleSlug\": \"edit-distance\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Longest Increasing Subsequence\", \"titleSlug\": \"longest-increasing-subsequence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Delete Operation for Two Strings\", \"titleSlug\": \"delete-operation-for-two-strings\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "266",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

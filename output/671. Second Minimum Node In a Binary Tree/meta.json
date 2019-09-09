@@ -1,0 +1,19 @@
+{
+  "id": "671",
+  "title": "Second Minimum Node In a Binary Tree",
+  "slug": "second-minimum-node-in-a-binary-tree",
+  "difficulty": "Easy",
+  "likes": 421,
+  "dislikes": 633,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Kth Smallest Element in a BST\", \"titleSlug\": \"kth-smallest-element-in-a-bst\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "244",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "464",
+  "title": "Can I Win",
+  "slug": "can-i-win",
+  "difficulty": "Medium",
+  "likes": 684,
+  "dislikes": 124,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Flip Game II\", \"titleSlug\": \"flip-game-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Guess Number Higher or Lower II\", \"titleSlug\": \"guess-number-higher-or-lower-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Predict the Winner\", \"titleSlug\": \"predict-the-winner\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming",
+    "Minimax"
+  ]
+}

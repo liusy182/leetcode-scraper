@@ -1,0 +1,19 @@
+{
+  "id": "6",
+  "title": "ZigZag Conversion",
+  "slug": "zigzag-conversion",
+  "difficulty": "Medium",
+  "likes": 1176,
+  "dislikes": 3578,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "484",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

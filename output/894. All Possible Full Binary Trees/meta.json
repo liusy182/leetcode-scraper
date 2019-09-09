@@ -1,0 +1,20 @@
+{
+  "id": "894",
+  "title": "All Possible Full Binary Trees",
+  "slug": "all-possible-full-binary-trees",
+  "difficulty": "Medium",
+  "likes": 493,
+  "dislikes": 47,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "536",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Recursion"
+  ]
+}

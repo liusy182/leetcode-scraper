@@ -1,0 +1,19 @@
+{
+  "id": "942",
+  "title": "DI String Match",
+  "slug": "di-string-match",
+  "difficulty": "Easy",
+  "likes": 514,
+  "dislikes": 184,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "620",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

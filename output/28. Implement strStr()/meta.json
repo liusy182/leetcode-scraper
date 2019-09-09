@@ -1,0 +1,16 @@
+{
+  "id": "28",
+  "title": "Implement strStr()",
+  "slug": "implement-strstr",
+  "difficulty": "Easy",
+  "likes": 1026,
+  "dislikes": 1479,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Shortest Palindrome\", \"titleSlug\": \"shortest-palindrome\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Repeated Substring Pattern\", \"titleSlug\": \"repeated-substring-pattern\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Two Pointers",
+    "String"
+  ]
+}

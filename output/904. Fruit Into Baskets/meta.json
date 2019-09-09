@@ -1,0 +1,19 @@
+{
+  "id": "904",
+  "title": "Fruit Into Baskets",
+  "slug": "fruit-into-baskets",
+  "difficulty": "Medium",
+  "likes": 522,
+  "dislikes": 810,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "558",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Two Pointers"
+  ]
+}

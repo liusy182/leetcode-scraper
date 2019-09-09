@@ -1,0 +1,20 @@
+{
+  "id": "502",
+  "title": "IPO",
+  "slug": "ipo",
+  "difficulty": "Hard",
+  "likes": 223,
+  "dislikes": 22,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "739",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Heap",
+    "Greedy"
+  ]
+}

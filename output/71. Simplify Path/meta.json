@@ -1,0 +1,16 @@
+{
+  "id": "71",
+  "title": "Simplify Path",
+  "slug": "simplify-path",
+  "difficulty": "Medium",
+  "likes": 495,
+  "dislikes": 1320,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "String",
+    "Stack"
+  ]
+}

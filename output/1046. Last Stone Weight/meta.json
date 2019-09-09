@@ -1,0 +1,18 @@
+{
+  "id": "1046",
+  "title": "Last Stone Weight",
+  "slug": "last-stone-weight",
+  "difficulty": "Easy",
+  "likes": 182,
+  "dislikes": 12,
+  "hints": [
+    "Simulate the process.  We can do it with a heap, or by sorting some list of stones every time we take a turn."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Heap",
+    "Greedy"
+  ]
+}

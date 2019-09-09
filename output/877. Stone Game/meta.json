@@ -1,0 +1,21 @@
+{
+  "id": "877",
+  "title": "Stone Game",
+  "slug": "stone-game",
+  "difficulty": "Medium",
+  "likes": 381,
+  "dislikes": 660,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "521",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math",
+    "Dynamic Programming",
+    "Minimax"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "152",
+  "title": "Maximum Product Subarray",
+  "slug": "maximum-product-subarray",
+  "difficulty": "Medium",
+  "likes": 2468,
+  "dislikes": 114,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Maximum Subarray\", \"titleSlug\": \"maximum-subarray\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"House Robber\", \"titleSlug\": \"house-robber\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Product of Array Except Self\", \"titleSlug\": \"product-of-array-except-self\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Maximum Product of Three Numbers\", \"titleSlug\": \"maximum-product-of-three-numbers\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Subarray Product Less Than K\", \"titleSlug\": \"subarray-product-less-than-k\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Dynamic Programming"
+  ]
+}

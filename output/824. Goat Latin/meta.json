@@ -1,0 +1,19 @@
+{
+  "id": "824",
+  "title": "Goat Latin",
+  "slug": "goat-latin",
+  "difficulty": "Easy",
+  "likes": 167,
+  "dislikes": 448,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "459",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

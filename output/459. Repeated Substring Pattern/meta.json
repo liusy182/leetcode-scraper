@@ -1,0 +1,15 @@
+{
+  "id": "459",
+  "title": "Repeated Substring Pattern",
+  "slug": "repeated-substring-pattern",
+  "difficulty": "Easy",
+  "likes": 887,
+  "dislikes": 106,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Implement strStr()\", \"titleSlug\": \"implement-strstr\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Repeated String Match\", \"titleSlug\": \"repeated-string-match\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "String"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "5",
+  "title": "Longest Palindromic Substring",
+  "slug": "longest-palindromic-substring",
+  "difficulty": "Medium",
+  "likes": 4271,
+  "dislikes": 396,
+  "hints": [
+    "How can we reuse a previously computed palindrome to compute a larger palindrome?",
+    "If \u201caba\u201d is a palindrome, is \u201cxabax\u201d and palindrome? Similarly is \u201cxabay\u201d a palindrome?",
+    "Complexity based hint:</br>\r\nIf we use brute-force and check whether for every start and end position a substring is a palindrome we have O(n^2) start - end pairs and O(n) palindromic checks. Can we reduce the time for palindromic checks to O(1) by reusing some previous computation."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Shortest Palindrome\", \"titleSlug\": \"shortest-palindrome\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Palindrome Permutation\", \"titleSlug\": \"palindrome-permutation\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Palindrome Pairs\", \"titleSlug\": \"palindrome-pairs\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Longest Palindromic Subsequence\", \"titleSlug\": \"longest-palindromic-subsequence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Palindromic Substrings\", \"titleSlug\": \"palindromic-substrings\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "34",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String",
+    "Dynamic Programming"
+  ]
+}

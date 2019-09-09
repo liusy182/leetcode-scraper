@@ -1,0 +1,19 @@
+{
+  "id": "882",
+  "title": "Reachable Nodes In Subdivided Graph",
+  "slug": "reachable-nodes-in-subdivided-graph",
+  "difficulty": "Hard",
+  "likes": 107,
+  "dislikes": 96,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "524",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Heap"
+  ]
+}

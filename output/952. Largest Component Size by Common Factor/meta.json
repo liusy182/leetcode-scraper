@@ -1,0 +1,20 @@
+{
+  "id": "952",
+  "title": "Largest Component Size by Common Factor",
+  "slug": "largest-component-size-by-common-factor",
+  "difficulty": "Hard",
+  "likes": 124,
+  "dislikes": 32,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "629",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math",
+    "Union Find"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "919",
+  "title": "Complete Binary Tree Inserter",
+  "slug": "complete-binary-tree-inserter",
+  "difficulty": "Medium",
+  "likes": 173,
+  "dislikes": 40,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "579",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

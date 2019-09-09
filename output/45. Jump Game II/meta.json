@@ -1,0 +1,16 @@
+{
+  "id": "45",
+  "title": "Jump Game II",
+  "slug": "jump-game-ii",
+  "difficulty": "Hard",
+  "likes": 1424,
+  "dislikes": 83,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Jump Game\", \"titleSlug\": \"jump-game\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Greedy"
+  ]
+}

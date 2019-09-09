@@ -1,0 +1,19 @@
+{
+  "id": "237",
+  "title": "Delete Node in a Linked List",
+  "slug": "delete-node-in-a-linked-list",
+  "difficulty": "Easy",
+  "likes": 869,
+  "dislikes": 4178,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Remove Linked List Elements\", \"titleSlug\": \"remove-linked-list-elements\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "32",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Linked List"
+  ]
+}

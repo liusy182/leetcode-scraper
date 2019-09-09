@@ -1,0 +1,19 @@
+{
+  "id": "960",
+  "title": "Delete Columns to Make Sorted III",
+  "slug": "delete-columns-to-make-sorted-iii",
+  "difficulty": "Hard",
+  "likes": 167,
+  "dislikes": 4,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "641",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

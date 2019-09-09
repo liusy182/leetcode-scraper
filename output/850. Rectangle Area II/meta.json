@@ -1,0 +1,20 @@
+{
+  "id": "850",
+  "title": "Rectangle Area II",
+  "slug": "rectangle-area-ii",
+  "difficulty": "Hard",
+  "likes": 208,
+  "dislikes": 23,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "480",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Segment Tree",
+    "Line Sweep"
+  ]
+}

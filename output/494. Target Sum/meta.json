@@ -1,0 +1,20 @@
+{
+  "id": "494",
+  "title": "Target Sum",
+  "slug": "target-sum",
+  "difficulty": "Medium",
+  "likes": 1591,
+  "dislikes": 74,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Expression Add Operators\", \"titleSlug\": \"expression-add-operators\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "123",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming",
+    "Depth-first Search"
+  ]
+}

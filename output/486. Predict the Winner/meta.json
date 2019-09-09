@@ -1,0 +1,20 @@
+{
+  "id": "486",
+  "title": "Predict the Winner",
+  "slug": "predict-the-winner",
+  "difficulty": "Medium",
+  "likes": 1092,
+  "dislikes": 72,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Can I Win\", \"titleSlug\": \"can-i-win\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "176",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming",
+    "Minimax"
+  ]
+}

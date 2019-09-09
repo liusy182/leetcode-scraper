@@ -1,0 +1,21 @@
+{
+  "id": "748",
+  "title": "Shortest Completing Word",
+  "slug": "shortest-completing-word",
+  "difficulty": "Easy",
+  "likes": 137,
+  "dislikes": 482,
+  "hints": [
+    "Count only the letters (possibly converted to lowercase) of each word.  If a word is shorter and the count of each letter is at least the count of that letter in the licensePlate, it is the best answer we've seen yet."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "345",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table"
+  ]
+}

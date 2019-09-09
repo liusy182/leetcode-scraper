@@ -1,0 +1,19 @@
+{
+  "id": "686",
+  "title": "Repeated String Match",
+  "slug": "repeated-string-match",
+  "difficulty": "Easy",
+  "likes": 549,
+  "dislikes": 551,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Repeated Substring Pattern\", \"titleSlug\": \"repeated-substring-pattern\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "256",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

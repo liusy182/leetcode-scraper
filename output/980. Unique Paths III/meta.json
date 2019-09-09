@@ -1,0 +1,20 @@
+{
+  "id": "980",
+  "title": "Unique Paths III",
+  "slug": "unique-paths-iii",
+  "difficulty": "Hard",
+  "likes": 238,
+  "dislikes": 39,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Sudoku Solver\", \"titleSlug\": \"sudoku-solver\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Unique Paths II\", \"titleSlug\": \"unique-paths-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Word Search II\", \"titleSlug\": \"word-search-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "670",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Backtracking",
+    "Depth-first Search"
+  ]
+}

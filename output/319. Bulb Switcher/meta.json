@@ -1,0 +1,16 @@
+{
+  "id": "319",
+  "title": "Bulb Switcher",
+  "slug": "bulb-switcher",
+  "difficulty": "Medium",
+  "likes": 312,
+  "dislikes": 699,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Bulb Switcher II\", \"titleSlug\": \"bulb-switcher-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Minimum Number of K Consecutive Bit Flips\", \"titleSlug\": \"minimum-number-of-k-consecutive-bit-flips\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Math",
+    "Brainteaser"
+  ]
+}

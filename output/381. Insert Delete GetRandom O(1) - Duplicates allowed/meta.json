@@ -1,0 +1,21 @@
+{
+  "id": "381",
+  "title": "Insert Delete GetRandom O(1) - Duplicates allowed",
+  "slug": "insert-delete-getrandom-o1-duplicates-allowed",
+  "difficulty": "Hard",
+  "likes": 487,
+  "dislikes": 48,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Insert Delete GetRandom O(1)\", \"titleSlug\": \"insert-delete-getrandom-o1\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "745",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Hash Table",
+    "Design"
+  ]
+}

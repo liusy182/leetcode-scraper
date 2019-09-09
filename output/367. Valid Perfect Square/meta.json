@@ -1,0 +1,16 @@
+{
+  "id": "367",
+  "title": "Valid Perfect Square",
+  "slug": "valid-perfect-square",
+  "difficulty": "Easy",
+  "likes": 513,
+  "dislikes": 114,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Sqrt(x)\", \"titleSlug\": \"sqrtx\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Sum of Square Numbers\", \"titleSlug\": \"sum-of-square-numbers\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Math",
+    "Binary Search"
+  ]
+}

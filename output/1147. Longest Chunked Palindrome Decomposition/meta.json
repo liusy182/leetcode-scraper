@@ -1,0 +1,19 @@
+{
+  "id": "1147",
+  "title": "Longest Chunked Palindrome Decomposition",
+  "slug": "longest-chunked-palindrome-decomposition",
+  "difficulty": "Hard",
+  "likes": 75,
+  "dislikes": 7,
+  "hints": [
+    "Using a rolling hash, we can quickly check whether two strings are equal.",
+    "Use that as the basis of a dp."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming",
+    "Rolling Hash"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "1001",
+  "title": "Grid Illumination",
+  "slug": "grid-illumination",
+  "difficulty": "Hard",
+  "likes": 107,
+  "dislikes": 46,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"N-Queens\", \"titleSlug\": \"n-queens\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table"
+  ]
+}

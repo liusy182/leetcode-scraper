@@ -1,0 +1,24 @@
+{
+  "id": "718",
+  "title": "Maximum Length of Repeated Subarray",
+  "slug": "maximum-length-of-repeated-subarray",
+  "difficulty": "Medium",
+  "likes": 755,
+  "dislikes": 32,
+  "hints": [
+    "Use dynamic programming.  dp[i][j] will be the answer for inputs A[i:], B[j:]."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Minimum Size Subarray Sum\", \"titleSlug\": \"minimum-size-subarray-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "269",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Hash Table",
+    "Binary Search",
+    "Dynamic Programming"
+  ]
+}

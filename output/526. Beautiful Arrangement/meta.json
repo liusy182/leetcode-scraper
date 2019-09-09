@@ -1,0 +1,19 @@
+{
+  "id": "526",
+  "title": "Beautiful Arrangement",
+  "slug": "beautiful-arrangement",
+  "difficulty": "Medium",
+  "likes": 477,
+  "dislikes": 116,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Beautiful Arrangement II\", \"titleSlug\": \"beautiful-arrangement-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "118",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Backtracking"
+  ]
+}

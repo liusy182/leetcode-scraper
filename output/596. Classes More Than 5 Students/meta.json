@@ -1,0 +1,17 @@
+{
+  "id": "596",
+  "title": "Classes More Than 5 Students",
+  "slug": "classes-more-than-5-students",
+  "difficulty": "Easy",
+  "likes": 165,
+  "dislikes": 476,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "202",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

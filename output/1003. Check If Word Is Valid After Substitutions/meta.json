@@ -1,0 +1,16 @@
+{
+  "id": "1003",
+  "title": "Check If Word Is Valid After Substitutions",
+  "slug": "check-if-word-is-valid-after-substitutions",
+  "difficulty": "Medium",
+  "likes": 101,
+  "dislikes": 168,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Valid Parentheses\", \"titleSlug\": \"valid-parentheses\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "String",
+    "Stack"
+  ]
+}

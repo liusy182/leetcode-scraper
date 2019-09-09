@@ -1,0 +1,19 @@
+{
+  "id": "831",
+  "title": "Masking Personal Information",
+  "slug": "masking-personal-information",
+  "difficulty": "Medium",
+  "likes": 52,
+  "dislikes": 231,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "462",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "86",
+  "title": "Partition List",
+  "slug": "partition-list",
+  "difficulty": "Medium",
+  "likes": 791,
+  "dislikes": 212,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "654",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Linked List",
+    "Two Pointers"
+  ]
+}

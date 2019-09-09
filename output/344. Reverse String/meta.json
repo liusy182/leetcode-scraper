@@ -1,0 +1,16 @@
+{
+  "id": "344",
+  "title": "Reverse String",
+  "slug": "reverse-string",
+  "difficulty": "Easy",
+  "likes": 862,
+  "dislikes": 558,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Reverse Vowels of a String\", \"titleSlug\": \"reverse-vowels-of-a-string\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Reverse String II\", \"titleSlug\": \"reverse-string-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Two Pointers",
+    "String"
+  ]
+}

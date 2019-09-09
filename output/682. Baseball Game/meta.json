@@ -1,0 +1,19 @@
+{
+  "id": "682",
+  "title": "Baseball Game",
+  "slug": "baseball-game",
+  "difficulty": "Easy",
+  "likes": 339,
+  "dislikes": 844,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "252",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Stack"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "864",
+  "title": "Shortest Path to Get All Keys",
+  "slug": "shortest-path-to-get-all-keys",
+  "difficulty": "Hard",
+  "likes": 228,
+  "dislikes": 8,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "501",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Heap",
+    "Breadth-first Search"
+  ]
+}

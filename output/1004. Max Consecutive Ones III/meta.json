@@ -1,0 +1,16 @@
+{
+  "id": "1004",
+  "title": "Max Consecutive Ones III",
+  "slug": "max-consecutive-ones-iii",
+  "difficulty": "Medium",
+  "likes": 326,
+  "dislikes": 7,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Longest Substring with At Most K Distinct Characters\", \"titleSlug\": \"longest-substring-with-at-most-k-distinct-characters\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Longest Repeating Character Replacement\", \"titleSlug\": \"longest-repeating-character-replacement\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Max Consecutive Ones\", \"titleSlug\": \"max-consecutive-ones\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Max Consecutive Ones II\", \"titleSlug\": \"max-consecutive-ones-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Two Pointers",
+    "Sliding Window"
+  ]
+}

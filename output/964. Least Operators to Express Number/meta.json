@@ -1,0 +1,20 @@
+{
+  "id": "964",
+  "title": "Least Operators to Express Number",
+  "slug": "least-operators-to-express-number",
+  "difficulty": "Hard",
+  "likes": 111,
+  "dislikes": 37,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "649",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math",
+    "Dynamic Programming"
+  ]
+}

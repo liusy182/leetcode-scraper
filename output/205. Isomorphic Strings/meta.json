@@ -1,0 +1,15 @@
+{
+  "id": "205",
+  "title": "Isomorphic Strings",
+  "slug": "isomorphic-strings",
+  "difficulty": "Easy",
+  "likes": 864,
+  "dislikes": 248,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Word Pattern\", \"titleSlug\": \"word-pattern\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table"
+  ]
+}

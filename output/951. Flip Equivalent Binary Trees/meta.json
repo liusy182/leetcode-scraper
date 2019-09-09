@@ -1,0 +1,19 @@
+{
+  "id": "951",
+  "title": "Flip Equivalent Binary Trees",
+  "slug": "flip-equivalent-binary-trees",
+  "difficulty": "Medium",
+  "likes": 298,
+  "dislikes": 13,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "630",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

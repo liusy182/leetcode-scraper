@@ -1,0 +1,19 @@
+{
+  "id": "893",
+  "title": "Groups of Special-Equivalent Strings",
+  "slug": "groups-of-special-equivalent-strings",
+  "difficulty": "Easy",
+  "likes": 163,
+  "dislikes": 808,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "537",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

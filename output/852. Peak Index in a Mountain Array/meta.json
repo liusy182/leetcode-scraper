@@ -1,0 +1,19 @@
+{
+  "id": "852",
+  "title": "Peak Index in a Mountain Array",
+  "slug": "peak-index-in-a-mountain-array",
+  "difficulty": "Easy",
+  "likes": 344,
+  "dislikes": 766,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Find Peak Element\", \"titleSlug\": \"find-peak-element\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find in Mountain Array\", \"titleSlug\": \"find-in-mountain-array\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "488",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Binary Search"
+  ]
+}

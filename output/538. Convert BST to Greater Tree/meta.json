@@ -1,0 +1,19 @@
+{
+  "id": "538",
+  "title": "Convert BST to Greater Tree",
+  "slug": "convert-bst-to-greater-tree",
+  "difficulty": "Easy",
+  "likes": 1443,
+  "dislikes": 93,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "281",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

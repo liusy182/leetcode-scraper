@@ -1,0 +1,21 @@
+{
+  "id": "764",
+  "title": "Largest Plus Sign",
+  "slug": "largest-plus-sign",
+  "difficulty": "Medium",
+  "likes": 299,
+  "dislikes": 68,
+  "hints": [
+    "For each direction such as \"left\", find left[r][c] = the number of 1s you will see before a zero starting at r, c and walking left.  You can find this in N^2 time with a dp.  The largest plus sign at r, c is just the minimum of left[r][c], up[r][c] etc."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Maximal Square\", \"titleSlug\": \"maximal-square\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "375",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

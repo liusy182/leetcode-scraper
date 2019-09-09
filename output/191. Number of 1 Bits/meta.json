@@ -1,0 +1,19 @@
+{
+  "id": "191",
+  "title": "Number of 1 Bits",
+  "slug": "number-of-1-bits",
+  "difficulty": "Easy",
+  "likes": 498,
+  "dislikes": 418,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Reverse Bits\", \"titleSlug\": \"reverse-bits\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Power of Two\", \"titleSlug\": \"power-of-two\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Counting Bits\", \"titleSlug\": \"counting-bits\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Binary Watch\", \"titleSlug\": \"binary-watch\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Hamming Distance\", \"titleSlug\": \"hamming-distance\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Binary Number with Alternating Bits\", \"titleSlug\": \"binary-number-with-alternating-bits\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Prime Number of Set Bits in Binary Representation\", \"titleSlug\": \"prime-number-of-set-bits-in-binary-representation\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "44",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Bit Manipulation"
+  ]
+}

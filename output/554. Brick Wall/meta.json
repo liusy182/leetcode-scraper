@@ -1,0 +1,19 @@
+{
+  "id": "554",
+  "title": "Brick Wall",
+  "slug": "brick-wall",
+  "difficulty": "Medium",
+  "likes": 607,
+  "dislikes": 31,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "105",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table"
+  ]
+}

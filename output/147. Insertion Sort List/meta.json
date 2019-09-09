@@ -1,0 +1,16 @@
+{
+  "id": "147",
+  "title": "Insertion Sort List",
+  "slug": "insertion-sort-list",
+  "difficulty": "Medium",
+  "likes": 408,
+  "dislikes": 464,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Sort List\", \"titleSlug\": \"sort-list\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Insert into a Cyclic Sorted List\", \"titleSlug\": \"insert-into-a-cyclic-sorted-list\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Linked List",
+    "Sort"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "51",
+  "title": "N-Queens",
+  "slug": "n-queens",
+  "difficulty": "Hard",
+  "likes": 1151,
+  "dislikes": 50,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"N-Queens II\", \"titleSlug\": \"n-queens-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Grid Illumination\", \"titleSlug\": \"grid-illumination\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "714",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Backtracking"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "373",
+  "title": "Find K Pairs with Smallest Sums",
+  "slug": "find-k-pairs-with-smallest-sums",
+  "difficulty": "Medium",
+  "likes": 788,
+  "dislikes": 66,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Kth Smallest Element in a Sorted Matrix\", \"titleSlug\": \"kth-smallest-element-in-a-sorted-matrix\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find K-th Smallest Pair Distance\", \"titleSlug\": \"find-k-th-smallest-pair-distance\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Heap"
+  ]
+}

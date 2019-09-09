@@ -1,0 +1,20 @@
+{
+  "id": "26",
+  "title": "Remove Duplicates from Sorted Array",
+  "slug": "remove-duplicates-from-sorted-array",
+  "difficulty": "Easy",
+  "likes": 1716,
+  "dislikes": 3675,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Remove Element\", \"titleSlug\": \"remove-element\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Remove Duplicates from Sorted Array II\", \"titleSlug\": \"remove-duplicates-from-sorted-array-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "4",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Two Pointers"
+  ]
+}

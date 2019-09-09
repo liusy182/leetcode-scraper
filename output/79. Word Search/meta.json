@@ -1,0 +1,16 @@
+{
+  "id": "79",
+  "title": "Word Search",
+  "slug": "word-search",
+  "difficulty": "Medium",
+  "likes": 2155,
+  "dislikes": 109,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Word Search II\", \"titleSlug\": \"word-search-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Backtracking"
+  ]
+}

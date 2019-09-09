@@ -1,0 +1,20 @@
+{
+  "id": "966",
+  "title": "Vowel Spellchecker",
+  "slug": "vowel-spellchecker",
+  "difficulty": "Medium",
+  "likes": 77,
+  "dislikes": 153,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "653",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "String"
+  ]
+}

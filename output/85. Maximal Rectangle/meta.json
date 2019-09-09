@@ -1,0 +1,22 @@
+{
+  "id": "85",
+  "title": "Maximal Rectangle",
+  "slug": "maximal-rectangle",
+  "difficulty": "Hard",
+  "likes": 1688,
+  "dislikes": 54,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Largest Rectangle in Histogram\", \"titleSlug\": \"largest-rectangle-in-histogram\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Maximal Square\", \"titleSlug\": \"maximal-square\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "712",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Hash Table",
+    "Dynamic Programming",
+    "Stack"
+  ]
+}

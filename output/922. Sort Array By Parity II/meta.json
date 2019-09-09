@@ -1,0 +1,20 @@
+{
+  "id": "922",
+  "title": "Sort Array By Parity II",
+  "slug": "sort-array-by-parity-ii",
+  "difficulty": "Easy",
+  "likes": 346,
+  "dislikes": 33,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "589",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Sort"
+  ]
+}

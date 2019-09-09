@@ -1,0 +1,20 @@
+{
+  "id": "297",
+  "title": "Serialize and Deserialize Binary Tree",
+  "slug": "serialize-and-deserialize-binary-tree",
+  "difficulty": "Hard",
+  "likes": 1843,
+  "dislikes": 91,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Encode and Decode Strings\", \"titleSlug\": \"encode-and-decode-strings\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Serialize and Deserialize BST\", \"titleSlug\": \"serialize-and-deserialize-bst\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find Duplicate Subtrees\", \"titleSlug\": \"find-duplicate-subtrees\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Serialize and Deserialize N-ary Tree\", \"titleSlug\": \"serialize-and-deserialize-n-ary-tree\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "563",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Design"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "175",
+  "title": "Combine Two Tables",
+  "slug": "combine-two-tables",
+  "difficulty": "Easy",
+  "likes": 699,
+  "dislikes": 98,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Employee Bonus\", \"titleSlug\": \"employee-bonus\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "206",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

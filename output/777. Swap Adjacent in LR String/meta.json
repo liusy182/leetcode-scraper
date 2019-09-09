@@ -1,0 +1,21 @@
+{
+  "id": "777",
+  "title": "Swap Adjacent in LR String",
+  "slug": "swap-adjacent-in-lr-string",
+  "difficulty": "Medium",
+  "likes": 245,
+  "dislikes": 227,
+  "hints": [
+    "Think of the L and R's as people on a horizontal line, where X is a space.  The people can't cross each other, and also you can't go from XRX to RXX."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "406",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Brainteaser"
+  ]
+}

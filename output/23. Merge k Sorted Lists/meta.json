@@ -1,0 +1,21 @@
+{
+  "id": "23",
+  "title": "Merge k Sorted Lists",
+  "slug": "merge-k-sorted-lists",
+  "difficulty": "Hard",
+  "likes": 2879,
+  "dislikes": 190,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Merge Two Sorted Lists\", \"titleSlug\": \"merge-two-sorted-lists\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Ugly Number II\", \"titleSlug\": \"ugly-number-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "237",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Linked List",
+    "Divide and Conquer",
+    "Heap"
+  ]
+}

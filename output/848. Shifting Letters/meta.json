@@ -1,0 +1,19 @@
+{
+  "id": "848",
+  "title": "Shifting Letters",
+  "slug": "shifting-letters",
+  "difficulty": "Medium",
+  "likes": 179,
+  "dislikes": 37,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "482",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

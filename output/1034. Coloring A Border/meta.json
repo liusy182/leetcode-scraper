@@ -1,0 +1,17 @@
+{
+  "id": "1034",
+  "title": "Coloring A Border",
+  "slug": "coloring-a-border",
+  "difficulty": "Medium",
+  "likes": 54,
+  "dislikes": 140,
+  "hints": [
+    "Use a DFS to find every square in the component.  Then for each square, color it if it has a neighbor that is outside the grid or a different color."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Island Perimeter\", \"titleSlug\": \"island-perimeter\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Depth-first Search"
+  ]
+}

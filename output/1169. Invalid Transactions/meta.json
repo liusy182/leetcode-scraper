@@ -1,0 +1,20 @@
+{
+  "id": "1169",
+  "title": "Invalid Transactions",
+  "slug": "invalid-transactions",
+  "difficulty": "Medium",
+  "likes": 21,
+  "dislikes": 247,
+  "hints": [
+    "Split each string into four arrays.",
+    "For each transaction check if it's invalid, you can do this with just a loop with help of the four arrays generated on step 1.",
+    "At the end you perform O(N ^ 2) operations."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "String"
+  ]
+}

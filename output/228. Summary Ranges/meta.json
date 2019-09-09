@@ -1,0 +1,19 @@
+{
+  "id": "228",
+  "title": "Summary Ranges",
+  "slug": "summary-ranges",
+  "difficulty": "Medium",
+  "likes": 417,
+  "dislikes": 413,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Missing Ranges\", \"titleSlug\": \"missing-ranges\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Data Stream as Disjoint Intervals\", \"titleSlug\": \"data-stream-as-disjoint-intervals\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "27",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

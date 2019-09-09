@@ -1,0 +1,21 @@
+{
+  "id": "478",
+  "title": "Generate Random Point in a Circle",
+  "slug": "generate-random-point-in-a-circle",
+  "difficulty": "Medium",
+  "likes": 108,
+  "dislikes": 178,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Random Point in Non-overlapping Rectangles\", \"titleSlug\": \"random-point-in-non-overlapping-rectangles\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "516",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math",
+    "Random",
+    "Rejection Sampling"
+  ]
+}

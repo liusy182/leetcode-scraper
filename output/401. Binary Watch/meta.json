@@ -1,0 +1,19 @@
+{
+  "id": "401",
+  "title": "Binary Watch",
+  "slug": "binary-watch",
+  "difficulty": "Easy",
+  "likes": 401,
+  "dislikes": 681,
+  "hints": [
+    "Simplify by seeking for solutions that involve comparing bit counts.",
+    "Consider calculating all possible times for comparison purposes."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Letter Combinations of a Phone Number\", \"titleSlug\": \"letter-combinations-of-a-phone-number\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of 1 Bits\", \"titleSlug\": \"number-of-1-bits\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Backtracking",
+    "Bit Manipulation"
+  ]
+}

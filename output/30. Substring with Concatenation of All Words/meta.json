@@ -1,0 +1,17 @@
+{
+  "id": "30",
+  "title": "Substring with Concatenation of All Words",
+  "slug": "substring-with-concatenation-of-all-words",
+  "difficulty": "Hard",
+  "likes": 611,
+  "dislikes": 990,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Minimum Window Substring\", \"titleSlug\": \"minimum-window-substring\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table",
+    "Two Pointers",
+    "String"
+  ]
+}

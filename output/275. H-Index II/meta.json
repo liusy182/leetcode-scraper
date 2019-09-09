@@ -1,0 +1,21 @@
+{
+  "id": "275",
+  "title": "H-Index II",
+  "slug": "h-index-ii",
+  "difficulty": "Medium",
+  "likes": 227,
+  "dislikes": 406,
+  "hints": [
+    "Expected runtime complexity is in <i>O</i>(log <i>n</i>) and the input is sorted."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"H-Index\", \"titleSlug\": \"h-index\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "751",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Binary Search"
+  ]
+}

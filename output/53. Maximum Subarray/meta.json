@@ -1,0 +1,21 @@
+{
+  "id": "53",
+  "title": "Maximum Subarray",
+  "slug": "maximum-subarray",
+  "difficulty": "Easy",
+  "likes": 5010,
+  "dislikes": 187,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Best Time to Buy and Sell Stock\", \"titleSlug\": \"best-time-to-buy-and-sell-stock\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Maximum Product Subarray\", \"titleSlug\": \"maximum-product-subarray\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Degree of an Array\", \"titleSlug\": \"degree-of-an-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Longest Turbulent Subarray\", \"titleSlug\": \"longest-turbulent-subarray\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "735",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Divide and Conquer",
+    "Dynamic Programming"
+  ]
+}

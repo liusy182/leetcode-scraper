@@ -1,0 +1,20 @@
+{
+  "id": "987",
+  "title": "Vertical Order Traversal of a Binary Tree",
+  "slug": "vertical-order-traversal-of-a-binary-tree",
+  "difficulty": "Medium",
+  "likes": 181,
+  "dislikes": 405,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "684",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "Tree"
+  ]
+}

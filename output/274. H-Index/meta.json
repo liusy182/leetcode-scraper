@@ -1,0 +1,24 @@
+{
+  "id": "274",
+  "title": "H-Index",
+  "slug": "h-index",
+  "difficulty": "Medium",
+  "likes": 433,
+  "dislikes": 752,
+  "hints": [
+    "An easy approach is to sort the array first.",
+    "What are the possible values of h-index?",
+    "A faster approach is to use extra space."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"H-Index II\", \"titleSlug\": \"h-index-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "26",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "Sort"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "807",
+  "title": "Max Increase to Keep City Skyline",
+  "slug": "max-increase-to-keep-city-skyline",
+  "difficulty": "Medium",
+  "likes": 601,
+  "dislikes": 158,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "436",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

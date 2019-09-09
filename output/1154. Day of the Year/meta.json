@@ -1,0 +1,17 @@
+{
+  "id": "1154",
+  "title": "Day of the Year",
+  "slug": "day-of-the-year",
+  "difficulty": "Easy",
+  "likes": 37,
+  "dislikes": 61,
+  "hints": [
+    "Have a integer array of how many days there are per month.  February gets one extra day if its a leap year.  Then, we can manually count the ordinal as day + (number of days in months before this one)."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Math"
+  ]
+}

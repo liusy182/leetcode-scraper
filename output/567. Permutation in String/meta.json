@@ -1,0 +1,27 @@
+{
+  "id": "567",
+  "title": "Permutation in String",
+  "slug": "permutation-in-string",
+  "difficulty": "Medium",
+  "likes": 755,
+  "dislikes": 42,
+  "hints": [
+    "Obviously, brute force will result in TLE. Think of something else.",
+    "How will you check whether one string is a permutation of another string?",
+    "One way is to sort the string and then compare. But, Is there a better way?",
+    "If one string is a permutation of another string then they must one common metric. What is that?",
+    "Both strings must have same character frequencies, if  one is permutation of another. Which data structure should be used to store frequencies?",
+    "What about hash table?  An array of size 26?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Minimum Window Substring\", \"titleSlug\": \"minimum-window-substring\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Find All Anagrams in a String\", \"titleSlug\": \"find-all-anagrams-in-a-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "121",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Two Pointers",
+    "Sliding Window"
+  ]
+}

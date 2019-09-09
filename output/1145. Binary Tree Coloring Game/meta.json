@@ -1,0 +1,19 @@
+{
+  "id": "1145",
+  "title": "Binary Tree Coloring Game",
+  "slug": "binary-tree-coloring-game",
+  "difficulty": "Medium",
+  "likes": 112,
+  "dislikes": 28,
+  "hints": [
+    "The best move y must be immediately adjacent to x, since it locks out that subtree.",
+    "Can you count each of (up to) 3 different subtrees neighboring x?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Tree",
+    "Depth-first Search"
+  ]
+}

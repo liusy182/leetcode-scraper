@@ -1,0 +1,15 @@
+{
+  "id": "383",
+  "title": "Ransom Note",
+  "slug": "ransom-note",
+  "difficulty": "Easy",
+  "likes": 356,
+  "dislikes": 134,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Stickers to Spell Word\", \"titleSlug\": \"stickers-to-spell-word\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "String"
+  ]
+}

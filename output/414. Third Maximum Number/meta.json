@@ -1,0 +1,15 @@
+{
+  "id": "414",
+  "title": "Third Maximum Number",
+  "slug": "third-maximum-number",
+  "difficulty": "Easy",
+  "likes": 422,
+  "dislikes": 784,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Kth Largest Element in an Array\", \"titleSlug\": \"kth-largest-element-in-an-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Array"
+  ]
+}

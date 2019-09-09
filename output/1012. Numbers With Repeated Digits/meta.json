@@ -1,0 +1,19 @@
+{
+  "id": "1012",
+  "title": "Numbers With Repeated Digits",
+  "slug": "numbers-with-repeated-digits",
+  "difficulty": "Hard",
+  "likes": 99,
+  "dislikes": 33,
+  "hints": [
+    "How many numbers with no duplicate digits?  How many numbers with K digits and no duplicates?",
+    "How many numbers with same length as N?  How many numbers with same prefix as N?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Math",
+    "Dynamic Programming"
+  ]
+}

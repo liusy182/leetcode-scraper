@@ -1,0 +1,20 @@
+{
+  "id": "11",
+  "title": "Container With Most Water",
+  "slug": "container-with-most-water",
+  "difficulty": "Medium",
+  "likes": 3875,
+  "dislikes": 469,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Trapping Rain Water\", \"titleSlug\": \"trapping-rain-water\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "55",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Two Pointers"
+  ]
+}

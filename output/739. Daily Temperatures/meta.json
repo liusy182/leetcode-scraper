@@ -1,0 +1,22 @@
+{
+  "id": "739",
+  "title": "Daily Temperatures",
+  "slug": "daily-temperatures",
+  "difficulty": "Medium",
+  "likes": 1558,
+  "dislikes": 46,
+  "hints": [
+    "If the temperature is say, 70 today, then in the future a warmer temperature must be either 71, 72, 73, ..., 99, or 100.  We could remember when all of them occur next."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Next Greater Element I\", \"titleSlug\": \"next-greater-element-i\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "312",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "Stack"
+  ]
+}

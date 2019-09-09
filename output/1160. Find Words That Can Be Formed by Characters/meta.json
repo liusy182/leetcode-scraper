@@ -1,0 +1,21 @@
+{
+  "id": "1160",
+  "title": "Find Words That Can Be Formed by Characters",
+  "slug": "find-words-that-can-be-formed-by-characters",
+  "difficulty": "Easy",
+  "likes": 72,
+  "dislikes": 15,
+  "hints": [
+    "Solve the problem for each string in <code>words</code> independently.",
+    "Now try to think in frequency of letters.",
+    "Count how many times each character occurs in string <code>chars</code>.",
+    "To form a string using characters from <code>chars</code>, the frequency of each character in <code>chars</code> must be greater than or equal the frequency of that character in the string to be formed."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Hash Table"
+  ]
+}

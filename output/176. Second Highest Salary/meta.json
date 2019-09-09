@@ -1,0 +1,17 @@
+{
+  "id": "176",
+  "title": "Second Highest Salary",
+  "slug": "second-highest-salary",
+  "difficulty": "Easy",
+  "likes": 558,
+  "dislikes": 296,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "217",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

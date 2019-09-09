@@ -1,0 +1,15 @@
+{
+  "id": "263",
+  "title": "Ugly Number",
+  "slug": "ugly-number",
+  "difficulty": "Easy",
+  "likes": 265,
+  "dislikes": 484,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Happy Number\", \"titleSlug\": \"happy-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Count Primes\", \"titleSlug\": \"count-primes\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Ugly Number II\", \"titleSlug\": \"ugly-number-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Math"
+  ]
+}

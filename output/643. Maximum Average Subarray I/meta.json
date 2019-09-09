@@ -1,0 +1,19 @@
+{
+  "id": "643",
+  "title": "Maximum Average Subarray I",
+  "slug": "maximum-average-subarray-i",
+  "difficulty": "Easy",
+  "likes": 502,
+  "dislikes": 88,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Maximum Average Subarray II\", \"titleSlug\": \"maximum-average-subarray-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "221",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

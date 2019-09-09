@@ -1,0 +1,21 @@
+{
+  "id": "839",
+  "title": "Similar String Groups",
+  "slug": "similar-string-groups",
+  "difficulty": "Hard",
+  "likes": 184,
+  "dislikes": 63,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "471",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Depth-first Search",
+    "Union Find",
+    "Graph"
+  ]
+}

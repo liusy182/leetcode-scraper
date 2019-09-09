@@ -1,0 +1,19 @@
+{
+  "id": "139",
+  "title": "Word Break",
+  "slug": "word-break",
+  "difficulty": "Medium",
+  "likes": 2632,
+  "dislikes": 139,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Word Break II\", \"titleSlug\": \"word-break-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "75",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "387",
+  "title": "First Unique Character in a String",
+  "slug": "first-unique-character-in-a-string",
+  "difficulty": "Easy",
+  "likes": 1174,
+  "dislikes": 86,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Sort Characters By Frequency\", \"titleSlug\": \"sort-characters-by-frequency\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "638",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "String"
+  ]
+}

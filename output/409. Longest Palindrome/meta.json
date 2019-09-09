@@ -1,0 +1,19 @@
+{
+  "id": "409",
+  "title": "Longest Palindrome",
+  "slug": "longest-palindrome",
+  "difficulty": "Easy",
+  "likes": 596,
+  "dislikes": 64,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Palindrome Permutation\", \"titleSlug\": \"palindrome-permutation\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "361",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table"
+  ]
+}

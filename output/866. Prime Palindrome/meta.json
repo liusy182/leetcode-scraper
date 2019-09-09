@@ -1,0 +1,19 @@
+{
+  "id": "866",
+  "title": "Prime Palindrome",
+  "slug": "prime-palindrome",
+  "difficulty": "Medium",
+  "likes": 95,
+  "dislikes": 274,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "504",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

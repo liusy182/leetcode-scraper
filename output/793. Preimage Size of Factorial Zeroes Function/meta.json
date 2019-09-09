@@ -1,0 +1,19 @@
+{
+  "id": "793",
+  "title": "Preimage Size of Factorial Zeroes Function",
+  "slug": "preimage-size-of-factorial-zeroes-function",
+  "difficulty": "Hard",
+  "likes": 115,
+  "dislikes": 46,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Factorial Trailing Zeroes\", \"titleSlug\": \"factorial-trailing-zeroes\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "426",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Binary Search"
+  ]
+}

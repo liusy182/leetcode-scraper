@@ -1,0 +1,17 @@
+{
+  "id": "1051",
+  "title": "Height Checker",
+  "slug": "height-checker",
+  "difficulty": "Easy",
+  "likes": 75,
+  "dislikes": 596,
+  "hints": [
+    "Build the correct order of heights by sorting another array, then compare the two arrays."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "535",
+  "title": "Encode and Decode TinyURL",
+  "slug": "encode-and-decode-tinyurl",
+  "difficulty": "Medium",
+  "likes": 501,
+  "dislikes": 1095,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "93",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "Math"
+  ]
+}

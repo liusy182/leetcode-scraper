@@ -1,0 +1,21 @@
+{
+  "id": "9",
+  "title": "Palindrome Number",
+  "slug": "palindrome-number",
+  "difficulty": "Easy",
+  "likes": 1607,
+  "dislikes": 1369,
+  "hints": [
+    "Beware of overflow when you reverse the integer."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Palindrome Linked List\", \"titleSlug\": \"palindrome-linked-list\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "233",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

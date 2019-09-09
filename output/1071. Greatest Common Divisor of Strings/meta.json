@@ -1,0 +1,17 @@
+{
+  "id": "1071",
+  "title": "Greatest Common Divisor of Strings",
+  "slug": "greatest-common-divisor-of-strings",
+  "difficulty": "Easy",
+  "likes": 142,
+  "dislikes": 50,
+  "hints": [
+    "The greatest common divisor must be a prefix of each string, so we can try all prefixes."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "String"
+  ]
+}

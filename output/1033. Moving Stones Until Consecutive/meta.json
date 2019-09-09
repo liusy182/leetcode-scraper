@@ -1,0 +1,17 @@
+{
+  "id": "1033",
+  "title": "Moving Stones Until Consecutive",
+  "slug": "moving-stones-until-consecutive",
+  "difficulty": "Easy",
+  "likes": 30,
+  "dislikes": 276,
+  "hints": [
+    "For the minimum:  We can always do it in at most 2 moves, by moving one stone next to another, then the third stone next to the other two.  When can we do it in 1 move?  0 moves?\r\n\r\nFor the maximum:  Every move, the maximum position minus the minimum position must decrease by at least 1."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Brainteaser"
+  ]
+}

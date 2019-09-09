@@ -1,0 +1,23 @@
+{
+  "id": "726",
+  "title": "Number of Atoms",
+  "slug": "number-of-atoms",
+  "difficulty": "Hard",
+  "likes": 247,
+  "dislikes": 88,
+  "hints": [
+    "To parse formula[i:], when we see a `'('`, we will parse recursively whatever is inside the brackets (up to the correct closing ending bracket) and add it to our count, multiplying by the following multiplicity if there is one.\r\n\r\nOtherwise, we should see an uppercase character: we will parse the rest of the letters to get the name, and add that (plus the multiplicity if there is one.)"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Decode String\", \"titleSlug\": \"decode-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Encode String with Shortest Length\", \"titleSlug\": \"encode-string-with-shortest-length\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Parse Lisp Expression\", \"titleSlug\": \"parse-lisp-expression\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "289",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "Stack",
+    "Recursion"
+  ]
+}

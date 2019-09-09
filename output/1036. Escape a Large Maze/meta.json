@@ -1,0 +1,18 @@
+{
+  "id": "1036",
+  "title": "Escape a Large Maze",
+  "slug": "escape-a-large-maze",
+  "difficulty": "Hard",
+  "likes": 109,
+  "dislikes": 72,
+  "hints": [
+    "If we become stuck, there's either a loop around the source or around the target.",
+    "If there is a loop around say, the source, what is the maximum number of squares it can have?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Breadth-first Search"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "279",
+  "title": "Perfect Squares",
+  "slug": "perfect-squares",
+  "difficulty": "Medium",
+  "likes": 1692,
+  "dislikes": 141,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Count Primes\", \"titleSlug\": \"count-primes\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Ugly Number II\", \"titleSlug\": \"ugly-number-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Math",
+    "Dynamic Programming",
+    "Breadth-first Search"
+  ]
+}

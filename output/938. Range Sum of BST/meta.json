@@ -1,0 +1,20 @@
+{
+  "id": "938",
+  "title": "Range Sum of BST",
+  "slug": "range-sum-of-bst",
+  "difficulty": "Easy",
+  "likes": 492,
+  "dislikes": 92,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "611",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Recursion"
+  ]
+}

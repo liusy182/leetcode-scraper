@@ -1,0 +1,19 @@
+{
+  "id": "819",
+  "title": "Most Common Word",
+  "slug": "most-common-word",
+  "difficulty": "Easy",
+  "likes": 358,
+  "dislikes": 879,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "450",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

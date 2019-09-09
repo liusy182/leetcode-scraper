@@ -1,0 +1,16 @@
+{
+  "id": "508",
+  "title": "Most Frequent Subtree Sum",
+  "slug": "most-frequent-subtree-sum",
+  "difficulty": "Medium",
+  "likes": 429,
+  "dislikes": 86,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Subtree of Another Tree\", \"titleSlug\": \"subtree-of-another-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table",
+    "Tree"
+  ]
+}

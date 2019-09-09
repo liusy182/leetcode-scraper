@@ -1,0 +1,22 @@
+{
+  "id": "710",
+  "title": "Random Pick with Blacklist",
+  "slug": "random-pick-with-blacklist",
+  "difficulty": "Hard",
+  "likes": 191,
+  "dislikes": 45,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Random Pick Index\", \"titleSlug\": \"random-pick-index\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Random Pick with Weight\", \"titleSlug\": \"random-pick-with-weight\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "500",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "Binary Search",
+    "Sort",
+    "Random"
+  ]
+}

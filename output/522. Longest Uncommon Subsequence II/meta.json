@@ -1,0 +1,19 @@
+{
+  "id": "522",
+  "title": "Longest Uncommon Subsequence II",
+  "slug": "longest-uncommon-subsequence-ii",
+  "difficulty": "Medium",
+  "likes": 118,
+  "dislikes": 504,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Longest Uncommon Subsequence I \", \"titleSlug\": \"longest-uncommon-subsequence-i\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "100",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

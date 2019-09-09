@@ -1,0 +1,19 @@
+{
+  "id": "851",
+  "title": "Loud and Rich",
+  "slug": "loud-and-rich",
+  "difficulty": "Medium",
+  "likes": 189,
+  "dislikes": 218,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "483",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Depth-first Search"
+  ]
+}

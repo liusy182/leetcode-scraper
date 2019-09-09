@@ -1,0 +1,19 @@
+{
+  "id": "946",
+  "title": "Validate Stack Sequences",
+  "slug": "validate-stack-sequences",
+  "difficulty": "Medium",
+  "likes": 331,
+  "dislikes": 9,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "623",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Stack"
+  ]
+}

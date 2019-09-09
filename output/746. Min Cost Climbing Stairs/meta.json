@@ -1,0 +1,22 @@
+{
+  "id": "746",
+  "title": "Min Cost Climbing Stairs",
+  "slug": "min-cost-climbing-stairs",
+  "difficulty": "Easy",
+  "likes": 1218,
+  "dislikes": 285,
+  "hints": [
+    "Say f[i] is the final cost to climb to the top from step i.  Then f[i] = cost[i] + min(f[i+1], f[i+2])."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Climbing Stairs\", \"titleSlug\": \"climbing-stairs\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "347",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Dynamic Programming"
+  ]
+}

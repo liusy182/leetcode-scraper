@@ -1,0 +1,17 @@
+{
+  "id": "806",
+  "title": "Number of Lines To Write String",
+  "slug": "number-of-lines-to-write-string",
+  "difficulty": "Easy",
+  "likes": 168,
+  "dislikes": 686,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "437",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

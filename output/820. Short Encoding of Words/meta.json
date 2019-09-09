@@ -1,0 +1,17 @@
+{
+  "id": "820",
+  "title": "Short Encoding of Words",
+  "slug": "short-encoding-of-words",
+  "difficulty": "Medium",
+  "likes": 173,
+  "dislikes": 46,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "454",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": "138",
+  "title": "Copy List with Random Pointer",
+  "slug": "copy-list-with-random-pointer",
+  "difficulty": "Medium",
+  "likes": 1837,
+  "dislikes": 483,
+  "hints": [
+    "Just iterate the linked list and create copies of the nodes on the go. Since a node can be referenced from multiple nodes due to the random pointers, make sure you are not making multiple copies of the same node.",
+    "You may want to use extra space to keep <b>old node ---> new node</b> mapping to prevent creating multiples copies of same node.",
+    "We can avoid using extra space for old node ---> new node mapping, by tweaking the original linked list. Simply interweave the nodes of the old and copied list. \r\nFor e.g.\r\n<pre>\r\nOld List: A --> B --> C --> D\r\nInterWeaved List: A --> A' --> B --> B' --> C --> C' --> D --> D'\r\n</pre>",
+    "The interweaving is done using <b>next</b> pointers and we can make use of interweaved structure to get the correct reference nodes for <b>random</b> pointers."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Clone Graph\", \"titleSlug\": \"clone-graph\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "556",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "Linked List"
+  ]
+}

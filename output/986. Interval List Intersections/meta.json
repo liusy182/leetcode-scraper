@@ -1,0 +1,19 @@
+{
+  "id": "986",
+  "title": "Interval List Intersections",
+  "slug": "interval-list-intersections",
+  "difficulty": "Medium",
+  "likes": 431,
+  "dislikes": 18,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Merge Intervals\", \"titleSlug\": \"merge-intervals\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Merge Sorted Array\", \"titleSlug\": \"merge-sorted-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Employee Free Time\", \"titleSlug\": \"employee-free-time\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "685",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Two Pointers"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "341",
+  "title": "Flatten Nested List Iterator",
+  "slug": "flatten-nested-list-iterator",
+  "difficulty": "Medium",
+  "likes": 1109,
+  "dislikes": 466,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Flatten 2D Vector\", \"titleSlug\": \"flatten-2d-vector\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Zigzag Iterator\", \"titleSlug\": \"zigzag-iterator\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Mini Parser\", \"titleSlug\": \"mini-parser\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Array Nesting\", \"titleSlug\": \"array-nesting\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Stack",
+    "Design"
+  ]
+}

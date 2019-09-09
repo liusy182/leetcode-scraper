@@ -1,0 +1,19 @@
+{
+  "id": "675",
+  "title": "Cut Off Trees for Golf Event",
+  "slug": "cut-off-trees-for-golf-event",
+  "difficulty": "Hard",
+  "likes": 334,
+  "dislikes": 188,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "277",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Breadth-first Search"
+  ]
+}

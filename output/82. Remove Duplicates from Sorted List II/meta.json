@@ -1,0 +1,15 @@
+{
+  "id": "82",
+  "title": "Remove Duplicates from Sorted List II",
+  "slug": "remove-duplicates-from-sorted-list-ii",
+  "difficulty": "Medium",
+  "likes": 1000,
+  "dislikes": 84,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Remove Duplicates from Sorted List\", \"titleSlug\": \"remove-duplicates-from-sorted-list\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Linked List"
+  ]
+}

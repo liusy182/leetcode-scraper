@@ -1,0 +1,17 @@
+{
+  "id": "514",
+  "title": "Freedom Trail",
+  "slug": "freedom-trail",
+  "difficulty": "Hard",
+  "likes": 310,
+  "dislikes": 18,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Divide and Conquer",
+    "Dynamic Programming",
+    "Depth-first Search"
+  ]
+}

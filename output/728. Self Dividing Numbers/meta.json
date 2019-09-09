@@ -1,0 +1,21 @@
+{
+  "id": "728",
+  "title": "Self Dividing Numbers",
+  "slug": "self-dividing-numbers",
+  "difficulty": "Easy",
+  "likes": 463,
+  "dislikes": 249,
+  "hints": [
+    "For each number in the range, check whether it is self dividing by converting that number to a character array (or string in Python), then checking that each digit is nonzero and divides the original number."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Perfect Number\", \"titleSlug\": \"perfect-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "296",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

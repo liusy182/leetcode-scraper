@@ -1,0 +1,19 @@
+{
+  "id": "788",
+  "title": "Rotated Digits",
+  "slug": "rotated-digits",
+  "difficulty": "Easy",
+  "likes": 229,
+  "dislikes": 785,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "421",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

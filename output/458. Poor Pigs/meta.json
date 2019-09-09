@@ -1,0 +1,23 @@
+{
+  "id": "458",
+  "title": "Poor Pigs",
+  "slug": "poor-pigs",
+  "difficulty": "Hard",
+  "likes": 314,
+  "dislikes": 739,
+  "hints": [
+    "What if you only have one shot? Eg. 4 buckets, 15 mins to die, and 15 mins to test.",
+    "How many states can we generate with x pigs and T tests?",
+    "Find minimum <code>x</code> such that <code>(T+1)^x >= N</code>"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "718",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

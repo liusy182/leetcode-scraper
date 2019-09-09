@@ -1,0 +1,20 @@
+{
+  "id": "913",
+  "title": "Cat and Mouse",
+  "slug": "cat-and-mouse",
+  "difficulty": "Hard",
+  "likes": 200,
+  "dislikes": 45,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "572",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Breadth-first Search",
+    "Minimax"
+  ]
+}

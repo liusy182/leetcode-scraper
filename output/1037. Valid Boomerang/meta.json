@@ -1,0 +1,17 @@
+{
+  "id": "1037",
+  "title": "Valid Boomerang",
+  "slug": "valid-boomerang",
+  "difficulty": "Easy",
+  "likes": 45,
+  "dislikes": 151,
+  "hints": [
+    "3 points form a boomerang if and only if the triangle formed from them has non-zero area."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Math"
+  ]
+}

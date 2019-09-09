@@ -1,0 +1,23 @@
+{
+  "id": "493",
+  "title": "Reverse Pairs",
+  "slug": "reverse-pairs",
+  "difficulty": "Hard",
+  "likes": 587,
+  "dislikes": 88,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Count of Smaller Numbers After Self\", \"titleSlug\": \"count-of-smaller-numbers-after-self\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Count of Range Sum\", \"titleSlug\": \"count-of-range-sum\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "194",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Binary Search",
+    "Divide and Conquer",
+    "Sort",
+    "Binary Indexed Tree",
+    "Segment Tree"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "1027",
+  "title": "Longest Arithmetic Sequence",
+  "slug": "longest-arithmetic-sequence",
+  "difficulty": "Medium",
+  "likes": 253,
+  "dislikes": 16,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

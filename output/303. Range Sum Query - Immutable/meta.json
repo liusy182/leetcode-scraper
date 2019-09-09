@@ -1,0 +1,19 @@
+{
+  "id": "303",
+  "title": "Range Sum Query - Immutable",
+  "slug": "range-sum-query-immutable",
+  "difficulty": "Easy",
+  "likes": 537,
+  "dislikes": 836,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Range Sum Query 2D - Immutable\", \"titleSlug\": \"range-sum-query-2d-immutable\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Range Sum Query - Mutable\", \"titleSlug\": \"range-sum-query-mutable\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Maximum Size Subarray Sum Equals k\", \"titleSlug\": \"maximum-size-subarray-sum-equals-k\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "9",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

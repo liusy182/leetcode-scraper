@@ -1,0 +1,24 @@
+{
+  "id": "572",
+  "title": "Subtree of Another Tree",
+  "slug": "subtree-of-another-tree",
+  "difficulty": "Easy",
+  "likes": 1325,
+  "dislikes": 51,
+  "hints": [
+    "Which approach is better here- recursive or iterative?",
+    "If recursive approach is better, can you write recursive function with its parameters?",
+    "Two trees <b>s</b> and <b>t</b> are said to be identical if their root values are same and their left and right subtrees are identical. Can you write this in form of recursive formulae?",
+    "Recursive formulae can be: \r\nisIdentical(s,t)= s.val==t.val AND isIdentical(s.left,t.left) AND isIdentical(s.right,t.right)"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Count Univalue Subtrees\", \"titleSlug\": \"count-univalue-subtrees\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Most Frequent Subtree Sum\", \"titleSlug\": \"most-frequent-subtree-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "128",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

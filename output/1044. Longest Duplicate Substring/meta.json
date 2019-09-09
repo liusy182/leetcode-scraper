@@ -1,0 +1,23 @@
+{
+  "id": "1044",
+  "title": "Longest Duplicate Substring",
+  "slug": "longest-duplicate-substring",
+  "difficulty": "Hard",
+  "likes": 94,
+  "dislikes": 77,
+  "hints": [
+    "Binary search for the length of the answer.  (If there's an answer of length 10, then there are answers of length 9, 8, 7, ...)",
+    "To check whether an answer of length K exists, we can use Rabin-Karp 's algorithm."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "742",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "Binary Search"
+  ]
+}

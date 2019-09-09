@@ -1,0 +1,24 @@
+{
+  "id": "778",
+  "title": "Swim in Rising Water",
+  "slug": "swim-in-rising-water",
+  "difficulty": "Hard",
+  "likes": 345,
+  "dislikes": 33,
+  "hints": [
+    "Use either Dijkstra's, or binary search for the best time T for which you can reach the end if you only step on squares at most T."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "408",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Binary Search",
+    "Heap",
+    "Depth-first Search",
+    "Union Find"
+  ]
+}

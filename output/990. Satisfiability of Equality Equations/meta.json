@@ -1,0 +1,20 @@
+{
+  "id": "990",
+  "title": "Satisfiability of Equality Equations",
+  "slug": "satisfiability-of-equality-equations",
+  "difficulty": "Medium",
+  "likes": 239,
+  "dislikes": 3,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "687",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Union Find",
+    "Graph"
+  ]
+}

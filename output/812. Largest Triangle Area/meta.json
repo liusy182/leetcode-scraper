@@ -1,0 +1,19 @@
+{
+  "id": "812",
+  "title": "Largest Triangle Area",
+  "slug": "largest-triangle-area",
+  "difficulty": "Easy",
+  "likes": 122,
+  "dislikes": 775,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Largest Perimeter Triangle\", \"titleSlug\": \"largest-perimeter-triangle\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "447",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

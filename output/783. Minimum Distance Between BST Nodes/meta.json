@@ -1,0 +1,20 @@
+{
+  "id": "783",
+  "title": "Minimum Distance Between BST Nodes",
+  "slug": "minimum-distance-between-bst-nodes",
+  "difficulty": "Easy",
+  "likes": 409,
+  "dislikes": 116,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Binary Tree Inorder Traversal\", \"titleSlug\": \"binary-tree-inorder-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "415",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Recursion"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "445",
+  "title": "Add Two Numbers II",
+  "slug": "add-two-numbers-ii",
+  "difficulty": "Medium",
+  "likes": 840,
+  "dislikes": 113,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Add Two Numbers\", \"titleSlug\": \"add-two-numbers\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Linked List"
+  ]
+}

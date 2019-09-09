@@ -1,0 +1,19 @@
+{
+  "id": "679",
+  "title": "24 Game",
+  "slug": "24-game",
+  "difficulty": "Hard",
+  "likes": 439,
+  "dislikes": 94,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "247",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Depth-first Search"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "911",
+  "title": "Online Election",
+  "slug": "online-election",
+  "difficulty": "Medium",
+  "likes": 216,
+  "dislikes": 156,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "568",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Binary Search"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "637",
+  "title": "Average of Levels in Binary Tree",
+  "slug": "average-of-levels-in-binary-tree",
+  "difficulty": "Easy",
+  "likes": 879,
+  "dislikes": 128,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Binary Tree Level Order Traversal\", \"titleSlug\": \"binary-tree-level-order-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Binary Tree Level Order Traversal II\", \"titleSlug\": \"binary-tree-level-order-traversal-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "197",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

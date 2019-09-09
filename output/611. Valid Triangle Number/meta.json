@@ -1,0 +1,19 @@
+{
+  "id": "611",
+  "title": "Valid Triangle Number",
+  "slug": "valid-triangle-number",
+  "difficulty": "Medium",
+  "likes": 685,
+  "dislikes": 80,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"3Sum Smaller\", \"titleSlug\": \"3sum-smaller\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "165",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

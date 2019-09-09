@@ -1,0 +1,21 @@
+{
+  "id": "768",
+  "title": "Max Chunks To Make Sorted II",
+  "slug": "max-chunks-to-make-sorted-ii",
+  "difficulty": "Hard",
+  "likes": 281,
+  "dislikes": 10,
+  "hints": [
+    "Each k for which some permutation of arr[:k] is equal to sorted(arr)[:k] is where we should cut each chunk."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Max Chunks To Make Sorted\", \"titleSlug\": \"max-chunks-to-make-sorted\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "385",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

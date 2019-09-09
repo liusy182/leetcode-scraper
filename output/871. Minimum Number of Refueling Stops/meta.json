@@ -1,0 +1,20 @@
+{
+  "id": "871",
+  "title": "Minimum Number of Refueling Stops",
+  "slug": "minimum-number-of-refueling-stops",
+  "difficulty": "Hard",
+  "likes": 396,
+  "dislikes": 8,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "506",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming",
+    "Heap"
+  ]
+}

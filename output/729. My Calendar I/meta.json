@@ -1,0 +1,21 @@
+{
+  "id": "729",
+  "title": "My Calendar I",
+  "slug": "my-calendar-i",
+  "difficulty": "Medium",
+  "likes": 420,
+  "dislikes": 27,
+  "hints": [
+    "Store the events as a sorted list of intervals.  If none of the events conflict, then the new event can be added."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"My Calendar II\", \"titleSlug\": \"my-calendar-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"My Calendar III\", \"titleSlug\": \"my-calendar-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "297",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

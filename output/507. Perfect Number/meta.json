@@ -1,0 +1,19 @@
+{
+  "id": "507",
+  "title": "Perfect Number",
+  "slug": "perfect-number",
+  "difficulty": "Easy",
+  "likes": 174,
+  "dislikes": 481,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Self Dividing Numbers\", \"titleSlug\": \"self-dividing-numbers\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "95",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

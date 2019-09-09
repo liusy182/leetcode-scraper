@@ -1,0 +1,19 @@
+{
+  "id": "326",
+  "title": "Power of Three",
+  "slug": "power-of-three",
+  "difficulty": "Easy",
+  "likes": 324,
+  "dislikes": 1152,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Power of Two\", \"titleSlug\": \"power-of-two\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Power of Four\", \"titleSlug\": \"power-of-four\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "45",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

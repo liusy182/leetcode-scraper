@@ -1,0 +1,19 @@
+{
+  "id": "164",
+  "title": "Maximum Gap",
+  "slug": "maximum-gap",
+  "difficulty": "Hard",
+  "likes": 576,
+  "dislikes": 140,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "81",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Sort"
+  ]
+}

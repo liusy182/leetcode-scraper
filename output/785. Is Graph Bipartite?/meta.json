@@ -1,0 +1,21 @@
+{
+  "id": "785",
+  "title": "Is Graph Bipartite?",
+  "slug": "is-graph-bipartite",
+  "difficulty": "Medium",
+  "likes": 770,
+  "dislikes": 97,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "417",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Depth-first Search",
+    "Breadth-first Search",
+    "Graph"
+  ]
+}

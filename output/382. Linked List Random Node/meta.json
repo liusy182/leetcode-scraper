@@ -1,0 +1,15 @@
+{
+  "id": "382",
+  "title": "Linked List Random Node",
+  "slug": "linked-list-random-node",
+  "difficulty": "Medium",
+  "likes": 411,
+  "dislikes": 126,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Random Pick Index\", \"titleSlug\": \"random-pick-index\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Reservoir Sampling"
+  ]
+}

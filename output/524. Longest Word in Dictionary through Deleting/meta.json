@@ -1,0 +1,20 @@
+{
+  "id": "524",
+  "title": "Longest Word in Dictionary through Deleting",
+  "slug": "longest-word-in-dictionary-through-deleting",
+  "difficulty": "Medium",
+  "likes": 369,
+  "dislikes": 190,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Longest Word in Dictionary\", \"titleSlug\": \"longest-word-in-dictionary\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "129",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Two Pointers",
+    "Sort"
+  ]
+}

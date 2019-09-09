@@ -1,0 +1,21 @@
+{
+  "id": "771",
+  "title": "Jewels and Stones",
+  "slug": "jewels-and-stones",
+  "difficulty": "Easy",
+  "likes": 1583,
+  "dislikes": 298,
+  "hints": [
+    "For each stone, check if it is a jewel."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "404",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table"
+  ]
+}

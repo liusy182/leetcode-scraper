@@ -1,0 +1,19 @@
+{
+  "id": "1029",
+  "title": "Two City Scheduling",
+  "slug": "two-city-scheduling",
+  "difficulty": "Easy",
+  "likes": 307,
+  "dislikes": 36,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "726",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Greedy"
+  ]
+}

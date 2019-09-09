@@ -1,0 +1,16 @@
+{
+  "id": "532",
+  "title": "K-diff Pairs in an Array",
+  "slug": "k-diff-pairs-in-an-array",
+  "difficulty": "Easy",
+  "likes": 392,
+  "dislikes": 894,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Minimum Absolute Difference in BST\", \"titleSlug\": \"minimum-absolute-difference-in-bst\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Two Pointers"
+  ]
+}

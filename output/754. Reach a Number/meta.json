@@ -1,0 +1,19 @@
+{
+  "id": "754",
+  "title": "Reach a Number",
+  "slug": "reach-a-number",
+  "difficulty": "Easy",
+  "likes": 326,
+  "dislikes": 270,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "364",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

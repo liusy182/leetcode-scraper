@@ -1,0 +1,19 @@
+{
+  "id": "688",
+  "title": "Knight Probability in Chessboard",
+  "slug": "knight-probability-in-chessboard",
+  "difficulty": "Medium",
+  "likes": 454,
+  "dislikes": 94,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Out of Boundary Paths\", \"titleSlug\": \"out-of-boundary-paths\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "254",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

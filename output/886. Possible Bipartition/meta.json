@@ -1,0 +1,19 @@
+{
+  "id": "886",
+  "title": "Possible Bipartition",
+  "slug": "possible-bipartition",
+  "difficulty": "Medium",
+  "likes": 331,
+  "dislikes": 16,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "529",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Depth-first Search"
+  ]
+}

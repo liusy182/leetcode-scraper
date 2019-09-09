@@ -1,0 +1,19 @@
+{
+  "id": "896",
+  "title": "Monotonic Array",
+  "slug": "monotonic-array",
+  "difficulty": "Easy",
+  "likes": 337,
+  "dislikes": 27,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "546",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

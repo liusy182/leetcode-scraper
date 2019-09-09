@@ -1,0 +1,17 @@
+{
+  "id": "822",
+  "title": "Card Flipping Game",
+  "slug": "card-flipping-game",
+  "difficulty": "Medium",
+  "likes": 53,
+  "dislikes": 363,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "452",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

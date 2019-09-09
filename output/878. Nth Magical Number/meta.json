@@ -1,0 +1,20 @@
+{
+  "id": "878",
+  "title": "Nth Magical Number",
+  "slug": "nth-magical-number",
+  "difficulty": "Hard",
+  "likes": 121,
+  "dislikes": 42,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "522",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math",
+    "Binary Search"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "626",
+  "title": "Exchange Seats",
+  "slug": "exchange-seats",
+  "difficulty": "Medium",
+  "likes": 198,
+  "dislikes": 185,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "195",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "436",
+  "title": "Find Right Interval",
+  "slug": "find-right-interval",
+  "difficulty": "Medium",
+  "likes": 236,
+  "dislikes": 102,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Data Stream as Disjoint Intervals\", \"titleSlug\": \"data-stream-as-disjoint-intervals\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "89",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Binary Search"
+  ]
+}

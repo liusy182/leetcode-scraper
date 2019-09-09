@@ -1,0 +1,20 @@
+{
+  "id": "122",
+  "title": "Best Time to Buy and Sell Stock II",
+  "slug": "best-time-to-buy-and-sell-stock-ii",
+  "difficulty": "Easy",
+  "likes": 1223,
+  "dislikes": 1403,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Best Time to Buy and Sell Stock\", \"titleSlug\": \"best-time-to-buy-and-sell-stock\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Best Time to Buy and Sell Stock III\", \"titleSlug\": \"best-time-to-buy-and-sell-stock-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Best Time to Buy and Sell Stock IV\", \"titleSlug\": \"best-time-to-buy-and-sell-stock-iv\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Best Time to Buy and Sell Stock with Cooldown\", \"titleSlug\": \"best-time-to-buy-and-sell-stock-with-cooldown\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Best Time to Buy and Sell Stock with Transaction Fee\", \"titleSlug\": \"best-time-to-buy-and-sell-stock-with-transaction-fee\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "53",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Greedy"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "1115",
+  "title": "Print FooBar Alternately",
+  "slug": "print-foobar-alternately",
+  "difficulty": "Medium",
+  "likes": 115,
+  "dislikes": 5,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Print in Order\", \"titleSlug\": \"print-in-order\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Print Zero Even Odd\", \"titleSlug\": \"print-zero-even-odd\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": []
+}

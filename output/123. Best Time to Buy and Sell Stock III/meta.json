@@ -1,0 +1,16 @@
+{
+  "id": "123",
+  "title": "Best Time to Buy and Sell Stock III",
+  "slug": "best-time-to-buy-and-sell-stock-iii",
+  "difficulty": "Hard",
+  "likes": 1315,
+  "dislikes": 57,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Best Time to Buy and Sell Stock\", \"titleSlug\": \"best-time-to-buy-and-sell-stock\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Best Time to Buy and Sell Stock II\", \"titleSlug\": \"best-time-to-buy-and-sell-stock-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Best Time to Buy and Sell Stock IV\", \"titleSlug\": \"best-time-to-buy-and-sell-stock-iv\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Maximum Sum of 3 Non-Overlapping Subarrays\", \"titleSlug\": \"maximum-sum-of-3-non-overlapping-subarrays\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Dynamic Programming"
+  ]
+}

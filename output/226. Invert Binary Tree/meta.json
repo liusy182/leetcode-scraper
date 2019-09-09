@@ -1,0 +1,19 @@
+{
+  "id": "226",
+  "title": "Invert Binary Tree",
+  "slug": "invert-binary-tree",
+  "difficulty": "Easy",
+  "likes": 1982,
+  "dislikes": 35,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "37",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "146",
+  "title": "LRU Cache",
+  "slug": "lru-cache",
+  "difficulty": "Medium",
+  "likes": 3507,
+  "dislikes": 139,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"LFU Cache\", \"titleSlug\": \"lfu-cache\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Design In-Memory File System\", \"titleSlug\": \"design-in-memory-file-system\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Design Compressed String Iterator\", \"titleSlug\": \"design-compressed-string-iterator\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "702",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Design"
+  ]
+}

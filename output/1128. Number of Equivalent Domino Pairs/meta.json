@@ -1,0 +1,18 @@
+{
+  "id": "1128",
+  "title": "Number of Equivalent Domino Pairs",
+  "slug": "number-of-equivalent-domino-pairs",
+  "difficulty": "Easy",
+  "likes": 75,
+  "dislikes": 44,
+  "hints": [
+    "For each domino j, find the number of dominoes you've already seen (dominoes i with i < j) that are equivalent.",
+    "You can keep track of what you've seen using a hashmap."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array"
+  ]
+}

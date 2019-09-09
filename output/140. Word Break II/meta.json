@@ -1,0 +1,20 @@
+{
+  "id": "140",
+  "title": "Word Break II",
+  "slug": "word-break-ii",
+  "difficulty": "Hard",
+  "likes": 1147,
+  "dislikes": 264,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Word Break\", \"titleSlug\": \"word-break\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Concatenated Words\", \"titleSlug\": \"concatenated-words\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "76",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming",
+    "Backtracking"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "977",
+  "title": "Squares of a Sorted Array",
+  "slug": "squares-of-a-sorted-array",
+  "difficulty": "Easy",
+  "likes": 474,
+  "dislikes": 51,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Merge Sorted Array\", \"titleSlug\": \"merge-sorted-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Sort Transformed Array\", \"titleSlug\": \"sort-transformed-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "671",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Two Pointers"
+  ]
+}

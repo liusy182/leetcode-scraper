@@ -1,0 +1,19 @@
+{
+  "id": "179",
+  "title": "Largest Number",
+  "slug": "largest-number",
+  "difficulty": "Medium",
+  "likes": 1180,
+  "dislikes": 153,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "339",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Sort"
+  ]
+}

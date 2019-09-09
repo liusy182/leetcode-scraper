@@ -1,0 +1,19 @@
+{
+  "id": "657",
+  "title": "Robot Return to Origin",
+  "slug": "robot-return-to-origin",
+  "difficulty": "Easy",
+  "likes": 752,
+  "dislikes": 584,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Friend Circles\", \"titleSlug\": \"friend-circles\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "331",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

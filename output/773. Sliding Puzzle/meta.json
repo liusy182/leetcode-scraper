@@ -1,0 +1,21 @@
+{
+  "id": "773",
+  "title": "Sliding Puzzle",
+  "slug": "sliding-puzzle",
+  "difficulty": "Hard",
+  "likes": 375,
+  "dislikes": 14,
+  "hints": [
+    "Perform a breadth-first-search, where the nodes are the puzzle boards and edges are if two puzzle boards can be transformed into one another with one move."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "402",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Breadth-first Search"
+  ]
+}

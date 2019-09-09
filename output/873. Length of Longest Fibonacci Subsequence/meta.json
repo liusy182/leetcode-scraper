@@ -1,0 +1,20 @@
+{
+  "id": "873",
+  "title": "Length of Longest Fibonacci Subsequence",
+  "slug": "length-of-longest-fibonacci-subsequence",
+  "difficulty": "Medium",
+  "likes": 445,
+  "dislikes": 19,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Fibonacci Number\", \"titleSlug\": \"fibonacci-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "512",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Dynamic Programming"
+  ]
+}

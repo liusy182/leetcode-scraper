@@ -1,0 +1,16 @@
+{
+  "id": "80",
+  "title": "Remove Duplicates from Sorted Array II",
+  "slug": "remove-duplicates-from-sorted-array-ii",
+  "difficulty": "Medium",
+  "likes": 753,
+  "dislikes": 577,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Remove Duplicates from Sorted Array\", \"titleSlug\": \"remove-duplicates-from-sorted-array\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Two Pointers"
+  ]
+}

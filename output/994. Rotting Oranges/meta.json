@@ -1,0 +1,19 @@
+{
+  "id": "994",
+  "title": "Rotting Oranges",
+  "slug": "rotting-oranges",
+  "difficulty": "Easy",
+  "likes": 356,
+  "dislikes": 26,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Walls and Gates\", \"titleSlug\": \"walls-and-gates\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "696",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Breadth-first Search"
+  ]
+}

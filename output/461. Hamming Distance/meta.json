@@ -1,0 +1,15 @@
+{
+  "id": "461",
+  "title": "Hamming Distance",
+  "slug": "hamming-distance",
+  "difficulty": "Easy",
+  "likes": 1388,
+  "dislikes": 130,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Number of 1 Bits\", \"titleSlug\": \"number-of-1-bits\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Total Hamming Distance\", \"titleSlug\": \"total-hamming-distance\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Bit Manipulation"
+  ]
+}

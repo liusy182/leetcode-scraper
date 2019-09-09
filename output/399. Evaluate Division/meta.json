@@ -1,0 +1,18 @@
+{
+  "id": "399",
+  "title": "Evaluate Division",
+  "slug": "evaluate-division",
+  "difficulty": "Medium",
+  "likes": 1522,
+  "dislikes": 120,
+  "hints": [
+    "Do you recognize this as a graph problem?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Union Find",
+    "Graph"
+  ]
+}

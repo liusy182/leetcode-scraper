@@ -1,0 +1,17 @@
+{
+  "id": "78",
+  "title": "Subsets",
+  "slug": "subsets",
+  "difficulty": "Medium",
+  "likes": 2289,
+  "dislikes": 56,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Subsets II\", \"titleSlug\": \"subsets-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Generalized Abbreviation\", \"titleSlug\": \"generalized-abbreviation\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Letter Case Permutation\", \"titleSlug\": \"letter-case-permutation\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Backtracking",
+    "Bit Manipulation"
+  ]
+}

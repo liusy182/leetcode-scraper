@@ -1,0 +1,20 @@
+{
+  "id": "99",
+  "title": "Recover Binary Search Tree",
+  "slug": "recover-binary-search-tree",
+  "difficulty": "Hard",
+  "likes": 934,
+  "dislikes": 51,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "746",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Depth-first Search"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "996",
+  "title": "Number of Squareful Arrays",
+  "slug": "number-of-squareful-arrays",
+  "difficulty": "Hard",
+  "likes": 174,
+  "dislikes": 13,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Permutations II\", \"titleSlug\": \"permutations-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "698",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math",
+    "Backtracking",
+    "Graph"
+  ]
+}

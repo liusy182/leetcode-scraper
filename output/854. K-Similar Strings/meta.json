@@ -1,0 +1,20 @@
+{
+  "id": "854",
+  "title": "K-Similar Strings",
+  "slug": "k-similar-strings",
+  "difficulty": "Hard",
+  "likes": 197,
+  "dislikes": 22,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Couples Holding Hands\", \"titleSlug\": \"couples-holding-hands\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "491",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Breadth-first Search",
+    "Graph"
+  ]
+}

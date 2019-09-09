@@ -1,0 +1,19 @@
+{
+  "id": "480",
+  "title": "Sliding Window Median",
+  "slug": "sliding-window-median",
+  "difficulty": "Hard",
+  "likes": 493,
+  "dislikes": 52,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Find Median from Data Stream\", \"titleSlug\": \"find-median-from-data-stream\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "86",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Sliding Window"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "515",
+  "title": "Find Largest Value in Each Tree Row",
+  "slug": "find-largest-value-in-each-tree-row",
+  "difficulty": "Medium",
+  "likes": 557,
+  "dislikes": 48,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Tree",
+    "Depth-first Search",
+    "Breadth-first Search"
+  ]
+}

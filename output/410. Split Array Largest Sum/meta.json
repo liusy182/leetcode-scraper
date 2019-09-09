@@ -1,0 +1,20 @@
+{
+  "id": "410",
+  "title": "Split Array Largest Sum",
+  "slug": "split-array-largest-sum",
+  "difficulty": "Hard",
+  "likes": 948,
+  "dislikes": 53,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "343",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Binary Search",
+    "Dynamic Programming"
+  ]
+}

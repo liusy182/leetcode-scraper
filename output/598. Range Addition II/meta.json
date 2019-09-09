@@ -1,0 +1,19 @@
+{
+  "id": "598",
+  "title": "Range Addition II",
+  "slug": "range-addition-ii",
+  "difficulty": "Easy",
+  "likes": 208,
+  "dislikes": 486,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Range Addition\", \"titleSlug\": \"range-addition\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "146",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

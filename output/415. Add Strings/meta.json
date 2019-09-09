@@ -1,0 +1,15 @@
+{
+  "id": "415",
+  "title": "Add Strings",
+  "slug": "add-strings",
+  "difficulty": "Easy",
+  "likes": 492,
+  "dislikes": 164,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Add Two Numbers\", \"titleSlug\": \"add-two-numbers\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Multiply Strings\", \"titleSlug\": \"multiply-strings\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Add to Array-Form of Integer\", \"titleSlug\": \"add-to-array-form-of-integer\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "String"
+  ]
+}

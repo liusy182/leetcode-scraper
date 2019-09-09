@@ -1,0 +1,15 @@
+{
+  "id": "190",
+  "title": "Reverse Bits",
+  "slug": "reverse-bits",
+  "difficulty": "Easy",
+  "likes": 631,
+  "dislikes": 220,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Reverse Integer\", \"titleSlug\": \"reverse-integer\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Number of 1 Bits\", \"titleSlug\": \"number-of-1-bits\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Bit Manipulation"
+  ]
+}

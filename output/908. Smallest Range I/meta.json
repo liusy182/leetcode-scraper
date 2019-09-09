@@ -1,0 +1,19 @@
+{
+  "id": "908",
+  "title": "Smallest Range I",
+  "slug": "smallest-range-i",
+  "difficulty": "Easy",
+  "likes": 132,
+  "dislikes": 745,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "567",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

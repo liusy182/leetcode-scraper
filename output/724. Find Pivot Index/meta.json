@@ -1,0 +1,21 @@
+{
+  "id": "724",
+  "title": "Find Pivot Index",
+  "slug": "find-pivot-index",
+  "difficulty": "Easy",
+  "likes": 699,
+  "dislikes": 170,
+  "hints": [
+    "We can precompute prefix sums P[i] = nums[0] + nums[1] + ... + nums[i-1].\r\nThen for each index, the left sum is P[i], and the right sum is P[P.length - 1] - P[i] - nums[i]."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Subarray Sum Equals K\", \"titleSlug\": \"subarray-sum-equals-k\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "291",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

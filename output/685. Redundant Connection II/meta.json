@@ -1,0 +1,22 @@
+{
+  "id": "685",
+  "title": "Redundant Connection II",
+  "slug": "redundant-connection-ii",
+  "difficulty": "Hard",
+  "likes": 510,
+  "dislikes": 164,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Redundant Connection\", \"titleSlug\": \"redundant-connection\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "306",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Depth-first Search",
+    "Union Find",
+    "Graph"
+  ]
+}

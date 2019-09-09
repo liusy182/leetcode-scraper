@@ -1,0 +1,19 @@
+{
+  "id": "48",
+  "title": "Rotate Image",
+  "slug": "rotate-image",
+  "difficulty": "Medium",
+  "likes": 1864,
+  "dislikes": 169,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "637",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

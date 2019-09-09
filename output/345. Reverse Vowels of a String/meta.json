@@ -1,0 +1,16 @@
+{
+  "id": "345",
+  "title": "Reverse Vowels of a String",
+  "slug": "reverse-vowels-of-a-string",
+  "difficulty": "Easy",
+  "likes": 432,
+  "dislikes": 816,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Reverse String\", \"titleSlug\": \"reverse-string\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Remove Vowels from a String\", \"titleSlug\": \"remove-vowels-from-a-string\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Two Pointers",
+    "String"
+  ]
+}

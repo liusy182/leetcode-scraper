@@ -1,0 +1,19 @@
+{
+  "id": "52",
+  "title": "N-Queens II",
+  "slug": "n-queens-ii",
+  "difficulty": "Hard",
+  "likes": 324,
+  "dislikes": 124,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"N-Queens\", \"titleSlug\": \"n-queens\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "655",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Backtracking"
+  ]
+}

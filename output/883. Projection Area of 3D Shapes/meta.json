@@ -1,0 +1,19 @@
+{
+  "id": "883",
+  "title": "Projection Area of 3D Shapes",
+  "slug": "projection-area-of-3d-shapes",
+  "difficulty": "Easy",
+  "likes": 163,
+  "dislikes": 580,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "526",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

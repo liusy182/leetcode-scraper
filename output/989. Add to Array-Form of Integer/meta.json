@@ -1,0 +1,19 @@
+{
+  "id": "989",
+  "title": "Add to Array-Form of Integer",
+  "slug": "add-to-array-form-of-integer",
+  "difficulty": "Easy",
+  "likes": 163,
+  "dislikes": 31,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Add Two Numbers\", \"titleSlug\": \"add-two-numbers\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Plus One\", \"titleSlug\": \"plus-one\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Add Binary\", \"titleSlug\": \"add-binary\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Add Strings\", \"titleSlug\": \"add-strings\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "688",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

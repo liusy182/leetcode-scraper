@@ -1,0 +1,20 @@
+{
+  "id": "921",
+  "title": "Minimum Add to Make Parentheses Valid",
+  "slug": "minimum-add-to-make-parentheses-valid",
+  "difficulty": "Medium",
+  "likes": 339,
+  "dislikes": 27,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "586",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Stack",
+    "Greedy"
+  ]
+}

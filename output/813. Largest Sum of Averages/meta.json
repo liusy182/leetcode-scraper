@@ -1,0 +1,19 @@
+{
+  "id": "813",
+  "title": "Largest Sum of Averages",
+  "slug": "largest-sum-of-averages",
+  "difficulty": "Medium",
+  "likes": 606,
+  "dislikes": 22,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "446",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

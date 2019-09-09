@@ -1,0 +1,20 @@
+{
+  "id": "963",
+  "title": "Minimum Area Rectangle II",
+  "slug": "minimum-area-rectangle-ii",
+  "difficulty": "Medium",
+  "likes": 79,
+  "dislikes": 130,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "648",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math",
+    "Geometry"
+  ]
+}

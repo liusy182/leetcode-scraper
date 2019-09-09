@@ -1,0 +1,18 @@
+{
+  "id": "1041",
+  "title": "Robot Bounded In Circle",
+  "slug": "robot-bounded-in-circle",
+  "difficulty": "Medium",
+  "likes": 116,
+  "dislikes": 80,
+  "hints": [
+    "Calculate the final vector of how the robot travels after executing all instructions once - it consists of a change in position plus a change in direction.",
+    "The robot stays in the circle iff (looking at the final vector) it changes direction (ie. doesn't stay pointing north), or it moves 0."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Math"
+  ]
+}

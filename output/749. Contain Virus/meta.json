@@ -1,0 +1,21 @@
+{
+  "id": "749",
+  "title": "Contain Virus",
+  "slug": "contain-virus",
+  "difficulty": "Hard",
+  "likes": 51,
+  "dislikes": 173,
+  "hints": [
+    "The implementation is long - we want to perfrom the following steps:\r\n\r\n* Find all viral regions (connected components), additionally for each region keeping track of the frontier (neighboring uncontaminated cells), and the perimeter of the region.\r\n\r\n* Disinfect the most viral region, adding it's perimeter to the answer.\r\n\r\n* Spread the virus in the remaining regions outward by 1 square."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "346",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Depth-first Search"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "565",
+  "title": "Array Nesting",
+  "slug": "array-nesting",
+  "difficulty": "Medium",
+  "likes": 625,
+  "dislikes": 83,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Nested List Weight Sum\", \"titleSlug\": \"nested-list-weight-sum\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Flatten Nested List Iterator\", \"titleSlug\": \"flatten-nested-list-iterator\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Nested List Weight Sum II\", \"titleSlug\": \"nested-list-weight-sum-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "145",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

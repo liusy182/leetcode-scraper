@@ -1,0 +1,17 @@
+{
+  "id": "197",
+  "title": "Rising Temperature",
+  "slug": "rising-temperature",
+  "difficulty": "Easy",
+  "likes": 273,
+  "dislikes": 114,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "211",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

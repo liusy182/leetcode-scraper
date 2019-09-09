@@ -1,0 +1,19 @@
+{
+  "id": "342",
+  "title": "Power of Four",
+  "slug": "power-of-four",
+  "difficulty": "Easy",
+  "likes": 341,
+  "dislikes": 157,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Power of Two\", \"titleSlug\": \"power-of-two\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Power of Three\", \"titleSlug\": \"power-of-three\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "767",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Bit Manipulation"
+  ]
+}

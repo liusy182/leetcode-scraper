@@ -1,0 +1,16 @@
+{
+  "id": "125",
+  "title": "Valid Palindrome",
+  "slug": "valid-palindrome",
+  "difficulty": "Easy",
+  "likes": 682,
+  "dislikes": 2011,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Palindrome Linked List\", \"titleSlug\": \"palindrome-linked-list\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Valid Palindrome II\", \"titleSlug\": \"valid-palindrome-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Two Pointers",
+    "String"
+  ]
+}

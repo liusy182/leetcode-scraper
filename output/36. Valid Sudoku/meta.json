@@ -1,0 +1,19 @@
+{
+  "id": "36",
+  "title": "Valid Sudoku",
+  "slug": "valid-sudoku",
+  "difficulty": "Medium",
+  "likes": 1008,
+  "dislikes": 360,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Sudoku Solver\", \"titleSlug\": \"sudoku-solver\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "663",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table"
+  ]
+}

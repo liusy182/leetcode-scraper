@@ -1,0 +1,17 @@
+{
+  "id": "130",
+  "title": "Surrounded Regions",
+  "slug": "surrounded-regions",
+  "difficulty": "Medium",
+  "likes": 907,
+  "dislikes": 475,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Number of Islands\", \"titleSlug\": \"number-of-islands\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Walls and Gates\", \"titleSlug\": \"walls-and-gates\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Depth-first Search",
+    "Breadth-first Search",
+    "Union Find"
+  ]
+}

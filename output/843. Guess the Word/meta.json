@@ -1,0 +1,19 @@
+{
+  "id": "843",
+  "title": "Guess the Word",
+  "slug": "guess-the-word",
+  "difficulty": "Hard",
+  "likes": 319,
+  "dislikes": 344,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "473",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Minimax"
+  ]
+}

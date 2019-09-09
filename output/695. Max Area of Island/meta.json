@@ -1,0 +1,20 @@
+{
+  "id": "695",
+  "title": "Max Area of Island",
+  "slug": "max-area-of-island",
+  "difficulty": "Medium",
+  "likes": 1239,
+  "dislikes": 64,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Number of Islands\", \"titleSlug\": \"number-of-islands\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Island Perimeter\", \"titleSlug\": \"island-perimeter\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "260",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Depth-first Search"
+  ]
+}

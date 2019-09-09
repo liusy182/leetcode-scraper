@@ -1,0 +1,20 @@
+{
+  "id": "891",
+  "title": "Sum of Subsequence Widths",
+  "slug": "sum-of-subsequence-widths",
+  "difficulty": "Hard",
+  "likes": 140,
+  "dislikes": 81,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "535",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Math"
+  ]
+}

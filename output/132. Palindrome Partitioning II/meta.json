@@ -1,0 +1,15 @@
+{
+  "id": "132",
+  "title": "Palindrome Partitioning II",
+  "slug": "palindrome-partitioning-ii",
+  "difficulty": "Hard",
+  "likes": 689,
+  "dislikes": 24,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Palindrome Partitioning\", \"titleSlug\": \"palindrome-partitioning\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

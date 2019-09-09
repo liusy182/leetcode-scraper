@@ -1,0 +1,20 @@
+{
+  "id": "907",
+  "title": "Sum of Subarray Minimums",
+  "slug": "sum-of-subarray-minimums",
+  "difficulty": "Medium",
+  "likes": 635,
+  "dislikes": 44,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "561",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Stack"
+  ]
+}

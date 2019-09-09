@@ -1,0 +1,19 @@
+{
+  "id": "953",
+  "title": "Verifying an Alien Dictionary",
+  "slug": "verifying-an-alien-dictionary",
+  "difficulty": "Easy",
+  "likes": 266,
+  "dislikes": 93,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "633",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table"
+  ]
+}

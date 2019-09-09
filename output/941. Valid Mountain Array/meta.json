@@ -1,0 +1,19 @@
+{
+  "id": "941",
+  "title": "Valid Mountain Array",
+  "slug": "valid-mountain-array",
+  "difficulty": "Easy",
+  "likes": 194,
+  "dislikes": 50,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "621",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

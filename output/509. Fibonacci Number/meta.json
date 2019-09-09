@@ -1,0 +1,19 @@
+{
+  "id": "509",
+  "title": "Fibonacci Number",
+  "slug": "fibonacci-number",
+  "difficulty": "Easy",
+  "likes": 268,
+  "dislikes": 157,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Climbing Stairs\", \"titleSlug\": \"climbing-stairs\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Split Array into Fibonacci Sequence\", \"titleSlug\": \"split-array-into-fibonacci-sequence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Length of Longest Fibonacci Subsequence\", \"titleSlug\": \"length-of-longest-fibonacci-subsequence\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"N-th Tribonacci Number\", \"titleSlug\": \"n-th-tribonacci-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "762",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

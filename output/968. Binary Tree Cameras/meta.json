@@ -1,0 +1,21 @@
+{
+  "id": "968",
+  "title": "Binary Tree Cameras",
+  "slug": "binary-tree-cameras",
+  "difficulty": "Hard",
+  "likes": 337,
+  "dislikes": 11,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Distribute Coins in Binary Tree\", \"titleSlug\": \"distribute-coins-in-binary-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "651",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming",
+    "Tree",
+    "Depth-first Search"
+  ]
+}

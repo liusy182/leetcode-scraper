@@ -1,0 +1,19 @@
+{
+  "id": "525",
+  "title": "Contiguous Array",
+  "slug": "contiguous-array",
+  "difficulty": "Medium",
+  "likes": 781,
+  "dislikes": 40,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Maximum Size Subarray Sum Equals k\", \"titleSlug\": \"maximum-size-subarray-sum-equals-k\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "94",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table"
+  ]
+}

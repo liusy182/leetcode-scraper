@@ -1,0 +1,17 @@
+{
+  "id": "1140",
+  "title": "Stone Game II",
+  "slug": "stone-game-ii",
+  "difficulty": "Medium",
+  "likes": 116,
+  "dislikes": 24,
+  "hints": [
+    "Use dynamic programming: the states are (i, m) for the answer of piles[i:] and that given m."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

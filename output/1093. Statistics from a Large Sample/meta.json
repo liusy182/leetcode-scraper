@@ -1,0 +1,18 @@
+{
+  "id": "1093",
+  "title": "Statistics from a Large Sample",
+  "slug": "statistics-from-a-large-sample",
+  "difficulty": "Medium",
+  "likes": 29,
+  "dislikes": 146,
+  "hints": [
+    "The hard part is the median.  Write a helper function which finds the k-th element from the sample."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Math",
+    "Two Pointers"
+  ]
+}

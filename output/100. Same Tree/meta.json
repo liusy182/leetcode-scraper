@@ -1,0 +1,20 @@
+{
+  "id": "100",
+  "title": "Same Tree",
+  "slug": "same-tree",
+  "difficulty": "Easy",
+  "likes": 1295,
+  "dislikes": 43,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "706",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Depth-first Search"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "430",
+  "title": "Flatten a Multilevel Doubly Linked List",
+  "slug": "flatten-a-multilevel-doubly-linked-list",
+  "difficulty": "Medium",
+  "likes": 457,
+  "dislikes": 74,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Flatten Binary Tree to Linked List\", \"titleSlug\": \"flatten-binary-tree-to-linked-list\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Linked List",
+    "Depth-first Search"
+  ]
+}

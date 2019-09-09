@@ -1,0 +1,16 @@
+{
+  "id": "115",
+  "title": "Distinct Subsequences",
+  "slug": "distinct-subsequences",
+  "difficulty": "Hard",
+  "likes": 785,
+  "dislikes": 39,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "String",
+    "Dynamic Programming"
+  ]
+}

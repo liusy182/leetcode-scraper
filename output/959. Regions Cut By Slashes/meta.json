@@ -1,0 +1,21 @@
+{
+  "id": "959",
+  "title": "Regions Cut By Slashes",
+  "slug": "regions-cut-by-slashes",
+  "difficulty": "Medium",
+  "likes": 363,
+  "dislikes": 82,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "640",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Depth-first Search",
+    "Union Find",
+    "Graph"
+  ]
+}

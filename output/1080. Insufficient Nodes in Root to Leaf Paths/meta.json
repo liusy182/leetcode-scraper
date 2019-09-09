@@ -1,0 +1,17 @@
+{
+  "id": "1080",
+  "title": "Insufficient Nodes in Root to Leaf Paths",
+  "slug": "insufficient-nodes-in-root-to-leaf-paths",
+  "difficulty": "Medium",
+  "likes": 71,
+  "dislikes": 242,
+  "hints": [
+    "Consider a DFS traversal of the tree.  You can keep track of the current path sum from root to this node, and you can also use DFS to return the minimum value of any path from this node to the leaf.  This will tell you if this node is insufficient."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Depth-first Search"
+  ]
+}

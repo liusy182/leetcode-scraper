@@ -1,0 +1,16 @@
+{
+  "id": "113",
+  "title": "Path Sum II",
+  "slug": "path-sum-ii",
+  "difficulty": "Medium",
+  "likes": 1056,
+  "dislikes": 38,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Path Sum\", \"titleSlug\": \"path-sum\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Binary Tree Paths\", \"titleSlug\": \"binary-tree-paths\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Path Sum III\", \"titleSlug\": \"path-sum-iii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Path Sum IV\", \"titleSlug\": \"path-sum-iv\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Tree",
+    "Depth-first Search"
+  ]
+}

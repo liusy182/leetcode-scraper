@@ -1,0 +1,16 @@
+{
+  "id": "65",
+  "title": "Valid Number",
+  "slug": "valid-number",
+  "difficulty": "Hard",
+  "likes": 500,
+  "dislikes": 3569,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"String to Integer (atoi)\", \"titleSlug\": \"string-to-integer-atoi\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Math",
+    "String"
+  ]
+}

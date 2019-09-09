@@ -1,0 +1,17 @@
+{
+  "id": "181",
+  "title": "Employees Earning More Than Their Managers",
+  "slug": "employees-earning-more-than-their-managers",
+  "difficulty": "Easy",
+  "likes": 402,
+  "dislikes": 46,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "215",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

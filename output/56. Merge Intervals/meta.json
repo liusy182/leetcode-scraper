@@ -1,0 +1,20 @@
+{
+  "id": "56",
+  "title": "Merge Intervals",
+  "slug": "merge-intervals",
+  "difficulty": "Medium",
+  "likes": 2482,
+  "dislikes": 192,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Insert Interval\", \"titleSlug\": \"insert-interval\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Meeting Rooms\", \"titleSlug\": \"meeting-rooms\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Meeting Rooms II\", \"titleSlug\": \"meeting-rooms-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Teemo Attacking\", \"titleSlug\": \"teemo-attacking\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Add Bold Tag in String\", \"titleSlug\": \"add-bold-tag-in-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Range Module\", \"titleSlug\": \"range-module\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Employee Free Time\", \"titleSlug\": \"employee-free-time\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Partition Labels\", \"titleSlug\": \"partition-labels\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Interval List Intersections\", \"titleSlug\": \"interval-list-intersections\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "294",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Sort"
+  ]
+}

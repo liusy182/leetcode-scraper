@@ -1,0 +1,17 @@
+{
+  "id": "799",
+  "title": "Champagne Tower",
+  "slug": "champagne-tower",
+  "difficulty": "Medium",
+  "likes": 314,
+  "dislikes": 21,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "431",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

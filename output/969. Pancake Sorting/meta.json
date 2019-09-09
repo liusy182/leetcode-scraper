@@ -1,0 +1,20 @@
+{
+  "id": "969",
+  "title": "Pancake Sorting",
+  "slug": "pancake-sorting",
+  "difficulty": "Medium",
+  "likes": 179,
+  "dislikes": 216,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "657",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Sort"
+  ]
+}

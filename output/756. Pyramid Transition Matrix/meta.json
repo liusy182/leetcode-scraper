@@ -1,0 +1,20 @@
+{
+  "id": "756",
+  "title": "Pyramid Transition Matrix",
+  "slug": "pyramid-transition-matrix",
+  "difficulty": "Medium",
+  "likes": 202,
+  "dislikes": 280,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "363",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Bit Manipulation",
+    "Depth-first Search"
+  ]
+}

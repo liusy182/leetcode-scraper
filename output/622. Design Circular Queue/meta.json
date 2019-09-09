@@ -1,0 +1,16 @@
+{
+  "id": "622",
+  "title": "Design Circular Queue",
+  "slug": "design-circular-queue",
+  "difficulty": "Medium",
+  "likes": 292,
+  "dislikes": 57,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Design Circular Deque\", \"titleSlug\": \"design-circular-deque\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Design",
+    "Queue"
+  ]
+}

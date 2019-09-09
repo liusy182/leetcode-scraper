@@ -1,0 +1,19 @@
+{
+  "id": "949",
+  "title": "Largest Time for Given Digits",
+  "slug": "largest-time-for-given-digits",
+  "difficulty": "Easy",
+  "likes": 85,
+  "dislikes": 235,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "631",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

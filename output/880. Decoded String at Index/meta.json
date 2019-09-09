@@ -1,0 +1,19 @@
+{
+  "id": "880",
+  "title": "Decoded String at Index",
+  "slug": "decoded-string-at-index",
+  "difficulty": "Medium",
+  "likes": 288,
+  "dislikes": 59,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "527",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Stack"
+  ]
+}

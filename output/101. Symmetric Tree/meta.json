@@ -1,0 +1,21 @@
+{
+  "id": "101",
+  "title": "Symmetric Tree",
+  "slug": "symmetric-tree",
+  "difficulty": "Easy",
+  "likes": 2605,
+  "dislikes": 57,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "42",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Depth-first Search",
+    "Breadth-first Search"
+  ]
+}

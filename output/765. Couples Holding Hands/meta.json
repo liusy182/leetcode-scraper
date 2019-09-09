@@ -1,0 +1,23 @@
+{
+  "id": "765",
+  "title": "Couples Holding Hands",
+  "slug": "couples-holding-hands",
+  "difficulty": "Hard",
+  "likes": 408,
+  "dislikes": 49,
+  "hints": [
+    "Say there are N two-seat couches.  For each couple, draw an edge from the couch of one partner to the couch of the other partner."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"First Missing Positive\", \"titleSlug\": \"first-missing-positive\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Missing Number\", \"titleSlug\": \"missing-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"K-Similar Strings\", \"titleSlug\": \"k-similar-strings\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "376",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Greedy",
+    "Union Find",
+    "Graph"
+  ]
+}

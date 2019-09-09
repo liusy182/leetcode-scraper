@@ -1,0 +1,17 @@
+{
+  "id": "1094",
+  "title": "Car Pooling",
+  "slug": "car-pooling",
+  "difficulty": "Medium",
+  "likes": 184,
+  "dislikes": 10,
+  "hints": [
+    "Sort the pickup and dropoff events by location, then process them in order."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Meeting Rooms II\", \"titleSlug\": \"meeting-rooms-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Greedy"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "57",
+  "title": "Insert Interval",
+  "slug": "insert-interval",
+  "difficulty": "Hard",
+  "likes": 981,
+  "dislikes": 127,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Merge Intervals\", \"titleSlug\": \"merge-intervals\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Range Module\", \"titleSlug\": \"range-module\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "728",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Sort"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "1172",
+  "title": "Dinner Plate Stacks",
+  "slug": "dinner-plate-stacks",
+  "difficulty": "Hard",
+  "likes": 60,
+  "dislikes": 5,
+  "hints": [
+    "Use a data structure to save the plate status. You may need to operate the exact index. Maintain the leftmost vacant stack and the rightmost non-empty stack.",
+    "Use a list of stack to store the plate status. Use heap to maintain the leftmost and rightmost valid stack."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Design"
+  ]
+}

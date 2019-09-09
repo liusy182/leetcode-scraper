@@ -1,0 +1,24 @@
+{
+  "id": "564",
+  "title": "Find the Closest Palindrome",
+  "slug": "find-the-closest-palindrome",
+  "difficulty": "Hard",
+  "likes": 166,
+  "dislikes": 650,
+  "hints": [
+    "Will brute force work for this problem? Think of something else.",
+    "Take some examples like 1234, 999,1000, etc and check their closest palindromes. How many different cases are possible?",
+    "Do we have to consider only left half or right half of the string or both?",
+    "Try to find the closest palindrome of these numbers- 12932, 99800, 12120. Did you observe something?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "116",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

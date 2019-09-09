@@ -1,0 +1,21 @@
+{
+  "id": "1103",
+  "title": "Distribute Candies to People",
+  "slug": "distribute-candies-to-people",
+  "difficulty": "Easy",
+  "likes": 97,
+  "dislikes": 27,
+  "hints": [
+    "Give candy to everyone each \"turn\" first [until you can't], then give candy to one person per turn."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "747",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

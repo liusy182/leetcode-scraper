@@ -1,0 +1,16 @@
+{
+  "id": "332",
+  "title": "Reconstruct Itinerary",
+  "slug": "reconstruct-itinerary",
+  "difficulty": "Medium",
+  "likes": 904,
+  "dislikes": 594,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Depth-first Search",
+    "Graph"
+  ]
+}

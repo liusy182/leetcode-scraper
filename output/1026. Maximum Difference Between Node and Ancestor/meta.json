@@ -1,0 +1,18 @@
+{
+  "id": "1026",
+  "title": "Maximum Difference Between Node and Ancestor",
+  "slug": "maximum-difference-between-node-and-ancestor",
+  "difficulty": "Medium",
+  "likes": 195,
+  "dislikes": 10,
+  "hints": [
+    "For each subtree, find the minimum value and maximum value of its descendants."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Tree",
+    "Depth-first Search"
+  ]
+}

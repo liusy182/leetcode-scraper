@@ -1,0 +1,15 @@
+{
+  "id": "703",
+  "title": "Kth Largest Element in a Stream",
+  "slug": "kth-largest-element-in-a-stream",
+  "difficulty": "Easy",
+  "likes": 372,
+  "dislikes": 187,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Kth Largest Element in an Array\", \"titleSlug\": \"kth-largest-element-in-an-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Heap"
+  ]
+}

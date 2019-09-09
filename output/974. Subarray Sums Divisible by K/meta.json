@@ -1,0 +1,20 @@
+{
+  "id": "974",
+  "title": "Subarray Sums Divisible by K",
+  "slug": "subarray-sums-divisible-by-k",
+  "difficulty": "Medium",
+  "likes": 404,
+  "dislikes": 34,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Subarray Sum Equals K\", \"titleSlug\": \"subarray-sum-equals-k\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "666",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Hash Table"
+  ]
+}

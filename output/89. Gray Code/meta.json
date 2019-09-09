@@ -1,0 +1,15 @@
+{
+  "id": "89",
+  "title": "Gray Code",
+  "slug": "gray-code",
+  "difficulty": "Medium",
+  "likes": 439,
+  "dislikes": 1292,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"1-bit and 2-bit Characters\", \"titleSlug\": \"1-bit-and-2-bit-characters\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Backtracking"
+  ]
+}

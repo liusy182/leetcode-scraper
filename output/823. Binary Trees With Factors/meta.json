@@ -1,0 +1,17 @@
+{
+  "id": "823",
+  "title": "Binary Trees With Factors",
+  "slug": "binary-trees-with-factors",
+  "difficulty": "Medium",
+  "likes": 214,
+  "dislikes": 28,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "453",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

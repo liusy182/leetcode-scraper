@@ -1,0 +1,20 @@
+{
+  "id": "64",
+  "title": "Minimum Path Sum",
+  "slug": "minimum-path-sum",
+  "difficulty": "Medium",
+  "likes": 1610,
+  "dislikes": 43,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Unique Paths\", \"titleSlug\": \"unique-paths\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Dungeon Game\", \"titleSlug\": \"dungeon-game\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Cherry Pickup\", \"titleSlug\": \"cherry-pickup\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "68",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Dynamic Programming"
+  ]
+}

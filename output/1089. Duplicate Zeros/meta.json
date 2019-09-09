@@ -1,0 +1,17 @@
+{
+  "id": "1089",
+  "title": "Duplicate Zeros",
+  "slug": "duplicate-zeros",
+  "difficulty": "Easy",
+  "likes": 140,
+  "dislikes": 102,
+  "hints": [
+    "Iterate through the array backwards.  You know whether an integer should be written or not based on how many zeroes are remaining in the array."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array"
+  ]
+}

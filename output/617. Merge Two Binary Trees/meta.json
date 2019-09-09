@@ -1,0 +1,19 @@
+{
+  "id": "617",
+  "title": "Merge Two Binary Trees",
+  "slug": "merge-two-binary-trees",
+  "difficulty": "Easy",
+  "likes": 2036,
+  "dislikes": 138,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "163",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

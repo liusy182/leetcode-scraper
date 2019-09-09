@@ -1,0 +1,19 @@
+{
+  "id": "972",
+  "title": "Equal Rational Numbers",
+  "slug": "equal-rational-numbers",
+  "difficulty": "Hard",
+  "likes": 32,
+  "dislikes": 103,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "656",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

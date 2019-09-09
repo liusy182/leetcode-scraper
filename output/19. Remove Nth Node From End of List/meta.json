@@ -1,0 +1,22 @@
+{
+  "id": "19",
+  "title": "Remove Nth Node From End of List",
+  "slug": "remove-nth-node-from-end-of-list",
+  "difficulty": "Medium",
+  "likes": 2109,
+  "dislikes": 160,
+  "hints": [
+    "Maintain two pointers and update one with a delay of n steps."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "48",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Linked List",
+    "Two Pointers"
+  ]
+}

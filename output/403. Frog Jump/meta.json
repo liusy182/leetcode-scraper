@@ -1,0 +1,19 @@
+{
+  "id": "403",
+  "title": "Frog Jump",
+  "slug": "frog-jump",
+  "difficulty": "Hard",
+  "likes": 586,
+  "dislikes": 71,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "78",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

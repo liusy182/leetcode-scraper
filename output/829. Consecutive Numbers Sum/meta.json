@@ -1,0 +1,19 @@
+{
+  "id": "829",
+  "title": "Consecutive Numbers Sum",
+  "slug": "consecutive-numbers-sum",
+  "difficulty": "Hard",
+  "likes": 192,
+  "dislikes": 288,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "461",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

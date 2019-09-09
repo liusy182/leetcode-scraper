@@ -1,0 +1,20 @@
+{
+  "id": "32",
+  "title": "Longest Valid Parentheses",
+  "slug": "longest-valid-parentheses",
+  "difficulty": "Hard",
+  "likes": 2225,
+  "dislikes": 100,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Valid Parentheses\", \"titleSlug\": \"valid-parentheses\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "74",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String",
+    "Dynamic Programming"
+  ]
+}

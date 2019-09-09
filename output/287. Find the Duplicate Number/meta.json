@@ -1,0 +1,21 @@
+{
+  "id": "287",
+  "title": "Find the Duplicate Number",
+  "slug": "find-the-duplicate-number",
+  "difficulty": "Medium",
+  "likes": 2855,
+  "dislikes": 324,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"First Missing Positive\", \"titleSlug\": \"first-missing-positive\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Single Number\", \"titleSlug\": \"single-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Linked List Cycle II\", \"titleSlug\": \"linked-list-cycle-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Missing Number\", \"titleSlug\": \"missing-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Set Mismatch\", \"titleSlug\": \"set-mismatch\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "338",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "640",
+  "title": "Solve the Equation",
+  "slug": "solve-the-equation",
+  "difficulty": "Medium",
+  "likes": 175,
+  "dislikes": 422,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Fraction Addition and Subtraction\", \"titleSlug\": \"fraction-addition-and-subtraction\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "196",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

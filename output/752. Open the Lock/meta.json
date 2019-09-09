@@ -1,0 +1,21 @@
+{
+  "id": "752",
+  "title": "Open the Lock",
+  "slug": "open-the-lock",
+  "difficulty": "Medium",
+  "likes": 460,
+  "dislikes": 26,
+  "hints": [
+    "We can think of this problem as a shortest path problem on a graph: there are `10000` nodes (strings `'0000'` to `'9999'`), and there is an edge between two nodes if they differ in one digit, that digit differs by 1 (wrapping around, so `'0'` and `'9'` differ by 1), and if *both* nodes are not in `deadends`."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "354",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Breadth-first Search"
+  ]
+}

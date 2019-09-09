@@ -1,0 +1,20 @@
+{
+  "id": "295",
+  "title": "Find Median from Data Stream",
+  "slug": "find-median-from-data-stream",
+  "difficulty": "Hard",
+  "likes": 1408,
+  "dislikes": 27,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Sliding Window Median\", \"titleSlug\": \"sliding-window-median\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "85",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Heap",
+    "Design"
+  ]
+}

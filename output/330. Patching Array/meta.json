@@ -1,0 +1,19 @@
+{
+  "id": "330",
+  "title": "Patching Array",
+  "slug": "patching-array",
+  "difficulty": "Hard",
+  "likes": 352,
+  "dislikes": 62,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "71",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Greedy"
+  ]
+}

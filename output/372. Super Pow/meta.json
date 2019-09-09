@@ -1,0 +1,15 @@
+{
+  "id": "372",
+  "title": "Super Pow",
+  "slug": "super-pow",
+  "difficulty": "Medium",
+  "likes": 144,
+  "dislikes": 597,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Pow(x, n)\", \"titleSlug\": \"powx-n\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Math"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "834",
+  "title": "Sum of Distances in Tree",
+  "slug": "sum-of-distances-in-tree",
+  "difficulty": "Hard",
+  "likes": 516,
+  "dislikes": 26,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Distribute Coins in Binary Tree\", \"titleSlug\": \"distribute-coins-in-binary-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "465",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Depth-first Search"
+  ]
+}

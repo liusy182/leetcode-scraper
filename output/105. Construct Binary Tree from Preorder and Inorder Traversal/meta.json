@@ -1,0 +1,21 @@
+{
+  "id": "105",
+  "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+  "slug": "construct-binary-tree-from-preorder-and-inorder-traversal",
+  "difficulty": "Medium",
+  "likes": 2040,
+  "dislikes": 56,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Construct Binary Tree from Inorder and Postorder Traversal\", \"titleSlug\": \"construct-binary-tree-from-inorder-and-postorder-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "605",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Tree",
+    "Depth-first Search"
+  ]
+}

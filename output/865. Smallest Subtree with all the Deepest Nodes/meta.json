@@ -1,0 +1,19 @@
+{
+  "id": "865",
+  "title": "Smallest Subtree with all the Deepest Nodes",
+  "slug": "smallest-subtree-with-all-the-deepest-nodes",
+  "difficulty": "Medium",
+  "likes": 439,
+  "dislikes": 132,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "503",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

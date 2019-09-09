@@ -1,0 +1,16 @@
+{
+  "id": "424",
+  "title": "Longest Repeating Character Replacement",
+  "slug": "longest-repeating-character-replacement",
+  "difficulty": "Medium",
+  "likes": 661,
+  "dislikes": 51,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Longest Substring with At Most K Distinct Characters\", \"titleSlug\": \"longest-substring-with-at-most-k-distinct-characters\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Max Consecutive Ones III\", \"titleSlug\": \"max-consecutive-ones-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Two Pointers",
+    "Sliding Window"
+  ]
+}

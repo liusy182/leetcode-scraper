@@ -1,0 +1,16 @@
+{
+  "id": "129",
+  "title": "Sum Root to Leaf Numbers",
+  "slug": "sum-root-to-leaf-numbers",
+  "difficulty": "Medium",
+  "likes": 793,
+  "dislikes": 29,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Path Sum\", \"titleSlug\": \"path-sum\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Binary Tree Maximum Path Sum\", \"titleSlug\": \"binary-tree-maximum-path-sum\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Smallest String Starting From Leaf\", \"titleSlug\": \"smallest-string-starting-from-leaf\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Tree",
+    "Depth-first Search"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "12",
+  "title": "Integer to Roman",
+  "slug": "integer-to-roman",
+  "difficulty": "Medium",
+  "likes": 672,
+  "dislikes": 2095,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Roman to Integer\", \"titleSlug\": \"roman-to-integer\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Integer to English Words\", \"titleSlug\": \"integer-to-english-words\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Math",
+    "String"
+  ]
+}

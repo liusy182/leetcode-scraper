@@ -1,0 +1,22 @@
+{
+  "id": "630",
+  "title": "Course Schedule III",
+  "slug": "course-schedule-iii",
+  "difficulty": "Hard",
+  "likes": 466,
+  "dislikes": 24,
+  "hints": [
+    "During iteration, say I want to add the current course, currentTotalTime being total time of all courses taken till now, but adding the current course might exceed my deadline or it doesn\u2019t.</br></br>\r\n\r\n1. If it doesn\u2019t, then I have added one new course. Increment the currentTotalTime with duration of current course.",
+    "2. If it exceeds deadline, I can swap current course with current courses that has biggest duration.</br>\r\n* No harm done and I might have just reduced the currentTotalTime, right? </br>\r\n* What preprocessing do I need to do on my course processing order so that this swap is always legal?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Course Schedule\", \"titleSlug\": \"course-schedule\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Course Schedule II\", \"titleSlug\": \"course-schedule-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "184",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Greedy"
+  ]
+}

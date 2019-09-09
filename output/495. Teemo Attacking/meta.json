@@ -1,0 +1,19 @@
+{
+  "id": "495",
+  "title": "Teemo Attacking",
+  "slug": "teemo-attacking",
+  "difficulty": "Medium",
+  "likes": 263,
+  "dislikes": 562,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Merge Intervals\", \"titleSlug\": \"merge-intervals\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Can Place Flowers\", \"titleSlug\": \"can-place-flowers\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Dota2 Senate\", \"titleSlug\": \"dota2-senate\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "752",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

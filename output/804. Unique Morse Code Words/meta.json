@@ -1,0 +1,19 @@
+{
+  "id": "804",
+  "title": "Unique Morse Code Words",
+  "slug": "unique-morse-code-words",
+  "difficulty": "Easy",
+  "likes": 481,
+  "dislikes": 427,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "439",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

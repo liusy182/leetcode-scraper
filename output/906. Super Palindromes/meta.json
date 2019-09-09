@@ -1,0 +1,19 @@
+{
+  "id": "906",
+  "title": "Super Palindromes",
+  "slug": "super-palindromes",
+  "difficulty": "Hard",
+  "likes": 53,
+  "dislikes": 134,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "562",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

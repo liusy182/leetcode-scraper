@@ -1,0 +1,21 @@
+{
+  "id": "209",
+  "title": "Minimum Size Subarray Sum",
+  "slug": "minimum-size-subarray-sum",
+  "difficulty": "Medium",
+  "likes": 1319,
+  "dislikes": 79,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Minimum Window Substring\", \"titleSlug\": \"minimum-window-substring\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Maximum Size Subarray Sum Equals k\", \"titleSlug\": \"maximum-size-subarray-sum-equals-k\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Maximum Length of Repeated Subarray\", \"titleSlug\": \"maximum-length-of-repeated-subarray\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "155",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Two Pointers",
+    "Binary Search"
+  ]
+}

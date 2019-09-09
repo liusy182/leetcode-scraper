@@ -1,0 +1,21 @@
+{
+  "id": "199",
+  "title": "Binary Tree Right Side View",
+  "slug": "binary-tree-right-side-view",
+  "difficulty": "Medium",
+  "likes": 1250,
+  "dislikes": 64,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Populating Next Right Pointers in Each Node\", \"titleSlug\": \"populating-next-right-pointers-in-each-node\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Boundary of Binary Tree\", \"titleSlug\": \"boundary-of-binary-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "274",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Depth-first Search",
+    "Breadth-first Search"
+  ]
+}

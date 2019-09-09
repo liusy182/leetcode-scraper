@@ -1,0 +1,16 @@
+{
+  "id": "60",
+  "title": "Permutation Sequence",
+  "slug": "permutation-sequence",
+  "difficulty": "Medium",
+  "likes": 960,
+  "dislikes": 257,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Next Permutation\", \"titleSlug\": \"next-permutation\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Permutations\", \"titleSlug\": \"permutations\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Math",
+    "Backtracking"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "1109",
+  "title": "Corporate Flight Bookings",
+  "slug": "corporate-flight-bookings",
+  "difficulty": "Medium",
+  "likes": 204,
+  "dislikes": 28,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Math"
+  ]
+}

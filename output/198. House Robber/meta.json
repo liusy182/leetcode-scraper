@@ -1,0 +1,19 @@
+{
+  "id": "198",
+  "title": "House Robber",
+  "slug": "house-robber",
+  "difficulty": "Easy",
+  "likes": 2966,
+  "dislikes": 93,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Maximum Product Subarray\", \"titleSlug\": \"maximum-product-subarray\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"House Robber II\", \"titleSlug\": \"house-robber-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Paint House\", \"titleSlug\": \"paint-house\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Paint Fence\", \"titleSlug\": \"paint-fence\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"House Robber III\", \"titleSlug\": \"house-robber-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Non-negative Integers without Consecutive Ones\", \"titleSlug\": \"non-negative-integers-without-consecutive-ones\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Coin Path\", \"titleSlug\": \"coin-path\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Delete and Earn\", \"titleSlug\": \"delete-and-earn\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "11",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

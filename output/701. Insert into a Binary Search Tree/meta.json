@@ -1,0 +1,19 @@
+{
+  "id": "701",
+  "title": "Insert into a Binary Search Tree",
+  "slug": "insert-into-a-binary-search-tree",
+  "difficulty": "Medium",
+  "likes": 425,
+  "dislikes": 51,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Search in a Binary Search Tree\", \"titleSlug\": \"search-in-a-binary-search-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "720",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

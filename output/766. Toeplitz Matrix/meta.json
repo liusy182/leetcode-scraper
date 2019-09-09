@@ -1,0 +1,21 @@
+{
+  "id": "766",
+  "title": "Toeplitz Matrix",
+  "slug": "toeplitz-matrix",
+  "difficulty": "Easy",
+  "likes": 686,
+  "dislikes": 68,
+  "hints": [
+    "Check whether each value is equal to the value of it's top-left neighbor."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Valid Word Square\", \"titleSlug\": \"valid-word-square\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "384",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "1078",
+  "title": "Occurrences After Bigram",
+  "slug": "occurrences-after-bigram",
+  "difficulty": "Easy",
+  "likes": 54,
+  "dislikes": 79,
+  "hints": [
+    "Split the string into words, then look at adjacent triples of words."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "859",
+  "title": "Buddy Strings",
+  "slug": "buddy-strings",
+  "difficulty": "Easy",
+  "likes": 348,
+  "dislikes": 211,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "493",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

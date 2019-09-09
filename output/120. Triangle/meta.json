@@ -1,0 +1,16 @@
+{
+  "id": "120",
+  "title": "Triangle",
+  "slug": "triangle",
+  "difficulty": "Medium",
+  "likes": 1300,
+  "dislikes": 149,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Dynamic Programming"
+  ]
+}

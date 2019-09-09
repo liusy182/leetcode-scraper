@@ -1,0 +1,17 @@
+{
+  "id": "392",
+  "title": "Is Subsequence",
+  "slug": "is-subsequence",
+  "difficulty": "Easy",
+  "likes": 661,
+  "dislikes": 141,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Number of Matching Subsequences\", \"titleSlug\": \"number-of-matching-subsequences\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Shortest Way to Form String\", \"titleSlug\": \"shortest-way-to-form-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Binary Search",
+    "Dynamic Programming",
+    "Greedy"
+  ]
+}

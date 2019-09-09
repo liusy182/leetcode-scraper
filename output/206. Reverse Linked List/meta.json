@@ -1,0 +1,19 @@
+{
+  "id": "206",
+  "title": "Reverse Linked List",
+  "slug": "reverse-linked-list",
+  "difficulty": "Easy",
+  "likes": 2748,
+  "dislikes": 69,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Reverse Linked List II\", \"titleSlug\": \"reverse-linked-list-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Binary Tree Upside Down\", \"titleSlug\": \"binary-tree-upside-down\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Palindrome Linked List\", \"titleSlug\": \"palindrome-linked-list\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "6",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Linked List"
+  ]
+}

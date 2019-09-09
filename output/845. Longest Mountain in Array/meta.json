@@ -1,0 +1,19 @@
+{
+  "id": "845",
+  "title": "Longest Mountain in Array",
+  "slug": "longest-mountain-in-array",
+  "difficulty": "Medium",
+  "likes": 367,
+  "dislikes": 14,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "478",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Two Pointers"
+  ]
+}

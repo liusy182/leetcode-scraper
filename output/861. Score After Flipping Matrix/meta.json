@@ -1,0 +1,19 @@
+{
+  "id": "861",
+  "title": "Score After Flipping Matrix",
+  "slug": "score-after-flipping-matrix",
+  "difficulty": "Medium",
+  "likes": 295,
+  "dislikes": 79,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "497",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Greedy"
+  ]
+}

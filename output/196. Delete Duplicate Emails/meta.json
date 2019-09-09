@@ -1,0 +1,17 @@
+{
+  "id": "196",
+  "title": "Delete Duplicate Emails",
+  "slug": "delete-duplicate-emails",
+  "difficulty": "Easy",
+  "likes": 303,
+  "dislikes": 384,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "210",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

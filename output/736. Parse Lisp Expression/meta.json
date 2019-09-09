@@ -1,0 +1,21 @@
+{
+  "id": "736",
+  "title": "Parse Lisp Expression",
+  "slug": "parse-lisp-expression",
+  "difficulty": "Hard",
+  "likes": 180,
+  "dislikes": 152,
+  "hints": [
+    "* If the expression starts with a digit or '-', it's an integer: return it.\r\n\r\n* If the expression starts with a letter, it's a variable.  Recall it by checking the current scope in reverse order.\r\n\r\n* Otherwise, group the tokens (variables or expressions) within this expression by counting the \"balance\" `bal` of the occurrences of `'('` minus the number of occurrences of `')'`.  When the balance is zero, we have ended a token.  For example, `(add 1 (add 2 3))` should have tokens `'1'` and `'(add 2 3)'`.\r\n\r\n* For add and mult expressions, evaluate each token and return the addition or multiplication of them.\r\n\r\n* For let expressions, evaluate each expression sequentially and assign it to the variable in the current scope, then return the evaluation of the final expression."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Ternary Expression Parser\", \"titleSlug\": \"ternary-expression-parser\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Atoms\", \"titleSlug\": \"number-of-atoms\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Basic Calculator IV\", \"titleSlug\": \"basic-calculator-iv\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "305",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "744",
+  "title": "Find Smallest Letter Greater Than Target",
+  "slug": "find-smallest-letter-greater-than-target",
+  "difficulty": "Easy",
+  "likes": 261,
+  "dislikes": 385,
+  "hints": [
+    "Try to find whether each of 26 next letters are in the given string array."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "336",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Binary Search"
+  ]
+}

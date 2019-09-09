@@ -1,0 +1,19 @@
+{
+  "id": "885",
+  "title": "Spiral Matrix III",
+  "slug": "spiral-matrix-iii",
+  "difficulty": "Medium",
+  "likes": 115,
+  "dislikes": 182,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "531",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "801",
+  "title": "Minimum Swaps To Make Sequences Increasing",
+  "slug": "minimum-swaps-to-make-sequences-increasing",
+  "difficulty": "Medium",
+  "likes": 572,
+  "dislikes": 35,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "435",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

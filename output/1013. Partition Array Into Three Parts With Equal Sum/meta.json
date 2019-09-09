@@ -1,0 +1,17 @@
+{
+  "id": "1013",
+  "title": "Partition Array Into Three Parts With Equal Sum",
+  "slug": "partition-array-into-three-parts-with-equal-sum",
+  "difficulty": "Easy",
+  "likes": 177,
+  "dislikes": 32,
+  "hints": [
+    "If we have three parts with the same sum, what is the sum of each?\r\nIf you can find the first part, can you find the second part?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array"
+  ]
+}

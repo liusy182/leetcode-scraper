@@ -1,0 +1,21 @@
+{
+  "id": "733",
+  "title": "Flood Fill",
+  "slug": "flood-fill",
+  "difficulty": "Easy",
+  "likes": 523,
+  "dislikes": 120,
+  "hints": [
+    "Write a recursive function that paints the pixel if it's the correct color, then recurses on neighboring pixels."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Island Perimeter\", \"titleSlug\": \"island-perimeter\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "307",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Depth-first Search"
+  ]
+}

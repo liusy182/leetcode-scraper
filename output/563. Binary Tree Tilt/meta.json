@@ -1,0 +1,24 @@
+{
+  "id": "563",
+  "title": "Binary Tree Tilt",
+  "slug": "binary-tree-tilt",
+  "difficulty": "Easy",
+  "likes": 358,
+  "dislikes": 823,
+  "hints": [
+    "Don't think too much, this is an easy problem. Take some small tree as an example.",
+    "Can a parent node use the values of its child nodes? How will you implement it?",
+    "May be recursion and tree traversal can help you in implementing.",
+    "What about postorder traversal, using values of left and right childs?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "115",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "973",
+  "title": "K Closest Points to Origin",
+  "slug": "k-closest-points-to-origin",
+  "difficulty": "Medium",
+  "likes": 656,
+  "dislikes": 61,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Kth Largest Element in an Array\", \"titleSlug\": \"kth-largest-element-in-an-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Top K Frequent Elements\", \"titleSlug\": \"top-k-frequent-elements\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Top K Frequent Words\", \"titleSlug\": \"top-k-frequent-words\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "667",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Divide and Conquer",
+    "Heap",
+    "Sort"
+  ]
+}

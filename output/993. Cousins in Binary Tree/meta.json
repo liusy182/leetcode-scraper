@@ -1,0 +1,20 @@
+{
+  "id": "993",
+  "title": "Cousins in Binary Tree",
+  "slug": "cousins-in-binary-tree",
+  "difficulty": "Easy",
+  "likes": 269,
+  "dislikes": 19,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Binary Tree Level Order Traversal\", \"titleSlug\": \"binary-tree-level-order-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "695",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Breadth-first Search"
+  ]
+}

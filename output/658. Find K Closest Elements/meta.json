@@ -1,0 +1,19 @@
+{
+  "id": "658",
+  "title": "Find K Closest Elements",
+  "slug": "find-k-closest-elements",
+  "difficulty": "Medium",
+  "likes": 791,
+  "dislikes": 164,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Guess Number Higher or Lower\", \"titleSlug\": \"guess-number-higher-or-lower\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Guess Number Higher or Lower II\", \"titleSlug\": \"guess-number-higher-or-lower-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Find K-th Smallest Pair Distance\", \"titleSlug\": \"find-k-th-smallest-pair-distance\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "229",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Binary Search"
+  ]
+}

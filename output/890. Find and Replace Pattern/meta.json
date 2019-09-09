@@ -1,0 +1,19 @@
+{
+  "id": "890",
+  "title": "Find and Replace Pattern",
+  "slug": "find-and-replace-pattern",
+  "difficulty": "Medium",
+  "likes": 431,
+  "dislikes": 43,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "534",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

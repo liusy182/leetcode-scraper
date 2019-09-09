@@ -1,0 +1,20 @@
+{
+  "id": "242",
+  "title": "Valid Anagram",
+  "slug": "valid-anagram",
+  "difficulty": "Easy",
+  "likes": 831,
+  "dislikes": 116,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Group Anagrams\", \"titleSlug\": \"group-anagrams\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Palindrome Permutation\", \"titleSlug\": \"palindrome-permutation\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Find All Anagrams in a String\", \"titleSlug\": \"find-all-anagrams-in-a-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "5",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "Sort"
+  ]
+}

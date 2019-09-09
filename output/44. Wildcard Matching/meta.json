@@ -1,0 +1,22 @@
+{
+  "id": "44",
+  "title": "Wildcard Matching",
+  "slug": "wildcard-matching",
+  "difficulty": "Hard",
+  "likes": 1259,
+  "dislikes": 78,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Regular Expression Matching\", \"titleSlug\": \"regular-expression-matching\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "730",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String",
+    "Dynamic Programming",
+    "Backtracking",
+    "Greedy"
+  ]
+}

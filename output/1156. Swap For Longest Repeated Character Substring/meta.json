@@ -1,0 +1,17 @@
+{
+  "id": "1156",
+  "title": "Swap For Longest Repeated Character Substring",
+  "slug": "swap-for-longest-repeated-character-substring",
+  "difficulty": "Medium",
+  "likes": 122,
+  "dislikes": 7,
+  "hints": [
+    "There are two cases:  a block of characters, or two blocks of characters between one different character. \r\n By keeping a run-length encoded version of the string, we can easily check these cases."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "String"
+  ]
+}

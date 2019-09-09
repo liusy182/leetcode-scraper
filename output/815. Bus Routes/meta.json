@@ -1,0 +1,19 @@
+{
+  "id": "815",
+  "title": "Bus Routes",
+  "slug": "bus-routes",
+  "difficulty": "Hard",
+  "likes": 488,
+  "dislikes": 18,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "444",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Breadth-first Search"
+  ]
+}

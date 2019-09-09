@@ -1,0 +1,17 @@
+{
+  "id": "821",
+  "title": "Shortest Distance to a Character",
+  "slug": "shortest-distance-to-a-character",
+  "difficulty": "Easy",
+  "likes": 680,
+  "dislikes": 59,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "455",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

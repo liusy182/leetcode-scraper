@@ -1,0 +1,15 @@
+{
+  "id": "447",
+  "title": "Number of Boomerangs",
+  "slug": "number-of-boomerangs",
+  "difficulty": "Easy",
+  "likes": 317,
+  "dislikes": 497,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Line Reflection\", \"titleSlug\": \"line-reflection\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table"
+  ]
+}

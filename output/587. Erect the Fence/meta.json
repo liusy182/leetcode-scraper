@@ -1,0 +1,19 @@
+{
+  "id": "587",
+  "title": "Erect the Fence",
+  "slug": "erect-the-fence",
+  "difficulty": "Hard",
+  "likes": 146,
+  "dislikes": 154,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "138",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Geometry"
+  ]
+}

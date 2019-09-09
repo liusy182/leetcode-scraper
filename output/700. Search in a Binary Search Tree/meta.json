@@ -1,0 +1,15 @@
+{
+  "id": "700",
+  "title": "Search in a Binary Search Tree",
+  "slug": "search-in-a-binary-search-tree",
+  "difficulty": "Easy",
+  "likes": 381,
+  "dislikes": 96,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Closest Binary Search Tree Value\", \"titleSlug\": \"closest-binary-search-tree-value\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Insert into a Binary Search Tree\", \"titleSlug\": \"insert-into-a-binary-search-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Tree"
+  ]
+}

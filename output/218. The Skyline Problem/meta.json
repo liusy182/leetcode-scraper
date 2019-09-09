@@ -1,0 +1,23 @@
+{
+  "id": "218",
+  "title": "The Skyline Problem",
+  "slug": "the-skyline-problem",
+  "difficulty": "Hard",
+  "likes": 1376,
+  "dislikes": 67,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Falling Squares\", \"titleSlug\": \"falling-squares\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "715",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Divide and Conquer",
+    "Heap",
+    "Binary Indexed Tree",
+    "Segment Tree",
+    "Line Sweep"
+  ]
+}

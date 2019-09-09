@@ -1,0 +1,19 @@
+{
+  "id": "955",
+  "title": "Delete Columns to Make Sorted II",
+  "slug": "delete-columns-to-make-sorted-ii",
+  "difficulty": "Medium",
+  "likes": 143,
+  "dislikes": 31,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "634",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Greedy"
+  ]
+}

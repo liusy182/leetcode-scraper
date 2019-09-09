@@ -1,0 +1,19 @@
+{
+  "id": "477",
+  "title": "Total Hamming Distance",
+  "slug": "total-hamming-distance",
+  "difficulty": "Medium",
+  "likes": 585,
+  "dislikes": 41,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Hamming Distance\", \"titleSlug\": \"hamming-distance\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "80",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Bit Manipulation"
+  ]
+}

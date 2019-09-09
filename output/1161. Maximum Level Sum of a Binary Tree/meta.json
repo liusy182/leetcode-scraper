@@ -1,0 +1,24 @@
+{
+  "id": "1161",
+  "title": "Maximum Level Sum of a Binary Tree",
+  "slug": "maximum-level-sum-of-a-binary-tree",
+  "difficulty": "Medium",
+  "likes": 69,
+  "dislikes": 6,
+  "hints": [
+    "Calculate the sum for each level then find the level with the maximum sum.",
+    "How can you traverse the tree ?",
+    "How can you sum up the values for every level ?",
+    "Use DFS or BFS to traverse the tree keeping the level of each node, and sum up those values with a map or a frequency array."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "765",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Graph"
+  ]
+}

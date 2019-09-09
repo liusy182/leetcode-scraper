@@ -1,0 +1,20 @@
+{
+  "id": "784",
+  "title": "Letter Case Permutation",
+  "slug": "letter-case-permutation",
+  "difficulty": "Easy",
+  "likes": 746,
+  "dislikes": 90,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Subsets\", \"titleSlug\": \"subsets\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Brace Expansion\", \"titleSlug\": \"brace-expansion\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "416",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Backtracking",
+    "Bit Manipulation"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "1171",
+  "title": "Remove Zero Sum Consecutive Nodes from Linked List",
+  "slug": "remove-zero-sum-consecutive-nodes-from-linked-list",
+  "difficulty": "Medium",
+  "likes": 128,
+  "dislikes": 14,
+  "hints": [
+    "Convert the linked list into an array.",
+    "While you can find a non-empty subarray with sum = 0, erase it.",
+    "Convert the array into a linked list."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Linked List"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "151",
+  "title": "Reverse Words in a String",
+  "slug": "reverse-words-in-a-string",
+  "difficulty": "Medium",
+  "likes": 638,
+  "dislikes": 2405,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Reverse Words in a String II\", \"titleSlug\": \"reverse-words-in-a-string-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "String"
+  ]
+}

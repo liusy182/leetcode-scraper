@@ -1,0 +1,16 @@
+{
+  "id": "110",
+  "title": "Balanced Binary Tree",
+  "slug": "balanced-binary-tree",
+  "difficulty": "Easy",
+  "likes": 1428,
+  "dislikes": 127,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Maximum Depth of Binary Tree\", \"titleSlug\": \"maximum-depth-of-binary-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Tree",
+    "Depth-first Search"
+  ]
+}

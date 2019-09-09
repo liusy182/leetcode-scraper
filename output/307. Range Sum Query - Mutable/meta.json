@@ -1,0 +1,20 @@
+{
+  "id": "307",
+  "title": "Range Sum Query - Mutable",
+  "slug": "range-sum-query-mutable",
+  "difficulty": "Medium",
+  "likes": 803,
+  "dislikes": 66,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Range Sum Query - Immutable\", \"titleSlug\": \"range-sum-query-immutable\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Range Sum Query 2D - Mutable\", \"titleSlug\": \"range-sum-query-2d-mutable\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "29",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Binary Indexed Tree",
+    "Segment Tree"
+  ]
+}

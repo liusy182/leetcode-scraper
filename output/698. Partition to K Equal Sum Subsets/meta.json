@@ -1,0 +1,22 @@
+{
+  "id": "698",
+  "title": "Partition to K Equal Sum Subsets",
+  "slug": "partition-to-k-equal-sum-subsets",
+  "difficulty": "Medium",
+  "likes": 977,
+  "dislikes": 57,
+  "hints": [
+    "We can figure out what target each subset must sum to.  Then, let's recursively search, where at each call to our function, we choose which of k subsets the next value will join."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Partition Equal Subset Sum\", \"titleSlug\": \"partition-equal-subset-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "262",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming",
+    "Recursion"
+  ]
+}

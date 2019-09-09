@@ -1,0 +1,20 @@
+{
+  "id": "892",
+  "title": "Surface Area of 3D Shapes",
+  "slug": "surface-area-of-3d-shapes",
+  "difficulty": "Easy",
+  "likes": 170,
+  "dislikes": 217,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "538",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math",
+    "Geometry"
+  ]
+}

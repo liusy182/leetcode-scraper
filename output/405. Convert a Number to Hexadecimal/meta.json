@@ -1,0 +1,15 @@
+{
+  "id": "405",
+  "title": "Convert a Number to Hexadecimal",
+  "slug": "convert-a-number-to-hexadecimal",
+  "difficulty": "Easy",
+  "likes": 303,
+  "dislikes": 78,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Bit Manipulation"
+  ]
+}

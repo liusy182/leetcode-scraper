@@ -1,0 +1,20 @@
+{
+  "id": "847",
+  "title": "Shortest Path Visiting All Nodes",
+  "slug": "shortest-path-visiting-all-nodes",
+  "difficulty": "Hard",
+  "likes": 346,
+  "dislikes": 37,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "477",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming",
+    "Breadth-first Search"
+  ]
+}

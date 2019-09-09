@@ -1,0 +1,20 @@
+{
+  "id": "862",
+  "title": "Shortest Subarray with Sum at Least K",
+  "slug": "shortest-subarray-with-sum-at-least-k",
+  "difficulty": "Hard",
+  "likes": 555,
+  "dislikes": 15,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "496",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Binary Search",
+    "Queue"
+  ]
+}

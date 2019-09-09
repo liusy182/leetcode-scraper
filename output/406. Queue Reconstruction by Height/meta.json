@@ -1,0 +1,22 @@
+{
+  "id": "406",
+  "title": "Queue Reconstruction by Height",
+  "slug": "queue-reconstruction-by-height",
+  "difficulty": "Medium",
+  "likes": 1779,
+  "dislikes": 199,
+  "hints": [
+    "What can you say about the position of the shortest person? </br>\r\nIf the position of the shortest person is <i>i</i>, how many people would be in front of the shortest person?",
+    "Once you fix the position of the shortest person, what can you say about the position of the second shortest person?"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Count of Smaller Numbers After Self\", \"titleSlug\": \"count-of-smaller-numbers-after-self\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "754",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Greedy"
+  ]
+}

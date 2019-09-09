@@ -1,0 +1,20 @@
+{
+  "id": "104",
+  "title": "Maximum Depth of Binary Tree",
+  "slug": "maximum-depth-of-binary-tree",
+  "difficulty": "Easy",
+  "likes": 1541,
+  "dislikes": 59,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Balanced Binary Tree\", \"titleSlug\": \"balanced-binary-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Minimum Depth of Binary Tree\", \"titleSlug\": \"minimum-depth-of-binary-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Maximum Depth of N-ary Tree\", \"titleSlug\": \"maximum-depth-of-n-ary-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "575",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Depth-first Search"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "599",
+  "title": "Minimum Index Sum of Two Lists",
+  "slug": "minimum-index-sum-of-two-lists",
+  "difficulty": "Easy",
+  "likes": 403,
+  "dislikes": 156,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Intersection of Two Linked Lists\", \"titleSlug\": \"intersection-of-two-linked-lists\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "147",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table"
+  ]
+}

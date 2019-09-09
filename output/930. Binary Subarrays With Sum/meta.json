@@ -1,0 +1,20 @@
+{
+  "id": "930",
+  "title": "Binary Subarrays With Sum",
+  "slug": "binary-subarrays-with-sum",
+  "difficulty": "Medium",
+  "likes": 257,
+  "dislikes": 12,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "600",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "Two Pointers"
+  ]
+}

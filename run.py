@@ -14,7 +14,7 @@ with open('all_questions.json', 'r') as f:
 
 
 data_format = '{"operationName": "questionData", "variables": {"titleSlug": "%s"}, "query": "query questionData($titleSlug: String\u0021) {\\n  question(titleSlug: $titleSlug) {\\n    questionId\\n    questionFrontendId\\n    boundTopicId\\n    title\\n    titleSlug\\n    content\\n    translatedTitle\\n    translatedContent\\n    isPaidOnly\\n    difficulty\\n    likes\\n    dislikes\\n    isLiked\\n    similarQuestions\\n    langToValidPlayground\\n    topicTags {\\n      name\\n      slug\\n      translatedName\\n      __typename\\n    }\\n    companyTagStats\\n    codeSnippets {\\n      lang\\n      langSlug\\n      code\\n      __typename\\n    }\\n    stats\\n    hints\\n    solution {\\n      id\\n      canSeeDetail\\n      __typename\\n    }\\n    status\\n    sampleTestCase\\n    metaData\\n    judgerAvailable\\n    judgeType\\n    mysqlSchemas\\n    enableRunCode\\n    enableTestMode\\n    envInfo\\n    libraryUrl\\n    __typename\\n  }\\n}\\n"}'
-for question in all_questions[:3]:
+for question in all_questions:
     res = requests.post('https://leetcode.com/graphql',
         headers={
             'origin': 'https://leetcode.com',
@@ -27,9 +27,34 @@ for question in all_questions[:3]:
 
     res_json = res.json()['data']['question']
 
+    # print('===========================================')
+    # print(question)
+    # print('-------------------------------')
+    # print(res_json)
+
+    # because of premium subscription
+    if not res_json['content']:
+        continue
+
     question_dir = os.path.join(result_dir, question['questionFrontendId'] + '. ' + question['title'])
     if not os.path.exists(question_dir):
         os.makedirs(question_dir)
 
-        with open(os.path.join(question_dir, 'question.md'), 'w') as f:
-            f.write(res_json['content'])
+    with open(os.path.join(question_dir, 'question.md'), 'w') as f:
+        f.write(res_json['content'])
+
+    with open(os.path.join(question_dir, 'meta.json'), 'w') as f:
+        json.dump({
+            'id': question['questionFrontendId'],
+            'title': question['title'],
+            'slug': question['titleSlug'],
+            'difficulty': res_json['difficulty'],
+            'likes': res_json['likes'],
+            'dislikes': res_json['dislikes'],
+            'dislikes': res_json['dislikes'],
+            'hints': res_json['hints'],
+            'isPaidOnly': res_json['isPaidOnly'],
+            'similarQuestions': res_json['similarQuestions'],
+            'solution': res_json['solution'],
+            'topicTags': list(map(lambda tag: tag['name'], res_json['topicTags'])),
+        }, f, indent=2)

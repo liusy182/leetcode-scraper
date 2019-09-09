@@ -1,0 +1,21 @@
+{
+  "id": "632",
+  "title": "Smallest Range Covering Elements from K Lists",
+  "slug": "smallest-range-covering-elements-from-k-lists",
+  "difficulty": "Hard",
+  "likes": 759,
+  "dislikes": 22,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Minimum Window Substring\", \"titleSlug\": \"minimum-window-substring\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "191",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "Two Pointers",
+    "String"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "595",
+  "title": "Big Countries",
+  "slug": "big-countries",
+  "difficulty": "Easy",
+  "likes": 389,
+  "dislikes": 559,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "200",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

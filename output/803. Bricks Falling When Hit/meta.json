@@ -1,0 +1,19 @@
+{
+  "id": "803",
+  "title": "Bricks Falling When Hit",
+  "slug": "bricks-falling-when-hit",
+  "difficulty": "Hard",
+  "likes": 331,
+  "dislikes": 96,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "433",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Union Find"
+  ]
+}

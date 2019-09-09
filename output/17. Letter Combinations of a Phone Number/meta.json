@@ -1,0 +1,20 @@
+{
+  "id": "17",
+  "title": "Letter Combinations of a Phone Number",
+  "slug": "letter-combinations-of-a-phone-number",
+  "difficulty": "Medium",
+  "likes": 2543,
+  "dislikes": 332,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Generate Parentheses\", \"titleSlug\": \"generate-parentheses\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Combination Sum\", \"titleSlug\": \"combination-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Binary Watch\", \"titleSlug\": \"binary-watch\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "674",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String",
+    "Backtracking"
+  ]
+}

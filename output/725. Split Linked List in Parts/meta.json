@@ -1,0 +1,21 @@
+{
+  "id": "725",
+  "title": "Split Linked List in Parts",
+  "slug": "split-linked-list-in-parts",
+  "difficulty": "Medium",
+  "likes": 406,
+  "dislikes": 84,
+  "hints": [
+    "If there are N nodes in the list, and k parts, then every part has N/k elements, except the first N%k parts have an extra one."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Rotate List\", \"titleSlug\": \"rotate-list\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Odd Even Linked List\", \"titleSlug\": \"odd-even-linked-list\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "292",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Linked List"
+  ]
+}

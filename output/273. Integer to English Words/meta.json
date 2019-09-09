@@ -1,0 +1,24 @@
+{
+  "id": "273",
+  "title": "Integer to English Words",
+  "slug": "integer-to-english-words",
+  "difficulty": "Hard",
+  "likes": 623,
+  "dislikes": 1737,
+  "hints": [
+    "Did you see a pattern in dividing the number into chunk of words? For example, 123 and 123000.",
+    "Group the number by thousands (3 digits). You can write a helper function that takes a number less than 1000 and convert just that chunk to words.",
+    "There are many edge cases. What are some good test cases? Does your code work with input such as 0? Or 1000010? (middle chunk is zero and should not be printed out)"
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Integer to Roman\", \"titleSlug\": \"integer-to-roman\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "627",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math",
+    "String"
+  ]
+}

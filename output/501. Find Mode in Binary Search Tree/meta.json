@@ -1,0 +1,15 @@
+{
+  "id": "501",
+  "title": "Find Mode in Binary Search Tree",
+  "slug": "find-mode-in-binary-search-tree",
+  "difficulty": "Easy",
+  "likes": 622,
+  "dislikes": 248,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Validate Binary Search Tree\", \"titleSlug\": \"validate-binary-search-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Tree"
+  ]
+}

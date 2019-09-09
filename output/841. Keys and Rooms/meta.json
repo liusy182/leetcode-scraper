@@ -1,0 +1,20 @@
+{
+  "id": "841",
+  "title": "Keys and Rooms",
+  "slug": "keys-and-rooms",
+  "difficulty": "Medium",
+  "likes": 550,
+  "dislikes": 44,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "472",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Depth-first Search",
+    "Graph"
+  ]
+}

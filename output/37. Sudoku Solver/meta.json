@@ -1,0 +1,20 @@
+{
+  "id": "37",
+  "title": "Sudoku Solver",
+  "slug": "sudoku-solver",
+  "difficulty": "Hard",
+  "likes": 1057,
+  "dislikes": 70,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Valid Sudoku\", \"titleSlug\": \"valid-sudoku\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Unique Paths III\", \"titleSlug\": \"unique-paths-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "709",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "Backtracking"
+  ]
+}

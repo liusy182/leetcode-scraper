@@ -1,0 +1,19 @@
+{
+  "id": "832",
+  "title": "Flipping an Image",
+  "slug": "flipping-an-image",
+  "difficulty": "Easy",
+  "likes": 590,
+  "dislikes": 125,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "467",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "798",
+  "title": "Smallest Rotation with Highest Score",
+  "slug": "smallest-rotation-with-highest-score",
+  "difficulty": "Hard",
+  "likes": 180,
+  "dislikes": 14,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "428",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

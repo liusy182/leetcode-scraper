@@ -1,0 +1,17 @@
+{
+  "id": "103",
+  "title": "Binary Tree Zigzag Level Order Traversal",
+  "slug": "binary-tree-zigzag-level-order-traversal",
+  "difficulty": "Medium",
+  "likes": 1163,
+  "dislikes": 68,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Binary Tree Level Order Traversal\", \"titleSlug\": \"binary-tree-level-order-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Stack",
+    "Tree",
+    "Breadth-first Search"
+  ]
+}

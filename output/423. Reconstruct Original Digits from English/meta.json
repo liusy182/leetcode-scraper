@@ -1,0 +1,19 @@
+{
+  "id": "423",
+  "title": "Reconstruct Original Digits from English",
+  "slug": "reconstruct-original-digits-from-english",
+  "difficulty": "Medium",
+  "likes": 129,
+  "dislikes": 466,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "691",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

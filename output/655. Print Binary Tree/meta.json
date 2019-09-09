@@ -1,0 +1,19 @@
+{
+  "id": "655",
+  "title": "Print Binary Tree",
+  "slug": "print-binary-tree",
+  "difficulty": "Medium",
+  "likes": 244,
+  "dislikes": 606,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "225",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

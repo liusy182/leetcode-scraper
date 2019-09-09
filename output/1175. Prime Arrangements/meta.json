@@ -1,0 +1,19 @@
+{
+  "id": "1175",
+  "title": "Prime Arrangements",
+  "slug": "prime-arrangements",
+  "difficulty": "Easy",
+  "likes": 33,
+  "dislikes": 67,
+  "hints": [
+    "Solve the problem for prime numbers and composite numbers separately.",
+    "Multiply the number of permutations of prime numbers over prime indices with the number of permutations of composite numbers over composite indices.",
+    "The number of permutations equals the factorial."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Math"
+  ]
+}

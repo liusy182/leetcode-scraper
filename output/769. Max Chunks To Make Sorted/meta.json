@@ -1,0 +1,21 @@
+{
+  "id": "769",
+  "title": "Max Chunks To Make Sorted",
+  "slug": "max-chunks-to-make-sorted",
+  "difficulty": "Medium",
+  "likes": 511,
+  "dislikes": 88,
+  "hints": [
+    "The first chunk can be found as the smallest k for which A[:k+1] == [0, 1, 2, ...k]; then we repeat this process."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Max Chunks To Make Sorted II\", \"titleSlug\": \"max-chunks-to-make-sorted-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "387",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

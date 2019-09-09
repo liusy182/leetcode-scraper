@@ -1,0 +1,17 @@
+{
+  "id": "183",
+  "title": "Customers Who Never Order",
+  "slug": "customers-who-never-order",
+  "difficulty": "Easy",
+  "likes": 267,
+  "dislikes": 34,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "218",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

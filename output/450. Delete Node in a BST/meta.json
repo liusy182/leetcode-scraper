@@ -1,0 +1,19 @@
+{
+  "id": "450",
+  "title": "Delete Node in a BST",
+  "slug": "delete-node-in-a-bst",
+  "difficulty": "Medium",
+  "likes": 1058,
+  "dislikes": 64,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Split BST\", \"titleSlug\": \"split-bst\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "722",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

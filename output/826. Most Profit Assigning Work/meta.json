@@ -1,0 +1,19 @@
+{
+  "id": "826",
+  "title": "Most Profit Assigning Work",
+  "slug": "most-profit-assigning-work",
+  "difficulty": "Medium",
+  "likes": 242,
+  "dislikes": 42,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "457",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Two Pointers"
+  ]
+}

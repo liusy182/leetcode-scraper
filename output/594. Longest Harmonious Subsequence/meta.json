@@ -1,0 +1,19 @@
+{
+  "id": "594",
+  "title": "Longest Harmonious Subsequence",
+  "slug": "longest-harmonious-subsequence",
+  "difficulty": "Easy",
+  "likes": 455,
+  "dislikes": 62,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "141",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table"
+  ]
+}

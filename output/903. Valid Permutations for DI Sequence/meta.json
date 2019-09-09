@@ -1,0 +1,20 @@
+{
+  "id": "903",
+  "title": "Valid Permutations for DI Sequence",
+  "slug": "valid-permutations-for-di-sequence",
+  "difficulty": "Hard",
+  "likes": 188,
+  "dislikes": 25,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "553",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Divide and Conquer",
+    "Dynamic Programming"
+  ]
+}

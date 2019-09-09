@@ -1,0 +1,19 @@
+{
+  "id": "875",
+  "title": "Koko Eating Bananas",
+  "slug": "koko-eating-bananas",
+  "difficulty": "Medium",
+  "likes": 353,
+  "dislikes": 35,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Minimize Max Distance to Gas Station\", \"titleSlug\": \"minimize-max-distance-to-gas-station\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "514",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Binary Search"
+  ]
+}

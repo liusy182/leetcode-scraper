@@ -1,0 +1,15 @@
+{
+  "id": "47",
+  "title": "Permutations II",
+  "slug": "permutations-ii",
+  "difficulty": "Medium",
+  "likes": 1210,
+  "dislikes": 47,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Next Permutation\", \"titleSlug\": \"next-permutation\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Permutations\", \"titleSlug\": \"permutations\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Palindrome Permutation II\", \"titleSlug\": \"palindrome-permutation-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Squareful Arrays\", \"titleSlug\": \"number-of-squareful-arrays\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Backtracking"
+  ]
+}

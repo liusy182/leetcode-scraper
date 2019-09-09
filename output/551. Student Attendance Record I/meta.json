@@ -1,0 +1,19 @@
+{
+  "id": "551",
+  "title": "Student Attendance Record I",
+  "slug": "student-attendance-record-i",
+  "difficulty": "Easy",
+  "likes": 166,
+  "dislikes": 637,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Student Attendance Record II\", \"titleSlug\": \"student-attendance-record-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "109",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

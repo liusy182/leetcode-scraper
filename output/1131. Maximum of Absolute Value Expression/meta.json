@@ -1,0 +1,18 @@
+{
+  "id": "1131",
+  "title": "Maximum of Absolute Value Expression",
+  "slug": "maximum-of-absolute-value-expression",
+  "difficulty": "Medium",
+  "likes": 58,
+  "dislikes": 72,
+  "hints": [
+    "Use the idea that abs(A) + abs(B) = max(A+B, A-B, -A+B, -A-B)."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Math",
+    "Bit Manipulation"
+  ]
+}

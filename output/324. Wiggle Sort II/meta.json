@@ -1,0 +1,15 @@
+{
+  "id": "324",
+  "title": "Wiggle Sort II",
+  "slug": "wiggle-sort-ii",
+  "difficulty": "Medium",
+  "likes": 695,
+  "dislikes": 389,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Sort Colors\", \"titleSlug\": \"sort-colors\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Kth Largest Element in an Array\", \"titleSlug\": \"kth-largest-element-in-an-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Wiggle Sort\", \"titleSlug\": \"wiggle-sort\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Sort"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "1011",
+  "title": "Capacity To Ship Packages Within D Days",
+  "slug": "capacity-to-ship-packages-within-d-days",
+  "difficulty": "Medium",
+  "likes": 399,
+  "dislikes": 12,
+  "hints": [
+    "Binary search on the answer.  We need a function possible(capacity) which returns true if and only if we can do the task in D days."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Binary Search"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "1016",
+  "title": "Binary String With Substrings Representing 1 To N",
+  "slug": "binary-string-with-substrings-representing-1-to-n",
+  "difficulty": "Medium",
+  "likes": 56,
+  "dislikes": 199,
+  "hints": [
+    "We only need to check substrings of length at most 20, because 10^6 has 20 bits."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "String"
+  ]
+}

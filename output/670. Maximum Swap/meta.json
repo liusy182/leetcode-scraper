@@ -1,0 +1,20 @@
+{
+  "id": "670",
+  "title": "Maximum Swap",
+  "slug": "maximum-swap",
+  "difficulty": "Medium",
+  "likes": 636,
+  "dislikes": 48,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Create Maximum Number\", \"titleSlug\": \"create-maximum-number\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "243",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Math"
+  ]
+}

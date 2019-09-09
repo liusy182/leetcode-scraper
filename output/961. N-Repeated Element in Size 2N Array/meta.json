@@ -1,0 +1,19 @@
+{
+  "id": "961",
+  "title": "N-Repeated Element in Size 2N Array",
+  "slug": "n-repeated-element-in-size-2n-array",
+  "difficulty": "Easy",
+  "likes": 253,
+  "dislikes": 154,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "647",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table"
+  ]
+}

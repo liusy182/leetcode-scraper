@@ -1,0 +1,19 @@
+{
+  "id": "552",
+  "title": "Student Attendance Record II",
+  "slug": "student-attendance-record-ii",
+  "difficulty": "Hard",
+  "likes": 320,
+  "dislikes": 61,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Student Attendance Record I\", \"titleSlug\": \"student-attendance-record-i\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "110",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

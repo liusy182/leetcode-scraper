@@ -1,0 +1,20 @@
+{
+  "id": "257",
+  "title": "Binary Tree Paths",
+  "slug": "binary-tree-paths",
+  "difficulty": "Easy",
+  "likes": 1012,
+  "dislikes": 77,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Path Sum II\", \"titleSlug\": \"path-sum-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Smallest String Starting From Leaf\", \"titleSlug\": \"smallest-string-starting-from-leaf\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "617",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Depth-first Search"
+  ]
+}

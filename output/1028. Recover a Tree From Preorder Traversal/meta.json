@@ -1,0 +1,18 @@
+{
+  "id": "1028",
+  "title": "Recover a Tree From Preorder Traversal",
+  "slug": "recover-a-tree-from-preorder-traversal",
+  "difficulty": "Hard",
+  "likes": 216,
+  "dislikes": 8,
+  "hints": [
+    "Do an iterative depth first search, parsing dashes from the string to inform you how to link the nodes together."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Tree",
+    "Depth-first Search"
+  ]
+}

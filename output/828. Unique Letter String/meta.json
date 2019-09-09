@@ -1,0 +1,19 @@
+{
+  "id": "828",
+  "title": "Unique Letter String",
+  "slug": "unique-letter-string",
+  "difficulty": "Hard",
+  "likes": 249,
+  "dislikes": 30,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "460",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Two Pointers"
+  ]
+}

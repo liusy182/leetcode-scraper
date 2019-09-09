@@ -1,0 +1,19 @@
+{
+  "id": "933",
+  "title": "Number of Recent Calls",
+  "slug": "number-of-recent-calls",
+  "difficulty": "Easy",
+  "likes": 156,
+  "dislikes": 834,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "606",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Queue"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "96",
+  "title": "Unique Binary Search Trees",
+  "slug": "unique-binary-search-trees",
+  "difficulty": "Medium",
+  "likes": 2011,
+  "dislikes": 77,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Unique Binary Search Trees II\", \"titleSlug\": \"unique-binary-search-trees-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "555",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming",
+    "Tree"
+  ]
+}

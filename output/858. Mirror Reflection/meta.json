@@ -1,0 +1,19 @@
+{
+  "id": "858",
+  "title": "Mirror Reflection",
+  "slug": "mirror-reflection",
+  "difficulty": "Medium",
+  "likes": 144,
+  "dislikes": 235,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "494",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

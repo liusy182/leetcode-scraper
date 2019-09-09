@@ -1,0 +1,19 @@
+{
+  "id": "757",
+  "title": "Set Intersection Size At Least Two",
+  "slug": "set-intersection-size-at-least-two",
+  "difficulty": "Hard",
+  "likes": 182,
+  "dislikes": 16,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "365",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Greedy"
+  ]
+}

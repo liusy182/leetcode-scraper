@@ -1,0 +1,17 @@
+{
+  "id": "1146",
+  "title": "Snapshot Array",
+  "slug": "snapshot-array",
+  "difficulty": "Medium",
+  "likes": 114,
+  "dislikes": 22,
+  "hints": [
+    "Use a list of lists, adding both the element and the snap_id to each index."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array"
+  ]
+}

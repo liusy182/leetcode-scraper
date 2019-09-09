@@ -1,0 +1,17 @@
+{
+  "id": "1096",
+  "title": "Brace Expansion II",
+  "slug": "brace-expansion-ii",
+  "difficulty": "Hard",
+  "likes": 78,
+  "dislikes": 55,
+  "hints": [
+    "You can write helper methods to parse the next \"chunk\" of the expression.  If you see eg. \"a\", the answer is just the set {a}.  If you see \"{\", you parse until you complete the \"}\" (the number of { and } seen are equal) and that becomes a chunk that you find where the appropriate commas are, and parse each individual expression between the commas."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Brace Expansion\", \"titleSlug\": \"brace-expansion\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "String"
+  ]
+}

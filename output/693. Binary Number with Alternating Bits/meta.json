@@ -1,0 +1,19 @@
+{
+  "id": "693",
+  "title": "Binary Number with Alternating Bits",
+  "slug": "binary-number-with-alternating-bits",
+  "difficulty": "Easy",
+  "likes": 322,
+  "dislikes": 72,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Number of 1 Bits\", \"titleSlug\": \"number-of-1-bits\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "259",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Bit Manipulation"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "738",
+  "title": "Monotone Increasing Digits",
+  "slug": "monotone-increasing-digits",
+  "difficulty": "Medium",
+  "likes": 284,
+  "dislikes": 46,
+  "hints": [
+    "Build the answer digit by digit, adding the largest possible one that would make the number still less than or equal to N."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Remove K Digits\", \"titleSlug\": \"remove-k-digits\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "313",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Greedy"
+  ]
+}

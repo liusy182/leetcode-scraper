@@ -1,0 +1,19 @@
+{
+  "id": "446",
+  "title": "Arithmetic Slices II - Subsequence",
+  "slug": "arithmetic-slices-ii-subsequence",
+  "difficulty": "Hard",
+  "likes": 302,
+  "dislikes": 43,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Arithmetic Slices\", \"titleSlug\": \"arithmetic-slices\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "367",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}
