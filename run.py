@@ -21,6 +21,7 @@ def download_questions():
 
     data_format = '{"operationName": "questionData", "variables": {"titleSlug": "%s"}, "query": "query questionData($titleSlug: String\u0021) {\\n  question(titleSlug: $titleSlug) {\\n    questionId\\n    questionFrontendId\\n    boundTopicId\\n    title\\n    titleSlug\\n    content\\n    translatedTitle\\n    translatedContent\\n    isPaidOnly\\n    difficulty\\n    likes\\n    dislikes\\n    isLiked\\n    similarQuestions\\n    langToValidPlayground\\n    topicTags {\\n      name\\n      slug\\n      translatedName\\n      __typename\\n    }\\n    companyTagStats\\n    codeSnippets {\\n      lang\\n      langSlug\\n      code\\n      __typename\\n    }\\n    stats\\n    hints\\n    solution {\\n      id\\n      canSeeDetail\\n      __typename\\n    }\\n    status\\n    sampleTestCase\\n    metaData\\n    judgerAvailable\\n    judgeType\\n    mysqlSchemas\\n    enableRunCode\\n    enableTestMode\\n    envInfo\\n    libraryUrl\\n    __typename\\n  }\\n}\\n"}'
     for question in all_questions:
+        print(question)
         res = requests.post('https://leetcode.com/graphql',
             headers={
                 'origin': 'https://leetcode.com',
@@ -33,16 +34,13 @@ def download_questions():
 
         res_json = res.json()['data']['question']
 
-        # print('===========================================')
-        # print(question)
-        # print('-------------------------------')
         # print(res_json)
 
         # because of premium subscription
         if not res_json['content']:
             continue
 
-        question_dir = os.path.join(result_dir, question['questionFrontendId'] + '.' + question['title'])
+        question_dir = os.path.join(result_dir, question['questionFrontendId'] + '.' + question['title']).replace(' ', '')
         if not os.path.exists(question_dir):
             os.makedirs(question_dir)
 
@@ -108,9 +106,29 @@ def download_images():
             f.write(filecontent)
         print(file)
 
-download_images()
-
 # for file in glob.glob(result_dir + '/**/*.md'):
 #     dirname = os.path.dirname(file)
 #     shutil.move(dirname, dirname.replace(' ', ''))
 #     print(dirname)
+
+def translate_to_mobile():
+    allcontent = []
+    for file in glob.glob(result_dir + '/**/*.md'):
+        dirname = os.path.dirname(file)
+        with open(os.path.join(dirname, 'meta.json'), 'r') as f:
+            m = json.load(f)
+            with open(file, 'r') as g:
+                m['content'] = g.read()
+
+            allcontent.append(m)
+
+        for img in glob.glob(dirname + '/img/*.*'):
+            print(img, os.path.basename(img))
+            shutil.copy(img, os.path.join(
+                result_dir, 'img', os.path.basename(img)))
+    
+    with open(os.path.join(result_dir, 'all.json'), 'w') as f:
+        json.dump(allcontent, f, indent=2)
+
+
+translate_to_mobile()
