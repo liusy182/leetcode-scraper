@@ -70,7 +70,7 @@
 <strong>Output: </strong><span id="example-output-2">17</span>
 <strong>Explanation: </strong>
 Here are the three projections (&quot;shadows&quot;) of the shape made with each axis-aligned plane.
-<img alt="" src="https://s3-lc-upload.s3.amazonaws.com/uploads/2018/08/02/shadow.png" style="width: 749px; height: 200px;" />
+<img alt="" src="./img/projection-area-of-3d-shapes_1.png" style="width: 749px; height: 200px;" />
 </pre>
 
 <div>

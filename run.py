@@ -92,8 +92,9 @@ def download_images():
             if img in sub:
                 continue
 
+
             _, ext = os.path.splitext(img)
-            res = requests.get(img)
+            res = requests.get('https://leetcode.com' + img if img.startswith('/') else img)
             imgname = imgprefix + '_' + str(counter) + ext
             with open(os.path.join(imgdir, imgname), 'wb') as f:
                 f.write(res.content)
@@ -106,11 +107,10 @@ def download_images():
         with open(file, 'w') as f:
             f.write(filecontent)
         print(file)
-        break
 
-# download_images()
+download_images()
 
-for file in glob.glob(result_dir + '/**/*.md'):
-    dirname = os.path.dirname(file)
-    shutil.move(dirname, dirname.replace(' ', ''))
-    print(dirname)
+# for file in glob.glob(result_dir + '/**/*.md'):
+#     dirname = os.path.dirname(file)
+#     shutil.move(dirname, dirname.replace(' ', ''))
+#     print(dirname)

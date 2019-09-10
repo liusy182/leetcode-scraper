@@ -4,7 +4,7 @@
 
 <p>&nbsp;</p>
 
-<p><img src="https://assets.leetcode.com/uploads/2018/10/12/narytreeexample.png" style="width: 100%; max-width: 300px;" /></p>
+<p><img src="./img/n-ary-tree-level-order-traversal_1.png" style="width: 100%; max-width: 300px;" /></p>
 
 <p>&nbsp;</p>
 

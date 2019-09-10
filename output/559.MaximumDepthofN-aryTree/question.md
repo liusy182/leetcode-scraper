@@ -5,7 +5,7 @@
 <p>For example, given a <code>3-ary</code> tree:</p>
 &nbsp;
 
-<p><img src="https://assets.leetcode.com/uploads/2018/10/12/narytreeexample.png" style="width: 100%; max-width: 300px;" /></p>
+<p><img src="./img/maximum-depth-of-n-ary-tree_1.png" style="width: 100%; max-width: 300px;" /></p>
 
 <p>&nbsp;</p>
 

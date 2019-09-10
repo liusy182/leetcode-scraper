@@ -25,11 +25,11 @@
 <p>Given the following multilevel doubly linked list:</p>
 
 <pre>
-<img src="https://assets.leetcode.com/uploads/2018/10/12/multilevellinkedlist.png" style="width: 640px;" /></pre>
+<img src="./img/flatten-a-multilevel-doubly-linked-list_1.png" style="width: 640px;" /></pre>
 
 <p>&nbsp;</p>
 
 <p>We should return the following flattened doubly linked list:</p>
 
 <pre>
-<img src="https://assets.leetcode.com/uploads/2018/10/12/multilevellinkedlistflattened.png" style="width: 1100px;" /></pre>
+<img src="./img/flatten-a-multilevel-doubly-linked-list_2.png" style="width: 1100px;" /></pre>

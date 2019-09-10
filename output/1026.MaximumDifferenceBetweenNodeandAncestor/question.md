@@ -6,7 +6,7 @@
 
 <p><strong>Example 1:</strong></p>
 
-<p><img alt="" src="http://i68.tinypic.com/2whqcep.jpg" style="height: 230px; width: 300px;" /></p>
+<p><img alt="" src="./img/maximum-difference-between-node-and-ancestor_1.jpg" style="height: 230px; width: 300px;" /></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-1-1">[8,3,10,1,6,null,14,null,null,4,7,13]</span>

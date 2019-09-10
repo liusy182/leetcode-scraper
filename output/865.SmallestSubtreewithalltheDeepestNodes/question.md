@@ -15,7 +15,7 @@
 <strong>Output: </strong><span id="example-output-1">[2,7,4]</span>
 <strong>Explanation:
 </strong>
-<img alt="" src="https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/01/sketch1.png" style="width: 280px; height: 238px;" />
+<img alt="" src="./img/smallest-subtree-with-all-the-deepest-nodes_1.png" style="width: 280px; height: 238px;" />
 
 We return the node with value 2, colored in yellow in the diagram.
 The nodes colored in blue are the deepest nodes of the tree.

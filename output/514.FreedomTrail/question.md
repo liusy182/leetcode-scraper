@@ -13,7 +13,7 @@
 
 <p><b>Example:</b></p>
 
-<center><img src="https://assets.leetcode.com/uploads/2018/10/22/ring.jpg" style="width: 26%;" /></center>
+<center><img src="./img/freedom-trail_1.jpg" style="width: 26%;" /></center>
 &nbsp;
 
 <pre>

@@ -8,7 +8,7 @@
 <b>Input:</b> [[1,1],[2,2],[2,0],[2,4],[3,3],[4,2]]
 <b>Output:</b> [[1,1],[2,0],[4,2],[3,3],[2,4]]
 <b>Explanation:</b>
-<img src="https://assets.leetcode.com/uploads/2018/10/12/erect_the_fence_1.png" style="width: 100%; max-width: 320px" />
+<img src="./img/erect-the-fence_1.png" style="width: 100%; max-width: 320px" />
 </pre>
 
 <p><b>Example 2:</b></p>
@@ -17,7 +17,7 @@
 <b>Input:</b> [[1,2],[2,2],[4,2]]
 <b>Output:</b> [[1,2],[2,2],[4,2]]
 <b>Explanation:</b>
-<img src="https://assets.leetcode.com/uploads/2018/10/12/erect_the_fence_2.png" style="width: 100%; max-width: 320px" />
+<img src="./img/erect-the-fence_2.png" style="width: 100%; max-width: 320px" />
 Even you only have trees in a line, you need to use rope to enclose them. 
 </pre>
 

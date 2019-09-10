@@ -14,7 +14,7 @@
 
 <p><b>Example 1:</b></p>
 
-<p><b><img alt="" src="https://assets.leetcode.com/uploads/2019/04/05/diag1b.png" style="width: 500px; height: 218px;" /></b></p>
+<p><b><img alt="" src="./img/exclusive-time-of-functions_1.png" style="width: 500px; height: 218px;" /></b></p>
 
 <pre>
 <b>Input:</b>

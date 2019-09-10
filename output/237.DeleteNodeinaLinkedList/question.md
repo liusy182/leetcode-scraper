@@ -2,7 +2,7 @@
 
 <p>Given linked list --&nbsp;head =&nbsp;[4,5,1,9], which looks like following:</p>
 
-<p><img alt="" src="https://assets.leetcode.com/uploads/2018/12/28/237_example.png" style="margin-top: 5px; margin-bottom: 5px; width: 300px; height: 49px;" /></p>
+<p><img alt="" src="./img/delete-node-in-a-linked-list_1.png" style="margin-top: 5px; margin-bottom: 5px; width: 300px; height: 49px;" /></p>
 
 <p>&nbsp;</p>
 

@@ -6,11 +6,11 @@
 
 <p>Given the <code>8 x 8</code> grid below, we want to construct the corresponding quad tree:</p>
 
-<p><img alt="" src="https://s3-lc-upload.s3.amazonaws.com/uploads/2018/02/01/962_grid.png" style="height:27%; max-height:300px; max-width:299px; width:27%" /></p>
+<p><img alt="" src="./img/construct-quad-tree_1.png" style="height:27%; max-height:300px; max-width:299px; width:27%" /></p>
 
 <p>It can be divided according to the definition above:</p>
 
-<p><img alt="" src="https://s3-lc-upload.s3.amazonaws.com/uploads/2018/02/01/962_grid_divided.png" style="height:100%; max-height:300px; max-width:1107px; width:100%" /></p>
+<p><img alt="" src="./img/construct-quad-tree_2.png" style="height:100%; max-height:300px; max-width:1107px; width:100%" /></p>
 
 <p>&nbsp;</p>
 
@@ -18,7 +18,7 @@
 
 <p>For the non-leaf&nbsp;nodes,&nbsp;<code>val</code> can be arbitrary, so it is represented as <code>*</code>.</p>
 
-<p><img alt="" src="https://s3-lc-upload.s3.amazonaws.com/uploads/2018/02/01/962_quad_tree.png" style="height:100%; max-height:300px; max-width:836px; width:100%" /></p>
+<p><img alt="" src="./img/construct-quad-tree_3.png" style="height:100%; max-height:300px; max-width:836px; width:100%" /></p>
 
 <p><strong>Note:</strong></p>
 

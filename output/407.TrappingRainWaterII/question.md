@@ -21,12 +21,12 @@ Given the following 3x6 height map:
 Return 4.
 </pre>
 
-<p><img src="https://assets.leetcode.com/uploads/2018/10/13/rainwater_empty.png" style="width: 100%; max-width: 500px;" /></p>
+<p><img src="./img/trapping-rain-water-ii_1.png" style="width: 100%; max-width: 500px;" /></p>
 
 <p>The above image represents the elevation map <code>[[1,4,3,1,3,2],[3,2,1,3,2,4],[2,3,3,2,3,1]]</code> before the rain.</p>
 
 <p>&nbsp;</p>
 
-<p><img src="https://assets.leetcode.com/uploads/2018/10/13/rainwater_fill.png" style="width: 100%; max-width: 500px;" /></p>
+<p><img src="./img/trapping-rain-water-ii_2.png" style="width: 100%; max-width: 500px;" /></p>
 
 <p>After the rain, water is trapped between the blocks. The total volume of water trapped is 4.</p>

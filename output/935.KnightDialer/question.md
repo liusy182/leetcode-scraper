@@ -1,6 +1,6 @@
 <p>A chess knight can move as indicated in the chess diagram below:</p>
 
-<p><img alt="" src="https://assets.leetcode.com/uploads/2018/10/12/knight.png" style="width: 150px; height: 150px;" />&nbsp;.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img alt="" src="https://assets.leetcode.com/uploads/2018/10/30/keypad.png" style="width: 134px; height: 150px;" /></p>
+<p><img alt="" src="https://assets.leetcode.com/uploads/2018/10/12/knight.png" style="width: 150px; height: 150px;" />&nbsp;.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img alt="" src="./img/knight-dialer_1.png" style="width: 134px; height: 150px;" /></p>
 
 <p>&nbsp;</p>
 

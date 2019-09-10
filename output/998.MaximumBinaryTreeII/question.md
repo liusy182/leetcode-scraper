@@ -20,7 +20,7 @@
 
 <p><strong>Example 1:</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode.com/uploads/2019/02/21/maximum-binary-tree-1-1.png" style="width: 159px; height: 160px;" /><img alt="" src="https://assets.leetcode.com/uploads/2019/02/21/maximum-binary-tree-1-2.png" style="width: 169px; height: 160px;" /></strong></p>
+<p><strong><img alt="" src="https://assets.leetcode.com/uploads/2019/02/21/maximum-binary-tree-1-1.png" style="width: 159px; height: 160px;" /><img alt="" src="./img/maximum-binary-tree-ii_1.png" style="width: 169px; height: 160px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong>root = <span id="example-input-1-1">[4,1,3,null,null,2]</span>, val = <span id="example-input-1-2">5</span>
@@ -30,7 +30,7 @@
 
 <div>
 <p><strong>Example 2:<br />
-<img alt="" src="https://assets.leetcode.com/uploads/2019/02/21/maximum-binary-tree-2-1.png" style="width: 180px; height: 160px;" /><img alt="" src="https://assets.leetcode.com/uploads/2019/02/21/maximum-binary-tree-2-2.png" style="width: 214px; height: 160px;" /></strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2019/02/21/maximum-binary-tree-2-1.png" style="width: 180px; height: 160px;" /><img alt="" src="./img/maximum-binary-tree-ii_2.png" style="width: 214px; height: 160px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong>root = <span id="example-input-2-1">[5,2,4,null,1]</span>, val = <span id="example-input-2-2">3</span>
@@ -40,7 +40,7 @@
 
 <div>
 <p><strong>Example 3:<br />
-<img alt="" src="https://assets.leetcode.com/uploads/2019/02/21/maximum-binary-tree-3-1.png" style="width: 180px; height: 160px;" /><img alt="" src="https://assets.leetcode.com/uploads/2019/02/21/maximum-binary-tree-3-2.png" style="width: 201px; height: 160px;" /></strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2019/02/21/maximum-binary-tree-3-1.png" style="width: 180px; height: 160px;" /><img alt="" src="./img/maximum-binary-tree-ii_3.png" style="width: 201px; height: 160px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong>root = <span id="example-input-3-1">[5,2,3,null,1]</span>, val = <span id="example-input-3-2">4</span>

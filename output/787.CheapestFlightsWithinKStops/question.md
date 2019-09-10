@@ -10,7 +10,7 @@ src = 0, dst = 2, k = 1
 <strong>Output:</strong> 200
 <strong>Explanation:</strong> 
 The graph looks like this:
-<img alt="" src="https://s3-lc-upload.s3.amazonaws.com/uploads/2018/02/16/995.png" style="height:180px; width:246px" />
+<img alt="" src="./img/cheapest-flights-within-k-stops_1.png" style="height:180px; width:246px" />
 
 The cheapest price from city <code>0</code> to city <code>2</code> with at most 1 stop costs 200, as marked red in the picture.</pre>
 
@@ -22,7 +22,7 @@ src = 0, dst = 2, k = 0
 <strong>Output:</strong> 500
 <strong>Explanation:</strong> 
 The graph looks like this:
-<img alt="" src="https://s3-lc-upload.s3.amazonaws.com/uploads/2018/02/16/995.png" style="height:180px; width:246px" />
+<img alt="" src="./img/cheapest-flights-within-k-stops_1.png" style="height:180px; width:246px" />
 
 The cheapest price from city <code>0</code> to city <code>2</code> with at most 0 stop costs 500, as marked blue in the picture.</pre>
 

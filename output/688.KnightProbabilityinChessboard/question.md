@@ -4,7 +4,7 @@
 
 <p>&nbsp;</p>
 
-<p><img src="https://assets.leetcode.com/uploads/2018/10/12/knight.png" style="width: 200px; height: 200px;" /></p>
+<p><img src="./img/knight-probability-in-chessboard_1.png" style="width: 200px; height: 200px;" /></p>
 
 <p>&nbsp;</p>
 

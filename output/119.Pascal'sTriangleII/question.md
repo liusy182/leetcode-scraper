@@ -2,7 +2,7 @@
 
 <p>Note that the row index starts from&nbsp;0.</p>
 
-<p><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif" /><br />
+<p><img alt="" src="./img/pascals-triangle-ii_1.gif" /><br />
 <small>In Pascal&#39;s triangle, each number is the sum of the two numbers directly above it.</small></p>
 
 <p><strong>Example:</strong></p>

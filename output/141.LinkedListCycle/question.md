@@ -15,7 +15,7 @@
 </div>
 
 <div>
-<p><span><img alt="" src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png" style="width: 300px; height: 97px; margin-top: 8px; margin-bottom: 8px;" /></span></p>
+<p><span><img alt="" src="./img/linked-list-cycle_1.png" style="width: 300px; height: 97px; margin-top: 8px; margin-bottom: 8px;" /></span></p>
 
 <p><strong>Example 2:</strong></p>
 
@@ -27,7 +27,7 @@
 </div>
 
 <div>
-<p><span><img alt="" src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png" style="width: 141px; height: 74px;" /></span></p>
+<p><span><img alt="" src="./img/linked-list-cycle_2.png" style="width: 141px; height: 74px;" /></span></p>
 
 <p><strong>Example 3:</strong></p>
 
@@ -38,7 +38,7 @@
 </pre>
 </div>
 
-<p><span><img alt="" src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png" style="width: 45px; height: 45px;" /></span></p>
+<p><span><img alt="" src="./img/linked-list-cycle_3.png" style="width: 45px; height: 45px;" /></span></p>
 
 <p>&nbsp;</p>
 

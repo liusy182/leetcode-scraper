@@ -1,6 +1,6 @@
 <p>A binary watch has 4 LEDs on the top which represent the <b>hours</b> (<b>0-11</b>), and the 6 LEDs on the bottom represent the <b>minutes</b> (<b>0-59</b>).</p>
 <p>Each LED represents a zero or one, with the least significant bit on the right.</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Binary_clock_samui_moon.jpg" height="300" />
+<img src="./img/binary-watch_1.jpg" height="300" />
 <p>For example, the above binary watch reads "3:25".</p>
 
 <p>Given a non-negative integer <i>n</i> which represents the number of LEDs that are currently on, return all possible times the watch could represent.</p>

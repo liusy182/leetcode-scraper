@@ -9,7 +9,7 @@
 
 <p><strong>Example 1:</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode.com/uploads/2019/01/30/interval1.png" style="width: 506px; height: 140px;" /></strong></p>
+<p><strong><img alt="" src="./img/interval-list-intersections_1.png" style="width: 506px; height: 140px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong>A = <span id="example-input-1-1">[[0,2],[5,10],[13,23],[24,25]]</span>, B = <span id="example-input-1-2">[[1,5],[8,12],[15,24],[25,26]]</span>

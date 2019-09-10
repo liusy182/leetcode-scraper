@@ -21,7 +21,7 @@
 <b>Output:</b> 2
 
 <b>Explanation:</b> 
-<img src="https://assets.leetcode.com/uploads/2018/10/12/brick_wall.png" style="width: 100%; max-width: 350px" />
+<img src="./img/brick-wall_1.png" style="width: 100%; max-width: 350px" />
 </pre>
 
 <p>&nbsp;</p>

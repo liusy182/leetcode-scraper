@@ -8,7 +8,7 @@
 The five points are show in the figure below. The red triangle is the largest.
 </pre>
 
-<p><img alt="" src="https://s3-lc-upload.s3.amazonaws.com/uploads/2018/04/04/1027.png" style="height:328px; width:400px" /></p>
+<p><img alt="" src="./img/largest-triangle-area_1.png" style="height:328px; width:400px" /></p>
 
 <p><strong>Notes: </strong></p>
 

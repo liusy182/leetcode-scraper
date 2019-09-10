@@ -10,7 +10,7 @@
 
 <p><strong>Example 1:</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode.com/uploads/2019/04/08/recover-a-tree-from-preorder-traversal.png" style="width: 320px; height: 200px;" /></strong></p>
+<p><strong><img alt="" src="./img/recover-a-tree-from-preorder-traversal_1.png" style="width: 320px; height: 200px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-1-1">&quot;1-2--3--4-5--6--7&quot;</span>
@@ -20,7 +20,7 @@
 <div>
 <p><strong>Example 2:</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode.com/uploads/2019/04/11/screen-shot-2019-04-10-at-114101-pm.png" style="width: 256px; height: 250px;" /></strong></p>
+<p><strong><img alt="" src="./img/recover-a-tree-from-preorder-traversal_2.png" style="width: 256px; height: 250px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-2-1">&quot;1-2--3---4-5--6---7&quot;</span>
@@ -33,7 +33,7 @@
 <div>
 <p><strong>Example 3:</strong></p>
 
-<p><span><img alt="" src="https://assets.leetcode.com/uploads/2019/04/11/screen-shot-2019-04-10-at-114955-pm.png" style="width: 276px; height: 250px;" /></span></p>
+<p><span><img alt="" src="./img/recover-a-tree-from-preorder-traversal_3.png" style="width: 276px; height: 250px;" /></span></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-3-1">&quot;1-401--349---90--88&quot;</span>

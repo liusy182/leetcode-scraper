@@ -16,7 +16,7 @@
 <div>
 <p><strong>Example 1:</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode.com/uploads/2019/01/30/tree1.png" style="width: 160px; height: 107px;" /></strong></p>
+<p><strong><img alt="" src="./img/smallest-string-starting-from-leaf_1.png" style="width: 160px; height: 107px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-1-1">[0,1,2,3,4,3,4]</span>
@@ -26,7 +26,7 @@
 <div>
 <p><strong>Example 2:</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode.com/uploads/2019/01/30/tree2.png" style="width: 160px; height: 107px;" /></strong></p>
+<p><strong><img alt="" src="./img/smallest-string-starting-from-leaf_2.png" style="width: 160px; height: 107px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-2-1">[25,1,3,1,3,0,2]</span>
@@ -36,7 +36,7 @@
 <div>
 <p><strong>Example 3:</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode.com/uploads/2019/02/01/tree3.png" style="height: 170px; width: 172px;" /></strong></p>
+<p><strong><img alt="" src="./img/smallest-string-starting-from-leaf_3.png" style="height: 170px; width: 172px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-3-1">[2,2,1,null,1,0,null,0]</span>

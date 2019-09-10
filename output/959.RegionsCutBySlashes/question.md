@@ -30,7 +30,7 @@
 ]</span>
 <strong>Output: </strong><span id="example-output-1">2</span>
 <strong>Explanation: </strong>The 2x2 grid is as follows:
-<img alt="" src="https://assets.leetcode.com/uploads/2018/12/15/1.png" style="width: 82px; height: 82px;" />
+<img alt="" src="./img/regions-cut-by-slashes_1.png" style="width: 82px; height: 82px;" />
 </pre>
 
 <div>
@@ -44,7 +44,7 @@
 ]</span>
 <strong>Output: </strong><span id="example-output-2">1</span>
 <strong>Explanation: </strong>The 2x2 grid is as follows:
-<img alt="" src="https://assets.leetcode.com/uploads/2018/12/15/2.png" style="width: 82px; height: 82px;" />
+<img alt="" src="./img/regions-cut-by-slashes_2.png" style="width: 82px; height: 82px;" />
 </pre>
 
 <div>
@@ -59,7 +59,7 @@
 <strong>Output: </strong><span id="example-output-3">4</span>
 <strong>Explanation: </strong>(Recall that because \ characters are escaped, &quot;\\/&quot; refers to \/, and &quot;/\\&quot; refers to /\.)
 The 2x2 grid is as follows:
-<img alt="" src="https://assets.leetcode.com/uploads/2018/12/15/3.png" style="width: 82px; height: 82px;" />
+<img alt="" src="./img/regions-cut-by-slashes_3.png" style="width: 82px; height: 82px;" />
 </pre>
 
 <div>
@@ -74,7 +74,7 @@ The 2x2 grid is as follows:
 <strong>Output: </strong><span id="example-output-4">5</span>
 <strong>Explanation: </strong>(Recall that because \ characters are escaped, &quot;/\\&quot; refers to /\, and &quot;\\/&quot; refers to \/.)
 The 2x2 grid is as follows:
-<img alt="" src="https://assets.leetcode.com/uploads/2018/12/15/4.png" style="width: 82px; height: 82px;" />
+<img alt="" src="./img/regions-cut-by-slashes_4.png" style="width: 82px; height: 82px;" />
 </pre>
 
 <div>
@@ -88,7 +88,7 @@ The 2x2 grid is as follows:
 ]</span>
 <strong>Output: </strong><span id="example-output-5">3</span>
 <strong>Explanation: </strong>The 2x2 grid is as follows:
-<img alt="" src="https://assets.leetcode.com/uploads/2018/12/15/5.png" style="width: 82px; height: 82px;" />
+<img alt="" src="./img/regions-cut-by-slashes_5.png" style="width: 82px; height: 82px;" />
 </pre>
 
 <p>&nbsp;</p>

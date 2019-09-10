@@ -19,5 +19,5 @@
 
 <strong>Explanation:</strong> The perimeter is the 16 yellow stripes in the image below:
 
-<img src="https://assets.leetcode.com/uploads/2018/10/12/island.png" style="width: 221px; height: 213px;" />
+<img src="./img/island-perimeter_1.png" style="width: 221px; height: 213px;" />
 </pre>

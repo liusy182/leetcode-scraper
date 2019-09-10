@@ -7,7 +7,7 @@
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode.com/uploads/2019/07/01/screen-shot-2019-07-01-at-53836-pm.png" style="width: 237px; height: 150px;" /></strong></p>
+<p><strong><img alt="" src="./img/delete-nodes-and-return-forest_1.png" style="width: 237px; height: 150px;" /></strong></p>
 
 <pre>
 <strong>Input:</strong> root = [1,2,3,4,5,6,7], to_delete = [3,5]

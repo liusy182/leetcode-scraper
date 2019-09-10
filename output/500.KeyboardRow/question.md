@@ -2,7 +2,7 @@
 
 <p>&nbsp;</p>
 
-<p><img alt="" src="https://assets.leetcode.com/uploads/2018/10/12/keyboard.png" style="width: 100%; max-width: 600px" /></p>
+<p><img alt="" src="./img/keyboard-row_1.png" style="width: 100%; max-width: 600px" /></p>
 &nbsp;
 
 <p><b>Example:</b></p>

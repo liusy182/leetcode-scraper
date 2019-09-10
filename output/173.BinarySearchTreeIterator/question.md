@@ -9,7 +9,7 @@
 
 <p><strong>Example:</strong></p>
 
-<p><strong><img alt="" src="https://assets.leetcode.com/uploads/2018/12/25/bst-tree.png" style="width: 189px; height: 178px;" /></strong></p>
+<p><strong><img alt="" src="./img/binary-search-tree-iterator_1.png" style="width: 189px; height: 178px;" /></strong></p>
 
 <pre>
 BSTIterator iterator = new BSTIterator(root);
