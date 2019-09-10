@@ -18,7 +18,7 @@
 <pre>
 <strong>Input: </strong><span id="example-input-1-1">[4,6,15,35]</span>
 <strong>Output: </strong><span id="example-output-1">4</span>
-<span><img alt="" src="https://assets.leetcode.com/uploads/2018/12/01/ex1.png" style="width: 257px; height: 50px;" /></span>
+<span><img alt="" src="./img/largest-component-size-by-common-factor_1.png" style="width: 257px; height: 50px;" /></span>
 </pre>
 
 <div>
@@ -27,7 +27,7 @@
 <pre>
 <strong>Input: </strong><span id="example-input-2-1">[20,50,9,63]</span>
 <strong>Output: </strong><span id="example-output-2">2</span>
-<span><img alt="" src="https://assets.leetcode.com/uploads/2018/12/01/ex2.png" style="width: 293px; height: 50px;" /></span>
+<span><img alt="" src="./img/largest-component-size-by-common-factor_2.png" style="width: 293px; height: 50px;" /></span>
 </pre>
 
 <div>
@@ -36,7 +36,7 @@
 <pre>
 <strong>Input: </strong><span id="example-input-3-1">[2,3,6,7,4,12,21,39]</span>
 <strong>Output: </strong><span id="example-output-3">8</span>
-<span><img alt="" src="https://assets.leetcode.com/uploads/2018/12/01/ex3.png" style="width: 346px; height: 180px;" /></span>
+<span><img alt="" src="./img/largest-component-size-by-common-factor_3.png" style="width: 346px; height: 180px;" /></span>
 </pre>
 
 <p><strong>Note:</strong></p>
