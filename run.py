@@ -5,7 +5,7 @@ import subprocess
 import os
 import re
 import glob
-import uuid
+import shutil
 
 result_dir = 'output'
 img_regex = re.compile(
@@ -42,7 +42,7 @@ def download_questions():
         if not res_json['content']:
             continue
 
-        question_dir = os.path.join(result_dir, question['questionFrontendId'] + '. ' + question['title'])
+        question_dir = os.path.join(result_dir, question['questionFrontendId'] + '.' + question['title'])
         if not os.path.exists(question_dir):
             os.makedirs(question_dir)
 
@@ -77,8 +77,10 @@ def download_images():
         
         dirname = os.path.dirname(file)
         imgprefix = os.path.basename(file)
-        with open(os.path.join(dirname, 'meta.json'), 'r') as f:
-            imgprefix = json.load(f)['slug']
+        meta = os.path.join(dirname, 'meta.json')
+        if os.path.exists(meta):
+            with open(meta, 'r') as f:
+                imgprefix = json.load(f)['slug']
         
         imgdir = os.path.join(dirname, 'img')
         if not os.path.exists(imgdir):
@@ -106,4 +108,9 @@ def download_images():
         print(file)
         break
 
-download_images()
+# download_images()
+
+for file in glob.glob(result_dir + '/**/*.md'):
+    dirname = os.path.dirname(file)
+    shutil.move(dirname, dirname.replace(' ', ''))
+    print(dirname)
