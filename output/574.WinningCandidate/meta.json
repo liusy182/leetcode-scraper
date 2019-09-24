@@ -1,0 +1,17 @@
+{
+  "id": "574",
+  "title": "Winning Candidate",
+  "slug": "winning-candidate",
+  "difficulty": "Medium",
+  "likes": 26,
+  "dislikes": 203,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "208",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

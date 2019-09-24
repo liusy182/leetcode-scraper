@@ -1,0 +1,16 @@
+{
+  "id": "249",
+  "title": "Group Shifted Strings",
+  "slug": "group-shifted-strings",
+  "difficulty": "Medium",
+  "likes": 307,
+  "dislikes": 54,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Group Anagrams\", \"titleSlug\": \"group-anagrams\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table",
+    "String"
+  ]
+}

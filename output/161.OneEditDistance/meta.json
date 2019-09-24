@@ -1,0 +1,19 @@
+{
+  "id": "161",
+  "title": "One Edit Distance",
+  "slug": "one-edit-distance",
+  "difficulty": "Medium",
+  "likes": 442,
+  "dislikes": 88,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Edit Distance\", \"titleSlug\": \"edit-distance\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "693",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

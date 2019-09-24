@@ -1,0 +1,16 @@
+{
+  "id": "246",
+  "title": "Strobogrammatic Number",
+  "slug": "strobogrammatic-number",
+  "difficulty": "Easy",
+  "likes": 145,
+  "dislikes": 352,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Strobogrammatic Number II\", \"titleSlug\": \"strobogrammatic-number-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Strobogrammatic Number III\", \"titleSlug\": \"strobogrammatic-number-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Confusing Number\", \"titleSlug\": \"confusing-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table",
+    "Math"
+  ]
+}

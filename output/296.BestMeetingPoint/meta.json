@@ -1,0 +1,22 @@
+{
+  "id": "296",
+  "title": "Best Meeting Point",
+  "slug": "best-meeting-point",
+  "difficulty": "Hard",
+  "likes": 330,
+  "dislikes": 23,
+  "hints": [
+    "Try to solve it in one dimension first. How can this solution apply to the two dimension case?"
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Shortest Distance from All Buildings\", \"titleSlug\": \"shortest-distance-from-all-buildings\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Minimum Moves to Equal Array Elements II\", \"titleSlug\": \"minimum-moves-to-equal-array-elements-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "16",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math",
+    "Sort"
+  ]
+}

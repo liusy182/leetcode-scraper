@@ -1,0 +1,16 @@
+{
+  "id": "359",
+  "title": "Logger Rate Limiter",
+  "slug": "logger-rate-limiter",
+  "difficulty": "Easy",
+  "likes": 254,
+  "dislikes": 76,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Design Hit Counter\", \"titleSlug\": \"design-hit-counter\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table",
+    "Design"
+  ]
+}

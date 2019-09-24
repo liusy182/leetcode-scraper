@@ -1,0 +1,19 @@
+{
+  "id": "545",
+  "title": "Boundary of Binary Tree",
+  "slug": "boundary-of-binary-tree",
+  "difficulty": "Medium",
+  "likes": 288,
+  "dislikes": 529,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Binary Tree Right Side View\", \"titleSlug\": \"binary-tree-right-side-view\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "97",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

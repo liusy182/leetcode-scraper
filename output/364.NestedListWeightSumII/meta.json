@@ -1,0 +1,15 @@
+{
+  "id": "364",
+  "title": "Nested List Weight Sum II",
+  "slug": "nested-list-weight-sum-ii",
+  "difficulty": "Medium",
+  "likes": 363,
+  "dislikes": 89,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Nested List Weight Sum\", \"titleSlug\": \"nested-list-weight-sum\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Array Nesting\", \"titleSlug\": \"array-nesting\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Depth-first Search"
+  ]
+}

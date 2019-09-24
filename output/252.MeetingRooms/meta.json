@@ -1,0 +1,19 @@
+{
+  "id": "252",
+  "title": "Meeting Rooms",
+  "slug": "meeting-rooms",
+  "difficulty": "Easy",
+  "likes": 371,
+  "dislikes": 26,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Merge Intervals\", \"titleSlug\": \"merge-intervals\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Meeting Rooms II\", \"titleSlug\": \"meeting-rooms-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "39",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Sort"
+  ]
+}

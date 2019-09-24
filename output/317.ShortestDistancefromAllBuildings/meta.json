@@ -1,0 +1,15 @@
+{
+  "id": "317",
+  "title": "Shortest Distance from All Buildings",
+  "slug": "shortest-distance-from-all-buildings",
+  "difficulty": "Hard",
+  "likes": 533,
+  "dislikes": 30,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Walls and Gates\", \"titleSlug\": \"walls-and-gates\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Best Meeting Point\", \"titleSlug\": \"best-meeting-point\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"As Far from Land as Possible\", \"titleSlug\": \"as-far-from-land-as-possible\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Breadth-first Search"
+  ]
+}

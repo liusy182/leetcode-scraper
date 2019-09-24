@@ -1,0 +1,16 @@
+{
+  "id": "248",
+  "title": "Strobogrammatic Number III",
+  "slug": "strobogrammatic-number-iii",
+  "difficulty": "Hard",
+  "likes": 133,
+  "dislikes": 117,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Strobogrammatic Number\", \"titleSlug\": \"strobogrammatic-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Strobogrammatic Number II\", \"titleSlug\": \"strobogrammatic-number-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Math",
+    "Recursion"
+  ]
+}

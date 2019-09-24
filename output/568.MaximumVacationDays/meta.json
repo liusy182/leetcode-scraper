@@ -1,0 +1,23 @@
+{
+  "id": "568",
+  "title": "Maximum Vacation Days",
+  "slug": "maximum-vacation-days",
+  "difficulty": "Hard",
+  "likes": 237,
+  "dislikes": 33,
+  "hints": [
+    "First try to understand the problem carefully and then take some example and solve it on a paper.",
+    "Can you interpret the given input as a graph? Which graph traversal technique is suitable here?",
+    "Can we use some space to avoid redundant function calls?"
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Cheapest Flights Within K Stops\", \"titleSlug\": \"cheapest-flights-within-k-stops\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "122",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

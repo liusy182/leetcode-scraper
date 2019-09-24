@@ -1,0 +1,19 @@
+{
+  "id": "489",
+  "title": "Robot Room Cleaner",
+  "slug": "robot-room-cleaner",
+  "difficulty": "Hard",
+  "likes": 637,
+  "dislikes": 36,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Walls and Gates\", \"titleSlug\": \"walls-and-gates\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "713",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Depth-first Search"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "584",
+  "title": "Find Customer Referee",
+  "slug": "find-customer-referee",
+  "difficulty": "Easy",
+  "likes": 50,
+  "dislikes": 25,
+  "hints": [
+    "Be careful of the NULL value"
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "156",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

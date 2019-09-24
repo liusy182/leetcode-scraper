@@ -1,0 +1,19 @@
+{
+  "id": "716",
+  "title": "Max Stack",
+  "slug": "max-stack",
+  "difficulty": "Easy",
+  "likes": 435,
+  "dislikes": 77,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Min Stack\", \"titleSlug\": \"min-stack\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "308",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Design"
+  ]
+}

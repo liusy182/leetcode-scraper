@@ -1,0 +1,19 @@
+{
+  "id": "631",
+  "title": "Design Excel Sum Formula",
+  "slug": "design-excel-sum-formula",
+  "difficulty": "Hard",
+  "likes": 67,
+  "dislikes": 71,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "187",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Design"
+  ]
+}

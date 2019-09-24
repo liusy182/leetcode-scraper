@@ -1,0 +1,15 @@
+{
+  "id": "471",
+  "title": "Encode String with Shortest Length",
+  "slug": "encode-string-with-shortest-length",
+  "difficulty": "Hard",
+  "likes": 257,
+  "dislikes": 17,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Decode String\", \"titleSlug\": \"decode-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Atoms\", \"titleSlug\": \"number-of-atoms\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

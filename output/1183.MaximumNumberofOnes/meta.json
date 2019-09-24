@@ -1,0 +1,21 @@
+{
+  "id": "1183",
+  "title": "Maximum Number of Ones",
+  "slug": "maximum-number-of-ones",
+  "difficulty": "Hard",
+  "likes": 37,
+  "dislikes": 5,
+  "hints": [
+    "Think of a greedy mathematical solution.",
+    "Say you choose to set some cell (i, j) to 1, all cells (x, y) such that i % sideLength == x % sideLength and j % sideLength == y % sideLength can also be set to 1 without increasing the max number of ones in a sub-matrix.",
+    "In one move, choose to set all the cells with some modulus (i % sideLength, j % sideLength) to 1.",
+    "Choose the cells with max frequency."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Math",
+    "Sort"
+  ]
+}

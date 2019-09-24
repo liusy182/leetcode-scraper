@@ -1,0 +1,18 @@
+{
+  "id": "348",
+  "title": "Design Tic-Tac-Toe",
+  "slug": "design-tic-tac-toe",
+  "difficulty": "Medium",
+  "likes": 464,
+  "dislikes": 33,
+  "hints": [
+    "Could you trade extra space such that <code>move()</code> operation can be done in O(1)?",
+    "You need two arrays: int rows[n], int cols[n], plus two variables: diagonal, anti_diagonal."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Valid Tic-Tac-Toe State\", \"titleSlug\": \"valid-tic-tac-toe-state\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Design"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "634",
+  "title": "Find the Derangement of An Array",
+  "slug": "find-the-derangement-of-an-array",
+  "difficulty": "Medium",
+  "likes": 91,
+  "dislikes": 100,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "193",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math"
+  ]
+}

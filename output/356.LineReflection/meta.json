@@ -1,0 +1,20 @@
+{
+  "id": "356",
+  "title": "Line Reflection",
+  "slug": "line-reflection",
+  "difficulty": "Medium",
+  "likes": 102,
+  "dislikes": 265,
+  "hints": [
+    "Find the smallest and largest x-value for all points.",
+    "If there is a line then it should be at y = (minX + maxX) / 2.",
+    "For each point, make sure that it has a reflected point in the opposite side."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Max Points on a Line\", \"titleSlug\": \"max-points-on-a-line\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Number of Boomerangs\", \"titleSlug\": \"number-of-boomerangs\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table",
+    "Math"
+  ]
+}

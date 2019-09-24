@@ -1,0 +1,19 @@
+{
+  "id": "325",
+  "title": "Maximum Size Subarray Sum Equals k",
+  "slug": "maximum-size-subarray-sum-equals-k",
+  "difficulty": "Medium",
+  "likes": 660,
+  "dislikes": 26,
+  "hints": [
+    "Try to compute a sum of a subsequence very fast, i.e in <i>O(1)</i> \u2026 Think of prefix sum array.",
+    "Given <i>S[i]</i> a partial sum that starts at position <i>0</i> and ends at <i>i</i>, what can <i>S[i - k]</i> tell you ?",
+    "Use HashMap + prefix sum array."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Minimum Size Subarray Sum\", \"titleSlug\": \"minimum-size-subarray-sum\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Range Sum Query - Immutable\", \"titleSlug\": \"range-sum-query-immutable\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Contiguous Array\", \"titleSlug\": \"contiguous-array\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Subarray Product Less Than K\", \"titleSlug\": \"subarray-product-less-than-k\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table"
+  ]
+}

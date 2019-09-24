@@ -1,0 +1,17 @@
+{
+  "id": "619",
+  "title": "Biggest Single Number",
+  "slug": "biggest-single-number",
+  "difficulty": "Easy",
+  "likes": 39,
+  "dislikes": 39,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "188",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

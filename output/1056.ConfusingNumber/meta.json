@@ -1,0 +1,17 @@
+{
+  "id": "1056",
+  "title": "Confusing Number",
+  "slug": "confusing-number",
+  "difficulty": "Easy",
+  "likes": 21,
+  "dislikes": 22,
+  "hints": [
+    "Reverse each digit with their corresponding new digit if an invalid digit is found the return -1. After reversing the digits just compare the reversed number with the original number."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Strobogrammatic Number\", \"titleSlug\": \"strobogrammatic-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Confusing Number II\", \"titleSlug\": \"confusing-number-ii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Math"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "1118",
+  "title": "Number of Days in a Month",
+  "slug": "number-of-days-in-a-month",
+  "difficulty": "Easy",
+  "likes": 8,
+  "dislikes": 51,
+  "hints": [
+    "Does February have 28 days or 29 days?",
+    "Think of Leap years."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": []
+}

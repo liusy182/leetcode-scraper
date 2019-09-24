@@ -1,0 +1,18 @@
+{
+  "id": "1119",
+  "title": "Remove Vowels from a String",
+  "slug": "remove-vowels-from-a-string",
+  "difficulty": "Easy",
+  "likes": 25,
+  "dislikes": 42,
+  "hints": [
+    "How to erase vowels in a string?",
+    "Loop over the string and check every character, if it is a vowel ignore it otherwise add it to the answer."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Reverse Vowels of a String\", \"titleSlug\": \"reverse-vowels-of-a-string\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "String"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "772",
+  "title": "Basic Calculator III",
+  "slug": "basic-calculator-iii",
+  "difficulty": "Hard",
+  "likes": 276,
+  "dislikes": 91,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Basic Calculator\", \"titleSlug\": \"basic-calculator\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Basic Calculator II\", \"titleSlug\": \"basic-calculator-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Basic Calculator IV\", \"titleSlug\": \"basic-calculator-iv\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "String",
+    "Stack"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "311",
+  "title": "Sparse Matrix Multiplication",
+  "slug": "sparse-matrix-multiplication",
+  "difficulty": "Medium",
+  "likes": 308,
+  "dislikes": 131,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table"
+  ]
+}

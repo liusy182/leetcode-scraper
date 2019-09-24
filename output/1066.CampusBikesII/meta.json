@@ -1,0 +1,18 @@
+{
+  "id": "1066",
+  "title": "Campus Bikes II",
+  "slug": "campus-bikes-ii",
+  "difficulty": "Medium",
+  "likes": 175,
+  "dislikes": 7,
+  "hints": [
+    "Model the problem with a dp(pos, mask) where pos represents the current bike to be assigned and mask the set of available workers."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Campus Bikes\", \"titleSlug\": \"campus-bikes\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming",
+    "Backtracking"
+  ]
+}

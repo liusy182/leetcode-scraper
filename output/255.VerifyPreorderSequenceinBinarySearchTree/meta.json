@@ -1,0 +1,16 @@
+{
+  "id": "255",
+  "title": "Verify Preorder Sequence in Binary Search Tree",
+  "slug": "verify-preorder-sequence-in-binary-search-tree",
+  "difficulty": "Medium",
+  "likes": 420,
+  "dislikes": 44,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Binary Tree Preorder Traversal\", \"titleSlug\": \"binary-tree-preorder-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Stack",
+    "Tree"
+  ]
+}

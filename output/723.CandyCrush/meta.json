@@ -1,0 +1,22 @@
+{
+  "id": "723",
+  "title": "Candy Crush",
+  "slug": "candy-crush",
+  "difficulty": "Medium",
+  "likes": 217,
+  "dislikes": 90,
+  "hints": [
+    "Carefully perform the \"crush\" and \"gravity\" steps.  In the crush step, flag each candy that should be removed, then go through and crush each flagged candy.  In the gravity step, collect the candy in each column and then rewrite the column appropriately.  Do these steps repeatedly until there's no work left to do."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "283",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Two Pointers"
+  ]
+}

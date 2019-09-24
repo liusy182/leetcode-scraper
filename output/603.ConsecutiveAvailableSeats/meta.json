@@ -1,0 +1,17 @@
+{
+  "id": "603",
+  "title": "Consecutive Available Seats",
+  "slug": "consecutive-available-seats",
+  "difficulty": "Easy",
+  "likes": 117,
+  "dislikes": 7,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "168",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

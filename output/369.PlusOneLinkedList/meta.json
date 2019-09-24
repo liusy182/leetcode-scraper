@@ -1,0 +1,15 @@
+{
+  "id": "369",
+  "title": "Plus One Linked List",
+  "slug": "plus-one-linked-list",
+  "difficulty": "Medium",
+  "likes": 313,
+  "dislikes": 11,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Plus One\", \"titleSlug\": \"plus-one\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Linked List"
+  ]
+}

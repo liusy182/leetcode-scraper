@@ -1,0 +1,22 @@
+{
+  "id": "1168",
+  "title": "Optimize Water Distribution in a Village",
+  "slug": "optimize-water-distribution-in-a-village",
+  "difficulty": "Hard",
+  "likes": 85,
+  "dislikes": 3,
+  "hints": [
+    "What if we model this problem as a graph problem?",
+    "A house is a node and a pipe is a weighted edge.",
+    "How to represent building wells in the graph model?",
+    "Add a virtual node, connect it to houses with edges weighted by the costs to build wells in these houses.",
+    "The problem is now reduced to a Minimum Spanning Tree problem."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Union Find",
+    "Graph"
+  ]
+}

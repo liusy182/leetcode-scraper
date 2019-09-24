@@ -1,0 +1,15 @@
+{
+  "id": "277",
+  "title": "Find the Celebrity",
+  "slug": "find-the-celebrity",
+  "difficulty": "Medium",
+  "likes": 743,
+  "dislikes": 97,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Find the Town Judge\", \"titleSlug\": \"find-the-town-judge\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Array"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "156",
+  "title": "Binary Tree Upside Down",
+  "slug": "binary-tree-upside-down",
+  "difficulty": "Medium",
+  "likes": 202,
+  "dislikes": 673,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Reverse Linked List\", \"titleSlug\": \"reverse-linked-list\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Tree"
+  ]
+}

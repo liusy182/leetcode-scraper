@@ -1,0 +1,16 @@
+{
+  "id": "366",
+  "title": "Find Leaves of Binary Tree",
+  "slug": "find-leaves-of-binary-tree",
+  "difficulty": "Medium",
+  "likes": 695,
+  "dislikes": 10,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Tree",
+    "Depth-first Search"
+  ]
+}

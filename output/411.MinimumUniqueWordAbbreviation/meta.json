@@ -1,0 +1,16 @@
+{
+  "id": "411",
+  "title": "Minimum Unique Word Abbreviation",
+  "slug": "minimum-unique-word-abbreviation",
+  "difficulty": "Hard",
+  "likes": 101,
+  "dislikes": 104,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Generalized Abbreviation\", \"titleSlug\": \"generalized-abbreviation\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Valid Word Abbreviation\", \"titleSlug\": \"valid-word-abbreviation\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Word Abbreviation\", \"titleSlug\": \"word-abbreviation\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Backtracking",
+    "Bit Manipulation"
+  ]
+}

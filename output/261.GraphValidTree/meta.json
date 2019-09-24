@@ -1,0 +1,21 @@
+{
+  "id": "261",
+  "title": "Graph Valid Tree",
+  "slug": "graph-valid-tree",
+  "difficulty": "Medium",
+  "likes": 726,
+  "dislikes": 22,
+  "hints": [
+    "Given <code>n = 5</code> and <code>edges = [[0, 1], [1, 2], [3, 4]]</code>, what should your return? Is this case a valid tree?",
+    "According to the <a href=\"https://en.wikipedia.org/wiki/Tree_(graph_theory)\" target=\"_blank\">definition of tree on Wikipedia</a>: \u201ca tree is an undirected graph in which any two vertices are connected by <i>exactly</i> one path. In other words, any connected graph without simple cycles is a tree.\u201d"
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Course Schedule\", \"titleSlug\": \"course-schedule\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Number of Connected Components in an Undirected Graph\", \"titleSlug\": \"number-of-connected-components-in-an-undirected-graph\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Depth-first Search",
+    "Breadth-first Search",
+    "Union Find",
+    "Graph"
+  ]
+}

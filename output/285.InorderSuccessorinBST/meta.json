@@ -1,0 +1,19 @@
+{
+  "id": "285",
+  "title": "Inorder Successor in BST",
+  "slug": "inorder-successor-in-bst",
+  "difficulty": "Medium",
+  "likes": 804,
+  "dislikes": 54,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Binary Tree Inorder Traversal\", \"titleSlug\": \"binary-tree-inorder-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Binary Search Tree Iterator\", \"titleSlug\": \"binary-search-tree-iterator\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Inorder Successor in BST II\", \"titleSlug\": \"inorder-successor-in-bst-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "759",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

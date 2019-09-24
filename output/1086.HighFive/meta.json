@@ -1,0 +1,21 @@
+{
+  "id": "1086",
+  "title": "High Five",
+  "slug": "high-five",
+  "difficulty": "Easy",
+  "likes": 56,
+  "dislikes": 17,
+  "hints": [
+    "How can we solve the problem if we have just one student?",
+    "Given an student sort their grades and get the top 5 average.",
+    "Generalize the idea to do it for many students."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Hash Table",
+    "Sort"
+  ]
+}

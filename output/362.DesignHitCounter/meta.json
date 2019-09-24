@@ -1,0 +1,15 @@
+{
+  "id": "362",
+  "title": "Design Hit Counter",
+  "slug": "design-hit-counter",
+  "difficulty": "Medium",
+  "likes": 401,
+  "dislikes": 42,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Logger Rate Limiter\", \"titleSlug\": \"logger-rate-limiter\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Design"
+  ]
+}

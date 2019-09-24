@@ -1,0 +1,17 @@
+{
+  "id": "358",
+  "title": "Rearrange String k Distance Apart",
+  "slug": "rearrange-string-k-distance-apart",
+  "difficulty": "Hard",
+  "likes": 304,
+  "dislikes": 14,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Task Scheduler\", \"titleSlug\": \"task-scheduler\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Reorganize String\", \"titleSlug\": \"reorganize-string\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table",
+    "Heap",
+    "Greedy"
+  ]
+}

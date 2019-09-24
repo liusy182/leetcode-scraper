@@ -1,0 +1,22 @@
+{
+  "id": "776",
+  "title": "Split BST",
+  "slug": "split-bst",
+  "difficulty": "Medium",
+  "likes": 426,
+  "dislikes": 27,
+  "hints": [
+    "Use recursion.  If root.val <= V, you split root.right into two halves, then join it's left half back on root.right."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Delete Node in a BST\", \"titleSlug\": \"delete-node-in-a-bst\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "407",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Recursion"
+  ]
+}

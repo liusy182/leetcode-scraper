@@ -1,0 +1,21 @@
+{
+  "id": "1198",
+  "title": "Find Smallest Common Element in All Rows",
+  "slug": "find-smallest-common-element-in-all-rows",
+  "difficulty": "Medium",
+  "likes": 24,
+  "dislikes": 4,
+  "hints": [
+    "Notice that each row has no duplicates.",
+    "Is counting the frequency of elements enough to find the answer?",
+    "Use a data structure to count the frequency of elements.",
+    "Find an element whose frequency equals the number of rows."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table",
+    "Binary Search"
+  ]
+}

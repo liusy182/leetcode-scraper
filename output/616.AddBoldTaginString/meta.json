@@ -1,0 +1,19 @@
+{
+  "id": "616",
+  "title": "Add Bold Tag in String",
+  "slug": "add-bold-tag-in-string",
+  "difficulty": "Medium",
+  "likes": 359,
+  "dislikes": 38,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Merge Intervals\", \"titleSlug\": \"merge-intervals\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Tag Validator\", \"titleSlug\": \"tag-validator\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "166",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

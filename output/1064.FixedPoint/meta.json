@@ -1,0 +1,18 @@
+{
+  "id": "1064",
+  "title": "Fixed Point",
+  "slug": "fixed-point",
+  "difficulty": "Easy",
+  "likes": 76,
+  "dislikes": 25,
+  "hints": [
+    "Loop over the array and check the first index i such A[i] == i"
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Binary Search"
+  ]
+}

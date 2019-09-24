@@ -1,0 +1,21 @@
+{
+  "id": "651",
+  "title": "4 Keys Keyboard",
+  "slug": "4-keys-keyboard",
+  "difficulty": "Medium",
+  "likes": 290,
+  "dislikes": 44,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"2 Keys Keyboard\", \"titleSlug\": \"2-keys-keyboard\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "318",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math",
+    "Dynamic Programming",
+    "Greedy"
+  ]
+}

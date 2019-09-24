@@ -1,0 +1,19 @@
+{
+  "id": "243",
+  "title": "Shortest Word Distance",
+  "slug": "shortest-word-distance",
+  "difficulty": "Easy",
+  "likes": 307,
+  "dislikes": 30,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Shortest Word Distance II\", \"titleSlug\": \"shortest-word-distance-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Shortest Word Distance III\", \"titleSlug\": \"shortest-word-distance-iii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "38",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

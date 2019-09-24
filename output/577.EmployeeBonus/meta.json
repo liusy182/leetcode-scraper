@@ -1,0 +1,20 @@
+{
+  "id": "577",
+  "title": "Employee Bonus",
+  "slug": "employee-bonus",
+  "difficulty": "Easy",
+  "likes": 47,
+  "dislikes": 25,
+  "hints": [
+    "If the EmpId in table Employee has no match in table Bonus, we consider that the corresponding bonus is null and null is smaller than 1000.",
+    "Inner join is the default join, we can solve the mismatching problem by using outer join."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Combine Two Tables\", \"titleSlug\": \"combine-two-tables\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "182",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

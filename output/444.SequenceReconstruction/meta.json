@@ -1,0 +1,16 @@
+{
+  "id": "444",
+  "title": "Sequence Reconstruction",
+  "slug": "sequence-reconstruction",
+  "difficulty": "Medium",
+  "likes": 178,
+  "dislikes": 598,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Course Schedule II\", \"titleSlug\": \"course-schedule-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Graph",
+    "Topological Sort"
+  ]
+}

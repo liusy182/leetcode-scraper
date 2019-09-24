@@ -1,0 +1,22 @@
+{
+  "id": "267",
+  "title": "Palindrome Permutation II",
+  "slug": "palindrome-permutation-ii",
+  "difficulty": "Medium",
+  "likes": 290,
+  "dislikes": 40,
+  "hints": [
+    "If a palindromic permutation exists, we just need to generate the first half of the string.",
+    "To generate all distinct permutations of a (half of) string, use a similar approach from: <a href=\"/problems/permutations-ii\">Permutations II</a> or <a href=\"/problems/next-permutation\">Next Permutation</a>."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Next Permutation\", \"titleSlug\": \"next-permutation\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Permutations II\", \"titleSlug\": \"permutations-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Palindrome Permutation\", \"titleSlug\": \"palindrome-permutation\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "167",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Backtracking"
+  ]
+}

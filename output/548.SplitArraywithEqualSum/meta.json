@@ -1,0 +1,19 @@
+{
+  "id": "548",
+  "title": "Split Array with Equal Sum",
+  "slug": "split-array-with-equal-sum",
+  "difficulty": "Medium",
+  "likes": 158,
+  "dislikes": 54,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "102",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

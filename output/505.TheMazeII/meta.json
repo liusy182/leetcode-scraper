@@ -1,0 +1,20 @@
+{
+  "id": "505",
+  "title": "The Maze II",
+  "slug": "the-maze-ii",
+  "difficulty": "Medium",
+  "likes": 405,
+  "dislikes": 15,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"The Maze\", \"titleSlug\": \"the-maze\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"The Maze III\", \"titleSlug\": \"the-maze-iii\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "144",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Depth-first Search",
+    "Breadth-first Search"
+  ]
+}

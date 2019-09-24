@@ -1,0 +1,18 @@
+{
+  "id": "1065",
+  "title": "Index Pairs of a String",
+  "slug": "index-pairs-of-a-string",
+  "difficulty": "Easy",
+  "likes": 29,
+  "dislikes": 25,
+  "hints": [
+    "For each string of the set, look for matches and store those matches indices."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "String",
+    "Trie"
+  ]
+}

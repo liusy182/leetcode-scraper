@@ -1,0 +1,23 @@
+{
+  "id": "1199",
+  "title": "Minimum Time to Build Blocks",
+  "slug": "minimum-time-to-build-blocks",
+  "difficulty": "Hard",
+  "likes": 35,
+  "dislikes": 6,
+  "hints": [
+    "A greedy approach will not work as the examples show.",
+    "Try all possible moves using DP.",
+    "For the DP state, dp[i][j] is the minimum time cost to build the first i blocks using j workers.",
+    "In one step you can either assign a worker to a block or choose a number of workers to split.",
+    "If you choose to assign a worker to a block it is always better to assign him to the block with the maximum time so we sort the array before using DP.",
+    "To optimize the solution from O(n^3) to O(n^2) notice that if you choose to split, it is always better to split all the workers you have."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Math",
+    "Dynamic Programming"
+  ]
+}

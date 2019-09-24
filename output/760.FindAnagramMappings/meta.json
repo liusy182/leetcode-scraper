@@ -1,0 +1,21 @@
+{
+  "id": "760",
+  "title": "Find Anagram Mappings",
+  "slug": "find-anagram-mappings",
+  "difficulty": "Easy",
+  "likes": 293,
+  "dislikes": 146,
+  "hints": [
+    "Create a hashmap so that D[x] = i  whenever B[i] = x.  Then, the answer is [D[x] for x in A]."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "368",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table"
+  ]
+}

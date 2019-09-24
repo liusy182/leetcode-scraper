@@ -1,0 +1,20 @@
+{
+  "id": "597",
+  "title": "Friend Requests I: Overall Acceptance Rate",
+  "slug": "friend-requests-i-overall-acceptance-rate",
+  "difficulty": "Easy",
+  "likes": 97,
+  "dislikes": 148,
+  "hints": [
+    "Still remember how to count the number of rows in a table?",
+    "What is the keyword to filter the duplicated records in a table?"
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "161",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

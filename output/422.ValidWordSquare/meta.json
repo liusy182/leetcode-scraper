@@ -1,0 +1,13 @@
+{
+  "id": "422",
+  "title": "Valid Word Square",
+  "slug": "valid-word-square",
+  "difficulty": "Easy",
+  "likes": 128,
+  "dislikes": 88,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Word Squares\", \"titleSlug\": \"word-squares\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Toeplitz Matrix\", \"titleSlug\": \"toeplitz-matrix\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": []
+}

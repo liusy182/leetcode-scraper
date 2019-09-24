@@ -1,0 +1,17 @@
+{
+  "id": "618",
+  "title": "Students Report By Geography",
+  "slug": "students-report-by-geography",
+  "difficulty": "Hard",
+  "likes": 23,
+  "dislikes": 59,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "175",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

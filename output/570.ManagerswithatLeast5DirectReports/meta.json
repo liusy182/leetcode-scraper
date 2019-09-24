@@ -1,0 +1,22 @@
+{
+  "id": "570",
+  "title": "Managers with at Least 5 Direct Reports",
+  "slug": "managers-with-at-least-5-direct-reports",
+  "difficulty": "Medium",
+  "likes": 73,
+  "dislikes": 5,
+  "hints": [
+    "Try to get all the mangerIDs that have count bigger than 5",
+    "Use the last hint's result as a table and do join with origin table at id equals to managerId",
+    "This is a very good example to show the performance of SQL code. Try to work out other solutions and you may be surprised by running time difference.",
+    "If your solution uses 'IN' function and runs more than 5 seconds, try to optimize it by using 'JOIN' instead."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "209",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

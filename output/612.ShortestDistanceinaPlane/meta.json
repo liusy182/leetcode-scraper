@@ -1,0 +1,17 @@
+{
+  "id": "612",
+  "title": "Shortest Distance in a Plane",
+  "slug": "shortest-distance-in-a-plane",
+  "difficulty": "Medium",
+  "likes": 68,
+  "dislikes": 15,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "178",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

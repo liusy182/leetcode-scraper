@@ -1,0 +1,19 @@
+{
+  "id": "298",
+  "title": "Binary Tree Longest Consecutive Sequence",
+  "slug": "binary-tree-longest-consecutive-sequence",
+  "difficulty": "Medium",
+  "likes": 351,
+  "dislikes": 88,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Longest Consecutive Sequence\", \"titleSlug\": \"longest-consecutive-sequence\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Binary Tree Longest Consecutive Sequence II\", \"titleSlug\": \"binary-tree-longest-consecutive-sequence-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "14",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

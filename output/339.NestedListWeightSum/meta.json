@@ -1,0 +1,19 @@
+{
+  "id": "339",
+  "title": "Nested List Weight Sum",
+  "slug": "nested-list-weight-sum",
+  "difficulty": "Easy",
+  "likes": 346,
+  "dislikes": 75,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Nested List Weight Sum II\", \"titleSlug\": \"nested-list-weight-sum-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Array Nesting\", \"titleSlug\": \"array-nesting\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Employee Importance\", \"titleSlug\": \"employee-importance\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "33",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Depth-first Search"
+  ]
+}

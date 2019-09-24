@@ -1,0 +1,16 @@
+{
+  "id": "346",
+  "title": "Moving Average from Data Stream",
+  "slug": "moving-average-from-data-stream",
+  "difficulty": "Easy",
+  "likes": 349,
+  "dislikes": 40,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Design",
+    "Queue"
+  ]
+}

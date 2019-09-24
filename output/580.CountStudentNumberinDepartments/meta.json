@@ -1,0 +1,20 @@
+{
+  "id": "580",
+  "title": "Count Student Number in Departments",
+  "slug": "count-student-number-in-departments",
+  "difficulty": "Medium",
+  "likes": 66,
+  "dislikes": 5,
+  "hints": [
+    "Still remember the difference between 'INNER JOIN' and 'OUTTER JOIN' in SQL?",
+    "Do you know other expressions using the 'COUNT' function besides 'COUNT(*)'?"
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "159",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

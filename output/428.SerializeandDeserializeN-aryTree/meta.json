@@ -1,0 +1,15 @@
+{
+  "id": "428",
+  "title": "Serialize and Deserialize N-ary Tree",
+  "slug": "serialize-and-deserialize-n-ary-tree",
+  "difficulty": "Hard",
+  "likes": 243,
+  "dislikes": 10,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Serialize and Deserialize Binary Tree\", \"titleSlug\": \"serialize-and-deserialize-binary-tree\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Serialize and Deserialize BST\", \"titleSlug\": \"serialize-and-deserialize-bst\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Encode N-ary Tree to Binary Tree\", \"titleSlug\": \"encode-n-ary-tree-to-binary-tree\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Tree"
+  ]
+}

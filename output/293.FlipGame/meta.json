@@ -1,0 +1,15 @@
+{
+  "id": "293",
+  "title": "Flip Game",
+  "slug": "flip-game",
+  "difficulty": "Easy",
+  "likes": 71,
+  "dislikes": 222,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Flip Game II\", \"titleSlug\": \"flip-game-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "String"
+  ]
+}

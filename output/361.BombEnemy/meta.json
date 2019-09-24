@@ -1,0 +1,15 @@
+{
+  "id": "361",
+  "title": "Bomb Enemy",
+  "slug": "bomb-enemy",
+  "difficulty": "Medium",
+  "likes": 331,
+  "dislikes": 59,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

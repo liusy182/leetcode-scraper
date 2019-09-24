@@ -1,0 +1,15 @@
+{
+  "id": "431",
+  "title": "Encode N-ary Tree to Binary Tree",
+  "slug": "encode-n-ary-tree-to-binary-tree",
+  "difficulty": "Hard",
+  "likes": 95,
+  "dislikes": 6,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Serialize and Deserialize N-ary Tree\", \"titleSlug\": \"serialize-and-deserialize-n-ary-tree\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Tree"
+  ]
+}

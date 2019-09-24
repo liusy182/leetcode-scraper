@@ -1,0 +1,20 @@
+{
+  "id": "544",
+  "title": "Output Contest Matches",
+  "slug": "output-contest-matches",
+  "difficulty": "Medium",
+  "likes": 219,
+  "dislikes": 68,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "332",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String",
+    "Recursion"
+  ]
+}

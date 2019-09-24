@@ -1,0 +1,16 @@
+{
+  "id": "439",
+  "title": "Ternary Expression Parser",
+  "slug": "ternary-expression-parser",
+  "difficulty": "Medium",
+  "likes": 196,
+  "dislikes": 28,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Mini Parser\", \"titleSlug\": \"mini-parser\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Remove Comments\", \"titleSlug\": \"remove-comments\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Parse Lisp Expression\", \"titleSlug\": \"parse-lisp-expression\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Stack",
+    "Depth-first Search"
+  ]
+}

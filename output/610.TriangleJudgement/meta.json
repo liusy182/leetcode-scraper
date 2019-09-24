@@ -1,0 +1,17 @@
+{
+  "id": "610",
+  "title": "Triangle Judgement",
+  "slug": "triangle-judgement",
+  "difficulty": "Easy",
+  "likes": 60,
+  "dislikes": 13,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "180",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

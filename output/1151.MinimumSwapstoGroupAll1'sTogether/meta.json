@@ -1,0 +1,23 @@
+{
+  "id": "1151",
+  "title": "Minimum Swaps to Group All 1's Together",
+  "slug": "minimum-swaps-to-group-all-1s-together",
+  "difficulty": "Medium",
+  "likes": 52,
+  "dislikes": 0,
+  "hints": [
+    "How many 1's should be grouped together ? Is not a fixed number?",
+    "Yeah it's just the number of 1's the whole array has. Let's name this number as ones",
+    "Every subarray of size of ones, needs some number of swaps to reach, Can you find the number of swaps needed to group all 1's in this subarray?",
+    "It's the number of zeros in that subarray.",
+    "Do you need to count the number of zeros all over again for every position ?",
+    "Use Sliding Window technique."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Sliding Window"
+  ]
+}

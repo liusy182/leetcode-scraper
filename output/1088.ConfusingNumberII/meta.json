@@ -1,0 +1,19 @@
+{
+  "id": "1088",
+  "title": "Confusing Number II",
+  "slug": "confusing-number-ii",
+  "difficulty": "Hard",
+  "likes": 23,
+  "dislikes": 6,
+  "hints": [
+    "Which set of digits have the valid numbers?",
+    "Only 0, 1, 6, 8, 9 are the valid set of digits, do a backtracking to generate all the numbers containing this digits and check they are valid."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Confusing Number\", \"titleSlug\": \"confusing-number\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Math",
+    "Backtracking"
+  ]
+}

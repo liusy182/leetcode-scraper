@@ -1,0 +1,19 @@
+{
+  "id": "608",
+  "title": "Tree Node",
+  "slug": "tree-node",
+  "difficulty": "Medium",
+  "likes": 122,
+  "dislikes": 8,
+  "hints": [
+    "You can judge the node type by querying whether the node's id shows up in p_id column and whether the node's p_id is null."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "201",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

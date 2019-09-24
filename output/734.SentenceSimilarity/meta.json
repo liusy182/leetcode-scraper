@@ -1,0 +1,21 @@
+{
+  "id": "734",
+  "title": "Sentence Similarity",
+  "slug": "sentence-similarity",
+  "difficulty": "Easy",
+  "likes": 141,
+  "dislikes": 237,
+  "hints": [
+    "Two words w1 and w2 are similar if and only if w1 == w2, (w1, w2) was a pair, or (w2, w1) was a pair."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Friend Circles\", \"titleSlug\": \"friend-circles\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Accounts Merge\", \"titleSlug\": \"accounts-merge\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Sentence Similarity II\", \"titleSlug\": \"sentence-similarity-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "300",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table"
+  ]
+}

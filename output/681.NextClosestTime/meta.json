@@ -1,0 +1,19 @@
+{
+  "id": "681",
+  "title": "Next Closest Time",
+  "slug": "next-closest-time",
+  "difficulty": "Medium",
+  "likes": 376,
+  "dislikes": 600,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "249",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

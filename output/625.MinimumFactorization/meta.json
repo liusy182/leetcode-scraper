@@ -1,0 +1,20 @@
+{
+  "id": "625",
+  "title": "Minimum Factorization",
+  "slug": "minimum-factorization",
+  "difficulty": "Medium",
+  "likes": 74,
+  "dislikes": 56,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "173",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math",
+    "Recursion"
+  ]
+}

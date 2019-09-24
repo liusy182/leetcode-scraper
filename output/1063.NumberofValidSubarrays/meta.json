@@ -1,0 +1,18 @@
+{
+  "id": "1063",
+  "title": "Number of Valid Subarrays",
+  "slug": "number-of-valid-subarrays",
+  "difficulty": "Hard",
+  "likes": 38,
+  "dislikes": 5,
+  "hints": [
+    "Given a data structure that answers queries of the type to find the minimum in a range of an array (Range minimum query (RMQ) sparse table) in O(1) time. How can you solve this problem?",
+    "For each starting index do a binary search with an RMQ to find the ending possible position."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Stack"
+  ]
+}

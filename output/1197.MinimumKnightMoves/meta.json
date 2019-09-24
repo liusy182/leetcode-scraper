@@ -1,0 +1,19 @@
+{
+  "id": "1197",
+  "title": "Minimum Knight Moves",
+  "slug": "minimum-knight-moves",
+  "difficulty": "Medium",
+  "likes": 40,
+  "dislikes": 11,
+  "hints": [
+    "You can simulate the movements since the limits are low.",
+    "Is there a search algorithm applicable to this problem?",
+    "Since we want the minimum number of moves, we can use Breadth First Search."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Breadth-first Search"
+  ]
+}

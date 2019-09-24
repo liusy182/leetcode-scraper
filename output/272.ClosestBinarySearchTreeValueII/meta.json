@@ -1,0 +1,21 @@
+{
+  "id": "272",
+  "title": "Closest Binary Search Tree Value II",
+  "slug": "closest-binary-search-tree-value-ii",
+  "difficulty": "Hard",
+  "likes": 429,
+  "dislikes": 17,
+  "hints": [
+    "Consider implement these two helper functions:\r\n<ol type=\"i\"><li><code>getPredecessor(N)</code>, which returns the next smaller node to N.</li>\r\n<li><code>getSuccessor(N)</code>, which returns the next larger node to N.</li>\r\n</ol>",
+    "Try to assume that each node has a parent pointer, it makes the problem much easier.",
+    "Without parent pointer we just need to keep track of the path from the root to the current node using a stack.",
+    "You would need two stacks to track the path in finding predecessor and successor node separately."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Binary Tree Inorder Traversal\", \"titleSlug\": \"binary-tree-inorder-traversal\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Closest Binary Search Tree Value\", \"titleSlug\": \"closest-binary-search-tree-value\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Stack",
+    "Tree"
+  ]
+}

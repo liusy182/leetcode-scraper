@@ -1,0 +1,20 @@
+{
+  "id": "624",
+  "title": "Maximum Distance in Arrays",
+  "slug": "maximum-distance-in-arrays",
+  "difficulty": "Easy",
+  "likes": 275,
+  "dislikes": 41,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "171",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array",
+    "Hash Table"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "586",
+  "title": "Customer Placing the Largest Number of Orders",
+  "slug": "customer-placing-the-largest-number-of-orders",
+  "difficulty": "Easy",
+  "likes": 71,
+  "dislikes": 4,
+  "hints": [
+    "MySQL uses a different expression to get the first records other than MSSQL's TOP expression."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "160",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

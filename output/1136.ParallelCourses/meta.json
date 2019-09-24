@@ -1,0 +1,26 @@
+{
+  "id": "1136",
+  "title": "Parallel Courses",
+  "slug": "parallel-courses",
+  "difficulty": "Hard",
+  "likes": 35,
+  "dislikes": 3,
+  "hints": [
+    "Try to think of it as a graph problem.",
+    "When will be impossible to study all the courses?",
+    "What if the directed graph has a cycle?",
+    "If you build a graph using the relations, what would be the graph type?",
+    "So the graph is a directed acyclic graph (DAG).",
+    "Imagine having a long path in the DAG, what can you say about the answer then?",
+    "How to find the longest path in a DAG?",
+    "We can use DP in order to solve this."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming",
+    "Depth-first Search",
+    "Graph"
+  ]
+}

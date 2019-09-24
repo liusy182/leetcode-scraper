@@ -1,0 +1,16 @@
+{
+  "id": "425",
+  "title": "Word Squares",
+  "slug": "word-squares",
+  "difficulty": "Hard",
+  "likes": 390,
+  "dislikes": 35,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Valid Word Square\", \"titleSlug\": \"valid-word-square\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Backtracking",
+    "Trie"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "1062",
+  "title": "Longest Repeating Substring",
+  "slug": "longest-repeating-substring",
+  "difficulty": "Medium",
+  "likes": 55,
+  "dislikes": 4,
+  "hints": [
+    "Generate all substrings in O(N^2) time with hashing.",
+    "Choose those hashing of strings with the largest length."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "753",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

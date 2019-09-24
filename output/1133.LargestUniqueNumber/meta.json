@@ -1,0 +1,20 @@
+{
+  "id": "1133",
+  "title": "Largest Unique Number",
+  "slug": "largest-unique-number",
+  "difficulty": "Easy",
+  "likes": 26,
+  "dislikes": 1,
+  "hints": [
+    "Find the number of occurrences of each value.",
+    "Use an array or a hash table to do that.",
+    "Look for the largest value with number of occurrences = 1."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Hash Table"
+  ]
+}

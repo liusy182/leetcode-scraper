@@ -1,0 +1,19 @@
+{
+  "id": "302",
+  "title": "Smallest Rectangle Enclosing Black Pixels",
+  "slug": "smallest-rectangle-enclosing-black-pixels",
+  "difficulty": "Hard",
+  "likes": 157,
+  "dislikes": 44,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "72",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Binary Search"
+  ]
+}

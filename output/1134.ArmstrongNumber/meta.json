@@ -1,0 +1,19 @@
+{
+  "id": "1134",
+  "title": "Armstrong Number",
+  "slug": "armstrong-number",
+  "difficulty": "Easy",
+  "likes": 17,
+  "dislikes": 3,
+  "hints": [
+    "Check if the given k-digit number equals the sum of the k-th power of it's digits.",
+    "How to compute the sum of the k-th power of the digits of a number ? Can you divide the number into digits using division and modulus operations ?",
+    "You can find the least significant digit of a number by taking it modulus 10. And you can remove it by dividing the number by 10 (integer division). Once you have a digit, you can raise it to the power of k and add it to the sum."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Math"
+  ]
+}

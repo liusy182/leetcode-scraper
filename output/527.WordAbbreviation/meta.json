@@ -1,0 +1,20 @@
+{
+  "id": "527",
+  "title": "Word Abbreviation",
+  "slug": "word-abbreviation",
+  "difficulty": "Hard",
+  "likes": 166,
+  "dislikes": 101,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Valid Word Abbreviation\", \"titleSlug\": \"valid-word-abbreviation\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Minimum Unique Word Abbreviation\", \"titleSlug\": \"minimum-unique-word-abbreviation\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "344",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String",
+    "Sort"
+  ]
+}

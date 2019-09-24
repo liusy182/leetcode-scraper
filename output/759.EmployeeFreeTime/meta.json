@@ -1,0 +1,22 @@
+{
+  "id": "759",
+  "title": "Employee Free Time",
+  "slug": "employee-free-time",
+  "difficulty": "Hard",
+  "likes": 267,
+  "dislikes": 18,
+  "hints": [
+    "Take all the intervals and do an \"events\" (or \"line sweep\") approach - an event of (x, OPEN) increases the number of active intervals, while (x, CLOSE) decreases it.\r\n\r\nProcessing in sorted order from left to right, if the number of active intervals is zero, then you crossed a region of common free time."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Merge Intervals\", \"titleSlug\": \"merge-intervals\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Interval List Intersections\", \"titleSlug\": \"interval-list-intersections\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "371",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Heap",
+    "Greedy"
+  ]
+}

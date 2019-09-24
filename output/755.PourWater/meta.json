@@ -1,0 +1,19 @@
+{
+  "id": "755",
+  "title": "Pour Water",
+  "slug": "pour-water",
+  "difficulty": "Medium",
+  "likes": 143,
+  "dislikes": 267,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Trapping Rain Water\", \"titleSlug\": \"trapping-rain-water\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "362",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Array"
+  ]
+}

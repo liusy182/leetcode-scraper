@@ -1,0 +1,21 @@
+{
+  "id": "751",
+  "title": "IP to CIDR",
+  "slug": "ip-to-cidr",
+  "difficulty": "Easy",
+  "likes": 79,
+  "dislikes": 608,
+  "hints": [
+    "Convert the ip addresses to and from (long) integers.  You want to know what is the most addresses you can put in this block starting from the \"start\" ip, up to n.  It is the smallest between the lowest bit of start and the highest bit of n.  Then, repeat this process with a new start and n."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Restore IP Addresses\", \"titleSlug\": \"restore-ip-addresses\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"Validate IP Address\", \"titleSlug\": \"validate-ip-address\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "355",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Bit Manipulation"
+  ]
+}

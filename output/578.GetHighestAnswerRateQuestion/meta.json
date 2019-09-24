@@ -1,0 +1,21 @@
+{
+  "id": "578",
+  "title": "Get Highest Answer Rate Question",
+  "slug": "get-highest-answer-rate-question",
+  "difficulty": "Medium",
+  "likes": 23,
+  "dislikes": 259,
+  "hints": [
+    "Try to find all question ids by group",
+    "Try to find each group answer number and show number.",
+    "Rank all the rates (answer/(answer+show)) and return the max one"
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "205",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

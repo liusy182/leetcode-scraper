@@ -1,0 +1,20 @@
+{
+  "id": "1165",
+  "title": "Single-Row Keyboard",
+  "slug": "single-row-keyboard",
+  "difficulty": "Easy",
+  "likes": 46,
+  "dislikes": 3,
+  "hints": [
+    "Can be the problem divided in parts, so solving each part and sum their solutions it should return the answer? Yes, you only need to divide the problem in finger jumps.",
+    "In each finger jump you need to move your finger from one character to another, you need to know its index.",
+    "Map each character to it's index.",
+    "Use a hash table to do that."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "String"
+  ]
+}

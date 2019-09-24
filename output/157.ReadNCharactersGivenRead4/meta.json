@@ -1,0 +1,15 @@
+{
+  "id": "157",
+  "title": "Read N Characters Given Read4",
+  "slug": "read-n-characters-given-read4",
+  "difficulty": "Easy",
+  "likes": 184,
+  "dislikes": 1598,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Read N Characters Given Read4 II - Call multiple times\", \"titleSlug\": \"read-n-characters-given-read4-ii-call-multiple-times\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "String"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "1061",
+  "title": "Lexicographically Smallest Equivalent String",
+  "slug": "lexicographically-smallest-equivalent-string",
+  "difficulty": "Medium",
+  "likes": 29,
+  "dislikes": 1,
+  "hints": [
+    "Model these equalities as edges of a graph.",
+    "Group each connected component of the graph and assign each node of this component to the node with the lowest lexicographically character.",
+    "Finally convert the string with the precalculated information."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Depth-first Search",
+    "Union Find"
+  ]
+}

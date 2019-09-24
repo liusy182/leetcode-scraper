@@ -1,0 +1,20 @@
+{
+  "id": "582",
+  "title": "Kill Process",
+  "slug": "kill-process",
+  "difficulty": "Medium",
+  "likes": 364,
+  "dislikes": 8,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "135",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree",
+    "Queue"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "1082",
+  "title": "Sales Analysis I",
+  "slug": "sales-analysis-i",
+  "difficulty": "Easy",
+  "likes": 18,
+  "dislikes": 6,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Sales Analysis II\", \"titleSlug\": \"sales-analysis-ii\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": []
+}

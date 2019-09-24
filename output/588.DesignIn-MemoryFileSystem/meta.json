@@ -1,0 +1,19 @@
+{
+  "id": "588",
+  "title": "Design In-Memory File System",
+  "slug": "design-in-memory-file-system",
+  "difficulty": "Hard",
+  "likes": 160,
+  "dislikes": 22,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"LRU Cache\", \"titleSlug\": \"lru-cache\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"LFU Cache\", \"titleSlug\": \"lfu-cache\", \"difficulty\": \"Hard\", \"translatedTitle\": null}, {\"title\": \"Design Log Storage System\", \"titleSlug\": \"design-log-storage-system\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "142",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Design"
+  ]
+}

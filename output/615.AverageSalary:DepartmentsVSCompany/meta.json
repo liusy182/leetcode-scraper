@@ -1,0 +1,17 @@
+{
+  "id": "615",
+  "title": "Average Salary: Departments VS Company",
+  "slug": "average-salary-departments-vs-company",
+  "difficulty": "Hard",
+  "likes": 44,
+  "dislikes": 15,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "169",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

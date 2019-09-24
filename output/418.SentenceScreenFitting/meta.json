@@ -1,0 +1,15 @@
+{
+  "id": "418",
+  "title": "Sentence Screen Fitting",
+  "slug": "sentence-screen-fitting",
+  "difficulty": "Medium",
+  "likes": 358,
+  "dislikes": 183,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

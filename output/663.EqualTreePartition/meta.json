@@ -1,0 +1,19 @@
+{
+  "id": "663",
+  "title": "Equal Tree Partition",
+  "slug": "equal-tree-partition",
+  "difficulty": "Medium",
+  "likes": 242,
+  "dislikes": 18,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "325",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Tree"
+  ]
+}

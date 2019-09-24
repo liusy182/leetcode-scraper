@@ -1,0 +1,20 @@
+{
+  "id": "288",
+  "title": "Unique Word Abbreviation",
+  "slug": "unique-word-abbreviation",
+  "difficulty": "Medium",
+  "likes": 76,
+  "dislikes": 1005,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Two Sum III - Data structure design\", \"titleSlug\": \"two-sum-iii-data-structure-design\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Generalized Abbreviation\", \"titleSlug\": \"generalized-abbreviation\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "17",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Hash Table",
+    "Design"
+  ]
+}

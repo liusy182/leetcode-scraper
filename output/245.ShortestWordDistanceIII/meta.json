@@ -1,0 +1,15 @@
+{
+  "id": "245",
+  "title": "Shortest Word Distance III",
+  "slug": "shortest-word-distance-iii",
+  "difficulty": "Medium",
+  "likes": 140,
+  "dislikes": 60,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Shortest Word Distance\", \"titleSlug\": \"shortest-word-distance\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Shortest Word Distance II\", \"titleSlug\": \"shortest-word-distance-ii\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Array"
+  ]
+}

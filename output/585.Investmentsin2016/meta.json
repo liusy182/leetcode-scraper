@@ -1,0 +1,19 @@
+{
+  "id": "585",
+  "title": "Investments in 2016",
+  "slug": "investments-in-2016",
+  "difficulty": "Medium",
+  "likes": 65,
+  "dislikes": 47,
+  "hints": [
+    "Make the (LAT, LON) a pair to represent the location information"
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "130",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}

@@ -1,0 +1,20 @@
+{
+  "id": "1167",
+  "title": "Minimum Cost to Connect Sticks",
+  "slug": "minimum-cost-to-connect-sticks",
+  "difficulty": "Medium",
+  "likes": 45,
+  "dislikes": 11,
+  "hints": [
+    "How many times does every stick contribute to the answer?",
+    "Some of the sticks will be used more than the others. Which sticks should be used the most/least?",
+    "The sticks with long lengths cost a lot so we should use these the least.",
+    "What if we keep merging the two shortest sticks?"
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Minimum Cost to Merge Stones\", \"titleSlug\": \"minimum-cost-to-merge-stones\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Greedy"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "642",
+  "title": "Design Search Autocomplete System",
+  "slug": "design-search-autocomplete-system",
+  "difficulty": "Hard",
+  "likes": 584,
+  "dislikes": 51,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Implement Trie (Prefix Tree)\", \"titleSlug\": \"implement-trie-prefix-tree\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "223",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Design",
+    "Trie"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "291",
+  "title": "Word Pattern II",
+  "slug": "word-pattern-ii",
+  "difficulty": "Hard",
+  "likes": 309,
+  "dislikes": 21,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Word Pattern\", \"titleSlug\": \"word-pattern\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Backtracking"
+  ]
+}

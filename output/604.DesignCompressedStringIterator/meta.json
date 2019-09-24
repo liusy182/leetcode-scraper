@@ -1,0 +1,19 @@
+{
+  "id": "604",
+  "title": "Design Compressed String Iterator",
+  "slug": "design-compressed-string-iterator",
+  "difficulty": "Easy",
+  "likes": 188,
+  "dislikes": 77,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"LRU Cache\", \"titleSlug\": \"lru-cache\", \"difficulty\": \"Medium\", \"translatedTitle\": null}, {\"title\": \"String Compression\", \"titleSlug\": \"string-compression\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": {
+    "id": "164",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Design"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "484",
+  "title": "Find Permutation",
+  "slug": "find-permutation",
+  "difficulty": "Medium",
+  "likes": 220,
+  "dislikes": 42,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "158",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Greedy"
+  ]
+}

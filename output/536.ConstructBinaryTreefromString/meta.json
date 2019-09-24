@@ -1,0 +1,16 @@
+{
+  "id": "536",
+  "title": "Construct Binary Tree from String",
+  "slug": "construct-binary-tree-from-string",
+  "difficulty": "Medium",
+  "likes": 300,
+  "dislikes": 72,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Construct String from Binary Tree\", \"titleSlug\": \"construct-string-from-binary-tree\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "String",
+    "Tree"
+  ]
+}

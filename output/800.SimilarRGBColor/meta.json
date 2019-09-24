@@ -1,0 +1,20 @@
+{
+  "id": "800",
+  "title": "Similar RGB Color",
+  "slug": "similar-rgb-color",
+  "difficulty": "Easy",
+  "likes": 46,
+  "dislikes": 293,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "432",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "Math",
+    "String"
+  ]
+}

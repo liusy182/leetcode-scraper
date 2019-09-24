@@ -1,0 +1,19 @@
+{
+  "id": "555",
+  "title": "Split Concatenated Strings",
+  "slug": "split-concatenated-strings",
+  "difficulty": "Medium",
+  "likes": 37,
+  "dislikes": 165,
+  "hints": [],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "111",
+    "canSeeDetail": false,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": [
+    "String"
+  ]
+}

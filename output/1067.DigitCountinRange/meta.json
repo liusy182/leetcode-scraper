@@ -1,0 +1,19 @@
+{
+  "id": "1067",
+  "title": "Digit Count in Range",
+  "slug": "digit-count-in-range",
+  "difficulty": "Hard",
+  "likes": 18,
+  "dislikes": 3,
+  "hints": [
+    "Define a function f(x) to get the requested sum from 1 to x. So the answer will be f(hi) - f(lo - 1)",
+    "In order to solve f(x) we need to do a DP over digits approach."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[{\"title\": \"Number of Digit One\", \"titleSlug\": \"number-of-digit-one\", \"difficulty\": \"Hard\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Math",
+    "Dynamic Programming"
+  ]
+}

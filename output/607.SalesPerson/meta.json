@@ -1,0 +1,19 @@
+{
+  "id": "607",
+  "title": "Sales Person",
+  "slug": "sales-person",
+  "difficulty": "Easy",
+  "likes": 74,
+  "dislikes": 18,
+  "hints": [
+    "You need to query who sold to company 'RED' first, then output the sales person who is not in the first query result."
+  ],
+  "isPaidOnly": true,
+  "similarQuestions": "[]",
+  "solution": {
+    "id": "181",
+    "canSeeDetail": true,
+    "__typename": "ArticleNode"
+  },
+  "topicTags": []
+}
