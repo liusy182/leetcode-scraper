@@ -5,7 +5,7 @@
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
 
-<p><strong><img alt="" src="./img/maximum-number-of-balloons_1.JPG" style="width: 132px; height: 35px;" /></strong></p>
+<p><strong><img alt="" src="../img/maximum-number-of-balloons_1.JPG" style="width: 132px; height: 35px;" /></strong></p>
 
 <pre>
 <strong>Input:</strong> text = &quot;nlaebolko&quot;
@@ -14,7 +14,7 @@
 
 <p><strong>Example 2:</strong></p>
 
-<p><strong><img alt="" src="./img/maximum-number-of-balloons_2.JPG" style="width: 267px; height: 35px;" /></strong></p>
+<p><strong><img alt="" src="../img/maximum-number-of-balloons_2.JPG" style="width: 267px; height: 35px;" /></strong></p>
 
 <pre>
 <strong>Input:</strong> text = &quot;loonbalxballpoon&quot;

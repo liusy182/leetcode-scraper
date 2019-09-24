@@ -7,7 +7,7 @@
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
 
-<p><img alt="" src="./img/distance-between-bus-stops_1.jpg" style="width: 388px; height: 240px;" /></p>
+<p><img alt="" src="../img/distance-between-bus-stops_1.jpg" style="width: 388px; height: 240px;" /></p>
 
 <pre>
 <strong>Input:</strong> distance = [1,2,3,4], start = 0, destination = 1
@@ -18,7 +18,7 @@
 
 <p><strong>Example 2:</strong></p>
 
-<p><img alt="" src="./img/distance-between-bus-stops_2.jpg" style="width: 388px; height: 240px;" /></p>
+<p><img alt="" src="../img/distance-between-bus-stops_2.jpg" style="width: 388px; height: 240px;" /></p>
 
 <pre>
 <strong>Input:</strong> distance = [1,2,3,4], start = 0, destination = 2
@@ -30,7 +30,7 @@
 
 <p><strong>Example 3:</strong></p>
 
-<p><img alt="" src="./img/distance-between-bus-stops_3.jpg" style="width: 388px; height: 240px;" /></p>
+<p><img alt="" src="../img/distance-between-bus-stops_3.jpg" style="width: 388px; height: 240px;" /></p>
 
 <pre>
 <strong>Input:</strong> distance = [1,2,3,4], start = 0, destination = 3

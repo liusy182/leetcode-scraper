@@ -64,7 +64,7 @@ def download_images(content, meta):
         imgname = meta['slug'] + '_' + str(counter) + ext
         with open(os.path.join(imgdir, imgname), 'wb') as f:
             f.write(res.content)
-            sub[img] = './img/%s' % imgname
+            sub[img] = '../img/%s' % imgname
         counter += 1
     
     for k, v in sub.items():
