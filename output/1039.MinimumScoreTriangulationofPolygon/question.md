@@ -21,7 +21,7 @@
 <div>
 <p><strong>Example 2:</strong></p>
 
-<p><img alt="" src="./img/minimum-score-triangulation-of-polygon_1.png" style="width: 253px; height: 150px;" /></p>
+<p><img alt="" src="../img/minimum-score-triangulation-of-polygon_1.png" style="width: 253px; height: 150px;" /></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-2-1">[3,7,4,5]</span>

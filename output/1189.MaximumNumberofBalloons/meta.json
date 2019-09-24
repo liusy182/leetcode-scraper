@@ -1,0 +1,19 @@
+{
+  "id": "1189",
+  "title": "Maximum Number of Balloons",
+  "slug": "maximum-number-of-balloons",
+  "difficulty": "Easy",
+  "likes": 52,
+  "dislikes": 11,
+  "hints": [
+    "Count the frequency of letters in the given string.",
+    "Find the letter than can make the minimum number of instances of the word \"balloon\"."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table",
+    "String"
+  ]
+}

@@ -2,7 +2,7 @@
 
 <p>Find the total area covered by all <code>rectangles</code> in the plane.&nbsp; Since the answer&nbsp;may be too large, <strong>return it modulo 10^9 + 7</strong>.</p>
 
-<p><img alt="" src="./img/rectangle-area-ii_1.png" style="width: 480px; height: 360px;" /></p>
+<p><img alt="" src="../img/rectangle-area-ii_1.png" style="width: 480px; height: 360px;" /></p>
 
 <p><strong>Example 1:</strong></p>
 

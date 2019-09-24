@@ -13,7 +13,7 @@
 Only the red nodes satisfy the property &quot;every subtree not containing a 1&quot;.
 The diagram on the right represents the answer.
 
-<img alt="" src="./img/binary-tree-pruning_1.png" style="width:450px" />
+<img alt="" src="../img/binary-tree-pruning_1.png" style="width:450px" />
 </pre>
 
 <pre>
@@ -22,7 +22,7 @@ The diagram on the right represents the answer.
 <strong>Output: </strong>[1,null,1,null,1]
 
 
-<img alt="" src="./img/binary-tree-pruning_2.png" style="width:450px" />
+<img alt="" src="../img/binary-tree-pruning_2.png" style="width:450px" />
 </pre>
 
 <pre>
@@ -31,7 +31,7 @@ The diagram on the right represents the answer.
 <strong>Output: </strong>[1,1,0,1,1,null,1]
 
 
-<img alt="" src="./img/binary-tree-pruning_3.png" style="width:450px" />
+<img alt="" src="../img/binary-tree-pruning_3.png" style="width:450px" />
 </pre>
 
 <p><strong>Note: </strong></p>

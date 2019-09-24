@@ -1,0 +1,18 @@
+{
+  "id": "1200",
+  "title": "Minimum Absolute Difference",
+  "slug": "minimum-absolute-difference",
+  "difficulty": "Easy",
+  "likes": 24,
+  "dislikes": 5,
+  "hints": [
+    "Find the minimum absolute difference between two elements in the array.",
+    "The minimum absolute difference must be a difference between two consecutive elements in the sorted array."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array"
+  ]
+}

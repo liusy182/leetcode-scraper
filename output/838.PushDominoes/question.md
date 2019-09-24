@@ -2,7 +2,7 @@
 
 <p>In the beginning, we simultaneously push&nbsp;some of the dominoes either to the left or to the right.</p>
 
-<p><img alt="" src="./img/push-dominoes_1.png" style="height: 160px;" /></p>
+<p><img alt="" src="../img/push-dominoes_1.png" style="height: 160px;" /></p>
 
 <p>After each second, each domino that is falling to the left pushes the adjacent domino on the left.</p>
 

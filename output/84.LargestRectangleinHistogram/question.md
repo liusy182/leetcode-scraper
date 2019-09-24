@@ -2,12 +2,12 @@
 
 <p>&nbsp;</p>
 
-<p><img src="./img/largest-rectangle-in-histogram_1.png" style="width: 188px; height: 204px;" /><br />
+<p><img src="../img/largest-rectangle-in-histogram_1.png" style="width: 188px; height: 204px;" /><br />
 <small>Above is a histogram where width of each bar is 1, given height = <code>[2,1,5,6,2,3]</code>.</small></p>
 
 <p>&nbsp;</p>
 
-<p><img src="./img/largest-rectangle-in-histogram_2.png" style="width: 188px; height: 204px;" /><br />
+<p><img src="../img/largest-rectangle-in-histogram_2.png" style="width: 188px; height: 204px;" /><br />
 <small>The largest rectangle is shown in the shaded area, which has area = <code>10</code> unit.</small></p>
 
 <p>&nbsp;</p>

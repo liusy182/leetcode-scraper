@@ -21,7 +21,7 @@
 <b>Output:</b> 2
 
 <b>Explanation:</b> 
-<img src="./img/brick-wall_1.png" style="width: 100%; max-width: 350px" />
+<img src="../img/brick-wall_1.png" style="width: 100%; max-width: 350px" />
 </pre>
 
 <p>&nbsp;</p>

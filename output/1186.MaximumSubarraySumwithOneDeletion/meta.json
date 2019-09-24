@@ -1,0 +1,19 @@
+{
+  "id": "1186",
+  "title": "Maximum Subarray Sum with One Deletion",
+  "slug": "maximum-subarray-sum-with-one-deletion",
+  "difficulty": "Medium",
+  "likes": 183,
+  "dislikes": 9,
+  "hints": [
+    "How to solve this problem if no deletions are allowed ?",
+    "Try deleting each element and find the maximum subarray sum to both sides of that element.",
+    "To do that efficiently, use the idea of Kadane's algorithm."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

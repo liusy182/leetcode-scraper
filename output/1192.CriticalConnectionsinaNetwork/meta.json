@@ -1,0 +1,17 @@
+{
+  "id": "1192",
+  "title": "Critical Connections in a Network",
+  "slug": "critical-connections-in-a-network",
+  "difficulty": "Hard",
+  "likes": 85,
+  "dislikes": 18,
+  "hints": [
+    "Use Tarjan's algorithm."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Depth-first Search"
+  ]
+}

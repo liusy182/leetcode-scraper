@@ -1,0 +1,20 @@
+{
+  "id": "1191",
+  "title": "K-Concatenation Maximum Sum",
+  "slug": "k-concatenation-maximum-sum",
+  "difficulty": "Medium",
+  "likes": 114,
+  "dislikes": 14,
+  "hints": [
+    "How to solve the problem for k=1 ?",
+    "Use Kadane's algorithm for k=1.",
+    "What are the possible cases for the answer ?",
+    "The answer is the maximum between, the answer for k=1, the sum of the whole array multiplied by k, or the maximum suffix sum plus the maximum prefix sum plus (k-2) multiplied by the whole array sum for k > 1."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

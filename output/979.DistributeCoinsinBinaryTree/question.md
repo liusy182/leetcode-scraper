@@ -9,7 +9,7 @@
 <div>
 <p><strong>Example 1:</strong></p>
 
-<p><strong><img alt="" src="./img/distribute-coins-in-binary-tree_1.png" style="width: 150px; height: 142px;" /></strong></p>
+<p><strong><img alt="" src="../img/distribute-coins-in-binary-tree_1.png" style="width: 150px; height: 142px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-1-1">[3,0,0]</span>
@@ -20,7 +20,7 @@
 <div>
 <p><strong>Example 2:</strong></p>
 
-<p><strong><img alt="" src="./img/distribute-coins-in-binary-tree_2.png" style="width: 150px; height: 142px;" /></strong></p>
+<p><strong><img alt="" src="../img/distribute-coins-in-binary-tree_2.png" style="width: 150px; height: 142px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-2-1">[0,3,0]</span>
@@ -31,7 +31,7 @@
 <div>
 <p><strong>Example 3:</strong></p>
 
-<p><strong><img alt="" src="./img/distribute-coins-in-binary-tree_3.png" style="width: 150px; height: 142px;" /></strong></p>
+<p><strong><img alt="" src="../img/distribute-coins-in-binary-tree_3.png" style="width: 150px; height: 142px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-3-1">[1,0,2]</span>
@@ -41,7 +41,7 @@
 <div>
 <p><strong>Example 4:</strong></p>
 
-<p><strong><img alt="" src="./img/distribute-coins-in-binary-tree_4.png" style="width: 155px; height: 156px;" /></strong></p>
+<p><strong><img alt="" src="../img/distribute-coins-in-binary-tree_4.png" style="width: 155px; height: 156px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-4-1">[1,0,0,null,3]</span>

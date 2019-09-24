@@ -4,7 +4,7 @@
 
 <p>Now consider if some obstacles are added to the grids. How many unique paths would there be?</p>
 
-<p><img src="./img/unique-paths-ii_1.png" style="width: 400px; height: 183px;" /></p>
+<p><img src="../img/unique-paths-ii_1.png" style="width: 400px; height: 183px;" /></p>
 
 <p>An obstacle and empty space is marked as <code>1</code> and <code>0</code> respectively in the grid.</p>
 

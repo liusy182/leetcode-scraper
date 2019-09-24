@@ -3,7 +3,7 @@
 <p>According to the <a href="https://en.wikipedia.org/wiki/Lowest_common_ancestor" target="_blank">definition of LCA on Wikipedia</a>: &ldquo;The lowest common ancestor is defined between two nodes p and q&nbsp;as the lowest node in T that has both p and q&nbsp;as descendants (where we allow <b>a node to be a descendant of itself</b>).&rdquo;</p>
 
 <p>Given binary search tree:&nbsp; root =&nbsp;[6,2,8,0,4,7,9,null,null,3,5]</p>
-<img alt="" src="./img/lowest-common-ancestor-of-a-binary-search-tree_1.png" style="width: 200px; height: 190px;" />
+<img alt="" src="../img/lowest-common-ancestor-of-a-binary-search-tree_1.png" style="width: 200px; height: 190px;" />
 <p>&nbsp;</p>
 
 <p><strong>Example 1:</strong></p>

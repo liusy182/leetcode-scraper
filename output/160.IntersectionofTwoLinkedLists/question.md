@@ -1,14 +1,14 @@
 <p>Write a program to find the node at which the intersection of two singly linked lists begins.</p>
 
 <p>For example, the following two linked lists:</p>
-<a href="./img/intersection-of-two-linked-lists_1.png" target="_blank"><img alt="" src="./img/intersection-of-two-linked-lists_1.png" style="margin-top: 10px; margin-bottom: 10px; width: 400px; height: 130px;" /></a>
+<a href="../img/intersection-of-two-linked-lists_1.png" target="_blank"><img alt="" src="../img/intersection-of-two-linked-lists_1.png" style="margin-top: 10px; margin-bottom: 10px; width: 400px; height: 130px;" /></a>
 
 <p>begin to intersect at node c1.</p>
 
 <p>&nbsp;</p>
 
 <p><strong>Example 1:</strong></p>
-<a href="./img/intersection-of-two-linked-lists_2.png" target="_blank"><img alt="" src="./img/intersection-of-two-linked-lists_2.png" style="margin-top: 10px; margin-bottom: 10px; width: 400px; height: 130px;" /></a>
+<a href="../img/intersection-of-two-linked-lists_2.png" target="_blank"><img alt="" src="../img/intersection-of-two-linked-lists_2.png" style="margin-top: 10px; margin-bottom: 10px; width: 400px; height: 130px;" /></a>
 
 <pre>
 <strong>Input: </strong>intersectVal = 8, listA = [4,1,8,4,5], listB = [5,0,1,8,4,5], skipA = 2, skipB = 3
@@ -18,7 +18,7 @@
 <p>&nbsp;</p>
 
 <p><strong>Example 2:</strong></p>
-<a href="./img/intersection-of-two-linked-lists_3.png" target="_blank"><img alt="" src="./img/intersection-of-two-linked-lists_3.png" style="margin-top: 10px; margin-bottom: 10px; width: 350px; height: 136px;" /></a>
+<a href="../img/intersection-of-two-linked-lists_3.png" target="_blank"><img alt="" src="../img/intersection-of-two-linked-lists_3.png" style="margin-top: 10px; margin-bottom: 10px; width: 350px; height: 136px;" /></a>
 
 <pre>
 <strong>Input: </strong>intersectVal&nbsp;= 2, listA = [0,9,1,2,4], listB = [3,2,4], skipA = 3, skipB = 1
@@ -29,7 +29,7 @@
 <p>&nbsp;</p>
 
 <p><strong>Example 3:</strong></p>
-<a href="./img/intersection-of-two-linked-lists_4.png" target="_blank"><img alt="" src="./img/intersection-of-two-linked-lists_4.png" style="margin-top: 10px; margin-bottom: 10px; width: 200px; height: 126px;" /></a>
+<a href="../img/intersection-of-two-linked-lists_4.png" target="_blank"><img alt="" src="../img/intersection-of-two-linked-lists_4.png" style="margin-top: 10px; margin-bottom: 10px; width: 200px; height: 126px;" /></a>
 
 <pre>
 <strong>Input: </strong>intersectVal = 0, listA = [2,6,4], listB = [1,5], skipA = 3, skipB = 2

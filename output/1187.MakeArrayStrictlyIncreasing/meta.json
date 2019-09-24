@@ -1,0 +1,18 @@
+{
+  "id": "1187",
+  "title": "Make Array Strictly Increasing",
+  "slug": "make-array-strictly-increasing",
+  "difficulty": "Hard",
+  "likes": 143,
+  "dislikes": 4,
+  "hints": [
+    "Use dynamic programming.",
+    "The state would be the index in arr1 and the index of the previous element in arr2 after sorting it and removing duplicates."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Dynamic Programming"
+  ]
+}

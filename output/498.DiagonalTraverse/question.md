@@ -15,7 +15,7 @@
 <b>Output:</b>  [1,2,4,7,5,3,6,8,9]
 
 <b>Explanation:</b>
-<img src="./img/diagonal-traverse_1.png" style="width: 220px;" />
+<img src="../img/diagonal-traverse_1.png" style="width: 220px;" />
 </pre>
 
 <p>&nbsp;</p>

@@ -1,7 +1,7 @@
 <p>On an N x N <code>board</code>, the numbers from <code>1</code> to <code>N*N</code> are written&nbsp;<em>boustrophedonically</em>&nbsp;<strong>starting from the bottom&nbsp;left of the board</strong>, and alternating direction each row.&nbsp; For example, for a 6 x 6 board, the numbers are written as follows:</p>
 
 <pre>
-<img alt="" src="./img/snakes-and-ladders_1.png" style="width: 254px; height: 200px;" />
+<img alt="" src="../img/snakes-and-ladders_1.png" style="width: 254px; height: 200px;" />
 </pre>
 
 <p>You start on square <code>1</code> of the board (which is always in the last row and&nbsp;first column).&nbsp; Each move, starting from square <code>x</code>, consists of the following:</p>

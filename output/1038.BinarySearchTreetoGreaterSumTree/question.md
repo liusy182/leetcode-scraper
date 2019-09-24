@@ -12,7 +12,7 @@
 
 <p><strong>Example 1:</strong></p>
 
-<p><strong><img alt="" src="./img/binary-search-tree-to-greater-sum-tree_1.png" style="width: 280px; height: 191px;" /></strong></p>
+<p><strong><img alt="" src="../img/binary-search-tree-to-greater-sum-tree_1.png" style="width: 280px; height: 191px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-1-1">[4,1,6,0,2,5,7,null,null,null,3,null,null,null,8]</span>

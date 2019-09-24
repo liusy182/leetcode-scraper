@@ -6,7 +6,7 @@
 
 <p><strong>Example 1:</strong></p>
 
-<p><strong><img alt="" src="./img/maximum-level-sum-of-a-binary-tree_1.JPG" style="width: 200px; height: 175px;" /></strong></p>
+<p><strong><img alt="" src="../img/maximum-level-sum-of-a-binary-tree_1.JPG" style="width: 200px; height: 175px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-1-1">[1,7,0,7,-8,null,null]</span>

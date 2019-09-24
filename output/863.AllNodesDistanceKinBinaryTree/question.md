@@ -19,7 +19,7 @@
 The nodes that are a distance 2 from the target node (with value 5)
 have values 7, 4, and 1.
 
-<img alt="" src="./img/all-nodes-distance-k-in-binary-tree_1.png" style="width: 280px; height: 240px;" />
+<img alt="" src="../img/all-nodes-distance-k-in-binary-tree_1.png" style="width: 280px; height: 240px;" />
 
 Note that the inputs &quot;root&quot; and &quot;target&quot; are actually TreeNodes.
 The descriptions of the inputs above are just serializations of these objects.

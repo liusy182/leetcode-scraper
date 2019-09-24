@@ -14,7 +14,7 @@
 <p>&nbsp;</p>
 
 <p><strong>Example 1:</strong></p>
-<img alt="" src="./img/uncrossed-lines_1.png" style="width: 100px; height: 72px;" />
+<img alt="" src="../img/uncrossed-lines_1.png" style="width: 100px; height: 72px;" />
 <pre>
 <strong>Input: </strong>A = <span id="example-input-1-1">[1,4,2]</span>, B = <span id="example-input-1-2">[1,2,4]</span>
 <strong>Output: </strong><span id="example-output-1">2</span>

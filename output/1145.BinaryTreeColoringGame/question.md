@@ -10,7 +10,7 @@
 
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
-<img alt="" src="./img/binary-tree-coloring-game_1.png" style="width: 300px; height: 186px;" />
+<img alt="" src="../img/binary-tree-coloring-game_1.png" style="width: 300px; height: 186px;" />
 <pre>
 <strong>Input:</strong> root = [1,2,3,4,5,6,7,8,9,10,11], n = 11, x = 3
 <strong>Output:</strong> true

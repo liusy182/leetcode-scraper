@@ -1,6 +1,6 @@
 <p>The <em>n</em>-queens puzzle is the problem of placing <em>n</em> queens on an <em>n</em>&times;<em>n</em> chessboard such that no two queens attack each other.</p>
 
-<p><img alt="" src="./img/n-queens_1.png" style="width: 258px; height: 276px;" /></p>
+<p><img alt="" src="../img/n-queens_1.png" style="width: 258px; height: 276px;" /></p>
 
 <p>Given an integer <em>n</em>, return all distinct solutions to the <em>n</em>-queens puzzle.</p>
 

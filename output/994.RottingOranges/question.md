@@ -15,7 +15,7 @@
 <div>
 <p><strong>Example 1:</strong></p>
 
-<p><strong><img alt="" src="./img/rotting-oranges_1.png" style="width: 712px; height: 150px;" /></strong></p>
+<p><strong><img alt="" src="../img/rotting-oranges_1.png" style="width: 712px; height: 150px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-1-1">[[2,1,1],[1,1,0],[0,1,1]]</span>

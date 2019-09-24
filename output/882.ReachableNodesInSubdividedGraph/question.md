@@ -21,7 +21,7 @@
 <strong>Output: </strong><span id="example-output-1">13</span>
 <strong>Explanation: </strong>
 The nodes that are reachable in the final graph after M = 6 moves are indicated below.
-<span><img alt="" src="./img/reachable-nodes-in-subdivided-graph_1.png" style="width: 487px; height: 200px;" /></span>
+<span><img alt="" src="../img/reachable-nodes-in-subdivided-graph_1.png" style="width: 487px; height: 200px;" /></span>
 </pre>
 
 <div>

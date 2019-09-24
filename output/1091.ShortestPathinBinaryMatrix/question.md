@@ -17,10 +17,10 @@
 
 <pre>
 <strong>Input: </strong><span id="example-input-1-1">[[0,1],[1,0]]
-<img alt="" src="./img/shortest-path-in-binary-matrix_1.png" style="width: 151px; height: 152px;" />
+<img alt="" src="../img/shortest-path-in-binary-matrix_1.png" style="width: 151px; height: 152px;" />
 </span>
 <strong>Output: </strong>2
-<img alt="" src="./img/shortest-path-in-binary-matrix_2.png" style="width: 151px; height: 152px;" />
+<img alt="" src="../img/shortest-path-in-binary-matrix_2.png" style="width: 151px; height: 152px;" />
 </pre>
 
 <div>
@@ -28,10 +28,10 @@
 
 <pre>
 <strong>Input: </strong><span id="example-input-2-1">[[0,0,0],[1,1,0],[1,1,0]]
-<img alt="" src="./img/shortest-path-in-binary-matrix_3.png" style="width: 151px; height: 152px;" />
+<img alt="" src="../img/shortest-path-in-binary-matrix_3.png" style="width: 151px; height: 152px;" />
 </span>
 <strong>Output:</strong> 4
-<img alt="" src="./img/shortest-path-in-binary-matrix_4.png" style="width: 151px; height: 152px;" />
+<img alt="" src="../img/shortest-path-in-binary-matrix_4.png" style="width: 151px; height: 152px;" />
 </pre>
 
 <p>&nbsp;</p>

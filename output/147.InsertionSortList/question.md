@@ -3,7 +3,7 @@
 <ol>
 </ol>
 
-<p><img alt="" src="./img/insertion-sort-list_1.gif" style="height:180px; width:300px" /><br />
+<p><img alt="" src="../img/insertion-sort-list_1.gif" style="height:180px; width:300px" /><br />
 <small>A graphical example of insertion sort. The partial sorted list (black) initially contains only the first element in the list.<br />
 With each iteration one element (red) is removed from the input data and inserted in-place into the sorted list</small><br />
 &nbsp;</p>

@@ -2,7 +2,7 @@
 
 <p>Each rectangle is represented as a bottom-left point and a top-right point. For example, a unit square is represented as [1,1,2,2]. (coordinate of bottom-left point is (1, 1) and top-right point is (2, 2)).</p>
 
-<div style="float:right"><img src="./img/perfect-rectangle_1.gif" style="width: 249px; height: 250px;" /></div>
+<div style="float:right"><img src="../img/perfect-rectangle_1.gif" style="width: 249px; height: 250px;" /></div>
 
 <p><b>Example 1:</b></p>
 
@@ -22,7 +22,7 @@ Return true. All 5 rectangles together form an exact cover of a rectangular regi
 
 <div style="clear:both">&nbsp;</div>
 
-<div style="float:right"><img src="./img/perfect-rectangle_2.gif" style="width: 249px; height: 250px;" /></div>
+<div style="float:right"><img src="../img/perfect-rectangle_2.gif" style="width: 249px; height: 250px;" /></div>
 
 <p><b>Example 2:</b></p>
 
@@ -41,7 +41,7 @@ Return false. Because there is a gap between the two rectangular regions.
 
 <div style="clear:both">&nbsp;</div>
 
-<div style="float:right"><img src="./img/perfect-rectangle_3.gif" style="width: 249px; height: 250px;" /></div>
+<div style="float:right"><img src="../img/perfect-rectangle_3.gif" style="width: 249px; height: 250px;" /></div>
 
 <p><b>Example 3:</b></p>
 
@@ -60,7 +60,7 @@ Return false. Because there is a gap in the top center.
 
 <div style="clear:both">&nbsp;</div>
 
-<div style="float:right"><img src="./img/perfect-rectangle_4.gif" style="width: 249px; height: 250px;" /></div>
+<div style="float:right"><img src="../img/perfect-rectangle_4.gif" style="width: 249px; height: 250px;" /></div>
 
 <p><b>Example 4:</b></p>
 

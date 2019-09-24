@@ -1,0 +1,19 @@
+{
+  "id": "1185",
+  "title": "Day of the Week",
+  "slug": "day-of-the-week",
+  "difficulty": "Easy",
+  "likes": 19,
+  "dislikes": 263,
+  "hints": [
+    "Sum up the number of days for the years before the given year.",
+    "Handle the case of a leap year.",
+    "Find the number of days for each month of the given year."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array"
+  ]
+}

@@ -8,7 +8,7 @@
 
 <p><strong>Example 1:</strong></p>
 
-<p><img alt="" src="./img/network-delay-time_1.png" style="width: 200px; height: 220px;" /></p>
+<p><img alt="" src="../img/network-delay-time_1.png" style="width: 200px; height: 220px;" /></p>
 
 <pre>
 <strong>Input: </strong>times = <span id="example-input-1-1">[[2,1,1],[2,3,1],[3,4,1]]</span>, N = <span id="example-input-1-2">4</span>, K = <span id="example-input-1-3">2</span>

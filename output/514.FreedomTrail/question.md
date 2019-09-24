@@ -13,7 +13,7 @@
 
 <p><b>Example:</b></p>
 
-<center><img src="./img/freedom-trail_1.jpg" style="width: 26%;" /></center>
+<center><img src="../img/freedom-trail_1.jpg" style="width: 26%;" /></center>
 &nbsp;
 
 <pre>

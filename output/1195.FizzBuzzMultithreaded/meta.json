@@ -1,0 +1,13 @@
+{
+  "id": "1195",
+  "title": "Fizz Buzz Multithreaded",
+  "slug": "fizz-buzz-multithreaded",
+  "difficulty": "Medium",
+  "likes": 27,
+  "dislikes": 2,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Fizz Buzz\", \"titleSlug\": \"fizz-buzz\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Print Zero Even Odd\", \"titleSlug\": \"print-zero-even-odd\", \"difficulty\": \"Medium\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": []
+}

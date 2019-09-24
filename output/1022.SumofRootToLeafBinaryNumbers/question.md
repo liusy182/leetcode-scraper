@@ -8,7 +8,7 @@
 
 <p><strong>Example 1:</strong></p>
 
-<p><span id="example-output-1"><img alt="" src="./img/sum-of-root-to-leaf-binary-numbers_1.png" style="width: 304px; height: 200px;" /></span></p>
+<p><span id="example-output-1"><img alt="" src="../img/sum-of-root-to-leaf-binary-numbers_1.png" style="width: 304px; height: 200px;" /></span></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-1-1">[1,0,1,0,1,0,1]</span>

@@ -1,6 +1,6 @@
 <p>Consider all the leaves of a binary tree.&nbsp; From&nbsp;left to right order, the values of those&nbsp;leaves form a <em>leaf value sequence.</em></p>
 
-<p><img alt="" src="./img/leaf-similar-trees_1.png" style="width: 300px; height: 240px;" /></p>
+<p><img alt="" src="../img/leaf-similar-trees_1.png" style="width: 300px; height: 240px;" /></p>
 
 <p>For example, in the given tree above, the leaf value sequence is <code>(6, 7, 4, 9, 8)</code>.</p>
 

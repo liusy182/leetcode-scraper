@@ -9,7 +9,7 @@
 <pre>
 <strong>Input: </strong><span id="example-input-1-1">[8,5,1,7,10,12]</span>
 <strong>Output: </strong><span id="example-output-1">[8,5,10,1,7,null,12]
-<img alt="" src="./img/construct-binary-search-tree-from-preorder-traversal_1.png" style="height: 200px; width: 306px;" /></span>
+<img alt="" src="../img/construct-binary-search-tree-from-preorder-traversal_1.png" style="height: 200px; width: 306px;" /></span>
 </pre>
 
 <p>&nbsp;</p>

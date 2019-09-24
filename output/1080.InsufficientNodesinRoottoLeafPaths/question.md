@@ -9,9 +9,9 @@
 <p><strong>Example 1:</strong></p>
 
 <pre>
-<strong><img alt="" src="./img/insufficient-nodes-in-root-to-leaf-paths_1.png" style="width: 482px; height: 200px;" />
+<strong><img alt="" src="../img/insufficient-nodes-in-root-to-leaf-paths_1.png" style="width: 482px; height: 200px;" />
 Input: </strong>root = <span id="example-input-1-1">[1,2,3,4,-99,-99,7,8,9,-99,-99,12,13,-99,14]</span>, limit = <span id="example-input-1-2">1</span>
-<strong><img alt="" src="./img/insufficient-nodes-in-root-to-leaf-paths_2.png" style="width: 258px; height: 200px;" />
+<strong><img alt="" src="../img/insufficient-nodes-in-root-to-leaf-paths_2.png" style="width: 258px; height: 200px;" />
 Output: </strong><span id="example-output-1">[1,2,3,4,null,null,7,8,9,null,14]</span>
 </pre>
 
@@ -19,9 +19,9 @@ Output: </strong><span id="example-output-1">[1,2,3,4,null,null,7,8,9,null,14]</
 <p><strong>Example 2:</strong></p>
 
 <pre>
-<strong><img alt="" src="./img/insufficient-nodes-in-root-to-leaf-paths_3.png" style="width: 292px; height: 200px;" />
+<strong><img alt="" src="../img/insufficient-nodes-in-root-to-leaf-paths_3.png" style="width: 292px; height: 200px;" />
 Input: </strong>root = <span id="example-input-2-1">[5,4,8,11,null,17,4,7,1,null,null,5,3]</span>, limit = <span id="example-input-2-2">22</span>
-<strong><img alt="" src="./img/insufficient-nodes-in-root-to-leaf-paths_4.png" style="width: 264px; height: 200px;" />
+<strong><img alt="" src="../img/insufficient-nodes-in-root-to-leaf-paths_4.png" style="width: 264px; height: 200px;" />
 Output: </strong><span id="example-output-2">[5,4,8,11,null,17,4,7,null,null,null,5]</span></pre>
 
 <p>&nbsp;</p>
@@ -29,9 +29,9 @@ Output: </strong><span id="example-output-2">[5,4,8,11,null,17,4,7,null,null,nul
 <p><strong>Example 3:</strong></p>
 
 <pre>
-<strong><img alt="" src="./img/insufficient-nodes-in-root-to-leaf-paths_5.png" style="width: 188px; height: 150px;" />
+<strong><img alt="" src="../img/insufficient-nodes-in-root-to-leaf-paths_5.png" style="width: 188px; height: 150px;" />
 Input: </strong>root = <span>[1,2,-3,-5,null,4,null]</span>, limit = -1
-<img alt="" src="./img/insufficient-nodes-in-root-to-leaf-paths_6.png" style="width: 122px; height: 150px;" /><strong>
+<img alt="" src="../img/insufficient-nodes-in-root-to-leaf-paths_6.png" style="width: 122px; height: 150px;" /><strong>
 Output: </strong><span>[1,null,-3,4]</span></pre>
 </div>
 

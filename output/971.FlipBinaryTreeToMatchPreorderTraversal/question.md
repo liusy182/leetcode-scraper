@@ -17,7 +17,7 @@
 <div>
 <p><strong>Example 1:</strong></p>
 
-<p><strong><img alt="" src="./img/flip-binary-tree-to-match-preorder-traversal_1.png" style="width: 88px; height: 120px;" /></strong></p>
+<p><strong><img alt="" src="../img/flip-binary-tree-to-match-preorder-traversal_1.png" style="width: 88px; height: 120px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong>root = <span id="example-input-1-1">[1,2]</span>, voyage = <span id="example-input-1-2">[2,1]</span>
@@ -27,7 +27,7 @@
 <div>
 <p><strong>Example 2:</strong></p>
 
-<p><strong><img alt="" src="./img/flip-binary-tree-to-match-preorder-traversal_2.png" style="width: 127px; height: 120px;" /></strong></p>
+<p><strong><img alt="" src="../img/flip-binary-tree-to-match-preorder-traversal_2.png" style="width: 127px; height: 120px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong>root = <span id="example-input-2-1">[1,2,3]</span>, voyage = <span id="example-input-2-2">[1,3,2]</span>
@@ -37,7 +37,7 @@
 <div>
 <p><strong>Example 3:</strong></p>
 
-<p><strong><img alt="" src="./img/flip-binary-tree-to-match-preorder-traversal_2.png" style="width: 127px; height: 120px;" /></strong></p>
+<p><strong><img alt="" src="../img/flip-binary-tree-to-match-preorder-traversal_2.png" style="width: 127px; height: 120px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong>root = <span id="example-input-3-1">[1,2,3]</span>, voyage = <span id="example-input-3-2">[1,2,3]</span>

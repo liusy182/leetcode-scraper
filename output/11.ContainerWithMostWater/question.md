@@ -4,7 +4,7 @@
 
 <p>&nbsp;</p>
 
-<p><img alt="" src="./img/container-with-most-water_1.jpg" style="width: 600px; height: 287px;" /></p>
+<p><img alt="" src="../img/container-with-most-water_1.jpg" style="width: 600px; height: 287px;" /></p>
 
 <p><small>The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7]. In this case, the max area of water (blue section) the container can contain&nbsp;is 49. </small></p>
 

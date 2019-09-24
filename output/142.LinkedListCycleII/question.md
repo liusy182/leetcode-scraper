@@ -14,7 +14,7 @@
 <strong>Explanation:</strong> There is a cycle in the linked list, where tail connects to the second node.
 </pre>
 
-<p><img alt="" src="./img/linked-list-cycle-ii_1.png" style="height: 97px; width: 300px;" /></p>
+<p><img alt="" src="../img/linked-list-cycle-ii_1.png" style="height: 97px; width: 300px;" /></p>
 
 <p><strong>Example 2:</strong></p>
 
@@ -24,7 +24,7 @@
 <strong>Explanation:</strong> There is a cycle in the linked list, where tail connects to the first node.
 </pre>
 
-<p><img alt="" src="./img/linked-list-cycle-ii_2.png" style="height: 74px; width: 141px;" /></p>
+<p><img alt="" src="../img/linked-list-cycle-ii_2.png" style="height: 74px; width: 141px;" /></p>
 
 <p><strong>Example 3:</strong></p>
 
@@ -34,7 +34,7 @@
 <strong>Explanation:</strong> There is no cycle in the linked list.
 </pre>
 
-<p><img alt="" src="./img/linked-list-cycle-ii_3.png" style="height: 45px; width: 45px;" /></p>
+<p><img alt="" src="../img/linked-list-cycle-ii_3.png" style="height: 45px; width: 45px;" /></p>
 
 <p>&nbsp;</p>
 

@@ -10,10 +10,10 @@
 
 <p>Empty cells are indicated by the character <code>&#39;.&#39;</code>.</p>
 
-<p><img src="./img/sudoku-solver_1.png" style="height:250px; width:250px" /><br />
+<p><img src="../img/sudoku-solver_1.png" style="height:250px; width:250px" /><br />
 <small>A sudoku puzzle...</small></p>
 
-<p><img src="./img/sudoku-solver_2.png" style="height:250px; width:250px" /><br />
+<p><img src="../img/sudoku-solver_2.png" style="height:250px; width:250px" /><br />
 <small>...and its solution numbers marked in red.</small></p>
 
 <p><strong>Note:</strong></p>

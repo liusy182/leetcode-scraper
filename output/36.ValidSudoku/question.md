@@ -6,7 +6,7 @@
 	<li>Each of the 9 <code>3x3</code> sub-boxes of the grid must contain the digits&nbsp;<code>1-9</code>&nbsp;without repetition.</li>
 </ol>
 
-<p><img src="./img/valid-sudoku_1.png" style="height:250px; width:250px" /><br />
+<p><img src="../img/valid-sudoku_1.png" style="height:250px; width:250px" /><br />
 <small>A partially filled sudoku which is valid.</small></p>
 
 <p>The Sudoku board could be partially filled, where empty cells are filled with the character <code>&#39;.&#39;</code>.</p>

@@ -2,7 +2,7 @@
 
 <p>Here, <code>board = [&quot;abcde&quot;, &quot;fghij&quot;, &quot;klmno&quot;, &quot;pqrst&quot;, &quot;uvwxy&quot;, &quot;z&quot;]</code>, as shown in the diagram below.</p>
 
-<p><img alt="" src="./img/alphabet-board-path_1.png" style="width: 250px; height: 317px;" /></p>
+<p><img alt="" src="../img/alphabet-board-path_1.png" style="width: 250px; height: 317px;" /></p>
 
 <p>We may make the following moves:</p>
 

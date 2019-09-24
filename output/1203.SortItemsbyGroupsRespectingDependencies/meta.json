@@ -1,0 +1,20 @@
+{
+  "id": "1203",
+  "title": "Sort Items by Groups Respecting Dependencies",
+  "slug": "sort-items-by-groups-respecting-dependencies",
+  "difficulty": "Hard",
+  "likes": 44,
+  "dislikes": 6,
+  "hints": [
+    "Think of it as a graph problem.",
+    "We need to find a topological order on the dependency graph.",
+    "Build two graphs, one for the groups and another for the items."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Depth-first Search",
+    "Graph"
+  ]
+}

@@ -8,7 +8,7 @@
 <b>Input: </b>m = 2, n = 2, N = 2, i = 0, j = 0
 <b>Output:</b> 6
 <b>Explanation:</b>
-<img src="./img/out-of-boundary-paths_1.png" style="width: 100%; max-width: 400px" />
+<img src="../img/out-of-boundary-paths_1.png" style="width: 100%; max-width: 400px" />
 </pre>
 
 <p><b>Example 2:</b></p>
@@ -17,7 +17,7 @@
 <b>Input: </b>m = 1, n = 3, N = 3, i = 0, j = 1
 <b>Output:</b> 12
 <b>Explanation:</b>
-<img src="./img/out-of-boundary-paths_2.png" style="width: 100%; max-width: 400px" />
+<img src="../img/out-of-boundary-paths_2.png" style="width: 100%; max-width: 400px" />
 </pre>
 
 <p>&nbsp;</p>

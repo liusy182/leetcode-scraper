@@ -7,7 +7,7 @@ In a complete binary tree every level, except possibly the last, is completely f
 
 <p><strong>Example 1:</strong></p>
 
-<p><strong><img alt="" src="./img/check-completeness-of-a-binary-tree_1.png" style="width: 180px; height: 145px;" /></strong></p>
+<p><strong><img alt="" src="../img/check-completeness-of-a-binary-tree_1.png" style="width: 180px; height: 145px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-1-1">[1,2,3,4,5,6]</span>
@@ -18,7 +18,7 @@ In a complete binary tree every level, except possibly the last, is completely f
 <div>
 <p><strong>Example 2:</strong></p>
 
-<p><strong><img alt="" src="./img/check-completeness-of-a-binary-tree_2.png" style="width: 200px; height: 145px;" /></strong></p>
+<p><strong><img alt="" src="../img/check-completeness-of-a-binary-tree_2.png" style="width: 200px; height: 145px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-2-1">[1,2,3,4,5,null,7]</span>

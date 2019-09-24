@@ -1,0 +1,20 @@
+{
+  "id": "1202",
+  "title": "Smallest String With Swaps",
+  "slug": "smallest-string-with-swaps",
+  "difficulty": "Medium",
+  "likes": 113,
+  "dislikes": 4,
+  "hints": [
+    "Think of it as a graph problem.",
+    "Consider the pairs as connected nodes in the graph, what can you do with a connected component of indices ?",
+    "We can sort each connected component alone to get the lexicographically minimum string."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Union Find"
+  ]
+}

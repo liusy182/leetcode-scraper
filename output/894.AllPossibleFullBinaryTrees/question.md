@@ -14,7 +14,7 @@
 <strong>Input: </strong><span id="example-input-1-1">7</span>
 <strong>Output: </strong><span id="example-output-1">[[0,0,0,null,null,0,0,null,null,0,0],[0,0,0,null,null,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,null,null,null,null,0,0],[0,0,0,0,0,null,null,0,0]]</span>
 <strong>Explanation:</strong>
-<img alt="" src="./img/all-possible-full-binary-trees_1.png" style="width: 700px; height: 400px;" />
+<img alt="" src="../img/all-possible-full-binary-trees_1.png" style="width: 700px; height: 400px;" />
 </pre>
 
 <p>&nbsp;</p>

@@ -10,7 +10,7 @@
 
 <p><strong>Example 1:</strong></p>
 
-<p><img alt="" src="./img/minimum-domino-rotations-for-equal-row_1.png" style="height: 161px; width: 200px;" /></p>
+<p><img alt="" src="../img/minimum-domino-rotations-for-equal-row_1.png" style="height: 161px; width: 200px;" /></p>
 
 <pre>
 <strong>Input: </strong>A = <span id="example-input-1-1">[2,1,2,4,2,2]</span>, B = <span id="example-input-1-2">[5,2,6,2,3,2]</span>

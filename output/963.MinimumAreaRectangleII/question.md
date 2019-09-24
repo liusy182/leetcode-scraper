@@ -6,7 +6,7 @@
 
 <p><strong>Example 1:</strong></p>
 
-<p><img alt="" src="./img/minimum-area-rectangle-ii_1.png" style="width: 150px; height: 151px;" /></p>
+<p><img alt="" src="../img/minimum-area-rectangle-ii_1.png" style="width: 150px; height: 151px;" /></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-1-1">[[1,2],[2,1],[1,0],[0,1]]</span>
@@ -17,7 +17,7 @@
 <div>
 <p><strong>Example 2:</strong></p>
 
-<p><img alt="" src="./img/minimum-area-rectangle-ii_2.png" style="width: 150px; height: 94px;" /></p>
+<p><img alt="" src="../img/minimum-area-rectangle-ii_2.png" style="width: 150px; height: 94px;" /></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-2-1">[[0,1],[2,1],[1,1],[1,0],[2,0]]</span>
@@ -28,7 +28,7 @@
 <div>
 <p><strong>Example 3:</strong></p>
 
-<p><img alt="" src="./img/minimum-area-rectangle-ii_3.png" style="width: 160px; height: 167px;" /></p>
+<p><img alt="" src="../img/minimum-area-rectangle-ii_3.png" style="width: 160px; height: 167px;" /></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-3-1">[[0,3],[1,2],[3,1],[1,3],[2,1]]</span>
@@ -39,7 +39,7 @@
 <div>
 <p><strong>Example 4:</strong></p>
 
-<p><img alt="" src="./img/minimum-area-rectangle-ii_4.png" style="width: 160px; height: 155px;" /></p>
+<p><img alt="" src="../img/minimum-area-rectangle-ii_4.png" style="width: 160px; height: 155px;" /></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-4-1">[[3,1],[1,1],[0,1],[2,1],[3,3],[3,2],[0,2],[2,3]]</span>

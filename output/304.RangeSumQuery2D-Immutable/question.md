@@ -1,7 +1,7 @@
 <p>Given a 2D matrix <i>matrix</i>, find the sum of the elements inside the rectangle defined by its upper left corner (<i>row</i>1, <i>col</i>1) and lower right corner (<i>row</i>2, <i>col</i>2).</p>
 
 <p>
-<img src="./img/range-sum-query-2d-immutable_1.png" border="0" alt="Range Sum Query 2D" /><br />
+<img src="../img/range-sum-query-2d-immutable_1.png" border="0" alt="Range Sum Query 2D" /><br />
 <small>The above rectangle (with the red border) is defined by (row1, col1) = <b>(2, 1)</b> and (row2, col2) = <b>(4, 3)</b>, which contains sum = <b>8</b>.</small>
 </p>
 

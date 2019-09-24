@@ -6,7 +6,7 @@
 
 <p><strong>Example 1:</strong></p>
 
-<p><strong><img alt="" src="./img/copy-list-with-random-pointer_1.png" style="width: 375px; height: 129px;" /></strong></p>
+<p><strong><img alt="" src="../img/copy-list-with-random-pointer_1.png" style="width: 375px; height: 129px;" /></strong></p>
 
 <pre>
 <strong>Input:

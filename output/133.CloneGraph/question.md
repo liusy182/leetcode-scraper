@@ -4,7 +4,7 @@
 
 <p><strong>Example:</strong></p>
 
-<p><img alt="" src="./img/clone-graph_1.png" style="width: 200px; height: 149px;" /></p>
+<p><img alt="" src="../img/clone-graph_1.png" style="width: 200px; height: 149px;" /></p>
 
 <pre>
 <strong>Input:

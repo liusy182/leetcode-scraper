@@ -14,7 +14,7 @@ Here is a diagram of the above graph.
 
 </pre>
 
-<p><img alt="Illustration of graph" src="./img/find-eventual-safe-states_1.png" style="height:86px; width:300px" /></p>
+<p><img alt="Illustration of graph" src="../img/find-eventual-safe-states_1.png" style="height:86px; width:300px" /></p>
 
 <p><strong>Note:</strong></p>
 

@@ -4,7 +4,7 @@
 
 <p>How many possible unique paths are there?</p>
 
-<p><img src="./img/unique-paths_1.png" style="width: 400px; height: 183px;" /><br />
+<p><img src="../img/unique-paths_1.png" style="width: 400px; height: 183px;" /><br />
 <small>Above is a 7 x 3 grid. How many possible unique paths are there?</small></p>
 
 <p><strong>Note:</strong> <em>m</em> and <em>n</em> will be at most 100.</p>

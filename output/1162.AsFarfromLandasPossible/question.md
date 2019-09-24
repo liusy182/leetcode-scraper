@@ -8,7 +8,7 @@
 
 <p><strong>Example 1:</strong></p>
 
-<p><strong><img alt="" src="./img/as-far-from-land-as-possible_1.JPG" style="width: 185px; height: 87px;" /></strong></p>
+<p><strong><img alt="" src="../img/as-far-from-land-as-possible_1.JPG" style="width: 185px; height: 87px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-1-1">[[1,0,1],[0,0,0],[1,0,1]]</span>
@@ -19,7 +19,7 @@ The cell (1, 1) is as far as possible from all the land with distance 2.
 
 <p><strong>Example 2:</strong></p>
 
-<p><strong><img alt="" src="./img/as-far-from-land-as-possible_2.JPG" style="width: 184px; height: 87px;" /></strong></p>
+<p><strong><img alt="" src="../img/as-far-from-land-as-possible_2.JPG" style="width: 184px; height: 87px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-2-1">[[1,0,0],[0,0,0],[0,0,0]]</span>

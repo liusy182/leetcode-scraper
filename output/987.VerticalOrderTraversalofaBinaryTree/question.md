@@ -12,7 +12,7 @@
 
 <p><strong>Example 1:</strong></p>
 
-<p><img alt="" src="./img/vertical-order-traversal-of-a-binary-tree_1.PNG" style="width: 201px; height: 186px;" /></p>
+<p><img alt="" src="../img/vertical-order-traversal-of-a-binary-tree_1.PNG" style="width: 201px; height: 186px;" /></p>
 
 <div>
 <pre>
@@ -29,7 +29,7 @@ The node with value 7 occurs at position (2, -2).
 <div>
 <p><strong>Example 2:</strong></p>
 
-<p><strong><img alt="" src="./img/vertical-order-traversal-of-a-binary-tree_2.png" style="width: 236px; height: 150px;" /></strong></p>
+<p><strong><img alt="" src="../img/vertical-order-traversal-of-a-binary-tree_2.png" style="width: 236px; height: 150px;" /></strong></p>
 
 <pre>
 <strong>Input: </strong><span id="example-input-2-1">[1,2,3,4,5,6,7]</span>

@@ -2,7 +2,7 @@
 
 <p>A mapping of digit to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.</p>
 
-<p><img src="./img/letter-combinations-of-a-phone-number_1.png" /></p>
+<p><img src="../img/letter-combinations-of-a-phone-number_1.png" /></p>
 
 <p><strong>Example:</strong></p>
 
