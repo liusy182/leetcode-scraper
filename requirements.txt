@@ -4,7 +4,9 @@ attrs==18.2.0
 Automat==0.7.0
 beautifulsoup4==4.7.1
 bs4==0.0.1
+certifi==2019.9.11
 cffi==1.11.5
+chardet==3.0.4
 constantly==15.1.0
 cryptography==2.4.2
 cssselect==1.0.3
@@ -25,6 +27,7 @@ pylint==2.2.2
 pymongo==3.7.2
 pyOpenSSL==18.0.0
 queuelib==1.5.0
+requests==2.22.0
 scapy==2.4.0
 Scrapy==1.5.1
 service-identity==18.1.0
@@ -32,6 +35,7 @@ six==1.12.0
 soupsieve==1.6.2
 Twisted==18.9.0
 typed-ast==1.1.1
+urllib3==1.25.6
 w3lib==1.19.0
 wrapt==1.10.11
 zope.interface==4.6.0

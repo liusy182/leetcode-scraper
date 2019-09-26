@@ -1,4 +1,10 @@
 
+import scrapy
+from scrapy.crawler import CrawlerRunner
+from scrapy.utils.project import get_project_settings
+from twisted.internet import reactor
+from lcscraper.spiders.solution import SolutionSpider
+from multiprocessing import Process, Queue
 import json
 import requests
 import subprocess
@@ -34,7 +40,7 @@ def get_all_questions():
 
 def download_all(all_questions):
     data_format = '{"operationName": "questionData", "variables": {"titleSlug": "%s"}, "query": "query questionData($titleSlug: String\u0021) {\\n  question(titleSlug: $titleSlug) {\\n    questionId\\n    questionFrontendId\\n    boundTopicId\\n    title\\n    titleSlug\\n    content\\n    translatedTitle\\n    translatedContent\\n    isPaidOnly\\n    difficulty\\n    likes\\n    dislikes\\n    isLiked\\n    similarQuestions\\n    langToValidPlayground\\n    topicTags {\\n      name\\n      slug\\n      translatedName\\n      __typename\\n    }\\n    companyTagStats\\n    codeSnippets {\\n      lang\\n      langSlug\\n      code\\n      __typename\\n    }\\n    stats\\n    hints\\n    solution {\\n      id\\n      canSeeDetail\\n      __typename\\n    }\\n    status\\n    sampleTestCase\\n    metaData\\n    judgerAvailable\\n    judgeType\\n    mysqlSchemas\\n    enableRunCode\\n    enableTestMode\\n    envInfo\\n    libraryUrl\\n    __typename\\n  }\\n}\\n"}'
-    for question in all_questions:
+    for question in all_questions[:10]:
         print('\n' + question['questionFrontendId'] + ' ' + question['title'])
         question_dir = os.path.join(
             result_dir, question['questionFrontendId'] + '.' + question['title']).replace(' ', '')
@@ -42,7 +48,7 @@ def download_all(all_questions):
             os.makedirs(question_dir)
 
         meta = download_question(question, question_dir)
-        download_solution(meta)
+        download_solution(meta, question_dir)
         
 
 def download_images(content, meta):
@@ -124,9 +130,30 @@ def download_question(question, question_dir):
     return meta
 
 
-def download_solution(meta):
-    if meta and meta['solution'] and meta['solution']['canSeeDetail']:
-        print('^^can see detail')
+def run_spider(spider, *args, **kwargs):
+    def f(q):
+        try:
+            runner = CrawlerRunner()
+            deferred = runner.crawl(spider, *args, **kwargs)
+            deferred.addBoth(lambda _: reactor.stop())
+            reactor.run()
+            q.put(None)
+        except Exception as e:
+            q.put(e)
+
+    q = Queue()
+    p = Process(target=f, args=(q,))
+    p.start()
+    result = q.get()
+    p.join()
+
+    if result is not None:
+        raise result
+
+def download_solution(meta, question_dir):
+    pass
+    # if meta and meta['solution'] and meta['solution']['canSeeDetail']:
+    #     run_spider(SolutionSpider, meta=meta, question_dir=question_dir)
 
 
 def translate_to_mobile():
