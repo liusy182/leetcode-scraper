@@ -21,8 +21,7 @@ class SolutionSpider(scrapy.Spider):
                     'output', question['id'] + '.' + question['title']).replace(' ', '')
 
                 yield scrapy.Request(
-                    # url='https://leetcode.com/articles/' + question['slug'] + '/',
-                    url='https://leetcode.com/problems/' + question['slug'] + '/solution/',
+                    url='https://leetcode.com/articles/' + question['slug'] + '/',
                     headers={
                         'accept-language': 'en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7'
                     },
@@ -37,8 +36,7 @@ class SolutionSpider(scrapy.Spider):
         question = response.meta['question']
         question_dir = response.meta['question_dir']
 
-        content = response.xpath('//*[@id="solution"]/div[2]/div[2]/div[1]').get()
-        # content = response.css('.article-body').get()
+        content = response.css('.article-body').get()
         if not content:
             return
         with open(os.path.join(question_dir, 'solution.md'), 'w') as f:
