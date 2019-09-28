@@ -30,7 +30,7 @@ def get_all_questions():
             'user-agent': user_agent,
             'content-type': 'application/json',
         },
-        data='{"operationName":"fetchQuestions","variables":{},"query":"query fetchQuestions {\\n  allQuestions {\\n    questionFrontendId\\n    title\\n    titleSlug\\n    __typename\\n  }\\n}\\n"}'
+        data='{"operationName":"fetchQuestions","variables":{},"query":"query fetchQuestions {\\n  allQuestions {\\n    questionFrontendId\\n    title\\n    titleSlug\\n    }\\n}\\n"}'
     )
     questions = res.json()['data']['allQuestions']
     with open(os.path.join(result_dir, 'all_questions.json'), 'w') as f:
@@ -39,7 +39,7 @@ def get_all_questions():
 
 
 def download_all(all_questions):
-    data_format = '{"operationName": "questionData", "variables": {"titleSlug": "%s"}, "query": "query questionData($titleSlug: String\u0021) {\\n  question(titleSlug: $titleSlug) {\\n    questionId\\n    questionFrontendId\\n    boundTopicId\\n    title\\n    titleSlug\\n    content\\n    translatedTitle\\n    translatedContent\\n    isPaidOnly\\n    difficulty\\n    likes\\n    dislikes\\n    isLiked\\n    similarQuestions\\n    langToValidPlayground\\n    topicTags {\\n      name\\n      slug\\n      translatedName\\n      __typename\\n    }\\n    companyTagStats\\n    codeSnippets {\\n      lang\\n      langSlug\\n      code\\n      __typename\\n    }\\n    stats\\n    hints\\n    solution {\\n      id\\n      canSeeDetail\\n      __typename\\n    }\\n    status\\n    sampleTestCase\\n    metaData\\n    judgerAvailable\\n    judgeType\\n    mysqlSchemas\\n    enableRunCode\\n    enableTestMode\\n    envInfo\\n    libraryUrl\\n    __typename\\n  }\\n}\\n"}'
+    data_format = '{"operationName": "questionData", "variables": {"titleSlug": "%s"}, "query": "query questionData($titleSlug: String\u0021) {\\n  question(titleSlug: $titleSlug) {\\n    questionId\\n    questionFrontendId\\n    boundTopicId\\n    title\\n    titleSlug\\n    content\\n    translatedTitle\\n    translatedContent\\n    isPaidOnly\\n    difficulty\\n    likes\\n    dislikes\\n    isLiked\\n    similarQuestions\\n    langToValidPlayground\\n    topicTags {\\n      name\\n      slug\\n      translatedName\\n      __typename\\n    }\\n    companyTagStats\\n    codeSnippets {\\n      lang\\n      langSlug\\n      code\\n      __typename\\n    }\\n    stats\\n    hints\\n    solution {\\n      id\\n      canSeeDetail\\n      }\\n    status\\n    sampleTestCase\\n    metaData\\n    judgerAvailable\\n    judgeType\\n    mysqlSchemas\\n    enableRunCode\\n    enableTestMode\\n    envInfo\\n    libraryUrl\\n    __typename\\n  }\\n}\\n"}'
     for question in all_questions[:10]:
         print('\n' + question['questionFrontendId'] + ' ' + question['title'])
         question_dir = os.path.join(
@@ -164,6 +164,10 @@ def translate_to_mobile():
             m = json.load(f)
             with open(file, 'r') as g:
                 m['content'] = g.read()
+            if os.path.exists(os.path.join(dirname, 'solution.md')):
+                with open(os.path.join(dirname, 'solution.md'), 'r') as g:
+                    m['solution']['content'] = g.read()
+                    del m['solution']['__typename']
 
             allcontent.append(m)
     
