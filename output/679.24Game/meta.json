@@ -11,7 +11,17 @@
   "solution": {
     "id": "247",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "vSR6aMjS": [
+      {
+        "code": "class Solution {\n    public boolean judgePoint24(int[] nums) {\n        ArrayList A = new ArrayList<Double>();\n        for (int v: nums) A.add((double) v);\n        return solve(A);\n    }\n    private boolean solve(ArrayList<Double> nums) {\n        if (nums.size() == 0) return false;\n        if (nums.size() == 1) return Math.abs(nums.get(0) - 24) < 1e-6;\n\n        for (int i = 0; i < nums.size(); i++) {\n            for (int j = 0; j < nums.size(); j++) {\n                if (i != j) {\n                    ArrayList<Double> nums2 = new ArrayList<Double>();\n                    for (int k = 0; k < nums.size(); k++) if (k != i && k != j) {\n                        nums2.add(nums.get(k));\n                    }\n                    for (int k = 0; k < 4; k++) {\n                        if (k < 2 && j > i) continue;\n                        if (k == 0) nums2.add(nums.get(i) + nums.get(j));\n                        if (k == 1) nums2.add(nums.get(i) * nums.get(j));\n                        if (k == 2) nums2.add(nums.get(i) - nums.get(j));\n                        if (k == 3) {\n                            if (nums.get(j) != 0) {\n                                nums2.add(nums.get(i) / nums.get(j));\n                            } else {\n                                continue;\n                            }\n                        }\n                        if (solve(nums2)) return true;\n                        nums2.remove(nums2.size() - 1);\n                    }\n                }\n            }\n        }\n        return false;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "from operator import truediv, mul, add, sub\n\nclass Solution(object):\n    def judgePoint24(self, A):\n        if not A: return False\n        if len(A) == 1: return abs(A[0] - 24) < 1e-6\n\n        for i in xrange(len(A)):\n            for j in xrange(len(A)):\n                if i != j:\n                    B = [A[k] for k in xrange(len(A)) if i != k != j]\n                    for op in (truediv, mul, add, sub):\n                        if (op is add or op is mul) and j > i: continue\n                        if op is not truediv or A[j]:\n                            B.append(op(A[i], A[j]))\n                            if self.judgePoint24(B): return True\n                            B.pop()\n        return False",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Depth-first Search"

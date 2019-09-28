@@ -11,7 +11,17 @@
   "solution": {
     "id": "599",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "z2pkvpLG": [
+      {
+        "code": "class Solution {\n    public int numUniqueEmails(String[] emails) {\n        Set<String> seen = new HashSet();\n        for (String email: emails) {\n            int i = email.indexOf('@');\n            String local = email.substring(0, i);\n            String rest = email.substring(i);\n            if (local.contains(\"+\")) {\n                local = local.substring(0, local.indexOf('+'));\n            }\n            local = local.replaceAll(\".\", \"\");\n            seen.add(local + rest);\n        }\n\n        return seen.size();\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def numUniqueEmails(self, emails):\n        seen = set()\n        for email in emails:\n            local, domain = email.split('@')\n            if '+' in local:\n                local = local[:local.index('+')]\n            seen.add(local.replace('.','') + '@' + domain)\n        return len(seen)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "String"

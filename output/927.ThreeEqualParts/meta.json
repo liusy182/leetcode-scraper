@@ -11,7 +11,17 @@
   "solution": {
     "id": "590",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "svqa2QF7": [
+      {
+        "code": "class Solution {\n    public int[] threeEqualParts(int[] A) {\n        int[] IMP = new int[]{-1, -1};\n        int N = A.length;\n\n        int S = 0;\n        for (int x: A) S += x;\n        if (S % 3 != 0) return IMP;\n        int T = S / 3;\n        if (T == 0)\n            return new int[]{0, N - 1};\n\n        int i1 = -1, j1 = -1, i2 = -1, j2 = -1, i3 = -1, j3 = -1;\n        int su = 0;\n        for (int i = 0; i < N; ++i) {\n            if (A[i] == 1) {\n                su += 1;\n                if (su == 1) i1 = i;\n                if (su == T) j1 = i;\n                if (su == T+1) i2 = i;\n                if (su == 2*T) j2 = i;\n                if (su == 2*T + 1) i3 = i;\n                if (su == 3*T) j3 = i;\n            }\n        }\n\n        // The array is in the form W [i1, j1] X [i2, j2] Y [i3, j3] Z\n        // where [i1, j1] is a block of 1s, etc.\n        int[] part1 = Arrays.copyOfRange(A, i1, j1+1);\n        int[] part2 = Arrays.copyOfRange(A, i2, j2+1);\n        int[] part3 = Arrays.copyOfRange(A, i3, j3+1);\n\n        if (!Arrays.equals(part1, part2)) return IMP;\n        if (!Arrays.equals(part1, part3)) return IMP;\n\n        // x, y, z: the number of zeros after part 1, 2, 3\n        int x = i2 - j1 - 1;\n        int y = i3 - j2 - 1;\n        int z = A.length - j3 - 1;\n\n        if (x < z || y < z) return IMP;\n        return new int[]{j1+z, j2+z+1};\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def threeEqualParts(self, A):\n        IMP = [-1, -1]\n\n        S = sum(A)\n        if S % 3: return IMP\n        T = S / 3\n        if T == 0:\n            return [0, len(A) - 1]\n\n        breaks = []\n        su = 0\n        for i, x in enumerate(A):\n            if x:\n                su += x\n                if su in {1, T+1, 2*T+1}:\n                    breaks.append(i)\n                if su in {T, 2*T, 3*T}:\n                    breaks.append(i)\n\n        i1, j1, i2, j2, i3, j3 = breaks\n\n        # The array is in the form W [i1, j1] X [i2, j2] Y [i3, j3] Z\n        # where [i1, j1] is a block of 1s, etc.\n        if not(A[i1:j1+1] == A[i2:j2+1] == A[i3:j3+1]):\n            return [-1,-1]\n\n        # x, y, z: the number of zeros after part 1, 2, 3\n        x = i2 - j1 - 1\n        y = i3 - j2 - 1\n        z = len(A) - j3 - 1\n\n        if x < z or y < z: return IMP\n        j1 += z\n        j2 += z\n        return [j1, j2+1]",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math",

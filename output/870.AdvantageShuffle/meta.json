@@ -11,7 +11,17 @@
   "solution": {
     "id": "507",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "GJdLmnhx": [
+      {
+        "code": "class Solution {\n    public int[] advantageCount(int[] A, int[] B) {\n        int[] sortedA = A.clone();\n        Arrays.sort(sortedA);\n        int[] sortedB = B.clone();\n        Arrays.sort(sortedB);\n\n        // assigned[b] = list of a that are assigned to beat b\n        Map<Integer, Deque<Integer>> assigned = new HashMap();\n        for (int b: B) assigned.put(b, new LinkedList());\n\n        // remaining = list of a that are not assigned to any b\n        Deque<Integer> remaining = new LinkedList();\n\n        // populate (assigned, remaining) appropriately\n        // sortedB[j] is always the smallest unassigned element in B\n        int j = 0;\n        for (int a: sortedA) {\n            if (a > sortedB[j]) {\n                assigned.get(sortedB[j++]).add(a);\n            } else {\n                remaining.add(a);\n            }\n        }\n\n        // Reconstruct the answer from annotations (assigned, remaining)\n        int[] ans = new int[B.length];\n        for (int i = 0; i < B.length; ++i) {\n            // if there is some a assigned to b...\n            if (assigned.get(B[i]).size() > 0)\n                ans[i] = assigned.get(B[i]).pop();\n            else\n                ans[i] = remaining.pop();\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def advantageCount(self, A, B):\n        sortedA = sorted(A)\n        sortedB = sorted(B)\n\n        # assigned[b] = list of a that are assigned to beat b\n        # remaining = list of a that are not assigned to any b\n        assigned = {b: [] for b in B}\n        remaining = []\n\n        # populate (assigned, remaining) appropriately\n        # sortedB[j] is always the smallest unassigned element in B\n        j = 0\n        for a in sortedA:\n            if a > sortedB[j]:\n                assigned[sortedB[j]].append(a)\n                j += 1\n            else:\n                remaining.append(a)\n\n        # Reconstruct the answer from annotations (assigned, remaining)\n        return [assigned[b].pop() if assigned[b] else remaining.pop()\n                for b in B]",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array",

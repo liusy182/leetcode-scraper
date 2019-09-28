@@ -11,7 +11,19 @@
   "solution": {
     "id": "230",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "y5jtZgJj": [
+      {
+        "code": "int getMaxRepetitions(string s1, int n1, string s2, int n2)\n{\n    int index = 0, repeat_count = 0;\n    int s1_size = s1.size(), s2_size = s2.size();\n    for (int i = 0; i < n1; i++) {\n        for (int j = 0; j < s1_size; j++) {\n            if (s1[j] == s2[index])\n                ++index;\n            if (index == s2_size) {\n                index = 0;\n                ++repeat_count;\n            }\n        }\n    }\n    return repeat_count / n2;\n}",
+        "langSlug": "cpp"
+      }
+    ],
+    "2UJEXG8V": [
+      {
+        "code": "int getMaxRepetitions(string s1, int n1, string s2, int n2)\n{\n    if (n1 == 0)\n        return 0;\n    int indexr[s2.size() + 1] = { 0 }; // index at start of each s1 block\n    int countr[s2.size() + 1] = { 0 }; // count of repititions till the present s1 block\n    int index = 0, count = 0;\n    for (int i = 0; i < n1; i++) {\n        for (int j = 0; j < s1.size(); j++) {\n            if (s1[j] == s2[index])\n                ++index;\n            if (index == s2.size()) {\n                index = 0;\n                ++count;\n            }\n        }\n        countr[i] = count;\n        indexr[i] = index;\n        for (int k = 0; k < i; k++) {\n            if (indexr[k] == index) {\n                int prev_count = countr[k];\n                int pattern_count = (countr[i] - countr[k]) * (n1 - 1 - k) / (i - k);\n                int remain_count = countr[k + (n1 - 1 - k) % (i - k)] - countr[k];\n                return (prev_count + pattern_count + remain_count) / n2;\n            }\n        }\n    }\n    return countr[n1 - 1] / n2;\n}",
+        "langSlug": "cpp"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming"

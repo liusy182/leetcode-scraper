@@ -11,7 +11,19 @@
   "solution": {
     "id": "220",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "RqRjdFmv": [
+      {
+        "code": "public class Solution {\n    public int[] exclusiveTime(int n, List < String > logs) {\n        Stack < Integer > stack = new Stack < > ();\n        int[] res = new int[n];\n        String[] s = logs.get(0).split(\":\");\n        stack.push(Integer.parseInt(s[0]));\n        int i = 1, time = Integer.parseInt(s[2]);\n        while (i < logs.size()) {\n            s = logs.get(i).split(\":\");\n            while (time < Integer.parseInt(s[2])) {\n                res[stack.peek()]++;\n                time++;\n            }\n            if (s[1].equals(\"start\"))\n                stack.push(Integer.parseInt(s[0]));\n            else {\n                res[stack.peek()]++;\n                time++;\n                stack.pop();\n            }\n            i++;\n        }\n        return res;\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ],
+    "rZkuT7RU": [
+      {
+        "code": "public class Solution {\n    public int[] exclusiveTime(int n, List < String > logs) {\n        Stack < Integer > stack = new Stack < > ();\n        int[] res = new int[n];\n        String[] s = logs.get(0).split(\":\");\n        stack.push(Integer.parseInt(s[0]));\n        int i = 1, prev = Integer.parseInt(s[2]);\n        while (i < logs.size()) {\n            s = logs.get(i).split(\":\");\n            if (s[1].equals(\"start\")) {\n                if (!stack.isEmpty())\n                    res[stack.peek()] += Integer.parseInt(s[2]) - prev;\n                stack.push(Integer.parseInt(s[0]));\n                prev = Integer.parseInt(s[2]);\n            } else {\n                res[stack.peek()] += Integer.parseInt(s[2]) - prev + 1;\n                stack.pop();\n                prev = Integer.parseInt(s[2]) + 1;\n            }\n            i++;\n        }\n        return res;\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Stack"

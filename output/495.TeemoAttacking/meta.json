@@ -11,7 +11,17 @@
   "solution": {
     "id": "752",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "gz6gYdPv": [
+      {
+        "code": "class Solution {\n  public int findPoisonedDuration(int[] timeSeries, int duration) {\n    int n = timeSeries.length;\n    if (n == 0) return 0;\n\n    int total = 0;\n    for(int i = 0; i < n - 1; ++i)\n      total += Math.min(timeSeries[i + 1] - timeSeries[i], duration);\n    return total + duration;\n  }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def findPoisonedDuration(self, timeSeries: List[int], duration: int) -> int:\n        n = len(timeSeries)\n        if n == 0:\n            return 0\n        \n        total = 0\n        for i in range(n - 1):\n            total += min(timeSeries[i + 1] - timeSeries[i], duration)\n        return total + duration",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array"

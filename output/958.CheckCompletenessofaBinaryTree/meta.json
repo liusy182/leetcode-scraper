@@ -11,7 +11,17 @@
   "solution": {
     "id": "642",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "JXyfvuSS": [
+      {
+        "code": "class Solution {\n    public boolean isCompleteTree(TreeNode root) {\n        List<ANode> nodes = new ArrayList();\n        nodes.add(new ANode(root, 1));\n        int i = 0;\n        while (i < nodes.size()) {\n            ANode anode = nodes.get(i++);\n            if (anode.node != null) {\n                nodes.add(new ANode(anode.node.left, anode.code * 2));\n                nodes.add(new ANode(anode.node.right, anode.code * 2 + 1));\n            }\n        }\n\n        return nodes.get(i-1).code == nodes.size();\n    }\n}\n\nclass ANode {  // Annotated Node\n    TreeNode node;\n    int code;\n    ANode(TreeNode node, int code) {\n        this.node = node;\n        this.code = code;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def isCompleteTree(self, root):\n        nodes = [(root, 1)]\n        i = 0\n        while i < len(nodes):\n            node, v = nodes[i]\n            i += 1\n            if node:\n                nodes.append((node.left, 2*v))\n                nodes.append((node.right, 2*v+1))\n\n        return  nodes[-1][1] == len(nodes)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree"

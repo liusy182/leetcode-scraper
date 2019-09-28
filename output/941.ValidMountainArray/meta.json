@@ -11,7 +11,17 @@
   "solution": {
     "id": "621",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "yszb4GTC": [
+      {
+        "code": "class Solution {\n    public boolean validMountainArray(int[] A) {\n        int N = A.length;\n        int i = 0;\n\n        // walk up\n        while (i+1 < N && A[i] < A[i+1])\n            i++;\n\n        // peak can't be first or last\n        if (i == 0 || i == N-1)\n            return false;\n\n        // walk down\n        while (i+1 < N && A[i] > A[i+1])\n            i++;\n\n        return i == N-1;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def validMountainArray(self, A):\n        N = len(A)\n        i = 0\n\n        # walk up\n        while i+1 < N and A[i] < A[i+1]:\n            i += 1\n\n        # peak can't be first or last\n        if i == 0 or i == N-1:\n            return False\n\n        # walk down\n        while i+1 < N and A[i] > A[i+1]:\n            i += 1\n\n        return i == N-1",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array"

@@ -11,7 +11,19 @@
   "solution": {
     "id": "51",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "enjmphvG": [
+      {
+        "code": "public class Solution {\n    public int maxProfit(int prices[]) {\n        int maxprofit = 0;\n        for (int i = 0; i < prices.length - 1; i++) {\n            for (int j = i + 1; j < prices.length; j++) {\n                int profit = prices[j] - prices[i];\n                if (profit > maxprofit)\n                    maxprofit = profit;\n            }\n        }\n        return maxprofit;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "G8wkXsyB": [
+      {
+        "code": "public class Solution {\n    public int maxProfit(int prices[]) {\n        int minprice = Integer.MAX_VALUE;\n        int maxprofit = 0;\n        for (int i = 0; i < prices.length; i++) {\n            if (prices[i] < minprice)\n                minprice = prices[i];\n            else if (prices[i] - minprice > maxprofit)\n                maxprofit = prices[i] - minprice;\n        }\n        return maxprofit;\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Array",

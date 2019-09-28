@@ -11,7 +11,17 @@
   "solution": {
     "id": "365",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "w4QM4e3U": [
+      {
+        "code": "class Solution {\n    public int intersectionSizeTwo(int[][] intervals) {\n        Arrays.sort(intervals, (a, b) ->\n                    a[0] != b[0] ? a[0]-b[0] : b[1]-a[1]);\n        int[] todo = new int[intervals.length];\n        Arrays.fill(todo, 2);\n        int ans = 0, t = intervals.length;\n        while (--t >= 0) {\n            int s = intervals[t][0];\n            int e = intervals[t][1];\n            int m = todo[t];\n            for (int p = s; p < s+m; ++p) {\n                for (int i = 0; i <= t; ++i)\n                    if (todo[i] > 0 && p <= intervals[i][1])\n                        todo[i]--;\n                ans++;\n            }\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def intersectionSizeTwo(self, intervals):\n        intervals.sort(key = lambda (s, e): (s, -e))\n        todo = [2] * len(intervals)\n        ans = 0\n        while intervals:\n            (s, e), t = intervals.pop(), todo.pop()\n            for p in xrange(s, s+t):\n                for i, (s0, e0) in enumerate(intervals):\n                    if todo[i] and p <= e0:\n                        todo[i] -= 1\n                ans += 1\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Greedy"

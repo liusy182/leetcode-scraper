@@ -11,7 +11,27 @@
   "solution": {
     "id": "647",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "Xu4ee6QT": [
+      {
+        "code": "class Solution {\n    public int repeatedNTimes(int[] A) {\n        Map<Integer, Integer> count = new HashMap();\n        for (int x: A) {\n            count.put(x, count.getOrDefault(x, 0) + 1);\n        }\n\n        for (int k: count.keySet())\n            if (count.get(k) > 1)\n                return k;\n\n        throw null;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def repeatedNTimes(self, A):\n        count = collections.Counter(A)\n        for k in count:\n            if count[k] > 1:\n                return k",
+        "langSlug": "python"
+      }
+    ],
+    "9URvAsjC": [
+      {
+        "code": "class Solution {\n    public int repeatedNTimes(int[] A) {\n        for (int k = 1; k <= 3; ++k)\n            for (int i = 0; i < A.length - k; ++i)\n                if (A[i] == A[i+k])\n                    return A[i];\n\n        throw null;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def repeatedNTimes(self, A):\n        for k in xrange(1, 4):\n            for i in xrange(len(A) - k):\n                if A[i] == A[i+k]:\n                    return A[i]",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table"

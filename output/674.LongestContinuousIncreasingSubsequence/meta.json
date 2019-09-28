@@ -11,7 +11,17 @@
   "solution": {
     "id": "278",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "AvR7oHwg": [
+      {
+        "code": "class Solution {\n    public int findLengthOfLCIS(int[] nums) {\n        int ans = 0, anchor = 0;\n        for (int i = 0; i < nums.length; ++i) {\n            if (i > 0 && nums[i-1] >= nums[i]) anchor = i;\n            ans = Math.max(ans, i - anchor + 1);\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def findLengthOfLCIS(self, nums):\n        ans = anchor = 0\n        for i in range(len(nums)):\n            if i and nums[i-1] >= nums[i]: anchor = i\n            ans = max(ans, i - anchor + 1)\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array"

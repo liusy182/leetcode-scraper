@@ -11,7 +11,27 @@
   "solution": {
     "id": "624",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "hDLTpYAB": [
+      {
+        "code": "class Solution {\n    public int minIncrementForUnique(int[] A) {\n        int[] count = new int[100000];\n        for (int x: A) count[x]++;\n\n        int ans = 0, taken = 0;\n\n        for (int x = 0; x < 100000; ++x) {\n            if (count[x] >= 2) {\n                taken += count[x] - 1;\n                ans -= x * (count[x] - 1);\n            }\n            else if (taken > 0 && count[x] == 0) {\n                taken--;\n                ans += x;\n            }\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def minIncrementForUnique(self, A):\n        count = collections.Counter(A)\n        taken = []\n\n        ans = 0\n        for x in xrange(100000):\n            if count[x] >= 2:\n                taken.extend([x] * (count[x] - 1))\n            elif taken and count[x] == 0:\n                ans += x - taken.pop()\n        return ans",
+        "langSlug": "python"
+      }
+    ],
+    "P7fCXnrT": [
+      {
+        "code": "class Solution {\n    public int minIncrementForUnique(int[] A) {\n        Arrays.sort(A);\n        int ans = 0, taken = 0;\n\n        for (int i = 1; i < A.length; ++i) {\n            if (A[i-1] == A[i]) {\n                taken++;\n                ans -= A[i];\n            } else {\n                int give = Math.min(taken, A[i] - A[i-1] - 1);\n                ans += give * (give + 1) / 2 + give * A[i-1];\n                taken -= give;\n            }\n        }\n\n        if (A.length > 0)\n            ans += taken * (taken + 1) / 2 + taken * A[A.length - 1];\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def minIncrementForUnique(self, A):\n        A.sort()\n        A.append(100000)\n        ans = taken = 0\n\n        for i in xrange(1, len(A)):\n            if A[i-1] == A[i]:\n                taken += 1\n                ans -= A[i]\n            else:\n                give = min(taken, A[i] - A[i-1] - 1)\n                ans += give * (give + 1) / 2 + give * A[i-1]\n                taken -= give\n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array"

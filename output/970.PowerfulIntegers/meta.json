@@ -11,7 +11,17 @@
   "solution": {
     "id": "659",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "tmg2tZvM": [
+      {
+        "code": "class Solution {\n    public List<Integer> powerfulIntegers(int x, int y, int bound) {\n        Set<Integer> seen = new HashSet();\n        for (int i = 0; i < 18 && Math.pow(x, i) <= bound; ++i)\n            for (int j = 0; j < 18 && Math.pow(y, j) <= bound; ++j) {\n                int v = (int) Math.pow(x, i) + (int) Math.pow(y, j);\n                if (v <= bound)\n                    seen.add(v);\n            }\n\n        return new ArrayList(seen);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object): \n    def powerfulIntegers(self, x, y, bound):\n        ans = set()\n        # 2**18 > bound\n        for i in xrange(18):\n            for j in xrange(18):\n                v = x**i + y**j\n                if v <= bound:\n                    ans.add(v)\n        return list(ans)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table",

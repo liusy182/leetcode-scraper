@@ -11,7 +11,37 @@
   "solution": {
     "id": "280",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "puxLaX5E": [
+      {
+        "code": "class Solution {\n    private boolean arrayContains(int[] arr, int num) {\n        for (int i = 0; i < arr.length; i++) {\n            if (arr[i] == num) {\n                return true;\n            }\n        }\n\n        return false;\n    }\n    public int longestConsecutive(int[] nums) {\n        int longestStreak = 0;\n\n        for (int num : nums) {\n            int currentNum = num;\n            int currentStreak = 1;\n\n            while (arrayContains(nums, currentNum + 1)) {\n                currentNum += 1;\n                currentStreak += 1;\n            }\n\n            longestStreak = Math.max(longestStreak, currentStreak);\n        }\n\n        return longestStreak;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def longestConsecutive(self, nums):\n        longest_streak = 0\n\n        for num in nums:\n            current_num = num\n            current_streak = 1\n\n            while current_num + 1 in nums:\n                current_num += 1\n                current_streak += 1\n\n            longest_streak = max(longest_streak, current_streak)\n\n        return longest_streak",
+        "langSlug": "python"
+      }
+    ],
+    "M9Rxw5qk": [
+      {
+        "code": "class Solution {\n    public int longestConsecutive(int[] nums) {\n        if (nums.length == 0) {\n            return 0;\n        }\n\n        Arrays.sort(nums);\n\n        int longestStreak = 1;\n        int currentStreak = 1;\n\n        for (int i = 1; i < nums.length; i++) {\n            if (nums[i] != nums[i-1]) {\n                if (nums[i] == nums[i-1]+1) {\n                    currentStreak += 1;\n                }\n                else {\n                    longestStreak = Math.max(longestStreak, currentStreak);\n                    currentStreak = 1;\n                }\n            }\n        }\n\n        return Math.max(longestStreak, currentStreak);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def longestConsecutive(self, nums):\n        if not nums:\n            return 0\n\n        nums.sort()\n\n        longest_streak = 1\n        current_streak = 1\n\n        for i in range(1, len(nums)):\n            if nums[i] != nums[i-1]:\n                if nums[i] == nums[i-1]+1:\n                    current_streak += 1\n                else:\n                    longest_streak = max(longest_streak, current_streak)\n                    current_streak = 1\n\n        return max(longest_streak, current_streak)",
+        "langSlug": "python"
+      }
+    ],
+    "KbUGJ84k": [
+      {
+        "code": "class Solution {\n    public int longestConsecutive(int[] nums) {\n        Set<Integer> num_set = new HashSet<Integer>();\n        for (int num : nums) {\n            num_set.add(num);\n        }\n\n        int longestStreak = 0;\n\n        for (int num : num_set) {\n            if (!num_set.contains(num-1)) {\n                int currentNum = num;\n                int currentStreak = 1;\n\n                while (num_set.contains(currentNum+1)) {\n                    currentNum += 1;\n                    currentStreak += 1;\n                }\n\n                longestStreak = Math.max(longestStreak, currentStreak);\n            }\n        }\n\n        return longestStreak;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def longestConsecutive(self, nums):\n        longest_streak = 0\n        num_set = set(nums)\n\n        for num in num_set:\n            if num - 1 not in num_set:\n                current_num = num\n                current_streak = 1\n\n                while current_num + 1 in num_set:\n                    current_num += 1\n                    current_streak += 1\n\n                longest_streak = max(longest_streak, current_streak)\n\n        return longest_streak",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array",

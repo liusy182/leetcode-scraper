@@ -11,7 +11,13 @@
   "solution": {
     "id": "58",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "tJPs3ERV": [
+      {
+        "code": "public class Solution {\n    public void nextPermutation(int[] nums) {\n        int i = nums.length - 2;\n        while (i >= 0 && nums[i + 1] <= nums[i]) {\n            i--;\n        }\n        if (i >= 0) {\n            int j = nums.length - 1;\n            while (j >= 0 && nums[j] <= nums[i]) {\n                j--;\n            }\n            swap(nums, i, j);\n        }\n        reverse(nums, i + 1);\n    }\n\n    private void reverse(int[] nums, int start) {\n        int i = start, j = nums.length - 1;\n        while (i < j) {\n            swap(nums, i, j);\n            i++;\n            j--;\n        }\n    }\n\n    private void swap(int[] nums, int i, int j) {\n        int temp = nums[i];\n        nums[i] = nums[j];\n        nums[j] = temp;\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Array"

@@ -11,7 +11,19 @@
   "solution": {
     "id": "196",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "5qsPscf9": [
+      {
+        "code": "\npublic class Solution {\n    public String coeff(String x) {\n        if (x.length() > 1 && x.charAt(x.length() - 2) >= '0' && x.charAt(x.length() - 2) <= '9')\n            return x.replace(\"x\", \"\");\n        return x.replace(\"x\", \"1\");\n    }\n    public String solveEquation(String equation) {\n        String[] lr = equation.split(\"=\");\n        int lhs = 0, rhs = 0;\n        for (String x: breakIt(lr[0])) {\n            if (x.indexOf(\"x\") >= 0) {\n                lhs += Integer.parseInt(coeff(x));\n            } else\n                rhs -= Integer.parseInt(x);\n        }\n        for (String x: breakIt(lr[1])) {\n            if (x.indexOf(\"x\") >= 0)\n                lhs -= Integer.parseInt(coeff(x));\n            else\n                rhs += Integer.parseInt(x);\n        }\n        if (lhs == 0) {\n            if (rhs == 0)\n                return \"Infinite solutions\";\n            else\n                return \"No solution\";\n        }\n        return \"x=\" + rhs / lhs;\n    }\n    public List < String > breakIt(String s) {\n        List < String > res = new ArrayList < > ();\n        String r = \"\";\n        for (int i = 0; i < s.length(); i++) {\n            if (s.charAt(i) == '+' || s.charAt(i) == '-') {\n                if (r.length() > 0)\n                    res.add(r);\n                r = \"\" + s.charAt(i);\n            } else\n                r += s.charAt(i);\n        }\n        res.add(r);\n        return res;\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ],
+    "9JbHjYgz": [
+      {
+        "code": "\npublic class Solution {\n    public String coeff(String x) {\n        if (x.length() > 1 && x.charAt(x.length() - 2) >= '0' && x.charAt(x.length() - 2) <= '9')\n            return x.replace(\"x\", \"\");\n        return x.replace(\"x\", \"1\");\n    }\n    public String solveEquation(String equation) {\n        String[] lr = equation.split(\"=\");\n        int lhs = 0, rhs = 0;\n        for (String x: lr[0].split(\"(?=\\\\+)|(?=-)\")) {\n            if (x.indexOf(\"x\") >= 0) {\n\n                lhs += Integer.parseInt(coeff(x));\n            } else\n                rhs -= Integer.parseInt(x);\n        }\n        for (String x: lr[1].split(\"(?=\\\\+)|(?=-)\")) {\n            if (x.indexOf(\"x\") >= 0)\n                lhs -= Integer.parseInt(coeff(x));\n            else\n                rhs += Integer.parseInt(x);\n        }\n        if (lhs == 0) {\n            if (rhs == 0)\n                return \"Infinite solutions\";\n            else\n                return \"No solution\";\n        } else\n            return \"x=\" + rhs / lhs;\n    }\n}\n\n",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Math"

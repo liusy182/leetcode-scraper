@@ -11,7 +11,35 @@
   "solution": {
     "id": "512",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "HWTGNbV2": [
+      {
+        "code": "class Solution {\npublic:\n    int lenLongestFibSubseq(vector<int>& A) {\n        int N = A.size();\n        unordered_set<int> S(A.begin(), A.end());\n\n        int ans = 0;\n        for (int i = 0; i < N; ++i)\n            for (int j = i+1; j < N; ++j) {\n                /* With the starting pair (A[i], A[j]),\n                 * y represents the future expected value in\n                 * the fibonacci subsequence, and x represents\n                 * the most current value found. */\n                int x = A[j], y = A[i] + A[j];\n                int length = 2;\n                while (S.find(y) != S.end()) {\n                    int z = x + y;\n                    x = y;\n                    y = z;\n                    ans = max(ans, ++length);\n                }\n            }\n\n        return ans >= 3 ? ans : 0;\n    }\n};",
+        "langSlug": "cpp"
+      },
+      {
+        "code": "class Solution {\n    public int lenLongestFibSubseq(int[] A) {\n        int N = A.length;\n        Set<Integer> S = new HashSet();\n        for (int x: A) S.add(x);\n\n        int ans = 0;\n        for (int i = 0; i < N; ++i)\n            for (int j = i+1; j < N; ++j) {\n                /* With the starting pair (A[i], A[j]),\n                 * y represents the future expected value in\n                 * the fibonacci subsequence, and x represents\n                 * the most current value found. */\n                int x = A[j], y = A[i] + A[j];\n                int length = 2;\n                while (S.contains(y)) {\n                    // x, y -> y, x+y\n                    int tmp = y;\n                    y += x;\n                    x = tmp;\n                    ans = Math.max(ans, ++length);\n                }\n            }\n\n        return ans >= 3 ? ans : 0;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def lenLongestFibSubseq(self, A):\n        S = set(A)\n        ans = 0\n        for i in xrange(len(A)):\n            for j in xrange(i+1, len(A)):\n                \"\"\"\n                With the starting pair (A[i], A[j]),\n                y represents the future expected value in\n                the fibonacci subsequence, and x represents\n                the most current value found.\n                \"\"\"\n                x, y = A[j], A[i] + A[j]\n                length = 2\n                while y in S:\n                    x, y = y, x + y\n                    length += 1\n                ans = max(ans, length)\n        return ans if ans >= 3 else 0",
+        "langSlug": "python"
+      }
+    ],
+    "vEtztLgc": [
+      {
+        "code": "class Solution {\npublic:\n    int lenLongestFibSubseq(vector<int>& A) {\n        int N = A.size();\n        unordered_map<int, int> index;\n        for (int i = 0; i < N; ++i)\n            index[A[i]] = i;\n\n        unordered_map<int, int> longest;\n        int ans = 0;\n        for (int k = 0; k < N; ++k)\n            for (int j = 0; j < k; ++j) {\n                if (A[k] - A[j] < A[j] && index.count(A[k] - A[j])) {\n                    int i = index[A[k] - A[j]];\n                    longest[j * N + k] = longest[i * N + j] + 1;\n                    ans = max(ans, longest[j * N + k] + 2);\n                }\n            }\n\n        return ans >= 3 ? ans : 0;\n    }\n};",
+        "langSlug": "cpp"
+      },
+      {
+        "code": "class Solution {\n    public int lenLongestFibSubseq(int[] A) {\n        int N = A.length;\n        Map<Integer, Integer> index = new HashMap();\n        for (int i = 0; i < N; ++i)\n            index.put(A[i], i);\n\n        Map<Integer, Integer> longest = new HashMap();\n        int ans = 0;\n\n        for (int k = 0; k < N; ++k)\n            for (int j = 0; j < k; ++j) {\n                int i = index.getOrDefault(A[k] - A[j], -1);\n                if (i >= 0 && i < j) {\n                    // Encoding tuple (i, j) as integer (i * N + j)\n                    int cand = longest.getOrDefault(i * N + j, 2) + 1;\n                    longest.put(j * N + k, cand);\n                    ans = Math.max(ans, cand);\n                }\n            }\n\n        return ans >= 3 ? ans : 0;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def lenLongestFibSubseq(self, A):\n        index = {x: i for i, x in enumerate(A)}\n        longest = collections.defaultdict(lambda: 2)\n\n        ans = 0\n        for k, z in enumerate(A):\n            for j in xrange(k):\n                i = index.get(z - A[j], None)\n                if i is not None and i < j:\n                    cand = longest[j, k] = longest[i, j] + 1\n                    ans = max(ans, cand)\n\n        return ans if ans >= 3 else 0",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array",

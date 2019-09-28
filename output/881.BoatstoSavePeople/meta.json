@@ -11,7 +11,21 @@
   "solution": {
     "id": "525",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "Vy4ovfs7": [
+      {
+        "code": "class Solution {\npublic:\n    int numRescueBoats(vector<int>& people, int limit) {\n        sort(people.begin(), people.end());\n        int i = 0, j = people.size() - 1;\n        int ans = 0;\n\n        while (i <= j) {\n            ans++;\n            if (people[i] + people[j] <= limit)\n                i++;\n            j--;\n        }\n\n        return ans;\n    }\n};",
+        "langSlug": "cpp"
+      },
+      {
+        "code": "class Solution {\n    public int numRescueBoats(int[] people, int limit) {\n        Arrays.sort(people);\n        int i = 0, j = people.length - 1;\n        int ans = 0;\n\n        while (i <= j) {\n            ans++;\n            if (people[i] + people[j] <= limit)\n                i++;\n            j--;\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def numRescueBoats(self, people, limit):\n        people.sort()\n        i, j = 0, len(people) - 1\n        ans = 0\n        while i <= j:\n            ans += 1\n            if people[i] + people[j] <= limit:\n                i += 1\n            j -= 1\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Two Pointers",

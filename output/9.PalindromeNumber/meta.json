@@ -13,7 +13,13 @@
   "solution": {
     "id": "233",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "A2cW8TnM": [
+      {
+        "code": "public class Solution {\n    public bool IsPalindrome(int x) {\n        // Special cases:\n        // As discussed above, when x < 0, x is not a palindrome.\n        // Also if the last digit of the number is 0, in order to be a palindrome,\n        // the first digit of the number also needs to be 0.\n        // Only 0 satisfy this property.\n        if(x < 0 || (x % 10 == 0 && x != 0)) {\n            return false;\n        }\n\n        int revertedNumber = 0;\n        while(x > revertedNumber) {\n            revertedNumber = revertedNumber * 10 + x % 10;\n            x /= 10;\n        }\n\n        // When the length is an odd number, we can get rid of the middle digit by revertedNumber/10\n        // For example when the input is 12321, at the end of the while loop we get x = 12, revertedNumber = 123,\n        // since the middle digit doesn't matter in palidrome(it will always equal to itself), we can simply get rid of it.\n        return x == revertedNumber || x == revertedNumber/10;\n    }\n}",
+        "langSlug": "csharp"
+      }
+    ]
   },
   "topicTags": [
     "Math"

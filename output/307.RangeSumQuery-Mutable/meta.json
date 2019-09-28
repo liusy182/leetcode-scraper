@@ -11,7 +11,37 @@
   "solution": {
     "id": "29",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "nzt96HJe": [
+      {
+        "code": "private int[] nums;\npublic int sumRange(int i, int j) {\n    int sum = 0;\n    for (int l = i; l <= j; l++) {\n        sum += data[l];\n    }\n    return sum;\n}\n\npublic int update(int i, int val) {\n    nums[i] = val;\n}\n// Time Limit Exceeded",
+        "langSlug": "java"
+      }
+    ],
+    "MViGYc5D": [
+      {
+        "code": "private int[] b;\nprivate int len;\nprivate int[] nums;\n\npublic NumArray(int[] nums) {\n    this.nums = nums;\n    double l = Math.sqrt(nums.length);\n    len = (int) Math.ceil(nums.length/l);\n    b = new int [len];\n    for (int i = 0; i < nums.length; i++)\n        b[i / len] += nums[i];\n}\n\npublic int sumRange(int i, int j) {\n    int sum = 0;\n    int startBlock = i / len;\n    int endBlock = j / len;\n    if (startBlock == endBlock) {\n        for (int k = i; k <= j; k++)\n            sum += nums[k];\n    } else {\n        for (int k = i; k <= (startBlock + 1) * len - 1; k++)\n            sum += nums[k];\n        for (int k = startBlock + 1; k <= endBlock - 1; k++)\n            sum += b[k];\n        for (int k = endBlock * len; k <= j; k++)\n            sum += nums[k];\n    }\n    return sum;\n}\n\npublic void update(int i, int val) {\n    int b_l = i / len;\n    b[b_l] = b[b_l] - nums[i] + val;\n    nums[i] = val;\n}\n// Accepted",
+        "langSlug": "java"
+      }
+    ],
+    "EnAGDmuY": [
+      {
+        "code": "int[] tree;\nint n;\npublic NumArray(int[] nums) {\n    if (nums.length > 0) {\n        n = nums.length;\n        tree = new int[n * 2];\n        buildTree(nums);\n    }\n}\nprivate void buildTree(int[] nums) {\n    for (int i = n, j = 0;  i < 2 * n; i++,  j++)\n        tree[i] = nums[j];\n    for (int i = n - 1; i > 0; --i)\n        tree[i] = tree[i * 2] + tree[i * 2 + 1];\n}",
+        "langSlug": "java"
+      }
+    ],
+    "SyzW2D6T": [
+      {
+        "code": "void update(int pos, int val) {\n    pos += n;\n    tree[pos] = val;\n    while (pos > 0) {\n        int left = pos;\n        int right = pos;\n        if (pos % 2 == 0) {\n            right = pos + 1;\n        } else {\n            left = pos - 1;\n        }\n        // parent is updated after child is updated\n        tree[pos / 2] = tree[left] + tree[right];\n        pos /= 2;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "Vfdts4QK": [
+      {
+        "code": "public int sumRange(int l, int r) {\n    // get leaf with value 'l'\n    l += n;\n    // get leaf with value 'r'\n    r += n;\n    int sum = 0;\n    while (l <= r) {\n        if ((l % 2) == 1) {\n           sum += tree[l];\n           l++;\n        }\n        if ((r % 2) == 0) {\n           sum += tree[r];\n           r--;\n        }\n        l /= 2;\n        r /= 2;\n    }\n    return sum;\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Binary Indexed Tree",

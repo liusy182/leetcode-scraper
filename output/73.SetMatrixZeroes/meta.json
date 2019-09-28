@@ -16,7 +16,37 @@
   "solution": {
     "id": "578",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "kPV6bYHr": [
+      {
+        "code": "class Solution {\n  public void setZeroes(int[][] matrix) {\n    int R = matrix.length;\n    int C = matrix[0].length;\n    Set<Integer> rows = new HashSet<Integer>();\n    Set<Integer> cols = new HashSet<Integer>();\n\n    // Essentially, we mark the rows and columns that are to be made zero\n    for (int i = 0; i < R; i++) {\n      for (int j = 0; j < C; j++) {\n        if (matrix[i][j] == 0) {\n          rows.add(i);\n          cols.add(j);\n        }\n      }\n    }\n\n    // Iterate over the array once again and using the rows and cols sets, update the elements.\n    for (int i = 0; i < R; i++) {\n      for (int j = 0; j < C; j++) {\n        if (rows.contains(i) || cols.contains(j)) {\n          matrix[i][j] = 0;\n        }\n      }\n    }\n  }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def setZeroes(self, matrix):\n        \"\"\"\n        :type matrix: List[List[int]]\n        :rtype: void Do not return anything, modify matrix in-place instead.\n        \"\"\"\n        R = len(matrix)\n        C = len(matrix[0])\n        rows, cols = set(), set()\n\n        # Essentially, we mark the rows and columns that are to be made zero\n        for i in range(R):\n            for j in range(C):\n                if matrix[i][j] == 0:\n                    rows.add(i)\n                    cols.add(j)\n\n        # Iterate over the array once again and using the rows and cols sets, update the elements\n        for i in range(R):\n            for j in range(C):\n                if i in rows or j in cols:\n                    matrix[i][j] = 0",
+        "langSlug": "python"
+      }
+    ],
+    "3qUZbzut": [
+      {
+        "code": "class Solution {\n  public void setZeroes(int[][] matrix) {\n    int MODIFIED = -1000000;\n    int R = matrix.length;\n    int C = matrix[0].length;\n\n    for (int r = 0; r < R; r++) {\n      for (int c = 0; c < C; c++) {\n        if (matrix[r][c] == 0) {\n          // We modify the corresponding rows and column elements in place.\n          // Note, we only change the non zeroes to MODIFIED\n          for (int k = 0; k < C; k++) {\n            if (matrix[r][k] != 0) {\n              matrix[r][k] = MODIFIED;\n            }\n          }\n          for (int k = 0; k < R; k++) {\n            if (matrix[k][c] != 0) {\n              matrix[k][c] = MODIFIED;\n            }\n          }\n        }\n      }\n    }\n\n    for (int r = 0; r < R; r++) {\n      for (int c = 0; c < C; c++) {\n        // Make a second pass and change all MODIFIED elements to 0 \"\"\"\n        if (matrix[r][c] == MODIFIED) {\n          matrix[r][c] = 0;\n        }\n      }\n    }\n  }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def setZeroes(self, matrix):\n        \"\"\"\n        :type matrix: List[List[int]]\n        :rtype: void Do not return anything, modify matrix in-place instead.\n        \"\"\"\n        MODIFIED = -1000000\n        R = len(matrix)\n        C = len(matrix[0])\n        for r in range(R):\n            for c in range(C):\n                if matrix[r][c] == 0:\n                    # We modify the elements in place. Note, we only change the non zeros to MODIFIED\n                    for k in range(C):\n                        matrix[r][k] = MODIFIED if matrix[r][k] != 0 else 0\n                    for k in range(R):\n                        matrix[k][c] = MODIFIED if matrix[k][c] != 0 else 0\n        for r in range(R):\n            for c in range(C):\n                # Make a second pass and change all MODIFIED elements to 0 \"\"\"\n                if matrix[r][c] == MODIFIED:\n                    matrix[r][c] = 0",
+        "langSlug": "python"
+      }
+    ],
+    "2tGE5XF8": [
+      {
+        "code": "class Solution {\n  public void setZeroes(int[][] matrix) {\n    Boolean isCol = false;\n    int R = matrix.length;\n    int C = matrix[0].length;\n\n    for (int i = 0; i < R; i++) {\n\n      // Since first cell for both first row and first column is the same i.e. matrix[0][0]\n      // We can use an additional variable for either the first row/column.\n      // For this solution we are using an additional variable for the first column\n      // and using matrix[0][0] for the first row.\n      if (matrix[i][0] == 0) {\n        isCol = true;\n      }\n\n      for (int j = 1; j < C; j++) {\n        // If an element is zero, we set the first element of the corresponding row and column to 0\n        if (matrix[i][j] == 0) {\n          matrix[0][j] = 0;\n          matrix[i][0] = 0;\n        }\n      }\n    }\n\n    // Iterate over the array once again and using the first row and first column, update the elements.\n    for (int i = 1; i < R; i++) {\n      for (int j = 1; j < C; j++) {\n        if (matrix[i][0] == 0 || matrix[0][j] == 0) {\n          matrix[i][j] = 0;\n        }\n      }\n    }\n\n    // See if the first row needs to be set to zero as well\n    if (matrix[0][0] == 0) {\n      for (int j = 0; j < C; j++) {\n        matrix[0][j] = 0;\n      }\n    }\n\n    // See if the first column needs to be set to zero as well\n    if (isCol) {\n      for (int i = 0; i < R; i++) {\n        matrix[i][0] = 0;\n      }\n    }\n  }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def setZeroes(self, matrix):\n        \"\"\"\n        :type matrix: List[List[int]]\n        :rtype: void Do not return anything, modify matrix in-place instead.\n        \"\"\"\n        is_col = False\n        R = len(matrix)\n        C = len(matrix[0])\n        for i in range(R):\n            # Since first cell for both first row and first column is the same i.e. matrix[0][0]\n            # We can use an additional variable for either the first row/column.\n            # For this solution we are using an additional variable for the first column\n            # and using matrix[0][0] for the first row.\n            if matrix[i][0] == 0:\n                is_col = True\n            for j in range(1, C):\n                # If an element is zero, we set the first element of the corresponding row and column to 0\n                if matrix[i][j]  == 0:\n                    matrix[0][j] = 0\n                    matrix[i][0] = 0\n\n        # Iterate over the array once again and using the first row and first column, update the elements.\n        for i in range(1, R):\n            for j in range(1, C):\n                if not matrix[i][0] or not matrix[0][j]:\n                    matrix[i][j] = 0\n\n        # See if the first row needs to be set to zero as well\n        if matrix[0][0] == 0:\n            for j in range(C):\n                matrix[0][j] = 0\n\n        # See if the first column needs to be set to zero as well        \n        if is_col:\n            for i in range(R):\n                matrix[i][0] = 0",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array"

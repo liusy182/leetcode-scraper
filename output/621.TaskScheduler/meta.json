@@ -11,7 +11,25 @@
   "solution": {
     "id": "172",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "MxzSpcHY": [
+      {
+        "code": "public class Solution {\n    public int leastInterval(char[] tasks, int n) {\n        int[] map = new int[26];\n        for (char c: tasks)\n            map[c - 'A']++;\n        Arrays.sort(map);\n        int time = 0;\n        while (map[25] > 0) {\n            int i = 0;\n            while (i <= n) {\n                if (map[25] == 0)\n                    break;\n                if (i < 26 && map[25 - i] > 0)\n                    map[25 - i]--;\n                time++;\n                i++;\n            }\n            Arrays.sort(map);\n        }\n        return time;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "cAjn8Sxo": [
+      {
+        "code": "public class Solution {\n    public int leastInterval(char[] tasks, int n) {\n        int[] map = new int[26];\n        for (char c: tasks)\n            map[c - 'A']++;\n        PriorityQueue < Integer > queue = new PriorityQueue < > (26, Collections.reverseOrder());\n        for (int f: map) {\n            if (f > 0)\n                queue.add(f);\n        }\n        int time = 0;\n        while (!queue.isEmpty()) {\n            int i = 0;\n            List < Integer > temp = new ArrayList < > ();\n            while (i <= n) {\n                if (!queue.isEmpty()) {\n                    if (queue.peek() > 1)\n                        temp.add(queue.poll() - 1);\n                    else\n                        queue.poll();\n                }\n                time++;\n                if (queue.isEmpty() && temp.size() == 0)\n                    break;\n                i++;\n            }\n            for (int l: temp)\n                queue.add(l);\n        }\n        return time;\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ],
+    "jC8vicao": [
+      {
+        "code": "public class Solution {\n    public int leastInterval(char[] tasks, int n) {\n        int[] map = new int[26];\n        for (char c: tasks)\n            map[c - 'A']++;\n        Arrays.sort(map);\n        int max_val = map[25] - 1, idle_slots = max_val * n;\n        for (int i = 24; i >= 0 && map[i] > 0; i--) {\n            idle_slots -= Math.min(map[i], max_val);\n        }\n        return idle_slots > 0 ? idle_slots + tasks.length : tasks.length;\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Array",

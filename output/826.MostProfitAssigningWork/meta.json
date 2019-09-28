@@ -11,7 +11,17 @@
   "solution": {
     "id": "457",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "52pUn6By": [
+      {
+        "code": "import java.awt.Point;\n\nclass Solution {\n    public int maxProfitAssignment(int[] difficulty, int[] profit, int[] worker) {\n        int N = difficulty.length;\n        Point[] jobs = new Point[N];\n        for (int i = 0; i < N; ++i)\n            jobs[i] = new Point(difficulty[i], profit[i]);\n        Arrays.sort(jobs, (a, b) -> a.x - b.x);\n        Arrays.sort(worker);\n\n        int ans = 0, i = 0, best = 0;\n        for (int skill: worker) {\n            while (i < N && skill >= jobs[i].x)\n                best = Math.max(best, jobs[i++].y);\n            ans += best;\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def maxProfitAssignment(self, difficulty, profit, worker):\n        jobs = zip(difficulty, profit)\n        jobs.sort()\n        ans = i = best = 0\n        for skill in sorted(worker):\n            while i < len(jobs) and skill >= jobs[i][0]:\n                best = max(best, jobs[i][1])\n                i += 1\n            ans += best\n        return ans\n",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Two Pointers"

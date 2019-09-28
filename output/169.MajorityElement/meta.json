@@ -11,7 +11,67 @@
   "solution": {
     "id": "293",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "TXAGvfu4": [
+      {
+        "code": "class Solution {\n    public int majorityElement(int[] nums) {\n        int majorityCount = nums.length/2;\n\n        for (int num : nums) {\n            int count = 0;\n            for (int elem : nums) {\n                if (elem == num) {\n                    count += 1;\n                }\n            }\n\n            if (count > majorityCount) {\n                return num;\n            }\n\n        }\n\n        return -1;    \n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def majorityElement(self, nums):\n        majority_count = len(nums)//2\n        for num in nums:\n            count = sum(1 for elem in nums if elem == num)\n            if count > majority_count:\n                return num",
+        "langSlug": "python3"
+      }
+    ],
+    "8UD2i82e": [
+      {
+        "code": "class Solution {\n    private Map<Integer, Integer> countNums(int[] nums) {\n        Map<Integer, Integer> counts = new HashMap<Integer, Integer>();\n        for (int num : nums) {\n            if (!counts.containsKey(num)) {\n                counts.put(num, 1);\n            }\n            else {\n                counts.put(num, counts.get(num)+1);\n            }\n        }\n        return counts;\n    }\n\n    public int majorityElement(int[] nums) {\n        Map<Integer, Integer> counts = countNums(nums);\n\n        Map.Entry<Integer, Integer> majorityEntry = null;\n        for (Map.Entry<Integer, Integer> entry : counts.entrySet()) {\n            if (majorityEntry == null || entry.getValue() > majorityEntry.getValue()) {\n                majorityEntry = entry;\n            }\n        }\n\n        return majorityEntry.getKey();\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def majorityElement(self, nums):\n        counts = collections.Counter(nums)\n        return max(counts.keys(), key=counts.get)",
+        "langSlug": "python3"
+      }
+    ],
+    "863hrGWL": [
+      {
+        "code": "class Solution {\n    public int majorityElement(int[] nums) {\n        Arrays.sort(nums);\n        return nums[nums.length/2];\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def majorityElement(self, nums):\n        nums.sort()\n        return nums[len(nums)//2]",
+        "langSlug": "python3"
+      }
+    ],
+    "hUXRqk6X": [
+      {
+        "code": "class Solution {\n    private int randRange(Random rand, int min, int max) {\n        return rand.nextInt(max - min) + min;\n    }\n\n    private int countOccurences(int[] nums, int num) {\n        int count = 0;\n        for (int i = 0; i < nums.length; i++) {\n            if (nums[i] == num) {\n                count++;\n            }\n        }\n        return count;\n    }\n\n    public int majorityElement(int[] nums) {\n        Random rand = new Random();\n\n        int majorityCount = nums.length/2;\n\n        while (true) {\n            int candidate = nums[randRange(rand, 0, nums.length)];\n            if (countOccurences(nums, candidate) > majorityCount) {\n                return candidate;\n            }\n        }\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "import random\n\nclass Solution:\n    def majorityElement(self, nums):\n        majority_count = len(nums)//2\n        while True:\n            candidate = random.choice(nums)\n            if sum(1 for elem in nums if elem == candidate) > majority_count:\n                return candidate",
+        "langSlug": "python3"
+      }
+    ],
+    "C722UMRw": [
+      {
+        "code": "class Solution {\n    private int countInRange(int[] nums, int num, int lo, int hi) {\n        int count = 0;\n        for (int i = lo; i <= hi; i++) {\n            if (nums[i] == num) {\n                count++;\n            }\n        }\n        return count;\n    }\n\n    private int majorityElementRec(int[] nums, int lo, int hi) {\n        // base case; the only element in an array of size 1 is the majority\n        // element.\n        if (lo == hi) {\n            return nums[lo];\n        }\n\n        // recurse on left and right halves of this slice.\n        int mid = (hi-lo)/2 + lo;\n        int left = majorityElementRec(nums, lo, mid);\n        int right = majorityElementRec(nums, mid+1, hi);\n\n        // if the two halves agree on the majority element, return it.\n        if (left == right) {\n            return left;\n        }\n\n        // otherwise, count each element and return the \"winner\".\n        int leftCount = countInRange(nums, left, lo, hi);\n        int rightCount = countInRange(nums, right, lo, hi);\n\n        return leftCount > rightCount ? left : right;\n    }\n\n    public int majorityElement(int[] nums) {\n        return majorityElementRec(nums, 0, nums.length-1);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def majorityElement(self, nums, lo=0, hi=None):\n        def majority_element_rec(lo, hi):\n            # base case; the only element in an array of size 1 is the majority\n            # element.\n            if lo == hi:\n                return nums[lo]\n\n            # recurse on left and right halves of this slice.\n            mid = (hi-lo)//2 + lo\n            left = majority_element_rec(lo, mid)\n            right = majority_element_rec(mid+1, hi)\n\n            # if the two halves agree on the majority element, return it.\n            if left == right:\n                return left\n\n            # otherwise, count each element and return the \"winner\".\n            left_count = sum(1 for i in range(lo, hi+1) if nums[i] == left)\n            right_count = sum(1 for i in range(lo, hi+1) if nums[i] == right)\n\n            return left if left_count > right_count else right\n\n        return majority_element_rec(0, len(nums)-1)\n",
+        "langSlug": "python3"
+      }
+    ],
+    "TdqCU8YV": [
+      {
+        "code": "class Solution {\n    public int majorityElement(int[] nums) {\n        int count = 0;\n        Integer candidate = null;\n\n        for (int num : nums) {\n            if (count == 0) {\n                candidate = num;\n            }\n            count += (num == candidate) ? 1 : -1;\n        }\n\n        return candidate;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def majorityElement(self, nums):\n        count = 0\n        candidate = None\n\n        for num in nums:\n            if count == 0:\n                candidate = num\n            count += (1 if num == candidate else -1)\n\n        return candidate",
+        "langSlug": "python3"
+      }
+    ]
   },
   "topicTags": [
     "Array",

@@ -11,7 +11,25 @@
   "solution": {
     "id": "53",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "DQfAGPiL": [
+      {
+        "code": "class Solution {\n    public int maxProfit(int[] prices) {\n        return calculate(prices, 0);\n    }\n\n    public int calculate(int prices[], int s) {\n        if (s >= prices.length)\n            return 0;\n        int max = 0;\n        for (int start = s; start < prices.length; start++) {\n            int maxprofit = 0;\n            for (int i = start + 1; i < prices.length; i++) {\n                if (prices[start] < prices[i]) {\n                    int profit = calculate(prices, i + 1) + prices[i] - prices[start];\n                    if (profit > maxprofit)\n                        maxprofit = profit;\n                }\n            }\n            if (maxprofit > max)\n                max = maxprofit;\n        }\n        return max;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "Yrs8F9na": [
+      {
+        "code": "class Solution {\n    public int maxProfit(int[] prices) {\n        int i = 0;\n        int valley = prices[0];\n        int peak = prices[0];\n        int maxprofit = 0;\n        while (i < prices.length - 1) {\n            while (i < prices.length - 1 && prices[i] >= prices[i + 1])\n                i++;\n            valley = prices[i];\n            while (i < prices.length - 1 && prices[i] <= prices[i + 1])\n                i++;\n            peak = prices[i];\n            maxprofit += peak - valley;\n        }\n        return maxprofit;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "ppWUGTaj": [
+      {
+        "code": "class Solution {\n    public int maxProfit(int[] prices) {\n        int maxprofit = 0;\n        for (int i = 1; i < prices.length; i++) {\n            if (prices[i] > prices[i - 1])\n                maxprofit += prices[i] - prices[i - 1];\n        }\n        return maxprofit;\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Array",

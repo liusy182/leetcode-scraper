@@ -11,7 +11,27 @@
   "solution": {
     "id": "282",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "FdCZomTr": [
+      {
+        "code": "class Solution {\n    public int countSegments(String s) {\n        String trimmed = s.trim();\n        if (trimmed.equals(\"\")) {\n            return 0;\n        }\n        return trimmed.split(\"\\\\s+\").length;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def countSegments(self, s):\n        return len(s.split())",
+        "langSlug": "python"
+      }
+    ],
+    "XX7WFxaA": [
+      {
+        "code": "class Solution {\n    public int countSegments(String s) {\n        int segmentCount = 0;\n\n        for (int i = 0; i < s.length(); i++) {\n            if ((i == 0 || s.charAt(i-1) == ' ') && s.charAt(i) != ' ') {\n                segmentCount++;\n            }\n        }\n\n        return segmentCount;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def countSegments(self, s):\n        segment_count = 0\n\n        for i in range(len(s)):\n            if (i == 0 or s[i-1] == ' ') and s[i] != ' ':\n                segment_count += 1\n\n        return segment_count",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "String"

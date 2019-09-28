@@ -11,7 +11,25 @@
   "solution": {
     "id": "139",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "kR62YSDY": [
+      {
+        "code": "public class Solution {\n    public double dist(int[] p1, int[] p2) {\n        return (p2[1] - p1[1]) * (p2[1] - p1[1]) + (p2[0] - p1[0]) * (p2[0] - p1[0]);\n    }\n    public boolean check(int[] p1, int[] p2, int[] p3, int[] p4) {\n        return dist(p1,p2) > 0 && dist(p1, p2) == dist(p2, p3) && dist(p2, p3) == dist(p3, p4) && dist(p3, p4) == dist(p4, p1) && dist(p1, p3) == dist(p2, p4);\n    }\n    public boolean validSquare(int[] p1, int[] p2, int[] p3, int[] p4) {\n        int[][] p = {p1,p2,p3,p4};\n        return checkAllPermutations(p, 0);\n    }\n    boolean checkAllPermutations(int[][] p, int l) {\n        if (l == 4) {\n            return check(p[0], p[1], p[2], p[3]);\n        } else {\n            boolean res = false;\n            for (int i = l; i < 4; i++) {\n                swap(p, l, i);\n                res |= checkAllPermutations(p, l + 1);\n                swap(p, l, i);\n            }\n            return res;\n        }\n    }\n    public void swap(int[][] p, int x, int y) {\n        int[] temp = p[x];\n        p[x] = p[y];\n        p[y] = temp;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "xp6gv2NM": [
+      {
+        "code": "public class Solution {\n    public double dist(int[] p1, int[] p2) {\n        return (p2[1] - p1[1]) * (p2[1] - p1[1]) + (p2[0] - p1[0]) * (p2[0] - p1[0]);\n    }\n    public boolean validSquare(int[] p1, int[] p2, int[] p3, int[] p4) {\n        int[][] p={p1,p2,p3,p4};\n        Arrays.sort(p, (l1, l2) -> l2[0] == l1[0] ? l1[1] - l2[1] : l1[0] - l2[0]);\n        return dist(p[0], p[1]) != 0 && dist(p[0], p[1]) == dist(p[1], p[3]) && dist(p[1], p[3]) == dist(p[3], p[2]) && dist(p[3], p[2]) == dist(p[2], p[0])   && dist(p[0],p[3])==dist(p[1],p[2]);\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ],
+    "7wt6ZUJR": [
+      {
+        "code": "public class Solution {\n    public double dist(int[] p1, int[] p2) {\n        return (p2[1] - p1[1]) * (p2[1] - p1[1]) + (p2[0] - p1[0]) * (p2[0] - p1[0]);\n    }\n    public boolean check(int[] p1, int[] p2, int[] p3, int[] p4) {\n        return dist(p1,p2) > 0 && dist(p1, p2) == dist(p2, p3) && dist(p2, p3) == dist(p3, p4) && dist(p3, p4) == dist(p4, p1) && dist(p1, p3) == dist(p2, p4);\n    }\n    public boolean validSquare(int[] p1, int[] p2, int[] p3, int[] p4) {\n        return check(p1, p2, p3, p4) || check(p1, p3, p2, p4) || check(p1, p2, p4, p3);\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Math"

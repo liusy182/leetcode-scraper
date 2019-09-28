@@ -13,7 +13,17 @@
   "solution": {
     "id": "353",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "j3xuZ4yh": [
+      {
+        "code": "class Solution {\n    public int dominantIndex(int[] nums) {\n        int maxIndex = 0;\n        for (int i = 0; i < nums.length; ++i) {\n            if (nums[i] > nums[maxIndex])\n                maxIndex = i;\n        }\n        for (int i = 0; i < nums.length; ++i) {\n            if (maxIndex != i && nums[maxIndex] < 2 * nums[i])\n                return -1;\n        }\n        return maxIndex;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def dominantIndex(self, nums):\n        m = max(nums)\n        if all(m >= 2*x for x in nums if x != m):\n            return nums.index(m)\n        return -1",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array"

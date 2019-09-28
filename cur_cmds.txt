@@ -51,3 +51,18 @@ curl 'https://leetcode.com/graphql' \
  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36' \
  -H 'content-type: application/json' \
  --data-binary '{"operationName":"fetchQuestions","variables":{},"query":"query fetchQuestions {\n  allQuestions {\n    questionFrontendId\n    title\n    titleSlug\n    __typename\n  }\n}\n"}' \
+
+
+========================= solution =======================
+curl 'https://leetcode.com/graphql' \
+-H 'Origin: https://leetcode.com' \
+-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36' \
+-H 'content-type: application/json' \
+--data-binary '{"operationName":"fetchPlayground","variables":{},"query":"query fetchPlayground {\n  playground(uuid: \"XTsQ5Bi8\") {\n    testcaseInput\n    name\n    isUserOwner\n    isLive\n    showRunCode\n    showOpenInPlayground\n    selectedLangSlug\n    isShared\n    __typename\n  }\n  allPlaygroundCodes(uuid: \"XTsQ5Bi8\") {\n    code\n    langSlug\n    __typename\n  }\n}\n"}'
+
+
+curl 'https://leetcode.com/graphql' \
+-H 'Origin: https://leetcode.com' \
+-H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36' \
+-H 'content-type: application/json' \
+--data-binary '{"operationName":"fetchPlayground","variables":{},"query":"query fetchPlayground {\n  playground(uuid: \"XTsQ5Bi8\") {\n    name\n    selectedLangSlug\n    }\n  allPlaygroundCodes(uuid: \"XTsQ5Bi8\") {\n    code\n    langSlug\n    }\n}\n"}'

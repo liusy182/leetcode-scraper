@@ -11,7 +11,17 @@
   "solution": {
     "id": "684",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "vohQWX2P": [
+      {
+        "code": "class Solution {\n    List<Location> locations;\n    public List<List<Integer>> verticalTraversal(TreeNode root) {\n        // Each location is a node's x position, y position, and value\n        locations = new ArrayList();\n        dfs(root, 0, 0);\n        Collections.sort(locations);\n\n        List<List<Integer>> ans = new ArrayList();\n        ans.add(new ArrayList<Integer>());\n\n        int prev = locations.get(0).x;\n\n        for (Location loc: locations) {\n            // If the x value changed, it's part of a new report.\n            if (loc.x != prev) {\n                prev = loc.x;\n                ans.add(new ArrayList<Integer>());\n            }\n\n            // We always add the node's value to the latest report.\n            ans.get(ans.size() - 1).add(loc.val);\n        }\n\n        return ans;\n    }\n\n    public void dfs(TreeNode node, int x, int y) {\n        if (node != null) {\n            locations.add(new Location(x, y, node.val));\n            dfs(node.left, x-1, y+1);\n            dfs(node.right, x+1, y+1);\n        }\n    }\n}\n\nclass Location implements Comparable<Location>{\n    int x, y, val;\n    Location(int x, int y, int val) {\n        this.x = x;\n        this.y = y;\n        this.val = val;\n    }\n\n    @Override\n    public int compareTo(Location that) {\n        if (this.x != that.x)\n            return Integer.compare(this.x, that.x);\n        else if (this.y != that.y)\n            return Integer.compare(this.y, that.y);\n        else\n            return Integer.compare(this.val, that.val);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def verticalTraversal(self, root):\n        seen = collections.defaultdict(\n                  lambda: collections.defaultdict(list))\n\n        def dfs(node, x=0, y=0):\n            if node:\n                seen[x][y].append(node)\n                dfs(node.left, x-1, y+1)\n                dfs(node.right, x+1, y+1)\n\n        dfs(root)\n        ans = []\n\n        for x in sorted(seen):\n            report = []\n            for y in sorted(seen[x]):\n                report.extend(sorted(node.val for node in seen[x][y]))\n            ans.append(report)\n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table",

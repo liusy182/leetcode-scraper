@@ -11,7 +11,37 @@
   "solution": {
     "id": "141",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "e4c9G2XS": [
+      {
+        "code": "public class Solution {\n    public int findLHS(int[] nums) {\n        int res = 0;\n        for (int i = 0; i < (1 << nums.length); i++) {\n            int count = 0, min = Integer.MAX_VALUE, max = Integer.MIN_VALUE;\n            for (int j = 0; j < nums.length; j++) {\n                if ((i & (1 << j)) != 0) {\n                    min = Math.min(min, nums[j]);\n                    max = Math.max(max, nums[j]);\n                    count++;\n                }\n            }\n            if (max - min == 1)\n                res = Math.max(res, count);\n        }\n        return res;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "Akkez8ms": [
+      {
+        "code": "public class Solution {\n    public int findLHS(int[] nums) {\n        int res = 0;\n        for (int i = 0; i < nums.length; i++) {\n            int count = 0;\n            boolean flag = false;\n            for (int j = 0; j < nums.length; j++) {\n                if (nums[j] == nums[i])\n                    count++;\n                else if (nums[j] + 1 == nums[i]) {\n                    count++;\n                    flag = true;\n                }\n            }\n            if (flag)\n                res = Math.max(count, res);\n        }\n        return res;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "XNQkjXFk": [
+      {
+        "code": "public class Solution {\n    public int findLHS(int[] nums) {\n        Arrays.sort(nums);\n        int prev_count = 1, res = 0;\n        for (int i = 0; i < nums.length; i++) {\n            int count = 1;\n            if (i > 0 && nums[i] - nums[i - 1] == 1) {\n                while (i < nums.length - 1 && nums[i] == nums[i + 1]) {\n                    count++;\n                    i++;\n                }\n                res = Math.max(res, count + prev_count);\n                prev_count = count;\n            } else {\n                while (i < nums.length - 1 && nums[i] == nums[i + 1]) {\n                    count++;\n                    i++;\n                }\n                prev_count = count;\n            }\n        }\n        return res;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "VSkbtva7": [
+      {
+        "code": "public class Solution {\n    public int findLHS(int[] nums) {\n        HashMap < Integer, Integer > map = new HashMap < > ();\n        int res = 0;\n        for (int num: nums) {\n            map.put(num, map.getOrDefault(num, 0) + 1);\n        }\n        for (int key: map.keySet()) {\n            if (map.containsKey(key + 1))\n                res = Math.max(res, map.get(key) + map.get(key + 1));\n        }\n        return res;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "ZZGbSqyA": [
+      {
+        "code": "public class Solution {\n    public int findLHS(int[] nums) {\n        HashMap < Integer, Integer > map = new HashMap < > ();\n        int res = 0;\n        for (int num: nums) {\n            map.put(num, map.getOrDefault(num, 0) + 1);\n            if (map.containsKey(num + 1))\n                res = Math.max(res, map.get(num) + map.get(num + 1));\n            if (map.containsKey(num - 1))\n                res = Math.max(res, map.get(num) + map.get(num - 1));\n        }\n        return res;\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table"

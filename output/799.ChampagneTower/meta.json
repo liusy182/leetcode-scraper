@@ -11,7 +11,17 @@
   "solution": {
     "id": "431",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "GbytuGmq": [
+      {
+        "code": "class Solution {\n    public double champagneTower(int poured, int query_row, int query_glass) {\n        double[][] A = new double[102][102];\n        A[0][0] = (double) poured;\n        for (int r = 0; r <= query_row; ++r) {\n            for (int c = 0; c <= r; ++c) {\n                double q = (A[r][c] - 1.0) / 2.0;\n                if (q > 0) {\n                    A[r+1][c] += q;\n                    A[r+1][c+1] += q;\n                }\n            }\n        }\n\n        return Math.min(1, A[query_row][query_glass]);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def champagneTower(self, poured, query_row, query_glass):\n        A = [[0] * k for k in xrange(1, 102)]\n        A[0][0] = poured\n        for r in xrange(query_row + 1):\n            for c in xrange(r+1):\n                q = (A[r][c] - 1.0) / 2.0\n                if q > 0:\n                    A[r+1][c] += q\n                    A[r+1][c+1] += q\n\n        return min(1, A[query_row][query_glass])",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": []
 }

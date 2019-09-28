@@ -11,7 +11,17 @@
   "solution": {
     "id": "253",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "DjHbgZUi": [
+      {
+        "code": "class Solution {\n    int ans;\n    public int longestUnivaluePath(TreeNode root) {\n        ans = 0;\n        arrowLength(root);\n        return ans;\n    }\n    public int arrowLength(TreeNode node) {\n        if (node == null) return 0;\n        int left = arrowLength(node.left)\n        int right = arrowLength(node.right);\n        int arrowLeft = 0, arrowRight = 0;\n        if (node.left != null && node.left.val == node.val) {\n            arrowLeft += left + 1;\n        }\n        if (node.right != null && node.right.val == node.val) {\n            arrowRight += right + 1;\n        }\n        ans = Math.max(ans, arrowLeft + arrowRight);\n        return Math.max(arrowLeft, arrowRight);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def longestUnivaluePath(self, root):\n        self.ans = 0\n\n        def arrow_length(node):\n            if not node: return 0\n            left_length = arrow_length(node.left)\n            right_length = arrow_length(node.right)\n            left_arrow = right_arrow = 0\n            if node.left and node.left.val == node.val:\n                left_arrow = left_length + 1\n            if node.right and node.right.val == node.val:\n                right_arrow = right_length + 1\n            self.ans = max(self.ans, left_arrow + right_arrow)\n            return max(left_arrow, right_arrow)\n\n        arrow_length(root)\n        return self.ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree",

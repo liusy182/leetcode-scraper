@@ -11,7 +11,37 @@
   "solution": {
     "id": "495",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "9n8zxSrk": [
+      {
+        "code": "class Solution {\n\n    public int scoreOfParentheses(String S) {\n        return F(S, 0, S.length());\n    }\n\n    public int F(String S, int i, int j) {\n        //Score of balanced string S[i:j]\n        int ans = 0, bal = 0;\n\n        // Split string into primitives\n        for (int k = i; k < j; ++k) {\n            bal += S.charAt(k) == '(' ? 1 : -1;\n            if (bal == 0) {\n                if (k - i == 1) ans++;\n                else ans += 2 * F(S, i+1, k);\n                i = k+1;\n            }\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def scoreOfParentheses(self, S):\n        def F(i, j):\n            #Score of balanced string S[i:j]\n            ans = bal = 0\n\n            #Split string into primitives\n            for k in xrange(i, j):\n                bal += 1 if S[k] == '(' else -1\n                if bal == 0:\n                    if k - i == 1:\n                        ans += 1\n                    else:\n                        ans += 2 * F(i+1, k)\n                    i = k+1\n\n            return ans\n\n        return F(0, len(S))",
+        "langSlug": "python"
+      }
+    ],
+    "C2ky8oiW": [
+      {
+        "code": "public int scoreOfParentheses(String S) {\n    Stack<Integer> stack = new Stack();\n    stack.push(0); // The score of the current frame\n\n    for (char c: S.toCharArray()) {\n        if (c == '(')\n            stack.push(0);\n        else {\n            int v = stack.pop();\n            int w = stack.pop();\n            stack.push(w + Math.max(2 * v, 1));\n        }\n    }\n\n    return stack.pop();\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def scoreOfParentheses(self, S):\n        stack = [0] #The score of the current frame\n\n        for x in S:\n            if x == '(':\n                stack.append(0)\n            else:\n                v = stack.pop()\n                stack[-1] += max(2 * v, 1)\n\n        return stack.pop()",
+        "langSlug": "python"
+      }
+    ],
+    "EUsmNAS5": [
+      {
+        "code": "class Solution {\n\n    public int scoreOfParentheses(String S) {\n        int ans = 0, bal = 0;\n        for (int i = 0; i < S.length(); ++i) {\n            if (S.charAt(i) == '(') {\n                bal++;\n            } else {\n                bal--;\n                if (S.charAt(i-1) == '(')\n                    ans += 1 << bal;\n            }\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def scoreOfParentheses(self, S):\n        ans = bal = 0\n        for i, x in enumerate(S):\n            if x == '(':\n                bal += 1\n            else:\n                bal -= 1\n                if S[i-1] == '(':\n                    ans += 1 << bal\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "String",

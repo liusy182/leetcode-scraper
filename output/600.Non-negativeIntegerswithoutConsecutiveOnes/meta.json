@@ -11,7 +11,25 @@
   "solution": {
     "id": "148",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "EvkBtbbs": [
+      {
+        "code": "public class Solution {\n    public int findIntegers(int num) {\n        int count = 0;\n        for (int i = 0; i <= num; i++)\n            if (check(i))\n                count++;\n        return count;\n    }\n    public boolean check(int n) {\n        int i = 31;\n        while (i > 0) {\n            if ((n & (1 << i)) != 0 && (n & (1 << (i - 1))) != 0)\n                return false;\n            i--;\n        }\n        return true;\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ],
+    "QN3EABd5": [
+      {
+        "code": "public class Solution {\n    public int findIntegers(int num) {\n        return find(0, 0, num, false);\n    }\n    public int find(int i, int sum, int num, boolean prev) {\n        if (sum > num)\n            return 0;\n        if (1<<i > num)\n            return 1;\n        if (prev)\n            return find(i + 1, sum, num, false);\n        return find(i + 1, sum, num, false) + find(i + 1, sum + (1 << i), num, true);\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "NbrrZGdh": [
+      {
+        "code": "public class Solution {\n    public int findIntegers(int num) {\n        int[] f = new int[32];\n        f[0] = 1;\n        f[1] = 2;\n        for (int i = 2; i < f.length; i++)\n            f[i] = f[i - 1] + f[i - 2];\n        int i = 30, sum = 0, prev_bit = 0;\n        while (i >= 0) {\n            if ((num & (1 << i)) != 0) {\n                sum += f[i];\n                if (prev_bit == 1) {\n                    sum--;\n                    break;\n                }\n                prev_bit = 1;\n            } else\n                prev_bit = 0;\n            i--;\n        }\n        return sum + 1;\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming"

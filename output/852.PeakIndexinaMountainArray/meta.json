@@ -11,7 +11,27 @@
   "solution": {
     "id": "488",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "wnFAmS4Z": [
+      {
+        "code": "class Solution {\n    public int peakIndexInMountainArray(int[] A) {\n        int i = 0;\n        while (A[i] < A[i+1]) i++;\n        return i;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def peakIndexInMountainArray(self, A):\n        for i in xrange(len(A)):\n            if A[i] > A[i+1]:\n                return i",
+        "langSlug": "python"
+      }
+    ],
+    "FoZ3SCRk": [
+      {
+        "code": "class Solution {\n    public int peakIndexInMountainArray(int[] A) {\n        int lo = 0, hi = A.length - 1;\n        while (lo < hi) {\n            int mi = lo + (hi - lo) / 2;\n            if (A[mi] < A[mi + 1])\n                lo = mi + 1;\n            else\n                hi = mi;\n        }\n        return lo;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def peakIndexInMountainArray(self, A):\n        lo, hi = 0, len(A) - 1\n        while lo < hi:\n            mi = (lo + hi) / 2\n            if A[mi] < A[mi + 1]:\n                lo = mi + 1\n            else:\n                hi = mi\n        return lo",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Binary Search"

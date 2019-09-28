@@ -11,7 +11,17 @@
   "solution": {
     "id": "640",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "jdYrnNjc": [
+      {
+        "code": "class Solution {\n    public int regionsBySlashes(String[] grid) {\n        int N = grid.length;\n        DSU dsu = new DSU(4 * N * N);\n        for (int r = 0; r < N; ++r)\n            for (int c = 0; c < N; ++c) {\n                int root = 4 * (r * N + c);\n                char val = grid[r].charAt(c);\n                if (val != '\\\\') {\n                    dsu.union(root + 0, root + 1);\n                    dsu.union(root + 2, root + 3);\n                }\n                if (val != '/') {\n                    dsu.union(root + 0, root + 2);\n                    dsu.union(root + 1, root + 3);\n                }\n\n                // north south\n                if (r + 1 < N)\n                    dsu.union(root + 3, (root + 4 * N) + 0);\n                if (r - 1 >= 0)\n                    dsu.union(root + 0, (root - 4 * N) + 3);\n                // east west\n                if (c + 1 < N)\n                    dsu.union(root + 2, (root + 4) + 1);\n                if (c - 1 >= 0)\n                    dsu.union(root + 1, (root - 4) + 2);\n            }\n\n        int ans = 0;\n        for (int x = 0; x < 4 * N * N; ++x) {\n            if (dsu.find(x) == x)\n                ans++;\n        }\n\n        return ans;\n    }\n}\n\nclass DSU {\n    int[] parent;\n    public DSU(int N) {\n        parent = new int[N];\n        for (int i = 0; i < N; ++i)\n            parent[i] = i;\n    }\n    public int find(int x) {\n        if (parent[x] != x) parent[x] = find(parent[x]);\n        return parent[x];\n    }\n    public void union(int x, int y) {\n        parent[find(x)] = find(y);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class DSU:\n    def __init__(self, N):\n        self.p = range(N)\n\n    def find(self, x):\n        if self.p[x] != x:\n            self.p[x] = self.find(self.p[x])\n        return self.p[x]\n\n    def union(self, x, y):\n        xr = self.find(x)\n        yr = self.find(y)\n        self.p[xr] = yr\n\nclass Solution(object):\n    def regionsBySlashes(self, grid):\n        N = len(grid)\n        dsu = DSU(4 * N * N)\n        for r, row in enumerate(grid):\n            for c, val in enumerate(row):\n                root = 4 * (r*N + c)\n                if val in '/ ':\n                    dsu.union(root + 0, root + 1)\n                    dsu.union(root + 2, root + 3)\n                if val in '\\ ':\n                    dsu.union(root + 0, root + 2)\n                    dsu.union(root + 1, root + 3)\n\n                # north/south\n                if r+1 < N: dsu.union(root + 3, (root+4*N) + 0)\n                if r-1 >= 0: dsu.union(root + 0, (root-4*N) + 3)\n                # east/west\n                if c+1 < N: dsu.union(root + 2, (root+4) + 1)\n                if c-1 >= 0: dsu.union(root + 1, (root-4) + 2)\n\n        return sum(dsu.find(x) == x for x in xrange(4*N*N))",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Depth-first Search",

@@ -11,7 +11,27 @@
   "solution": {
     "id": "706",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "CtxuC6Za": [
+      {
+        "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\nclass Solution {\n  public boolean isSameTree(TreeNode p, TreeNode q) {\n    // p and q are both null\n    if (p == null && q == null) return true;\n    // one of p and q is null\n    if (q == null || p == null) return false;\n    if (p.val != q.val) return false;\n    return isSameTree(p.right, q.right) &&\n            isSameTree(p.left, q.left);\n  }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def isSameTree(self, p, q):\n        \"\"\"\n        :type p: TreeNode\n        :type q: TreeNode\n        :rtype: bool\n        \"\"\"    \n        # p and q are both None\n        if not p and not q:\n            return True\n        # one of p and q is None\n        if not q or not p:\n            return False\n        if p.val != q.val:\n            return False\n        return self.isSameTree(p.right, q.right) and \\\n               self.isSameTree(p.left, q.left)",
+        "langSlug": "python"
+      }
+    ],
+    "e9Z7Jfqf": [
+      {
+        "code": "class Solution {\n  public boolean check(TreeNode p, TreeNode q) {\n    // p and q are null\n    if (p == null && q == null) return true;\n    // one of p and q is null\n    if (q == null || p == null) return false;\n    if (p.val != q.val) return false;\n    return true;\n  }\n\n  public boolean isSameTree(TreeNode p, TreeNode q) {\n    if (p == null && q == null) return true;\n    if (!check(p, q)) return false;\n\n    // init deques\n    ArrayDeque<TreeNode> deqP = new ArrayDeque<TreeNode>();\n    ArrayDeque<TreeNode> deqQ = new ArrayDeque<TreeNode>();\n    deqP.addLast(p);\n    deqQ.addLast(q);\n\n    while (!deqP.isEmpty()) {\n      p = deqP.removeFirst();\n      q = deqQ.removeFirst();\n\n      if (!check(p, q)) return false;\n      if (p != null) {\n        // in Java nulls are not allowed in Deque\n        if (!check(p.left, q.left)) return false;\n        if (p.left != null) {\n          deqP.addLast(p.left);\n          deqQ.addLast(q.left);\n        }\n        if (!check(p.right, q.right)) return false;\n        if (p.right != null) {\n          deqP.addLast(p.right);\n          deqQ.addLast(q.right);\n        }\n      }\n    }\n    return true;\n  }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "from collections import deque\nclass Solution:\n    def isSameTree(self, p, q):\n        \"\"\"\n        :type p: TreeNode\n        :type q: TreeNode\n        :rtype: bool\n        \"\"\"    \n        def check(p, q):\n            # if both are None\n            if not p and not q:\n                return True\n            # one of p and q is None\n            if not q or not p:\n                return False\n            if p.val != q.val:\n                return False\n            return True\n        \n        deq = deque([(p, q),])\n        while deq:\n            p, q = deq.popleft()\n            if not check(p, q):\n                return False\n            \n            if p:\n                deq.append((p.left, q.left))\n                deq.append((p.right, q.right))\n                    \n        return True",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree",

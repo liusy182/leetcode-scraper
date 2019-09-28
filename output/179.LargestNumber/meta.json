@@ -11,7 +11,17 @@
   "solution": {
     "id": "339",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "wVZb2DmS": [
+      {
+        "code": "class Solution {\n    private class LargerNumberComparator implements Comparator<String> {\n        @Override\n        public int compare(String a, String b) {\n            String order1 = a + b;\n            String order2 = b + a;\n           return order2.compareTo(order1);\n        }\n    }\n\n    public String largestNumber(int[] nums) {\n        // Get input integers as strings.\n        String[] asStrs = new String[nums.length];\n        for (int i = 0; i < nums.length; i++) {\n            asStrs[i] = String.valueOf(nums[i]);\n        }\n\n        // Sort strings according to custom comparator.\n        Arrays.sort(asStrs, new LargerNumberComparator());\n\n        // If, after being sorted, the largest number is `0`, the entire number\n        // is zero.\n        if (asStrs[0].equals(\"0\")) {\n            return \"0\";\n        }\n\n        // Build largest number from sorted array.\n        String largestNumberStr = new String();\n        for (String numAsStr : asStrs) {\n            largestNumberStr += numAsStr;\n        }\n\n        return largestNumberStr;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class LargerNumKey(str):\n    def __lt__(x, y):\n        return x+y > y+x\n        \nclass Solution:\n    def largestNumber(self, nums):\n        largest_num = ''.join(sorted(map(str, nums), key=LargerNumKey))\n        return '0' if largest_num[0] == '0' else largest_num",
+        "langSlug": "python3"
+      }
+    ]
   },
   "topicTags": [
     "Sort"

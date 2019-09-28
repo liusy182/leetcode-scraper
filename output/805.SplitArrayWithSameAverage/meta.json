@@ -11,7 +11,17 @@
   "solution": {
     "id": "438",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "MCygqyNn": [
+      {
+        "code": "import java.awt.Point;\n\nclass Solution {\n    public boolean splitArraySameAverage(int[] A) {\n        int N = A.length;\n        int S = 0;\n        for (int x: A) S += x;\n        if (N == 1) return false;\n\n        int g = gcd(S, N);\n        Point mu = new Point(-(S/g), N/g);\n        // A[i] -> fracAdd(A[i], mu)\n        List<Point> A2 = new ArrayList();\n        for (int x: A)\n            A2.add(fracAdd(new Point(x, 1), mu));\n\n        Set<Point> left = new HashSet();\n        left.add(A2.get(0));\n        for (int i = 1; i < N/2; ++i) {\n            Set<Point> left2 = new HashSet();\n            Point z = A2.get(i);\n            left2.add(z);\n            for (Point p: left) {\n                left2.add(p);\n                left2.add(fracAdd(p, z));\n            }\n            left = left2;\n        }\n\n        if (left.contains(new Point(0, 1))) return true;\n\n        Set<Point> right = new HashSet();\n        right.add(A2.get(N-1));\n        for (int i = N/2; i < N-1; ++i) {\n            Set<Point> right2 = new HashSet();\n            Point z = A2.get(i);\n            right2.add(z);\n            for (Point p: right) {\n                right2.add(p);\n                right2.add(fracAdd(p, z));\n            }\n            right = right2;\n        }\n\n        if (right.contains(new Point(0, 1))) return true;\n\n        Point sleft = new Point(0, 1);\n        for (int i = 0; i < N/2; ++i)\n            sleft = fracAdd(sleft, A2.get(i));\n\n        Point sright = new Point(0, 1);\n        for (int i = N/2; i < N; ++i)\n            sright = fracAdd(sright, A2.get(i));\n\n        for (Point ha: left) {\n            Point ha2 = new Point(-ha.x, ha.y);\n            if (right.contains(ha2) && (!ha.equals(sleft) || !ha2.equals(sright)))\n                return true;\n        }\n        return false;\n    }\n\n    public Point fracAdd(Point A, Point B) {\n        int numer = A.x * B.y + B.x * A.y;\n        int denom = A.y * B.y;\n        int g = gcd(numer, denom);\n        numer /= g;\n        denom /= g;\n\n        if (denom < 0) {\n            numer *= -1;\n            denom *= -1;\n        }\n\n        return new Point(numer, denom);\n    }\n\n    public int gcd(int a, int b) {\n       if (b==0) return a;\n       return gcd(b, a%b);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def splitArraySameAverage(self, A):\n        from fractions import Fraction\n        N = len(A)\n        S = sum(A)\n        A = [z - Fraction(S, N) for z in A]\n\n        if N == 1: return False\n\n        #Want zero subset sum\n        left = {A[0]}\n        for i in xrange(1, N/2):\n            left = {z + A[i] for z in left} | left | {A[i]}\n        if 0 in left: return True\n\n        right = {A[-1]}\n        for i in xrange(N/2, N-1):\n            right = {z + A[i] for z in right} | right | {A[i]}\n        if 0 in right: return True\n\n        sleft = sum(A[i] for i in xrange(N/2))\n        sright = sum(A[i] for i in xrange(N/2, N))\n\n        return any(-ha in right and (ha, -ha) != (sleft, sright) for ha in left)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math"

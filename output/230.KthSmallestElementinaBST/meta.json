@@ -16,7 +16,27 @@
   "solution": {
     "id": "723",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "8B2Y2ArK": [
+      {
+        "code": "class Solution {\n  public ArrayList<Integer> inorder(TreeNode root, ArrayList<Integer> arr) {\n    if (root == null) return arr;\n    inorder(root.left, arr);\n    arr.add(root.val);\n    inorder(root.right, arr);\n    return arr;\n  }\n\n  public int kthSmallest(TreeNode root, int k) {\n    ArrayList<Integer> nums = inorder(root, new ArrayList<Integer>());\n    return nums.get(k - 1);\n  }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def kthSmallest(self, root, k):\n        \"\"\"\n        :type root: TreeNode\n        :type k: int\n        :rtype: int\n        \"\"\"\n        def inorder(r):\n            return inorder(r.left) + [r.val] + inorder(r.right) if r else []\n    \n        return inorder(root)[k - 1]",
+        "langSlug": "python"
+      }
+    ],
+    "Z2JBGMv5": [
+      {
+        "code": "class Solution {\n  public int kthSmallest(TreeNode root, int k) {\n    LinkedList<TreeNode> stack = new LinkedList<TreeNode>();\n\n    while (true) {\n      while (root != null) {\n        stack.add(root);\n        root = root.left;\n      }\n      root = stack.removeLast();\n      if (--k == 0) return root.val;\n      root = root.right;\n    }\n  }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def kthSmallest(self, root, k):\n        \"\"\"\n        :type root: TreeNode\n        :type k: int\n        :rtype: int\n        \"\"\"\n        stack = []\n        \n        while True:\n            while root:\n                stack.append(root)\n                root = root.left\n            root = stack.pop()\n            k -= 1\n            if not k:\n                return root.val\n            root = root.right",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Binary Search",

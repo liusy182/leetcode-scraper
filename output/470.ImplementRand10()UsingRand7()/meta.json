@@ -11,7 +11,27 @@
   "solution": {
     "id": "510",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "JbmdbBCo": [
+      {
+        "code": "class Solution {\npublic:\n    int rand10() {\n        int row, col, idx;\n        do {\n            row = rand7();\n            col = rand7();\n            idx = col + (row - 1) * 7;\n        } while (idx > 40);\n        return 1 + (idx - 1) % 10;\n    }\n};",
+        "langSlug": "cpp"
+      },
+      {
+        "code": "class Solution extends SolBase {\n    public int rand10() {\n        int row, col, idx;\n        do {\n            row = rand7();\n            col = rand7();\n            idx = col + (row - 1) * 7;\n        } while (idx > 40);\n        return 1 + (idx - 1) % 10;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "frCUaJYp": [
+      {
+        "code": "class Solution {\npublic:\n    int rand10() {\n        int a, b, idx;\n        while (true) {\n            a = rand7();\n            b = rand7();\n            idx = b + (a - 1) * 7;\n            if (idx <= 40)\n                return 1 + (idx - 1) % 10;\n            a = idx - 40;\n            b = rand7();\n            // get uniform dist from 1 - 63\n            idx = b + (a - 1) * 7;\n            if (idx <= 60)\n                return 1 + (idx - 1) % 10;\n            a = idx - 60;\n            b = rand7();\n            // get uniform dist from 1 - 21\n            idx = b + (a - 1) * 7;\n            if (idx <= 20)\n                return 1 + (idx - 1) % 10;\n        }\n    }\n};",
+        "langSlug": "cpp"
+      },
+      {
+        "code": "class Solution extends SolBase {\n    public int rand10() {\n        int a, b, idx;\n        while (true) {\n            a = rand7();\n            b = rand7();\n            idx = b + (a - 1) * 7;\n            if (idx <= 40)\n                return 1 + (idx - 1) % 10;\n            a = idx - 40;\n            b = rand7();\n            // get uniform dist from 1 - 63\n            idx = b + (a - 1) * 7;\n            if (idx <= 60)\n                return 1 + (idx - 1) % 10;\n            a = idx - 60;\n            b = rand7();\n            // get uniform dist from 1 - 21\n            idx = b + (a - 1) * 7;\n            if (idx <= 20)\n                return 1 + (idx - 1) % 10;\n        }\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Random",

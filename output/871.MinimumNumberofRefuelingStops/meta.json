@@ -11,7 +11,27 @@
   "solution": {
     "id": "506",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "CrpMSMbm": [
+      {
+        "code": "class Solution {\n    public int minRefuelStops(int target, int startFuel, int[][] stations) {\n        int N = stations.length;\n        long[] dp = new long[N + 1];\n        dp[0] = startFuel;\n        for (int i = 0; i < N; ++i)\n            for (int t = i; t >= 0; --t)\n                if (dp[t] >= stations[i][0])\n                    dp[t+1] = Math.max(dp[t+1], dp[t] + (long) stations[i][1]);\n\n        for (int i = 0; i <= N; ++i)\n            if (dp[i] >= target) return i;\n        return -1;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def minRefuelStops(self, target, startFuel, stations):\n        dp = [startFuel] + [0] * len(stations)\n        for i, (location, capacity) in enumerate(stations):\n            for t in xrange(i, -1, -1):\n                if dp[t] >= location:\n                    dp[t+1] = max(dp[t+1], dp[t] + capacity)\n\n        for i, d in enumerate(dp):\n            if d >= target: return i\n        return -1",
+        "langSlug": "python"
+      }
+    ],
+    "k5wvzRam": [
+      {
+        "code": "class Solution {\n    public int minRefuelStops(int target, int tank, int[][] stations) {\n        // pq is a maxheap of gas station capacities\n        PriorityQueue<Integer> pq = new PriorityQueue(Collections.reverseOrder());\n        int ans = 0, prev = 0;\n        for (int[] station: stations) {\n            int location = station[0];\n            int capacity = station[1];\n            tank -= location - prev;\n            while (!pq.isEmpty() && tank < 0) {  // must refuel in past\n                tank += pq.poll();\n                ans++;\n            }\n\n            if (tank < 0) return -1;\n            pq.offer(capacity);\n            prev = location;\n        }\n\n        // Repeat body for station = (target, inf)\n        {\n            tank -= target - prev;\n            while (!pq.isEmpty() && tank < 0) {\n                tank += pq.poll();\n                ans++;\n            }\n            if (tank < 0) return -1;\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def minRefuelStops(self, target, tank, stations):\n        pq = []  # A maxheap is simulated using negative values\n        stations.append((target, float('inf')))\n\n        ans = prev = 0\n        for location, capacity in stations:\n            tank -= location - prev\n            while pq and tank < 0:  # must refuel in past\n                tank += -heapq.heappop(pq)\n                ans += 1\n            if tank < 0: return -1\n            heapq.heappush(pq, -capacity)\n            prev = location\n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming",

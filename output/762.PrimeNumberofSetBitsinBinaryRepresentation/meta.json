@@ -13,7 +13,17 @@
   "solution": {
     "id": "373",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "GCVcZ6pE": [
+      {
+        "code": "class Solution {\n    public int countPrimeSetBits(int L, int R) {\n        int ans = 0;\n        for (int x = L; x <= R; ++x)\n            if (isSmallPrime(Integer.bitCount(x)))\n                ans++;\n        return ans;\n    }\n    public boolean isSmallPrime(int x) {\n        return (x == 2 || x == 3 || x == 5 || x == 7 ||\n                x == 11 || x == 13 || x == 17 || x == 19);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def countPrimeSetBits(self, L, R):\n        primes = {2, 3, 5, 7, 11, 13, 17, 19}\n        return sum(bin(x).count('1') in primes\n                   for x in xrange(L, R+1))",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Bit Manipulation"

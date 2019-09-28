@@ -11,7 +11,17 @@
   "solution": {
     "id": "638",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "Joed7Ar7": [
+      {
+        "code": "class Solution {\n    public int firstUniqChar(String s) {\n        HashMap<Character, Integer> count = new HashMap<Character, Integer>();\n        int n = s.length();\n        // build hash map : character and how often it appears\n        for (int i = 0; i < n; i++) {\n            char c = s.charAt(i);\n            count.put(c, count.getOrDefault(c, 0) + 1);\n        }\n        \n        // find the index\n        for (int i = 0; i < n; i++) {\n            if (count.get(s.charAt(i)) == 1) \n                return i;\n        }\n        return -1;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def firstUniqChar(self, s: str) -> int:\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        # build hash map : character and how often it appears\n        count = collections.Counter(s)\n        \n        # find the index\n        for idx, ch in enumerate(s):\n            if count[ch] == 1:\n                return idx     \n        return -1",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table",

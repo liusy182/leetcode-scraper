@@ -11,7 +11,27 @@
   "solution": {
     "id": "324",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "tvjGGLzd": [
+      {
+        "code": "class Solution {\n    public String replaceWords(List<String> roots, String sentence) {\n        Set<String> rootset = new HashSet();\n        for (String root: roots) rootset.add(root);\n\n        StringBuilder ans = new StringBuilder();\n        for (String word: sentence.split(\"\\\\s+\")) {\n            String prefix = \"\";\n            for (int i = 1; i <= word.length(); ++i) {\n                prefix = word.substring(0, i);\n                if (rootset.contains(prefix)) break;\n            }\n            if (ans.length() > 0) ans.append(\" \");\n            ans.append(prefix);\n        }\n        return ans.toString();\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "def replaceWords(self, roots, sentence):\n    rootset = set(roots)\n\n    def replace(word):\n        for i in xrange(1, len(word)):\n            if word[:i] in rootset:\n                return word[:i]\n        return word\n\n    return \" \".join(map(replace, sentence.split()))",
+        "langSlug": "python"
+      }
+    ],
+    "5Dt2dcFU": [
+      {
+        "code": "class Solution {\n    public String replaceWords(List<String> roots, String sentence) {\n        TrieNode trie = new TrieNode();\n        for (String root: roots) {\n            TrieNode cur = trie;\n            for (char letter: root.toCharArray()) {\n                if (cur.children[letter - 'a'] == null)\n                    cur.children[letter - 'a'] = new TrieNode();\n                cur = cur.children[letter - 'a'];\n            }\n            cur.word = root;\n        }\n\n        StringBuilder ans = new StringBuilder();\n\n        for (String word: sentence.split(\"\\\\s+\")) {\n            if (ans.length() > 0)\n                ans.append(\" \");\n\n            TrieNode cur = trie;\n            for (char letter: word.toCharArray()) {\n                if (cur.children[letter - 'a'] == null || cur.word != null)\n                    break;\n                cur = cur.children[letter - 'a'];\n            }\n            ans.append(cur.word != null ? cur.word : word);\n        }\n        return ans.toString();\n    }\n}\n\nclass TrieNode {\n    TrieNode[] children;\n    String word;\n    TrieNode() {\n        children = new TrieNode[26];\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def replaceWords(self, roots, sentence):\n        Trie = lambda: collections.defaultdict(Trie)\n        trie = Trie()\n        END = True\n\n        for root in roots:\n            reduce(dict.__getitem__, root, trie)[END] = root\n\n        def replace(word):\n            cur = trie\n            for letter in word:\n                if letter not in cur or END in cur: break\n                cur = cur[letter]\n            return cur.get(END, word)\n\n        return \" \".join(map(replace, sentence.split()))",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table",

@@ -11,7 +11,17 @@
   "solution": {
     "id": "676",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "Ps9koK2t": [
+      {
+        "code": "class Solution {\n    public String strWithout3a3b(int A, int B) {\n        StringBuilder ans = new StringBuilder();\n\n        while (A > 0 || B > 0) {\n            boolean writeA = false;\n            int L = ans.length();\n            if (L >= 2 && ans.charAt(L-1) == ans.charAt(L-2)) {\n                if (ans.charAt(L-1) == 'b')\n                    writeA = true;\n            } else {\n                if (A >= B)\n                    writeA = true;\n            }\n\n            if (writeA) {\n                A--;\n                ans.append('a');\n            } else {\n                B--;\n                ans.append('b');\n            }\n        }\n\n        return ans.toString();\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def strWithout3a3b(self, A, B):\n        ans = []\n\n        while A or B:\n            if len(ans) >= 2 and ans[-1] == ans[-2]:\n                writeA = ans[-1] == 'b'\n            else:\n                writeA = A >= B\n\n            if writeA:\n                A -= 1\n                ans.append('a')\n            else:\n                B -= 1\n                ans.append('b')\n\n        return \"\".join(ans)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Greedy"

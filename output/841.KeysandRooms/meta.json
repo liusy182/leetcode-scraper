@@ -11,7 +11,17 @@
   "solution": {
     "id": "472",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "DStbTdKq": [
+      {
+        "code": "class Solution {\n    public boolean canVisitAllRooms(List<List<Integer>> rooms) {\n        boolean[] seen = new boolean[rooms.size()];\n        seen[0] = true;\n        Stack<Integer> stack = new Stack();\n        stack.push(0);\n\n        //At the beginning, we have a todo list \"stack\" of keys to use.\n        //'seen' represents at some point we have entered this room.\n        while (!stack.isEmpty()) { // While we have keys...\n            int node = stack.pop(); // Get the next key 'node'\n            for (int nei: rooms.get(node)) // For every key in room # 'node'...\n                if (!seen[nei]) { // ...that hasn't been used yet\n                    seen[nei] = true; // mark that we've entered the room\n                    stack.push(nei); // add the key to the todo list\n                }\n        }\n\n        for (boolean v: seen)  // if any room hasn't been visited, return false\n            if (!v) return false;\n        return true;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def canVisitAllRooms(self, rooms):\n        seen = [False] * len(rooms)\n        seen[0] = True\n        stack = [0]\n        #At the beginning, we have a todo list \"stack\" of keys to use.\n        #'seen' represents at some point we have entered this room.\n        while stack:  #While we have keys...\n            node = stack.pop() # get the next key 'node'\n            for nei in rooms[node]: # For every key in room # 'node'...\n                if not seen[nei]: # ... that hasn't been used yet\n                    seen[nei] = True # mark that we've entered the room\n                    stack.append(nei) # add the key to the todo list\n        return all(seen) # Return true iff we've visited every room",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Depth-first Search",

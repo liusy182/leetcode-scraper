@@ -11,7 +11,17 @@
   "solution": {
     "id": "565",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "RZ7eqY32": [
+      {
+        "code": "class Solution {\n    public int snakesAndLadders(int[][] board) {\n        int N = board.length;\n\n        Map<Integer, Integer> dist = new HashMap();\n        dist.put(1, 0);\n\n        Queue<Integer> queue = new LinkedList();\n        queue.add(1);\n\n        while (!queue.isEmpty()) {\n            int s = queue.remove();\n            if (s == N*N) return dist.get(s);\n\n            for (int s2 = s+1; s2 <= Math.min(s+6, N*N); ++s2) {\n                int rc = get(s2, N);\n                int r = rc / N, c = rc % N;\n                int s2Final = board[r][c] == -1 ? s2 : board[r][c];\n                if (!dist.containsKey(s2Final)) {\n                    dist.put(s2Final, dist.get(s) + 1);\n                    queue.add(s2Final);\n                }\n            }\n        }\n        return -1;\n    }\n\n    public int get(int s, int N) {\n        // Given a square num s, return board coordinates (r, c) as r*N + c\n        int quot = (s-1) / N;\n        int rem = (s-1) % N;\n        int row = N - 1 - quot;\n        int col = row % 2 != N % 2 ? rem : N - 1 - rem;\n        return row * N + col;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def snakesAndLadders(self, board):\n        N = len(board)\n\n        def get(s):\n            # Given a square num s, return board coordinates (r, c)\n            quot, rem = divmod(s-1, N)\n            row = N - 1 - quot\n            col = rem if row%2 != N%2 else N - 1 - rem\n            return row, col\n\n        dist = {1: 0}\n        queue = collections.deque([1])\n        while queue:\n            s = queue.popleft()\n            if s == N*N: return dist[s]\n            for s2 in xrange(s+1, min(s+6, N*N) + 1):\n                r, c = get(s2)\n                if board[r][c] != -1:\n                    s2 = board[r][c]\n                if s2 not in dist:\n                    dist[s2] = dist[s] + 1\n                    queue.append(s2)\n        return -1",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Breadth-first Search"

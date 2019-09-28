@@ -11,7 +11,27 @@
   "solution": {
     "id": "470",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "X63wt96u": [
+      {
+        "code": "class Solution {\n    public String pushDominoes(String dominoes) {\n        int N = dominoes.length();\n        int[] indexes = new int[N+2];\n        char[] symbols = new char[N+2];\n        int len = 1;\n        indexes[0] = -1;\n        symbols[0] = 'L';\n\n        for (int i = 0; i < N; ++i)\n            if (dominoes.charAt(i) != '.') {\n                indexes[len] = i;\n                symbols[len++] = dominoes.charAt(i);\n            }\n\n        indexes[len] = N;\n        symbols[len++] = 'R';\n\n        char[] ans = dominoes.toCharArray();\n        for (int index = 0; index < len - 1; ++index) {\n            int i = indexes[index], j = indexes[index+1];\n            char x = symbols[index], y = symbols[index+1];\n            char write;\n            if (x == y) {\n                for (int k = i+1; k < j; ++k)\n                    ans[k] = x;\n            } else if (x > y) { // RL\n                for (int k = i+1; k < j; ++k)\n                    ans[k] = k-i == j-k ? '.' : k-i < j-k ? 'R' : 'L';\n            }\n        }\n\n        return String.valueOf(ans);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def pushDominoes(self, dominoes):\n        symbols = [(i, x) for i, x in enumerate(dominoes) if x != '.']\n        symbols = [(-1, 'L')] + symbols + [(len(dominoes), 'R')]\n\n        ans = list(dominoes)\n        for (i, x), (j, y) in zip(symbols, symbols[1:]):\n            if x == y:\n                for k in xrange(i+1, j):\n                    ans[k] = x\n            elif x > y: #RL\n                for k in xrange(i+1, j):\n                    ans[k] = '.LR'[cmp(k-i, j-k)]\n\n        return \"\".join(ans)",
+        "langSlug": "python"
+      }
+    ],
+    "xrAD5knD": [
+      {
+        "code": "class Solution {\n    public String pushDominoes(String S) {\n        char[] A = S.toCharArray();\n        int N = A.length;\n        int[] forces = new int[N];\n\n        // Populate forces going from left to right\n        int force = 0;\n        for (int i = 0; i < N; ++i) {\n            if (A[i] == 'R') force = N;\n            else if (A[i] == 'L') force = 0;\n            else force = Math.max(force - 1, 0);\n            forces[i] += force;\n        }\n\n        // Populate forces going from right to left\n        force = 0;\n        for (int i = N-1; i >= 0; --i) {\n            if (A[i] == 'L') force = N;\n            else if (A[i] == 'R') force = 0;\n            else force = Math.max(force - 1, 0);\n            forces[i] -= force;\n        }\n\n        StringBuilder ans = new StringBuilder();\n        for (int f: forces)\n            ans.append(f > 0 ? 'R' : f < 0 ? 'L' : '.');\n        return ans.toString();\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def pushDominoes(self, dominoes):\n        N = len(dominoes)\n        force = [0] * N\n\n        # Populate forces going from left to right\n        f = 0\n        for i in xrange(N):\n            if dominoes[i] == 'R': f = N\n            elif dominoes[i] == 'L': f = 0\n            else: f = max(f-1, 0)\n            force[i] += f\n\n        # Populate forces going from right to left\n        f = 0\n        for i in xrange(N-1, -1, -1):\n            if dominoes[i] == 'L': f = N\n            elif dominoes[i] == 'R': f = 0\n            else: f = max(f-1, 0)\n            force[i] -= f\n\n        return \"\".join('.' if f==0 else 'R' if f > 0 else 'L'\n                       for f in force)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Two Pointers",

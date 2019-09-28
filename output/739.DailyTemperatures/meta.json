@@ -13,7 +13,27 @@
   "solution": {
     "id": "312",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "zXoveQ5r": [
+      {
+        "code": "class Solution {\n    public int[] dailyTemperatures(int[] T) {\n        int[] ans = new int[T.length];\n        int[] next = new int[101];\n        Arrays.fill(next, Integer.MAX_VALUE);\n        for (int i = T.length - 1; i >= 0; --i) {\n            int warmer_index = Integer.MAX_VALUE;\n            for (int t = T[i] + 1; t <= 100; ++t) {\n                if (next[t] < warmer_index)\n                    warmer_index = next[t];\n            }\n            if (warmer_index < Integer.MAX_VALUE)\n                ans[i] = warmer_index - i;\n            next[T[i]] = i;\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def dailyTemperatures(self, T):\n        nxt = [float('inf')] * 102\n        ans = [0] * len(T)\n        for i in xrange(len(T) - 1, -1, -1):\n            #Use 102 so min(nxt[t]) has a default value\n            warmer_index = min(nxt[t] for t in xrange(T[i]+1, 102))\n            if warmer_index < float('inf'):\n                ans[i] = warmer_index - i\n            nxt[T[i]] = i\n        return ans",
+        "langSlug": "python"
+      }
+    ],
+    "GrKNCrcf": [
+      {
+        "code": "class Solution {\n    public int[] dailyTemperatures(int[] T) {\n        int[] ans = new int[T.length];\n        Stack<Integer> stack = new Stack();\n        for (int i = T.length - 1; i >= 0; --i) {\n            while (!stack.isEmpty() && T[i] >= T[stack.peek()]) stack.pop();\n            ans[i] = stack.isEmpty() ? 0 : stack.peek() - i;\n            stack.push(i);\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def dailyTemperatures(self, T):\n        ans = [0] * len(T)\n        stack = [] #indexes from hottest to coldest\n        for i in xrange(len(T) - 1, -1, -1):\n            while stack and T[i] >= T[stack[-1]]:\n                stack.pop()\n            if stack:\n                ans[i] = stack[-1] - i\n            stack.append(i)\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table",

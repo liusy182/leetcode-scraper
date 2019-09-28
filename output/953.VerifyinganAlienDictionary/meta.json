@@ -11,7 +11,17 @@
   "solution": {
     "id": "633",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "8bE6hgJ8": [
+      {
+        "code": "class Solution {\n    public boolean isAlienSorted(String[] words, String order) {\n        int[] index = new int[26];\n        for (int i = 0; i < order.length(); ++i)\n            index[order.charAt(i) - 'a'] = i;\n\n        search: for (int i = 0; i < words.length - 1; ++i) {\n            String word1 = words[i];\n            String word2 = words[i+1];\n\n            // Find the first difference word1[k] != word2[k].\n            for (int k = 0; k < Math.min(word1.length(), word2.length()); ++k) {\n                if (word1.charAt(k) != word2.charAt(k)) {\n                    // If they compare badly, it's not sorted.\n                    if (index[word1.charAt(k) - 'a'] > index[word2.charAt(k) - 'a'])\n                        return false;\n                    continue search;\n                }\n            }\n\n            // If we didn't find a first difference, the\n            // words are like (\"app\", \"apple\").\n            if (word1.length() > word2.length())\n                return false;\n        }\n\n        return true;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def isAlienSorted(self, words, order):\n        order_index = {c: i for i, c in enumerate(order)}\n\n        for i in xrange(len(words) - 1):\n            word1 = words[i]\n            word2 = words[i+1]\n\n            # Find the first difference word1[k] != word2[k].\n            for k in xrange(min(len(word1), len(word2))):\n                # If they compare badly, it's not sorted.\n                if word1[k] != word2[k]:\n                    if order_index[word1[k]] > order_index[word2[k]]:\n                        return False\n                    break\n            else:\n                # If we didn't find a first difference, the\n                # words are like (\"app\", \"apple\").\n                if len(word1) > len(word2):\n                    return False\n\n        return True",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table"

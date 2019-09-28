@@ -11,7 +11,17 @@
   "solution": {
     "id": "428",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "wYbwGZmT": [
+      {
+        "code": "class Solution {\n    public int bestRotation(int[] A) {\n        int N = A.length;\n        int[] bad = new int[N];\n        for (int i = 0; i < N; ++i) {\n            int left = (i - A[i] + 1 + N) % N;\n            int right = (i + 1) % N;\n            bad[left]--;\n            bad[right]++;\n            if (left > right)\n                bad[0]--;\n        }\n\n        int best = -N;\n        int ans = 0, cur = 0;\n        for (int i = 0; i < N; ++i) {\n            cur += bad[i];\n            if (cur > best) {\n                best = cur;\n                ans = i;\n            }\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def bestRotation(self, A):\n        N = len(A)\n        bad = [0] * N\n        for i, x in enumerate(A):\n            left, right = (i - x + 1) % N, (i + 1) % N\n            bad[left] -= 1\n            bad[right] += 1\n            if left > right:\n                bad[0] -= 1\n\n        best = -N\n        ans = cur = 0\n        for i, score in enumerate(bad):\n            cur += score\n            if cur > best:\n                best = cur\n                ans = i\n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": []
 }

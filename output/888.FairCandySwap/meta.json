@@ -11,7 +11,17 @@
   "solution": {
     "id": "532",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "WryKmFvR": [
+      {
+        "code": "class Solution {\n    public int[] fairCandySwap(int[] A, int[] B) {\n        int sa = 0, sb = 0;  // sum of A, B respectively\n        for (int x: A) sa += x;\n        for (int x: B) sb += x;\n        int delta = (sb - sa) / 2;\n        // If Alice gives x, she expects to receive x + delta\n\n        Set<Integer> setB = new HashSet();\n        for (int x: B) setB.add(x);\n\n        for (int x: A)\n            if (setB.contains(x + delta))\n                return new int[]{x, x + delta};\n\n        throw null;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def fairCandySwap(self, A, B):\n        Sa, Sb = sum(A), sum(B)\n        setB = set(B)\n        for x in A:\n            if x + (Sb - Sa) / 2 in setB:\n                return [x, x + (Sb - Sa) / 2]",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array"

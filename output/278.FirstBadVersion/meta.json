@@ -11,7 +11,19 @@
   "solution": {
     "id": "8",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "Ezb8JYsL": [
+      {
+        "code": "public int firstBadVersion(int n) {\n    for (int i = 1; i < n; i++) {\n        if (isBadVersion(i)) {\n            return i;\n        }\n    }\n    return n;\n}",
+        "langSlug": "java"
+      }
+    ],
+    "VQBrosDg": [
+      {
+        "code": "public int firstBadVersion(int n) {\n    int left = 1;\n    int right = n;\n    while (left < right) {\n        int mid = left + (right - left) / 2;\n        if (isBadVersion(mid)) {\n            right = mid;\n        } else {\n            left = mid + 1;\n        }\n    }\n    return left;\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Binary Search"

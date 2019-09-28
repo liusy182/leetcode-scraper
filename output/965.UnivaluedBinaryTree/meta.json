@@ -11,7 +11,27 @@
   "solution": {
     "id": "652",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "dL2Yo8pb": [
+      {
+        "code": "class Solution {\n    List<Integer> vals;\n    public boolean isUnivalTree(TreeNode root) {\n        vals = new ArrayList();\n        dfs(root);\n        for (int v: vals)\n            if (v != vals.get(0))\n                return false;\n        return true;\n    }\n\n    public void dfs(TreeNode node) {\n        if (node != null) {\n            vals.add(node.val);\n            dfs(node.left);\n            dfs(node.right);\n        }\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def isUnivalTree(self, root):\n        vals = []\n\n        def dfs(node):\n            if node:\n                vals.append(node.val)\n                dfs(node.left)\n                dfs(node.right)\n\n        dfs(root)\n        return len(set(vals)) == 1",
+        "langSlug": "python"
+      }
+    ],
+    "xLY6bNWX": [
+      {
+        "code": "class Solution {\n    public boolean isUnivalTree(TreeNode root) {\n        boolean left_correct = (root.left == null ||\n                (root.val == root.left.val && isUnivalTree(root.left)));\n        boolean right_correct = (root.right == null ||\n                (root.val == root.right.val && isUnivalTree(root.right)));\n        return left_correct && right_correct;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def isUnivalTree(self, root):\n        left_correct = (not root.left or root.val == root.left.val\n                and self.isUnivalTree(root.left))\n        right_correct = (not root.right or root.val == root.right.val\n                and self.isUnivalTree(root.right))\n        return left_correct and right_correct",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree"

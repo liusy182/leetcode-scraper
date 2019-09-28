@@ -11,7 +11,37 @@
   "solution": {
     "id": "569",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "kohPDrYw": [
+      {
+        "code": "class Solution {\n  public List<String> fizzBuzz(int n) {\n\n    // ans list\n    List<String> ans = new ArrayList<String>();\n\n    for (int num = 1; num <= n; num++) {\n\n      boolean divisibleBy3 = (num % 3 == 0);\n      boolean divisibleBy5 = (num % 5 == 0);\n\n      if (divisibleBy3 && divisibleBy5) {\n        // Divides by both 3 and 5, add FizzBuzz\n        ans.add(\"FizzBuzz\");\n      } else if (divisibleBy3) {\n        // Divides by 3, add Fizz\n        ans.add(\"Fizz\");\n      } else if (divisibleBy5) {\n        // Divides by 5, add Buzz\n        ans.add(\"Buzz\");\n      } else {\n        // Not divisible by 3 or 5, add the number\n        ans.add(Integer.toString(num));\n      }\n    }\n\n    return ans;\n  }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def fizzBuzz(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: List[str]\n        \"\"\"\n        # ans list\n        ans = []\n\n        for num in range(1,n+1):\n\n            divisible_by_3 = (num % 3 == 0)\n            divisible_by_5 = (num % 5 == 0)\n\n            if divisible_by_3 and divisible_by_5:\n                # Divides by both 3 and 5, add FizzBuzz\n                ans.append(\"FizzBuzz\")\n            elif divisible_by_3:\n                # Divides by 3, add Fizz\n                ans.append(\"Fizz\")\n            elif divisible_by_5:\n                # Divides by 5, add Buzz\n                ans.append(\"Buzz\")\n            else:\n                # Not divisible by 3 or 5, add the number\n                ans.append(str(num))\n\n        return ans",
+        "langSlug": "python"
+      }
+    ],
+    "kpRjpMFa": [
+      {
+        "code": "class Solution {\n  public List<String> fizzBuzz(int n) {\n    // ans list\n    List<String> ans = new ArrayList<String>();\n\n    for (int num = 1; num <= n; num++) {\n\n      boolean divisibleBy3 = (num % 3 == 0);\n      boolean divisibleBy5 = (num % 5 == 0);\n\n      String numAnsStr = \"\";\n\n      if (divisibleBy3) {\n        // Divides by 3, add Fizz\n        numAnsStr += \"Fizz\";\n      }\n\n      if (divisibleBy5) {\n        // Divides by 5, add Buzz\n        numAnsStr += \"Buzz\";\n      }\n\n      if (numAnsStr.equals(\"\")) {\n        // Not divisible by 3 or 5, add the number\n        numAnsStr += Integer.toString(num);\n      }\n\n      // Append the current answer str to the ans list\n      ans.add(numAnsStr);\n    }\n\n    return ans;\n  }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def fizzBuzz(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: List[str]\n        \"\"\"\n        # ans list\n        ans = []\n\n        for num in range(1,n+1):\n\n            divisible_by_3 = (num % 3 == 0)\n            divisible_by_5 = (num % 5 == 0)\n\n            num_ans_str = \"\"\n\n            if divisible_by_3:\n                # Divides by 3\n                num_ans_str += \"Fizz\"\n            if divisible_by_5:\n                # Divides by 5\n                num_ans_str += \"Buzz\"\n            if not num_ans_str:\n                # Not divisible by 3 or 5\n                num_ans_str = str(num)\n\n            # Append the current answer str to the ans list\n            ans.append(num_ans_str)  \n\n        return ans",
+        "langSlug": "python"
+      }
+    ],
+    "yRV2JDsz": [
+      {
+        "code": "class Solution {\n  public List<String> fizzBuzz(int n) {\n\n    // ans list\n    List<String> ans = new ArrayList<String>();\n\n    // Hash map to store all fizzbuzz mappings.\n    HashMap<Integer, String> fizzBizzDict =\n        new HashMap<Integer, String>() {\n          {\n            put(3, \"Fizz\");\n            put(5, \"Buzz\");\n          }\n        };\n\n    for (int num = 1; num <= n; num++) {\n\n      String numAnsStr = \"\";\n\n      for (Integer key : fizzBizzDict.keySet()) {\n\n        // If the num is divisible by key,\n        // then add the corresponding string mapping to current numAnsStr\n        if (num % key == 0) {\n          numAnsStr += fizzBizzDict.get(key);\n        }\n      }\n\n      if (numAnsStr.equals(\"\")) {\n        // Not divisible by 3 or 5, add the number\n        numAnsStr += Integer.toString(num);\n      }\n\n      // Append the current answer str to the ans list\n      ans.add(numAnsStr);\n    }\n\n    return ans;\n  }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def fizzBuzz(self, n):\n        \"\"\"\n        :type n: int\n        :rtype: List[str]\n        \"\"\"\n        # ans list\n        ans = []\n\n        # Dictionary to store all fizzbuzz mappings\n        fizz_buzz_dict = {3 : \"Fizz\", 5 : \"Buzz\"}\n\n        for num in range(1,n+1):\n\n            num_ans_str = \"\"\n\n            for key in fizz_buzz_dict.keys():\n\n                # If the num is divisible by key,\n                # then add the corresponding string mapping to current num_ans_str\n                if num % key == 0:\n                    num_ans_str += fizz_buzz_dict[key]\n\n            if not num_ans_str:\n                num_ans_str = str(num)\n\n            # Append the current answer str to the ans list\n            ans.append(num_ans_str)  \n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": []
 }

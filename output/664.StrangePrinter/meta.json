@@ -11,7 +11,17 @@
   "solution": {
     "id": "329",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "L3mAUr9w": [
+      {
+        "code": "class Solution {\n    int[][] memo;\n    public int strangePrinter(String s) {\n        int N = s.length();\n        memo = new int[N][N];\n        return dp(s, 0, N - 1);\n    }\n    public int dp(String s, int i, int j) {\n        if (i > j) return 0;\n        if (memo[i][j] == 0) {\n            int ans = dp(s, i+1, j) + 1;\n            for (int k = i+1; k <= j; ++k)\n                if (s.charAt(k) == s.charAt(i))\n                    ans = Math.min(ans, dp(s, i, k-1) + dp(s, k+1, j));\n            memo[i][j] = ans;\n        }\n        return memo[i][j];\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "def strangePrinter(self, S):\n    memo = {}\n    def dp(i, j):\n        if i > j: return 0\n        if (i, j) not in memo:\n            ans = dp(i+1, j) + 1\n            for k in xrange(i+1, j+1):\n                if S[k] == S[i]:\n                    ans = min(ans, dp(i, k-1) + dp(k+1, j))\n            memo[i, j] = ans\n        return memo[i, j]\n\n    return dp(0, len(S) - 1)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming",

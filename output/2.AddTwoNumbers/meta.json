@@ -11,7 +11,13 @@
   "solution": {
     "id": "30",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "5onAHA8v": [
+      {
+        "code": "public ListNode addTwoNumbers(ListNode l1, ListNode l2) {\n    ListNode dummyHead = new ListNode(0);\n    ListNode p = l1, q = l2, curr = dummyHead;\n    int carry = 0;\n    while (p != null || q != null) {\n        int x = (p != null) ? p.val : 0;\n        int y = (q != null) ? q.val : 0;\n        int sum = carry + x + y;\n        carry = sum / 10;\n        curr.next = new ListNode(sum % 10);\n        curr = curr.next;\n        if (p != null) p = p.next;\n        if (q != null) q = q.next;\n    }\n    if (carry > 0) {\n        curr.next = new ListNode(carry);\n    }\n    return dummyHead.next;\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Linked List",

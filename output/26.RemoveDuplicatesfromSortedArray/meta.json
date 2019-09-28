@@ -11,7 +11,13 @@
   "solution": {
     "id": "4",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "p8jPfpcx": [
+      {
+        "code": "public int removeDuplicates(int[] nums) {\n    if (nums.length == 0) return 0;\n    int i = 0;\n    for (int j = 1; j < nums.length; j++) {\n        if (nums[j] != nums[i]) {\n            i++;\n            nums[i] = nums[j];\n        }\n    }\n    return i + 1;\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Array",

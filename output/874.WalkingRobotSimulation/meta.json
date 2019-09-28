@@ -11,7 +11,21 @@
   "solution": {
     "id": "513",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "BzLAA5NV": [
+      {
+        "code": "class Solution {\npublic:\n    int robotSim(vector<int>& commands, vector<vector<int>>& obstacles) {\n        int dx[4] = {0, 1, 0, -1};\n        int dy[4] = {1, 0, -1, 0};\n        int x = 0, y = 0, di = 0;\n\n        set<pair<int, int>> obstacleSet;\n        for (vector<int> obstacle: obstacles)\n            obstacleSet.insert(make_pair(obstacle[0], obstacle[1]));\n\n        int ans = 0;\n        for (int cmd: commands) {\n            if (cmd == -2)\n                di = (di + 3) % 4;\n            else if (cmd == -1)\n                di = (di + 1) % 4;\n            else {\n                for (int k = 0; k < cmd; ++k) {\n                    int nx = x + dx[di];\n                    int ny = y + dy[di];\n                    if (obstacleSet.find(make_pair(nx, ny)) == obstacleSet.end()) {\n                        x = nx;\n                        y = ny;\n                        ans = max(ans, x*x + y*y);\n                    }\n                }\n            }\n        }\n\n        return ans;\n    }\n};",
+        "langSlug": "cpp"
+      },
+      {
+        "code": "class Solution {\n    public int robotSim(int[] commands, int[][] obstacles) {\n        int[] dx = new int[]{0, 1, 0, -1};\n        int[] dy = new int[]{1, 0, -1, 0};\n        int x = 0, y = 0, di = 0;\n\n        // Encode obstacles (x, y) as (x+30000) * (2^16) + (y+30000)\n        Set<Long> obstacleSet = new HashSet();\n        for (int[] obstacle: obstacles) {\n            long ox = (long) obstacle[0] + 30000;\n            long oy = (long) obstacle[1] + 30000;\n            obstacleSet.add((ox << 16) + oy);\n        }\n\n        int ans = 0;\n        for (int cmd: commands) {\n            if (cmd == -2)  //left\n                di = (di + 3) % 4;\n            else if (cmd == -1)  //right\n                di = (di + 1) % 4;\n            else {\n                for (int k = 0; k < cmd; ++k) {\n                    int nx = x + dx[di];\n                    int ny = y + dy[di];\n                    long code = (((long) nx + 30000) << 16) + ((long) ny + 30000);\n                    if (!obstacleSet.contains(code)) {\n                        x = nx;\n                        y = ny;\n                        ans = Math.max(ans, x*x + y*y);\n                    }\n                }\n            }\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def robotSim(self, commands, obstacles):\n        dx = [0, 1, 0, -1]\n        dy = [1, 0, -1, 0]\n        x = y = di = 0\n        obstacleSet = set(map(tuple, obstacles))\n        ans = 0\n\n        for cmd in commands:\n            if cmd == -2:  #left\n                di = (di - 1) % 4\n            elif cmd == -1:  #right\n                di = (di + 1) % 4\n            else:\n                for k in xrange(cmd):\n                    if (x+dx[di], y+dy[di]) not in obstacleSet:\n                        x += dx[di]\n                        y += dy[di]\n                        ans = max(ans, x*x + y*y)\n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Greedy"

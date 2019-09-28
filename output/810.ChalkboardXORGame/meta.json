@@ -11,7 +11,17 @@
   "solution": {
     "id": "443",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "bz5ugFJG": [
+      {
+        "code": "class Solution {\n    public boolean xorGame(int[] nums) {\n      int x = 0;\n      for (int v : nums) x ^= v;\n      return x == 0 || nums.length % 2 == 0;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def xorGame(self, nums):\n        return reduce(operator.xor, nums) == 0 or len(nums) % 2 == 0",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math"

@@ -11,7 +11,27 @@
   "solution": {
     "id": "625",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "vFbGLUPW": [
+      {
+        "code": "class Solution {\n    public int removeStones(int[][] stones) {\n        int N = stones.length;\n\n        // graph[i][0] = the length of the 'list' graph[i][1:]\n        int[][] graph = new int[N][N];\n        for (int i = 0; i < N; ++i)\n            for (int j = i+1; j < N; ++j)\n                if (stones[i][0] == stones[j][0] || stones[i][1] == stones[j][1]) {\n                    graph[i][++graph[i][0]] = j;\n                    graph[j][++graph[j][0]] = i;\n                }\n\n        int ans = 0;\n        boolean[] seen = new boolean[N];\n        for (int i = 0; i < N; ++i) if (!seen[i]) {\n            Stack<Integer> stack = new Stack();\n            stack.push(i);\n            seen[i] = true;\n            ans--;\n            while (!stack.isEmpty()) {\n                int node = stack.pop();\n                ans++;\n                for (int k = 1; k <= graph[node][0]; ++k) {\n                    int nei = graph[node][k];\n                    if (!seen[nei]) {\n                        stack.push(nei);\n                        seen[nei] = true;\n                    }\n                }\n            }\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def removeStones(self, stones):\n        graph = collections.defaultdict(list)\n        for i, x in enumerate(stones):\n            for j in xrange(i):\n                y = stones[j]\n                if x[0]==y[0] or x[1]==y[1]:\n                    graph[i].append(j)\n                    graph[j].append(i)\n\n        N = len(stones)\n        ans = 0\n\n        seen = [False] * N\n        for i in xrange(N):\n            if not seen[i]:\n                stack = [i]\n                seen[i] = True\n                while stack:\n                    ans += 1\n                    node = stack.pop()\n                    for nei in graph[node]:\n                        if not seen[nei]:\n                            stack.append(nei)\n                            seen[nei] = True\n                ans -= 1\n        return ans",
+        "langSlug": "python"
+      }
+    ],
+    "hhTCv59W": [
+      {
+        "code": "class Solution {\n    public int removeStones(int[][] stones) {\n        int N = stones.length;\n        DSU dsu = new DSU(20000);\n\n        for (int[] stone: stones)\n            dsu.union(stone[0], stone[1] + 10000);\n\n        Set<Integer> seen = new HashSet();\n        for (int[] stone: stones)\n            seen.add(dsu.find(stone[0]));\n\n        return N - seen.size();\n    }\n}\n\nclass DSU {\n    int[] parent;\n    public DSU(int N) {\n        parent = new int[N];\n        for (int i = 0; i < N; ++i)\n            parent[i] = i;\n    }\n    public int find(int x) {\n        if (parent[x] != x) parent[x] = find(parent[x]);\n        return parent[x];\n    }\n    public void union(int x, int y) {\n        parent[find(x)] = find(y);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class DSU:\n    def __init__(self, N):\n        self.p = range(N)\n\n    def find(self, x):\n        if self.p[x] != x:\n            self.p[x] = self.find(self.p[x])\n        return self.p[x]\n\n    def union(self, x, y):\n        xr = self.find(x)\n        yr = self.find(y)\n        self.p[xr] = yr\n\nclass Solution(object):\n    def removeStones(self, stones):\n        N = len(stones)\n        dsu = DSU(20000)\n        for x, y in stones:\n            dsu.union(x, y + 10000)\n\n        return N - len({dsu.find(x) for x, y in stones})",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Depth-first Search",

@@ -11,7 +11,31 @@
   "solution": {
     "id": "123",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "fM6wckj7": [
+      {
+        "code": "public class Solution {\n    int count = 0;\n    public int findTargetSumWays(int[] nums, int S) {\n        calculate(nums, 0, 0, S);\n        return count;\n    }\n    public void calculate(int[] nums, int i, int sum, int S) {\n        if (i == nums.length) {\n            if (sum == S)\n                count++;\n        } else {\n            calculate(nums, i + 1, sum + nums[i], S);\n            calculate(nums, i + 1, sum - nums[i], S);\n        }\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "VRUSdbty": [
+      {
+        "code": "public class Solution {\n    int count = 0;\n    public int findTargetSumWays(int[] nums, int S) {\n        int[][] memo = new int[nums.length][2001];\n        for (int[] row: memo)\n            Arrays.fill(row, Integer.MIN_VALUE);\n        return calculate(nums, 0, 0, S, memo);\n    }\n    public int calculate(int[] nums, int i, int sum, int S, int[][] memo) {\n        if (i == nums.length) {\n            if (sum == S)\n                return 1;\n            else\n                return 0;\n        } else {\n            if (memo[i][sum + 1000] != Integer.MIN_VALUE) {\n                return memo[i][sum + 1000];\n            }\n            int add = calculate(nums, i + 1, sum + nums[i], S, memo);\n            int subtract = calculate(nums, i + 1, sum - nums[i], S, memo);\n            memo[i][sum + 1000] = add + subtract;\n            return memo[i][sum + 1000];\n        }\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "tSDYMR33": [
+      {
+        "code": "public class Solution {\n    public int findTargetSumWays(int[] nums, int S) {\n        int[][] dp = new int[nums.length][2001];\n        dp[0][nums[0] + 1000] = 1;\n        dp[0][-nums[0] + 1000] += 1;\n        for (int i = 1; i < nums.length; i++) {\n            for (int sum = -1000; sum <= 1000; sum++) {\n                if (dp[i - 1][sum + 1000] > 0) {\n                    dp[i][sum + nums[i] + 1000] += dp[i - 1][sum + 1000];\n                    dp[i][sum - nums[i] + 1000] += dp[i - 1][sum + 1000];\n                }\n            }\n        }\n        return S > 1000 ? 0 : dp[nums.length - 1][S + 1000];\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "N6s9PiwM": [
+      {
+        "code": "public class Solution {\n    public int findTargetSumWays(int[] nums, int S) {\n        int[] dp = new int[2001];\n        dp[nums[0] + 1000] = 1;\n        dp[-nums[0] + 1000] += 1;\n        for (int i = 1; i < nums.length; i++) {\n            int[] next = new int[2001];\n            for (int sum = -1000; sum <= 1000; sum++) {\n                if (dp[sum + 1000] > 0) {\n                    next[sum + nums[i] + 1000] += dp[sum + 1000];\n                    next[sum - nums[i] + 1000] += dp[sum + 1000];\n                }\n            }\n            dp = next;\n        }\n        return S > 1000 ? 0 : dp[S + 1000];\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming",

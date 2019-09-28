@@ -11,7 +11,27 @@
   "solution": {
     "id": "667",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "qsCBvg6X": [
+      {
+        "code": "class Solution {\n    public int[][] kClosest(int[][] points, int K) {\n        int N = points.length;\n        int[] dists = new int[N];\n        for (int i = 0; i < N; ++i)\n            dists[i] = dist(points[i]);\n\n        Arrays.sort(dists);\n        int distK = dists[K-1];\n\n        int[][] ans = new int[K][2];\n        int t = 0;\n        for (int i = 0; i < N; ++i)\n            if (dist(points[i]) <= distK)\n                ans[t++] = points[i];\n        return ans;\n    }\n\n    public int dist(int[] point) {\n        return point[0] * point[0] + point[1] * point[1];\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def kClosest(self, points, K):\n        points.sort(key = lambda P: P[0]**2 + P[1]**2)\n        return points[:K]",
+        "langSlug": "python"
+      }
+    ],
+    "9yZ96Kwf": [
+      {
+        "code": "import java.util.concurrent.ThreadLocalRandom;\n\nclass Solution {\n    int[][] points;\n    public int[][] kClosest(int[][] points, int K) {\n        this.points = points;\n        sort(0, points.length - 1, K);\n        return Arrays.copyOfRange(points, 0, K);\n    }\n\n    public void sort(int i, int j, int K) {\n        if (i >= j) return;\n        int k = ThreadLocalRandom.current().nextInt(i, j);\n        swap(i, k);\n\n        int mid = partition(i, j);\n        int leftLength = mid - i + 1;\n        if (K < leftLength)\n            sort(i, mid - 1, K);\n        else if (K > leftLength)\n            sort(mid + 1, j, K - leftLength);\n    }\n\n    public int partition(int i, int j) {\n        int oi = i;\n        int pivot = dist(i);\n        i++;\n\n        while (true) {\n            while (i < j && dist(i) < pivot)\n                i++;\n            while (i <= j && dist(j) > pivot)\n                j--;\n            if (i >= j) break;\n            swap(i, j);\n        }\n        swap(oi, j);\n        return j;\n    }\n\n    public int dist(int i) {\n        return points[i][0] * points[i][0] + points[i][1] * points[i][1];\n    }\n\n    public void swap(int i, int j) {\n        int t0 = points[i][0], t1 = points[i][1];\n        points[i][0] = points[j][0];\n        points[i][1] = points[j][1];\n        points[j][0] = t0;\n        points[j][1] = t1;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def kClosest(self, points, K):\n        dist = lambda i: points[i][0]**2 + points[i][1]**2\n\n        def sort(i, j, K):\n            # Partially sorts A[i:j+1] so the first K elements are\n            # the smallest K elements.\n            if i >= j: return\n\n            # Put random element as A[i] - this is the pivot\n            k = random.randint(i, j)\n            points[i], points[k] = points[k], points[i]\n\n            mid = partition(i, j)\n            if K < mid - i + 1:\n                sort(i, mid - 1, K)\n            elif K > mid - i + 1:\n                sort(mid + 1, j, K - (mid - i + 1))\n\n        def partition(i, j):\n            # Partition by pivot A[i], returning an index mid\n            # such that A[i] <= A[mid] <= A[j] for i < mid < j.\n            oi = i\n            pivot = dist(i)\n            i += 1\n\n            while True:\n                while i < j and dist(i) < pivot:\n                    i += 1\n                while i <= j and dist(j) >= pivot:\n                    j -= 1\n                if i >= j: break\n                points[i], points[j] = points[j], points[i]\n\n            points[oi], points[j] = points[j], points[oi]\n            return j\n\n        sort(0, len(points) - 1, K)\n        return points[:K]",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Divide and Conquer",

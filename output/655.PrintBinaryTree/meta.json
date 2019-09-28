@@ -11,7 +11,19 @@
   "solution": {
     "id": "225",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "ncTFx4nd": [
+      {
+        "code": "public class Solution {\n    public List<List<String>> printTree(TreeNode root) {\n        int height = getHeight(root);\n        String[][] res = new String[height][(1 << height) - 1];\n        for(String[] arr:res)\n            Arrays.fill(arr,\"\");\n        List<List<String>> ans = new ArrayList<>();\n        fill(res, root, 0, 0, res[0].length);\n        for(String[] arr:res)\n            ans.add(Arrays.asList(arr));\n        return ans;\n    }\n    public void fill(String[][] res, TreeNode root, int i, int l, int r) {\n        if (root == null)\n            return;\n        res[i][(l + r) / 2] = \"\" + root.val;\n        fill(res, root.left, i + 1, l, (l + r) / 2);\n        fill(res, root.right, i + 1, (l + r + 1) / 2, r);\n    }\n    public int getHeight(TreeNode root) {\n        if (root == null)\n            return 0;\n        return 1 + Math.max(getHeight(root.left), getHeight(root.right));\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "jb3EALV4": [
+      {
+        "code": "public class Solution\n/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    class Params {\n        Params(TreeNode n, int ii, int ll, int rr) {\n            root = n;\n            i = ii;\n            l = ll;\n            r = rr;\n        }\n        TreeNode root;\n        int i, l, r;\n    }\n    public List < List < String >> printTree(TreeNode root) {\n        int height = getHeight(root);\n        System.out.println(height);\n        String[][] res = new String[height][(1 << height) - 1];\n        for (String[] arr: res)\n            Arrays.fill(arr, \"\");\n        List < List < String >> ans = new ArrayList < > ();\n        fill(res, root, 0, 0, res[0].length);\n        for (String[] arr: res)\n            ans.add(Arrays.asList(arr));\n        return ans;\n    }\n    public void fill(String[][] res, TreeNode root, int i, int l, int r) {\n        Queue < Params > queue = new LinkedList();\n        queue.add(new Params(root, 0, 0, res[0].length));\n        while (!queue.isEmpty()) {\n            Params p = queue.remove();\n            res[p.i][(p.l + p.r) / 2] = \"\" + p.root.val;\n            if (p.root.left != null)\n                queue.add(new Params(p.root.left, p.i + 1, p.l, (p.l + p.r) / 2));\n            if (p.root.right != null)\n                queue.add(new Params(p.root.right, p.i + 1, (p.l + p.r + 1) / 2, p.r));\n        }\n    }\n    public int getHeight(TreeNode root) {\n        Queue < TreeNode > queue = new LinkedList();\n        queue.add(root);\n        int height = 0;\n        while (!queue.isEmpty()) {\n            height++;\n            Queue < TreeNode > temp = new LinkedList();\n            while (!queue.isEmpty()) {\n                TreeNode node = queue.remove();\n                if (node.left != null)\n                    temp.add(node.left);\n                if (node.right != null)\n                    temp.add(node.right);\n            }\n            queue = temp;\n        }\n        return height;\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Tree"

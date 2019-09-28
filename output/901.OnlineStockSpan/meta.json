@@ -11,7 +11,17 @@
   "solution": {
     "id": "550",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "5aJytT6D": [
+      {
+        "code": "class StockSpanner {\n    Stack<Integer> prices, weights;\n\n    public StockSpanner() {\n        prices = new Stack();\n        weights = new Stack();\n    }\n\n    public int next(int price) {\n        int w = 1;\n        while (!prices.isEmpty() && prices.peek() <= price) {\n            prices.pop();\n            w += weights.pop();\n        }\n\n        prices.push(price);\n        weights.push(w);\n        return w;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class StockSpanner(object):\n    def __init__(self):\n        self.stack = []\n\n    def next(self, price):\n        weight = 1\n        while self.stack and self.stack[-1][0] <= price:\n            weight += self.stack.pop()[1]\n        self.stack.append((price, weight))\n        return weight",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Stack"

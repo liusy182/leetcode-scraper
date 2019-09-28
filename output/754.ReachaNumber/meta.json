@@ -11,7 +11,17 @@
   "solution": {
     "id": "364",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "VZd5DozE": [
+      {
+        "code": "class Solution {\n    public int reachNumber(int target) {\n        target = Math.abs(target);\n        int k = 0;\n        while (target > 0)\n            target -= ++k;\n        return target % 2 == 0 ? k : k + 1 + k%2;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def reachNumber(self, target):\n        target = abs(target)\n        k = 0\n        while target > 0:\n            k += 1\n            target -= k\n\n        return k if target % 2 == 0 else k + 1 + k%2",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math"

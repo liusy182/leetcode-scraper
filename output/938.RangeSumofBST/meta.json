@@ -11,7 +11,27 @@
   "solution": {
     "id": "611",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "zwwcTGCT": [
+      {
+        "code": "class Solution {\n    int ans;\n    public int rangeSumBST(TreeNode root, int L, int R) {\n        ans = 0;\n        dfs(root, L, R);\n        return ans;\n    }\n\n    public void dfs(TreeNode node, int L, int R) {\n        if (node != null) {\n            if (L <= node.val && node.val <= R)\n                ans += node.val;\n            if (L < node.val)\n                dfs(node.left, L, R);\n            if (node.val < R)\n                dfs(node.right, L, R);\n        }\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def rangeSumBST(self, root, L, R):\n        def dfs(node):\n            if node:\n                if L <= node.val <= R:\n                    self.ans += node.val\n                if L < node.val:\n                    dfs(node.left)\n                if node.val < R:\n                    dfs(node.right)\n\n        self.ans = 0\n        dfs(root)\n        return self.ans",
+        "langSlug": "python"
+      }
+    ],
+    "LyVV4ZSy": [
+      {
+        "code": "class Solution {\n    public int rangeSumBST(TreeNode root, int L, int R) {\n        int ans = 0;\n        Stack<TreeNode> stack = new Stack();\n        stack.push(root);\n        while (!stack.isEmpty()) {\n            TreeNode node = stack.pop();\n            if (node != null) {\n                if (L <= node.val && node.val <= R)\n                    ans += node.val;\n                if (L < node.val)\n                    stack.push(node.left);\n                if (node.val < R)\n                    stack.push(node.right);\n            }\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def rangeSumBST(self, root, L, R):\n        ans = 0\n        stack = [root]\n        while stack:\n            node = stack.pop()\n            if node:\n                if L <= node.val <= R:\n                    ans += node.val\n                if L < node.val:\n                    stack.append(node.left)\n                if node.val < R:\n                    stack.append(node.right)\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree",

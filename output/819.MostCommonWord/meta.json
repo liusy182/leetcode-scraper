@@ -11,7 +11,17 @@
   "solution": {
     "id": "450",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "vAHSEpAf": [
+      {
+        "code": "class Solution {\n    public String mostCommonWord(String paragraph, String[] banned) {\n        paragraph += \".\";\n\n        Set<String> banset = new HashSet();\n        for (String word: banned) banset.add(word);\n        Map<String, Integer> count = new HashMap();\n\n        String ans = \"\";\n        int ansfreq = 0;\n\n        StringBuilder word = new StringBuilder();\n        for (char c: paragraph.toCharArray()) {\n            if (Character.isLetter(c)) {\n                word.append(Character.toLowerCase(c));\n            } else if (word.length() > 0) {\n                String finalword = word.toString();\n                if (!banset.contains(finalword)) {\n                    count.put(finalword, count.getOrDefault(finalword, 0) + 1);\n                    if (count.get(finalword) > ansfreq) {\n                        ans = finalword;\n                        ansfreq = count.get(finalword);\n                    }\n                }\n                word = new StringBuilder();\n            }\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def mostCommonWord(self, paragraph, banned):\n        banset = set(banned)\n        for c in \"!?',;.\":\n            paragraph = paragraph.replace(c, \" \")\n        count = collections.Counter(\n            word for word in paragraph.lower().split())\n\n        ans, best = '', 0\n        for word in count:\n            if count[word] > best and word not in banset:\n                ans, best = word, count[word]\n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "String"

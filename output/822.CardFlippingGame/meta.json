@@ -11,7 +11,17 @@
   "solution": {
     "id": "452",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "DvJ47nbA": [
+      {
+        "code": "class Solution {\n    public int flipgame(int[] fronts, int[] backs) {\n        Set<Integer> same = new HashSet();\n        for (int i = 0; i < fronts.length; ++i)\n            if (fronts[i] == backs[i])\n                same.add(fronts[i]);\n\n        int ans = 9999;\n        for (int x: fronts)\n            if (!same.contains(x))\n                ans = Math.min(ans, x);\n\n        for (int x: backs)\n            if (!same.contains(x))\n                ans = Math.min(ans, x);\n\n        return ans % 9999;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def flipgame(self, fronts, backs):\n        same = {x for i, x in enumerate(fronts) if x == backs[i]}\n        ans = 9999\n        for x in itertools.chain(fronts, backs):\n            if x not in same:\n                ans = min(ans, x)\n\n        return ans % 9999",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": []
 }

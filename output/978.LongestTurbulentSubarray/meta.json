@@ -11,7 +11,17 @@
   "solution": {
     "id": "669",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "9pQoKhee": [
+      {
+        "code": "class Solution {\n    public int maxTurbulenceSize(int[] A) {\n        int N = A.length;\n        int ans = 1;\n        int anchor = 0;\n\n        for (int i = 1; i < N; ++i) {\n            int c = Integer.compare(A[i-1], A[i]);\n            if (c == 0) {\n                anchor = i;\n            } else if (i == N-1 || c * Integer.compare(A[i], A[i+1]) != -1) {\n                ans = Math.max(ans, i - anchor + 1);\n                anchor = i;\n            }\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def maxTurbulenceSize(self, A):\n        N = len(A)\n        ans = 1\n        anchor = 0\n\n        for i in xrange(1, N):\n            c = cmp(A[i-1], A[i])\n            if c == 0:\n                anchor = i\n            elif i == N-1 or c * cmp(A[i], A[i+1]) != -1:\n                ans = max(ans, i - anchor + 1)\n                anchor = i\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array",

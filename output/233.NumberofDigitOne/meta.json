@@ -13,7 +13,19 @@
   "solution": {
     "id": "183",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "VwAzPgne": [
+      {
+        "code": "int countDigitOne(int n)\n{\n    int countr = 0;\n    for (int i = 1; i <= n; i++) {\n        string str = to_string(i);\n        countr += count(str.begin(), str.end(), '1');\n    }\n    return countr;\n}",
+        "langSlug": "cpp"
+      }
+    ],
+    "QVzpgtNB": [
+      {
+        "code": "int countDigitOne(int n)\n{\n    int countr = 0;\n    for (long long i = 1; i <= n; i *= 10) {\n        long long divider = i * 10;\n        countr += (n / divider) * i + min(max(n % divider - i + 1, 0LL), i);\n    }\n    return countr;\n}",
+        "langSlug": "cpp"
+      }
+    ]
   },
   "topicTags": [
     "Math"

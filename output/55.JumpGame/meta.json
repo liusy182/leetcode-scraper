@@ -11,7 +11,37 @@
   "solution": {
     "id": "35",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "S9aCUfCG": [
+      {
+        "code": "public class Solution {\n    public boolean canJumpFromPosition(int position, int[] nums) {\n        if (position == nums.length - 1) {\n            return true;\n        }\n\n        int furthestJump = Math.min(position + nums[position], nums.length - 1);\n        for (int nextPosition = position + 1; nextPosition <= furthestJump; nextPosition++) {\n            if (canJumpFromPosition(nextPosition, nums)) {\n                return true;\n            }\n        }\n\n        return false;\n    }\n\n    public boolean canJump(int[] nums) {\n        return canJumpFromPosition(0, nums);\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "Eak7LXyr": [
+      {
+        "code": "// Old\nfor (int nextPosition = position + 1; nextPosition <= furthestJump; nextPosition++)\n// New\nfor (int nextPosition = furthestJump; nextPosition > position; nextPosition--)",
+        "langSlug": "java"
+      }
+    ],
+    "cAV9h4Nb": [
+      {
+        "code": "enum Index {\n    GOOD, BAD, UNKNOWN\n}\n\npublic class Solution {\n    Index[] memo;\n\n    public boolean canJumpFromPosition(int position, int[] nums) {\n        if (memo[position] != Index.UNKNOWN) {\n            return memo[position] == Index.GOOD ? true : false;\n        }\n\n        int furthestJump = Math.min(position + nums[position], nums.length - 1);\n        for (int nextPosition = position + 1; nextPosition <= furthestJump; nextPosition++) {\n            if (canJumpFromPosition(nextPosition, nums)) {\n                memo[position] = Index.GOOD;\n                return true;\n            }\n        }\n\n        memo[position] = Index.BAD;\n        return false;\n    }\n\n    public boolean canJump(int[] nums) {\n        memo = new Index[nums.length];\n        for (int i = 0; i < memo.length; i++) {\n            memo[i] = Index.UNKNOWN;\n        }\n        memo[memo.length - 1] = Index.GOOD;\n        return canJumpFromPosition(0, nums);\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "V8VSofDS": [
+      {
+        "code": "enum Index {\n    GOOD, BAD, UNKNOWN\n}\n\npublic class Solution {\n    public boolean canJump(int[] nums) {\n        Index[] memo = new Index[nums.length];\n        for (int i = 0; i < memo.length; i++) {\n            memo[i] = Index.UNKNOWN;\n        }\n        memo[memo.length - 1] = Index.GOOD;\n\n        for (int i = nums.length - 2; i >= 0; i--) {\n            int furthestJump = Math.min(i + nums[i], nums.length - 1);\n            for (int j = i + 1; j <= furthestJump; j++) {\n                if (memo[j] == Index.GOOD) {\n                    memo[i] = Index.GOOD;\n                    break;\n                }\n            }\n        }\n\n        return memo[0] == Index.GOOD;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "9y9y7Lry": [
+      {
+        "code": "public class Solution {\n    public boolean canJump(int[] nums) {\n        int lastPos = nums.length - 1;\n        for (int i = nums.length - 1; i >= 0; i--) {\n            if (i + nums[i] >= lastPos) {\n                lastPos = i;\n            }\n        }\n        return lastPos == 0;\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Array",

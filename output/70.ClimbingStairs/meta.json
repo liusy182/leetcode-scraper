@@ -13,7 +13,43 @@
   "solution": {
     "id": "84",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "vSGtWB6q": [
+      {
+        "code": "public class Solution {\n    public int climbStairs(int n) {\n        return climb_Stairs(0, n);\n    }\n    public int climb_Stairs(int i, int n) {\n        if (i > n) {\n            return 0;\n        }\n        if (i == n) {\n            return 1;\n        }\n        return climb_Stairs(i + 1, n) + climb_Stairs(i + 2, n);\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "5fLezqKW": [
+      {
+        "code": "public class Solution {\n    public int climbStairs(int n) {\n        int memo[] = new int[n + 1];\n        return climb_Stairs(0, n, memo);\n    }\n    public int climb_Stairs(int i, int n, int memo[]) {\n        if (i > n) {\n            return 0;\n        }\n        if (i == n) {\n            return 1;\n        }\n        if (memo[i] > 0) {\n            return memo[i];\n        }\n        memo[i] = climb_Stairs(i + 1, n, memo) + climb_Stairs(i + 2, n, memo);\n        return memo[i];\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "bJT3YiVD": [
+      {
+        "code": "public class Solution {\n    public int climbStairs(int n) {\n        if (n == 1) {\n            return 1;\n        }\n        int[] dp = new int[n + 1];\n        dp[1] = 1;\n        dp[2] = 2;\n        for (int i = 3; i <= n; i++) {\n            dp[i] = dp[i - 1] + dp[i - 2];\n        }\n        return dp[n];\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "jXMy3r3P": [
+      {
+        "code": "public class Solution {\n    public int climbStairs(int n) {\n        if (n == 1) {\n            return 1;\n        }\n        int first = 1;\n        int second = 2;\n        for (int i = 3; i <= n; i++) {\n            int third = first + second;\n            first = second;\n            second = third;\n        }\n        return second;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "DTs7qYKy": [
+      {
+        "code": " public class Solution {\n    public int climbStairs(int n) {\n        int[][] q = {{1, 1}, {1, 0}};\n        int[][] res = pow(q, n);\n        return res[0][0];\n    }\n    public int[][] pow(int[][] a, int n) {\n        int[][] ret = {{1, 0}, {0, 1}};\n        while (n > 0) {\n            if ((n & 1) == 1) {\n                ret = multiply(ret, a);\n            }\n            n >>= 1;\n            a = multiply(a, a);\n        }\n        return ret;\n    }\n    public int[][] multiply(int[][] a, int[][] b) {\n        int[][] c = new int[2][2];\n        for (int i = 0; i < 2; i++) {\n            for (int j = 0; j < 2; j++) {\n                c[i][j] = a[i][0] * b[0][j] + a[i][1] * b[1][j];\n            }\n        }\n        return c;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "nGLhVjXP": [
+      {
+        "code": "public class Solution {\n    public int climbStairs(int n) {\n        double sqrt5=Math.sqrt(5);\n        double fibn=Math.pow((1+sqrt5)/2,n+1)-Math.pow((1-sqrt5)/2,n+1);\n        return (int)(fibn/sqrt5);\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming"

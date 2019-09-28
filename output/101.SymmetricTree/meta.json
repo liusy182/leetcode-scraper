@@ -11,7 +11,19 @@
   "solution": {
     "id": "42",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "bQ9ZjXvv": [
+      {
+        "code": "public boolean isSymmetric(TreeNode root) {\n    return isMirror(root, root);\n}\n\npublic boolean isMirror(TreeNode t1, TreeNode t2) {\n    if (t1 == null && t2 == null) return true;\n    if (t1 == null || t2 == null) return false;\n    return (t1.val == t2.val)\n        && isMirror(t1.right, t2.left)\n        && isMirror(t1.left, t2.right);\n}",
+        "langSlug": "java"
+      }
+    ],
+    "n5mXkUjQ": [
+      {
+        "code": "public boolean isSymmetric(TreeNode root) {\n    Queue<TreeNode> q = new LinkedList<>();\n    q.add(root);\n    q.add(root);\n    while (!q.isEmpty()) {\n        TreeNode t1 = q.poll();\n        TreeNode t2 = q.poll();\n        if (t1 == null && t2 == null) continue;\n        if (t1 == null || t2 == null) return false;\n        if (t1.val != t2.val) return false;\n        q.add(t1.left);\n        q.add(t2.right);\n        q.add(t1.right);\n        q.add(t2.left);\n    }\n    return true;\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Tree",

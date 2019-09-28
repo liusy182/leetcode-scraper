@@ -11,7 +11,37 @@
   "solution": {
     "id": "481",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "Mdkek4gh": [
+      {
+        "code": "class Solution {\n    public int maxDistToClosest(int[] seats) {\n        int N = seats.length;\n        int[] left = new int[N], right = new int[N];\n        Arrays.fill(left, N);\n        Arrays.fill(right, N);\n\n        for (int i = 0; i < N; ++i) {\n            if (seats[i] == 1) left[i] = 0;\n            else if (i > 0) left[i] = left[i-1] + 1;\n        }\n\n        for (int i = N-1; i >= 0; --i) {\n            if (seats[i] == 1) right[i] = 0;\n            else if (i < N-1) right[i] = right[i+1] + 1;\n        }\n\n        int ans = 0;\n        for (int i = 0; i < N; ++i)\n            if (seats[i] == 0)\n                ans = Math.max(ans, Math.min(left[i], right[i]));\n        return ans;\n    }\n}\n",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def maxDistToClosest(self, seats):\n        N = len(seats)\n        left, right = [N] * N, [N] * N\n\n        for i in xrange(N):\n            if seats[i] == 1: left[i] = 0\n            elif i > 0: left[i] = left[i-1] + 1\n\n        for i in xrange(N-1, -1, -1):\n            if seats[i] == 1: right[i] = 0\n            elif i < N-1: right[i] = right[i+1] + 1\n\n        return max(min(left[i], right[i])\n                   for i, seat in enumerate(seats) if not seat)",
+        "langSlug": "python"
+      }
+    ],
+    "VSP6cs27": [
+      {
+        "code": "class Solution {\n    public int maxDistToClosest(int[] seats) {\n        int N = seats.length;\n        int prev = -1, future = 0;\n        int ans = 0;\n\n        for (int i = 0; i < N; ++i) {\n            if (seats[i] == 1) {\n                prev = i;\n            } else {\n                while (future < N && seats[future] == 0 || future < i)\n                    future++;\n\n                int left = prev == -1 ? N : i - prev;\n                int right = future == N ? N : future - i;\n                ans = Math.max(ans, Math.min(left, right));\n            }\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def maxDistToClosest(self, seats):\n        people = (i for i, seat in enumerate(seats) if seat)\n        prev, future = None, next(people)\n\n        ans = 0\n        for i, seat in enumerate(seats):\n            if seat:\n                prev = i\n            else:\n                while future is not None and future < i:\n                    future = next(people, None)\n\n                left = float('inf') if prev is None else i - prev\n                right = float('inf') if future is None else future - i\n                ans = max(ans, min(left, right))\n\n        return ans",
+        "langSlug": "python"
+      }
+    ],
+    "wKJwsWbr": [
+      {
+        "code": "class Solution {\n    public int maxDistToClosest(int[] seats) {\n        int N = seats.length;\n        int K = 0; //current longest group of empty seats\n        int ans = 0;\n\n        for (int i = 0; i < N; ++i) {\n            if (seats[i] == 1) {\n                K = 0;\n            } else {\n                K++;\n                ans = Math.max(ans, (K + 1) / 2);\n            }\n        }\n\n        for (int i = 0; i < N; ++i)  if (seats[i] == 1) {\n            ans = Math.max(ans, i);\n            break;\n        }\n\n        for (int i = N-1; i >= 0; --i)  if (seats[i] == 1) {\n            ans = Math.max(ans, N - 1 - i);\n            break;\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def maxDistToClosest(self, seats):\n        ans = 0\n        for seat, group in itertools.groupby(seats):\n            if not seat:\n                K = len(list(group))\n                ans = max(ans, (K+1)/2)\n\n        return max(ans, seats.index(1), seats[::-1].index(1))",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array"

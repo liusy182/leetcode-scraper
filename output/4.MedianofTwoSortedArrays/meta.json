@@ -11,7 +11,17 @@
   "solution": {
     "id": "232",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "X5mgSxnd": [
+      {
+        "code": "class Solution {\n    public double findMedianSortedArrays(int[] A, int[] B) {\n        int m = A.length;\n        int n = B.length;\n        if (m > n) { // to ensure m<=n\n            int[] temp = A; A = B; B = temp;\n            int tmp = m; m = n; n = tmp;\n        }\n        int iMin = 0, iMax = m, halfLen = (m + n + 1) / 2;\n        while (iMin <= iMax) {\n            int i = (iMin + iMax) / 2;\n            int j = halfLen - i;\n            if (i < iMax && B[j-1] > A[i]){\n                iMin = i + 1; // i is too small\n            }\n            else if (i > iMin && A[i-1] > B[j]) {\n                iMax = i - 1; // i is too big\n            }\n            else { // i is perfect\n                int maxLeft = 0;\n                if (i == 0) { maxLeft = B[j-1]; }\n                else if (j == 0) { maxLeft = A[i-1]; }\n                else { maxLeft = Math.max(A[i-1], B[j-1]); }\n                if ( (m + n) % 2 == 1 ) { return maxLeft; }\n\n                int minRight = 0;\n                if (i == m) { minRight = B[j]; }\n                else if (j == n) { minRight = A[i]; }\n                else { minRight = Math.min(B[j], A[i]); }\n\n                return (maxLeft + minRight) / 2.0;\n            }\n        }\n        return 0.0;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "def median(A, B):\n    m, n = len(A), len(B)\n    if m > n:\n        A, B, m, n = B, A, n, m\n    if n == 0:\n        raise ValueError\n\n    imin, imax, half_len = 0, m, (m + n + 1) / 2\n    while imin <= imax:\n        i = (imin + imax) / 2\n        j = half_len - i\n        if i < m and B[j-1] > A[i]:\n            # i is too small, must increase it\n            imin = i + 1\n        elif i > 0 and A[i-1] > B[j]:\n            # i is too big, must decrease it\n            imax = i - 1\n        else:\n            # i is perfect\n\n            if i == 0: max_of_left = B[j-1]\n            elif j == 0: max_of_left = A[i-1]\n            else: max_of_left = max(A[i-1], B[j-1])\n\n            if (m + n) % 2 == 1:\n                return max_of_left\n\n            if i == m: min_of_right = B[j]\n            elif j == n: min_of_right = A[i]\n            else: min_of_right = min(A[i], B[j])\n\n            return (max_of_left + min_of_right) / 2.0",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array",

@@ -13,7 +13,27 @@
   "solution": {
     "id": "313",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "FBLCwPuk": [
+      {
+        "code": "class Solution {\n    public int monotoneIncreasingDigits(int N) {\n        String S = String.valueOf(N);\n        String ans = \"\";\n        search: for (int i = 0; i < S.length(); ++i) {\n            for (char d = '1'; d <= '9'; ++d) {\n                if (S.compareTo(ans + repeat(d, S.length() - i)) < 0) {\n                    ans += (char) (d - 1);\n                    continue search;\n                }\n            }\n            ans += '9';\n        }\n        return Integer.parseInt(ans);\n    }\n\n    public String repeat(char c, int count) {\n        StringBuilder sb = new StringBuilder(count);\n        for (int i = 0; i < count; ++i) sb.append(c);\n        return sb.toString();\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def monotoneIncreasingDigits(self, N):\n        digits = []\n        A = map(int, str(N))\n        for i in xrange(len(A)):\n            for d in xrange(1, 10):\n                if digits + [d] * (len(A)-i) > A:\n                    digits.append(d-1)\n                    break\n            else:\n                digits.append(9)\n\n        return int(\"\".join(map(str, digits)))",
+        "langSlug": "python"
+      }
+    ],
+    "yeDAMaRm": [
+      {
+        "code": "class Solution {\n    public int monotoneIncreasingDigits(int N) {\n        char[] S = String.valueOf(N).toCharArray();\n        int i = 1;\n        while (i < S.length && S[i-1] <= S[i]) i++;\n        while (0 < i && i < S.length && S[i-1] > S[i]) S[--i]--;\n        for (int j = i+1; j < S.length; ++j) S[j] = '9';\n\n        return Integer.parseInt(String.valueOf(S));\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def monotoneIncreasingDigits(self, N):\n        S = list(str(N))\n        i = 1\n        while i < len(S) and S[i-1] <= S[i]:\n            i += 1\n        while 0 < i < len(S) and S[i-1] > S[i]:\n            S[i-1] = str(int(S[i-1]) - 1)\n            i -= 1\n        S[i+1:] = '9' * (len(S) - i-1)\n        return int(\"\".join(S))",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Greedy"

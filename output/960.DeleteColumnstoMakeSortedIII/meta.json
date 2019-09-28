@@ -11,7 +11,17 @@
   "solution": {
     "id": "641",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "dYqmP2Pc": [
+      {
+        "code": "class Solution {\n    public int minDeletionSize(String[] A) {\n        int W = A[0].length();\n        int[] dp = new int[W];\n        Arrays.fill(dp, 1);\n        for (int i = W-2; i >= 0; --i)\n            search: for (int j = i+1; j < W; ++j) {\n                for (String row: A)\n                    if (row.charAt(i) > row.charAt(j))\n                        continue search;\n\n                dp[i] = Math.max(dp[i], 1 + dp[j]);\n            }\n\n        int kept = 0;\n        for (int x: dp)\n            kept = Math.max(kept, x);\n        return W - kept;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def minDeletionSize(self, A):\n        W = len(A[0])\n        dp = [1] * W\n        for i in xrange(W-2, -1, -1):\n            for j in xrange(i+1, W):\n                if all(row[i] <= row[j] for row in A):\n                    dp[i] = max(dp[i], 1 + dp[j])\n\n        return W - max(dp)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming"

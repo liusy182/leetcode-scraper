@@ -11,7 +11,17 @@
   "solution": {
     "id": "689",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "MkaZoDQt": [
+      {
+        "code": "class Solution {\n    public int subarraysWithKDistinct(int[] A, int K) {\n        Window window1 = new Window();\n        Window window2 = new Window();\n        int ans = 0, left1 = 0, left2 = 0;\n\n        for (int right = 0; right < A.length; ++right) {\n            int x = A[right];\n            window1.add(x);\n            window2.add(x);\n\n            while (window1.different() > K)\n                window1.remove(A[left1++]);\n            while (window2.different() >= K)\n                window2.remove(A[left2++]);\n\n            ans += left2 - left1;\n        }\n\n        return ans;\n    }\n}\n\nclass Window {\n    Map<Integer, Integer> count;\n    int nonzero;\n\n    Window() {\n        count = new HashMap();\n        nonzero = 0;\n    }\n\n    void add(int x) {\n        count.put(x, count.getOrDefault(x, 0) + 1);\n        if (count.get(x) == 1)\n            nonzero++;\n    }\n\n    void remove(int x) {\n        count.put(x, count.get(x) - 1);\n        if (count.get(x) == 0)\n            nonzero--;\n    }\n\n    int different() {\n        return nonzero;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Window:\n    def __init__(self):\n        self.count = collections.Counter()\n        self.nonzero = 0\n\n    def add(self, x):\n        self.count[x] += 1\n        if self.count[x] == 1:\n            self.nonzero += 1\n\n    def remove(self, x):\n        self.count[x] -= 1\n        if self.count[x] == 0:\n            self.nonzero -= 1\n\nclass Solution(object):\n    def subarraysWithKDistinct(self, A, K):\n        window1 = Window()\n        window2 = Window()\n        ans = left1 = left2 = 0\n\n        for right, x in enumerate(A):\n            window1.add(x)\n            window2.add(x)\n\n            while window1.nonzero > K:\n                window1.remove(A[left1])\n                left1 += 1\n\n            while window2.nonzero >= K:\n                window2.remove(A[left2])\n                left2 += 1\n\n            ans += left2 - left1\n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table",

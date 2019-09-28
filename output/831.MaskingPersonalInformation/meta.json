@@ -11,7 +11,17 @@
   "solution": {
     "id": "462",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "9iWWL6yp": [
+      {
+        "code": "class Solution {\n    public String maskPII(String S) {\n        int atIndex = S.indexOf('@');\n        if (atIndex >= 0) { // email\n            return (S.substring(0, 1) + \"*****\" + S.substring(atIndex - 1)).toLowerCase();\n        } else { // phone\n            String digits = S.replaceAll(\"\\\\D+\", \"\");\n            String local = \"***-***-\" + digits.substring(digits.length() - 4);\n            if (digits.length() == 10) return local;\n            String ans = \"+\";\n            for (int i = 0; i < digits.length() - 10; ++i)\n                ans += \"*\";\n            return ans + \"-\" + local;\n        }\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def maskPII(self, S):\n        if '@' in S: #email\n            first, after = S.split('@')\n            return \"{}*****{}@{}\".format(\n                first[0], first[-1], after).lower()\n\n        else: #phone\n            digits = filter(unicode.isdigit, S)\n            local = \"***-***-{}\".format(digits[-4:])\n            if len(digits) == 10:\n                return local\n            return \"+{}-\".format('*' * (len(digits) - 10)) + local",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "String"

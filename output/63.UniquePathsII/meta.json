@@ -15,7 +15,17 @@
   "solution": {
     "id": "597",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "bmmKXqeu": [
+      {
+        "code": "class Solution {\n    public int uniquePathsWithObstacles(int[][] obstacleGrid) {\n\n        int R = obstacleGrid.length;\n        int C = obstacleGrid[0].length;\n\n        // If the starting cell has an obstacle, then simply return as there would be\n        // no paths to the destination.\n        if (obstacleGrid[0][0] == 1) {\n            return 0;\n        }\n\n        // Number of ways of reaching the starting cell = 1.\n        obstacleGrid[0][0] = 1;\n\n        // Filling the values for the first column\n        for (int i = 1; i < R; i++) {\n            obstacleGrid[i][0] = (obstacleGrid[i][0] == 0 && obstacleGrid[i - 1][0] == 1) ? 1 : 0;\n        }\n\n        // Filling the values for the first row\n        for (int i = 1; i < C; i++) {\n            obstacleGrid[0][i] = (obstacleGrid[0][i] == 0 && obstacleGrid[0][i - 1] == 1) ? 1 : 0;\n        }\n\n        // Starting from cell(1,1) fill up the values\n        // No. of ways of reaching cell[i][j] = cell[i - 1][j] + cell[i][j - 1]\n        // i.e. From above and left.\n        for (int i = 1; i < R; i++) {\n            for (int j = 1; j < C; j++) {\n                if (obstacleGrid[i][j] == 0) {\n                    obstacleGrid[i][j] = obstacleGrid[i - 1][j] + obstacleGrid[i][j - 1];\n                } else {\n                    obstacleGrid[i][j] = 0;\n                }\n            }\n        }\n\n        // Return value stored in rightmost bottommost cell. That is the destination.\n        return obstacleGrid[R - 1][C - 1];\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def uniquePathsWithObstacles(self, obstacleGrid):\n        \"\"\"\n        :type obstacleGrid: List[List[int]]\n        :rtype: int\n        \"\"\"\n\n        m = len(obstacleGrid)\n        n = len(obstacleGrid[0])\n\n        # If the starting cell has an obstacle, then simply return as there would be\n        # no paths to the destination.\n        if obstacleGrid[0][0] == 1:\n            return 0\n\n        # Number of ways of reaching the starting cell = 1.\n        obstacleGrid[0][0] = 1\n\n        # Filling the values for the first column\n        for i in range(1,m):\n            obstacleGrid[i][0] = int(obstacleGrid[i][0] == 0 and obstacleGrid[i-1][0] == 1)\n\n        # Filling the values for the first row        \n        for j in range(1, n):\n            obstacleGrid[0][j] = int(obstacleGrid[0][j] == 0 and obstacleGrid[0][j-1] == 1)\n\n        # Starting from cell(1,1) fill up the values\n        # No. of ways of reaching cell[i][j] = cell[i - 1][j] + cell[i][j - 1]\n        # i.e. From above and left.\n        for i in range(1,m):\n            for j in range(1,n):\n                if obstacleGrid[i][j] == 0:\n                    obstacleGrid[i][j] = obstacleGrid[i-1][j] + obstacleGrid[i][j-1]\n                else:\n                    obstacleGrid[i][j] = 0\n\n        # Return value stored in rightmost bottommost cell. That is the destination.            \n        return obstacleGrid[m-1][n-1]",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array",

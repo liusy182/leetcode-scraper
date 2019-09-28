@@ -11,7 +11,27 @@
   "solution": {
     "id": "367",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "yNoZjyFt": [
+      {
+        "code": "#define LL long long\nclass Solution {\npublic:\n    int n;\n    int ans;\n    void dfs(int dep, vector<int>& A, vector<LL> cur) {\n        if (dep == n) {\n            if (cur.size() < 3) {\n                return;\n            }\n            for (int i = 1; i < cur.size(); i++) {\n                if (cur[i] - cur[i - 1] != cur[1] - cur[0]) {\n                    return;\n                }\n            }\n            ans ++;\n            return;\n        }\n        dfs(dep + 1, A, cur);\n        cur.push_back(A[dep]);\n        dfs(dep + 1, A, cur);\n    }\n    int numberOfArithmeticSlices(vector<int>& A) {\n        n = A.size();\n        ans = 0;\n        vector<LL> cur;\n        dfs(0, A, cur);\n        return (int)ans;\n    }\n};\n",
+        "langSlug": "cpp"
+      },
+      {
+        "code": "\nclass Solution {\n    private int n;\n    private int ans;\n    private void dfs(int dep, int[] A, List<Long> cur) {\n        if (dep == n) {\n            if (cur.size() < 3) {\n                return;\n            }\n            long diff = cur.get(1) - cur.get(0);\n            for (int i = 1; i < cur.size(); i++) {                \n                if (cur.get(i) - cur.get(i - 1) != diff) {\n                    return;\n                }\n            }\n            ans ++;\n            return;\n        }\n        dfs(dep + 1, A, cur);\n        cur.add((long)A[dep]);\n        dfs(dep + 1, A, cur);\n        cur.remove((long)A[dep]);\n    }\n    public int numberOfArithmeticSlices(int[] A) {\n        n = A.length;\n        ans = 0;\n        List<Long> cur = new ArrayList<Long>();\n        dfs(0, A, cur);\n        return (int)ans;        \n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "MVagoidb": [
+      {
+        "code": "\n#define LL long long\nclass Solution {\npublic:\n    int numberOfArithmeticSlices(vector<int>& A) {\n        int n = A.size();\n        LL ans = 0;\n        vector<map<LL, int>> cnt(n);\n        for (int i = 1; i < n; i++) {\n            for (int j = 0; j < i; j++) {\n                LL delta = (LL)A[i] - (LL)A[j];\n                int sum = 0;\n                if (cnt[j].find(delta) != cnt[j].end()) {\n                    sum = cnt[j][delta];\n                }\n                cnt[i][delta] += sum + 1;\n                ans += sum;\n            }\n        }\n\n        return (int)ans;\n    }\n};",
+        "langSlug": "cpp"
+      },
+      {
+        "code": "\nclass Solution {\n    public int numberOfArithmeticSlices(int[] A) {\n        int n = A.length;\n        long ans = 0;\n        Map<Integer, Integer>[] cnt = new Map[n];\n        for (int i = 0; i < n; i++) {\n            cnt[i] = new HashMap<>(i);\n            for (int j = 0; j < i; j++) {\n                long delta = (long)A[i] - (long)A[j];\n                if (delta < Integer.MIN_VALUE || delta > Integer.MAX_VALUE) {\n                    continue;\n                }\n                int diff = (int)delta;\n                int sum = cnt[j].getOrDefault(diff, 0);\n                int origin = cnt[i].getOrDefault(diff, 0);\n                cnt[i].put(diff, origin + sum + 1);\n                ans += sum;\n            }\n        }\n        return (int)ans;        \n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming"

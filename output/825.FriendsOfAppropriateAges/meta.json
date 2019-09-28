@@ -11,7 +11,17 @@
   "solution": {
     "id": "458",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "hhWFMLmx": [
+      {
+        "code": "class Solution {\n    public int numFriendRequests(int[] ages) {\n        int[] count = new int[121];\n        for (int age: ages) count[age]++;\n\n        int ans = 0;\n        for (int ageA = 0; ageA <= 120; ageA++) {\n            int countA = count[ageA];\n            for (int ageB = 0; ageB <= 120; ageB++) {\n                int countB = count[ageB];\n                if (ageA * 0.5 + 7 >= ageB) continue;\n                if (ageA < ageB) continue;\n                if (ageA < 100 && 100 < ageB) continue;\n                ans += countA * countB;\n                if (ageA == ageB) ans -= countA;\n            }\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def numFriendRequests(self, ages):\n        count = [0] * 121\n        for age in ages:\n            count[age] += 1\n\n        ans = 0\n        for ageA, countA in enumerate(count):\n            for ageB, countB in enumerate(count):\n                if ageA * 0.5 + 7 >= ageB: continue\n                if ageA < ageB: continue\n                if ageA < 100 < ageB: continue\n                ans += countA * countB\n                if ageA == ageB: ans -= countA\n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array"

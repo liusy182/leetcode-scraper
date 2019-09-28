@@ -11,7 +11,19 @@
   "solution": {
     "id": "154",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "Dbm5A5CN": [
+      {
+        "code": "public class Solution {\n    public boolean canPlaceFlowers(int[] flowerbed, int n) {\n        int i = 0, count = 0;\n        while (i < flowerbed.length) {\n            if (flowerbed[i] == 0 && (i == 0 || flowerbed[i - 1] == 0) && (i == flowerbed.length - 1 || flowerbed[i + 1] == 0)) {\n                flowerbed[i] = 1;\n                count++;\n            }\n            i++;\n        }\n        return count >= n;\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ],
+    "GtCBiouS": [
+      {
+        "code": "\npublic class Solution {\n    public boolean canPlaceFlowers(int[] flowerbed, int n) {\n        int i = 0, count = 0;\n        while (i < flowerbed.length) {\n            if (flowerbed[i] == 0 && (i == 0 || flowerbed[i - 1] == 0) && (i == flowerbed.length - 1 || flowerbed[i + 1] == 0)) {\n                flowerbed[i++] = 1;\n                count++;\n            }\n             if(count>=n)\n                return true;\n            i++;\n        }\n        return false;\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Array"

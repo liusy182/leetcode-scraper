@@ -11,7 +11,41 @@
   "solution": {
     "id": "250",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "W7EXu5ND": [
+      {
+        "code": "class Solution {\n    Set<Integer> seen = new HashSet();\n    int MAX_EDGE_VAL = 1000;\n\n    public int[] findRedundantConnection(int[][] edges) {\n        ArrayList<Integer>[] graph = new ArrayList[MAX_EDGE_VAL + 1];\n        for (int i = 0; i <= MAX_EDGE_VAL; i++) {\n            graph[i] = new ArrayList();\n        }\n\n        for (int[] edge: edges) {\n            seen.clear();\n            if (!graph[edge[0]].isEmpty() && !graph[edge[1]].isEmpty() &&\n                    dfs(graph, edge[0], edge[1])) {\n                return edge;\n            }\n            graph[edge[0]].add(edge[1]);\n            graph[edge[1]].add(edge[0]);\n        }\n        throw new AssertionError();\n    }\n    public boolean dfs(ArrayList<Integer>[] graph, int source, int target) {\n        if (!seen.contains(source)) {\n            seen.add(source);\n            if (source == target) return true;\n            for (int nei: graph[source]) {\n                if (dfs(graph, nei, target)) return true;\n            }\n        }\n        return false;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def findRedundantConnection(self, edges):\n        graph = collections.defaultdict(set)\n\n        def dfs(source, target):\n            if source not in seen:\n                seen.add(source)\n                if source == target: return True\n                return any(dfs(nei, target) for nei in graph[source])\n\n        for u, v in edges:\n            seen = set()\n            if u in graph and v in graph and dfs(u, v):\n                return u, v\n            graph[u].add(v)\n            graph[v].add(u)",
+        "langSlug": "python"
+      }
+    ],
+    "sCjT3wyq": [
+      {
+        "code": "# parent initialized as (x -> x)\nfunction find(x):\n    while parent[x] != x: #While x isn't the leader\n        x = parent[x]\n    return x\n\nfunction union(x, y):\n    parent[find(x)] = find(y)",
+        "langSlug": "python"
+      }
+    ],
+    "tFfjEuXo": [
+      {
+        "code": "class DSU(object):\n    def __init__(self):\n        self.par = range(1001)\n        self.rnk = [0] * 1001\n\n    def find(self, x):\n        if self.par[x] != x:\n            self.par[x] = self.find(self.par[x])\n        return self.par[x]\n\n    def union(self, x, y):\n        xr, yr = self.find(x), self.find(y)\n        if xr == yr:\n            return False\n        elif self.rnk[xr] < self.rnk[yr]:\n            self.par[xr] = yr\n        elif self.rnk[xr] > self.rnk[yr]:\n            self.par[yr] = xr\n        else:\n            self.par[yr] = xr\n            self.rnk[xr] += 1\n        return True\n\nclass Solution(object):\n    def findRedundantConnection(self, edges):\n        dsu = DSU()\n        for edge in edges:\n            if not dsu.union(*edge):\n                return edge",
+        "langSlug": "python"
+      }
+    ],
+    "DzMVxYRc": [
+      {
+        "code": "class DSU:\n    def __init__(self):\n        self.par = range(1001)\n    def find(self, x):\n        if self.par[x] != x:\n            self.par[x] = self.find(self.par[x])\n        return self.par[x]\n    def union(self, x, y):\n        self.par[self.find(x)] = self.find(y)",
+        "langSlug": "python"
+      }
+    ],
+    "YgdvM9bJ": [
+      {
+        "code": "class Solution {\n    int MAX_EDGE_VAL = 1000;\n\n    public int[] findRedundantConnection(int[][] edges) {\n        DSU dsu = new DSU(MAX_EDGE_VAL + 1);\n        for (int[] edge: edges) {\n            if (!dsu.union(edge[0], edge[1])) return edge;\n        }\n        throw new AssertionError();\n    }\n}\n\nclass DSU {\n    int[] parent;\n    int[] rank;\n\n    public DSU(int size) {\n        parent = new int[size];\n        for (int i = 0; i < size; i++) parent[i] = i;\n        rank = new int[size];\n    }\n\n    public int find(int x) {\n        if (parent[x] != x) parent[x] = find(parent[x]);\n        return parent[x];\n    }\n\n    public boolean union(int x, int y) {\n        int xr = find(x), yr = find(y);\n        if (xr == yr) {\n            return false;\n        } else if (rank[xr] < rank[yr]) {\n            parent[xr] = yr;\n        } else if (rank[xr] > rank[yr]) {\n            parent[yr] = xr;\n        } else {\n            parent[yr] = xr;\n            rank[xr]++;\n        }\n        return true;\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Tree",

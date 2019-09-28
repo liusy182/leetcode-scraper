@@ -11,7 +11,17 @@
   "solution": {
     "id": "442",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "CtqN5Fqo": [
+      {
+        "code": "class Solution {\n    public int expressiveWords(String S, String[] words) {\n        RLE R = new RLE(S);\n        int ans = 0;\n\n        search: for (String word: words) {\n            RLE R2 = new RLE(word);\n            if (!R.key.equals(R2.key)) continue;\n            for (int i = 0; i < R.counts.size(); ++i) {\n                int c1 = R.counts.get(i);\n                int c2 = R2.counts.get(i);\n                if (c1 < 3 && c1 != c2 || c1 < c2)\n                    continue search;\n            }\n            ans++;\n        }\n        return ans;\n    }\n}\n\nclass RLE {\n    String key;\n    List<Integer> counts;\n\n    public RLE(String S) {\n        StringBuilder sb = new StringBuilder();\n        counts = new ArrayList();\n\n        char[] ca = S.toCharArray();\n        int N = ca.length;\n        int prev = -1;\n        for (int i = 0; i < N; ++i) {\n            if (i == N-1 || ca[i] != ca[i+1]) {\n                sb.append(ca[i]);\n                counts.add(i - prev);\n                prev = i;\n            }\n        }\n\n        key = sb.toString();\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def expressiveWords(self, S, words):\n        def RLE(S):\n            return zip(*[(k, len(list(grp)))\n                         for k, grp in itertools.groupby(S)])\n\n        R, count = RLE(S)\n        ans = 0\n        for word in words:\n            R2, count2 = RLE(word)\n            if R2 != R: continue\n            ans += all(c1 >= max(c2, 3) or c1 == c2\n                       for c1, c2 in zip(count, count2))\n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "String"

@@ -11,7 +11,19 @@
   "solution": {
     "id": "21",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "3tqYc6gz": [
+      {
+        "code": "public boolean hasCycle(ListNode head) {\n    Set<ListNode> nodesSeen = new HashSet<>();\n    while (head != null) {\n        if (nodesSeen.contains(head)) {\n            return true;\n        } else {\n            nodesSeen.add(head);\n        }\n        head = head.next;\n    }\n    return false;\n}",
+        "langSlug": "java"
+      }
+    ],
+    "B6ffJ2Xk": [
+      {
+        "code": "public boolean hasCycle(ListNode head) {\n    if (head == null || head.next == null) {\n        return false;\n    }\n    ListNode slow = head;\n    ListNode fast = head.next;\n    while (slow != fast) {\n        if (fast == null || fast.next == null) {\n            return false;\n        }\n        slow = slow.next;\n        fast = fast.next.next;\n    }\n    return true;\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Linked List",

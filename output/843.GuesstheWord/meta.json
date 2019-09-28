@@ -11,7 +11,17 @@
   "solution": {
     "id": "473",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "XyZRWsin": [
+      {
+        "code": "class Solution {\n    int[][] H;\n    public void findSecretWord(String[] wordlist, Master master) {\n        int N = wordlist.length;\n        H = new int[N][N];\n        for (int i = 0; i < N; ++i)\n            for (int j = i; j < N; ++j) {\n                int match = 0;\n                for (int k = 0; k < 6; ++k)\n                    if (wordlist[i].charAt(k) == wordlist[j].charAt(k))\n                        match++;\n                H[i][j] = H[j][i] = match;\n            }\n\n        List<Integer> possible = new ArrayList();\n        List<Integer> path = new ArrayList();\n        for (int i = 0; i < N; ++i) possible.add(i);\n\n        while (!possible.isEmpty()) {\n            int guess = solve(possible, path);\n            int matches = master.guess(wordlist[guess]);\n            if (matches == wordlist[0].length()) return;\n            List<Integer> possible2 = new ArrayList();\n            for (Integer j: possible) if (H[guess][j] == matches) possible2.add(j);\n            possible = possible2;\n            path.add(guess);\n        }\n\n    }\n\n    public int solve(List<Integer> possible, List<Integer> path) {\n        if (possible.size() <= 2) return possible.get(0);\n        List<Integer> ansgrp = possible;\n        int ansguess = -1;\n\n        for (int guess = 0; guess < H.length; ++guess) {\n            if (!path.contains(guess)) {\n                ArrayList<Integer>[] groups = new ArrayList[7];\n                for (int i = 0; i < 7; ++i) groups[i] = new ArrayList<Integer>();\n                for (Integer j: possible) if (j != guess) {\n                    groups[H[guess][j]].add(j);\n                }\n\n                ArrayList<Integer> maxgroup = groups[0];\n                for (int i = 0; i < 7; ++i)\n                    if (groups[i].size() > maxgroup.size())\n                        maxgroup = groups[i];\n\n                if (maxgroup.size() < ansgrp.size()) {\n                    ansgrp = maxgroup;\n                    ansguess = guess;\n                }\n            }\n        }\n\n        return ansguess;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "\nclass Solution(object):\n    def findSecretWord(self, wordlist, master):\n        N = len(wordlist)\n        self.H = [[sum(a==b for a,b in itertools.izip(wordlist[i], wordlist[j]))\n                   for j in xrange(N)] for i in xrange(N)]\n\n        possible, path = range(N), ()\n        while possible:\n            guess = self.solve(possible, path)\n            matches = master.guess(wordlist[guess])\n            if matches == len(wordlist[0]): return\n            possible = [j for j in possible if self.H[guess][j] == matches]\n            path = path + (guess,)\n\n    def solve(self, possible, path = ()):\n        if len(possible) <= 2: return possible[0]\n\n        ansgrp, ansguess = possible, None\n        for guess, row in enumerate(self.H):\n            if guess not in path:\n                groups = [[] for _ in xrange(7)]\n                for j in possible:\n                    if j != guess:\n                        groups[row[j]].append(j)\n                maxgroup = max(groups, key = len)\n                if len(maxgroup) < len(ansgrp):\n                    ansgrp, ansguess = maxgroup, guess\n\n        return ansguess",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Minimax"

@@ -11,7 +11,27 @@
   "solution": {
     "id": "464",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "gnwqTeGt": [
+      {
+        "code": "import java.awt.Point;\n\nclass Solution {\n    public int largestOverlap(int[][] A, int[][] B) {\n        int N = A.length;\n        List<Point> A2 = new ArrayList(), B2 = new ArrayList();\n        for (int i = 0; i < N*N; ++i) {\n            if (A[i/N][i%N] == 1) A2.add(new Point(i/N, i%N));\n            if (B[i/N][i%N] == 1) B2.add(new Point(i/N, i%N));\n        }\n\n        Set<Point> Bset = new HashSet(B2);\n\n        int ans = 0;\n        Set<Point> seen = new HashSet();\n        for (Point a: A2) for (Point b: B2) {\n            Point delta = new Point(b.x - a.x, b.y - a.y);\n            if (!seen.contains(delta)) {\n                seen.add(delta);\n                int cand = 0;\n                for (Point p: A2)\n                    if (Bset.contains(new Point(p.x + delta.x, p.y + delta.y)))\n                        cand++;\n                ans = Math.max(ans, cand);\n            }\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def largestOverlap(self, A, B):\n        N = len(A)\n        A2 = [complex(r, c) for r, row in enumerate(A)\n              for c, v in enumerate(row) if v]\n        B2 = [complex(r, c) for r, row in enumerate(B)\n              for c, v in enumerate(row) if v]\n        Bset = set(B2)\n        seen = set()\n        ans = 0\n        for a in A2:\n            for b in B2:\n                d = b-a\n                if d not in seen:\n                    seen.add(d)\n                    ans = max(ans, sum(x+d in Bset for x in A2))\n        return ans",
+        "langSlug": "python"
+      }
+    ],
+    "YmA2kxzz": [
+      {
+        "code": "class Solution {\n    public int largestOverlap(int[][] A, int[][] B) {\n        int N = A.length;\n        int[][] count = new int[2*N+1][2*N+1];\n        for (int i = 0; i < N; ++i)\n            for (int j = 0; j < N; ++j)\n                if (A[i][j] == 1)\n                    for (int i2 = 0; i2 < N; ++i2)\n                        for (int j2 = 0; j2 < N; ++j2)\n                            if (B[i2][j2] == 1)\n                                count[i-i2 +N][j-j2 +N] += 1;\n\n        int ans = 0;\n        for (int[] row: count)\n            for (int v: row)\n                ans = Math.max(ans, v);\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def largestOverlap(self, A, B):\n        N = len(A)\n        count = collections.Counter()\n        for i, row in enumerate(A):\n            for j, v in enumerate(row):\n                if v:\n                    for i2, row2 in enumerate(B):\n                        for j2, v2 in enumerate(row2):\n                            if v2:\n                                count[i-i2, j-j2] += 1\n        return max(count.values() or [0])",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array"

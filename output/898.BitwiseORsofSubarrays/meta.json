@@ -11,7 +11,17 @@
   "solution": {
     "id": "545",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "rDNmUE84": [
+      {
+        "code": "class Solution {\n    public int subarrayBitwiseORs(int[] A) {\n        Set<Integer> ans = new HashSet();\n        Set<Integer> cur = new HashSet();\n        cur.add(0);\n        for (int x: A) {\n            Set<Integer> cur2 = new HashSet();\n            for (int y: cur)\n                cur2.add(x | y);\n            cur2.add(x);\n            cur = cur2;\n            ans.addAll(cur);\n        }\n\n        return ans.size();\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def subarrayBitwiseORs(self, A):\n        ans = set()\n        cur = {0}\n        for x in A:\n            cur = {x | y for y in cur} | {x}\n            ans |= cur\n        return len(ans)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming",

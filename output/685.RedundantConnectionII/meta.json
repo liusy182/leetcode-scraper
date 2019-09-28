@@ -11,7 +11,17 @@
   "solution": {
     "id": "306",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "sHSf6pyj": [
+      {
+        "code": "class Solution {\n    public int[] findRedundantDirectedConnection(int[][] edges) {\n        int N = edges.length;\n        Map<Integer, Integer> parent = new HashMap();\n        List<int[]> candidates = new ArrayList();\n        for (int[] edge: edges) {\n            if (parent.containsKey(edge[1])) {\n                candidates.add(new int[]{parent.get(edge[1]), edge[1]});\n                candidates.add(edge);\n            } else {\n                parent.put(edge[1], edge[0]);\n            }\n        }\n\n        int root = orbit(1, parent).node;\n        if (candidates.isEmpty()) {\n            Set<Integer> cycle = orbit(root, parent).seen;\n            int[] ans = new int[]{0, 0};\n            for (int[] edge: edges) {\n                if (cycle.contains(edge[0]) && cycle.contains(edge[1])) {\n                    ans = edge;\n                }\n            }\n            return ans;\n        }\n\n        Map<Integer, List<Integer>> children = new HashMap();\n        for (int v: parent.keySet()) {\n            int pv = parent.get(v);\n            if (!children.containsKey(pv))\n                children.put(pv, new ArrayList<Integer>());\n            children.get(pv).add(v);\n        }\n\n        boolean[] seen = new boolean[N+1];\n        seen[0] = true;\n        Stack<Integer> stack = new Stack();\n        stack.add(root);\n        while (!stack.isEmpty()) {\n            int node = stack.pop();\n            if (!seen[node]) {\n                seen[node] = true;\n                if (children.containsKey(node)) {\n                    for (int c: children.get(node))\n                        stack.push(c);\n                }\n            }\n        }\n        for (boolean b: seen) if (!b)\n            return candidates.get(0);\n        return candidates.get(1);\n    }\n\n    public OrbitResult orbit(int node, Map<Integer, Integer> parent) {\n        Set<Integer> seen = new HashSet();\n        while (parent.containsKey(node) && !seen.contains(node)) {\n            seen.add(node);\n            node = parent.get(node);\n        }\n        return new OrbitResult(node, seen);\n    }\n\n}\nclass OrbitResult {\n    int node;\n    Set<Integer> seen;\n    OrbitResult(int n, Set<Integer> s) {\n        node = n;\n        seen = s;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def findRedundantDirectedConnection(self, edges):\n        N = len(edges)\n        parent = {}\n        candidates = []\n        for u, v in edges:\n            if v in parent:\n                candidates.append((parent[v], v))\n                candidates.append((u, v))\n            else:\n                parent[v] = u\n\n        def orbit(node):\n            seen = set()\n            while node in parent and node not in seen:\n                seen.add(node)\n                node = parent[node]\n            return node, seen\n\n        root = orbit(1)[0]\n\n        if not candidates:\n            cycle = orbit(root)[1]\n            for u, v in edges:\n                if u in cycle and v in cycle:\n                    ans = u, v\n            return ans\n\n        children = collections.defaultdict(list)\n        for v in parent:\n            children[parent[v]].append(v)\n\n        seen = [True] + [False] * N\n        stack = [root]\n        while stack:\n            node = stack.pop()\n            if not seen[node]:\n                seen[node] = True\n                stack.extend(children[node])\n\n        return candidates[all(seen)]",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree",

@@ -11,7 +11,27 @@
   "solution": {
     "id": "326",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "4UyWd7Zu": [
+      {
+        "code": "class Solution {\n    Map<String, Integer> count;\n    List<TreeNode> ans;\n    public List<TreeNode> findDuplicateSubtrees(TreeNode root) {\n        count = new HashMap();\n        ans = new ArrayList();\n        collect(root);\n        return ans;\n    }\n\n    public String collect(TreeNode node) {\n        if (node == null) return \"#\";\n        String serial = node.val + \",\" + collect(node.left) + \",\" + collect(node.right);\n        count.put(serial, count.getOrDefault(serial, 0) + 1);\n        if (count.get(serial) == 2)\n            ans.add(node);\n        return serial;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def findDuplicateSubtrees(self, root):\n        count = collections.Counter()\n        ans = []\n        def collect(node):\n            if not node: return \"#\"\n            serial = \"{},{},{}\".format(node.val, collect(node.left), collect(node.right))\n            count[serial] += 1\n            if count[serial] == 2:\n                ans.append(node)\n            return serial\n\n        collect(root)\n        return ans",
+        "langSlug": "python"
+      }
+    ],
+    "sgdon7Zu": [
+      {
+        "code": "class Solution {\n    int t;\n    Map<String, Integer> trees;\n    Map<Integer, Integer> count;\n    List<TreeNode> ans;\n\n    public List<TreeNode> findDuplicateSubtrees(TreeNode root) {\n        t = 1;\n        trees = new HashMap();\n        count = new HashMap();\n        ans = new ArrayList();\n        lookup(root);\n        return ans;\n    }\n\n    public int lookup(TreeNode node) {\n        if (node == null) return 0;\n        String serial = node.val + \",\" + lookup(node.left) + \",\" + lookup(node.right);\n        int uid = trees.computeIfAbsent(serial, x-> t++);\n        count.put(uid, count.getOrDefault(uid, 0) + 1);\n        if (count.get(uid) == 2)\n            ans.add(node);\n        return uid;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def findDuplicateSubtrees(self, root):\n        trees = collections.defaultdict()\n        trees.default_factory = trees.__len__\n        count = collections.Counter()\n        ans = []\n        def lookup(node):\n            if node:\n                uid = trees[node.val, lookup(node.left), lookup(node.right)]\n                count[uid] += 1\n                if count[uid] == 2:\n                    ans.append(node)\n                return uid\n\n        lookup(root)\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree"

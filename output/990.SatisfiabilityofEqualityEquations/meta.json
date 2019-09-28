@@ -11,7 +11,17 @@
   "solution": {
     "id": "687",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "w97VUNhP": [
+      {
+        "code": "class Solution {\n    public boolean equationsPossible(String[] equations) {\n        ArrayList<Integer>[] graph = new ArrayList[26];\n        for (int i = 0; i < 26; ++i)\n            graph[i] = new ArrayList();\n\n        for (String eqn: equations) {\n            if (eqn.charAt(1) == '=') {\n                int x = eqn.charAt(0) - 'a';\n                int y = eqn.charAt(3) - 'a';\n                graph[x].add(y);\n                graph[y].add(x);\n            }\n        }\n\n        int[] color = new int[26];\n        int t = 0;\n        for (int start = 0; start < 26; ++start) {\n            if (color[start] == 0) {\n                t++;\n                Stack<Integer> stack = new Stack();\n                stack.push(start);\n                while (!stack.isEmpty()) {\n                    int node = stack.pop();\n                    for (int nei: graph[node]) {\n                        if (color[nei] == 0) {\n                            color[nei] = t;\n                            stack.push(nei);\n                        }\n                    }\n                }\n            }\n        }\n\n        for (String eqn: equations) {\n            if (eqn.charAt(1) == '!') {\n                int x = eqn.charAt(0) - 'a';\n                int y = eqn.charAt(3) - 'a';\n                if (x == y || color[x] != 0 && color[x] == color[y])\n                    return false;\n            }\n        }\n\n        return true;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def equationsPossible(self, equations):\n        graph = [[] for _ in xrange(26)]\n\n        for eqn in equations:\n            if eqn[1] == '=':\n                x = ord(eqn[0]) - ord('a')\n                y = ord(eqn[3]) - ord('a')\n                graph[x].append(y)\n                graph[y].append(x)\n\n        color = [None] * 26\n        t = 0\n        for start in xrange(26):\n            if color[start] is None:\n                t += 1\n                stack = [start]\n                while stack:\n                    node = stack.pop()\n                    for nei in graph[node]:\n                        if color[nei] is None:\n                            color[nei] = t\n                            stack.append(nei)\n\n        for eqn in equations:\n            if eqn[1] == '!':\n                x = ord(eqn[0]) - ord('a')\n                y = ord(eqn[3]) - ord('a')\n                if x == y: return False # lee\n                if color[x] is not None and color[x] == color[y]:\n                    return False\n        return True",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Union Find",

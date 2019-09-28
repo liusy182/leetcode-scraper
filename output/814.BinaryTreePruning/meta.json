@@ -11,7 +11,17 @@
   "solution": {
     "id": "445",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "oKrtTG2C": [
+      {
+        "code": "class Solution {\n    public TreeNode pruneTree(TreeNode root) {\n        return containsOne(root) ? root : null;\n    }\n\n    public boolean containsOne(TreeNode node) {\n        if (node == null) return false;\n        boolean a1 = containsOne(node.left);\n        boolean a2 = containsOne(node.right);\n        if (!a1) node.left = null;\n        if (!a2) node.right = null;\n        return node.val == 1 || a1 || a2;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def pruneTree(self, root):\n        def containsOne(node):\n            if not node: return False\n            a1 = containsOne(node.left)\n            a2 = containsOne(node.right)\n            if not a1: node.left = None\n            if not a2: node.right = None\n            return node.val == 1 or a1 or a2\n\n        return root if containsOne(root) else None",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree"

@@ -11,7 +11,31 @@
   "solution": {
     "id": "176",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "3SDSCR7V": [
+      {
+        "code": "public class Solution {\n    public boolean PredictTheWinner(int[] nums) {\n        return winner(nums, 0, nums.length - 1, 1) >= 0;\n    }\n    public int winner(int[] nums, int s, int e, int turn) {\n        if (s == e)\n            return turn * nums[s];\n        int a = turn * nums[s] + winner(nums, s + 1, e, -turn);\n        int b = turn * nums[e] + winner(nums, s, e - 1, -turn);\n        return turn * Math.max(turn * a, turn * b);\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ],
+    "RGPbqsDC": [
+      {
+        "code": "public class Solution {\n    public boolean PredictTheWinner(int[] nums) {\n        Integer[][] memo = new Integer[nums.length][nums.length];\n        return winner(nums, 0, nums.length - 1, memo) >= 0;\n    }\n    public int winner(int[] nums, int s, int e, Integer[][] memo) {\n        if (s == e)\n            return nums[s];\n        if (memo[s][e] != null)\n            return memo[s][e];\n        int a = nums[s] - winner(nums, s + 1, e, memo);\n        int b = nums[e] - winner(nums, s, e - 1, memo);\n        memo[s][e] = Math.max(a, b);\n        return memo[s][e];\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "EFGjsVXp": [
+      {
+        "code": "public class Solution {\n    public boolean PredictTheWinner(int[] nums) {\n        int[][] dp = new int[nums.length + 1][nums.length];\n        for (int s = nums.length; s >= 0; s--) {\n            for (int e = s + 1; e < nums.length; e++) {\n                int a = nums[s] - dp[s + 1][e];\n                int b = nums[e] - dp[s][e - 1];\n                dp[s][e] = Math.max(a, b);\n            }\n        }\n        return dp[0][nums.length - 1] >= 0;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "k9vrYN2X": [
+      {
+        "code": "public class Solution {\n    public boolean PredictTheWinner(int[] nums) {\n        int[] dp = new int[nums.length];\n        for (int s = nums.length; s >= 0; s--) {\n            for (int e = s + 1; e < nums.length; e++) {\n                int a = nums[s] - dp[e];\n                int b = nums[e] - dp[e - 1];\n                dp[e] = Math.max(a, b);\n            }\n        }\n        return dp[nums.length - 1] >= 0;\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming",

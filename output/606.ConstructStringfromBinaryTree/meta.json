@@ -11,7 +11,19 @@
   "solution": {
     "id": "152",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "AQ3oFiCv": [
+      {
+        "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\npublic class Solution {\n    public String tree2str(TreeNode t) {\n        if(t==null)\n            return \"\";\n        if(t.left==null && t.right==null)\n            return t.val+\"\";\n        if(t.right==null)\n            return t.val+\"(\"+tree2str(t.left)+\")\";\n        return t.val+\"(\"+tree2str(t.left)+\")(\"+tree2str(t.right)+\")\";   \n    }\n}\n",
+        "langSlug": "java"
+      }
+    ],
+    "qvqkT2qU": [
+      {
+        "code": "\npublic class Solution {\n    public String tree2str(TreeNode t) {\n        if (t == null)\n            return \"\";\n        Stack < TreeNode > stack = new Stack < > ();\n        stack.push(t);\n        Set < TreeNode > visited = new HashSet < > ();\n        StringBuilder s = new StringBuilder();\n        while (!stack.isEmpty()) {\n            t = stack.peek();\n            if (visited.contains(t)) {\n                stack.pop();\n                s.append(\")\");\n            } else {\n                visited.add(t);\n                s.append(\"(\" + t.val);\n                if (t.left == null && t.right != null)\n                    s.append(\"()\");\n                if (t.right != null)\n                    stack.push(t.right);\n                if (t.left != null)\n                    stack.push(t.left);\n            }\n        }\n        return s.substring(1, s.length() - 1);\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "String",

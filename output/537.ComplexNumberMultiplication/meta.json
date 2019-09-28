@@ -11,7 +11,13 @@
   "solution": {
     "id": "96",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "jgLSUzDc": [
+      {
+        "code": "\npublic class Solution {\n\n    public String complexNumberMultiply(String a, String b) {\n        String x[] = a.split(\"\\\\+|i\");\n        String y[] = b.split(\"\\\\+|i\");\n        int a_real = Integer.parseInt(x[0]);\n        int a_img = Integer.parseInt(x[1]);\n        int b_real = Integer.parseInt(y[0]);\n        int b_img = Integer.parseInt(y[1]);\n        return (a_real * b_real - a_img * b_img) + \"+\" + (a_real * b_img + a_img * b_real) + \"i\";\n\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Math",

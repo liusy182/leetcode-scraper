@@ -11,7 +11,37 @@
   "solution": {
     "id": "311",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "UVn8oEww": [
+      {
+        "code": "class Solution {\n    public int cherryPickup(int[][] grid) {\n        int ans = 0;\n        int[][] path = bestPath(grid);\n        if (path == null) return 0;\n        for (int[] step: path) {\n            ans += grid[step[0]][step[1]];\n            grid[step[0]][step[1]] = 0;\n        }\n\n        for (int[] step: bestPath(grid))\n            ans += grid[step[0]][step[1]];\n\n        return ans;\n    }\n\n    public int[][] bestPath(int[][] grid) {\n        int N = grid.length;\n        int[][] dp = new int[N][N];\n        for (int[] row: dp) Arrays.fill(row, Integer.MIN_VALUE);\n        dp[N-1][N-1] = grid[N-1][N-1];\n        for (int i = N-1; i >= 0; --i) {\n            for (int j = N-1; j >= 0; --j) {\n                if (grid[i][j] >= 0 && (i != N-1 || j != N-1)) {\n                    dp[i][j] = Math.max(i+1 < N ? dp[i+1][j] : Integer.MIN_VALUE,\n                                        j+1 < N ? dp[i][j+1] : Integer.MIN_VALUE);\n                    dp[i][j] += grid[i][j];\n                }\n            }\n        }\n        if (dp[0][0] < 0) return null;\n        int[][] ans = new int[2*N - 1][2];\n        int i = 0, j = 0, t = 0;\n        while (i != N-1 || j != N-1) {\n            if (j+1 == N || i+1 < N && dp[i+1][j] >= dp[i][j+1]) i++;\n            else j++;\n\n            ans[t][0] = i;\n            ans[t][1] = j;\n            t++;\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def cherryPickup(self, grid):\n        def bestpath(grid):\n            N = len(grid)\n            NINF = float('-inf')\n            dp = [[NINF] * N for _ in xrange(N)]\n            dp[-1][-1] = grid[-1][-1]\n            for i in xrange(N-1, -1, -1):\n                for j in xrange(N-1, -1, -1):\n                    if grid[i][j] >= 0 and (i != N-1 or j != N-1):\n                        dp[i][j] = max(dp[i+1][j] if i+1 < N else NINF,\n                                       dp[i][j+1] if j+1 < N else NINF)\n                        dp[i][j] += grid[i][j]\n\n            if dp[0][0] < 0: return None\n            ans = [(0, 0)]\n            i = j = 0\n            while i != N-1 or j != N-1:\n                if j+1 == N or i+1 < N and dp[i+1][j] >= dp[i][j+1]:\n                    i += 1\n                else:\n                    j += 1\n                ans.append((i, j))\n            return ans\n\n        ans = 0\n        path = bestpath(grid)\n        if path is None: return 0\n\n        for i, j in path:\n            ans += grid[i][j]\n            grid[i][j] = 0\n\n        for i, j in bestpath(grid):\n            ans += grid[i][j]\n\n        return ans",
+        "langSlug": "python"
+      }
+    ],
+    "BbN9rraL": [
+      {
+        "code": "class Solution {\n    int[][][] memo;\n    int[][] grid;\n    int N;\n    public int cherryPickup(int[][] grid) {\n        this.grid = grid;\n        N = grid.length;\n        memo = new int[N][N][N];\n        for (int[][] layer: memo)\n            for (int[] row: layer)\n                Arrays.fill(row, Integer.MIN_VALUE);\n        return Math.max(0, dp(0, 0, 0));\n    }\n    public int dp(int r1, int c1, int c2) {\n        int r2 = r1 + c1 - c2;\n        if (N == r1 || N == r2 || N == c1 || N == c2 ||\n                grid[r1][c1] == -1 || grid[r2][c2] == -1) {\n            return -999999;        \n        } else if (r1 == N-1 && c1 == N-1) {\n            return grid[r1][c1];\n        } else if (memo[r1][c1][c2] != Integer.MIN_VALUE) {\n            return memo[r1][c1][c2];\n        } else {\n            int ans = grid[r1][c1];\n            if (c1 != c2) ans += grid[r2][c2];\n            ans += Math.max(Math.max(dp(r1, c1+1, c2+1), dp(r1+1, c1, c2+1)),\n                            Math.max(dp(r1, c1+1, c2), dp(r1+1, c1, c2)));\n            memo[r1][c1][c2] = ans;\n            return ans;\n        }\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def cherryPickup(self, grid):\n        N = len(grid)\n        memo = [[[None] * N for _1 in xrange(N)] for _2 in xrange(N)]\n        def dp(r1, c1, c2):\n            r2 = r1 + c1 - c2\n            if (N == r1 or N == r2 or N == c1 or N == c2 or\n                    grid[r1][c1] == -1 or grid[r2][c2] == -1):\n                return float('-inf')\n            elif r1 == c1 == N-1:\n                return grid[r1][c1]\n            elif memo[r1][c1][c2] is not None:\n                return memo[r1][c1][c2]\n            else:\n                ans = grid[r1][c1] + (c1 != c2) * grid[r2][c2]\n                ans += max(dp(r1, c1+1, c2+1), dp(r1+1, c1, c2+1),\n                           dp(r1, c1+1, c2), dp(r1+1, c1, c2))\n\n            memo[r1][c1][c2] = ans\n            return ans\n\n        return max(0, dp(0, 0, 0))",
+        "langSlug": "python"
+      }
+    ],
+    "SAAR75Ui": [
+      {
+        "code": "class Solution {\n    public int cherryPickup(int[][] grid) {\n        int N = grid.length;\n        int[][] dp = new int[N][N];\n        for (int[] row: dp) Arrays.fill(row, Integer.MIN_VALUE);\n        dp[0][0] = grid[0][0];\n\n        for (int t = 1; t <= 2*N - 2; ++t) {\n            int[][] dp2 = new int[N][N];\n            for (int[] row: dp2) Arrays.fill(row, Integer.MIN_VALUE);\n\n            for (int i = Math.max(0, t-(N-1)); i <= Math.min(N-1, t); ++i) {\n                for (int j = Math.max(0, t-(N-1)); j <= Math.min(N-1, t); ++j) {\n                    if (grid[i][t-i] == -1 || grid[j][t-j] == -1) continue;\n                    int val = grid[i][t-i];\n                    if (i != j) val += grid[j][t-j];\n                    for (int pi = i-1; pi <= i; ++pi)\n                        for (int pj = j-1; pj <= j; ++pj)\n                            if (pi >= 0 && pj >= 0)\n                                dp2[i][j] = Math.max(dp2[i][j], dp[pi][pj] + val);\n                }\n            }\n            dp = dp2;\n        }\n        return Math.max(0, dp[N-1][N-1]);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def cherryPickup(self, grid):\n        N = len(grid)\n        dp = [[float('-inf')] * N for _ in xrange(N)]\n        dp[0][0] = grid[0][0]\n        for t in xrange(1, 2*N - 1):\n            dp2 = [[float('-inf')] * N for _ in xrange(N)]\n            for i in xrange(max(0, t-(N-1)), min(N-1, t) + 1):\n                for j in xrange(max(0, t-(N-1)), min(N-1, t) + 1):\n                    if grid[i][t-i] == -1 or grid[j][t-j] == -1:\n                        continue\n                    val = grid[i][t-i]\n                    if i != j: val += grid[j][t-j]\n                    dp2[i][j] = max(dp[pi][pj] + val\n                                    for pi in (i-1, i) for pj in (j-1, j)\n                                    if pi >= 0 and pj >= 0)\n            dp = dp2\n        return max(0, dp[N-1][N-1])",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming"

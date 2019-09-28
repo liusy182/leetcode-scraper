@@ -11,7 +11,17 @@
   "solution": {
     "id": "566",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "cCvupdgy": [
+      {
+        "code": "class Solution {\n    public int smallestRangeII(int[] A, int K) {\n        int N = A.length;\n        Arrays.sort(A);\n        int ans = A[N-1] - A[0];\n\n        for (int i = 0; i < A.length - 1; ++i) {\n            int a = A[i], b = A[i+1];\n            int high = Math.max(A[N-1] - K, a + K);\n            int low = Math.min(A[0] + K, b - K);\n            ans = Math.min(ans, high - low);\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def smallestRangeII(self, A, K):\n        A.sort()\n        mi, ma = A[0], A[-1]\n        ans = ma - mi\n        for i in xrange(len(A) - 1):\n            a, b = A[i], A[i+1]\n            ans = min(ans, max(ma-K, a+K) - min(mi+K, b-K))\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math",

@@ -11,7 +11,37 @@
   "solution": {
     "id": "245",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "jNhyy639": [
+      {
+        "code": "class MapSum {\n    HashMap<String, Integer> map;\n    public MapSum() {\n        map = new HashMap<>();\n    }\n    public void insert(String key, int val) {\n        map.put(key, val);\n    }\n    public int sum(String prefix) {\n        int ans = 0;\n        for (String key: map.keySet()) {\n            if (key.startsWith(prefix)) {\n                ans += map.get(key);\n            }\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class MapSum(object):\n    def __init__(self):\n        self.map = {}\n\n    def insert(self, key, val):\n        self.map[key] = val\n\n    def sum(self, prefix):\n        return sum(val for key, val in self.map.items()\n                   if key.startswith(prefix))",
+        "langSlug": "python"
+      }
+    ],
+    "QYzALHGM": [
+      {
+        "code": "class MapSum {\n    Map<String, Integer> map;\n    Map<String, Integer> score;\n    public MapSum() {\n        map = new HashMap();\n        score = new HashMap();\n    }\n    public void insert(String key, int val) {\n        int delta = val - map.getOrDefault(key, 0);\n        map.put(key, val);\n        String prefix = \"\";\n        for (char c: key.toCharArray()) {\n            prefix += c;\n            score.put(prefix, score.getOrDefault(prefix, 0) + delta);\n        }\n    }\n    public int sum(String prefix) {\n        return score.getOrDefault(prefix, 0);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class MapSum(object):\n    def __init__(self):\n        self.map = {}\n        self.score = collections.Counter()\n\n    def insert(self, key, val):\n        delta = val - self.map.get(key, 0)\n        self.map[key] = val\n        for i in xrange(len(key) + 1):\n            prefix = key[:i]\n            self.score[prefix] += delta\n\n    def sum(self, prefix):\n        return self.score[prefix]",
+        "langSlug": "python"
+      }
+    ],
+    "FbmbbgFJ": [
+      {
+        "code": "class MapSum {\n    HashMap<String, Integer> map;\n    TrieNode root;\n    public MapSum() {\n        map = new HashMap();\n        root = new TrieNode();\n    }\n    public void insert(String key, int val) {\n        int delta = val - map.getOrDefault(key, 0);\n        map.put(key, val);\n        TrieNode cur = root;\n        cur.score += delta;\n        for (char c: key.toCharArray()) {\n            cur.children.putIfAbsent(c, new TrieNode());\n            cur = cur.children.get(c);\n            cur.score += delta;\n        }\n    }\n    public int sum(String prefix) {\n        TrieNode cur = root;\n        for (char c: prefix.toCharArray()) {\n            cur = cur.children.get(c);\n            if (cur == null) return 0;\n        }\n        return cur.score;\n    }\n}\nclass TrieNode {\n    Map<Character, TrieNode> children = new HashMap();\n    int score;\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class TrieNode(object):\n    __slots__ = 'children', 'score'\n    def __init__(self):\n        self.children = {}\n        self.score = 0\n\nclass MapSum(object):\n    def __init__(self):\n        self.map = {}\n        self.root = TrieNode()\n\n    def insert(self, key, val):\n        delta = val - self.map.get(key, 0)\n        self.map[key] = val\n        cur = self.root\n        cur.score += delta\n        for char in key:\n            cur = cur.children.setdefault(char, TrieNode())\n            cur.score += delta\n\n    def sum(self, prefix):\n        cur = self.root\n        for char in prefix:\n            if char not in cur.children:\n                return 0\n            cur = cur.children[char]\n        return cur.score",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Trie"

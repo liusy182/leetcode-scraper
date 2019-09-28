@@ -11,7 +11,27 @@
   "solution": {
     "id": "476",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "oeguUYg8": [
+      {
+        "code": "class Solution {\n    public boolean backspaceCompare(String S, String T) {\n        return build(S).equals(build(T));\n    }\n\n    public String build(String S) {\n        Stack<Character> ans = new Stack();\n        for (char c: S.toCharArray()) {\n            if (c != '#')\n                ans.push(c);\n            else if (!ans.empty())\n                ans.pop();\n        }\n        return String.valueOf(ans);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def backspaceCompare(self, S, T):\n        def build(S):\n            ans = []\n            for c in S:\n                if c != '#':\n                    ans.append(c)\n                elif ans:\n                    ans.pop()\n            return \"\".join(ans)\n        return build(S) == build(T)",
+        "langSlug": "python"
+      }
+    ],
+    "sqdQBEmS": [
+      {
+        "code": "class Solution {\n    public boolean backspaceCompare(String S, String T) {\n        int i = S.length() - 1, j = T.length() - 1;\n        int skipS = 0, skipT = 0;\n\n        while (i >= 0 || j >= 0) { // While there may be chars in build(S) or build (T)\n            while (i >= 0) { // Find position of next possible char in build(S)\n                if (S.charAt(i) == '#') {skipS++; i--;}\n                else if (skipS > 0) {skipS--; i--;}\n                else break;\n            }\n            while (j >= 0) { // Find position of next possible char in build(T)\n                if (T.charAt(j) == '#') {skipT++; j--;}\n                else if (skipT > 0) {skipT--; j--;}\n                else break;\n            }\n            // If two actual characters are different\n            if (i >= 0 && j >= 0 && S.charAt(i) != T.charAt(j))\n                return false;\n            // If expecting to compare char vs nothing\n            if ((i >= 0) != (j >= 0))\n                return false;\n            i--; j--;\n        }\n        return true;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def backspaceCompare(self, S, T):\n        def F(S):\n            skip = 0\n            for x in reversed(S):\n                if x == '#':\n                    skip += 1\n                elif skip:\n                    skip -= 1\n                else:\n                    yield x\n\n        return all(x == y for x, y in itertools.izip_longest(F(S), F(T)))",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Two Pointers",

@@ -11,7 +11,27 @@
   "solution": {
     "id": "589",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "sV3wKPcR": [
+      {
+        "code": "class Solution {\n    public int[] sortArrayByParityII(int[] A) {\n        int N = A.length;\n        int[] ans = new int[N];\n\n        int t = 0;\n        for (int x: A) if (x % 2 == 0) {\n            ans[t] = x;\n            t += 2;\n        }\n\n        t = 1;\n        for (int x: A) if (x % 2 == 1) {\n            ans[t] = x;\n            t += 2;\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def sortArrayByParityII(self, A):\n        N = len(A)\n        ans = [None] * N\n\n        t = 0\n        for i, x in enumerate(A):\n            if x % 2 == 0:\n                ans[t] = x\n                t += 2\n\n        t = 1\n        for i, x in enumerate(A):\n            if x % 2 == 1:\n                ans[t] = x\n                t += 2\n\n        # We could have also used slice assignment:\n        # ans[::2] = (x for x in A if x % 2 == 0)\n        # ans[1::2] = (x for x in A if x % 2 == 1)\n\n        return ans",
+        "langSlug": "python"
+      }
+    ],
+    "aWm3c7PK": [
+      {
+        "code": "class Solution {\n    public int[] sortArrayByParityII(int[] A) {\n        int j = 1;\n        for (int i = 0; i < A.length; i += 2)\n            if (A[i] % 2 == 1) {\n                while (A[j] % 2 == 1)\n                    j += 2;\n\n                // Swap A[i] and A[j]\n                int tmp = A[i];\n                A[i] = A[j];\n                A[j] = tmp;\n            }\n\n        return A;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def sortArrayByParityII(self, A):\n        j = 1\n        for i in xrange(0, len(A), 2):\n            if A[i] % 2:\n                while A[j] % 2:\n                    j += 2\n                A[i], A[j] = A[j], A[i]\n        return A",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array",

@@ -15,7 +15,17 @@
   "solution": {
     "id": "549",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "58ro3AWf": [
+      {
+        "code": "class Solution {\n  public int findMin(int[] nums) {\n    // If the list has just one element then return that element.\n    if (nums.length == 1) {\n      return nums[0];\n    }\n\n    // initializing left and right pointers.\n    int left = 0, right = nums.length - 1;\n\n    // if the last element is greater than the first element then there is no rotation.\n    // e.g. 1 < 2 < 3 < 4 < 5 < 7. Already sorted array.\n    // Hence the smallest element is first element. A[0]\n    if (nums[right] > nums[0]) {\n      return nums[0];\n    }\n    \n    // Binary search way\n    while (right >= left) {\n      // Find the mid element\n      int mid = left + (right - left) / 2;\n\n      // if the mid element is greater than its next element then mid+1 element is the smallest\n      // This point would be the point of change. From higher to lower value.\n      if (nums[mid] > nums[mid + 1]) {\n        return nums[mid + 1];\n      }\n\n      // if the mid element is lesser than its previous element then mid element is the smallest\n      if (nums[mid - 1] > nums[mid]) {\n        return nums[mid];\n      }\n\n      // if the mid elements value is greater than the 0th element this means\n      // the least value is still somewhere to the right as we are still dealing with elements\n      // greater than nums[0]\n      if (nums[mid] > nums[0]) {\n        left = mid + 1;\n      } else {\n        // if nums[0] is greater than the mid value then this means the smallest value is somewhere to\n        // the left\n        right = mid - 1;\n      }\n    }\n    return -1;\n  }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def findMin(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        # If the list has just one element then return that element.\n        if len(nums) == 1:\n            return nums[0]\n\n        # left pointer\n        left = 0\n        # right pointer\n        right = len(nums) - 1\n\n        # if the last element is greater than the first element then there is no rotation.\n        # e.g. 1 < 2 < 3 < 4 < 5 < 7. Already sorted array.\n        # Hence the smallest element is first element. A[0]\n        if nums[right] > nums[0]:\n            return nums[0]\n\n        # Binary search way\n        while right >= left:\n            # Find the mid element\n            mid = left + (right - left) / 2\n            # if the mid element is greater than its next element then mid+1 element is the smallest\n            # This point would be the point of change. From higher to lower value.\n            if nums[mid] > nums[mid + 1]:\n                return nums[mid + 1]\n            # if the mid element is lesser than its previous element then mid element is the smallest\n            if nums[mid - 1] > nums[mid]:\n                return nums[mid]\n\n            # if the mid elements value is greater than the 0th element this means\n            # the least value is still somewhere to the right as we are still dealing with elements greater than nums[0]\n            if nums[mid] > nums[0]:\n                left = mid + 1\n            # if nums[0] is greater than the mid value then this means the smallest value is somewhere to the left\n            else:\n                right = mid - 1",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array",

@@ -11,7 +11,17 @@
   "solution": {
     "id": "657",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "kQvhoWDb": [
+      {
+        "code": "class Solution {\n    public List<Integer> pancakeSort(int[] A) {\n        List<Integer> ans = new ArrayList();\n        int N = A.length;\n\n        Integer[] B = new Integer[N];\n        for (int i = 0; i < N; ++i)\n            B[i] = i+1;\n        Arrays.sort(B, (i, j) -> A[j-1] - A[i-1]);\n\n        for (int i: B) {\n            for (int f: ans)\n                if (i <= f)\n                    i = f+1 - i;\n            ans.add(i);\n            ans.add(N--);\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def pancakeSort(self, A):\n        ans = []\n\n        N = len(A)\n        B = sorted(range(1, N+1), key = lambda i: -A[i-1])\n        for i in B:\n            for f in ans:\n                if i <= f:\n                    i = f+1 - i\n            ans.extend([i, N])\n            N -= 1\n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array",

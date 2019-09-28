@@ -11,7 +11,27 @@
   "solution": {
     "id": "581",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "2S2yvnpZ": [
+      {
+        "code": "class Solution {\n    public String reverseOnlyLetters(String S) {\n        Stack<Character> letters = new Stack();\n        for (char c: S.toCharArray())\n            if (Character.isLetter(c))\n                letters.push(c);\n\n        StringBuilder ans = new StringBuilder();\n        for (char c: S.toCharArray()) {\n            if (Character.isLetter(c))\n                ans.append(letters.pop());\n            else\n                ans.append(c);\n        }\n\n        return ans.toString();\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def reverseOnlyLetters(self, S):\n        letters = [c for c in S if c.isalpha()]\n        ans = []\n        for c in S:\n            if c.isalpha():\n                ans.append(letters.pop())\n            else:\n                ans.append(c)\n        return \"\".join(ans)",
+        "langSlug": "python"
+      }
+    ],
+    "2RFgNCou": [
+      {
+        "code": "class Solution {\n    public String reverseOnlyLetters(String S) {\n        StringBuilder ans = new StringBuilder();\n        int j = S.length() - 1;\n        for (int i = 0; i < S.length(); ++i) {\n            if (Character.isLetter(S.charAt(i))) {\n                while (!Character.isLetter(S.charAt(j)))\n                    j--;\n                ans.append(S.charAt(j--));\n            } else {\n                ans.append(S.charAt(i));\n            }\n        }\n\n        return ans.toString();\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def reverseOnlyLetters(self, S):\n        ans = []\n        j = len(ans) - 1\n        for i, x in enumerate(S):\n            if x.isalpha():\n                while not S[j].isalpha():\n                    j -= 1\n                ans.append(S[j])\n                j -= 1\n            else:\n                ans.append(x)\n        \n        return \"\".join(ans)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "String"

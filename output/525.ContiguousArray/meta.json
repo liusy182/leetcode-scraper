@@ -11,7 +11,25 @@
   "solution": {
     "id": "94",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "sPZqbexo": [
+      {
+        "code": "\npublic class Solution {\n\n    public int findMaxLength(int[] nums) {\n        int maxlen = 0;\n        for (int start = 0; start < nums.length; start++) {\n            int zeroes = 0, ones = 0;\n            for (int end = start; end < nums.length; end++) {\n                if (nums[end] == 0) {\n                    zeroes++;\n                } else {\n                    ones++;\n                }\n                if (zeroes == ones) {\n                    maxlen = Math.max(maxlen, end - start + 1);\n                }\n            }\n        }\n        return maxlen;\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ],
+    "Nvw6WnPN": [
+      {
+        "code": "\npublic class Solution {\n\n    public int findMaxLength(int[] nums) {\n        int[] arr = new int[2 * nums.length + 1];\n        Arrays.fill(arr, -2);\n        arr[nums.length] = -1;\n        int maxlen = 0, count = 0;\n        for (int i = 0; i < nums.length; i++) {\n            count = count + (nums[i] == 0 ? -1 : 1);\n            if (arr[count + nums.length] >= -1) {\n                maxlen = Math.max(maxlen, i - arr[count + nums.length]);\n            } else {\n                arr[count + nums.length] = i;\n            }\n\n        }\n        return maxlen;\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ],
+    "nG5CTUD8": [
+      {
+        "code": "public class Solution {\n\n    public int findMaxLength(int[] nums) {\n        Map<Integer, Integer> map = new HashMap<>();\n        map.put(0, -1);\n        int maxlen = 0, count = 0;\n        for (int i = 0; i < nums.length; i++) {\n            count = count + (nums[i] == 1 ? 1 : -1);\n            if (map.containsKey(count)) {\n                maxlen = Math.max(maxlen, i - map.get(count));\n            } else {\n                map.put(count, i);\n            }\n        }\n        return maxlen;\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table"

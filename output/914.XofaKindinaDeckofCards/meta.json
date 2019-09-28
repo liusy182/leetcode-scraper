@@ -11,7 +11,27 @@
   "solution": {
     "id": "573",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "FCdXEDEB": [
+      {
+        "code": "class Solution {\n    public boolean hasGroupsSizeX(int[] deck) {\n        int N = deck.length;\n        int[] count = new int[10000];\n        for (int c: deck)\n            count[c]++;\n\n        List<Integer> values = new ArrayList();\n        for (int i = 0; i < 10000; ++i)\n            if (count[i] > 0)\n                values.add(count[i]);\n\n        search: for (int X = 2; X <= N; ++X)\n            if (N % X == 0) {\n                for (int v: values)\n                    if (v % X != 0)\n                        continue search;\n                return true;\n            }\n\n        return false;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def hasGroupsSizeX(self, deck):\n        count = collections.Counter(deck)\n        N = len(deck)\n        for X in xrange(2, N+1):\n            if N % X == 0:\n                if all(v % X == 0 for v in count.values()):\n                    return True\n        return False",
+        "langSlug": "python"
+      }
+    ],
+    "biA9HRs5": [
+      {
+        "code": "class Solution {\n    public boolean hasGroupsSizeX(int[] deck) {\n        int[] count = new int[10000];\n        for (int c: deck)\n            count[c]++;\n\n        int g = -1;\n        for (int i = 0; i < 10000; ++i)\n            if (count[i] > 0) {\n                if (g == -1)\n                    g = count[i];\n                else\n                    g = gcd(g, count[i]);\n            }\n\n        return g >= 2;\n    }\n\n    public int gcd(int x, int y) {\n        return x == 0 ? y : gcd(y%x, x);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def hasGroupsSizeX(self, deck):\n        from fractions import gcd\n        vals = collections.Counter(deck).values()\n        return reduce(gcd, vals) >= 2",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array",

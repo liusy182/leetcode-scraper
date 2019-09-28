@@ -13,7 +13,37 @@
   "solution": {
     "id": "270",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "haWM6KvQ": [
+      {
+        "code": "class Solution {\n    public int smallestDistancePair(int[] nums, int k) {\n        Arrays.sort(nums);\n        PriorityQueue<Node> heap = new PriorityQueue<Node>(nums.length,\n            Comparator.<Node> comparingInt(node -> nums[node.nei] - nums[node.root]));\n        for (int i = 0; i + 1 < nums.length; ++i) {\n            heap.offer(new Node(i, i+1));\n        }\n\n        Node node = null;\n        for (; k > 0; --k) {\n            node = heap.poll();\n            if (node.nei + 1 < nums.length) {\n                heap.offer(new Node(node.root, node.nei + 1));\n            }\n        }\n        return nums[node.nei] - nums[node.root];\n    }\n}\nclass Node {\n    int root;\n    int nei;\n    Node(int r, int n) {\n        root = r;\n        nei = n;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def smallestDistancePair(self, nums, k):\n        nums.sort()\n        heap = [(nums[i+1] - nums[i], i, i+1)\n                for i in xrange(len(nums) - 1)]\n        heapq.heapify(heap)\n\n        for _ in xrange(k):\n            d, root, nei = heapq.heappop(heap)\n            if nei + 1 < len(nums):\n                heapq.heappush((nums[nei + 1] - nums[root], root, nei + 1))\n\n        return d",
+        "langSlug": "python"
+      }
+    ],
+    "upbfbVHa": [
+      {
+        "code": "class Solution {\n    public int smallestDistancePair(int[] nums, int k) {\n        Arrays.sort(nums);\n        int WIDTH = 2 * nums[nums.length - 1];\n\n        //multiplicity[i] = number of nums[j] == nums[i] (j < i)\n        int[] multiplicity = new int[nums.length];\n        for (int i = 1; i < nums.length; ++i) {\n            if (nums[i] == nums[i-1]) {\n                multiplicity[i] = 1 + multiplicity[i - 1];\n            }\n        }\n\n        //prefix[v] = number of values <= v\n        int[] prefix = new int[WIDTH];\n        int left = 0;\n        for (int i = 0; i < WIDTH; ++i) {\n            while (left < nums.length && nums[left] == i) left++;\n            prefix[i] = left;\n        }\n\n        int lo = 0;\n        int hi = nums[nums.length - 1] - nums[0];\n        while (lo < hi) {\n            int mi = (lo + hi) / 2;\n            int count = 0;\n            for (int i = 0; i < nums.length; ++i) {\n                count += prefix[nums[i] + mi] - prefix[nums[i]] + multiplicity[i];\n            }\n            //count = number of pairs with distance <= mi\n            if (count >= k) hi = mi;\n            else lo = mi + 1;\n        }\n        return lo;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def smallestDistancePair(self, nums, k):\n        def possible(guess):\n            #Is there k or more pairs with distance <= guess?\n            return sum(prefix[min(x + guess, W)] - prefix[x] + multiplicity[i]\n                       for i, x in enumerate(nums)) >= k\n\n        nums.sort()\n        W = nums[-1]\n\n        #multiplicity[i] = number of nums[j] == nums[i] (j < i)\n        multiplicity = [0] * len(nums)\n        for i, x in enumerate(nums):\n            if i and x == nums[i-1]:\n                multiplicity[i] = 1 + multiplicity[i - 1]\n\n        #prefix[v] = number of values <= v\n        prefix = [0] * (W + 1)\n        left = 0\n        for i in xrange(len(prefix)):\n            while left < len(nums) and nums[left] == i:\n                left += 1\n            prefix[i] = left\n\n        lo = 0\n        hi = nums[-1] - nums[0]\n        while lo < hi:\n            mi = (lo + hi) / 2\n            if possible(mi):\n                hi = mi\n            else:\n                lo = mi + 1\n\n        return lo",
+        "langSlug": "python"
+      }
+    ],
+    "UD6QK4gU": [
+      {
+        "code": "class Solution {\n    public int smallestDistancePair(int[] nums, int k) {\n        Arrays.sort(nums);\n\n        int lo = 0;\n        int hi = nums[nums.length - 1] - nums[0];\n        while (lo < hi) {\n            int mi = (lo + hi) / 2;\n            int count = 0, left = 0;\n            for (int right = 0; right < nums.length; ++right) {\n                while (nums[right] - nums[left] > mi) left++;\n                count += right - left;\n            }\n            //count = number of pairs with distance <= mi\n            if (count >= k) hi = mi;\n            else lo = mi + 1;\n        }\n        return lo;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def smallestDistancePair(self, nums, k):\n        def possible(guess):\n            #Is there k or more pairs with distance <= guess?\n            count = left = 0\n            for right, x in enumerate(nums):\n                while x - nums[left] > guess:\n                    left += 1\n                count += right - left\n            return count >= k\n\n        nums.sort()\n        lo = 0\n        hi = nums[-1] - nums[0]\n        while lo < hi:\n            mi = (lo + hi) / 2\n            if possible(mi):\n                hi = mi\n            else:\n                lo = mi + 1\n\n        return lo",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array",

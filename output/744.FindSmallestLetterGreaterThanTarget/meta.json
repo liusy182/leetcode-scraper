@@ -13,7 +13,37 @@
   "solution": {
     "id": "336",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "auZQ7CwK": [
+      {
+        "code": "class Solution {\n    public char nextGreatestLetter(char[] letters, char target) {\n        boolean[] seen = new boolean[26];\n        for (char c: letters)\n            seen[c - 'a'] = true;\n\n        while (true) {\n            target++;\n            if (target > 'z') target = 'a';\n            if (seen[target - 'a']) return target;\n        }\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def nextGreatestLetter(self, letters, target):\n        seen = set(letters)\n        for i in xrange(1, 26):\n            cand = chr((ord(target) - ord('a') + i) % 26 + ord('a'))\n            if cand in seen:\n                return cand",
+        "langSlug": "python"
+      }
+    ],
+    "RvMYaXpq": [
+      {
+        "code": "class Solution {\n    public char nextGreatestLetter(char[] letters, char target) {\n        for (char c: letters)\n            if (c > target) return c;\n        return letters[0];\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def nextGreatestLetter(self, letters, target):\n        for c in letters:\n            if c > target:\n                return c\n        return letters[0]",
+        "langSlug": "python"
+      }
+    ],
+    "bQDjgxiu": [
+      {
+        "code": "class Solution {\n    public char nextGreatestLetter(char[] letters, char target) {\n        int lo = 0, hi = letters.length;\n        while (lo < hi) {\n            int mi = lo + (hi - lo) / 2;\n            if (letters[mi] <= target) lo = mi + 1;\n            else hi = mi;\n        }\n        return letters[lo % letters.length];\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def nextGreatestLetter(self, letters, target):\n        index = bisect.bisect(letters, target)\n        return letters[index % len(letters)]",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Binary Search"

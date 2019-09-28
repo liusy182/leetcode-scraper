@@ -11,7 +11,27 @@
   "solution": {
     "id": "236",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "HwiBG7Pz": [
+      {
+        "code": "class Solution {\n    public List<List<String>> groupAnagrams(String[] strs) {\n        if (strs.length == 0) return new ArrayList();\n        Map<String, List> ans = new HashMap<String, List>();\n        for (String s : strs) {\n            char[] ca = s.toCharArray();\n            Arrays.sort(ca);\n            String key = String.valueOf(ca);\n            if (!ans.containsKey(key)) ans.put(key, new ArrayList());\n            ans.get(key).add(s);\n        }\n        return new ArrayList(ans.values());\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def groupAnagrams(self, strs):\n        ans = collections.defaultdict(list)\n        for s in strs:\n            ans[tuple(sorted(s))].append(s)\n        return ans.values()",
+        "langSlug": "python"
+      }
+    ],
+    "DvDMzZTX": [
+      {
+        "code": "class Solution {\n    public List<List<String>> groupAnagrams(String[] strs) {\n        if (strs.length == 0) return new ArrayList();\n        Map<String, List> ans = new HashMap<String, List>();\n        int[] count = new int[26];\n        for (String s : strs) {\n            Arrays.fill(count, 0);\n            for (char c : s.toCharArray()) count[c - 'a']++;\n\n            StringBuilder sb = new StringBuilder(\"\");\n            for (int i = 0; i < 26; i++) {\n                sb.append('#');\n                sb.append(count[i]);\n            }\n            String key = sb.toString();\n            if (!ans.containsKey(key)) ans.put(key, new ArrayList());\n            ans.get(key).add(s);\n        }\n        return new ArrayList(ans.values());\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def groupAnagrams(strs):\n        ans = collections.defaultdict(list)\n        for s in strs:\n            count = [0] * 26\n            for c in s:\n                count[ord(c) - ord('a')] += 1\n            ans[tuple(count)].append(s)\n        return ans.values()",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table",

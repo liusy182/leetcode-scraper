@@ -11,7 +11,17 @@
   "solution": {
     "id": "649",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "zS62KWLG": [
+      {
+        "code": "class Solution {\n    Map<String, Integer> memo;\n    int x;\n    public int leastOpsExpressTarget(int x, int target) {\n        memo = new HashMap();\n        this.x = x;\n        return dp(0, target) - 1;\n    }\n\n    public int dp(int i, int target) {\n        String code = \"\" + i + \"#\" + target;\n        if (memo.containsKey(code))\n            return memo.get(code);\n\n        int ans;\n        if (target == 0) {\n            ans = 0;\n        } else if (target == 1) {\n            ans = cost(i);\n        } else if (i >= 39) {\n            ans = target + 1;\n        } else {\n            int t = target / x;\n            int r = target % x;\n            ans = Math.min(r * cost(i) + dp(i+1, t),\n                           (x-r) * cost(i) + dp(i+1, t+1));\n        }\n\n        memo.put(code, ans);\n        return ans;\n    }\n\n    public int cost(int x) {\n        return x > 0 ? x : 2;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "from functools import lru_cache\n\nclass Solution(object):\n    def leastOpsExpressTarget(self, x, target):\n        cost = list(range(40))\n        cost[0] = 2\n\n        @lru_cache(None)\n        def dp(i, targ):\n            if targ == 0: return 0\n            if targ == 1: return cost[i]\n            if i >= 39: return float('inf')\n\n            t, r = divmod(targ, x)\n            return min(r * cost[i] + dp(i+1, t),\n                       (x-r) * cost[i] + dp(i+1, t+1))\n\n        return dp(0, target) - 1",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math",

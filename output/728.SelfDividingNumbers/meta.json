@@ -13,7 +13,17 @@
   "solution": {
     "id": "296",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "6GUVmusj": [
+      {
+        "code": "class Solution {\n    public List<Integer> selfDividingNumbers(int left, int right) {\n        List<Integer> ans = new ArrayList();\n        for (int n = left; n <= right; ++n) {\n            if (selfDividing(n)) ans.add(n);\n        }\n        return ans;\n    }\n    public boolean selfDividing(int n) {\n        for (char c: String.valueOf(n).toCharArray()) {\n            if (c == '0' || (n % (c - '0') > 0))\n                return false;\n        }\n        return true;\n    }\n    /*\n    Alternate implementation of selfDividing:\n    public boolean selfDividing(int n) {\n        int x = n;\n        while (x > 0) {\n            int d = x % 10;\n            x /= 10;\n            if (d == 0 || (n % d) > 0) return false;\n        }\n        return true;\n    */\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def selfDividingNumbers(self, left, right):\n        def self_dividing(n):\n            for d in str(n):\n                if d == '0' or n % int(d) > 0:\n                    return False\n            return True\n        \"\"\"\n        Alternate implementation of self_dividing:\n        def self_dividing(n):\n            x = n\n            while x > 0:\n                x, d = divmod(x, 10)\n                if d == 0 or n % d > 0:\n                    return False\n            return True\n        \"\"\"\n        ans = []\n        for n in range(left, right + 1):\n            if self_dividing(n):\n                ans.append(n)\n        return ans #Equals filter(self_dividing, range(left, right+1))\n",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math"

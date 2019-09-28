@@ -11,7 +11,27 @@
   "solution": {
     "id": "648",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "4L9BqZN7": [
+      {
+        "code": "import java.awt.Point;\n\nclass Solution {\n    public double minAreaFreeRect(int[][] points) {\n        int N = points.length;\n\n        Point[] A = new Point[N];\n        Set<Point> pointSet = new HashSet();\n        for (int i = 0; i < N; ++i) {\n            A[i] = new Point(points[i][0], points[i][1]);\n            pointSet.add(A[i]);\n        }\n\n        double ans = Double.MAX_VALUE;\n        for (int i = 0; i < N; ++i) {\n            Point p1 = A[i];\n            for (int j = 0; j < N; ++j) if (j != i) {\n                Point p2 = A[j];\n                for (int k = j+1; k < N; ++k) if (k != i) {\n                    Point p3 = A[k];\n                    Point p4 = new Point(p2.x + p3.x - p1.x, p2.y + p3.y - p1.y);\n\n                    if (pointSet.contains(p4)) {\n                        int dot = ((p2.x - p1.x) * (p3.x - p1.x) +\n                                   (p2.y - p1.y) * (p3.y - p1.y));\n                        if (dot == 0) {\n                            double area = p1.distance(p2) * p1.distance(p3);\n                            if (area < ans)\n                                ans = area;\n                        }\n                    }\n                }\n            }\n        }\n\n        return ans < Double.MAX_VALUE ? ans : 0;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def minAreaFreeRect(self, points):\n        EPS = 1e-7\n        points = set(map(tuple, points))\n\n        ans = float('inf')\n        for p1, p2, p3 in itertools.permutations(points, 3):\n            p4 = p2[0] + p3[0] - p1[0], p2[1] + p3[1] - p1[1]\n            if p4 in points:\n                v21 = complex(p2[0] - p1[0], p2[1] - p1[1])\n                v31 = complex(p3[0] - p1[0], p3[1] - p1[1])\n                if abs(v21.real * v31.real + v21.imag * v31.imag) < EPS:\n                    area = abs(v21) * abs(v31)\n                    if area < ans:\n                        ans = area\n\n        return ans if ans < float('inf') else 0",
+        "langSlug": "python"
+      }
+    ],
+    "2wzCpbAU": [
+      {
+        "code": "import java.awt.Point;\n\nclass Solution {\n    public double minAreaFreeRect(int[][] points) {\n        int N = points.length;\n        Point[] A = new Point[N];\n        for (int i = 0; i < N; ++i)\n            A[i] = new Point(points[i][0], points[i][1]);\n\n        Map<Integer, Map<Point, List<Point>>> seen = new HashMap();\n        for (int i = 0; i < N; ++i)\n            for (int j = i+1; j < N; ++j) {\n                // center is twice actual to keep integer precision\n                Point center = new Point(A[i].x + A[j].x, A[i].y + A[j].y);\n\n                int r2 = (A[i].x - A[j].x) * (A[i].x - A[j].x);\n                r2 += (A[i].y - A[j].y) * (A[i].y - A[j].y);\n                if (!seen.containsKey(r2))\n                    seen.put(r2, new HashMap<Point, List<Point>>());\n                if (!seen.get(r2).containsKey(center))\n                    seen.get(r2).put(center, new ArrayList<Point>());\n                seen.get(r2).get(center).add(A[i]);\n            }\n\n        double ans = Double.MAX_VALUE;\n        for (Map<Point, List<Point>> info: seen.values()) {\n            for (Point center: info.keySet()) {  // center is twice actual\n                List<Point> candidates = info.get(center);\n                int clen = candidates.size();\n                for (int i = 0; i < clen; ++i)\n                    for (int j = i+1; j < clen; ++j) {\n                        Point P = candidates.get(i);\n                        Point Q = candidates.get(j);\n                        Point Q2 = new Point(center);\n                        Q2.translate(-Q.x, -Q.y);\n                        double area = P.distance(Q) * P.distance(Q2);\n                        if (area < ans)\n                            ans = area;\n                    }\n            }\n        }\n\n        return ans < Double.MAX_VALUE ? ans : 0;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def minAreaFreeRect(self, points):\n        points = [complex(*z) for z in points]\n        seen = collections.defaultdict(list)\n        for P, Q in itertools.combinations(points, 2):\n            center = (P + Q) / 2\n            radius = abs(center - P)\n            seen[center, radius].append(P)\n\n        ans = float(\"inf\")\n        for (center, radius), candidates in seen.iteritems():\n            for P, Q in itertools.combinations(candidates, 2):\n                ans = min(ans, abs(P - Q) * abs(P - (2*center - Q)))\n\n        return ans if ans < float(\"inf\") else 0",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math",

@@ -11,7 +11,37 @@
   "solution": {
     "id": "46",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "qSriZsc7": [
+      {
+        "code": " public String longestCommonPrefix(String[] strs) {\n    if (strs.length == 0) return \"\";\n    String prefix = strs[0];\n    for (int i = 1; i < strs.length; i++)\n        while (strs[i].indexOf(prefix) != 0) {\n            prefix = prefix.substring(0, prefix.length() - 1);\n            if (prefix.isEmpty()) return \"\";\n        }        \n    return prefix;\n}",
+        "langSlug": "java"
+      }
+    ],
+    "XBkP9paR": [
+      {
+        "code": "public String longestCommonPrefix(String[] strs) {\n    if (strs == null || strs.length == 0) return \"\";\n    for (int i = 0; i < strs[0].length() ; i++){\n        char c = strs[0].charAt(i);\n        for (int j = 1; j < strs.length; j ++) {\n            if (i == strs[j].length() || strs[j].charAt(i) != c)\n                return strs[0].substring(0, i);             \n        }\n    }\n    return strs[0];\n}",
+        "langSlug": "java"
+      }
+    ],
+    "z4RPaUv2": [
+      {
+        "code": "public String longestCommonPrefix(String[] strs) {\n    if (strs == null || strs.length == 0) return \"\";    \n        return longestCommonPrefix(strs, 0 , strs.length - 1);\n}\n\nprivate String longestCommonPrefix(String[] strs, int l, int r) {\n    if (l == r) {\n        return strs[l];\n    }\n    else {\n        int mid = (l + r)/2;\n        String lcpLeft =   longestCommonPrefix(strs, l , mid);\n        String lcpRight =  longestCommonPrefix(strs, mid + 1,r);\n        return commonPrefix(lcpLeft, lcpRight);\n   }\n}\n\nString commonPrefix(String left,String right) {\n    int min = Math.min(left.length(), right.length());       \n    for (int i = 0; i < min; i++) {\n        if ( left.charAt(i) != right.charAt(i) )\n            return left.substring(0, i);\n    }\n    return left.substring(0, min);\n}",
+        "langSlug": "java"
+      }
+    ],
+    "CoEPcWJA": [
+      {
+        "code": "public String longestCommonPrefix(String[] strs) {\n    if (strs == null || strs.length == 0)\n        return \"\";\n    int minLen = Integer.MAX_VALUE;\n    for (String str : strs)\n        minLen = Math.min(minLen, str.length());\n    int low = 1;\n    int high = minLen;\n    while (low <= high) {\n        int middle = (low + high) / 2;\n        if (isCommonPrefix(strs, middle))\n            low = middle + 1;\n        else\n            high = middle - 1;\n    }\n    return strs[0].substring(0, (low + high) / 2);\n}\n\nprivate boolean isCommonPrefix(String[] strs, int len){\n    String str1 = strs[0].substring(0,len);\n    for (int i = 1; i < strs.length; i++)\n        if (!strs[i].startsWith(str1))\n            return false;\n    return true;\n}",
+        "langSlug": "java"
+      }
+    ],
+    "MuyVN8wa": [
+      {
+        "code": "public String longestCommonPrefix(String q, String[] strs) {\n    if (strs == null || strs.length == 0)\n         return \"\";  \n    if (strs.length == 1)\n         return strs[0];\n    Trie trie = new Trie();      \n    for (int i = 1; i < strs.length ; i++) {\n        trie.insert(strs[i]);\n    }\n    return trie.searchLongestPrefix(q);\n}\n\nclass TrieNode {\n\n    // R links to node children\n    private TrieNode[] links;\n\n    private final int R = 26;\n\n    private boolean isEnd;\n\n    // number of children non null links\n    private int size;    \n    public void put(char ch, TrieNode node) {\n        links[ch -'a'] = node;\n        size++;\n    }\n\n    public int getLinks() {\n        return size;\n    }\n    //assume methods containsKey, isEnd, get, put are implemented as it is described\n   //in  https://leetcode.com/articles/implement-trie-prefix-tree/)\n}\n\npublic class Trie {\n\n    private TrieNode root;\n\n    public Trie() {\n        root = new TrieNode();\n    }\n\n//assume methods insert, search, searchPrefix are implemented as it is described\n//in  https://leetcode.com/articles/implement-trie-prefix-tree/)\n    private String searchLongestPrefix(String word) {\n        TrieNode node = root;\n        StringBuilder prefix = new StringBuilder();\n        for (int i = 0; i < word.length(); i++) {\n            char curLetter = word.charAt(i);\n            if (node.containsKey(curLetter) && (node.getLinks() == 1) && (!node.isEnd())) {\n                prefix.append(curLetter);\n                node = node.get(curLetter);\n            }\n            else\n                return prefix.toString();\n\n         }\n         return prefix.toString();\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "String"

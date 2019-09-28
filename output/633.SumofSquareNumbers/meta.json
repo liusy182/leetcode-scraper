@@ -11,7 +11,37 @@
   "solution": {
     "id": "192",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "jHjno8MG": [
+      {
+        "code": "public class Solution {\n    public boolean judgeSquareSum(int c) {\n        for (long a = 0; a * a <= c; a++) {\n            for (long b = 0; b * b <= c; b++) {\n                if (a * a + b * b == c)\n                    return true;\n            }\n        }\n        return false;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "U2tJwtas": [
+      {
+        "code": "public class Solution {\n    public boolean judgeSquareSum(int c) {\n        for (long a = 0; a * a <= c; a++) {\n            int b =  c - (int)(a * a);\n            int i = 1, sum = 0;\n            while (sum < b) {\n                sum += i;\n                i += 2;\n            }\n            if (sum == b)\n                return true;\n        }\n        return false;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "XxfAG3pm": [
+      {
+        "code": "public class Solution {\n    public boolean judgeSquareSum(int c) {\n        for (long a = 0; a * a <= c; a++) {\n            double b = Math.sqrt(c - a * a);\n            if (b == (int) b)\n                return true;\n        }\n        return false;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "rjrUuXxS": [
+      {
+        "code": "public class Solution {\n    public boolean judgeSquareSum(int c) {\n        for (long a = 0; a * a <= c; a++) {\n            int b = c - (int)(a * a);\n            if (binary_search(0, b, b))\n                return true;\n        }\n        return false;\n    }\n    public boolean binary_search(long s, long e, int n) {\n        if (s > e)\n            return false;\n        long mid = s + (e - s) / 2;\n        if (mid * mid == n)\n            return true;\n        if (mid * mid > n)\n            return binary_search(s, mid - 1, n);\n        return binary_search(mid + 1, e, n);\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "fRuxZSWf": [
+      {
+        "code": "public class Solution {\n    public boolean judgeSquareSum(int c) {\n        for (int i = 2; i * i <= c; i++) {\n            int count = 0;\n            if (c % i == 0) {\n                while (c % i == 0) {\n                    count++;\n                    c /= i;\n                }\n                if (i % 4 == 3 && count % 2 != 0)\n                    return false;\n            }\n        }\n        return c % 4 != 3;\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Math"

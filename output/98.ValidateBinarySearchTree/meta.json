@@ -11,7 +11,47 @@
   "solution": {
     "id": "639",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "W2qazBuk": [
+      {
+        "code": "// Definition for a binary tree node.\npublic class TreeNode {\n  int val;\n  TreeNode left;\n  TreeNode right;\n\n  TreeNode(int x) {\n    val = x;\n  }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "# Definition for a binary tree node.\nclass TreeNode:\n    def __init__(self, x):\n        self.val = x\n        self.left = None\n        self.right = None",
+        "langSlug": "python"
+      }
+    ],
+    "VeZZvEw8": [
+      {
+        "code": "class Solution {\n  public boolean helper(TreeNode node, Integer lower, Integer upper) {\n    if (node == null) return true;\n\n    int val = node.val;\n    if (lower != null && val <= lower) return false;\n    if (upper != null && val >= upper) return false;\n\n    if (! helper(node.right, val, upper)) return false;\n    if (! helper(node.left, lower, val)) return false;\n    return true;\n  }\n\n  public boolean isValidBST(TreeNode root) {\n    return helper(root, null, null);\n  }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def isValidBST(self, root):\n        \"\"\"\n        :type root: TreeNode\n        :rtype: bool\n        \"\"\"\n        def helper(node, lower = float('-inf'), upper = float('inf')):\n            if not node:\n                return True\n            \n            val = node.val\n            if val <= lower or val >= upper:\n                return False\n\n            if not helper(node.right, val, upper):\n                return False\n            if not helper(node.left, lower, val):\n                return False\n            return True\n\n        return helper(root)",
+        "langSlug": "python"
+      }
+    ],
+    "VFyKF5Jv": [
+      {
+        "code": "class Solution {\n  LinkedList<TreeNode> stack = new LinkedList();\n  LinkedList<Integer> uppers = new LinkedList(),\n          lowers = new LinkedList();\n\n  public void update(TreeNode root, Integer lower, Integer upper) {\n    stack.add(root);\n    lowers.add(lower);\n    uppers.add(upper);\n  }\n\n  public boolean isValidBST(TreeNode root) {\n    Integer lower = null, upper = null, val;\n    update(root, lower, upper);\n\n    while (!stack.isEmpty()) {\n      root = stack.poll();\n      lower = lowers.poll();\n      upper = uppers.poll();\n\n      if (root == null) continue;\n      val = root.val;\n      if (lower != null && val <= lower) return false;\n      if (upper != null && val >= upper) return false;\n      update(root.right, val, upper);\n      update(root.left, lower, val);\n    }\n    return true;\n  }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def isValidBST(self, root):\n        \"\"\"\n        :type root: TreeNode\n        :rtype: bool\n        \"\"\"\n        if not root:\n            return True\n            \n        stack = [(root, float('-inf'), float('inf')), ] \n        while stack:\n            root, lower, upper = stack.pop()\n            if not root:\n                continue\n            val = root.val\n            if val <= lower or val >= upper:\n                return False\n            stack.append((root.right, val, upper))\n            stack.append((root.left, lower, val))\n        return True  ",
+        "langSlug": "python"
+      }
+    ],
+    "xWskyKv3": [
+      {
+        "code": "class Solution {\n  public boolean isValidBST(TreeNode root) {\n    Stack<TreeNode> stack = new Stack();\n    double inorder = - Double.MAX_VALUE;\n\n    while (!stack.isEmpty() || root != null) {\n      while (root != null) {\n        stack.push(root);\n        root = root.left;\n      }\n      root = stack.pop();\n      // If next element in inorder traversal\n      // is smaller than the previous one\n      // that's not BST.\n      if (root.val <= inorder) return false;\n      inorder = root.val;\n      root = root.right;\n    }\n    return true;\n  }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def isValidBST(self, root):\n        \"\"\"\n        :type root: TreeNode\n        :rtype: bool\n        \"\"\"\n        stack, inorder = [], float('-inf')\n        \n        while stack or root:\n            while root:\n                stack.append(root)\n                root = root.left\n            root = stack.pop()\n            # If next element in inorder traversal\n            # is smaller than the previous one\n            # that's not BST.\n            if root.val <= inorder:\n                return False\n            inorder = root.val\n            root = root.right\n\n        return True",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree",

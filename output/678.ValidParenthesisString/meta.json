@@ -11,7 +11,37 @@
   "solution": {
     "id": "246",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "HHVFGh2C": [
+      {
+        "code": "class Solution {\n    boolean ans = false;\n\n    public boolean checkValidString(String s) {\n        solve(new StringBuilder(s), 0);\n        return ans;\n    }\n\n    public void solve(StringBuilder sb, int i) {\n        if (i == sb.length()) {\n            ans |= valid(sb);\n        } else if (sb.charAt(i) == '*') {\n            for (char c: \"() \".toCharArray()) {\n                sb.setCharAt(i, c);\n                solve(sb, i+1);\n                if (ans) return;\n            }\n            sb.setCharAt(i, '*');\n        } else\n            solve(sb, i + 1);\n    }\n\n    public boolean valid(StringBuilder sb) {\n        int bal = 0;\n        for (int i = 0; i < sb.length(); i++) {\n            char c = sb.charAt(i);\n            if (c == '(') bal++;\n            if (c == ')') bal--;\n            if (bal < 0) break;\n        }\n        return bal == 0;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def checkValidString(self, s):\n        if not s: return True\n        A = list(s)\n        self.ans = False\n\n        def solve(i):\n            if i == len(A):\n                self.ans |= valid()\n            elif A[i] == '*':\n                for c in '() ':\n                    A[i] = c\n                    solve(i+1)\n                    if self.ans: return\n                A[i] = '*'\n            else:\n                solve(i+1)\n\n        def valid():\n            bal = 0\n            for x in A:\n                if x == '(': bal += 1\n                if x == ')': bal -= 1\n                if bal < 0: break\n            return bal == 0\n\n        solve(0)\n        return self.ans",
+        "langSlug": "python"
+      }
+    ],
+    "c2qhBzko": [
+      {
+        "code": "class Solution {\n    public boolean checkValidString(String s) {\n        int n = s.length();\n        if (n == 0) return true;\n        boolean[][] dp = new boolean[n][n];\n\n        for (int i = 0; i < n; i++) {\n            if (s.charAt(i) == '*') dp[i][i] = true;\n            if (i < n-1 &&\n                    (s.charAt(i) == '(' || s.charAt(i) == '*') &&\n                    (s.charAt(i+1) == ')' || s.charAt(i+1) == '*')) {\n                dp[i][i+1] = true;\n            }\n        }\n\n        for (int size = 2; size < n; size++) {\n            for (int i = 0; i + size < n; i++) {\n                if (s.charAt(i) == '*' && dp[i+1][i+size] == true) {\n                    dp[i][i+size] = true;\n                } else if (s.charAt(i) == '(' || s.charAt(i) == '*') {\n                    for (int k = i+1; k <= i+size; k++) {\n                        if ((s.charAt(k) == ')' || s.charAt(k) == '*') &&\n                                (k == i+1 || dp[i+1][k-1]) &&\n                                (k == i+size || dp[k+1][i+size])) {\n                            dp[i][i+size] = true;\n                        }\n                    }\n                }\n            }\n        }\n        return dp[0][n-1];\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def checkValidString(self, s):\n        if not s: return True\n        LEFTY, RIGHTY = '(*', ')*'\n\n        n = len(s)\n        dp = [[False] * n for _ in s]\n        for i in xrange(n):\n            if s[i] == '*':\n                dp[i][i] = True\n            if i < n-1 and s[i] in LEFTY and s[i+1] in RIGHTY:\n                dp[i][i+1] = True\n\n        for size in xrange(2, n):\n            for i in xrange(n - size):\n                if s[i] == '*' and dp[i+1][i+size]:\n                    dp[i][i+size] = True\n                elif s[i] in LEFTY:\n                    for k in xrange(i+1, i+size+1):\n                        if (s[k] in RIGHTY and\n                                (k == i+1 or dp[i+1][k-1]) and\n                                (k == i+size or dp[k+1][i+size])):\n                            dp[i][i+size] = True\n\n        return dp[0][-1]",
+        "langSlug": "python"
+      }
+    ],
+    "AP7MmhXJ": [
+      {
+        "code": "class Solution {\n    public boolean checkValidString(String s) {\n       int lo = 0, hi = 0;\n       for (char c: s.toCharArray()) {\n           lo += c == '(' ? 1 : -1;\n           hi += c != ')' ? 1 : -1;\n           if (hi < 0) break;\n           lo = Math.max(lo, 0);\n       }\n       return lo == 0;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def checkValidString(self, s):\n        lo = hi = 0\n        for c in s:\n            lo += 1 if c == '(' else -1\n            hi += 1 if c != ')' else -1\n            if hi < 0: break\n            lo = max(lo, 0)\n\n        return lo == 0",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "String"

@@ -11,7 +11,27 @@
   "solution": {
     "id": "248",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "F8rXiMNb": [
+      {
+        "code": "class Solution {\n    public boolean isPalindrome(CharSequence s) {\n        for (int i = 0; i < s.length() / 2; i++) {\n            if (s.charAt(i) != s.charAt(s.length() - 1 - i)) {\n                return false;\n            }\n        }\n        return true;\n    }\n    public boolean validPalindrome(String s) {\n        StringBuilder sb = new StringBuilder(s);\n        for (int i = 0; i < s.length(); i++) {\n            char c = sb.charAt(i);\n            sb.deleteCharAt(i);\n            if (isPalindrome(sb)) return true;\n            sb.insert(i, c);\n        }\n        return isPalindrome(s);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def validPalindrome(self, s):\n        for i in xrange(len(s)):\n            t = s[:i] + s[i+1:]\n            if t == t[::-1]: return True\n\n        return s == s[::-1]\n",
+        "langSlug": "python"
+      }
+    ],
+    "46SiEhrv": [
+      {
+        "code": "class Solution {\n    public boolean isPalindromeRange(String s, int i, int j) {\n        for (int k = i; k <= i + (j - i) / 2; k++) {\n            if (s.charAt(k) != s.charAt(j - k + i)) return false;\n        }\n        return true;\n    }\n    public boolean validPalindrome(String s) {\n        for (int i = 0; i < s.length() / 2; i++) {\n            if (s.charAt(i) != s.charAt(s.length() - 1 - i)) {\n                int j = s.length() - 1 - i;\n                return (isPalindromeRange(s, i+1, j) ||\n                        isPalindromeRange(s, i, j-1));\n            }\n        }\n        return true;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def validPalindrome(self, s):\n        def is_pali_range(i, j):\n            return all(s[k] == s[j-k+i] for k in range(i, j))\n\n        for i in xrange(len(s) / 2):\n            if s[i] != s[~i]:\n                j = len(s) - 1 - i\n                return is_pali_range(i+1, j) or is_pali_range(i, j-1)\n        return True",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "String"

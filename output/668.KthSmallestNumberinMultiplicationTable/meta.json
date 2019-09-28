@@ -11,7 +11,37 @@
   "solution": {
     "id": "241",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "JNTnTCLa": [
+      {
+        "code": "class Solution {\n    public int findKthNumber(int m, int n, int k) {\n        int[] table = new int[m*n];\n        for (int i = 1; i <= m; i++) {\n            for (int j = 1; j <= n; j++) {\n                table[(i - 1) * n + j - 1] = i * j;\n            }\n        }\n        Arrays.sort(table);\n        return table[k-1];\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def findKthNumber(self, m, n, k):\n        table = [i*j for i in range(1, m+1) for j in range(1, n+1)]\n        table.sort()\n        return table[k-1]",
+        "langSlug": "python"
+      }
+    ],
+    "Evrh9ssK": [
+      {
+        "code": "class Solution {\n    public int findKthNumber(int m, int n, int k) {\n        PriorityQueue<Node> heap = new PriorityQueue<Node>(m,\n            Comparator.<Node> comparingInt(node -> node.val));\n\n        for (int i = 1; i <= m; i++) {\n            heap.offer(new Node(i, i));\n        }\n\n        Node node = null;\n        for (int i = 0; i < k; i++) {\n            node = heap.poll();\n            int nxt = node.val + node.root;\n            if (nxt <= node.root * n) {\n                heap.offer(new Node(nxt, node.root));\n            }\n        }\n        return node.val;\n    }\n}\n\nclass Node {\n    int val;\n    int root;\n    public Node(int v, int r) {\n        val = v;\n        root = r;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def findKthNumber(self, m, n, k):\n        heap = [(i, i) for i in range(1, m+1)]\n        heapq.heapify(heap)\n\n        for _ in xrange(k):\n            val, root = heapq.heappop(heap)\n            nxt = val + root\n            if nxt <= root * n:\n                heapq.heappush(heap, (nxt, root))\n\n        return val",
+        "langSlug": "python"
+      }
+    ],
+    "4ankdsg9": [
+      {
+        "code": "class Solution {\n    public boolean enough(int x, int m, int n, int k) {\n        int count = 0;\n        for (int i = 1; i <= m; i++) {\n            count += Math.min(x / i, n);\n        }\n        return count >= k;\n    }\n\n    public int findKthNumber(int m, int n, int k) {\n        int lo = 1, hi = m * n;\n        while (lo < hi) {\n            int mi = lo + (hi - lo) / 2;\n            if (!enough(mi, m, n, k)) lo = mi + 1;\n            else hi = mi;\n        }\n        return lo;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def findKthNumber(self, m, n, k):\n        def enough(x):\n            count = 0\n            for i in xrange(1, m+1):\n                count += min(x // i, n)\n            return count >= k\n\n        lo, hi = 1, m * n\n        while lo < hi:\n            mi = (lo + hi) / 2\n            if not enough(mi):\n                lo = mi + 1\n            else:\n                hi = mi\n        return lo",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Binary Search"

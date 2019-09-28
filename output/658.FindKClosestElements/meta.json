@@ -11,7 +11,19 @@
   "solution": {
     "id": "229",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "pPUrT4oY": [
+      {
+        "code": "public List<Integer> findClosestElements(List<Integer> arr, int k, int x) {\n     Collections.sort(arr, (a,b) -> a == b ? a - b : Math.abs(a-x) - Math.abs(b-x));\n     arr = arr.subList(0, k);\n     Collections.sort(arr);\n     return arr;\n}",
+        "langSlug": "java"
+      }
+    ],
+    "kS5bGpg6": [
+      {
+        "code": "public class Solution {\n\tpublic List<Integer> findClosestElements(List<Integer> arr, int k, int x) {\n\t\tint n = arr.size();\n\t\tif (x <= arr.get(0)) {\n\t\t\treturn arr.subList(0, k);\n\t\t} else if (arr.get(n - 1) <= x) {\n\t\t\treturn arr.subList(n - k, n);\n\t\t} else {\n\t\t\tint index = Collections.binarySearch(arr, x);\n\t\t\tif (index < 0)\n\t\t\t\tindex = -index - 1;\n\t\t\tint low = Math.max(0, index - k - 1), high = Math.min(arr.size() - 1, index + k - 1);\n\n\t\t\twhile (high - low > k - 1) {\n\t\t\t\tif (low < 0 || (x - arr.get(low)) <= (arr.get(high) - x))\n\t\t\t\t\thigh--;\n\t\t\t\telse if (high > arr.size() - 1 || (x - arr.get(low)) > (arr.get(high) - x))\n\t\t\t\t\tlow++;\n\t\t\t\telse\n\t\t\t\t\tSystem.out.println(\"unhandled case: \" + low + \" \" + high);\n\t\t\t}\n\t\t\treturn arr.subList(low, high + 1);\n\t\t}\n\t}\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Binary Search"

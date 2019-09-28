@@ -11,7 +11,37 @@
   "solution": {
     "id": "281",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "izz2BZVf": [
+      {
+        "code": "class Solution {\n    private int sum = 0;\n\n    public TreeNode convertBST(TreeNode root) {\n        if (root != null) {\n            convertBST(root.right);\n            sum += root.val;\n            root.val = sum;\n            convertBST(root.left);\n        }\n        return root;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def __init__(self):\n        self.total = 0\n\n    def convertBST(self, root):\n        if root is not None:\n            self.convertBST(root.right)\n            self.total += root.val\n            root.val = self.total\n            self.convertBST(root.left)\n        return root",
+        "langSlug": "python"
+      }
+    ],
+    "U56ntS8W": [
+      {
+        "code": "class Solution {\n    public TreeNode convertBST(TreeNode root) {\n        int sum = 0;\n        TreeNode node = root;\n        Stack<TreeNode> stack = new Stack<TreeNode>();\n\n        while (!stack.isEmpty() || node != null) {\n            /* push all nodes up to (and including) this subtree's maximum on\n             * the stack. */\n            while (node != null) {\n                stack.add(node);\n                node = node.right;\n            }\n\n            node = stack.pop();\n            sum += node.val;\n            node.val = sum;\n\n            /* all nodes with values between the current and its parent lie in\n             * the left subtree. */\n            node = node.left;\n        }\n\n        return root;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def convertBST(self, root):\n        total = 0\n        \n        node = root\n        stack = []\n        while stack or node is not None:\n            # push all nodes up to (and including) this subtree's maximum on\n            # the stack.\n            while node is not None:\n                stack.append(node)\n                node = node.right\n\n            node = stack.pop()\n            total += node.val\n            node.val = total\n\n            # all nodes with values between the current and its parent lie in\n            # the left subtree.\n            node = node.left\n\n        return root",
+        "langSlug": "python"
+      }
+    ],
+    "9fu9CDg3": [
+      {
+        "code": "class Solution {\n    /* Get the node with the smallest value greater than this one. */\n    private TreeNode getSuccessor(TreeNode node) {\n        TreeNode succ = node.right;\n        while (succ.left != null && succ.left != node) {\n            succ = succ.left;\n        }\n        return succ;\n    }\n\n    public TreeNode convertBST(TreeNode root) {\n        int sum = 0;\n        TreeNode node = root;\n\n        while (node != null) {\n            /* \n             * If there is no right subtree, then we can visit this node and\n             * continue traversing left.\n             */\n            if (node.right == null) {\n                sum += node.val;\n                node.val = sum;\n                node = node.left;\n            }\n            /* \n             * If there is a right subtree, then there is at least one node that\n             * has a greater value than the current one. therefore, we must\n             * traverse that subtree first.\n             */\n            else {\n                TreeNode succ = getSuccessor(node);\n                /* \n                 * If the left subtree is null, then we have never been here before.\n                 */\n                if (succ.left == null) {\n                    succ.left = node;\n                    node = node.right;\n                }\n                /* \n                 * If there is a left subtree, it is a link that we created on a\n                 * previous pass, so we should unlink it and visit this node.\n                 */\n                else {\n                    succ.left = null;\n                    sum += node.val;\n                    node.val = sum;\n                    node = node.left;\n                }\n            }\n        }\n        \n        return root;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def convertBST(self, root):\n        # Get the node with the smallest value greater than this one.\n        def get_successor(node):\n            succ = node.right\n            while succ.left is not None and succ.left is not node:\n                succ = succ.left\n            return succ\n                \n        total = 0\n        node = root\n        while node is not None:\n            # If there is no right subtree, then we can visit this node and\n            # continue traversing left.\n            if node.right is None:\n                total += node.val\n                node.val = total\n                node = node.left\n            # If there is a right subtree, then there is a node that has a\n            # greater value than the current one. therefore, we must traverse\n            # that node first.\n            else:\n                succ = get_successor(node)\n                # If there is no left subtree (or right subtree, because we are\n                # in this branch of control flow), make a temporary connection\n                # back to the current node.\n                if succ.left is None:\n                    succ.left = node\n                    node = node.right\n                # If there is a left subtree, it is a link that we created on\n                # a previous pass, so we should unlink it and visit this node.\n                else:\n                    succ.left = None\n                    total += node.val\n                    node.val = total\n                    node = node.left\n        \n        return root",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree"

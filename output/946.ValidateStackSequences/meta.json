@@ -11,7 +11,17 @@
   "solution": {
     "id": "623",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "3SkVeyqy": [
+      {
+        "code": "class Solution {\n    public boolean validateStackSequences(int[] pushed, int[] popped) {\n        int N = pushed.length;\n        Stack<Integer> stack = new Stack();\n\n        int j = 0;\n        for (int x: pushed) {\n            stack.push(x);\n            while (!stack.isEmpty() && j < N && stack.peek() == popped[j]) {\n                stack.pop();\n                j++;\n            }\n        }\n\n        return j == N;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def validateStackSequences(self, pushed, popped):\n        j = 0\n        stack = []\n        for x in pushed:\n            stack.append(x)\n            while stack and j < len(popped) and stack[-1] == popped[j]:\n                stack.pop()\n                j += 1\n\n        return j == len(popped)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Stack"

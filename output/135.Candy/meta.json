@@ -11,7 +11,31 @@
   "solution": {
     "id": "90",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "gpKEkWCp": [
+      {
+        "code": "public class Solution {\n    public int candy(int[] ratings) {\n        int[] candies = new int[ratings.length];\n        Arrays.fill(candies, 1);\n        boolean flag = true;\n        int sum = 0;\n        while (flag) {\n            flag = false;\n            for (int i = 0; i < ratings.length; i++) {\n                if (i != ratings.length - 1 && ratings[i] > ratings[i + 1] && candies[i] <= candies[i + 1]) {\n                    candies[i] = candies[i + 1] + 1;\n                    flag = true;\n                }\n                if (i > 0 && ratings[i] > ratings[i - 1] && candies[i] <= candies[i - 1]) {\n                    candies[i] = candies[i - 1] + 1;\n                    flag = true;\n                }\n            }\n        }\n        for (int candy : candies) {\n            sum += candy;\n        }\n        return sum;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "ZJvLfBzc": [
+      {
+        "code": "public class Solution {\n    public int candy(int[] ratings) {\n        int sum = 0;\n        int[] left2right = new int[ratings.length];\n        int[] right2left = new int[ratings.length];\n        Arrays.fill(left2right, 1);\n        Arrays.fill(right2left, 1);\n        for (int i = 1; i < ratings.length; i++) {\n            if (ratings[i] > ratings[i - 1]) {\n                left2right[i] = left2right[i - 1] + 1;\n            }\n        }\n        for (int i = ratings.length - 2; i >= 0; i--) {\n            if (ratings[i] > ratings[i + 1]) {\n                right2left[i] = right2left[i + 1] + 1;\n            }\n        }\n        for (int i = 0; i < ratings.length; i++) {\n            sum += Math.max(left2right[i], right2left[i]);\n        }\n        return sum;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "U4XtvyuF": [
+      {
+        "code": "public class Solution {\n    public int candy(int[] ratings) {\n        int[] candies = new int[ratings.length];\n        Arrays.fill(candies, 1);\n        for (int i = 1; i < ratings.length; i++) {\n            if (ratings[i] > ratings[i - 1]) {\n                candies[i] = candies[i - 1] + 1;\n            }\n        }\n        int sum = candies[ratings.length - 1];\n        for (int i = ratings.length - 2; i >= 0; i--) {\n            if (ratings[i] > ratings[i + 1]) {\n                candies[i] = Math.max(candies[i], candies[i + 1] + 1);\n            }\n            sum += candies[i];\n        }\n        return sum;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "9nSyErSr": [
+      {
+        "code": "public class Solution {\n    public int count(int n) {\n        return (n * (n + 1)) / 2;\n    }\n    public int candy(int[] ratings) {\n        if (ratings.length <= 1) {\n            return ratings.length;\n        }\n        int candies = 0;\n        int up = 0;\n        int down = 0;\n        int old_slope = 0;\n        for (int i = 1; i < ratings.length; i++) {\n            int new_slope = (ratings[i] > ratings[i - 1]) ? 1 : (ratings[i] < ratings[i - 1] ? -1 : 0);\n            if ((old_slope > 0 && new_slope == 0) || (old_slope < 0 && new_slope >= 0)) {\n                candies += count(up) + count(down) + Math.max(up, down);\n                up = 0;\n                down = 0;\n            }\n            if (new_slope > 0)\n                up++;\n            if (new_slope < 0)\n                down++;\n            if (new_slope == 0)\n                candies++;\n\n            old_slope = new_slope;\n        }\n        candies += count(up) + count(down) + Math.max(up, down) + 1;\n        return candies;\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Greedy"

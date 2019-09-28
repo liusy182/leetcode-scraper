@@ -11,7 +11,37 @@
   "solution": {
     "id": "349",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "eDRvbWjL": [
+      {
+        "code": "class Solution {\n    public List<String> generateParenthesis(int n) {\n        List<String> combinations = new ArrayList();\n        generateAll(new char[2 * n], 0, combinations);\n        return combinations;\n    }\n\n    public void generateAll(char[] current, int pos, List<String> result) {\n        if (pos == current.length) {\n            if (valid(current))\n                result.add(new String(current));\n        } else {\n            current[pos] = '(';\n            generateAll(current, pos+1, result);\n            current[pos] = ')';\n            generateAll(current, pos+1, result);\n        }\n    }\n\n    public boolean valid(char[] current) {\n        int balance = 0;\n        for (char c: current) {\n            if (c == '(') balance++;\n            else balance--;\n            if (balance < 0) return false;\n        }\n        return (balance == 0);\n    }\n}\n\ndef generateParenthesis(self, N):\n    if N == 0: return ['']\n    ans = []\n    for c in xrange(N):\n        for left in self.generateParenthesis(c):\n            for right in self.generateParenthesis(N-1-c):\n                ans.append('({}){}'.format(left, right))\n    return ans",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def generateParenthesis(self, n):\n        def generate(A = []):\n            if len(A) == 2*n:\n                if valid(A):\n                    ans.append(\"\".join(A))\n            else:\n                A.append('(')\n                generate(A)\n                A.pop()\n                A.append(')')\n                generate(A)\n                A.pop()\n\n        def valid(A):\n            bal = 0\n            for c in A:\n                if c == '(': bal += 1\n                else: bal -= 1\n                if bal < 0: return False\n            return bal == 0\n\n        ans = []\n        generate()\n        return ans",
+        "langSlug": "python"
+      }
+    ],
+    "npPa38Mh": [
+      {
+        "code": "class Solution {\n    public List<String> generateParenthesis(int n) {\n        List<String> ans = new ArrayList();\n        backtrack(ans, \"\", 0, 0, n);\n        return ans;\n    }\n\n    public void backtrack(List<String> ans, String cur, int open, int close, int max){\n        if (cur.length() == max * 2) {\n            ans.add(cur);\n            return;\n        }\n\n        if (open < max)\n            backtrack(ans, cur+\"(\", open+1, close, max);\n        if (close < open)\n            backtrack(ans, cur+\")\", open, close+1, max);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def generateParenthesis(self, N):\n        ans = []\n        def backtrack(S = '', left = 0, right = 0):\n            if len(S) == 2 * N:\n                ans.append(S)\n                return\n            if left < N:\n                backtrack(S+'(', left+1, right)\n            if right < left:\n                backtrack(S+')', left, right+1)\n\n        backtrack()\n        return ans",
+        "langSlug": "python"
+      }
+    ],
+    "Z3ZYfRAo": [
+      {
+        "code": "class Solution {\n    public List<String> generateParenthesis(int n) {\n        List<String> ans = new ArrayList();\n        if (n == 0) {\n            ans.add(\"\");\n        } else {\n            for (int c = 0; c < n; ++c)\n                for (String left: generateParenthesis(c))\n                    for (String right: generateParenthesis(n-1-c))\n                        ans.add(\"(\" + left + \")\" + right);\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def generateParenthesis(self, N):\n        if N == 0: return ['']\n        ans = []\n        for c in xrange(N):\n            for left in self.generateParenthesis(c):\n                for right in self.generateParenthesis(N-1-c):\n                    ans.append('({}){}'.format(left, right))\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "String",

@@ -11,7 +11,17 @@
   "solution": {
     "id": "535",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "DmYZUfzN": [
+      {
+        "code": "class Solution {\n    public int sumSubseqWidths(int[] A) {\n        int MOD = 1_000_000_007;\n        int N = A.length;\n        Arrays.sort(A);\n\n        long[] pow2 = new long[N];\n        pow2[0] = 1;\n        for (int i = 1; i < N; ++i)\n            pow2[i] = pow2[i-1] * 2 % MOD;\n\n        long ans = 0;\n        for (int i = 0; i < N; ++i)\n            ans = (ans + (pow2[i] - pow2[N-1-i]) * A[i]) % MOD;\n\n        return (int) ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def sumSubseqWidths(self, A):\n        MOD = 10**9 + 7\n        N = len(A)\n        A.sort()\n\n        pow2 = [1]\n        for i in xrange(1, N):\n            pow2.append(pow2[-1] * 2 % MOD)\n\n        ans = 0\n        for i, x in enumerate(A):\n            ans = (ans + (pow2[i] - pow2[N-1-i]) * x) % MOD\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array",

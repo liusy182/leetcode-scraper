@@ -11,7 +11,17 @@
   "solution": {
     "id": "478",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "7cVQKFLP": [
+      {
+        "code": "class Solution {\n    public int longestMountain(int[] A) {\n        int N = A.length;\n        int ans = 0, base = 0;\n        while (base < N) {\n            int end = base;\n            // if base is a left-boundary\n            if (end + 1 < N && A[end] < A[end + 1]) {\n                // set end to the peak of this potential mountain\n                while (end + 1 < N && A[end] < A[end + 1]) end++;\n\n                // if end is really a peak..\n                if (end + 1 < N && A[end] > A[end + 1]) {\n                    // set end to the right-boundary of mountain\n                    while (end + 1 < N && A[end] > A[end + 1]) end++;\n                    // record candidate answer\n                    ans = Math.max(ans, end - base + 1);\n                }\n            }\n\n            base = Math.max(end, base + 1);\n        }\n\n        return ans;\n    }\n}\n",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def longestMountain(self, A):\n        N = len(A)\n        ans = base = 0\n\n        while base < N:\n            end = base\n            if end + 1 < N and A[end] < A[end + 1]: #if base is a left-boundary\n                #set end to the peak of this potential mountain\n                while end+1 < N and A[end] < A[end+1]:\n                    end += 1\n\n                if end + 1 < N and A[end] > A[end + 1]: #if end is really a peak..\n                    #set 'end' to right-boundary of mountain\n                    while end+1 < N and A[end] > A[end+1]:\n                        end += 1\n                    #record candidate answer\n                    ans = max(ans, end - base + 1)\n\n            base = max(end, base + 1)\n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Two Pointers"

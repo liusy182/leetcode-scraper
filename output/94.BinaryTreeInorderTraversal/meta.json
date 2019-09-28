@@ -11,7 +11,25 @@
   "solution": {
     "id": "231",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "stzQZusR": [
+      {
+        "code": "class Solution {\n    public List < Integer > inorderTraversal(TreeNode root) {\n        List < Integer > res = new ArrayList < > ();\n        helper(root, res);\n        return res;\n    }\n\n    public void helper(TreeNode root, List < Integer > res) {\n        if (root != null) {\n            if (root.left != null) {\n                helper(root.left, res);\n            }\n            res.add(root.val);\n            if (root.right != null) {\n                helper(root.right, res);\n            }\n        }\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "C9344qJ6": [
+      {
+        "code": "public class Solution {\n    public List < Integer > inorderTraversal(TreeNode root) {\n        List < Integer > res = new ArrayList < > ();\n        Stack < TreeNode > stack = new Stack < > ();\n        TreeNode curr = root;\n        while (curr != null || !stack.isEmpty()) {\n            while (curr != null) {\n                stack.push(curr);\n                curr = curr.left;\n            }\n            curr = stack.pop();\n            res.add(curr.val);\n            curr = curr.right;\n        }\n        return res;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "osLqwuNN": [
+      {
+        "code": "class Solution {\n    public List < Integer > inorderTraversal(TreeNode root) {\n        List < Integer > res = new ArrayList < > ();\n        TreeNode curr = root;\n        TreeNode pre;\n        while (curr != null) {\n            if (curr.left == null) {\n                res.add(curr.val);\n                curr = curr.right; // move to next right node\n            } else { // has a left subtree\n                pre = curr.left;\n                while (pre.right != null) { // find rightmost\n                    pre = pre.right;\n                }\n                pre.right = curr; // put cur after the pre node\n                TreeNode temp = curr; // store cur node\n                curr = curr.left; // move cur to the top of the new tree\n                temp.left = null; // original cur left be null, avoid infinite loops\n            }\n        }\n        return res;\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table",

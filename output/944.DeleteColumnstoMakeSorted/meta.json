@@ -11,7 +11,17 @@
   "solution": {
     "id": "618",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "FdPeGK2P": [
+      {
+        "code": "class Solution {\n    public int minDeletionSize(String[] A) {\n        int ans = 0;\n        for (int c = 0; c < A[0].length(); ++c)\n            for (int r = 0; r < A.length - 1; ++r)\n                if (A[r].charAt(c) > A[r+1].charAt(c)) {\n                    ans++;\n                    break;\n                }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def minDeletionSize(self, A):\n        ans = 0\n        for col in zip(*A):\n            if any(col[i] > col[i+1] for i in xrange(len(col) - 1)):\n                ans += 1\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Greedy"

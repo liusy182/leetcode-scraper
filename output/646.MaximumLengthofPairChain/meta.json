@@ -11,7 +11,27 @@
   "solution": {
     "id": "317",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "5RAj49MD": [
+      {
+        "code": "class Solution {\n    public int findLongestChain(int[][] pairs) {\n        Arrays.sort(pairs, (a, b) -> a[0] - b[0]);\n        int N = pairs.length;\n        int[] dp = new int[N];\n        Arrays.fill(dp, 1);\n\n        for (int j = 1; j < N; ++j) {\n            for (int i = 0; i < j; ++i) {\n                if (pairs[i][1] < pairs[j][0])\n                    dp[j] = Math.max(dp[j], dp[i] + 1);\n            }\n        }\n\n        int ans = 0;\n        for (int x: dp) if (x > ans) ans = x;\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object): #Time Limit Exceeded\n    def findLongestChain(self, pairs):\n        pairs.sort()\n        dp = [1] * len(pairs)\n\n        for j in xrange(len(pairs)):\n            for i in xrange(j):\n                if pairs[i][1] < pairs[j][0]:\n                    dp[j] = max(dp[j], dp[i] + 1)\n\n        return max(dp)",
+        "langSlug": "python"
+      }
+    ],
+    "imd3oEYD": [
+      {
+        "code": "class Solution {\n    public int findLongestChain(int[][] pairs) {\n        Arrays.sort(pairs, (a, b) -> a[1] - b[1]);\n        int cur = Integer.MIN_VALUE, ans = 0;\n        for (int[] pair: pairs) if (cur < pair[0]) {\n            cur = pair[1];\n            ans++;\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def findLongestChain(self, pairs):\n        cur, ans = float('-inf'), 0\n        for x, y in sorted(pairs, key = operator.itemgetter(1)):\n            if cur < x:\n                cur = y\n                ans += 1\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming"

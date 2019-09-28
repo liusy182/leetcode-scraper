@@ -13,7 +13,27 @@
   "solution": {
     "id": "375",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "pVcrm4PA": [
+      {
+        "code": "class Solution {\n    public int orderOfLargestPlusSign(int N, int[][] mines) {\n        Set<Integer> banned = new HashSet();\n        for (int[] mine: mines)\n            banned.add(mine[0] * N + mine[1]);\n            \n        int ans = 0;\n        for (int r = 0; r < N; ++r) for (int c = 0; c < N; ++c) {\n            int k = 0;\n            while (k <= r && r < N-k && k <= c && c < N-k &&\n                    !banned.contains((r-k)*N + c) &&\n                    !banned.contains((r+k)*N + c) &&\n                    !banned.contains(r*N + c-k) &&\n                    !banned.contains(r*N + c+k))\n                k++;\n            \n            ans = Math.max(ans, k);\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def orderOfLargestPlusSign(self, N, mines):\n        banned = {tuple(mine) for mine in mines}\n        ans = 0\n        for r in xrange(N):\n            for c in xrange(N):\n                k = 0\n                while (k <= r < N-k and k <= c < N-k and\n                        (r-k, c) not in banned and\n                        (r+k, c) not in banned and\n                        (r, c-k) not in banned and\n                        (r, c+k) not in banned):\n                    k += 1\n                ans = max(ans, k)\n        return ans",
+        "langSlug": "python"
+      }
+    ],
+    "JxbvtwM9": [
+      {
+        "code": "class Solution {\n    public int orderOfLargestPlusSign(int N, int[][] mines) {\n        Set<Integer> banned = new HashSet();\n        int[][] dp = new int[N][N];\n        \n        for (int[] mine: mines)\n            banned.add(mine[0] * N + mine[1]);\n        int ans = 0, count;\n        \n        for (int r = 0; r < N; ++r) {\n            count = 0;\n            for (int c = 0; c < N; ++c) {\n                count = banned.contains(r*N + c) ? 0 : count + 1;\n                dp[r][c] = count;\n            }\n            \n            count = 0;\n            for (int c = N-1; c >= 0; --c) {\n                count = banned.contains(r*N + c) ? 0 : count + 1;\n                dp[r][c] = Math.min(dp[r][c], count);\n            }\n        }\n        \n        for (int c = 0; c < N; ++c) {\n            count = 0;\n            for (int r = 0; r < N; ++r) {\n                count = banned.contains(r*N + c) ? 0 : count + 1;\n                dp[r][c] = Math.min(dp[r][c], count);\n            }\n            \n            count = 0;\n            for (int r = N-1; r >= 0; --r) {\n                count = banned.contains(r*N + c) ? 0 : count + 1;\n                dp[r][c] = Math.min(dp[r][c], count);\n                ans = Math.max(ans, dp[r][c]);\n            }\n        }\n        \n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def orderOfLargestPlusSign(self, N, mines):\n        banned = {tuple(mine) for mine in mines}\n        dp = [[0] * N for _ in xrange(N)]\n        ans = 0\n        \n        for r in xrange(N):\n            count = 0\n            for c in xrange(N):\n                count = 0 if (r,c) in banned else count+1\n                dp[r][c] = count\n            \n            count = 0\n            for c in xrange(N-1, -1, -1):\n                count = 0 if (r,c) in banned else count+1\n                if count < dp[r][c]: dp[r][c] = count\n        \n        for c in xrange(N):\n            count = 0\n            for r in xrange(N):\n                count = 0 if (r,c) in banned else count+1\n                if count < dp[r][c]: dp[r][c] = count\n            \n            count = 0\n            for r in xrange(N-1, -1, -1):\n                count = 0 if (r, c) in banned else count+1\n                if count < dp[r][c]: dp[r][c] = count\n                if dp[r][c] > ans: ans = dp[r][c]\n        \n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming"

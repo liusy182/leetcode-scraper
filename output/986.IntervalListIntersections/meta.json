@@ -11,7 +11,17 @@
   "solution": {
     "id": "685",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "ZoFMccAy": [
+      {
+        "code": "class Solution {\n    public Interval[] intervalIntersection(Interval[] A, Interval[] B) {\n        List<Interval> ans = new ArrayList();\n        int i = 0, j = 0;\n\n        while (i < A.length && j < B.length) {\n            // Let's check if A[i] intersects B[j].\n            // lo - the startpoint of the intersection\n            // hi - the endpoint of the intersection\n            int lo = Math.max(A[i].start, B[j].start);\n            int hi = Math.min(A[i].end, B[j].end);\n            if (lo <= hi)\n                ans.add(new Interval(lo, hi));\n\n            // Remove the interval with the smallest endpoint\n            if (A[i].end < B[j].end)\n                i++;\n            else\n                j++;\n        }\n\n        return ans.toArray(new Interval[ans.size()]);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def intervalIntersection(self, A, B):\n        ans = []\n        i = j = 0\n\n        while i < len(A) and j < len(B):\n            # Let's check if A[i] intersects B[j].\n            # lo - the startpoint of the intersection\n            # hi - the endpoint of the intersection\n            lo = max(A[i].start, B[j].start)\n            hi = min(A[i].end, B[j].end)\n            if lo <= hi:\n                ans.append(Interval(lo, hi))\n\n            # Remove the interval with the smallest endpoint\n            if A[i].end < B[j].end:\n                i += 1\n            else:\n                j += 1\n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Two Pointers"

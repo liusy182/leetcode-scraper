@@ -11,7 +11,27 @@
   "solution": {
     "id": "484",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "F7ATKV4h": [
+      {
+        "code": "class Solution {\npublic:\n    string convert(string s, int numRows) {\n\n        if (numRows == 1) return s;\n\n        vector<string> rows(min(numRows, int(s.size())));\n        int curRow = 0;\n        bool goingDown = false;\n\n        for (char c : s) {\n            rows[curRow] += c;\n            if (curRow == 0 || curRow == numRows - 1) goingDown = !goingDown;\n            curRow += goingDown ? 1 : -1;\n        }\n\n        string ret;\n        for (string row : rows) ret += row;\n        return ret;\n    }\n};",
+        "langSlug": "cpp"
+      },
+      {
+        "code": "class Solution {\n    public String convert(String s, int numRows) {\n\n        if (numRows == 1) return s;\n\n        List<StringBuilder> rows = new ArrayList<>();\n        for (int i = 0; i < Math.min(numRows, s.length()); i++)\n            rows.add(new StringBuilder());\n\n        int curRow = 0;\n        boolean goingDown = false;\n\n        for (char c : s.toCharArray()) {\n            rows.get(curRow).append(c);\n            if (curRow == 0 || curRow == numRows - 1) goingDown = !goingDown;\n            curRow += goingDown ? 1 : -1;\n        }\n\n        StringBuilder ret = new StringBuilder();\n        for (StringBuilder row : rows) ret.append(row);\n        return ret.toString();\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "Deg3hGi4": [
+      {
+        "code": "class Solution {\npublic:\n    string convert(string s, int numRows) {\n\n        if (numRows == 1) return s;\n\n        string ret;\n        int n = s.size();\n        int cycleLen = 2 * numRows - 2;\n\n        for (int i = 0; i < numRows; i++) {\n            for (int j = 0; j + i < n; j += cycleLen) {\n                ret += s[j + i];\n                if (i != 0 && i != numRows - 1 && j + cycleLen - i < n)\n                    ret += s[j + cycleLen - i];\n            }\n        }\n        return ret;\n    }\n};",
+        "langSlug": "cpp"
+      },
+      {
+        "code": "class Solution {\n    public String convert(String s, int numRows) {\n\n        if (numRows == 1) return s;\n\n        StringBuilder ret = new StringBuilder();\n        int n = s.length();\n        int cycleLen = 2 * numRows - 2;\n\n        for (int i = 0; i < numRows; i++) {\n            for (int j = 0; j + i < n; j += cycleLen) {\n                ret.append(s.charAt(j + i));\n                if (i != 0 && i != numRows - 1 && j + cycleLen - i < n)\n                    ret.append(s.charAt(j + cycleLen - i));\n            }\n        }\n        return ret.toString();\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "String"

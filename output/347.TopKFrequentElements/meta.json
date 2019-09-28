@@ -11,7 +11,17 @@
   "solution": {
     "id": "628",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "nMWGBTcf": [
+      {
+        "code": "class Solution {\n  public List<Integer> topKFrequent(int[] nums, int k) {\n    // build hash map : character and how often it appears\n    HashMap<Integer, Integer> count = new HashMap();\n    for (int n: nums) {\n      count.put(n, count.getOrDefault(n, 0) + 1);\n    }\n\n    // init heap 'the less frequent element first'\n    PriorityQueue<Integer> heap =\n            new PriorityQueue<Integer>((n1, n2) -> count.get(n1) - count.get(n2));\n\n    // keep k top frequent elements in the heap\n    for (int n: count.keySet()) {\n      heap.add(n);\n      if (heap.size() > k)\n        heap.poll();\n    }\n\n    // build output list\n    List<Integer> top_k = new LinkedList();\n    while (!heap.isEmpty())\n      top_k.add(heap.poll());\n    Collections.reverse(top_k);\n    return top_k;\n  }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def topKFrequent(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: List[int]\n        \"\"\" \n        count = collections.Counter(nums)   \n        return heapq.nlargest(k, count.keys(), key=count.get) ",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table",

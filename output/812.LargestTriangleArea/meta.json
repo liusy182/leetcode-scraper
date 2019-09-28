@@ -11,7 +11,17 @@
   "solution": {
     "id": "447",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "n9XwHjZg": [
+      {
+        "code": "class Solution {\n    public double largestTriangleArea(int[][] points) {\n        int N = points.length;\n        double ans = 0;\n        for (int i = 0; i < N; ++i)\n            for (int j = i+1; j < N; ++j)\n                for (int k = j+1; k < N; ++k)\n                    ans = Math.max(ans, area(points[i], points[j], points[k]));\n        return ans;\n    }\n\n    public double area(int[] P, int[] Q, int[] R) {\n        return 0.5 * Math.abs(P[0]*Q[1] + Q[0]*R[1] + R[0]*P[1]\n                             -P[1]*Q[0] - Q[1]*R[0] - R[1]*P[0]);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def largestTriangleArea(self, points):\n        def area(p, q, r):\n            return .5 * abs(p[0]*q[1]+q[0]*r[1]+r[0]*p[1]\n                           -p[1]*q[0]-q[1]*r[0]-r[1]*p[0])\n\n        return max(area(*triangle)\n            for triangle in itertools.combinations(points, 3))",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math"

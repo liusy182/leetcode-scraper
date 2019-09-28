@@ -13,7 +13,27 @@
   "solution": {
     "id": "384",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "aPydaE7r": [
+      {
+        "code": "class Solution {\n    public boolean isToeplitzMatrix(int[][] matrix) {\n        Map<Integer, Integer> groups = new HashMap();\n        for (int r = 0; r < matrix.length; ++r) {\n            for (int c = 0; c < matrix[0].length; ++c) {\n                if (!groups.containsKey(r-c))\n                    groups.put(r-c, matrix[r][c]);\n                else if (groups.get(r-c) != matrix[r][c])\n                    return False;\n            }\n        }\n        return True;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def isToeplitzMatrix(self, matrix):\n        groups = {}\n        for r, row in enumerate(matrix):\n            for c, val in enumerate(row):\n                if r-c not in groups:\n                    groups[r-c] = val\n                elif groups[r-c] != val:\n                    return False\n        return True",
+        "langSlug": "python"
+      }
+    ],
+    "bfeF5wnM": [
+      {
+        "code": "class Solution {\n    public boolean isToeplitzMatrix(int[][] matrix) {\n        for (int r = 0; r < matrix.length; ++r)\n            for (int c = 0; c < matrix[0].length; ++c)\n                if (r > 0 && c > 0 && matrix[r-1][c-1] != matrix[r][c])\n                    return false;\n        return true;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def isToeplitzMatrix(self, matrix):\n        return all(r == 0 or c == 0 or matrix[r-1][c-1] == val\n                   for r, row in enumerate(matrix)\n                   for c, val in enumerate(row))",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array"

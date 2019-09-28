@@ -11,7 +11,27 @@
   "solution": {
     "id": "434",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "x49F98kC": [
+      {
+        "code": "class Solution {\n    public List<Integer> eventualSafeNodes(int[][] G) {\n        int N = G.length;\n        boolean[] safe = new boolean[N];\n\n        List<Set<Integer>> graph = new ArrayList();\n        List<Set<Integer>> rgraph = new ArrayList();\n        for (int i = 0; i < N; ++i) {\n            graph.add(new HashSet());\n            rgraph.add(new HashSet());\n        }\n\n        Queue<Integer> queue = new LinkedList();\n\n        for (int i = 0; i < N; ++i) {\n            if (G[i].length == 0)\n                queue.offer(i);\n            for (int j: G[i]) {\n                graph.get(i).add(j);\n                rgraph.get(j).add(i);\n            }\n        }\n\n        while (!queue.isEmpty()) {\n            int j = queue.poll();\n            safe[j] = true;\n            for (int i: rgraph.get(j)) {\n                graph.get(i).remove(j);\n                if (graph.get(i).isEmpty())\n                    queue.offer(i);\n            }\n        }\n\n        List<Integer> ans = new ArrayList();\n        for (int i = 0; i < N; ++i) if (safe[i])\n            ans.add(i);\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def eventualSafeNodes(self, graph):\n        N = len(graph)\n        safe = [False] * N\n\n        graph = map(set, graph)\n        rgraph = [set() for _ in xrange(N)]\n        q = collections.deque()\n\n        for i, js in enumerate(graph):\n            if not js:\n                q.append(i)\n            for j in js:\n                rgraph[j].add(i)\n\n        while q:\n            j = q.popleft()\n            safe[j] = True\n            for i in rgraph[j]:\n                graph[i].remove(j)\n                if len(graph[i]) == 0:\n                    q.append(i)\n\n        return [i for i, v in enumerate(safe) if v]",
+        "langSlug": "python"
+      }
+    ],
+    "VxkXPWTw": [
+      {
+        "code": "class Solution {\n    public List<Integer> eventualSafeNodes(int[][] graph) {\n        int N = graph.length;\n        int[] color = new int[N];\n        List<Integer> ans = new ArrayList();\n\n        for (int i = 0; i < N; ++i)\n            if (dfs(i, color, graph))\n                ans.add(i);\n        return ans;\n    }\n\n    // colors: WHITE 0, GRAY 1, BLACK 2;\n    public boolean dfs(int node, int[] color, int[][] graph) {\n        if (color[node] > 0)\n            return color[node] == 2;\n\n        color[node] = 1;\n        for (int nei: graph[node]) {\n            if (color[node] == 2)\n                continue;\n            if (color[nei] == 1 || !dfs(nei, color, graph))\n                return false;\n        }\n\n        color[node] = 2;\n        return true;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def eventualSafeNodes(self, graph):\n        WHITE, GRAY, BLACK = 0, 1, 2\n        color = collections.defaultdict(int)\n\n        def dfs(node):\n            if color[node] != white:\n                return color[node] == BLACK\n\n            color[node] = GRAY\n            for nei in graph[node]:\n                if color[nei] == BLACK:\n                    continue\n                if color[nei] == GRAY or not dfs(nei):\n                    return False\n            color[node] = BLACK\n            return True\n\n        return filter(dfs, range(len(graph)))",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Depth-first Search",

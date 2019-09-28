@@ -11,7 +11,17 @@
   "solution": {
     "id": "490",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "L7RDfW2A": [
+      {
+        "code": "class Solution {\n    public int carFleet(int target, int[] position, int[] speed) {\n        int N = position.length;\n        Car[] cars = new Car[N];\n        for (int i = 0; i < N; ++i)\n            cars[i] = new Car(position[i], (double) (target - position[i]) / speed[i]);\n        Arrays.sort(cars, (a, b) -> Integer.compare(a.position, b.position));\n\n        int ans = 0, t = N;\n        while (--t > 0) {\n            if (cars[t].time < cars[t-1].time) ans++; //if cars[t] arrives sooner, it can't be caught\n            else cars[t-1] = cars[t]; //else, cars[t-1] arrives at same time as cars[t]\n        }\n\n        return ans + (t == 0 ? 1 : 0); //lone car is fleet (if it exists)\n    }\n}\n\nclass Car {\n    int position;\n    double time;\n    Car(int p, double t) {\n        position = p;\n        time = t;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def carFleet(self, target, position, speed):\n        cars = sorted(zip(position, speed))\n        times = [float(target - p) / s for p, s in cars]\n        ans = 0\n        while len(times) > 1:\n            lead = times.pop()\n            if lead < times[-1]: ans += 1  # if lead arrives sooner, it can't be caught\n            else: times[-1] = lead # else, fleet arrives at later time 'lead'\n\n        return ans + bool(times) # remaining car is fleet (if it exists)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Sort"

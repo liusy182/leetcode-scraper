@@ -11,7 +11,27 @@
   "solution": {
     "id": "468",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "XsHWyYAa": [
+      {
+        "code": "class Solution {\n    public boolean isRectangleOverlap(int[] rec1, int[] rec2) {\n        return !(rec1[2] <= rec2[0] ||   // left\n                 rec1[3] <= rec2[1] ||   // bottom\n                 rec1[0] >= rec2[2] ||   // right\n                 rec1[1] >= rec2[3]);    // top\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def isRectangleOverlap(self, rec1, rec2):\n        return not (rec1[2] <= rec2[0] or  # left\n                    rec1[3] <= rec2[1] or  # bottom\n                    rec1[0] >= rec2[2] or  # right\n                    rec1[1] >= rec2[3])    # top",
+        "langSlug": "python"
+      }
+    ],
+    "gthZq8DL": [
+      {
+        "code": "class Solution {\n    public boolean isRectangleOverlap(int[] rec1, int[] rec2) {\n        return (Math.min(rec1[2], rec2[2]) > Math.max(rec1[0], rec2[0]) && // width > 0\n                Math.min(rec1[3], rec2[3]) > Math.max(rec1[1], rec2[1]));  // height > 0\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def isRectangleOverlap(self, rec1, rec2):\n        def intersect(p_left, p_right, q_left, q_right):\n            return min(p_right, q_right) > max(p_left, q_left)\n        return (intersect(rec1[0], rec1[2], rec2[0], rec2[2]) and # width > 0\n                intersect(rec1[1], rec1[3], rec2[1], rec2[3]))    # height > 0",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math"

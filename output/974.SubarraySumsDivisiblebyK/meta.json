@@ -11,7 +11,17 @@
   "solution": {
     "id": "666",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "oRReLTA2": [
+      {
+        "code": "class Solution {\n    public int subarraysDivByK(int[] A, int K) {\n        int N = A.length;\n        int[] P = new int[N+1];\n        for (int i = 0; i < N; ++i)\n            P[i+1] = P[i] + A[i];\n\n        int[] count = new int[K];\n        for (int x: P)\n            count[(x % K + K) % K]++;\n\n        int ans = 0;\n        for (int v: count)\n            ans += v * (v - 1) / 2;\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def subarraysDivByK(self, A, K):\n        P = [0]\n        for x in A:\n            P.append((P[-1] + x) % K)\n\n        count = collections.Counter(P)\n        return sum(v*(v-1)/2 for v in count.values())",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array",

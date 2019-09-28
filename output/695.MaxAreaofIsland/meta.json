@@ -11,7 +11,27 @@
   "solution": {
     "id": "260",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "CQGNqDhr": [
+      {
+        "code": "class Solution {\n    int[][] grid;\n    boolean[][] seen;\n\n    public int area(int r, int c) {\n        if (r < 0 || r >= grid.length || c < 0 || c >= grid[0].length ||\n                seen[r][c] || grid[r][c] == 0)\n            return 0;\n        seen[r][c] = true;\n        return (1 + area(r+1, c) + area(r-1, c)\n                  + area(r, c-1) + area(r, c+1));\n    }\n\n    public int maxAreaOfIsland(int[][] grid) {\n        this.grid = grid;\n        seen = new boolean[grid.length][grid[0].length];\n        int ans = 0;\n        for (int r = 0; r < grid.length; r++) {\n            for (int c = 0; c < grid[0].length; c++) {\n                ans = Math.max(ans, area(r, c));\n            }\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def maxAreaOfIsland(self, grid):\n        seen = set()\n        def area(r, c):\n            if not (0 <= r < len(grid) and 0 <= c < len(grid[0])\n                    and (r, c) not in seen and grid[r][c]):\n                return 0\n            seen.add((r, c))\n            return (1 + area(r+1, c) + area(r-1, c) +\n                    area(r, c-1) + area(r, c+1))\n\n        return max(area(r, c)\n                   for r in range(len(grid))\n                   for c in range(len(grid[0])))",
+        "langSlug": "python"
+      }
+    ],
+    "khZHhSir": [
+      {
+        "code": "class Solution {\n    public int maxAreaOfIsland(int[][] grid) {\n        boolean[][] seen = new boolean[grid.length][grid[0].length];\n        int[] dr = new int[]{1, -1, 0, 0};\n        int[] dc = new int[]{0, 0, 1, -1};\n\n        int ans = 0;\n        for (int r0 = 0; r0 < grid.length; r0++) {\n            for (int c0 = 0; c0 < grid[0].length; c0++) {\n                if (grid[r0][c0] == 1 && !seen[r0][c0]) {\n                    int shape = 0;\n                    Stack<int[]> stack = new Stack();\n                    stack.push(new int[]{r0, c0});\n                    seen[r0][c0] = true;\n                    while (!stack.empty()) {\n                        int[] node = stack.pop();\n                        int r = node[0], c = node[1];\n                        shape++;\n                        for (int k = 0; k < 4; k++) {\n                            int nr = r + dr[k];\n                            int nc = c + dc[k];\n                            if (0 <= nr && nr < grid.length &&\n                                    0 <= nc && nc < grid[0].length &&\n                                    grid[nr][nc] == 1 && !seen[nr][nc]) {\n                                stack.push(new int[]{nr, nc});\n                                seen[nr][nc] = true;\n                            }\n                        }\n                    }\n                    ans = Math.max(ans, shape);\n                }\n            }\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def maxAreaOfIsland(self, grid):\n        seen = set()\n        ans = 0\n        for r0, row in enumerate(grid):\n            for c0, val in enumerate(row):\n                if val and (r0, c0) not in seen:\n                    shape = 0\n                    stack = [(r0, c0)]\n                    seen.add((r0, c0))\n                    while stack:\n                        r, c = stack.pop()\n                        shape += 1\n                        for nr, nc in ((r-1, c), (r+1, c), (r, c-1), (r, c+1)):\n                            if (0 <= nr < len(grid) and 0 <= nc < len(grid[0])\n                                    and grid[nr][nc] and (nr, nc) not in seen):\n                                stack.append((nr, nc))\n                                seen.add((nr, nc))\n                    ans = max(ans, shape)\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array",

@@ -11,7 +11,17 @@
   "solution": {
     "id": "459",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "oPStDbDq": [
+      {
+        "code": "class Solution {\n    public String toGoatLatin(String S) {\n        Set<Character> vowel = new HashSet();\n        for (char c: new char[]{'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'})\n            vowel.add(c);\n\n        int t = 1;\n        StringBuilder ans = new StringBuilder();\n        for (String word: S.split(\" \")) {\n            char first = word.charAt(0);\n            if (vowel.contains(first)) {\n                ans.append(word);\n            } else {\n                ans.append(word.substring(1));\n                ans.append(word.substring(0, 1));\n            }\n            ans.append(\"ma\");\n            for (int i = 0; i < t; i++)\n                ans.append(\"a\");\n            t++;\n            ans.append(\" \");\n        }\n\n        ans.deleteCharAt(ans.length() - 1);\n        return ans.toString();\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def toGoatLatin(self, S):\n\n        def convert(word):\n            if word[0] not in 'aeiouAEIOU':\n                word = word[1:] + word[:1]\n            return word + 'ma'\n\n        return \" \".join(convert(word) + 'a' * i\n                        for i, word in enumerate(S.split(), 1))",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "String"

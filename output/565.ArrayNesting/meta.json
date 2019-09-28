@@ -11,7 +11,25 @@
   "solution": {
     "id": "145",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "K6QuRdnw": [
+      {
+        "code": "public class Solution {\n    public int arrayNesting(int[] nums) {\n        int res = 0;\n        for (int i = 0; i < nums.length; i++) {\n            int start = nums[i], count = 0;\n            do {\n                start = nums[start];\n                count++;\n            }\n            while (start != nums[i]);\n            res = Math.max(res, count);\n\n        }\n        return res;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "XQA6FiH7": [
+      {
+        "code": "public class Solution {\n    public int arrayNesting(int[] nums) {\n        boolean[] visited = new boolean[nums.length];\n        int res = 0;\n        for (int i = 0; i < nums.length; i++) {\n            if (!visited[i]) {\n                int start = nums[i], count = 0;\n                do {\n                    start = nums[start];\n                    count++;\n                    visited[start] = true;\n                }\n                while (start != nums[i]);\n                res = Math.max(res, count);\n            }\n        }\n        return res;\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ],
+    "7DmKnygx": [
+      {
+        "code": "\npublic class Solution {\n    public int arrayNesting(int[] nums) {\n        int res = 0;\n        for (int i = 0; i < nums.length; i++) {\n            if (nums[i] != Integer.MAX_VALUE) {\n                int start = nums[i], count = 0;\n                while (nums[start] != Integer.MAX_VALUE) {\n                    int temp = start;\n                    start = nums[start];\n                    count++;\n                    nums[temp] = Integer.MAX_VALUE;\n                }\n                res = Math.max(res, count);\n            }\n        }\n        return res;\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Array"

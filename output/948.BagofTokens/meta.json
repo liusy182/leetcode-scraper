@@ -11,7 +11,17 @@
   "solution": {
     "id": "626",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "FarrjFkE": [
+      {
+        "code": "class Solution {\n    public int bagOfTokensScore(int[] tokens, int P) {\n        Arrays.sort(tokens);\n        int lo = 0, hi = tokens.length - 1;\n        int points = 0, ans = 0;\n        while (lo <= hi && (P >= tokens[lo] || points > 0)) {\n            while (lo <= hi && P >= tokens[lo]) {\n                P -= tokens[lo++];\n                points++;\n            }\n\n            ans = Math.max(ans, points);\n            if (lo <= hi && points > 0) {\n                P += tokens[hi--];\n                points--;\n            }\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def bagOfTokensScore(self, tokens, P):\n        tokens.sort()\n        deque = collections.deque(tokens)\n        ans = bns = 0\n        while deque and (P >= deque[0] or bns):\n            while deque and P >= deque[0]:\n                P -= deque.popleft()\n                bns += 1\n            ans = max(ans, bns)\n\n            if deque and bns:\n                P += deque.pop()\n                bns -= 1\n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Greedy"

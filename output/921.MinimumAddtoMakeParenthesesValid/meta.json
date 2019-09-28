@@ -11,7 +11,17 @@
   "solution": {
     "id": "586",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "mbE7BCSV": [
+      {
+        "code": "class Solution {\n    public int minAddToMakeValid(String S) {\n        int ans = 0, bal = 0;\n        for (int i = 0; i < S.length(); ++i) {\n            bal += S.charAt(i) == '(' ? 1 : -1;\n            // It is guaranteed bal >= -1\n            if (bal == -1) {\n                ans++;\n                bal++;\n            }\n        }\n\n        return ans + bal;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def minAddToMakeValid(self, S):\n        ans = bal = 0\n        for symbol in S:\n            bal += 1 if symbol == '(' else -1\n            # It is guaranteed bal >= -1\n            if bal == -1:\n                ans += 1\n                bal += 1\n        return ans + bal",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Stack",

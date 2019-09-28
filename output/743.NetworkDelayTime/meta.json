@@ -13,7 +13,37 @@
   "solution": {
     "id": "335",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "YadsYraY": [
+      {
+        "code": "class Solution {\n    Map<Integer, Integer> dist;\n    public int networkDelayTime(int[][] times, int N, int K) {\n        Map<Integer, List<int[]>> graph = new HashMap();\n        for (int[] edge: times) {\n            if (!graph.containsKey(edge[0]))\n                graph.put(edge[0], new ArrayList<int[]>());\n            graph.get(edge[0]).add(new int[]{edge[2], edge[1]});\n        }\n        for (int node: graph.keySet()) {\n            Collections.sort(graph.get(node), (a, b) -> a[0] - b[0]);\n        }\n        dist = new HashMap();\n        for (int node = 1; node <= N; ++node)\n            dist.put(node, Integer.MAX_VALUE);\n\n        dfs(graph, K, 0);\n        int ans = 0;\n        for (int cand: dist.values()) {\n            if (cand == Integer.MAX_VALUE) return -1;\n            ans = Math.max(ans, cand);\n        }\n        return ans;\n    }\n\n    public void dfs(Map<Integer, List<int[]>> graph, int node, int elapsed) {\n        if (elapsed >= dist.get(node)) return;\n        dist.put(node, elapsed);\n        if (graph.containsKey(node))\n            for (int[] info: graph.get(node))\n                dfs(graph, info[1], elapsed + info[0]);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def networkDelayTime(self, times, N, K):\n        graph = collections.defaultdict(list)\n        for u, v, w in times:\n            graph[u].append((w, v))\n\n        dist = {node: float('inf') for node in xrange(1, N+1)}\n\n        def dfs(node, elapsed):\n            if elapsed >= dist[node]: return\n            dist[node] = elapsed\n            for time, nei in sorted(graph[node]):\n                dfs(nei, elapsed + time)\n\n        dfs(K, 0)\n        ans = max(dist.values())\n        return ans if ans < float('inf') else -1",
+        "langSlug": "python"
+      }
+    ],
+    "HxrhmhUo": [
+      {
+        "code": "class Solution {\n    Map<Integer, Integer> dist;\n    public int networkDelayTime(int[][] times, int N, int K) {\n        Map<Integer, List<int[]>> graph = new HashMap();\n        for (int[] edge: times) {\n            if (!graph.containsKey(edge[0]))\n                graph.put(edge[0], new ArrayList<int[]>());\n            graph.get(edge[0]).add(new int[]{edge[1], edge[2]});\n        }\n        dist = new HashMap();\n        for (int node = 1; node <= N; ++node)\n            dist.put(node, Integer.MAX_VALUE);\n\n        dist.put(K, 0);\n        boolean[] seen = new boolean[N+1];\n\n        while (true) {\n            int candNode = -1;\n            int candDist = Integer.MAX_VALUE;\n            for (int i = 1; i <= N; ++i) {\n                if (!seen[i] && dist.get(i) < candDist) {\n                    candDist = dist.get(i);\n                    candNode = i;\n                }\n            }\n\n            if (candNode < 0) break;\n            seen[candNode] = true;\n            if (graph.containsKey(candNode))\n                for (int[] info: graph.get(candNode))\n                    dist.put(info[0],\n                             Math.min(dist.get(info[0]), dist.get(candNode) + info[1]));\n        }\n\n        int ans = 0;\n        for (int cand: dist.values()) {\n            if (cand == Integer.MAX_VALUE) return -1;\n            ans = Math.max(ans, cand);\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def networkDelayTime(self, times, N, K):\n        graph = collections.defaultdict(list)\n        for u, v, w in times:\n            graph[u].append((v, w))\n\n        dist = {node: float('inf') for node in xrange(1, N+1)}\n        seen = [False] * (N+1)\n        dist[K] = 0\n\n        while True:\n            cand_node = -1\n            cand_dist = float('inf')\n            for i in xrange(1, N+1):\n                if not seen[i] and dist[i] < cand_dist:\n                    cand_dist = dist[i]\n                    cand_node = i\n\n            if cand_node < 0: break\n            seen[cand_node] = True\n            for nei, d in graph[cand_node]:\n                dist[nei] = min(dist[nei], dist[cand_node] + d)\n\n        ans = max(dist.values())\n        return ans if ans < float('inf') else -1",
+        "langSlug": "python"
+      }
+    ],
+    "FAHPcmsE": [
+      {
+        "code": "class Solution {\n    public int networkDelayTime(int[][] times, int N, int K) {\n        Map<Integer, List<int[]>> graph = new HashMap();\n        for (int[] edge: times) {\n            if (!graph.containsKey(edge[0]))\n                graph.put(edge[0], new ArrayList<int[]>());\n            graph.get(edge[0]).add(new int[]{edge[1], edge[2]});\n        }\n        PriorityQueue<int[]> heap = new PriorityQueue<int[]>(\n                (info1, info2) -> info1[0] - info2[0]);\n        heap.offer(new int[]{0, K});\n\n        Map<Integer, Integer> dist = new HashMap();\n\n        while (!heap.isEmpty()) {\n            int[] info = heap.poll();\n            int d = info[0], node = info[1];\n            if (dist.containsKey(node)) continue;\n            dist.put(node, d);\n            if (graph.containsKey(node))\n                for (int[] edge: graph.get(node)) {\n                    int nei = edge[0], d2 = edge[1];\n                    if (!dist.containsKey(nei))\n                        heap.offer(new int[]{d+d2, nei});\n                }\n        }\n\n        if (dist.size() != N) return -1;\n        int ans = 0;\n        for (int cand: dist.values())\n            ans = Math.max(ans, cand);\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def networkDelayTime(self, times, N, K):\n        graph = collections.defaultdict(list)\n        for u, v, w in times:\n            graph[u].append((v, w))\n\n        pq = [(0, K)]\n        dist = {}\n        while pq:\n            d, node = heapq.heappop(pq)\n            if node in dist: continue\n            dist[node] = d\n            for nei, d2 in graph[node]:\n                if nei not in dist:\n                    heapq.heappush(pq, (d+d2, nei))\n\n        return max(dist.values()) if len(dist) == N else -1",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Heap",

@@ -11,7 +11,21 @@
   "solution": {
     "id": "719",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "87ynKoMa": [
+      {
+        "code": "class Solution {\n  public:\n  int search(vector<int>& nums, int target) {\n    int pivot, left = 0, right = nums.size() - 1;\n    while (left <= right) {\n      pivot = left + (right - left) / 2;\n      if (nums[pivot] == target) return pivot;\n      if (target < nums[pivot]) right = pivot - 1;\n      else left = pivot + 1;\n    }\n    return -1;\n  }\n};",
+        "langSlug": "cpp"
+      },
+      {
+        "code": "class Solution {\n  public int search(int[] nums, int target) {\n    int pivot, left = 0, right = nums.length - 1;\n    while (left <= right) {\n      pivot = left + (right - left) / 2;\n      if (nums[pivot] == target) return pivot;\n      if (target < nums[pivot]) right = pivot - 1;\n      else left = pivot + 1;\n    }\n    return -1;\n  }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def search(self, nums: List[int], target: int) -> int:\n        left, right = 0, len(nums) - 1\n        while left <= right:\n            pivot = left + (right - left) // 2\n            if nums[pivot] == target:\n                return pivot\n            if target < nums[pivot]:\n                right = pivot - 1\n            else:\n                left = pivot + 1\n        return -1",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Binary Search"

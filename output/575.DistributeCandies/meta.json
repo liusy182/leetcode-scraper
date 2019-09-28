@@ -16,7 +16,31 @@
   "solution": {
     "id": "125",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "5bJc432F": [
+      {
+        "code": "public class Solution {\n    int max_kind = 0;\n    public int distributeCandies(int[] nums) {\n        permute(nums, 0);\n        return max_kind;\n    }\n    public void permute(int[] nums, int l) {\n        if (l == nums.length - 1) {\n            HashSet < Integer > set = new HashSet < > ();\n            for (int i = 0; i < nums.length / 2; i++) {\n                set.add(nums[i]);\n            }\n            max_kind = Math.max(max_kind, set.size());\n        }\n        for (int i = l; i < nums.length; i++) {\n            swap(nums, i, l);\n            permute(nums, l + 1);\n            swap(nums, i, l);\n        }\n    }\n    public void swap(int[] nums, int x, int y) {\n        int temp = nums[x];\n        nums[x] = nums[y];\n        nums[y] = temp;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "nLo4nPxj": [
+      {
+        "code": "public class Solution {\n    public int distributeCandies(int[] candies) {\n        int count = 0;\n        for (int i = 0; i < candies.length && count < candies.length / 2; i++) {\n            if (candies[i] != Integer.MIN_VALUE) {\n                count++;\n                for (int j = i + 1; j < candies.length; j++) {\n                    if (candies[j] == candies[i])\n                        candies[j] = Integer.MIN_VALUE;\n                }\n            }\n        }\n        return count;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "SyAnB5Zm": [
+      {
+        "code": "public class Solution {\n    public int distributeCandies(int[] candies) {\n        Arrays.sort(candies);\n        int count = 1;\n        for (int i = 1; i < candies.length && count < candies.length / 2; i++)\n            if (candies[i] > candies[i - 1])\n                count++;\n        return count;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "ndMnccZV": [
+      {
+        "code": "public class Solution {\n    public int distributeCandies(int[] candies) {\n        HashSet < Integer > set = new HashSet < > ();\n        for (int candy: candies) {\n            set.add(candy);\n        }\n        return Math.min(set.size(), candies.length / 2);\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table"

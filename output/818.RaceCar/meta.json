@@ -11,7 +11,27 @@
   "solution": {
     "id": "448",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "qNruc33Y": [
+      {
+        "code": "class Solution {\n    public int racecar(int target) {\n        int K = 33 - Integer.numberOfLeadingZeros(target - 1);\n        int barrier = 1 << K;\n        int[] dist = new int[2 * barrier + 1];\n        Arrays.fill(dist, Integer.MAX_VALUE);\n        dist[target] = 0;\n\n        PriorityQueue<Node> pq = new PriorityQueue<Node>(\n            (a, b) -> a.steps - b.steps);\n        pq.offer(new Node(0, target));\n\n        while (!pq.isEmpty()) {\n            Node node = pq.poll();\n            int steps = node.steps, targ1 = node.target;\n            if (dist[Math.floorMod(targ1, dist.length)] > steps) continue;\n\n            for (int k = 0; k <= K; ++k) {\n                int walk = (1 << k) - 1;\n                int targ2 = walk - targ1;\n                int steps2 = steps + k + (targ2 != 0 ? 1 : 0);\n\n                if (Math.abs(targ2) <= barrier && steps2 < dist[Math.floorMod(targ2, dist.length)]) {\n                    pq.offer(new Node(steps2, targ2));\n                    dist[Math.floorMod(targ2, dist.length)] = steps2;\n                }\n            }\n        }\n\n        return dist[0];\n    }\n}\n\nclass Node {\n    int steps, target;\n    Node(int s, int t) {\n        steps = s;\n        target = t;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def racecar(self, target):\n        K = target.bit_length() + 1\n        barrier = 1 << K\n        pq = [(0, target)]\n        dist = [float('inf')] * (2 * barrier + 1)\n        dist[target] = 0\n\n        while pq:\n            steps, targ = heapq.heappop(pq)\n            if dist[targ] > steps: continue\n\n            for k in xrange(K+1):\n                walk = (1 << k) - 1\n                steps2, targ2 = steps + k + 1, walk - targ\n                if walk == targ: steps2 -= 1 #No \"R\" command if already exact\n\n                if abs(targ2) <= barrier and steps2 < dist[targ2]:\n                    heapq.heappush(pq, (steps2, targ2))\n                    dist[targ2] = steps2\n\n        return dist[0]",
+        "langSlug": "python"
+      }
+    ],
+    "ZF65uxfa": [
+      {
+        "code": "class Solution {\n    public int racecar(int target) {\n        int[] dp = new int[target + 3];\n        Arrays.fill(dp, Integer.MAX_VALUE);\n        dp[0] = 0; dp[1] = 1; dp[2] = 4;\n\n        for (int t = 3; t <= target; ++t) {\n            int k = 32 - Integer.numberOfLeadingZeros(t);\n            if (t == (1<<k) - 1) {\n                dp[t] = k;\n                continue;\n            }\n            for (int j = 0; j < k-1; ++j)\n                dp[t] = Math.min(dp[t], dp[t - (1<<(k-1)) + (1<<j)] + k-1 + j + 2);\n            if ((1<<k) - 1 - t < t)\n                dp[t] = Math.min(dp[t], dp[(1<<k) - 1 - t] + k + 1);\n        }\n\n        return dp[target];  \n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def racecar(self, target):\n        dp = [0, 1, 4] + [float('inf')] * target\n        for t in xrange(3, target + 1):\n            k = t.bit_length()\n            if t == 2**k - 1:\n                dp[t] = k\n                continue\n            for j in xrange(k - 1):\n                dp[t] = min(dp[t], dp[t - 2**(k - 1) + 2**j] + k - 1 + j + 2)\n            if 2**k - 1 - t < t:\n                dp[t] = min(dp[t], dp[2**k - 1 - t] + k + 1)\n        return dp[target]",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming",

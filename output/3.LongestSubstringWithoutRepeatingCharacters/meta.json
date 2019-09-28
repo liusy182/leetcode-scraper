@@ -11,7 +11,31 @@
   "solution": {
     "id": "36",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "dDeYomT6": [
+      {
+        "code": "public class Solution {\n    public int lengthOfLongestSubstring(String s) {\n        int n = s.length();\n        int ans = 0;\n        for (int i = 0; i < n; i++)\n            for (int j = i + 1; j <= n; j++)\n                if (allUnique(s, i, j)) ans = Math.max(ans, j - i);\n        return ans;\n    }\n\n    public boolean allUnique(String s, int start, int end) {\n        Set<Character> set = new HashSet<>();\n        for (int i = start; i < end; i++) {\n            Character ch = s.charAt(i);\n            if (set.contains(ch)) return false;\n            set.add(ch);\n        }\n        return true;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "gajHJS2a": [
+      {
+        "code": "public class Solution {\n    public int lengthOfLongestSubstring(String s) {\n        int n = s.length();\n        Set<Character> set = new HashSet<>();\n        int ans = 0, i = 0, j = 0;\n        while (i < n && j < n) {\n            // try to extend the range [i, j]\n            if (!set.contains(s.charAt(j))){\n                set.add(s.charAt(j++));\n                ans = Math.max(ans, j - i);\n            }\n            else {\n                set.remove(s.charAt(i++));\n            }\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "ers9VnKH": [
+      {
+        "code": "public class Solution {\n    public int lengthOfLongestSubstring(String s) {\n        int n = s.length(), ans = 0;\n        Map<Character, Integer> map = new HashMap<>(); // current index of character\n        // try to extend the range [i, j]\n        for (int j = 0, i = 0; j < n; j++) {\n            if (map.containsKey(s.charAt(j))) {\n                i = Math.max(map.get(s.charAt(j)), i);\n            }\n            ans = Math.max(ans, j - i + 1);\n            map.put(s.charAt(j), j + 1);\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "KgRWfFiE": [
+      {
+        "code": "public class Solution {\n    public int lengthOfLongestSubstring(String s) {\n        int n = s.length(), ans = 0;\n        int[] index = new int[128]; // current index of character\n        // try to extend the range [i, j]\n        for (int j = 0, i = 0; j < n; j++) {\n            i = Math.max(index[s.charAt(j)], i);\n            ans = Math.max(ans, j - i + 1);\n            index[s.charAt(j)] = j + 1;\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table",

@@ -11,7 +11,17 @@
   "solution": {
     "id": "327",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "i8A5ppzu": [
+      {
+        "code": "class Solution {\n    public int[][] imageSmoother(int[][] M) {\n        int R = M.length, C = M[0].length;\n        int[][] ans = new int[R][C];\n\n        for (int r = 0; r < R; ++r)\n            for (int c = 0; c < C; ++c) {\n                int count = 0;\n                for (int nr = r-1; nr <= r+1; ++nr)\n                    for (int nc = c-1; nc <= c+1; ++nc) {\n                        if (0 <= nr && nr < R && 0 <= nc && nc < C) {\n                            ans[r][c] += M[nr][nc];\n                            count++;\n                        }\n                    }\n                ans[r][c] /= count;\n            }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def imageSmoother(self, M):\n        R, C = len(M), len(M[0])\n        ans = [[0] * C for _ in M]\n\n        for r in xrange(R):\n            for c in xrange(C):\n                count = 0\n                for nr in (r-1, r, r+1):\n                    for nc in (c-1, c, c+1):\n                        if 0 <= nr < R and 0 <= nc < C:\n                            ans[r][c] += M[nr][nc]\n                            count += 1\n                ans[r][c] /= count\n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array"

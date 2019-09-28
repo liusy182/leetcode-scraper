@@ -11,7 +11,37 @@
   "solution": {
     "id": "528",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "4RDYQYDJ": [
+      {
+        "code": "class Solution {\n    public int superEggDrop(int K, int N) {\n        return dp(K, N);\n    }\n\n    Map<Integer, Integer> memo = new HashMap();\n    public int dp(int K, int N) {\n        if (!memo.containsKey(N * 100 + K)) {\n            int ans;\n            if (N == 0)\n                ans = 0;\n            else if (K == 1)\n                ans = N;\n            else {\n                int lo = 1, hi = N;\n                while (lo + 1 < hi) {\n                    int x = (lo + hi) / 2;\n                    int t1 = dp(K-1, x-1);\n                    int t2 = dp(K, N-x);\n\n                    if (t1 < t2)\n                        lo = x;\n                    else if (t1 > t2)\n                        hi = x;\n                    else\n                        lo = hi = x;\n                }\n\n                ans = 1 + Math.min(Math.max(dp(K-1, lo-1), dp(K, N-lo)),\n                                   Math.max(dp(K-1, hi-1), dp(K, N-hi)));\n            }\n\n            memo.put(N * 100 + K, ans);\n        }\n\n        return memo.get(N * 100 + K);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def superEggDrop(self, K, N):\n        memo = {}\n        def dp(k, n):\n            if (k, n) not in memo:\n                if n == 0:\n                    ans = 0\n                elif k == 1:\n                    ans = n\n                else:\n                    lo, hi = 1, n\n                    # keep a gap of 2 X values to manually check later\n                    while lo + 1 < hi:\n                        x = (lo + hi) / 2\n                        t1 = dp(k-1, x-1)\n                        t2 = dp(k, n-x)\n\n                        if t1 < t2:\n                            lo = x\n                        elif t1 > t2:\n                            hi = x\n                        else:\n                            lo = hi = x\n\n                    ans = 1 + min(max(dp(k-1, x-1), dp(k, n-x))\n                                  for x in (lo, hi))\n\n                memo[k, n] = ans\n            return memo[k, n]\n\n        return dp(K, N)",
+        "langSlug": "python"
+      }
+    ],
+    "w346npK6": [
+      {
+        "code": "class Solution {\n    public int superEggDrop(int K, int N) {\n        // Right now, dp[i] represents dp(1, i)\n        int[] dp = new int[N+1];\n        for (int i = 0; i <= N; ++i)\n            dp[i] = i;\n\n        for (int k = 2; k <= K; ++k) {\n            // Now, we will develop dp2[i] = dp(k, i)\n            int[] dp2 = new int[N+1];\n            int x = 1;\n            for (int n = 1; n <= N; ++n) {\n                // Let's find dp2[n] = dp(k, n)\n                // Increase our optimal x while we can make our answer better.\n                // Notice max(dp[x-1], dp2[n-x]) > max(dp[x], dp2[n-x-1])\n                // is simply max(T1(x-1), T2(x-1)) > max(T1(x), T2(x)).\n                while (x < n && Math.max(dp[x-1], dp2[n-x]) > Math.max(dp[x], dp2[n-x-1]))\n                    x++;\n\n                // The final answer happens at this x.\n                dp2[n] = 1 + Math.max(dp[x-1], dp2[n-x]);\n            }\n\n            dp = dp2;\n        }\n\n        return dp[N];\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def superEggDrop(self, K, N):\n\n        # Right now, dp[i] represents dp(1, i)\n        dp = range(N+1)\n\n        for k in xrange(2, K+1):\n            # Now, we will develop dp2[i] = dp(k, i)\n            dp2 = [0]\n            x = 1\n            for n in xrange(1, N+1):\n                # Let's find dp2[n] = dp(k, n)\n                # Increase our optimal x while we can make our answer better.\n                # Notice max(dp[x-1], dp2[n-x]) > max(dp[x], dp2[n-x-1])\n                # is simply max(T1(x-1), T2(x-1)) > max(T1(x), T2(x)).\n                while x < n and max(dp[x-1], dp2[n-x]) > \\\n                                max(dp[x], dp2[n-x-1]):\n                    x += 1\n\n                # The final answer happens at this x.\n                dp2.append(1 + max(dp[x-1], dp2[n-x]))\n\n            dp = dp2\n\n        return dp[-1]",
+        "langSlug": "python"
+      }
+    ],
+    "FXFk48xy": [
+      {
+        "code": "class Solution {\n    public int superEggDrop(int K, int N) {\n        int lo = 1, hi = N;\n        while (lo < hi) {\n            int mi = (lo + hi) / 2;\n            if (f(mi, K, N) < N)\n                lo = mi + 1;\n            else\n                hi = mi;\n        }\n\n        return lo;\n    }\n\n    public int f(int x, int K, int N) {\n        int ans = 0, r = 1;\n        for (int i = 1; i <= K; ++i) {\n            r *= x-i+1;\n            r /= i;\n            ans += r;\n            if (ans >= N) break;\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def superEggDrop(self, K, N):\n        def f(x):\n            ans = 0\n            r = 1\n            for i in range(1, K+1):\n                r *= x-i+1\n                r //= i\n                ans += r\n                if ans >= N: break\n            return ans\n\n        lo, hi = 1, N\n        while lo < hi:\n            mi = (lo + hi) // 2\n            if f(mi) < N:\n                lo = mi + 1\n            else:\n                hi = mi\n        return lo",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math",

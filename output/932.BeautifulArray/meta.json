@@ -11,7 +11,17 @@
   "solution": {
     "id": "601",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "3NT7Bgm6": [
+      {
+        "code": "class Solution {\n    Map<Integer, int[]> memo;\n    public int[] beautifulArray(int N) {\n        memo = new HashMap();\n        return f(N);\n    }\n\n    public int[] f(int N) {\n        if (memo.containsKey(N))\n            return memo.get(N);\n\n        int[] ans = new int[N];\n        if (N == 1) {\n            ans[0] = 1;\n        } else {\n            int t = 0;\n            for (int x: f((N+1)/2))  // odds\n                ans[t++] = 2*x - 1;\n            for (int x: f(N/2))  // evens\n                ans[t++] = 2*x;\n        }\n        memo.put(N, ans);\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def beautifulArray(self, N):\n        memo = {1: [1]}\n        def f(N):\n            if N not in memo:\n                odds = f((N+1)/2)\n                evens = f(N/2)\n                memo[N] = [2*x-1 for x in odds] + [2*x for x in evens]\n            return memo[N]\n        return f(N)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Divide and Conquer"

@@ -11,7 +11,31 @@
   "solution": {
     "id": "234",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "bCj3rwUg": [
+      {
+        "code": "class Solution(object):\n    def singleNumber(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        no_duplicate_list = []\n        for i in nums:\n            if i not in no_duplicate_list:\n                no_duplicate_list.append(i)\n            else:\n                no_duplicate_list.remove(i)\n        return no_duplicate_list.pop()",
+        "langSlug": "python"
+      }
+    ],
+    "ebzkQT6R": [
+      {
+        "code": "class Solution(object):\n    def singleNumber(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        hash_table = {}\n        for i in nums:\n            try:\n                hash_table.pop(i)\n            except:\n                hash_table[i] = 1\n        return hash_table.popitem()[0]",
+        "langSlug": "python"
+      }
+    ],
+    "hQwrqahc": [
+      {
+        "code": "class Solution(object):\n    def singleNumber(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        return 2 * sum(set(nums)) - sum(nums)",
+        "langSlug": "python"
+      }
+    ],
+    "3TAX3mmj": [
+      {
+        "code": "class Solution(object):\n    def singleNumber(self, nums):\n        \"\"\"\n        :type nums: List[int]\n        :rtype: int\n        \"\"\"\n        a = 0\n        for i in nums:\n            a ^= i\n        return a",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table",

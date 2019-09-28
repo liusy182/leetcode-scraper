@@ -11,7 +11,37 @@
   "solution": {
     "id": "461",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "W5wabBJ4": [
+      {
+        "code": "class Solution {\n    public int consecutiveNumbersSum(int N) {\n        int ans = 0;\n        for (int start = 1; start <= N; ++start) {\n            int target = N, x = start;\n            while (target > 0)\n                target -= x++;\n            if (target == 0) ans++;\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def consecutiveNumbersSum(self, N):\n        ans = 0\n        for start in xrange(1, N+1):\n            target = N\n            while target > 0:\n                target -= start\n                start += 1\n            if target == 0: ans += 1\n        return ans",
+        "langSlug": "python"
+      }
+    ],
+    "y3LRDRHT": [
+      {
+        "code": "class Solution {\n    public int consecutiveNumbersSum(int N) {\n        // 2N = k(2x + k + 1)\n        int ans = 0;\n        for (int k = 1; k <= 2*N; ++k)\n            if (2 * N % k == 0) {\n                int y = 2 * N / k - k - 1;\n                if (y % 2 == 0 && y >= 0)\n                    ans++;\n            }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def consecutiveNumbersSum(self, N):\n        # 2N = k(2x + k + 1)\n        ans = 0\n        for k in xrange(1, 2*N + 1):\n            if 2*N % k == 0:\n                y = 2 * N / k - k - 1\n                if y % 2 == 0 and y >= 0:\n                    ans += 1\n        return ans",
+        "langSlug": "python"
+      }
+    ],
+    "RNh28dQE": [
+      {
+        "code": "class Solution {\n    public int consecutiveNumbersSum(int N) {\n        while ((N & 1) == 0) N >>= 1;\n        int ans = 1, d = 3;\n\n        while (d * d <= N) {\n            int e = 0;\n            while (N % d == 0) {\n                N /= d;\n                e++;\n            }\n            ans *= e + 1;\n            d += 2;\n        }\n\n        if (N > 1) ans <<= 1;\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def consecutiveNumbersSum(self, N):\n        while N & 1 == 0:\n            N >>= 1\n\n        ans = 1    \n        d = 3\n        while d * d <= N:\n            e = 0\n            while N % d == 0:\n                N /= d\n                e += 1\n            ans *= e + 1\n            d += 2\n\n        if N > 1: ans *= 2\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math"

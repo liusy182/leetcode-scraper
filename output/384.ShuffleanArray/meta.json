@@ -13,7 +13,27 @@
   "solution": {
     "id": "287",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "FWMsaXQ7": [
+      {
+        "code": "class Solution {\n    private int[] array;\n    private int[] original;\n\n    private Random rand = new Random();\n\n    private List<Integer> getArrayCopy() {\n        List<Integer> asList = new ArrayList<Integer>();\n        for (int i = 0; i < array.length; i++) {\n            asList.add(array[i]);\n        }\n        return asList;\n    }\n\n    public Solution(int[] nums) {\n        array = nums;\n        original = nums.clone();\n    }\n    \n    public int[] reset() {\n        array = original;\n        original = original.clone();\n        return array;\n    }\n    \n    public int[] shuffle() {\n        List<Integer> aux = getArrayCopy();\n\n        for (int i = 0; i < array.length; i++) {\n            int removeIdx = rand.nextInt(aux.size());\n            array[i] = aux.get(removeIdx);\n            aux.remove(removeIdx);\n        }\n\n        return array;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def __init__(self, nums):\n        self.array = nums\n        self.original = list(nums)\n\n    def reset(self):\n        self.array = self.original\n        self.original = list(self.original)\n        return self.array\n\n    def shuffle(self):\n        aux = list(self.array)\n\n        for idx in range(len(self.array)):\n            remove_idx = random.randrange(len(aux))\n            self.array[idx] = aux.pop(remove_idx)\n\n        return self.array",
+        "langSlug": "python"
+      }
+    ],
+    "ftmztsv8": [
+      {
+        "code": "class Solution {\n    private int[] array;\n    private int[] original;\n\n    Random rand = new Random();\n\n    private int randRange(int min, int max) {\n        return rand.nextInt(max - min) + min;\n    }\n\n    private void swapAt(int i, int j) {\n        int temp = array[i];\n        array[i] = array[j];\n        array[j] = temp;\n    }\n\n    public Solution(int[] nums) {\n        array = nums;\n        original = nums.clone();\n    }\n    \n    public int[] reset() {\n        array = original;\n        original = original.clone();\n        return original;\n    }\n    \n    public int[] shuffle() {\n        for (int i = 0; i < array.length; i++) {\n            swapAt(i, randRange(i, array.length));\n        }\n        return array;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def __init__(self, nums):\n        self.array = nums\n        self.original = list(nums)\n\n    def reset(self):\n        self.array = self.original\n        self.original = list(self.original)\n        return self.array\n\n    def shuffle(self):\n        for i in range(len(self.array)):\n            swap_idx = random.randrange(i, len(self.array))\n            self.array[i], self.array[swap_idx] = self.array[swap_idx], self.array[i]\n        return self.array",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": []
 }

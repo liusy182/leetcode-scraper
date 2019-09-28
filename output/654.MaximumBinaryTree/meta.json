@@ -11,7 +11,13 @@
   "solution": {
     "id": "227",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "WgEZm2za": [
+      {
+        "code": "public class Solution {\n    public TreeNode constructMaximumBinaryTree(int[] nums) {\n        return construct(nums, 0, nums.length);\n    }\n    public TreeNode construct(int[] nums, int l, int r) {\n        if (l == r)\n            return null;\n        int max_i = max(nums, l, r);\n        TreeNode root = new TreeNode(nums[max_i]);\n        root.left = construct(nums, l, max_i);\n        root.right = construct(nums, max_i + 1, r);\n        return root;\n    }\n    public int max(int[] nums, int l, int r) {\n        int max_i = l;\n        for (int i = l; i < r; i++) {\n            if (nums[max_i] < nums[i])\n                max_i = i;\n        }\n        return max_i;\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Tree"

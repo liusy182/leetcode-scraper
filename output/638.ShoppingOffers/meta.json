@@ -11,7 +11,19 @@
   "solution": {
     "id": "199",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "b6RfW7x4": [
+      {
+        "code": "public class Solution {\n    public int shoppingOffers(List < Integer > price, List < List < Integer >> special, List < Integer > needs) {\n        return shopping(price, special, needs);\n    }\n    public int shopping(List < Integer > price, List < List < Integer >> special, List < Integer > needs) {\n        int j = 0, res = dot(needs, price);\n        for (List < Integer > s: special) {\n            ArrayList < Integer > clone = new ArrayList < > (needs);\n            for (j = 0; j < needs.size(); j++) {\n                int diff = clone.get(j) - s.get(j);\n                if (diff < 0)\n                    break;\n                clone.set(j, diff);\n            }\n            if (j == needs.size())\n                res = Math.min(res, s.get(j) + shopping(price, special, clone));\n        }\n        return res;\n    }\n    public int dot(List < Integer > a, List < Integer > b) {\n        int sum = 0;\n        for (int i = 0; i < a.size(); i++) {\n            sum += a.get(i) * b.get(i);\n        }\n        return sum;\n    }\n\n}",
+        "langSlug": "java"
+      }
+    ],
+    "aPHtk8QK": [
+      {
+        "code": "public class Solution {\n    public int shoppingOffers(List < Integer > price, List < List < Integer >> special, List < Integer > needs) {\n        Map < List < Integer > , Integer > map = new HashMap();\n        return shopping(price, special, needs, map);\n    }\n    public int shopping(List < Integer > price, List < List < Integer >> special, List < Integer > needs, Map < List < Integer > , Integer > map) {\n        if (map.containsKey(needs))\n            return map.get(needs);\n        int j = 0, res = dot(needs, price);\n        for (List < Integer > s: special) {\n            ArrayList < Integer > clone = new ArrayList < > (needs);\n            for (j = 0; j < needs.size(); j++) {\n                int diff = clone.get(j) - s.get(j);\n                if (diff < 0)\n                    break;\n                clone.set(j, diff);\n            }\n            if (j == needs.size())\n                res = Math.min(res, s.get(j) + shopping(price, special, clone, map));\n        }\n        map.put(needs, res);\n        return res;\n    }\n    public int dot(List < Integer > a, List < Integer > b) {\n        int sum = 0;\n        for (int i = 0; i < a.size(); i++) {\n            sum += a.get(i) * b.get(i);\n        }\n        return sum;\n    }\n\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming",

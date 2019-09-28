@@ -15,7 +15,25 @@
   "solution": {
     "id": "126",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "Q7b3GKsJ": [
+      {
+        "code": "\npublic class Solution {\n    public int findPaths(int m, int n, int N, int i, int j) {\n        if(i==m || j==n || i<0 ||j<0)\n            return 1;\n        if(N==0)\n            return 0;\n        return findPaths(m,n,N-1,i-1,j)+findPaths(m,n,N-1,i+1,j)+findPaths(m,n,N-1,i,j-1)+findPaths(m,n,N-1,i,j+1);\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "o22neiZb": [
+      {
+        "code": "\npublic class Solution {\n    int M=1000000007;\n    public int findPaths(int m, int n, int N, int i, int j) {\n        int[][][] memo=new int[m][n][N+1];\n        for(int[][] l:memo)\n            for(int[] sl:l)\n                Arrays.fill(sl,-1);\n        return findPaths(m,n,N,i,j,memo);\n    }\n    public int findPaths(int m, int n, int N, int i, int j,int[][][] memo) {\n        if(i==m || j==n || i<0 ||j<0)\n            return 1;\n        if(N==0)\n            return 0;\n        if(memo[i][j][N]>=0)\n            return memo[i][j][N];\n        memo[i][j][N]=((findPaths(m,n,N-1,i-1,j,memo)+findPaths(m,n,N-1,i+1,j,memo))%M+(findPaths(m,n,N-1,i,j-1,memo)+findPaths(m,n,N-1,i,j+1,memo))%M)%M;\n        return memo[i][j][N];\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "MvuV89Mf": [
+      {
+        "code": "public class Solution {\n    public int findPaths(int m, int n, int N, int x, int y) {\n        int M = 1000000000 + 7;\n        int dp[][] = new int[m][n];\n        dp[x][y] = 1;\n        int count = 0;\n        for (int moves = 1; moves <= N; moves++) {\n            int[][] temp = new int[m][n];\n            for (int i = 0; i < m; i++) {\n                for (int j = 0; j < n; j++) {\n                    if (i == m - 1)\n                        count = (count + dp[i][j]) % M;\n                    if (j == n - 1)\n                        count = (count + dp[i][j]) % M;\n                    if (i == 0)\n                        count = (count + dp[i][j]) % M;\n                    if (j == 0)\n                        count = (count + dp[i][j]) % M;\n                    temp[i][j] = (((i > 0 ? dp[i - 1][j] : 0) + (i < m - 1 ? dp[i + 1][j] : 0)) % M + ((j > 0 ? dp[i][j - 1] : 0) + (j < n - 1 ? dp[i][j + 1] : 0)) % M) % M;\n                }\n            }\n            dp = temp;\n        }\n        return count;\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming",

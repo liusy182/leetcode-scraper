@@ -11,7 +11,17 @@
   "solution": {
     "id": "650",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "QMVwzekW": [
+      {
+        "code": "class Solution {\n    public int[] numsSameConsecDiff(int N, int K) {\n        Set<Integer> cur = new HashSet();\n        for (int i = 1; i <= 9; ++i)\n            cur.add(i);\n\n        for (int steps = 1; steps <= N-1; ++steps) {\n            Set<Integer> cur2 = new HashSet();\n            for (int x: cur) {\n                int d = x % 10;\n                if (d-K >= 0)\n                    cur2.add(10*x + (d-K));\n                if (d+K <= 9)\n                    cur2.add(10*x + (d+K));\n            }\n\n            cur = cur2;\n        }\n\n        if (N == 1)\n            cur.add(0);\n\n        int[] ans = new int[cur.size()];\n        int t = 0;\n        for (int x: cur)\n            ans[t++] = x;\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def numsSameConsecDiff(self, N, K):\n        ans = {x for x in range(1, 10)}\n        for _ in xrange(N-1):\n            ans2 = set()\n            for x in ans:\n                d = x % 10\n                if d - K >= 0:\n                    ans2.add(10*x + d-K)\n                if d + K <= 9:\n                    ans2.add(10*x + d+K)\n            ans = ans2\n\n        if N == 1:\n            ans.add(0)\n\n        return list(ans)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming"

@@ -11,7 +11,17 @@
   "solution": {
     "id": "665",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "2RjnrKEg": [
+      {
+        "code": "class Solution {\n    public int largestPerimeter(int[] A) {\n        Arrays.sort(A);\n        for (int i = A.length - 3; i >= 0; --i)\n            if (A[i] + A[i+1] > A[i+2])\n                return A[i] + A[i+1] + A[i+2];\n        return 0;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def largestPerimeter(self, A):\n        A.sort()\n        for i in xrange(len(A) - 3, -1, -1):\n            if A[i] + A[i+1] > A[i+2]:\n                return A[i] + A[i+1] + A[i+2]\n        return 0",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math",

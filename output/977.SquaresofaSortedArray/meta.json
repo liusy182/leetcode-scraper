@@ -11,7 +11,27 @@
   "solution": {
     "id": "671",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "mVRPMKjB": [
+      {
+        "code": "class Solution {\n    public int[] sortedSquares(int[] A) {\n        int N = A.length;\n        int[] ans = new int[N];\n        for (int i = 0; i < N; ++i)\n            ans[i] = A[i] * A[i];\n\n        Arrays.sort(ans);\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def sortedSquares(self, A):\n        return sorted(x*x for x in A)",
+        "langSlug": "python"
+      }
+    ],
+    "h7YnwCLs": [
+      {
+        "code": "class Solution {\n    public int[] sortedSquares(int[] A) {\n        int N = A.length;\n        int j = 0;\n        while (j < N && A[j] < 0)\n            j++;\n        int i = j-1;\n\n        int[] ans = new int[N];\n        int t = 0;\n\n        while (i >= 0 && j < N) {\n            if (A[i] * A[i] < A[j] * A[j]) {\n                ans[t++] = A[i] * A[i];\n                i--;\n            } else {\n                ans[t++] = A[j] * A[j];\n                j++;\n            }\n        }\n\n        while (i >= 0) {\n            ans[t++] = A[i] * A[i];\n            i--;\n        }\n        while (j < N) {\n            ans[t++] = A[j] * A[j];\n            j++;\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def sortedSquares(self, A):\n        N = len(A)\n        # i, j: negative, positive parts\n        j = 0\n        while j < N and A[j] < 0:\n            j += 1\n        i = j - 1\n\n        ans = []\n        while 0 <= i and j < N:\n            if A[i]**2 < A[j]**2:\n                ans.append(A[i]**2)\n                i -= 1\n            else:\n                ans.append(A[j]**2)\n                j += 1\n\n        while i >= 0:\n            ans.append(A[i]**2)\n            i -= 1\n        while j < N:\n            ans.append(A[j]**2)\n            j += 1\n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array",

@@ -11,7 +11,27 @@
   "solution": {
     "id": "492",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "6wfBasLL": [
+      {
+        "code": "class Solution {\n    public double mincostToHireWorkers(int[] quality, int[] wage, int K) {\n        int N = quality.length;\n        double ans = 1e9;\n\n        for (int captain = 0; captain < N; ++captain) {\n            // Must pay at least wage[captain] / quality[captain] per qual\n            double factor = (double) wage[captain] / quality[captain];\n            double prices[] = new double[N];\n            int t = 0;\n            for (int worker = 0; worker < N; ++worker) {\n                double price = factor * quality[worker];\n                if (price < wage[worker]) continue;\n                prices[t++] = price;\n            }\n\n            if (t < K) continue;\n            Arrays.sort(prices, 0, t);\n            double cand = 0;\n            for (int i = 0; i < K; ++i)\n                cand += prices[i];\n            ans = Math.min(ans, cand);\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def mincostToHireWorkers(self, quality, wage, K):\n        from fractions import Fraction\n        ans = float('inf')\n\n        N = len(quality)\n        for captain in xrange(N):\n            # Must pay at least wage[captain] / quality[captain] per qual\n            factor = Fraction(wage[captain], quality[captain])\n            prices = []\n            for worker in xrange(N):\n                price = factor * quality[worker]\n                if price < wage[worker]: continue\n                prices.append(price)\n\n            if len(prices) < K: continue\n            prices.sort()\n            ans = min(ans, sum(prices[:K]))\n\n        return float(ans)",
+        "langSlug": "python"
+      }
+    ],
+    "KRXJr8dq": [
+      {
+        "code": "class Solution {\n    public double mincostToHireWorkers(int[] quality, int[] wage, int K) {\n        int N = quality.length;\n        Worker[] workers = new Worker[N];\n        for (int i = 0; i < N; ++i)\n            workers[i] = new Worker(quality[i], wage[i]);\n        Arrays.sort(workers);\n\n        double ans = 1e9;\n        int sumq = 0;\n        PriorityQueue<Integer> pool = new PriorityQueue();\n        for (Worker worker: workers) {\n            pool.offer(-worker.quality);\n            sumq += worker.quality;\n            if (pool.size() > K)\n                sumq += pool.poll();\n            if (pool.size() == K)\n                ans = Math.min(ans, sumq * worker.ratio());\n        }\n\n        return ans;\n    }\n}\n\nclass Worker implements Comparable<Worker> {\n    public int quality, wage;\n    public Worker(int q, int w) {\n        quality = q;\n        wage = w;\n    }\n\n    public double ratio() {\n        return (double) wage / quality;\n    }\n\n    public int compareTo(Worker other) {\n        return Double.compare(ratio(), other.ratio());\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def mincostToHireWorkers(self, quality, wage, K):\n        from fractions import Fraction\n        workers = sorted((Fraction(w, q), q, w)\n                         for q, w in zip(quality, wage))\n\n        ans = float('inf')\n        pool = []\n        sumq = 0\n        for ratio, q, w in workers:\n            heapq.heappush(pool, -q)\n            sumq += q\n\n            if len(pool) > K:\n                sumq += heapq.heappop(pool)\n\n            if len(pool) == K:\n                ans = min(ans, ratio * sumq)\n\n        return float(ans)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Heap"

@@ -11,7 +11,17 @@
   "solution": {
     "id": "674",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "26oBRSTE": [
+      {
+        "code": "class Solution {\n  Map<String, String> phone = new HashMap<String, String>() {{\n    put(\"2\", \"abc\");\n    put(\"3\", \"def\");\n    put(\"4\", \"ghi\");\n    put(\"5\", \"jkl\");\n    put(\"6\", \"mno\");\n    put(\"7\", \"pqrs\");\n    put(\"8\", \"tuv\");\n    put(\"9\", \"wxyz\");\n  }};\n\n  List<String> output = new ArrayList<String>();\n\n  public void backtrack(String combination, String next_digits) {\n    // if there is no more digits to check\n    if (next_digits.length() == 0) {\n      // the combination is done\n      output.add(combination);\n    }\n    // if there are still digits to check\n    else {\n      // iterate over all letters which map \n      // the next available digit\n      String digit = next_digits.substring(0, 1);\n      String letters = phone.get(digit);\n      for (int i = 0; i < letters.length(); i++) {\n        String letter = phone.get(digit).substring(i, i + 1);\n        // append the current letter to the combination\n        // and proceed to the next digits\n        backtrack(combination + letter, next_digits.substring(1));\n      }\n    }\n  }\n\n  public List<String> letterCombinations(String digits) {\n    if (digits.length() != 0)\n      backtrack(\"\", digits);\n    return output;\n  }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def letterCombinations(self, digits):\n        \"\"\"\n        :type digits: str\n        :rtype: List[str]\n        \"\"\"\n        phone = {'2': ['a', 'b', 'c'],\n                 '3': ['d', 'e', 'f'],\n                 '4': ['g', 'h', 'i'],\n                 '5': ['j', 'k', 'l'],\n                 '6': ['m', 'n', 'o'],\n                 '7': ['p', 'q', 'r', 's'],\n                 '8': ['t', 'u', 'v'],\n                 '9': ['w', 'x', 'y', 'z']}\n                \n        def backtrack(combination, next_digits):\n            # if there is no more digits to check\n            if len(next_digits) == 0:\n                # the combination is done\n                output.append(combination)\n            # if there are still digits to check\n            else:\n                # iterate over all letters which map \n                # the next available digit\n                for letter in phone[next_digits[0]]:\n                    # append the current letter to the combination\n                    # and proceed to the next digits\n                    backtrack(combination + letter, next_digits[1:])\n                    \n        output = []\n        if digits:\n            backtrack(\"\", digits)\n        return output",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "String",

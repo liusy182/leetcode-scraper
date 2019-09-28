@@ -11,7 +11,17 @@
   "solution": {
     "id": "592",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "AoUF2isa": [
+      {
+        "code": "class Solution {\n    public int minFlipsMonoIncr(String S) {\n        int N = S.length();\n        int[] P = new int[N + 1];\n        for (int i = 0; i < N; ++i)\n            P[i+1] = P[i] + (S.charAt(i) == '1' ? 1 : 0);\n\n        int ans = Integer.MAX_VALUE;\n        for (int j = 0; j <= N; ++j) {\n            ans = Math.min(ans, P[j] + N-j-(P[N]-P[j]));\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def minFlipsMonoIncr(self, S):\n        P = [0]\n        for x in S:\n            P.append(P[-1] + int(x))\n\n        return min(P[j] + len(S)-j-(P[-1]-P[j])\n                   for j in xrange(len(P)))",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array"

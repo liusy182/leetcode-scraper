@@ -11,7 +11,17 @@
   "solution": {
     "id": "682",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "ZpZvkz97": [
+      {
+        "code": "class Solution {\n    String ans = \"~\";\n    public String smallestFromLeaf(TreeNode root) {\n        dfs(root, new StringBuilder());\n        return ans;\n    }\n\n    public void dfs(TreeNode node, StringBuilder sb) {\n        if (node == null) return;\n        sb.append((char)('a' + node.val));\n\n        if (node.left == null && node.right == null) {\n            sb.reverse();\n            String S = sb.toString();\n            sb.reverse();\n\n            if (S.compareTo(ans) < 0)\n                ans = S;\n        }\n\n        dfs(node.left, sb);\n        dfs(node.right, sb);\n        sb.deleteCharAt(sb.length() - 1);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def smallestFromLeaf(self, root):\n        self.ans = \"~\"\n\n        def dfs(node, A):\n            if node:\n                A.append(chr(node.val + ord('a')))\n                if not node.left and not node.right:\n                    self.ans = min(self.ans, \"\".join(reversed(A)))\n\n                dfs(node.left, A)\n                dfs(node.right, A)\n                A.pop()\n\n        dfs(root, [])\n        return self.ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree",

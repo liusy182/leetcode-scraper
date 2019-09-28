@@ -11,7 +11,21 @@
   "solution": {
     "id": "526",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "unjtgTJT": [
+      {
+        "code": "class Solution {\npublic:\n    int projectionArea(vector<vector<int>>& grid) {\n        int N = grid.size();\n        int ans = 0;\n\n        for (int i = 0; i < N;  ++i) {\n            int bestRow = 0;  // largest of grid[i][j]\n            int bestCol = 0;  // largest of grid[j][i]\n            for (int j = 0; j < N; ++j) {\n                if (grid[i][j] > 0) ans++;  // top shadow\n                bestRow = max(bestRow, grid[i][j]);\n                bestCol = max(bestCol, grid[j][i]);\n            }\n            ans += bestRow + bestCol;\n        }\n\n        return ans;\n    }\n};",
+        "langSlug": "cpp"
+      },
+      {
+        "code": "class Solution {\n    public int projectionArea(int[][] grid) {\n        int N = grid.length;\n        int ans = 0;\n\n        for (int i = 0; i < N;  ++i) {\n            int bestRow = 0;  // largest of grid[i][j]\n            int bestCol = 0;  // largest of grid[j][i]\n            for (int j = 0; j < N; ++j) {\n                if (grid[i][j] > 0) ans++;  // top shadow\n                bestRow = Math.max(bestRow, grid[i][j]);\n                bestCol = Math.max(bestCol, grid[j][i]);\n            }\n            ans += bestRow + bestCol;\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def projectionArea(self, grid):\n        N = len(grid)\n        ans = 0\n\n        for i in xrange(N):\n            best_row = 0  # max of grid[i][j]\n            best_col = 0  # max of grid[j][i]\n            for j in xrange(N):\n                if grid[i][j]: ans += 1  # top shadow\n                best_row = max(best_row, grid[i][j])\n                best_col = max(best_col, grid[j][i])\n\n            ans += best_row + best_col\n\n        return ans\n\n        \"\"\" Alternative solution:\n        ans = sum(map(max, grid))\n        ans += sum(map(max, zip(*grid)))\n        ans += sum(v > 0 for row in grid for v in row)\n        \"\"\"",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math"

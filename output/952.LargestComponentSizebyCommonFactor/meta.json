@@ -11,7 +11,17 @@
   "solution": {
     "id": "629",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "MAiR5RjS": [
+      {
+        "code": "class Solution {\n    public int largestComponentSize(int[] A) {\n        int N = A.length;\n\n        // factored[i] = a list of unique prime factors of A[i]\n        ArrayList<Integer>[] factored = new ArrayList[N];\n        for (int i = 0; i < N; ++i) {\n            factored[i] = new ArrayList<Integer>();\n            int d = 2, x = A[i];\n            while (d * d <= x) {\n                if (x % d == 0) {\n                    while (x % d == 0)\n                        x /= d;\n                    factored[i].add(d);\n                }\n\n                d++;\n            }\n\n            if (x > 1 || factored[i].isEmpty())\n                factored[i].add(x);\n        }\n\n        // primesL : a list of all primes that occur in factored\n        Set<Integer> primes = new HashSet();\n        for (List<Integer> facs: factored)\n            for (int x: facs)\n                primes.add(x);\n\n        int[] primesL = new int[primes.size()];\n        int t = 0;\n        for (int x: primes)\n            primesL[t++] = x;\n\n        // primeToIndex.get(v) == i  iff  primes[i] = v\n        Map<Integer, Integer> primeToIndex = new HashMap();\n        for (int i = 0; i < primesL.length; ++i)\n            primeToIndex.put(primesL[i], i);\n\n        DSU dsu = new DSU(primesL.length);\n        for (List<Integer> facs: factored)\n            for (int x: facs)\n                dsu.union(primeToIndex.get(facs.get(0)), primeToIndex.get(x));\n\n        int[] count = new int[primesL.length];\n        for (List<Integer> facs: factored)\n            count[dsu.find(primeToIndex.get(facs.get(0)))]++;\n\n        int ans = 0;\n        for (int x: count)\n            if (x > ans)\n                ans = x;\n        return ans;\n    }\n}\n\nclass DSU {\n    int[] parent;\n    public DSU(int N) {\n        parent = new int[N];\n        for (int i = 0; i < N; ++i)\n            parent[i] = i;\n    }\n    public int find(int x) {\n        if (parent[x] != x) parent[x] = find(parent[x]);\n        return parent[x];\n    }\n    public void union(int x, int y) {\n        parent[find(x)] = find(y);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class DSU:\n    def __init__(self, N):\n        self.p = range(N)\n\n    def find(self, x):\n        if self.p[x] != x:\n            self.p[x] = self.find(self.p[x])\n        return self.p[x]\n\n    def union(self, x, y):\n        xr = self.find(x)\n        yr = self.find(y)\n        self.p[xr] = yr\n\nclass Solution(object):\n    def largestComponentSize(self, A):\n        B = []\n        for x in A:\n            facs = []\n            d = 2\n            while d * d <= x:\n                if x % d == 0:\n                    while x % d == 0:\n                        x /= d\n                    facs.append(d)\n                d += 1\n\n            if x > 1 or not facs:\n                facs.append(x)\n            B.append(facs)\n\n        primes = list({p for facs in B for p in facs})\n        prime_to_index = {p: i for i, p in enumerate(primes)}\n\n        dsu = DSU(len(primes))\n        for facs in B:\n            for x in facs:\n                dsu.union(prime_to_index[facs[0]], prime_to_index[x])\n\n        count = collections.Counter(dsu.find(prime_to_index[facs[0]]) for facs in B)\n        return max(count.values())",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math",

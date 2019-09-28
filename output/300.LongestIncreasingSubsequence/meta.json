@@ -11,7 +11,31 @@
   "solution": {
     "id": "82",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "UoMzWLi7": [
+      {
+        "code": "public class Solution {\n\n    public int lengthOfLIS(int[] nums) {\n        return lengthofLIS(nums, Integer.MIN_VALUE, 0);\n    }\n\n    public int lengthofLIS(int[] nums, int prev, int curpos) {\n        if (curpos == nums.length) {\n            return 0;\n        }\n        int taken = 0;\n        if (nums[curpos] > prev) {\n            taken = 1 + lengthofLIS(nums, nums[curpos], curpos + 1);\n        }\n        int nottaken = lengthofLIS(nums, prev, curpos + 1);\n        return Math.max(taken, nottaken);\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "GSwVQjkr": [
+      {
+        "code": "public class Solution {\n    public int lengthOfLIS(int[] nums) {\n        int memo[][] = new int[nums.length + 1][nums.length];\n        for (int[] l : memo) {\n            Arrays.fill(l, -1);\n        }\n        return lengthofLIS(nums, -1, 0, memo);\n    }\n    public int lengthofLIS(int[] nums, int previndex, int curpos, int[][] memo) {\n        if (curpos == nums.length) {\n            return 0;\n        }\n        if (memo[previndex + 1][curpos] >= 0) {\n            return memo[previndex + 1][curpos];\n        }\n        int taken = 0;\n        if (previndex < 0 || nums[curpos] > nums[previndex]) {\n            taken = 1 + lengthofLIS(nums, curpos, curpos + 1, memo);\n        }\n\n        int nottaken = lengthofLIS(nums, previndex, curpos + 1, memo);\n        memo[previndex + 1][curpos] = Math.max(taken, nottaken);\n        return memo[previndex + 1][curpos];\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "EVGvmMas": [
+      {
+        "code": "public class Solution {\n    public int lengthOfLIS(int[] nums) {\n        if (nums.length == 0) {\n            return 0;\n        }\n        int[] dp = new int[nums.length];\n        dp[0] = 1;\n        int maxans = 1;\n        for (int i = 1; i < dp.length; i++) {\n            int maxval = 0;\n            for (int j = 0; j < i; j++) {\n                if (nums[i] > nums[j]) {\n                    maxval = Math.max(maxval, dp[j]);\n                }\n            }\n            dp[i] = maxval + 1;\n            maxans = Math.max(maxans, dp[i]);\n        }\n        return maxans;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "Kbvq2W3R": [
+      {
+        "code": "public class Solution {\n    public int lengthOfLIS(int[] nums) {\n        int[] dp = new int[nums.length];\n        int len = 0;\n        for (int num : nums) {\n            int i = Arrays.binarySearch(dp, 0, len, num);\n            if (i < 0) {\n                i = -(i + 1);\n            }\n            dp[i] = num;\n            if (i == len) {\n                len++;\n            }\n        }\n        return len;\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Binary Search",

@@ -11,7 +11,37 @@
   "solution": {
     "id": "194",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "WaK47bnJ": [
+      {
+        "code": "int reversePairs(vector<int>& nums)\n{\n    int n = nums.size();\n    int count = 0;\n    for (int i = 0; i < n; i++) {\n        for (int j = 0; j < i; j++) {\n            if (nums[j] > nums[i] * 2LL)\n                count++;\n        }\n    }\n    return count;\n}",
+        "langSlug": "cpp"
+      }
+    ],
+    "dppX7gUQ": [
+      {
+        "code": "def reversePairs(self, nums):\n  return sum([nums[j] > 2 * nums[i] for i in range(len(nums)) for j in range(0 , i)])",
+        "langSlug": "python"
+      }
+    ],
+    "uFc7tCxm": [
+      {
+        "code": "class Node {\npublic:\n    Node *left, *right;\n    int val;\n    int count_ge;\n    Node(int val)\n    {\n        this->val = val;\n        this->count_ge = 1;\n        this->left = NULL;\n        this->right = NULL;\n    }\n};\n\nNode* insert(Node* head, int val)\n{\n    if (head == NULL)\n        return new Node(val);\n    else if (val == head->val)\n        head->count_ge++;\n    else if (val < head->val)\n        head->left = insert(head->left, val);\n    else {\n        head->count_ge++;\n        head->right = insert(head->right, val);\n    }\n    return head;\n}\n\nint search(Node* head, long long target)\n{\n    if (head == NULL)\n        return 0;\n    else if (target == head->val)\n        return head->count_ge;\n    else if (target < head->val)\n        return head->count_ge + search(head->left, target);\n    else\n        return search(head->right, target);\n}\n\nint reversePairs(vector<int>& nums)\n{\n    Node* head = NULL;\n    int n = nums.size();\n    int count = 0;\n    for (int i = 0; i < n; i++) {\n        count += search(head, nums[i] * 2LL + 1);\n        head = insert(head, nums[i]);\n    }\n    return count;\n}",
+        "langSlug": "cpp"
+      }
+    ],
+    "VGR92H8T": [
+      {
+        "code": "void update(vector<int>& BIT, int index, int val)\n{\n    while (index > 0) {\n        BIT[index] += val;\n        index -= index & (-index);\n    }\n}\n\nint query(vector<int>& BIT, int index)\n{\n    int sum = 0;\n    while (index < BIT.size()) {\n        sum += BIT[index];\n        index += index & (-index);\n    }\n    return sum;\n}\nint reversePairs(vector<int>& nums)\n{\n    int n = nums.size();\n    vector<int> nums_copy(nums);\n\n    sort(nums_copy.begin(), nums_copy.end());\n\n    vector<int> BITS(n + 1, 0);\n    int count = 0;\n    for (int i = 0; i < n; i++) {\n        count += query(BITS, lower_bound(nums_copy.begin(), nums_copy.end(), 2LL * nums[i] + 1) - nums_copy.begin() + 1);\n        update(BITS, lower_bound(nums_copy.begin(), nums_copy.end(), nums[i]) - nums_copy.begin() + 1, 1);\n    }\n    return count;\n}",
+        "langSlug": "cpp"
+      }
+    ],
+    "soSDw7xo": [
+      {
+        "code": "void merge(vector<int>& A, int start, int mid, int end)\n{\n    int n1 = (mid - start + 1);\n    int n2 = (end - mid);\n    int L[n1], R[n2];\n    for (int i = 0; i < n1; i++)\n        L[i] = A[start + i];\n    for (int j = 0; j < n2; j++)\n        R[j] = A[mid + 1 + j];\n    int i = 0, j = 0;\n    for (int k = start; k <= end; k++) {\n        if (j >= n2 || (i < n1 && L[i] <= R[j]))\n            A[k] = L[i++];\n        else\n            A[k] = R[j++];\n    }\n}\n\nint mergesort_and_count(vector<int>& A, int start, int end)\n{\n    if (start < end) {\n        int mid = (start + end) / 2;\n        int count = mergesort_and_count(A, start, mid) + mergesort_and_count(A, mid + 1, end);\n        int j = mid + 1;\n        for (int i = start; i <= mid; i++) {\n            while (j <= end && A[i] > A[j] * 2LL)\n                j++;\n            count += j - (mid + 1);\n        }\n        merge(A, start, mid, end);\n        return count;\n    }\n    else\n        return 0;\n}\n\nint reversePairs(vector<int>& nums)\n{\n    return mergesort_and_count(nums, 0, nums.size() - 1);\n}",
+        "langSlug": "cpp"
+      }
+    ]
   },
   "topicTags": [
     "Binary Search",

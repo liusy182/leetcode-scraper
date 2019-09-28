@@ -11,7 +11,27 @@
   "solution": {
     "id": "558",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "pvsyyXLb": [
+      {
+        "code": "class Solution {\n    public int totalFruit(int[] tree) {\n        // We'll make a list of indexes for which a block starts.\n        List<Integer> blockLefts = new ArrayList();\n\n        // Add the left boundary of each block\n        for (int i = 0; i < tree.length; ++i)\n            if (i == 0 || tree[i-1] != tree[i])\n                blockLefts.add(i);\n\n        // Add tree.length as a sentinel for convenience\n        blockLefts.add(tree.length);\n\n        int ans = 0, i = 0;\n        search: while (true) {\n            // We'll start our scan at block[i].\n            // types : the different values of tree[i] seen\n            // weight : the total number of trees represented\n            //          by blocks under consideration\n            Set<Integer> types = new HashSet();\n            int weight = 0;\n\n            // For each block from the i-th and going forward,\n            for (int j = i; j < blockLefts.size() - 1; ++j) {\n                // Add each block to consideration\n                types.add(tree[blockLefts.get(j)]);\n                weight += blockLefts.get(j+1) - blockLefts.get(j);\n\n                // If we have 3+ types, this is an illegal subarray\n                if (types.size() >= 3) {\n                    i = j - 1;\n                    continue search;\n                }\n\n                // If it is a legal subarray, record the answer\n                ans = Math.max(ans, weight);\n            }\n\n            break;\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def totalFruit(self, tree):\n        blocks = [(k, len(list(v)))\n                  for k, v in itertools.groupby(tree)]\n\n        ans = i = 0\n        while i < len(blocks):\n            # We'll start our scan at block[i].\n            # types : the different values of tree[i] seen\n            # weight : the total number of trees represented\n            #          by blocks under consideration\n            types, weight = set(), 0\n\n            # For each block from i and going forward,\n            for j in xrange(i, len(blocks)):\n                # Add each block to consideration\n                types.add(blocks[j][0])\n                weight += blocks[j][1]\n\n                # If we have 3 types, this is not a legal subarray\n                if len(types) >= 3:\n                    i = j-1\n                    break\n\n                ans = max(ans, weight)\n\n            # If we go to the last block, then stop\n            else:\n                break\n\n        return ans",
+        "langSlug": "python"
+      }
+    ],
+    "tZWTV9pU": [
+      {
+        "code": "class Solution {\n    public int totalFruit(int[] tree) {\n        int ans = 0, i = 0;\n        Counter count = new Counter();\n        for (int j = 0; j < tree.length; ++j) {\n            count.add(tree[j], 1);\n            while (count.size() >= 3) {\n                count.add(tree[i], -1);\n                if (count.get(tree[i]) == 0)\n                    count.remove(tree[i]);\n                i++;\n            }\n\n            ans = Math.max(ans, j - i + 1);\n        }\n\n        return ans;\n    }\n}\n\nclass Counter extends HashMap<Integer, Integer> {\n    public int get(int k) {\n        return containsKey(k) ? super.get(k) : 0;\n    }\n\n    public void add(int k, int v) {\n        put(k, get(k) + v);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def totalFruit(self, tree):\n        ans = i = 0\n        count = collections.Counter()\n        for j, x in enumerate(tree):\n            count[x] += 1\n            while len(count) >= 3:\n                count[tree[i]] -= 1\n                if count[tree[i]] == 0:\n                    del count[tree[i]]\n                i += 1\n            ans = max(ans, j - i + 1)\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Two Pointers"

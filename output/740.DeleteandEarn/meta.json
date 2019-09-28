@@ -13,7 +13,17 @@
   "solution": {
     "id": "314",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "TBKVkiLD": [
+      {
+        "code": "class Solution {\n    public int deleteAndEarn(int[] nums) {\n        int[] count = new int[10001];\n        for (int x: nums) count[x]++;\n        int avoid = 0, using = 0, prev = -1;\n\n        for (int k = 0; k <= 10000; ++k) if (count[k] > 0) {\n            int m = Math.max(avoid, using);\n            if (k - 1 != prev) {\n                using = k * count[k] + m;\n                avoid = m;\n            } else {\n                using = k * count[k] + avoid;\n                avoid = m;\n            }\n            prev = k;\n        }\n        return Math.max(avoid, using);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def deleteAndEarn(self, nums):\n        count = collections.Counter(nums)\n        prev = None\n        avoid = using = 0\n        for k in sorted(count):\n            if k - 1 != prev:\n                avoid, using = max(avoid, using), k * count[k] + max(avoid, using)\n            else:\n                avoid, using = max(avoid, using), k * count[k] + avoid\n            prev = k\n        return max(avoid, using)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming"

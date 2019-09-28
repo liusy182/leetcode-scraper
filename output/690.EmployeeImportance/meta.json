@@ -11,7 +11,17 @@
   "solution": {
     "id": "303",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "NX7sm9qW": [
+      {
+        "code": "class Solution {\n    Map<Integer, Employee> emap;\n    public int getImportance(List<Employee> employees, int queryid) {\n        emap = new HashMap();\n        for (Employee e: employees) emap.put(e.id, e);\n        return dfs(queryid);\n    }\n    public int dfs(int eid) {\n        Employee employee = emap.get(eid);\n        int ans = employee.importance;\n        for (Integer subid: employee.subordinates)\n            ans += dfs(subid);\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def getImportance(self, employees, query_id):\n        emap = {e.id: e for e in employees}\n        def dfs(eid):\n            employee = emap[eid]\n            return (employee.importance +\n                    sum(dfs(eid) for eid in employee.subordinates))\n        return dfs(query_id)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table",

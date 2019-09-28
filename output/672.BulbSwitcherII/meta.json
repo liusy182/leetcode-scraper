@@ -11,7 +11,27 @@
   "solution": {
     "id": "302",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "pHeNoQ3Q": [
+      {
+        "code": "class Solution {\n    public int flipLights(int n, int m) {\n        Set<Integer> seen = new HashSet();\n        n = Math.min(n, 6);\n        int shift = Math.max(0, 6-n);\n        for (int cand = 0; cand < 16; ++cand) {\n            int bcount = Integer.bitCount(cand);\n            if (bcount % 2 == m % 2 && bcount <= m) {\n                int lights = 0;\n                if (((cand >> 0) & 1) > 0) lights ^= 0b111111 >> shift;\n                if (((cand >> 1) & 1) > 0) lights ^= 0b010101 >> shift;\n                if (((cand >> 2) & 1) > 0) lights ^= 0b101010 >> shift;\n                if (((cand >> 3) & 1) > 0) lights ^= 0b100100 >> shift;\n                seen.add(lights);\n            }\n        }\n        return seen.size();\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "def flipLights(self, n, m):\n    seen = set()\n    for cand in itertools.product((0, 1), repeat = 4):\n        if sum(cand) % 2 == m % 2 and sum(cand) <= m:\n            A = []\n            for i in xrange(min(n, 3)):\n                light = 1\n                light ^= cand[0]\n                light ^= cand[1] and i % 2\n                light ^= cand[2] and i % 2 == 0\n                light ^= cand[3] and i % 3 == 0\n                A.append(light)\n            seen.add(tuple(A))\n\n    return len(seen)",
+        "langSlug": "python"
+      }
+    ],
+    "yn2rvFzw": [
+      {
+        "code": "class Solution {\n    public int flipLights(int n, int m) {\n        n = Math.min(n, 3);\n        if (m == 0) return 1;\n        if (m == 1) return n == 1 ? 2 : n == 2 ? 3 : 4;\n        if (m == 2) return n == 1 ? 2 : n == 2 ? 4 : 7;\n        return n == 1 ? 2 : n == 2 ? 4 : 8;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def flipLights(self, n, m):\n        n = min(n, 3)\n        if m == 0: return 1\n        if m == 1: return [2, 3, 4][n-1]\n        if m == 2: return [2, 4, 7][n-1]\n        return [2, 4, 8][n-1]",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math"

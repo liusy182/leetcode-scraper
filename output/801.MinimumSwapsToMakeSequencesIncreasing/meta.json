@@ -11,7 +11,17 @@
   "solution": {
     "id": "435",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "KT3yuKkz": [
+      {
+        "code": "class Solution {\n    public int minSwap(int[] A, int[] B) {\n        // n: natural, s: swapped\n        int n1 = 0, s1 = 1;\n        for (int i = 1; i < A.length; ++i) {\n            int n2 = Integer.MAX_VALUE, s2 = Integer.MAX_VALUE;\n            if (A[i-1] < A[i] && B[i-1] < B[i]) {\n                n2 = Math.min(n2, n1);\n                s2 = Math.min(s2, s1 + 1);\n            }\n            if (A[i-1] < B[i] && B[i-1] < A[i]) {\n                n2 = Math.min(n2, s1);\n                s2 = Math.min(s2, n1 + 1);\n            }\n            n1 = n2;\n            s1 = s2;\n        }\n        return Math.min(n1, s1);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def minSwap(self, A, B):\n        n1, s1 = 0, 1\n        for i in xrange(1, len(A)):\n            n2 = s2 = float(\"inf\")\n            if A[i-1] < A[i] and B[i-1] < B[i]:\n                n2 = min(n2, n1)\n                s2 = min(s2, s1 + 1)\n            if A[i-1] < B[i] and B[i-1] < A[i]:\n                n2 = min(n2, s1)\n                s2 = min(s2, n1 + 1)\n\n            n1, s1 = n2, s2\n\n        return min(n1, s1)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming"

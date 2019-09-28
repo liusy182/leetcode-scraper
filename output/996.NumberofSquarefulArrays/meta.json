@@ -11,7 +11,27 @@
   "solution": {
     "id": "698",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "bQrNAHHo": [
+      {
+        "code": "class Solution {\n    Map<Integer, Integer> count;\n    Map<Integer, List<Integer>> graph;\n    public int numSquarefulPerms(int[] A) {\n        int N = A.length;\n        count = new HashMap();\n        graph = new HashMap();\n\n        // count.get(v) : number of v's in A\n        for (int x: A)\n            count.put(x, count.getOrDefault(x, 0) + 1);\n\n        // graph.get(v) : values w in A for which v + w is a square\n        //                (ie., \"vw\" is an edge)\n        for (int x: count.keySet())\n            graph.put(x, new ArrayList());\n\n        for (int x: count.keySet())\n            for (int y: count.keySet()) {\n                int r = (int) (Math.sqrt(x + y) + 0.5);\n                if (r * r == x + y)\n                    graph.get(x).add(y);\n            }\n\n        // Add the number of paths that start at x, for all possible x\n        int ans = 0;\n        for (int x: count.keySet())\n            ans += dfs(x, N - 1);\n        return ans;\n    }\n\n    public int dfs(int x, int todo) {\n        count.put(x, count.get(x) - 1);\n        int ans = 1;  // default if todo == 0\n        if (todo != 0) {\n            ans = 0;\n            for (int y: graph.get(x)) if (count.get(y) != 0) {\n                ans += dfs(y, todo - 1);\n            }\n        }\n        count.put(x, count.get(x) + 1);\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def numSquarefulPerms(self, A):\n        N = len(A)\n        count = collections.Counter(A)\n\n        graph = {x: [] for x in count}\n        for x in count:\n            for y in count:\n                if int((x+y)**.5 + 0.5) ** 2 == x+y:\n                    graph[x].append(y)\n\n        def dfs(x, todo):\n            count[x] -= 1\n            if todo == 0:\n                ans = 1\n            else:\n                ans = 0\n                for y in graph[x]:\n                    if count[y]:\n                        ans += dfs(y, todo - 1)\n            count[x] += 1\n            return ans\n\n        return sum(dfs(x, len(A) - 1) for x in count)",
+        "langSlug": "python"
+      }
+    ],
+    "odBEReYN": [
+      {
+        "code": "class Solution {\n    int N;\n    Map<Integer, List<Integer>> graph;\n    Integer[][] memo;\n\n    public int numSquarefulPerms(int[] A) {\n        N = A.length;\n        graph = new HashMap();\n        memo = new Integer[N][1 << N];\n\n        for (int i = 0; i < N; ++i)\n            graph.put(i, new ArrayList());\n\n        for (int i = 0; i < N; ++i)\n            for (int j = i+1; j < N; ++j) {\n                int r = (int) (Math.sqrt(A[i] + A[j]) + 0.5);\n                if (r * r == A[i] + A[j]) {\n                    graph.get(i).add(j);\n                    graph.get(j).add(i);\n                }\n            }\n\n\n        int[] factorial = new int[20];\n        factorial[0] = 1;\n        for (int i = 1; i < 20; ++i)\n            factorial[i] = i * factorial[i-1];\n\n        int ans = 0;\n        for (int i = 0; i < N; ++i)\n            ans += dfs(i, 1 << i);\n\n        Map<Integer, Integer> count = new HashMap();\n        for (int x: A)\n            count.put(x, count.getOrDefault(x, 0) + 1);\n        for (int v: count.values())\n            ans /= factorial[v];\n\n        return ans;\n    }\n\n    public int dfs(int node, int visited) {\n        if (visited == (1 << N) - 1)\n            return 1;\n        if (memo[node][visited] != null)\n            return memo[node][visited];\n\n        int ans = 0;\n        for (int nei: graph.get(node))\n            if (((visited >> nei) & 1) == 0)\n                ans += dfs(nei, visited | (1 << nei));\n        memo[node][visited] = ans;\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "from functools import lru_cache\n\nclass Solution:\n    def numSquarefulPerms(self, A):\n        N = len(A)\n\n        def edge(x, y):\n            r = math.sqrt(x+y)\n            return int(r + 0.5) ** 2 == x+y\n\n        graph = [[] for _ in range(len(A))]\n        for i, x in enumerate(A):\n            for j in range(i):\n                if edge(x, A[j]):\n                    graph[i].append(j)\n                    graph[j].append(i)\n\n        # find num of hamiltonian paths in graph\n\n        @lru_cache(None)\n        def dfs(node, visited):\n            if visited == (1 << N) - 1:\n                return 1\n\n            ans = 0\n            for nei in graph[node]:\n                if (visited >> nei) & 1 == 0:\n                    ans += dfs(nei, visited | (1 << nei))\n            return ans\n\n        ans = sum(dfs(i, 1<<i) for i in range(N))\n        count = collections.Counter(A)\n        for v in count.values():\n            ans //= math.factorial(v)\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math",

@@ -11,7 +11,17 @@
   "solution": {
     "id": "444",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "fji6uJ5m": [
+      {
+        "code": "import java.awt.Point;\n\nclass Solution {\n    public int numBusesToDestination(int[][] routes, int S, int T) {\n        if (S==T) return 0;\n        int N = routes.length;\n\n        List<List<Integer>> graph = new ArrayList();\n        for (int i = 0; i < N; ++i) {\n            Arrays.sort(routes[i]);\n            graph.add(new ArrayList());\n        }\n        Set<Integer> seen = new HashSet();\n        Set<Integer> targets = new HashSet();\n        Queue<Point> queue = new ArrayDeque();\n\n        // Build the graph.  Two buses are connected if\n        // they share at least one bus stop.\n        for (int i = 0; i < N; ++i)\n            for (int j = i+1; j < N; ++j)\n                if (intersect(routes[i], routes[j])) {\n                    graph.get(i).add(j);\n                    graph.get(j).add(i);\n                }\n\n        // Initialize seen, queue, targets.\n        // seen represents whether a node has ever been enqueued to queue.\n        // queue handles our breadth first search.\n        // targets is the set of goal states we have.\n        for (int i = 0; i < N; ++i) {\n            if (Arrays.binarySearch(routes[i], S) >= 0) {\n                seen.add(i);\n                queue.offer(new Point(i, 0));\n            }\n            if (Arrays.binarySearch(routes[i], T) >= 0)\n                targets.add(i);\n        }\n\n        while (!queue.isEmpty()) {\n            Point info = queue.poll();\n            int node = info.x, depth = info.y;\n            if (targets.contains(node)) return depth+1;\n            for (Integer nei: graph.get(node)) {\n                if (!seen.contains(nei)) {\n                    seen.add(nei);\n                    queue.offer(new Point(nei, depth+1));\n                }\n            }\n        }\n\n        return -1;\n    }\n\n    public boolean intersect(int[] A, int[] B) {\n        int i = 0, j = 0;\n        while (i < A.length && j < B.length) {\n            if (A[i] == B[j]) return true;\n            if (A[i] < B[j]) i++; else j++;\n        }\n        return false;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def numBusesToDestination(self, routes, S, T):\n        if S == T: return 0\n        routes = map(set, routes)\n        graph = collections.defaultdict(set)\n        for i, r1 in enumerate(routes):\n            for j in xrange(i+1, len(routes)):\n                r2 = routes[j]\n                if any(r in r2 for r in r1):\n                    graph[i].add(j)\n                    graph[j].add(i)\n\n        seen, targets = set(), set()\n        for node, route in enumerate(routes):\n            if S in route: seen.add(node)\n            if T in route: targets.add(node)\n\n        queue = [(node, 1) for node in seen]\n        for node, depth in queue:\n            if node in targets: return depth\n            for nei in graph[node]:\n                if nei not in seen:\n                    seen.add(nei)\n                    queue.append((nei, depth+1))\n        return -1",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Breadth-first Search"

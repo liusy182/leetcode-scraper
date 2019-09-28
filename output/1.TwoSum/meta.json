@@ -11,7 +11,25 @@
   "solution": {
     "id": "7",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "CLZq9vzU": [
+      {
+        "code": "public int[] twoSum(int[] nums, int target) {\n    for (int i = 0; i < nums.length; i++) {\n        for (int j = i + 1; j < nums.length; j++) {\n            if (nums[j] == target - nums[i]) {\n                return new int[] { i, j };\n            }\n        }\n    }\n    throw new IllegalArgumentException(\"No two sum solution\");\n}",
+        "langSlug": "java"
+      }
+    ],
+    "QhqBrfm7": [
+      {
+        "code": "public int[] twoSum(int[] nums, int target) {\n    Map<Integer, Integer> map = new HashMap<>();\n    for (int i = 0; i < nums.length; i++) {\n        map.put(nums[i], i);\n    }\n    for (int i = 0; i < nums.length; i++) {\n        int complement = target - nums[i];\n        if (map.containsKey(complement) && map.get(complement) != i) {\n            return new int[] { i, map.get(complement) };\n        }\n    }\n    throw new IllegalArgumentException(\"No two sum solution\");\n}",
+        "langSlug": "java"
+      }
+    ],
+    "fbBQEjxv": [
+      {
+        "code": "public int[] twoSum(int[] nums, int target) {\n    Map<Integer, Integer> map = new HashMap<>();\n    for (int i = 0; i < nums.length; i++) {\n        int complement = target - nums[i];\n        if (map.containsKey(complement)) {\n            return new int[] { map.get(complement), i };\n        }\n        map.put(nums[i], i);\n    }\n    throw new IllegalArgumentException(\"No two sum solution\");\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Array",

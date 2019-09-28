@@ -11,7 +11,17 @@
   "solution": {
     "id": "483",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "uMRUYCdD": [
+      {
+        "code": "class Solution {\n    ArrayList<Integer>[] graph;\n    int[] answer;\n    int[] quiet;\n\n    public int[] loudAndRich(int[][] richer, int[] quiet) {\n        int N = quiet.length;\n        graph = new ArrayList[N];\n        answer = new int[N];\n        this.quiet = quiet;\n\n        for (int node = 0; node < N; ++node)\n            graph[node] = new ArrayList<Integer>();\n\n        for (int[] edge: richer)\n            graph[edge[1]].add(edge[0]);\n\n        Arrays.fill(answer, -1);\n\n        for (int node = 0; node < N; ++node)\n            dfs(node);\n        return answer;\n    }\n\n    public int dfs(int node) {\n        if (answer[node] == -1) {\n            answer[node] = node;\n            for (int child: graph[node]) {\n                int cand = dfs(child);\n                if (quiet[cand] < quiet[answer[node]])\n                    answer[node] = cand;\n            }\n        }\n        return answer[node];\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def loudAndRich(self, richer, quiet):\n        N = len(quiet)\n        graph = [[] for _ in xrange(N)]\n        for u, v in richer:\n            graph[v].append(u)\n\n        answer = [None] * N\n        def dfs(node):\n            #Want least quiet person in this subtree\n            if answer[node] is None:\n                answer[node] = node\n                for child in graph[node]:\n                    cand = dfs(child)\n                    if quiet[cand] < quiet[answer[node]]:\n                        answer[node] = cand\n            return answer[node]\n\n        return map(dfs, range(N))",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Depth-first Search"

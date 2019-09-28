@@ -15,7 +15,17 @@
   "solution": {
     "id": "570",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "UfER2d7C": [
+      {
+        "code": "class Solution {\n\n  // Hash table that takes care of the mappings.\n  private HashMap<Character, Character> mappings;\n\n  // Initialize hash map with mappings. This simply makes the code easier to read.\n  public Solution() {\n    this.mappings = new HashMap<Character, Character>();\n    this.mappings.put(')', '(');\n    this.mappings.put('}', '{');\n    this.mappings.put(']', '[');\n  }\n\n  public boolean isValid(String s) {\n\n    // Initialize a stack to be used in the algorithm.\n    Stack<Character> stack = new Stack<Character>();\n\n    for (int i = 0; i < s.length(); i++) {\n      char c = s.charAt(i);\n\n      // If the current character is a closing bracket.\n      if (this.mappings.containsKey(c)) {\n\n        // Get the top element of the stack. If the stack is empty, set a dummy value of '#'\n        char topElement = stack.empty() ? '#' : stack.pop();\n\n        // If the mapping for this bracket doesn't match the stack's top element, return false.\n        if (topElement != this.mappings.get(c)) {\n          return false;\n        }\n      } else {\n        // If it was an opening bracket, push to the stack.\n        stack.push(c);\n      }\n    }\n\n    // If the stack still contains elements, then it is an invalid expression.\n    return stack.isEmpty();\n  }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def isValid(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: bool\n        \"\"\"\n\n        # The stack to keep track of opening brackets.\n        stack = []\n\n        # Hash map for keeping track of mappings. This keeps the code very clean.\n        # Also makes adding more types of parenthesis easier\n        mapping = {\")\": \"(\", \"}\": \"{\", \"]\": \"[\"}\n\n        # For every bracket in the expression.\n        for char in s:\n\n            # If the character is an closing bracket\n            if char in mapping:\n\n                # Pop the topmost element from the stack, if it is non empty\n                # Otherwise assign a dummy value of '#' to the top_element variable\n                top_element = stack.pop() if stack else '#'\n\n                # The mapping for the opening bracket in our hash and the top\n                # element of the stack don't match, return False\n                if mapping[char] != top_element:\n                    return False\n            else:\n                # We have an opening bracket, simply push it onto the stack.\n                stack.append(char)\n\n        # In the end, if the stack is empty, then we have a valid expression.\n        # The stack won't be empty for cases like ((()\n        return not stack",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "String",

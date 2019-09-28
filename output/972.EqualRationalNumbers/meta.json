@@ -11,7 +11,17 @@
   "solution": {
     "id": "656",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "hvAK7yRs": [
+      {
+        "code": "class Solution {\n    public boolean isRationalEqual(String S, String T) {\n        Fraction f1 = convert(S);\n        Fraction f2 = convert(T);\n        return f1.n == f2.n && f1.d == f2.d;\n    }\n\n    public Fraction convert(String S) {\n        int state = 0; //whole, decimal, repeating\n        Fraction ans = new Fraction(0, 1);\n        int decimal_size = 0;\n\n        for (String part: S.split(\"[.()]\")) {\n            state++;\n            if (part.isEmpty()) continue;\n            long x = Long.valueOf(part);\n            int sz = part.length();\n\n            if (state == 1) { // whole\n                 ans.iadd(new Fraction(x, 1));\n            } else if (state == 2) { // decimal\n                 ans.iadd(new Fraction(x, (long) Math.pow(10, sz)));\n                 decimal_size = sz;\n            } else { // repeating\n                 long denom = (long) Math.pow(10, decimal_size);\n                 denom *= (long) (Math.pow(10, sz) - 1);\n                 ans.iadd(new Fraction(x, denom));\n            }\n        }\n        return ans;\n    }\n}\n\nclass Fraction {\n    long n, d;\n    Fraction(long n, long d) {\n        long g = gcd(n, d);\n        this.n = n / g;\n        this.d = d / g;\n    }\n\n    public void iadd(Fraction other) {\n        long numerator = this.n * other.d + this.d * other.n;\n        long denominator = this.d * other.d;\n        long g = Fraction.gcd(numerator, denominator);\n        this.n = numerator / g;\n        this.d = denominator / g;\n    }\n\n    static long gcd(long x, long y) {\n        return x != 0 ? gcd(y % x, x) : y;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "from fractions import Fraction\n\nclass Solution(object):\n    def isRationalEqual(self, S, T):\n        def convert(S):\n            if '.' not in S:\n                return Fraction(int(S), 1)\n            i = S.index('.')\n            ans = Fraction(int(S[:i]), 1)\n            S = S[i+1:]\n            if '(' not in S:\n                if S:\n                    ans += Fraction(int(S), 10 ** len(S))\n                return ans\n\n            i = S.index('(')\n            if i:\n                ans += Fraction(int(S[:i]), 10 ** i)\n            S = S[i+1:-1]\n            j = len(S)\n            ans += Fraction(int(S), 10**i * (10**j - 1))\n            return ans\n\n        return convert(S) == convert(T)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math"

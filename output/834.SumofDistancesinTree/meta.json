@@ -11,7 +11,17 @@
   "solution": {
     "id": "465",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "u5mhW6AL": [
+      {
+        "code": "class Solution {\n    int[] ans, count;\n    List<Set<Integer>> graph;\n    int N;\n    public int[] sumOfDistancesInTree(int N, int[][] edges) {\n        this.N = N;\n        graph = new ArrayList<Set<Integer>>();\n        ans = new int[N];\n        count = new int[N];\n        Arrays.fill(count, 1);\n\n        for (int i = 0; i < N; ++i)\n            graph.add(new HashSet<Integer>());\n        for (int[] edge: edges) {\n            graph.get(edge[0]).add(edge[1]);\n            graph.get(edge[1]).add(edge[0]);\n        }\n        dfs(0, -1);\n        dfs2(0, -1);\n        return ans;\n    }\n\n    public void dfs(int node, int parent) {\n        for (int child: graph.get(node))\n            if (child != parent) {\n                dfs(child, node);\n                count[node] += count[child];\n                ans[node] += ans[child] + count[child];\n            }\n    }\n\n    public void dfs2(int node, int parent) {\n        for (int child: graph.get(node))\n            if (child != parent) {\n                ans[child] = ans[node] - count[child] + N - count[child];\n                dfs2(child, node);\n            }\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def sumOfDistancesInTree(self, N, edges):\n        graph = collections.defaultdict(set)\n        for u, v in edges:\n            graph[u].add(v)\n            graph[v].add(u)\n\n        count = [1] * N\n        ans = [0] * N\n        def dfs(node = 0, parent = None):\n            for child in graph[node]:\n                if child != parent:\n                    dfs(child, node)\n                    count[node] += count[child]\n                    ans[node] += ans[child] + count[child]\n\n        def dfs2(node = 0, parent = None):\n            for child in graph[node]:\n                if child != parent:\n                    ans[child] = ans[node] - count[child] + N - count[child]\n                    dfs2(child, node)\n\n        dfs()\n        dfs2()\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree",

@@ -11,7 +11,17 @@
   "solution": {
     "id": "695",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "2M2DeUvF": [
+      {
+        "code": "class Solution {\n    Map<Integer, Integer> depth;\n    Map<Integer, TreeNode> parent;\n\n    public boolean isCousins(TreeNode root, int x, int y) {\n        depth = new HashMap();\n        parent = new HashMap();\n        dfs(root, null);\n        return (depth.get(x) == depth.get(y) && parent.get(x) != parent.get(y));\n    }\n\n    public void dfs(TreeNode node, TreeNode par) {\n        if (node != null) {\n            depth.put(node.val, par != null ? 1 + depth.get(par.val) : 0);\n            parent.put(node.val, par);\n            dfs(node.left, node);\n            dfs(node.right, node);\n        }\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def isCousins(self, root, x, y):\n        parent = {}\n        depth = {}\n        def dfs(node, par = None):\n            if node:\n                depth[node.val] = 1 + depth[par.val] if par else 0\n                parent[node.val] = par\n                dfs(node.left, node)\n                dfs(node.right, node)\n\n        dfs(root)\n        return depth[x] == depth[y] and parent[x] != parent[y]",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree",

@@ -13,7 +13,17 @@
   "solution": {
     "id": "309",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "CyN24YU5": [
+      {
+        "code": "class Solution {\n    public int[] asteroidCollision(int[] asteroids) {\n        Stack<Integer> stack = new Stack();\n        for (int ast: asteroids) {\n            collision: {\n                while (!stack.isEmpty() && ast < 0 && 0 < stack.peek()) {\n                    if (stack.peek() < -ast) {\n                        stack.pop();\n                        continue;\n                    } else if (stack.peek() == -ast) {\n                        stack.pop();\n                    }\n                    break collision;\n                }\n                stack.push(ast);\n            }\n        }\n\n        int[] ans = new int[stack.size()];\n        for (int t = ans.length - 1; t >= 0; --t) {\n            ans[t] = stack.pop();\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def asteroidCollision(self, asteroids):\n        ans = []\n        for new in asteroids:\n            while ans and new < 0 < ans[-1]:\n                if ans[-1] < -new:\n                    ans.pop()\n                    continue\n                elif ans[-1] == -new:\n                    ans.pop()\n                break\n            else:\n                ans.append(new)\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Stack"

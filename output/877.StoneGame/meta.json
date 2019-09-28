@@ -11,7 +11,43 @@
   "solution": {
     "id": "521",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "4azVgCpr": [
+      {
+        "code": "class Solution {\npublic:\n    bool stoneGame(vector<int>& piles) {\n        int N = piles.size();\n\n        // dp[i+1][j+1] = the value of the game [piles[i], ..., piles[j]]\n        int dp[N+2][N+2];\n        memset(dp, 0, sizeof(dp));\n\n        for (int size = 1; size <= N; ++size)\n            for (int i = 0, j = size - 1; j < N; ++i, ++j) {\n                int parity = (j + i + N) % 2;  // j - i - N; but +x = -x (mod 2)\n                if (parity == 1)\n                    dp[i+1][j+1] = max(piles[i] + dp[i+2][j+1], piles[j] + dp[i+1][j]);\n                else\n                    dp[i+1][j+1] = min(-piles[i] + dp[i+2][j+1], -piles[j] + dp[i+1][j]);\n            }\n\n        return dp[1][N] > 0;\n    }\n};",
+        "langSlug": "cpp"
+      },
+      {
+        "code": "class Solution {\n    public boolean stoneGame(int[] piles) {\n        int N = piles.length;\n\n        // dp[i+1][j+1] = the value of the game [piles[i], ..., piles[j]].\n        int[][] dp = new int[N+2][N+2];\n        for (int size = 1; size <= N; ++size)\n            for (int i = 0; i + size <= N; ++i) {\n                int j = i + size - 1;\n                int parity = (j + i + N) % 2;  // j - i - N; but +x = -x (mod 2)\n                if (parity == 1)\n                    dp[i+1][j+1] = Math.max(piles[i] + dp[i+2][j+1], piles[j] + dp[i+1][j]);\n                else\n                    dp[i+1][j+1] = Math.min(-piles[i] + dp[i+2][j+1], -piles[j] + dp[i+1][j]);\n            }\n\n        return dp[1][N] > 0;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "var stoneGame = function(piles) {\n    const N = piles.length;\n    // Make a (N+2) by (N+2) array, initialized with 0s.\n    const dp = Array(N + 2).fill(0).map(() => Array(N + 2).fill(0));\n\n    // dp[i+1][j+1] = the value of the game [piles[i], ..., piles[j]]\n    for (let size = 1; size <= N; ++size)\n        for (let i = 0, j = size - 1; j < N; ++i, ++j) {\n            let parity = (j + i + N) % 2;  // j - i - N; but +x = -x (mod 2)\n            if (parity == 1)\n                dp[i+1][j+1] = Math.max(piles[i] + dp[i+2][j+1], piles[j] + dp[i+1][j]);\n            else\n                dp[i+1][j+1] = Math.min(-piles[i] + dp[i+2][j+1], -piles[j] + dp[i+1][j]);\n        }\n\n    return dp[1][N] > 0;\n};",
+        "langSlug": "javascript"
+      },
+      {
+        "code": "from functools import lru_cache\n\nclass Solution:\n    def stoneGame(self, piles):\n        N = len(piles)\n\n        @lru_cache(None)\n        def dp(i, j):\n            # The value of the game [piles[i], piles[i+1], ..., piles[j]].\n            if i > j: return 0\n            parity = (j - i - N) % 2\n            if parity == 1:  # first player\n                return max(piles[i] + dp(i+1,j), piles[j] + dp(i,j-1))\n            else:\n                return min(-piles[i] + dp(i+1,j), -piles[j] + dp(i,j-1))\n\n        return dp(0, N - 1) > 0",
+        "langSlug": "python3"
+      }
+    ],
+    "TdjR4pTJ": [
+      {
+        "code": "class Solution {\npublic:\n    bool stoneGame(vector<int>& piles) {\n        return true;\n    }\n};",
+        "langSlug": "cpp"
+      },
+      {
+        "code": "class Solution {\n    public boolean stoneGame(int[] piles) {\n        return true;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def stoneGame(self, piles):\n        return True",
+        "langSlug": "python"
+      },
+      {
+        "code": "var stoneGame = function(piles) {\n    return true;\n};",
+        "langSlug": "javascript"
+      }
+    ]
   },
   "topicTags": [
     "Math",

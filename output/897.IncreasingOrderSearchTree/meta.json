@@ -11,7 +11,27 @@
   "solution": {
     "id": "547",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "RonWhYrN": [
+      {
+        "code": "class Solution {    \n    public TreeNode increasingBST(TreeNode root) {\n        List<Integer> vals = new ArrayList();\n        inorder(root, vals);\n        TreeNode ans = new TreeNode(0), cur = ans;\n        for (int v: vals) {\n            cur.right = new TreeNode(v);\n            cur = cur.right;\n        }\n        return ans.right;\n    }\n\n    public void inorder(TreeNode node, List<Integer> vals) {\n        if (node == null) return;\n        inorder(node.left, vals);\n        vals.add(node.val);\n        inorder(node.right, vals);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def increasingBST(self, root):\n        def inorder(node):\n            if node:\n                yield from inorder(node.left)\n                yield node.val\n                yield from inorder(node.right)\n\n        ans = cur = TreeNode(None)\n        for v in inorder(root):\n            cur.right = TreeNode(v)\n            cur = cur.right\n        return ans.right",
+        "langSlug": "python3"
+      }
+    ],
+    "5M7CYgmK": [
+      {
+        "code": "class Solution {\n    TreeNode cur;\n    public TreeNode increasingBST(TreeNode root) {\n        TreeNode ans = new TreeNode(0);\n        cur = ans;\n        inorder(root);\n        return ans.right;\n    }\n\n    public void inorder(TreeNode node) {\n        if (node == null) return;\n        inorder(node.left);\n        node.left = null;\n        cur.right = node;\n        cur = node;\n        inorder(node.right);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def increasingBST(self, root):\n        def inorder(node):\n            if node:\n                inorder(node.left)\n                node.left = None\n                self.cur.right = node\n                self.cur = node\n                inorder(node.right)\n\n        ans = self.cur = TreeNode(None)\n        inorder(root)\n        return ans.right",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree",

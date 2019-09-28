@@ -11,7 +11,27 @@
   "solution": {
     "id": "244",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "rVYM4qCQ": [
+      {
+        "code": "class Solution {\n    public void dfs(TreeNode root, Set<Integer> uniques) {\n        if (root != null) {\n            uniques.add(root.val);\n            dfs(root.left, uniques);\n            dfs(root.right, uniques);\n        }\n    }\n    public int findSecondMinimumValue(TreeNode root) {\n        Set<Integer> uniques = new HashSet<Integer>();\n        dfs(root, uniques);\n\n        int min1 = root.val;\n        long ans = Long.MAX_VALUE;\n        for (int v : uniques) {\n            if (min1 < v && v < ans) ans = v;\n        }\n        return ans < Long.MAX_VALUE ? (int) ans : -1;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def findSecondMinimumValue(self, root):\n        def dfs(node):\n            if node:\n                uniques.add(node.val)\n                dfs(node.left)\n                dfs(node.right)\n\n        uniques = set()\n        dfs(root)\n\n        min1, ans = root.val, float('inf')\n        for v in uniques:\n            if min1 < v < ans:\n                ans = v\n\n        return ans if ans < float('inf') else -1",
+        "langSlug": "python"
+      }
+    ],
+    "btTLPkjK": [
+      {
+        "code": "class Solution {\n    int min1;\n    long ans = Long.MAX_VALUE;\n\n    public void dfs(TreeNode root) {\n        if (root != null) {\n            if (min1 < root.val && root.val < ans) {\n                ans = root.val;\n            } else if (min1 == root.val) {\n                dfs(root.left);\n                dfs(root.right);\n            }\n        }\n    }\n    public int findSecondMinimumValue(TreeNode root) {\n        min1 = root.val;\n        dfs(root);\n        return ans < Long.MAX_VALUE ? (int) ans : -1;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "def findSecondMinimumValue(self, root):\n    self.ans = float('inf')\n    min1 = root.val\n\n    def dfs(node):\n        if node:\n            if min1 < node.val < self.ans:\n                self.ans = node.val\n            elif node.val == min1:\n                dfs(node.left)\n                dfs(node.right)\n\n    dfs(root)\n    return self.ans if self.ans < float('inf') else -1",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree"

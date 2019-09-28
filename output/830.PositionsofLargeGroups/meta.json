@@ -11,7 +11,17 @@
   "solution": {
     "id": "463",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "m9hgNCUd": [
+      {
+        "code": "class Solution {\n    public List<List<Integer>> largeGroupPositions(String S) {\n        List<List<Integer>> ans = new ArrayList();\n        int i = 0, N = S.length(); // i is the start of each group\n        for (int j = 0; j < N; ++j) {\n            if (j == N-1 || S.charAt(j) != S.charAt(j+1)) {\n                // Here, [i, j] represents a group.\n                if (j-i+1 >= 3)\n                    ans.add(Arrays.asList(new Integer[]{i, j}));\n                i = j + 1;\n            }\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def largeGroupPositions(self, S):\n        ans = []\n        i = 0 # The start of each group\n        for j in xrange(len(S)):\n            if j == len(S) - 1 or S[j] != S[j+1]:\n                # Here, [i, j] represents a group.\n                if j-i+1 >= 3:\n                    ans.append([i, j])\n                i = j+1\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array"

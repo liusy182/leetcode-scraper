@@ -11,7 +11,27 @@
   "solution": {
     "id": "635",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "w65ZpeRa": [
+      {
+        "code": "class Solution {\n    int NINF = Integer.MIN_VALUE / 3;\n    Integer[][] memo;\n    public int tallestBillboard(int[] rods) {\n        int N = rods.length;\n        // \"memo[n][x]\" will be stored at memo[n][5000+x]\n        // Using Integer for default value null\n        memo = new Integer[N][10001];\n        return (int) dp(rods, 0, 5000);\n    }\n\n    public int dp(int[] rods, int i, int s) {\n        if (i == rods.length) {\n            return s == 5000 ? 0 : NINF;\n        } else if (memo[i][s] != null) {\n            return memo[i][s];\n        } else {\n            int ans = dp(rods, i+1, s);\n            ans = Math.max(ans, dp(rods, i+1, s-rods[i]));\n            ans = Math.max(ans, rods[i] + dp(rods, i+1, s+rods[i]));\n            memo[i][s] = ans;\n            return ans;\n        }\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "from functools import lru_cache\nclass Solution:\n    def tallestBillboard(self, rods):\n        @lru_cache(None)\n        def dp(i, s):\n            if i == len(rods):\n                return 0 if s == 0 else float('-inf')\n            return max(dp(i + 1, s),\n                       dp(i + 1, s - rods[i]),\n                       dp(i + 1, s + rods[i]) + rods[i])\n\n        return dp(0, 0)",
+        "langSlug": "python3"
+      }
+    ],
+    "b3NRJoz4": [
+      {
+        "code": "import java.awt.Point;\n\nclass Solution {\n    public int tallestBillboard(int[] rods) {\n        int N = rods.length;\n        Map<Integer, Integer> Ldelta = make(Arrays.copyOfRange(rods, 0, N/2));\n        Map<Integer, Integer> Rdelta = make(Arrays.copyOfRange(rods, N/2, N));\n\n        int ans = 0;\n        for (int d: Ldelta.keySet())\n            if (Rdelta.containsKey(-d))\n                ans = Math.max(ans, Ldelta.get(d) + Rdelta.get(-d));\n\n        return ans;\n    }\n\n    public Map<Integer, Integer> make(int[] A) {\n        Point[] dp = new Point[60000];\n        int t = 0;\n        dp[t++] = new Point(0, 0);\n        for (int v: A) {\n            int stop = t;\n            for (int i = 0; i < stop; ++i) {\n                Point p = dp[i];\n                dp[t++] = new Point(p.x + v, p.y);\n                dp[t++] = new Point(p.x, p.y + v);\n            }\n        }\n\n        Map<Integer, Integer> ans = new HashMap();\n        for (int i = 0; i < t; ++i) {\n            int a = dp[i].x;\n            int b = dp[i].y;\n            ans.put(a-b, Math.max(ans.getOrDefault(a-b, 0), a));\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def tallestBillboard(self, rods):\n        def make(A):\n            states = {(0, 0)}\n            for x in A:\n                states |= ({(a+x, b) for a, b in states} |\n                           {(a, b+x) for a, b in states})\n\n            delta = {}\n            for a, b in states:\n                delta[a-b] = max(delta.get(a-b, 0), a)\n            return delta\n\n        N = len(rods)\n        Ldelta = make(rods[:N/2])\n        Rdelta = make(rods[N/2:])\n\n        ans = 0\n        for d in Ldelta:\n            if -d in Rdelta:\n                ans = max(ans, Ldelta[d] + Rdelta[-d])\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming"

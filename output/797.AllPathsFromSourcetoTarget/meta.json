@@ -11,7 +11,17 @@
   "solution": {
     "id": "430",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "KUaNbvp4": [
+      {
+        "code": "class Solution {\n    public List<List<Integer>> allPathsSourceTarget(int[][] graph) {\n        return solve(graph, 0);\n    }\n\n    public List<List<Integer>> solve(int[][] graph, int node) {\n        int N = graph.length;\n        List<List<Integer>> ans = new ArrayList();\n        if (node == N - 1) {\n            List<Integer> path = new ArrayList();\n            path.add(N-1);\n            ans.add(path);\n            return ans;\n        }\n\n        for (int nei: graph[node]) {\n            for (List<Integer> path: solve(graph, nei)) {\n                path.add(0, node);\n                ans.add(path);\n            }\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def allPathsSourceTarget(self, graph):\n        N = len(graph)\n\n        def solve(node):\n            if node == N-1: return [[N-1]]\n            ans = []\n            for nei in graph[node]:\n                for path in solve(nei):\n                    ans.append([node] + path)\n            return ans\n\n        return solve(0)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": []
 }

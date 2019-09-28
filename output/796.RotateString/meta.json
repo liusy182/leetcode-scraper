@@ -11,7 +11,47 @@
   "solution": {
     "id": "429",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "Q9S39BXZ": [
+      {
+        "code": "class Solution {\n    public boolean rotateString(String A, String B) {\n        if (A.length() != B.length())\n            return false;\n        if (A.length() == 0)\n            return true;\n\n        search:\n            for (int s = 0; s < A.length(); ++s) {\n                for (int i = 0; i < A.length(); ++i) {\n                    if (A.charAt((s+i) % A.length()) != B.charAt(i))\n                        continue search;\n                }\n                return true;\n            }\n        return false;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def rotateString(self, A, B):\n        if len(A) != len(B):\n            return False\n        if len(A) == 0:\n            return True\n\n        for s in xrange(len(A)):\n            if all(A[(s+i) % len(A)] == B[i] for i in xrange(len(A))):\n                return True\n        return False",
+        "langSlug": "python"
+      }
+    ],
+    "ETPY9FAY": [
+      {
+        "code": "class Solution {\n    public boolean rotateString(String A, String B) {\n        return A.length() == B.length() && (A + A).contains(B);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def rotateString(self, A, B):\n        return len(A) == len(B) and B in A+A",
+        "langSlug": "python"
+      }
+    ],
+    "v8qW4q9q": [
+      {
+        "code": "import java.math.BigInteger;\nclass Solution {\n    public boolean rotateString(String A, String B) {\n        if (A.equals(B)) return true;\n\n        int MOD = 1_000_000_007;\n        int P = 113;\n        int Pinv = BigInteger.valueOf(P).modInverse(BigInteger.valueOf(MOD)).intValue();\n\n        long hb = 0, power = 1;\n        for (char x: B.toCharArray()) {\n            hb = (hb + power * x) % MOD;\n            power = power * P % MOD;\n        }\n\n        long ha = 0; power = 1;\n        char[] ca = A.toCharArray();\n        for (char x: ca) {\n            ha = (ha + power * x) % MOD;\n            power = power * P % MOD;\n        }\n\n        for (int i = 0; i < ca.length; ++i) {\n            char x = ca[i];\n            ha += power * x - x;\n            ha %= MOD;\n            ha *= Pinv;\n            ha %= MOD;\n            if (ha == hb && (A.substring(i+1) + A.substring(0, i+1)).equals(B))\n                return true;\n\n        }\n        return false;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def rotateString(self, A, B):\n        MOD = 10**9 + 7\n        P = 113\n        Pinv = pow(P, MOD-2, MOD)\n\n        hb = 0\n        power = 1\n        for x in B:\n            code = ord(x) - 96\n            hb = (hb + power * code) % MOD\n            power = power * P % MOD\n\n        ha = 0\n        power = 1\n        for x in A:\n            code = ord(x) - 96\n            ha = (ha + power * code) % MOD\n            power = power * P % MOD\n\n        if ha == hb and A == B: return True\n        for i, x in enumerate(A):\n            code = ord(x) - 96\n            ha += power * code\n            ha -= code\n            ha *= Pinv\n            ha %= MOD\n            if ha == hb and A[i+1:] + A[:i+1] == B:\n                return True\n        return False",
+        "langSlug": "python"
+      }
+    ],
+    "PBHA9iPW": [
+      {
+        "code": "class Solution {\n    public boolean rotateString(String A, String B) {\n        int N = A.length();\n        if (N != B.length()) return false;\n        if (N == 0) return true;\n\n        //Compute shift table\n        int[] shifts = new int[N+1];\n        Arrays.fill(shifts, 1);\n        int left = -1;\n        for (int right = 0; right < N; ++right) {\n            while (left >= 0 && (B.charAt(left) != B.charAt(right)))\n                left -= shifts[left];\n            shifts[right + 1] = right - left++;\n        }\n\n        //Find match of B in A+A\n        int matchLen = 0;\n        for (char c: (A+A).toCharArray()) {\n            while (matchLen >= 0 && B.charAt(matchLen) != c)\n                matchLen -= shifts[matchLen];\n            if (++matchLen == N) return true;\n        }\n\n        return false;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def rotateString(self, A, B):\n        N = len(A)\n        if N != len(B): return False\n        if N == 0: return True\n\n        #Compute shift table\n        shifts = [1] * (N+1)\n        left = -1\n        for right in xrange(N):\n            while left >= 0 and B[left] != B[right]:\n                left -= shifts[left]\n            shifts[right + 1] = right - left\n            left += 1\n\n        #Find match of B in A+A\n        match_len = 0\n        for char in A+A:\n            while match_len >= 0 and B[match_len] != char:\n                match_len -= shifts[match_len]\n\n            match_len += 1\n            if match_len == N:\n                return True\n\n        return False",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": []
 }

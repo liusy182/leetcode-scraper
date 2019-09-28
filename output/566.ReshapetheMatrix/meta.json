@@ -16,7 +16,25 @@
   "solution": {
     "id": "120",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "QiYrHtjz": [
+      {
+        "code": "\npublic class Solution {\n    public int[][] matrixReshape(int[][] nums, int r, int c) {\n        int[][] res = new int[r][c];\n        if (nums.length == 0 || r * c != nums.length * nums[0].length)\n            return nums;\n        int count = 0;\n        Queue < Integer > queue = new LinkedList < > ();\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = 0; j < nums[0].length; j++) {\n                queue.add(nums[i][j]);\n            }\n        }\n        for (int i = 0; i < r; i++) {\n            for (int j = 0; j < c; j++) {\n                res[i][j] = queue.remove();\n            }\n        }\n        return res;\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ],
+    "JvBHJ8mJ": [
+      {
+        "code": "public class Solution {\n    public int[][] matrixReshape(int[][] nums, int r, int c) {\n        int[][] res = new int[r][c];\n        if (nums.length == 0 || r * c != nums.length * nums[0].length)\n            return nums;\n        int rows = 0, cols = 0;\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = 0; j < nums[0].length; j++) {\n                res[rows][cols] = nums[i][j];\n                cols++;\n                if (cols == c) {\n                    rows++;\n                    cols = 0;\n                }\n            }\n        }\n        return res;\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ],
+    "3U3C5txm": [
+      {
+        "code": "public class Solution {\n    public int[][] matrixReshape(int[][] nums, int r, int c) {\n        int[][] res = new int[r][c];\n        if (nums.length == 0 || r * c != nums.length * nums[0].length)\n            return nums;\n        int count = 0;\n        for (int i = 0; i < nums.length; i++) {\n            for (int j = 0; j < nums[0].length; j++) {\n                res[count / c][count % c] = nums[i][j];\n                count++;\n            }\n        }\n        return res;\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Array"

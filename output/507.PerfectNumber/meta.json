@@ -11,7 +11,31 @@
   "solution": {
     "id": "95",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "6Nzf7w9h": [
+      {
+        "code": "\npublic class Solution {\n    public boolean checkPerfectNumber(int num) {\n        if (num <= 0) {\n            return false;\n        }\n        int sum = 0;\n        for (int i = 1; i < num; i++) {\n            if (num % i == 0) {\n                sum += i;\n            }\n\n        }\n        return sum == num;\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ],
+    "bGGFxpmt": [
+      {
+        "code": "\npublic class Solution {\n    public boolean checkPerfectNumber(int num) {\n        if (num <= 0) {\n            return false;\n        }\n        int sum = 0;\n        for (int i = 1; i < num; i++) {\n            if (num % i == 0) {\n                sum += i;\n            }\n            if(sum>num) {\n                return false;\n            }\n        }\n        return sum == num;\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ],
+    "ZpHuGfHj": [
+      {
+        "code": "\n    public boolean checkPerfectNumber(int num) {\n        if (num <= 0) {\n            return false;\n        }\n        int sum = 0;\n        for (int i = 1; i * i <= num; i++) {\n            if (num % i == 0) {\n                sum += i;\n                if (i * i != num) {\n                    sum += num / i;\n                }\n\n            }\n        }\n        return sum - num == num;\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ],
+    "kBfJ6TtU": [
+      {
+        "code": "public class Solution {\n    public int pn(int p) {\n        return (1 << (p - 1)) * ((1 << p) - 1);\n    }\n    public boolean checkPerfectNumber(int num) {\n        int[] primes=new int[]{2,3,5,7,13,17,19,31};\n        for (int prime: primes) {\n            if (pn(prime) == num)\n                return true;\n        }\n        return false;\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Math"

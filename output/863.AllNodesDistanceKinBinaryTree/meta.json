@@ -11,7 +11,27 @@
   "solution": {
     "id": "498",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "ySaDMJzK": [
+      {
+        "code": "class Solution {\n    Map<TreeNode, TreeNode> parent;\n    public List<Integer> distanceK(TreeNode root, TreeNode target, int K) {\n        parent = new HashMap();\n        dfs(root, null);\n\n        Queue<TreeNode> queue = new LinkedList();\n        queue.add(null);\n        queue.add(target);\n\n        Set<TreeNode> seen = new HashSet();\n        seen.add(target);\n        seen.add(null);\n\n        int dist = 0;\n        while (!queue.isEmpty()) {\n            TreeNode node = queue.poll();\n            if (node == null) {\n                if (dist == K) {\n                    List<Integer> ans = new ArrayList();\n                    for (TreeNode n: queue)\n                        ans.add(n.val);\n                    return ans;\n                }\n                queue.offer(null);\n                dist++;\n            } else {\n                if (!seen.contains(node.left)) {\n                    seen.add(node.left);\n                    queue.offer(node.left);\n                }\n                if (!seen.contains(node.right)) {\n                    seen.add(node.right);\n                    queue.offer(node.right);\n                }\n                TreeNode par = parent.get(node);\n                if (!seen.contains(par)) {\n                    seen.add(par);\n                    queue.offer(par);\n                }\n            }\n        }\n\n        return new ArrayList<Integer>();\n    }\n\n    public void dfs(TreeNode node, TreeNode par) {\n        if (node != null) {\n            parent.put(node, par);\n            dfs(node.left, node);\n            dfs(node.right, node);\n        }\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def distanceK(self, root, target, K):\n        def dfs(node, par = None):\n            if node:\n                node.par = par\n                dfs(node.left, node)\n                dfs(node.right, node)\n\n        dfs(root)\n\n        queue = collections.deque([(target, 0)])\n        seen = {target}\n        while queue:\n            if queue[0][1] == K:\n                return [node.val for node, d in queue]\n            node, d = queue.popleft()\n            for nei in (node.left, node.right, node.par):\n                if nei and nei not in seen:\n                    seen.add(nei)\n                    queue.append((nei, d+1))\n\n        return []",
+        "langSlug": "python"
+      }
+    ],
+    "4h24GtWA": [
+      {
+        "code": "class Solution {\n    List<Integer> ans;\n    TreeNode target;\n    int K;\n    public List<Integer> distanceK(TreeNode root, TreeNode target, int K) {\n        ans = new LinkedList();\n        this.target = target;\n        this.K = K;\n        dfs(root);\n        return ans;\n    }\n\n    // Return vertex distance from node to target if exists, else -1\n    // Vertex distance: the number of vertices on the path from node to target\n    public int dfs(TreeNode node) {\n        if (node == null)\n            return -1;\n        else if (node == target) {\n            subtree_add(node, 0);\n            return 1;\n        } else {\n            int L = dfs(node.left), R = dfs(node.right);\n            if (L != -1) {\n                if (L == K) ans.add(node.val);\n                subtree_add(node.right, L + 1);\n                return L + 1;\n            } else if (R != -1) {\n                if (R == K) ans.add(node.val);\n                subtree_add(node.left, R + 1);\n                return R + 1;\n            } else {\n                return -1;\n            }\n        }\n    }\n\n    // Add all nodes 'K - dist' from the node to answer.\n    public void subtree_add(TreeNode node, int dist) {\n        if (node == null) return;\n        if (dist == K)\n            ans.add(node.val);\n        else {\n            subtree_add(node.left, dist + 1);\n            subtree_add(node.right, dist + 1);\n        }\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def distanceK(self, root, target, K):\n        ans = []\n\n        # Return distance from node to target if exists, else -1\n        # Vertex distance: the # of vertices on the path from node to target\n        def dfs(node):\n            if not node:\n                return -1\n            elif node is target:\n                subtree_add(node, 0)\n                return 1\n            else:\n                L, R = dfs(node.left), dfs(node.right)\n                if L != -1:\n                    if L == K: ans.append(node.val)\n                    subtree_add(node.right, L + 1)\n                    return L + 1\n                elif R != -1:\n                    if R == K: ans.append(node.val)\n                    subtree_add(node.left, R + 1)\n                    return R + 1\n                else:\n                    return -1\n\n        # Add all nodes 'K - dist' from the node to answer.\n        def subtree_add(node, dist):\n            if not node:\n                return\n            elif dist == K:\n                ans.append(node.val)\n            else:\n                subtree_add(node.left, dist + 1)\n                subtree_add(node.right, dist + 1)\n\n        dfs(root)\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree",

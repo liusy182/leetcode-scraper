@@ -11,7 +11,17 @@
   "solution": {
     "id": "567",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "hn3nSh7u": [
+      {
+        "code": "class Solution {\n    public int smallestRangeI(int[] A, int K) {\n        int min = A[0], max = A[0];\n        for (int x: A) {\n            min = Math.min(min, x);\n            max = Math.max(max, x);\n        }\n        return Math.max(0, max - min - 2*K);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def smallestRangeI(self, A, K):\n        return max(0, max(A) - min(A) - 2*K)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math"

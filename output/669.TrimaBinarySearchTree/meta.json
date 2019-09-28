@@ -11,7 +11,17 @@
   "solution": {
     "id": "242",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "8eWsgDRM": [
+      {
+        "code": "class Solution {\n    public TreeNode trimBST(TreeNode root, int L, int R) {\n        if (root == null) return root;\n        if (root.val > R) return trimBST(root.left, L, R);\n        if (root.val < L) return trimBST(root.right, L, R);\n\n        root.left = trimBST(root.left, L, R);\n        root.right = trimBST(root.right, L, R);\n        return root;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def trimBST(self, root, L, R):\n        def trim(node):\n            if not node:\n                return None\n            elif node.val > R:\n                return trim(node.left)\n            elif node.val < L:\n                return trim(node.right)\n            else:\n                node.left = trim(node.left)\n                node.right = trim(node.right)\n                return node\n\n        return trim(root)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree"

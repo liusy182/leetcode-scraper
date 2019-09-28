@@ -11,7 +11,21 @@
   "solution": {
     "id": "527",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "HGcLTehJ": [
+      {
+        "code": "class Solution {\npublic:\n    string decodeAtIndex(string S, int K) {\n        long size = 0;\n        int N = S.size();\n\n        // Find size = length of decoded string\n        for (int i = 0; i < N; ++i) {\n            if (isdigit(S[i]))\n                size *= S[i] - '0';\n            else\n                size++;\n        }\n\n        for (int i = N-1; i >=0; --i) {\n            K %= size;\n            if (K == 0 && isalpha(S[i]))\n                return (string) \"\" + S[i];\n\n            if (isdigit(S[i]))\n                size /= S[i] - '0';\n            else\n                size--;\n        }\n    }\n};",
+        "langSlug": "cpp"
+      },
+      {
+        "code": "class Solution {\n    public String decodeAtIndex(String S, int K) {\n        long size = 0;\n        int N = S.length();\n\n        // Find size = length of decoded string\n        for (int i = 0; i < N; ++i) {\n            char c = S.charAt(i);\n            if (Character.isDigit(c))\n                size *= c - '0';\n            else\n                size++;\n        }\n\n        for (int i = N-1; i >= 0; --i) {\n            char c = S.charAt(i);\n            K %= size;\n            if (K == 0 && Character.isLetter(c))\n                return Character.toString(c);\n\n            if (Character.isDigit(c))\n                size /= c - '0';\n            else\n                size--;\n        }\n\n        throw null;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def decodeAtIndex(self, S, K):\n        size = 0\n        # Find size = length of decoded string\n        for c in S:\n            if c.isdigit():\n                size *= int(c)\n            else:\n                size += 1\n\n        for c in reversed(S):\n            K %= size\n            if K == 0 and c.isalpha():\n                return c\n\n            if c.isdigit():\n                size /= int(c)\n            else:\n                size -= 1",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Stack"

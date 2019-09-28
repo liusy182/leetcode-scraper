@@ -11,7 +11,25 @@
   "solution": {
     "id": "147",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "Rxg7wbHW": [
+      {
+        "code": "public class Solution {\n    public String[] findRestaurant(String[] list1, String[] list2) {\n        HashMap < Integer, List < String >> map = new HashMap < > ();\n        for (int i = 0; i < list1.length; i++) {\n            for (int j = 0; j < list2.length; j++) {\n                if (list1[i].equals(list2[j])) {\n                    if (!map.containsKey(i + j))\n                        map.put(i + j, new ArrayList < String > ());\n                    map.get(i + j).add(list1[i]);\n                }\n            }\n        }\n        int min_index_sum = Integer.MAX_VALUE;\n        for (int key: map.keySet())\n            min_index_sum = Math.min(min_index_sum, key);\n        String[] res = new String[map.get(min_index_sum).size()];\n        return map.get(min_index_sum).toArray(res);\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ],
+    "HhLorCYq": [
+      {
+        "code": "\npublic class Solution {\n    public String[] findRestaurant(String[] list1, String[] list2) {\n        List < String > res = new ArrayList < > ();\n        for (int sum = 0; sum < list1.length + list2.length - 1; sum++) {\n            for (int i = 0; i <= sum; i++) {\n                if (i < list1.length && sum - i < list2.length && list1[i].equals(list2[sum - i]))\n                    res.add(list1[i]);\n            }\n            if (res.size() > 0)\n                break;\n        }\n        return res.toArray(new String[res.size()]);\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "FatTyfy6": [
+      {
+        "code": "public class Solution {\n    public String[] findRestaurant(String[] list1, String[] list2) {\n        HashMap < String, Integer > map = new HashMap < String, Integer > ();\n        for (int i = 0; i < list1.length; i++)\n            map.put(list1[i], i);\n        List < String > res = new ArrayList < > ();\n        int min_sum = Integer.MAX_VALUE, sum;\n        for (int j = 0; j < list2.length && j <= min_sum; j++) {\n            if (map.containsKey(list2[j])) {\n                sum = j + map.get(list2[j]);\n                if (sum < min_sum) {\n                    res.clear();\n                    res.add(list2[j]);\n                    min_sum = sum;\n                } else if (sum == min_sum)\n                    res.add(list2[j]);\n            }\n        }\n        return res.toArray(new String[res.size()]);\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table"

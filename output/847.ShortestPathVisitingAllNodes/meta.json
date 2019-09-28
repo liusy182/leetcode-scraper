@@ -11,7 +11,27 @@
   "solution": {
     "id": "477",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "RSKL3uRn": [
+      {
+        "code": "class Solution {\n    public int shortestPathLength(int[][] graph) {\n        int N = graph.length;\n        Queue<State> queue = new LinkedList();\n        int[][] dist = new int[1<<N][N];\n        for (int[] row: dist) Arrays.fill(row, N*N);\n\n        for (int x = 0; x < N; ++x) {\n            queue.offer(new State(1<<x, x));\n            dist[1 << x][x] = 0;\n        }\n\n        while (!queue.isEmpty()) {\n            State node = queue.poll();\n            int d = dist[node.cover][node.head];\n            if (node.cover == (1<<N) - 1) return d;\n\n            for (int child: graph[node.head]) {\n                int cover2 = node.cover | (1 << child);\n                if (d + 1 < dist[cover2][child]) {\n                    dist[cover2][child] = d + 1;\n                    queue.offer(new State(cover2, child));\n\n                }\n            }\n        }\n\n        throw null;\n    }\n}\n\nclass State {\n    int cover, head;\n    State(int c, int h) {\n        cover = c;\n        head = h;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def shortestPathLength(self, graph):\n        N = len(graph)\n        queue = collections.deque((1 << x, x) for x in xrange(N))\n        dist = collections.defaultdict(lambda: N*N)\n        for x in xrange(N): dist[1 << x, x] = 0\n\n        while queue:\n            cover, head = queue.popleft()\n            d = dist[cover, head]\n            if cover == 2**N - 1: return d\n            for child in graph[head]:\n                cover2 = cover | (1 << child)\n                if d + 1 < dist[cover2, child]:\n                    dist[cover2, child] = d + 1\n                    queue.append((cover2, child))",
+        "langSlug": "python"
+      }
+    ],
+    "f8jJAcDL": [
+      {
+        "code": "class Solution {\n    public int shortestPathLength(int[][] graph) {\n        int N = graph.length;\n        int dist[][] = new int[1 << N][N];\n        for (int[] row: dist) Arrays.fill(row, N*N);\n        for (int x = 0; x < N; ++x) dist[1<<x][x] = 0;\n\n        for (int cover = 0; cover < 1 << N; ++cover) {\n            boolean repeat = true;\n            while (repeat) {\n                repeat = false;\n                for (int head = 0; head < N; ++head) {\n                    int d = dist[cover][head];\n                    for (int next: graph[head]) {\n                        int cover2 = cover | (1 << next);\n                        if (d + 1 < dist[cover2][next]) {\n                            dist[cover2][next] = d+1;\n                            if (cover == cover2) repeat = true;\n                        }\n                    }\n                }\n            }\n        }\n\n        int ans = N*N;\n        for (int cand: dist[(1<<N) - 1])\n            ans = Math.min(cand, ans);\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def shortestPathLength(self, graph):\n        N = len(graph)\n        dist = [[float('inf')] * N for i in xrange(1 << N)]\n        for x in xrange(N):\n            dist[1<<x][x] = 0\n\n        for cover in xrange(1 << N):\n            repeat = True\n            while repeat:\n                repeat = False\n                for head, d in enumerate(dist[cover]):\n                    for nei in graph[head]:\n                        cover2 = cover | (1 << nei)\n                        if d + 1 < dist[cover2][nei]:\n                            dist[cover2][nei] = d + 1\n                            if cover == cover2:\n                                repeat = True\n\n        return min(dist[2**N - 1])",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming",

@@ -14,7 +14,37 @@
   "solution": {
     "id": "184",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "cYQzzELZ": [
+      {
+        "code": "public class Solution {\n    public int scheduleCourse(int[][] courses) {\n        Arrays.sort(courses, (a, b) -> a[1] - b[1]);\n        Integer[][] memo = new Integer[courses.length][courses[courses.length - 1][1] + 1];\n        return schedule(courses, 0, 0, memo);\n    }\n    public int schedule(int[][] courses, int i, int time, Integer[][] memo) {\n        if (i == courses.length)\n            return 0;\n        if (memo[i][time] != null)\n            return memo[i][time];\n        int taken = 0;\n        if (time + courses[i][0] <= courses[i][1])\n            taken = 1 + schedule(courses, i + 1, time + courses[i][0], memo);\n        int not_taken = schedule(courses, i + 1, time, memo);\n        memo[i][time] = Math.max(taken, not_taken);\n        return memo[i][time];\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "25HrpDuj": [
+      {
+        "code": "public class Solution {\n    public int scheduleCourse(int[][] courses) {\n        System.out.println(courses.length);\n        Arrays.sort(courses, (a, b) -> a[1] - b[1]);\n        int time = 0, count = 0;\n        for (int i = 0; i < courses.length; i++) {\n            if (time + courses[i][0] <= courses[i][1]) {\n                time += courses[i][0];\n                count++;\n            } else {\n                int max_i = i;\n                for (int j = 0; j < i; j++) {\n                    if (courses[j][0] > courses[max_i][0])\n                        max_i = j;\n                }\n                if (courses[max_i][0] > courses[i][0]) {\n                    time += courses[i][0] - courses[max_i][0];\n                }\n                courses[max_i][0] = -1;\n            }\n        }\n        return count;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "A9DLvJuL": [
+      {
+        "code": "public class Solution {\n    public int scheduleCourse(int[][] courses) {\n        System.out.println(courses.length);\n        Arrays.sort(courses, (a, b) -> a[1] - b[1]);\n        int time = 0, count = 0;\n        for (int i = 0; i < courses.length; i++) {\n            if (time + courses[i][0] <= courses[i][1]) {\n                time += courses[i][0];\n                courses[count++] = courses[i];\n            } else {\n                int max_i = i;\n                for (int j = 0; j < count; j++) {\n                    if (courses[j][0] > courses[max_i][0])\n                        max_i = j;\n                }\n                if (courses[max_i][0] > courses[i][0]) {\n                    time += courses[i][0] - courses[max_i][0];\n                    courses[max_i] = courses[i];\n                }\n            }\n        }\n        return count;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "QZbbEoDr": [
+      {
+        "code": "public class Solution {\n    public int scheduleCourse(int[][] courses) {\n        Arrays.sort(courses, (a, b) -> a[1] - b[1]);\n        List< Integer > valid_list = new ArrayList < > ();\n        int time = 0;\n        for (int[] c: courses) {\n            if (time + c[0] <= c[1]) {\n                valid_list.add(c[0]);\n                time += c[0];\n            } else {\n                int max_i=0;\n                for(int i=1; i < valid_list.size(); i++) {\n                    if(valid_list.get(i) > valid_list.get(max_i))\n                        max_i = i;\n                }\n                if (valid_list.get(max_i) > c[0]) {\n                    time += c[0] - valid_list.get(max_i);\n                    valid_list.set(max_i, c[0]);\n                }\n            }\n        }\n        return valid_list.size();\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "sNifxG59": [
+      {
+        "code": "public class Solution {\n    public int scheduleCourse(int[][] courses) {\n        Arrays.sort(courses, (a, b) -> a[1] - b[1]);\n        PriorityQueue < Integer > queue = new PriorityQueue < > ((a, b) -> b - a);\n        int time = 0;\n        for (int[] c: courses) {\n            if (time + c[0] <= c[1]) {\n                queue.offer(c[0]);\n                time += c[0];\n            } else if (!queue.isEmpty() && queue.peek() > c[0]) {\n                time += c[0] - queue.poll();\n                queue.offer(c[0]);\n            }\n        }\n        return queue.size();\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Greedy"

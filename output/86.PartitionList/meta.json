@@ -11,7 +11,17 @@
   "solution": {
     "id": "654",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "EjKysw9Z": [
+      {
+        "code": "class Solution {\n    public ListNode partition(ListNode head, int x) {\n\n        // before and after are the two pointers used to create the two list\n        // before_head and after_head are used to save the heads of the two lists.\n        // All of these are initialized with the dummy nodes created.\n        ListNode before_head = new ListNode(0);\n        ListNode before = before_head;\n        ListNode after_head = new ListNode(0);\n        ListNode after = after_head;\n\n        while (head != null) {\n\n            // If the original list node is lesser than the given x,\n            // assign it to the before list.\n            if (head.val < x) {\n                before.next = head;\n                before = before.next;\n            } else {\n                // If the original list node is greater or equal to the given x,\n                // assign it to the after list.\n                after.next = head;\n                after = after.next;\n            }\n\n            // move ahead in the original list\n            head = head.next;\n        }\n\n        // Last node of \"after\" list would also be ending node of the reformed list\n        after.next = null;\n\n        // Once all the nodes are correctly assigned to the two lists,\n        // combine them to form a single list which would be returned.\n        before.next = after_head.next;\n\n        return before_head.next;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def partition(self, head, x):\n        \"\"\"\n        :type head: ListNode\n        :type x: int\n        :rtype: ListNode\n        \"\"\"\n\n        # before and after are the two pointers used to create two list\n        # before_head and after_head are used to save the heads of the two lists.\n        # All of these are initialized with the dummy nodes created.\n        before = before_head = ListNode(0)\n        after = after_head = ListNode(0)\n\n        while head:\n            # If the original list node is lesser than the given x,\n            # assign it to the before list.\n            if head.val < x:\n                before.next = head\n                before = before.next\n            else:\n                # If the original list node is greater or equal to the given x,\n                # assign it to the after list.\n                after.next = head\n                after = after.next\n\n            # move ahead in the original list\n            head = head.next\n\n        # Last node of \"after\" list would also be ending node of the reformed list\n        after.next = None\n        # Once all the nodes are correctly assigned to the two lists,\n        # combine them to form a single list which would be returned.\n        before.next = after_head.next\n\n        return before_head.next",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Linked List",

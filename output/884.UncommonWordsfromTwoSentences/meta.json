@@ -11,7 +11,17 @@
   "solution": {
     "id": "530",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "YwdvfZv6": [
+      {
+        "code": "class Solution {\n    public String[] uncommonFromSentences(String A, String B) {\n        Map<String, Integer> count = new HashMap();\n        for (String word: A.split(\" \"))\n            count.put(word, count.getOrDefault(word, 0) + 1);\n        for (String word: B.split(\" \"))\n            count.put(word, count.getOrDefault(word, 0) + 1);\n\n        List<String> ans = new LinkedList();\n        for (String word: count.keySet())\n            if (count.get(word) == 1)\n                ans.add(word);\n\n        return ans.toArray(new String[ans.size()]);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def uncommonFromSentences(self, A, B):\n        count = {}\n        for word in A.split():\n            count[word] = count.get(word, 0) + 1\n        for word in B.split():\n            count[word] = count.get(word, 0) + 1\n\n        #Alternatively:\n        #count = collections.Counter(A.split())\n        #count += collections.Counter(B.split())\n\n        return [word for word in count if count[word] == 1]",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table"

@@ -11,7 +11,17 @@
   "solution": {
     "id": "688",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "sf5gg5Sj": [
+      {
+        "code": "class Solution {\n    public List<Integer> addToArrayForm(int[] A, int K) {\n        int N = A.length;\n        int cur = K;\n        List<Integer> ans = new ArrayList();\n\n        int i = N;\n        while (--i >= 0 || cur > 0) {\n            if (i >= 0)\n                cur += A[i];\n            ans.add(cur % 10);\n            cur /= 10;\n        }\n\n        Collections.reverse(ans);\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def addToArrayForm(self, A, K):\n        A[-1] += K\n        for i in xrange(len(A) - 1, -1, -1):\n            carry, A[i] = divmod(A[i], 10)\n            if i: A[i-1] += carry\n        if carry:\n            A = map(int, str(carry)) + A\n        return A",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array"

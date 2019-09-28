@@ -11,7 +11,25 @@
   "solution": {
     "id": "149",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "MLfS4Quj": [
+      {
+        "code": "public class Solution {\n    public int findPeakElement(int[] nums) {\n        for (int i = 0; i < nums.length - 1; i++) {\n            if (nums[i] > nums[i + 1])\n                return i;\n        }\n        return nums.length - 1;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "3MGjFqJ4": [
+      {
+        "code": "public class Solution {\n    public int findPeakElement(int[] nums) {\n        return search(nums, 0, nums.length - 1);\n    }\n    public int search(int[] nums, int l, int r) {\n        if (l == r)\n            return l;\n        int mid = (l + r) / 2;\n        if (nums[mid] > nums[mid + 1])\n            return search(nums, l, mid);\n        return search(nums, mid + 1, r);\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "EnevWycv": [
+      {
+        "code": "public class Solution {\n    public int findPeakElement(int[] nums) {\n        int l = 0, r = nums.length - 1;\n        while (l < r) {\n            int mid = (l + r) / 2;\n            if (nums[mid] > nums[mid + 1])\n                r = mid;\n            else\n                l = mid + 1;\n        }\n        return l;\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Array",

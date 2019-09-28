@@ -11,7 +11,19 @@
   "solution": {
     "id": "664",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "fYvxEXx8": [
+      {
+        "code": "class Solution(object):\n    def oddEvenJumps(self, A):\n        N = len(A)\n\n        def make(B):\n            ans = [None] * N\n            stack = []  # invariant: stack is decreasing\n            for i in B:\n                while stack and i > stack[-1]:\n                    ans[stack.pop()] = i\n                stack.append(i)\n            return ans\n\n        B = sorted(range(N), key = lambda i: A[i])\n        oddnext = make(B)\n        B.sort(key = lambda i: -A[i])\n        evennext = make(B)\n\n        odd = [False] * N\n        even = [False] * N\n        odd[N-1] = even[N-1] = True\n\n        for i in xrange(N-2, -1, -1):\n            if oddnext[i] is not None:\n                odd[i] = even[oddnext[i]]\n            if evennext[i] is not None:\n                even[i] = odd[evennext[i]]\n\n        return sum(odd)",
+        "langSlug": "python"
+      }
+    ],
+    "RtJL4zUR": [
+      {
+        "code": "class Solution {\n    public int oddEvenJumps(int[] A) {\n        int N = A.length;\n        if (N <= 1) return N;\n        boolean[] odd = new boolean[N];\n        boolean[] even = new boolean[N];\n        odd[N-1] = even[N-1] = true;\n\n        TreeMap<Integer, Integer> vals = new TreeMap();\n        vals.put(A[N-1], N-1);\n        for (int i = N-2; i >= 0; --i) {\n            int v = A[i];\n            if (vals.containsKey(v)) {\n                odd[i] = even[vals.get(v)];\n                even[i] = odd[vals.get(v)];\n            } else {\n                Integer lower = vals.lowerKey(v);\n                Integer higher = vals.higherKey(v);\n\n                if (lower != null)\n                    even[i] = odd[vals.get(lower)];\n                if (higher != null) {\n                    odd[i] = even[vals.get(higher)];\n                }\n            }\n            vals.put(v, i);\n        }\n\n        int ans = 0;\n        for (boolean b: odd)\n            if (b) ans++;\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming",

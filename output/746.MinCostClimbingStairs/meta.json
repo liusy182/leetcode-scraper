@@ -13,7 +13,17 @@
   "solution": {
     "id": "347",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "R8h7KgV3": [
+      {
+        "code": "class Solution {\n    public int minCostClimbingStairs(int[] cost) {\n        int f1 = 0, f2 = 0;\n        for (int i = cost.length - 1; i >= 0; --i) {\n            int f0 = cost[i] + Math.min(f1, f2);\n            f2 = f1;\n            f1 = f0;\n        }\n        return Math.min(f1, f2);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def minCostClimbingStairs(self, cost):\n        f1 = f2 = 0\n        for x in reversed(cost):\n            f1, f2 = x + min(f1, f2), f1\n        return min(f1, f2)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array",

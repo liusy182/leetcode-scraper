@@ -11,7 +11,17 @@
   "solution": {
     "id": "437",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "QNF9BsvY": [
+      {
+        "code": "class Solution {\n    public int[] numberOfLines(int[] widths, String S) {\n        int lines = 1, width = 0;\n        for (char c: S.toCharArray()) {\n            int w = widths[c - 'a'];\n            width += w;\n            if (width > 100) {\n                lines++;\n                width = w;\n            }\n        }\n\n        return new int[]{lines, width};\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def numberOfLines(self, widths, S):\n        lines, width = 1, 0\n        for c in S:\n            w = widths[ord(c) - ord('a')]\n            width += w\n            if width > 100:\n                lines += 1\n                width = w\n\n        return lines, width",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": []
 }

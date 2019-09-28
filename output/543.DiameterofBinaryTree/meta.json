@@ -11,7 +11,17 @@
   "solution": {
     "id": "316",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "6ahaRHCG": [
+      {
+        "code": "class Solution {\n    int ans;\n    public int diameterOfBinaryTree(TreeNode root) {\n        ans = 1;\n        depth(root);\n        return ans - 1;\n    }\n    public int depth(TreeNode node) {\n        if (node == null) return 0;\n        int L = depth(node.left);\n        int R = depth(node.right);\n        ans = Math.max(ans, L+R+1);\n        return Math.max(L, R) + 1;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def diameterOfBinaryTree(self, root):\n        self.ans = 1\n        def depth(node):\n            if not node: return 0\n            L = depth(node.left)\n            R = depth(node.right)\n            self.ans = max(self.ans, L+R+1)\n            return max(L, R) + 1\n\n        depth(root)\n        return self.ans - 1",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree"

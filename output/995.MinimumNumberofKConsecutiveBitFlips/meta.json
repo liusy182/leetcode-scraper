@@ -11,7 +11,17 @@
   "solution": {
     "id": "697",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "C4RkaMHp": [
+      {
+        "code": "class Solution {\n    public int minKBitFlips(int[] A, int K) {\n        int N = A.length;\n        int[] hint = new int[N];\n        int ans = 0, flip = 0;\n\n        // When we flip a subarray like A[i], A[i+1], ..., A[i+K-1]\n        // we can instead flip our current writing state, and put a hint at\n        // position i+K to flip back our writing state.\n        for (int i = 0; i < N; ++i) {\n            flip ^= hint[i];\n            if (A[i] == flip) {  // If we must flip the subarray starting here...\n                ans++;  // We're flipping the subarray from A[i] to A[i+K-1]\n                if (i + K > N) return -1;  //If we can't flip the entire subarray, its impossible\n                flip ^= 1;\n                if (i + K < N) hint[i + K] ^= 1;\n            }\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def minKBitFlips(self, A, K):\n        N = len(A)\n        hint = [0] * N\n        ans = flip = 0\n\n        # When we flip a subarray like A[i], A[i+1], ..., A[i+K-1]\n        # we can instead flip our current writing state, and put a hint at\n        # position i+K to flip back our writing state.\n        for i, x in enumerate(A):\n            flip ^= hint[i]\n            if x ^ flip == 0:  # If we must flip the subarray starting here...\n                ans += 1  # We're flipping the subarray from A[i] to A[i+K-1]\n                if i+K > N: return -1  # If we can't flip the entire subarray, its impossible\n                flip ^= 1  \n                if i+K < N: hint[i + K] ^= 1\n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Greedy",

@@ -11,7 +11,27 @@
   "solution": {
     "id": "256",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "gTtmgvev": [
+      {
+        "code": "class Solution {\n    public int repeatedStringMatch(String A, String B) {\n        int q = 1;\n        StringBuilder S = new StringBuilder(A);\n        for (; S.length() < B.length(); q++) S.append(A);\n        if (S.indexOf(B) >= 0) return q;\n        if (S.append(A).indexOf(B) >= 0) return q+1;\n        return -1;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def repeatedStringMatch(self, A, B):\n        q = (len(B) - 1) // len(A) + 1\n        for i in range(2):\n            if B in A * (q+i): return q+i\n        return -1",
+        "langSlug": "python"
+      }
+    ],
+    "DKSFgXSr": [
+      {
+        "code": "import java.math.BigInteger;\n\nclass Solution {\n    public boolean check(int index, String A, String B) {\n        for (int i = 0; i < B.length(); i++) {\n            if (A.charAt((i + index) % A.length()) != B.charAt(i)) {\n                return false;\n            }\n        }\n        return true;\n    }\n    public int repeatedStringMatch(String A, String B) {\n        int q = (B.length() - 1) / A.length() + 1;\n        int p = 113, MOD = 1_000_000_007;\n        int pInv = BigInteger.valueOf(p).modInverse(BigInteger.valueOf(MOD)).intValue();\n\n        long bHash = 0, power = 1;\n        for (int i = 0; i < B.length(); i++) {\n            bHash += power * B.codePointAt(i);\n            bHash %= MOD;\n            power = (power * p) % MOD;\n        }\n\n        long aHash = 0; power = 1;\n        for (int i = 0; i < B.length(); i++) {\n            aHash += power * A.codePointAt(i % A.length());\n            aHash %= MOD;\n            power = (power * p) % MOD;\n        }\n\n        if (aHash == bHash && check(0, A, B)) return q;\n        power = (power * pInv) % MOD;\n\n        for (int i = B.length(); i < (q + 1) * A.length(); i++) {\n            aHash -= A.codePointAt((i - B.length()) % A.length());\n            aHash *= pInv;\n            aHash += power * A.codePointAt(i % A.length());\n            aHash %= MOD;\n            if (aHash == bHash && check(i - B.length() + 1, A, B)) {\n                return i < q * A.length() ? q : q + 1;\n            }\n        }\n        return -1;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def repeatedStringMatch(self, A, B):\n        def check(index):\n            return all(A[(i + index) % len(A)] == x\n                       for i, x in enumerate(B))\n\n        q = (len(B) - 1) // len(A) + 1\n\n        p, MOD = 113, 10**9 + 7\n        p_inv = pow(p, MOD-2, MOD)\n        power = 1\n\n        b_hash = 0\n        for x in map(ord, B):\n            b_hash += power * x\n            b_hash %= MOD\n            power = (power * p) % MOD\n\n        a_hash = 0\n        power = 1\n        for i in xrange(len(B)):\n            a_hash += power * ord(A[i % len(A)])\n            a_hash %= MOD\n            power = (power * p) % MOD\n\n        if a_hash == b_hash and check(0): return q\n\n        power = (power * p_inv) % MOD\n        for i in xrange(len(B), (q+1) * len(A)):\n            a_hash = (a_hash - ord(A[(i - len(B)) % len(A)])) * p_inv\n            a_hash += power * ord(A[i % len(A)])\n            a_hash %= MOD\n            if a_hash == b_hash and check(i - len(B) + 1):\n                return q if i < q * len(A) else q+1\n\n        return -1",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "String"

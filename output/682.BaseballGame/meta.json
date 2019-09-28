@@ -11,7 +11,17 @@
   "solution": {
     "id": "252",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "FRAbgcgJ": [
+      {
+        "code": "class Solution {\n    public int calPoints(String[] ops) {\n        Stack<Integer> stack = new Stack();\n\n        for(String op : ops) {\n            if (op.equals(\"+\")) {\n                int top = stack.pop();\n                int newtop = top + stack.peek();\n                stack.push(top);\n                stack.push(newtop);\n            } else if (op.equals(\"C\")) {\n                stack.pop();\n            } else if (op.equals(\"D\")) {\n                stack.push(2 * stack.peek());\n            } else {\n                stack.push(Integer.valueOf(op));\n            }\n        }\n\n        int ans = 0;\n        for(int score : stack) ans += score;\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def calPoints(self, ops):\n        stack = []\n        for op in ops:\n            if op == '+':\n                stack.append(stack[-1] + stack[-2])\n            elif op == 'C':\n                stack.pop()\n            elif op == 'D':\n                stack.append(2 * stack[-1])\n            else:\n                stack.append(int(op))\n\n        return sum(stack)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Stack"

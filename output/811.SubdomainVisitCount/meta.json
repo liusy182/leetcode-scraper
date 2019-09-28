@@ -11,7 +11,17 @@
   "solution": {
     "id": "440",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "tMRWeTNX": [
+      {
+        "code": "class Solution {\n    public List<String> subdomainVisits(String[] cpdomains) {\n        Map<String, Integer> counts = new HashMap();\n        for (String domain: cpdomains) {\n            String[] cpinfo = domain.split(\"\\\\s+\");\n            String[] frags = cpinfo[1].split(\"\\\\.\");\n            int count = Integer.valueOf(cpinfo[0]);\n            String cur = \"\";\n            for (int i = frags.length - 1; i >= 0; --i) {\n                cur = frags[i] + (i < frags.length - 1 ? \".\" : \"\") + cur;\n                counts.put(cur, counts.getOrDefault(cur, 0) + count);\n            }\n        }\n\n        List<String> ans = new ArrayList();\n        for (String dom: counts.keySet())\n            ans.add(\"\" + counts.get(dom) + \" \" + dom);\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def subdomainVisits(self, cpdomains):\n        ans = collections.Counter()\n        for domain in cpdomains:\n            count, domain = domain.split()\n            count = int(count)\n            frags = domain.split('.')\n            for i in xrange(len(frags)):\n                ans[\".\".join(frags[i:])] += count\n\n        return [\"{} {}\".format(ct, dom) for dom, ct in ans.items()]",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table"

@@ -13,7 +13,17 @@
   "solution": {
     "id": "307",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "iMoEAq7k": [
+      {
+        "code": "class Solution {\n    public int[][] floodFill(int[][] image, int sr, int sc, int newColor) {\n        int color = image[sr][sc];\n        if (color != newColor) dfs(image, sr, sc, color, newColor);\n        return image;\n    }\n    public void dfs(int[][] image, int r, int c, int color, int newColor) {\n        if (image[r][c] == color) {\n            image[r][c] = newColor;\n            if (r >= 1) dfs(image, r-1, c, color, newColor);\n            if (c >= 1) dfs(image, r, c-1, color, newColor);\n            if (r+1 < image.length) dfs(image, r+1, c, color, newColor);\n            if (c+1 < image[0].length) dfs(image, r, c+1, color, newColor);\n        }\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def floodFill(self, image, sr, sc, newColor):\n        R, C = len(image), len(image[0])\n        color = image[sr][sc]\n        if color == newColor: return image\n        def dfs(r, c):\n            if image[r][c] == color:\n                image[r][c] = newColor\n                if r >= 1: dfs(r-1, c)\n                if r+1 < R: dfs(r+1, c)\n                if c >= 1: dfs(r, c-1)\n                if c+1 < C: dfs(r, c+1)\n\n        dfs(sr, sc)\n        return image",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Depth-first Search"

@@ -11,7 +11,43 @@
   "solution": {
     "id": "189",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "JDN2Lqu5": [
+      {
+        "code": "public class Solution {\n    public boolean find132pattern(int[] nums) {\n        for (int i = 0; i < nums.length - 2; i++) {\n            for (int j = i + 1; j < nums.length - 1; j++) {\n                for (int k = j + 1; k < nums.length; k++) {\n                    if (nums[k] > nums[i] && nums[j] > nums[k])\n                        return true;\n                }\n            }\n        }\n        return false;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "4Wm3egZJ": [
+      {
+        "code": "public class Solution {\n    public boolean find132pattern(int[] nums) {\n        int min_i = Integer.MAX_VALUE;\n        for (int j = 0; j < nums.length - 1; j++) {\n            min_i = Math.min(min_i, nums[j]);\n            for (int k = j + 1; k < nums.length; k++) {\n                if (nums[k] < nums[j] && min_i < nums[k])\n                    return true;\n            }\n        }\n        return false;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "dmGBA85A": [
+      {
+        "code": "public class Solution {\n    public boolean find132pattern(int[] nums) {\n        List < int[] > intervals = new ArrayList < > ();\n        int i = 1, s = 0;\n        while (i < nums.length) {\n            if (nums[i] <= nums[i - 1]) {\n                if (s < i - 1)\n                    intervals.add(new int[] {nums[s], nums[i - 1]});\n                s = i;\n            }\n            for (int[] a: intervals)\n                if (nums[i] > a[0] && nums[i] < a[1])\n                    return true;\n            i++;\n        }\n        return false;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "Jhct8Fg6": [
+      {
+        "code": "public class Solution {\n    public boolean find132pattern(int[] nums) {\n        if (nums.length < 3)\n            return false;\n        Stack < Integer > stack = new Stack < > ();\n        int[] min = new int[nums.length];\n        min[0] = nums[0];\n        for (int i = 1; i < nums.length; i++)\n            min[i] = Math.min(min[i - 1], nums[i]);\n        for (int j = nums.length - 1; j >= 0; j--) {\n            if (nums[j] > min[j]) {\n                while (!stack.isEmpty() && stack.peek() <= min[j])\n                    stack.pop();\n                if (!stack.isEmpty() && stack.peek() < nums[j])\n                    return true;\n                stack.push(nums[j]);\n            }\n        }\n        return false;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "mRqb3CLz": [
+      {
+        "code": "public class Solution {\n    public boolean find132pattern(int[] nums) {\n        if (nums.length < 3)\n            return false;\n        int[] min = new int[nums.length];\n        min[0] = nums[0];\n        for (int i = 1; i < nums.length; i++)\n            min[i] = Math.min(min[i - 1], nums[i]);\n        for (int j = nums.length - 1, k = nums.length; j >= 0; j--) {\n            if (nums[j] > min[j]) {\n                k = Arrays.binarySearch(nums, k, nums.length, min[j] + 1);\n                if (k < 0)\n                    k = -1 - k;\n                if (k < nums.length && nums[k] < nums[j])\n                    return true;\n                nums[--k] = nums[j];\n            }\n        }\n        return false;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "KZaQNZbi": [
+      {
+        "code": "public class Solution {\n    public boolean find132pattern(int[] nums) {\n        if (nums.length < 3)\n            return false;\n        int[] min = new int[nums.length];\n        min[0] = nums[0];\n        for (int i = 1; i < nums.length; i++)\n            min[i] = Math.min(min[i - 1], nums[i]);\n        for (int j = nums.length - 1, k = nums.length; j >= 0; j--) {\n            if (nums[j] > min[j]) {\n                while (k < nums.length && nums[k] <= min[j])\n                    k++;\n                if (k < nums.length && nums[k] < nums[j])\n                    return true;\n                nums[--k] = nums[j];\n            }\n        }\n        return false;\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Stack"

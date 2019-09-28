@@ -11,7 +11,43 @@
   "solution": {
     "id": "238",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "Z2XSmAHG": [
+      {
+        "code": "def match(text, pattern):\n    if not pattern: return not text\n    first_match = bool(text) and pattern[0] in {text[0], '.'}\n    return first_match and match(text[1:], pattern[1:])",
+        "langSlug": "python"
+      }
+    ],
+    "EX8cYcs3": [
+      {
+        "code": "class Solution {\n    public boolean isMatch(String text, String pattern) {\n        if (pattern.isEmpty()) return text.isEmpty();\n        boolean first_match = (!text.isEmpty() &&\n                               (pattern.charAt(0) == text.charAt(0) || pattern.charAt(0) == '.'));\n\n        if (pattern.length() >= 2 && pattern.charAt(1) == '*'){\n            return (isMatch(text, pattern.substring(2)) ||\n                    (first_match && isMatch(text.substring(1), pattern)));\n        } else {\n            return first_match && isMatch(text.substring(1), pattern.substring(1));\n        }\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def isMatch(self, text, pattern):\n        if not pattern:\n            return not text\n\n        first_match = bool(text) and pattern[0] in {text[0], '.'}\n\n        if len(pattern) >= 2 and pattern[1] == '*':\n            return (self.isMatch(text, pattern[2:]) or\n                    first_match and self.isMatch(text[1:], pattern))\n        else:\n            return first_match and self.isMatch(text[1:], pattern[1:])",
+        "langSlug": "python"
+      }
+    ],
+    "Fpg6LXEX": [
+      {
+        "code": "enum Result {\n    TRUE, FALSE\n}\n\nclass Solution {\n    Result[][] memo;\n\n    public boolean isMatch(String text, String pattern) {\n        memo = new Result[text.length() + 1][pattern.length() + 1];\n        return dp(0, 0, text, pattern);\n    }\n\n    public boolean dp(int i, int j, String text, String pattern) {\n        if (memo[i][j] != null) {\n            return memo[i][j] == Result.TRUE;\n        }\n        boolean ans;\n        if (j == pattern.length()){\n            ans = i == text.length();\n        } else{\n            boolean first_match = (i < text.length() &&\n                                   (pattern.charAt(j) == text.charAt(i) ||\n                                    pattern.charAt(j) == '.'));\n\n            if (j + 1 < pattern.length() && pattern.charAt(j+1) == '*'){\n                ans = (dp(i, j+2, text, pattern) ||\n                       first_match && dp(i+1, j, text, pattern));\n            } else {\n                ans = first_match && dp(i+1, j+1, text, pattern);\n            }\n        }\n        memo[i][j] = ans ? Result.TRUE : Result.FALSE;\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def isMatch(self, text, pattern):\n        memo = {}\n        def dp(i, j):\n            if (i, j) not in memo:\n                if j == len(pattern):\n                    ans = i == len(text)\n                else:\n                    first_match = i < len(text) and pattern[j] in {text[i], '.'}\n                    if j+1 < len(pattern) and pattern[j+1] == '*':\n                        ans = dp(i, j+2) or first_match and dp(i+1, j)\n                    else:\n                        ans = first_match and dp(i+1, j+1)\n\n                memo[i, j] = ans\n            return memo[i, j]\n\n        return dp(0, 0)",
+        "langSlug": "python"
+      }
+    ],
+    "dmAyPDG3": [
+      {
+        "code": "class Solution {\n    public boolean isMatch(String text, String pattern) {\n        boolean[][] dp = new boolean[text.length() + 1][pattern.length() + 1];\n        dp[text.length()][pattern.length()] = true;\n\n        for (int i = text.length(); i >= 0; i--){\n            for (int j = pattern.length() - 1; j >= 0; j--){\n                boolean first_match = (i < text.length() &&\n                                       (pattern.charAt(j) == text.charAt(i) ||\n                                        pattern.charAt(j) == '.'));\n                if (j + 1 < pattern.length() && pattern.charAt(j+1) == '*'){\n                    dp[i][j] = dp[i][j+2] || first_match && dp[i+1][j];\n                } else {\n                    dp[i][j] = first_match && dp[i+1][j+1];\n                }\n            }\n        }\n        return dp[0][0];\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def isMatch(self, text, pattern):\n        dp = [[False] * (len(pattern) + 1) for _ in range(len(text) + 1)]\n\n        dp[-1][-1] = True\n        for i in range(len(text), -1, -1):\n            for j in range(len(pattern) - 1, -1, -1):\n                first_match = i < len(text) and pattern[j] in {text[i], '.'}\n                if j+1 < len(pattern) and pattern[j+1] == '*':\n                    dp[i][j] = dp[i][j+2] or first_match and dp[i+1][j]\n                else:\n                    dp[i][j] = first_match and dp[i+1][j+1]\n\n        return dp[0][0]",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "String",

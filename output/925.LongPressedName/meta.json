@@ -11,7 +11,27 @@
   "solution": {
     "id": "591",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "TfwwqxiQ": [
+      {
+        "code": "class Solution {\n    public boolean isLongPressedName(String name, String typed) {\n        Group g1 = groupify(name);\n        Group g2 = groupify(typed);\n        if (!g1.key.equals(g2.key))\n            return false;\n\n        for (int i = 0; i < g1.count.size(); ++i)\n            if (g1.count.get(i) > g2.count.get(i))\n                return false;\n        return true;\n    }\n\n    public Group groupify(String S) {\n        StringBuilder key = new StringBuilder();\n        List<Integer> count = new ArrayList();\n        int anchor = 0;\n        int N = S.length();\n        for (int i = 0; i < N; ++i) {\n            if (i == N-1 || S.charAt(i) != S.charAt(i+1)) { // end of group\n                key.append(S.charAt(i));\n                count.add(i - anchor + 1);\n                anchor = i+1;\n            }\n        }\n\n        return new Group(key.toString(), count);\n    }\n}\n\nclass Group {\n    String key;\n    List<Integer> count;\n    Group(String k, List<Integer> c) {\n        key = k;\n        count = c;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def isLongPressedName(self, name, typed):\n        g1 = [(k, len(list(grp))) for k, grp in itertools.groupby(name)]\n        g2 = [(k, len(list(grp))) for k, grp in itertools.groupby(typed)]\n        if len(g1) != len(g2):\n            return False\n\n        return all(k1 == k2 and v1 <= v2\n                   for (k1,v1), (k2,v2) in zip(g1, g2))",
+        "langSlug": "python"
+      }
+    ],
+    "Wv6ufLEV": [
+      {
+        "code": "class Solution {\n    public boolean isLongPressedName(String name, String typed) {\n        int j = 0;\n        for (char c: name.toCharArray()) {\n            if (j == typed.length())\n                return false;\n\n            // If mismatch...\n            if (typed.charAt(j) != c) {\n                // If it's the first char of the block, ans is false.\n                if (j==0 || typed.charAt(j-1) != typed.charAt(j))\n                    return false;\n\n                // Discard all similar chars\n                char cur = typed.charAt(j);\n                while (j < typed.length() && typed.charAt(j) == cur)\n                    j++;\n\n                // If next isn't a match, ans is false.\n                if (j == typed.length() || typed.charAt(j) != c)\n                    return false;\n            }\n\n            j++;\n        }\n\n        return true;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def isLongPressedName(self, name, typed):\n        j = 0\n        for c in name:\n            if j == len(typed):\n                return False\n\n            # If mismatch...\n            if typed[j] != c:\n                # If it's the first char of the block, ans is False.\n                if (j == 0) or (typed[j-1] != typed[j]):\n                    return False\n\n                # Discard all similar chars.\n                cur = typed[j]\n                while j < len(typed) and typed[j] == cur:\n                    j += 1\n\n                # If next isn't a match, ans is False.\n                if j == len(typed) or typed[j] != c:\n                    return False\n\n            j += 1\n\n        return True",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Two Pointers",

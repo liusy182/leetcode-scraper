@@ -11,7 +11,23 @@
   "solution": {
     "id": "677",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "jS7yH954": [
+      {
+        "code": "import javafx.util.Pair;\n\nclass TimeMap {\n    Map<String, List<Pair<Integer, String>>> M;\n\n    public TimeMap() {\n        M = new HashMap();\n    }\n\n    public void set(String key, String value, int timestamp) {\n        if (!M.containsKey(key))\n            M.put(key, new ArrayList<Pair<Integer, String>>());\n\n        M.get(key).add(new Pair(timestamp, value));\n    }\n\n    public String get(String key, int timestamp) {\n        if (!M.containsKey(key)) return \"\";\n\n        List<Pair<Integer, String>> A = M.get(key);\n        int i = Collections.binarySearch(A, new Pair<Integer, String>(timestamp, \"{\"),\n                (a, b) -> Integer.compare(a.getKey(), b.getKey()));\n\n        if (i >= 0)\n            return A.get(i).getValue();\n        else if (i == -1)\n            return \"\";\n        else\n            return A.get(-i-2).getValue();\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class TimeMap(object):\n    def __init__(self):\n        self.M = collections.defaultdict(list)\n\n    def set(self, key, value, timestamp):\n        self.M[key].append((timestamp, value))\n\n    def get(self, key, timestamp):\n        A = self.M.get(key, None)\n        if A is None: return \"\"\n        i = bisect.bisect(A, (timestamp, chr(127)))\n        return A[i-1][1] if i else \"\"",
+        "langSlug": "python"
+      }
+    ],
+    "pH7WK8ph": [
+      {
+        "code": "class TimeMap {\n    Map<String, TreeMap<Integer, String>> M;\n\n    public TimeMap() {\n        M = new HashMap();\n    }\n\n    public void set(String key, String value, int timestamp) {\n        if (!M.containsKey(key))\n            M.put(key, new TreeMap());\n\n        M.get(key).put(timestamp, value);\n    }\n\n    public String get(String key, int timestamp) {\n        if (!M.containsKey(key)) return \"\";\n\n        TreeMap<Integer, String> tree = M.get(key);\n        Integer t = tree.floorKey(timestamp);\n        return t != null ? tree.get(t) : \"\";\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table",

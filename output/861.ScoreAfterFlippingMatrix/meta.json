@@ -11,7 +11,27 @@
   "solution": {
     "id": "497",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "RqkiosdE": [
+      {
+        "code": "class Solution {\n    public int matrixScore(int[][] A) {\n        int R = A.length, C = A[0].length;\n        int[] colsums = new int[C];\n        for (int r = 0; r < R; ++r)\n            for (int c = 0; c < C; ++c)\n                colsums[c] += A[r][c];\n\n        int ans = 0;\n        for (int state = 0; state < (1<<R); ++state) {\n            // Toggle the rows so that after, 'state' represents\n            // the toggled rows.\n            if (state > 0) {\n                int trans = state ^ (state-1);\n                for (int r = 0; r < R; ++r) {\n                    if (((trans >> r) & 1) > 0) {\n                        for (int c = 0; c < C; ++c) {\n                            colsums[c] += A[r][c] == 1 ? -1 : 1;\n                            A[r][c] ^= 1;\n                        }\n                    }\n                }\n            }\n\n            // Calculate the score with the rows toggled by 'state'\n            int score = 0;\n            for (int c = 0; c < C; ++c)\n                score += Math.max(colsums[c], R - colsums[c]) * (1 << (C-1-c));\n            ans = Math.max(ans, score);\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def matrixScore(self, A):\n        R, C = len(A), len(A[0])\n\n        colsums = [0] * C\n        for r in xrange(R):\n            for c in xrange(C):\n                colsums[c] += A[r][c]\n\n        ans = 0\n        for r in xrange(1<<R):\n            if r:\n                trans = r ^ (r-1)\n                for bit in xrange(R):\n                    if (trans >> bit) & 1:\n                        for c in xrange(C):\n                            colsums[c] += -1 if A[bit][c] else +1\n                            A[bit][c] ^= 1\n            \n            score = sum(max(x, R - x) * (1 << (C-1-c))\n                        for c, x in enumerate(colsums))\n            ans = max(ans, score)\n\n        return ans",
+        "langSlug": "python"
+      }
+    ],
+    "2SApjxHH": [
+      {
+        "code": "class Solution {\n    public int matrixScore(int[][] A) {\n        int R = A.length, C = A[0].length;\n        int ans = 0;\n        for (int c = 0; c < C; ++c) {\n            int col = 0;\n            for (int r = 0; r < R; ++r)\n                col += A[r][c] ^ A[r][0];\n            ans += Math.max(col, R - col) * (1 << (C-1-c));\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def matrixScore(self, A):\n        R, C = len(A), len(A[0])\n        ans = 0\n        for c in xrange(C):\n            col = 0\n            for r in xrange(R):\n                col += A[r][c] ^ A[r][0]\n            ans += max(col, R - col) * 2 ** (C - 1 - c)\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Greedy"

@@ -11,7 +11,25 @@
   "solution": {
     "id": "88",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "tRcR8Lx3": [
+      {
+        "code": " public class Solution {\n\n    public int[] nextGreaterElements(int[] nums) {\n        int[] res = new int[nums.length];\n        int[] doublenums = new int[nums.length * 2];\n        System.arraycopy(nums, 0, doublenums, 0, nums.length);\n        System.arraycopy(nums, 0, doublenums, nums.length, nums.length);\n        for (int i = 0; i < nums.length; i++) {\n            res[i]=-1;\n            for (int j = i + 1; j < doublenums.length; j++) {\n                if (doublenums[j] > doublenums[i]) {\n                    res[i] = doublenums[j];\n                    break;\n                }\n            }\n        }\n        return res;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "LCG759JD": [
+      {
+        "code": " public class Solution {\n    public int[] nextGreaterElements(int[] nums) {\n        int[] res = new int[nums.length];\n        for (int i = 0; i < nums.length; i++) {\n            res[i] = -1;\n            for (int j = 1; j < nums.length; j++) {\n                if (nums[(i + j) % nums.length] > nums[i]) {\n                    res[i] = nums[(i + j) % nums.length];\n                    break;\n                }\n            }\n        }\n        return res;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "in37fqRd": [
+      {
+        "code": "public class Solution {\n\n    public int[] nextGreaterElements(int[] nums) {\n        int[] res = new int[nums.length];\n        Stack<Integer> stack = new Stack<>();\n        for (int i = 2 * nums.length - 1; i >= 0; --i) {\n            while (!stack.empty() && nums[stack.peek()] <= nums[i % nums.length]) {\n                stack.pop();\n            }\n            res[i % nums.length] = stack.empty() ? -1 : nums[stack.peek()];\n            stack.push(i % nums.length);\n        }\n        return res;\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Stack"

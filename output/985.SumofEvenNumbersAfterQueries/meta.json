@@ -11,7 +11,17 @@
   "solution": {
     "id": "683",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "cYwLoifs": [
+      {
+        "code": "class Solution {\n    public int[] sumEvenAfterQueries(int[] A, int[][] queries) {\n        int S = 0;\n        for (int x: A)\n            if (x % 2 == 0)\n                S += x;\n\n        int[] ans = new int[queries.length];\n\n        for (int i = 0; i < queries.length; ++i) {\n            int val = queries[i][0], index = queries[i][1];\n            if (A[index] % 2 == 0) S -= A[index];\n            A[index] += val;\n            if (A[index] % 2 == 0) S += A[index];\n            ans[i] = S;\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def sumEvenAfterQueries(self, A, queries):\n        S = sum(x for x in A if x % 2 == 0)\n        ans = []\n\n        for x, k in queries:\n            if A[k] % 2 == 0: S -= A[k]\n            A[k] += x\n            if A[k] % 2 == 0: S += A[k]\n            ans.append(S)\n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array"

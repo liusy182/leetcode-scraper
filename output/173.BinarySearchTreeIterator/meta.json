@@ -11,7 +11,27 @@
   "solution": {
     "id": "737",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "wjgc9wdu": [
+      {
+        "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n * int val;\n * TreeNode left;\n * TreeNode right;\n * TreeNode(int x) { val = x; }\n * }\n */\nclass BSTIterator {\n\n    ArrayList<Integer> nodesSorted;\n    int index;\n\n    public BSTIterator(TreeNode root) {\n\n        // Array containing all the nodes in the sorted order\n        this.nodesSorted = new ArrayList<Integer>();\n        \n        // Pointer to the next smallest element in the BST\n        this.index = -1;\n        \n        // Call to flatten the input binary search tree\n        this._inorder(root);\n    }\n\n    private void _inorder(TreeNode root) {\n\n        if (root == null) {\n            return;\n        }\n\n        this._inorder(root.left);\n        this.nodesSorted.add(root.val);\n        this._inorder(root.right);\n    }\n\n    /**\n     * @return the next smallest number\n     */\n    public int next() {\n        return this.nodesSorted.get(++this.index);\n    }\n\n    /**\n     * @return whether we have a next smallest number\n     */\n    public boolean hasNext() {\n        return this.index + 1 < this.nodesSorted.size();\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass BSTIterator:\n\n    def __init__(self, root: TreeNode):\n        \n        # Array containing all the nodes in the sorted order\n        self.nodes_sorted = []\n        \n        # Pointer to the next smallest element in the BST\n        self.index = -1\n        \n        # Call to flatten the input binary search tree\n        self._inorder(root)\n        \n    def _inorder(self, root):\n        if not root:\n            return\n        self._inorder(root.left)\n        self.nodes_sorted.append(root.val)\n        self._inorder(root.right)\n\n    def next(self) -> int:\n        \"\"\"\n        @return the next smallest number\n        \"\"\"\n        self.index += 1\n        return self.nodes_sorted[self.index]\n\n    def hasNext(self) -> bool:\n        \"\"\"\n        @return whether we have a next smallest number\n        \"\"\"\n        return self.index + 1 < len(self.nodes_sorted)",
+        "langSlug": "python"
+      }
+    ],
+    "Mu4q3jYZ": [
+      {
+        "code": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n * int val;\n * TreeNode left;\n * TreeNode right;\n * TreeNode(int x) { val = x; }\n * }\n */\nclass BSTIterator {\n\n    Stack<TreeNode> stack;\n\n    public BSTIterator(TreeNode root) {\n        \n        // Stack for the recursion simulation\n        this.stack = new Stack<TreeNode>();\n        \n        // Remember that the algorithm starts with a call to the helper function\n        // with the root node as the input\n        this._leftmostInorder(root);\n    }\n\n    private void _leftmostInorder(TreeNode root) {\n      \n        // For a given node, add all the elements in the leftmost branch of the tree\n        // under it to the stack.\n        while (root != null) {\n            this.stack.push(root);\n            root = root.left;\n        }\n    }\n\n    /**\n     * @return the next smallest number\n     */\n    public int next() {\n        // Node at the top of the stack is the next smallest element\n        TreeNode topmostNode = this.stack.pop();\n\n        // Need to maintain the invariant. If the node has a right child, call the \n        // helper function for the right child\n        if (topmostNode.right != null) {\n            this._leftmostInorder(topmostNode.right);\n        }\n\n        return topmostNode.val;\n    }\n\n    /**\n     * @return whether we have a next smallest number\n     */\n    public boolean hasNext() {\n        return this.stack.size() > 0;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass BSTIterator:\n\n    def __init__(self, root: TreeNode):\n        \n        # Stack for the recursion simulation\n        self.stack = []\n        \n        # Remember that the algorithm starts with a call to the helper function\n        # with the root node as the input\n        self._leftmost_inorder(root)\n        \n    def _leftmost_inorder(self, root):\n        \n        # For a given node, add all the elements in the leftmost branch of the tree\n        # under it to the stack.\n        while root:\n            self.stack.append(root)\n            root = root.left\n\n    def next(self) -> int:\n        \"\"\"\n        @return the next smallest number\n        \"\"\"\n        \n        # Node at the top of the stack is the next smallest element\n        topmost_node = self.stack.pop()\n        \n        # Need to maintain the invariant. If the node has a right child, call the \n        # helper function for the right child\n        if topmost_node.right:\n            self._leftmost_inorder(topmost_node.right)\n        return topmost_node.val\n\n    def hasNext(self) -> bool:\n        \"\"\"\n        @return whether we have a next smallest number\n        \"\"\"\n        return len(self.stack) > 0",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Stack",

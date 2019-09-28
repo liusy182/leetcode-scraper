@@ -11,7 +11,17 @@
   "solution": {
     "id": "436",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "ELQgWsrX": [
+      {
+        "code": "class Solution {\n    public int maxIncreaseKeepingSkyline(int[][] grid) {\n        int N = grid.length;\n        int[] rowMaxes = new int[N];\n        int[] colMaxes = new int[N];\n\n        for (int r = 0; r < N; ++r)\n            for (int c = 0; c < N; ++c) {\n                rowMaxes[r] = Math.max(rowMaxes[r], grid[r][c]);\n                colMaxes[c] = Math.max(colMaxes[c], grid[r][c]);\n        }\n\n        int ans = 0;\n        for (int r = 0; r < N; ++r)\n            for (int c = 0; c < N; ++c)\n                ans += Math.min(rowMaxes[r], colMaxes[c]) - grid[r][c];\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def maxIncreaseKeepingSkyline(self, grid):\n        row_maxes = [max(row) for row in grid]\n        col_maxes = [max(col) for col in zip(*grid)]\n\n        return sum(min(row_maxes[r], col_maxes[c]) - val\n                   for r, row in enumerate(grid)\n                   for c, val in enumerate(row))",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": []
 }

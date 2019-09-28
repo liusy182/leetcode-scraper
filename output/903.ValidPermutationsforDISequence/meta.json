@@ -11,7 +11,29 @@
   "solution": {
     "id": "553",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "ymMfbxds": [
+      {
+        "code": "class Solution {\n    public int numPermsDISequence(String S) {\n        int MOD = 1_000_000_007;\n        int N = S.length();\n\n        // dp[i][j] : Num ways to place P_i with relative rank j\n        int[][] dp = new int[N+1][N+1];\n        Arrays.fill(dp[0], 1);\n\n        for (int i = 1; i <= N; ++i) {\n            for (int j = 0; j <= i; ++j) {\n                if (S.charAt(i-1) == 'D') {\n                    for (int k = j; k < i; ++k) {\n                        dp[i][j] += dp[i-1][k];\n                        dp[i][j] %= MOD;\n                    }\n                } else {\n                    for (int k = 0; k < j; ++k) {\n                        dp[i][j] += dp[i-1][k];\n                        dp[i][j] %= MOD;\n                    }\n                }\n            }\n        }\n\n        int ans = 0;\n        for (int x: dp[N]) {\n            ans += x;\n            ans %= MOD;\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "from functools import lru_cache\n\nclass Solution:\n    def numPermsDISequence(self, S):\n        MOD = 10**9 + 7\n        N = len(S)\n\n        @lru_cache(None)\n        def dp(i, j):\n            # How many ways to place P_i with relative rank j?\n            if i == 0:\n                return 1\n            elif S[i-1] == 'D':\n                return sum(dp(i-1, k) for k in range(j, i)) % MOD\n            else:\n                return sum(dp(i-1, k) for k in range(j)) % MOD\n\n        return sum(dp(N, j) for j in range(N+1)) % MOD",
+        "langSlug": "python3"
+      }
+    ],
+    "yKpXsoX7": [
+      {
+        "code": "from functools import lru_cache\n\nclass Solution:\n    def numPermsDISequence(self, S):\n        MOD = 10**9 + 7\n        N = len(S)\n\n        @lru_cache(None)\n        def dp(i, j):\n            # How many ways to place P_i with relative rank j?\n            if not(0 <= j <= i):\n                return 0\n            if i == 0:\n                return 1\n            elif S[i-1] == 'D':\n                return (dp(i, j+1) + dp(i-1, j)) % MOD\n            else:\n                return (dp(i, j-1) + dp(i-1, j-1)) % MOD\n\n        return sum(dp(N, j) for j in range(N+1)) % MOD",
+        "langSlug": "python3"
+      }
+    ],
+    "KreEbZYZ": [
+      {
+        "code": "from functools import lru_cache\n\nclass Solution:\n    def numPermsDISequence(self, S):\n        MOD = 10**9 + 7\n\n        fac = [1, 1]\n        for x in range(2, 201):\n            fac.append(fac[-1] * x % MOD)\n        facinv = [pow(f, MOD-2, MOD) for f in fac]\n\n        def binom(n, k):\n            return fac[n] * facinv[n-k] % MOD * facinv[k] % MOD\n\n        @lru_cache(None)\n        def dp(i, j):\n            if i >= j: return 1\n            ans = 0\n            n = j - i + 2\n            if S[i] == 'I': ans += dp(i+1, j)\n            if S[j] == 'D': ans += dp(i, j-1)\n\n            for k in range(i+1, j+1):\n                if S[k-1:k+1] == 'DI':\n                    ans += binom(n-1, k-i) * dp(i, k-2) % MOD * dp(k+1, j) % MOD\n                    ans %= MOD\n            return ans\n\n        return dp(0, len(S) - 1)",
+        "langSlug": "python3"
+      }
+    ]
   },
   "topicTags": [
     "Divide and Conquer",

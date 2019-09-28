@@ -11,7 +11,25 @@
   "solution": {
     "id": "113",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "WrxDXrW3": [
+      {
+        "code": "vector<vector<int> > updateMatrix(vector<vector<int> >& matrix)\n{\n    int rows = matrix.size();\n    if (rows == 0)\n        return matrix;\n    int cols = matrix[0].size();\n    vector<vector<int> > dist(rows, vector<int>(cols, INT_MAX));\n    for (int i = 0; i < rows; i++) {\n        for (int j = 0; j < cols; j++) {\n            if (matrix[i][j] == 0)\n                dist[i][j] = 0;\n            else {\n                for (int k = 0; k < rows; k++)\n                    for (int l = 0; l < cols; l++)\n                        if (matrix[k][l] == 0) {\n                            int dist_01 = abs(k - i) + abs(l - j);\n                            dist[i][j] = min(dist[i][j], abs(k - i) + abs(l - j));\n                        }\n            }\n        }\n    }\n    return dist;\n}",
+        "langSlug": "cpp"
+      }
+    ],
+    "abTJGHUf": [
+      {
+        "code": "vector<vector<int> > updateMatrix(vector<vector<int> >& matrix)\n{\n    int rows = matrix.size();\n    if (rows == 0)\n        return matrix;\n    int cols = matrix[0].size();\n    vector<vector<int> > dist(rows, vector<int>(cols, INT_MAX));\n    queue<pair<int, int> > q;\n    for (int i = 0; i < rows; i++)\n        for (int j = 0; j < cols; j++)\n            if (matrix[i][j] == 0) {\n                dist[i][j] = 0;\n                q.push({ i, j }); //Put all 0s in the queue.\n            }\n\n    int dir[4][2] = { { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 } };\n    while (!q.empty()) {\n        pair<int, int> curr = q.front();\n        q.pop();\n        for (int i = 0; i < 4; i++) {\n            int new_r = curr.first + dir[i][0], new_c = curr.second + dir[i][1];\n            if (new_r >= 0 && new_c >= 0 && new_r < rows && new_c < cols) {\n                if (dist[new_r][new_c] > dist[curr.first][curr.second] + 1) {\n                    dist[new_r][new_c] = dist[curr.first][curr.second] + 1;\n                    q.push({ new_r, new_c });\n                }\n            }\n        }\n    }\n    return dist;\n}",
+        "langSlug": "cpp"
+      }
+    ],
+    "ZLQD7VF7": [
+      {
+        "code": "vector<vector<int> > updateMatrix(vector<vector<int> >& matrix)\n{\n    int rows = matrix.size();\n    if (rows == 0)\n        return matrix;\n    int cols = matrix[0].size();\n    vector<vector<int> > dist(rows, vector<int>(cols, INT_MAX - 100000));\n\n    //First pass: check for left and top\n    for (int i = 0; i < rows; i++) {\n        for (int j = 0; j < cols; j++) {\n            if (matrix[i][j] == 0)\n                dist[i][j] = 0;\n            else {\n                if (i > 0)\n                    dist[i][j] = min(dist[i][j], dist[i - 1][j] + 1);\n                if (j > 0)\n                    dist[i][j] = min(dist[i][j], dist[i][j - 1] + 1);\n            }\n        }\n    }\n\n    //Second pass: check for bottom and right\n    for (int i = rows - 1; i >= 0; i--) {\n        for (int j = cols - 1; j >= 0; j--) {\n            if (i < rows - 1)\n                dist[i][j] = min(dist[i][j], dist[i + 1][j] + 1);\n            if (j < cols - 1)\n                dist[i][j] = min(dist[i][j], dist[i][j + 1] + 1);\n        }\n    }\n\n    return dist;\n}",
+        "langSlug": "cpp"
+      }
+    ]
   },
   "topicTags": [
     "Depth-first Search",

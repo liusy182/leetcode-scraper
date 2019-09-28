@@ -11,7 +11,17 @@
   "solution": {
     "id": "613",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "XejQAwZ4": [
+      {
+        "code": "class Solution {\n    public int distinctSubseqII(String S) {\n        int MOD = 1_000_000_007;\n        int N = S.length();\n        int[] dp = new int[N+1];\n        dp[0] = 1;\n\n        int[] last = new int[26];\n        Arrays.fill(last, -1);\n\n        for (int i = 0; i < N; ++i) {\n            int x = S.charAt(i) - 'a';\n            dp[i+1] = dp[i] * 2 % MOD;\n            if (last[x] >= 0)\n                dp[i+1] -= dp[last[x]];\n            dp[i+1] %= MOD;\n            last[x] = i;\n        }\n\n        dp[N]--;\n        if (dp[N] < 0) dp[N] += MOD;\n        return dp[N];\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def distinctSubseqII(self, S):\n        dp = [1]\n        last = {}\n        for i, x in enumerate(S):\n            dp.append(dp[-1] * 2)\n            if x in last:\n                dp[-1] -= dp[last[x]]\n            last[x] = i\n\n        return (dp[-1] - 1) % (10**9 + 7)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming"

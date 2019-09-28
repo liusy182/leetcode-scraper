@@ -11,7 +11,17 @@
   "solution": {
     "id": "455",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "oPmtNjJL": [
+      {
+        "code": "class Solution {\n    public int[] shortestToChar(String S, char C) {\n        int N = S.length();\n        int[] ans = new int[N];\n        int prev = Integer.MIN_VALUE / 2;\n\n        for (int i = 0; i < N; ++i) {\n            if (S.charAt(i) == C) prev = i;\n            ans[i] = i - prev;\n        }\n\n        prev = Integer.MAX_VALUE / 2;\n        for (int i = N-1; i >= 0; --i) {\n            if (S.charAt(i) == C) prev = i;\n            ans[i] = Math.min(ans[i], prev - i);\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def shortestToChar(self, S, C):\n        prev = float('-inf')\n        ans = []\n        for i, x in enumerate(S):\n            if x == C: prev = i\n            ans.append(i - prev)\n\n        prev = float('inf')\n        for i in xrange(len(S) - 1, -1, -1):\n            if S[i] == C: prev = i\n            ans[i] = min(ans[i], prev - i)\n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": []
 }

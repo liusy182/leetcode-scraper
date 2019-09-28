@@ -11,7 +11,21 @@
   "solution": {
     "id": "514",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "r7NHTXn2": [
+      {
+        "code": "class Solution {\npublic:\n    int minEatingSpeed(vector<int>& piles, int H) {\n        int lo = 1, hi = pow(10, 9);\n        while (lo < hi) {\n            int mi = lo + (hi - lo) / 2;\n            if (!possible(piles, H, mi))\n                lo = mi + 1;\n            else\n                hi = mi;\n        }\n\n        return lo;\n    }\n\n    // Can Koko eat all bananas in H hours with eating speed K?\n    bool possible(vector<int>& piles, int H, int K) {\n        int time = 0;\n        for (int p: piles)\n            time += (p - 1) / K + 1;\n        return time <= H;\n    }\n};",
+        "langSlug": "cpp"
+      },
+      {
+        "code": "class Solution {\n    public int minEatingSpeed(int[] piles, int H) {\n        int lo = 1;\n        int hi = 1_000_000_000;\n        while (lo < hi) {\n            int mi = (lo + hi) / 2;\n            if (!possible(piles, H, mi))\n                lo = mi + 1;\n            else\n                hi = mi;\n        }\n\n        return lo;\n    }\n\n    // Can Koko eat all bananas in H hours with eating speed K?\n    public boolean possible(int[] piles, int H, int K) {\n        int time = 0;\n        for (int p: piles)\n            time += (p-1) / K + 1;\n        return time <= H;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def minEatingSpeed(self, piles, H):\n        # Can Koko eat all bananas in H hours with eating speed K?\n        def possible(K):\n            return sum((p-1) / K + 1 for p in piles) <= H\n\n        lo, hi = 1, max(piles)\n        while lo < hi:\n            mi = (lo + hi) / 2\n            if not possible(mi):\n                lo = mi + 1\n            else:\n                hi = mi\n        return lo",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Binary Search"

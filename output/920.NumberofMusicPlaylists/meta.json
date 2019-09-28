@@ -11,7 +11,33 @@
   "solution": {
     "id": "580",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "9tJ8LAAB": [
+      {
+        "code": "class Solution {\n    public int numMusicPlaylists(int N, int L, int K) {\n        int MOD = 1_000_000_007;\n\n        long[][] dp = new long[L+1][N+1];\n        dp[0][0] = 1;\n        for (int i = 1; i <= L; ++i)\n            for (int j = 1; j <= N; ++j) {\n                dp[i][j] += dp[i-1][j-1] * (N-j+1);\n                dp[i][j] += dp[i-1][j] * Math.max(j-K, 0);\n                dp[i][j] %= MOD;\n            }\n\n        return (int) dp[L][N];\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "from functools import lru_cache\n\nclass Solution:\n    def numMusicPlaylists(self, N, L, K):\n        @lru_cache(None)\n        def dp(i, j):\n            if i == 0:\n                return +(j == 0)\n            ans = dp(i-1, j-1) * (N-j+1)\n            ans += dp(i-1, j) * max(j-K, 0)\n            return ans % (10**9+7)\n\n        return dp(L, N)",
+        "langSlug": "python"
+      }
+    ],
+    "KdGurUUX": [
+      {
+        "code": "class Solution {\n    public int numMusicPlaylists(int N, int L, int K) {\n        int MOD = 1_000_000_007;\n\n        // dp[S] at time P = <S, P> as discussed in article\n        long[] dp = new long[L-N+1];\n        Arrays.fill(dp, 1);\n        for (int p = 2; p <= N-K; ++p)\n            for (int i = 1; i <= L-N; ++i) {\n                dp[i] += dp[i-1] * p;\n                dp[i] %= MOD;\n            }\n\n        // Multiply by N!\n        long ans = dp[L-N];\n        for (int k = 2; k <= N; ++k)\n            ans = ans * k % MOD;\n        return (int) ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def numMusicPlaylists(self, N, L, K):\n        # dp[S] at time P = <S, P> as discussed in article\n        dp = [1] * (L-N+1)\n        for p in xrange(2, N-K+1):\n            for i in xrange(1, L-N+1):\n                dp[i] += dp[i-1] * p\n\n        # Multiply by N!\n        ans = dp[-1]\n        for k in xrange(2, N+1):\n            ans *= k\n        return ans % (10**9 + 7)",
+        "langSlug": "python"
+      }
+    ],
+    "ypP5xqYU": [
+      {
+        "code": "class Solution(object):\n    def numMusicPlaylists(self, N, L, K):\n        MOD = 10**9 + 7\n        def inv(x):\n            return pow(x, MOD-2, MOD)\n\n        C = 1\n        for x in xrange(1, N-K):\n            C *= -x\n            C %= MOD\n        C = inv(C)\n\n        ans = 0\n        for k in xrange(1, N-K+1):\n            ans += pow(k, L-K-1, MOD) * C\n            C = C * (k - (N-K)) % MOD * inv(k) % MOD\n\n        for k in xrange(1, N+1):\n            ans = ans * k % MOD\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming"

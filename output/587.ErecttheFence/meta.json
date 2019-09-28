@@ -11,7 +11,25 @@
   "solution": {
     "id": "138",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "ho9e8Hs9": [
+      {
+        "code": "public class Solution {\n    public int orientation(Point p, Point q, Point r) {\n        return (q.y - p.y) * (r.x - q.x) - (q.x - p.x) * (r.y - q.y);\n    }\n    public boolean inBetween(Point p, Point i, Point q) {\n        boolean a = i.x >= p.x && i.x <= q.x || i.x <= p.x && i.x >= q.x;\n        boolean b = i.y >= p.y && i.y <= q.y || i.y <= p.y && i.y >= q.y;\n        return a && b;\n    }\n    public List < Point > outerTrees(Point[] points) {\n        HashSet < Point > hull = new HashSet < > ();\n        if (points.length < 4) {\n            for (Point p: points)\n                hull.add(p);\n            return new ArrayList<Point>(hull);\n        }\n        int left_most = 0;\n        for (int i = 0; i < points.length; i++)\n            if (points[i].x < points[left_most].x)\n                left_most = i;\n        int p = left_most;\n        do {\n            int q = (p + 1) % points.length;\n            for (int i = 0; i < points.length; i++) {\n                if (orientation(points[p], points[i], points[q]) < 0) {\n                    q = i;\n                }\n            }\n            for (int i = 0; i < points.length; i++) {\n                if (i != p && i != q && orientation(points[p], points[i], points[q]) == 0 && inBetween(points[p], points[i], points[q])) {\n                    hull.add(points[i]);\n                }\n            }\n            hull.add(points[q]);\n            p = q;\n        }\n        while (p != left_most);\n        return new ArrayList<Point>(hull);\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ],
+    "FRb4Wch9": [
+      {
+        "code": "public class Solution {\n    public int orientation(Point p, Point q, Point r) {\n        return (q.y - p.y) * (r.x - q.x) - (q.x - p.x) * (r.y - q.y);\n    }\n    public int distance(Point p, Point q) {\n        return (p.x - q.x) * (p.x - q.x) + (p.y - q.y) * (p.y - q.y);\n    }\n    private static Point bottomLeft(Point[] points) {\n        Point bottomLeft = points[0];\n        for (Point p: points)\n            if (p.y < bottomLeft.y)\n                bottomLeft = p;\n        return bottomLeft;\n    }\n    public List < Point > outerTrees(Point[] points) {\n        if (points.length <= 1)\n            return Arrays.asList(points);\n        Point bm = bottomLeft(points);\n        Arrays.sort(points, new Comparator < Point > () {\n            public int compare(Point p, Point q) {\n                double diff = orientation(bm, p, q) - orientation(bm, q, p);\n                if (diff == 0)\n                    return distance(bm, p) - distance(bm, q);\n                else\n                    return diff > 0 ? 1 : -1;\n            }\n        });\n        int i = points.length - 1;\n        while (i >= 0 && orientation(bm, points[points.length - 1], points[i]) == 0)\n            i--;\n        for (int l = i + 1, h = points.length - 1; l < h; l++, h--) {\n            Point temp = points[l];\n            points[l] = points[h];\n            points[h] = temp;\n        }\n        Stack < Point > stack = new Stack < > ();\n        stack.push(points[0]);\n        stack.push(points[1]);\n        for (int j = 2; j < points.length; j++) {\n            Point top = stack.pop();\n            while (orientation(stack.peek(), top, points[j]) > 0)\n                top = stack.pop();\n            stack.push(top);\n            stack.push(points[j]);\n        }\n        return new ArrayList < > (stack);\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "vworasPc": [
+      {
+        "code": "public class Solution {\n    public int orientation(Point p, Point q, Point r) {\n        return (q.y - p.y) * (r.x - q.x) - (q.x - p.x) * (r.y - q.y);\n    }\n    public List < Point > outerTrees(Point[] points) {\n        Arrays.sort(points, new Comparator < Point > () {\n            public int compare(Point p, Point q) {\n                return q.x - p.x == 0 ? q.y - p.y : q.x - p.x;\n            }\n        });\n        Stack < Point > hull = new Stack < > ();\n        for (int i = 0; i < points.length; i++) {\n            while (hull.size() >= 2 && orientation(hull.get(hull.size() - 2), hull.get(hull.size() - 1), points[i]) > 0)\n                hull.pop();\n            hull.push(points[i]);\n        }\n        hull.pop();\n        for (int i = points.length - 1; i >= 0; i--) {\n            while (hull.size() >= 2 && orientation(hull.get(hull.size() - 2), hull.get(hull.size() - 1), points[i]) > 0)\n                hull.pop();\n            hull.push(points[i]);\n        }\n        return new ArrayList < > (new HashSet < > (hull));\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Geometry"

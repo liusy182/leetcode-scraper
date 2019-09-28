@@ -11,7 +11,17 @@
   "solution": {
     "id": "571",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "arU2pN5v": [
+      {
+        "code": "class Solution {\n    public List<String> wordSubsets(String[] A, String[] B) {\n        int[] bmax = count(\"\");\n        for (String b: B) {\n            int[] bCount = count(b);\n            for (int i = 0; i < 26; ++i)\n                bmax[i] = Math.max(bmax[i], bCount[i]);\n        }\n\n        List<String> ans = new ArrayList();\n        search: for (String a: A) {\n            int[] aCount = count(a);\n            for (int i = 0; i < 26; ++i)\n                if (aCount[i] < bmax[i])\n                    continue search;\n            ans.add(a);\n        }\n\n        return ans;\n    }\n\n    public int[] count(String S) {\n        int[] ans = new int[26];\n        for (char c: S.toCharArray())\n            ans[c - 'a']++;\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def wordSubsets(self, A, B):\n        def count(word):\n            ans = [0] * 26\n            for letter in word:\n                ans[ord(letter) - ord('a')] += 1\n            return ans\n\n        bmax = [0] * 26\n        for b in B:\n            for i, c in enumerate(count(b)):\n                bmax[i] = max(bmax[i], c)\n\n        ans = []\n        for a in A:\n            if all(x >= y for x, y in zip(count(a), bmax)):\n                ans.append(a)\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "String"

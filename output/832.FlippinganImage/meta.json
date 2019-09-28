@@ -11,7 +11,17 @@
   "solution": {
     "id": "467",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "rePZz3yF": [
+      {
+        "code": "class Solution {\n    public int[][] flipAndInvertImage(int[][] A) {\n        int C = A[0].length;\n        for (int[] row: A)\n            for (int i = 0; i < (C + 1) / 2; ++i) {\n                int tmp = row[i] ^ 1;\n                row[i] = row[C - 1 - i] ^ 1;\n                row[C - 1 - i] = tmp;\n            }\n\n        return A;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def flipAndInvertImage(self, A):\n        for row in A:\n            for i in xrange((len(row) + 1) / 2):\n                \"\"\"\n                In Python, the shortcut row[~i] = row[-i-1] = row[len(row) - 1 - i]\n                helps us find the i-th value of the row, counting from the right.\n                \"\"\"\n                row[i], row[~i] = row[~i] ^ 1, row[i] ^ 1\n        return A",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array"

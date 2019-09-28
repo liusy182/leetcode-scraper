@@ -11,7 +11,19 @@
   "solution": {
     "id": "99",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "tSXGPoqU": [
+      {
+        "code": "public class Solution {\n    public int findLUSlength(String a, String b) {\n        HashMap < String, Integer > map = new HashMap < > ();\n        for (String s: new String[] {a, b}) {\n            for (int i = 0; i < (1 << s.length()); i++) {\n                String t = \"\";\n                for (int j = 0; j < s.length(); j++) {\n                    if (((i >> j) & 1) != 0)\n                        t += s.charAt(j);\n                }\n                if (map.containsKey(t))\n                    map.put(t, map.get(t) + 1);\n                else\n                    map.put(t, 1);\n            }\n        }\n        int res = -1;\n        for (String s: map.keySet()) {\n            if (map.get(s) == 1)\n                res = Math.max(res, s.length());\n        }\n        return res;\n    }\n}\n",
+        "langSlug": "java"
+      }
+    ],
+    "YdNcPgTE": [
+      {
+        "code": "public class Solution {\n    public int findLUSlength(String a, String b) {\n        if (a.equals(b))\n            return -1;\n        return Math.max(a.length(), b.length());\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "String"

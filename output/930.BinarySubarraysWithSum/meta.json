@@ -11,7 +11,37 @@
   "solution": {
     "id": "600",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "xeXqLmYy": [
+      {
+        "code": "class Solution {\n    public int numSubarraysWithSum(int[] A, int S) {\n        int su = 0;\n        for (int x: A) su += x;\n\n        // indexes[i] = location of i-th one (1 indexed)\n        int[] indexes = new int[su + 2];\n        int t = 0;\n        indexes[t++] = -1;\n        for (int i = 0; i < A.length; ++i)\n            if (A[i] == 1)\n                indexes[t++] = i;\n        indexes[t] = A.length;\n\n        int ans = 0;\n        if (S == 0) {\n            for (int i = 0; i < indexes.length - 1; ++i) {\n                // w: number of zeros between consecutive ones\n                int w = indexes[i+1] - indexes[i] - 1;\n                ans += w * (w + 1) / 2;\n            }\n            return ans;\n        }\n\n        for (int i = 1; i < indexes.length - S; ++i) {\n            int j = i + S - 1;\n            int left = indexes[i] - indexes[i-1];\n            int right = indexes[j+1] - indexes[j];\n            ans += left * right;\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def numSubarraysWithSum(self, A, S):\n        indexes = [-1] + [ix for ix, v in enumerate(A) if v] + [len(A)]\n        ans = 0\n\n        if S == 0:\n            for i in xrange(len(indexes) - 1):\n                # w: number of zeros between two consecutive ones\n                w = indexes[i+1] - indexes[i] - 1\n                ans += w * (w+1) / 2\n            return ans\n\n        for i in xrange(1, len(indexes) - S):\n            j = i + S - 1\n            left = indexes[i] - indexes[i-1]\n            right = indexes[j+1] - indexes[j]\n            ans += left * right\n        return ans",
+        "langSlug": "python"
+      }
+    ],
+    "nAHXHKUL": [
+      {
+        "code": "class Solution {\n    public int numSubarraysWithSum(int[] A, int S) {\n        int N = A.length;\n        int[] P = new int[N + 1];\n        for (int i = 0; i < N; ++i)\n            P[i+1] = P[i] + A[i];\n\n        Map<Integer, Integer> count = new HashMap();\n        int ans = 0;\n        for (int x: P) {\n            ans += count.getOrDefault(x, 0);\n            count.put(x+S, count.getOrDefault(x+S, 0) + 1);\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def numSubarraysWithSum(self, A, S):\n        P = [0]\n        for x in A: P.append(P[-1] + x)\n        count = collections.Counter()\n\n        ans = 0\n        for x in P:\n            ans += count[x]\n            count[x + S] += 1\n\n        return ans",
+        "langSlug": "python"
+      }
+    ],
+    "7oyzRqG8": [
+      {
+        "code": "class Solution {\n    public int numSubarraysWithSum(int[] A, int S) {\n        int iLo = 0, iHi = 0;\n        int sumLo = 0, sumHi = 0;\n        int ans = 0;\n\n        for (int j = 0; j < A.length; ++j) {\n            // While sumLo is too big, iLo++\n            sumLo += A[j];\n            while (iLo < j && sumLo > S)\n                sumLo -= A[iLo++];\n\n            // While sumHi is too big, or equal and we can move, iHi++\n            sumHi += A[j];\n            while (iHi < j && (sumHi > S || sumHi == S && A[iHi] == 0))\n                sumHi -= A[iHi++];\n\n            if (sumLo == S)\n                ans += iHi - iLo + 1;\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def numSubarraysWithSum(self, A, S):\n        i_lo = i_hi = 0\n        sum_lo = sum_hi = 0\n        ans = 0\n        for j, x in enumerate(A):\n            # Maintain i_lo, sum_lo:\n            # While the sum is too big, i_lo += 1\n            sum_lo += x\n            while i_lo < j and sum_lo > S:\n                sum_lo -= A[i_lo]\n                i_lo += 1\n\n            # Maintain i_hi, sum_hi:\n            # While the sum is too big, or equal and we can move, i_hi += 1\n            sum_hi += x\n            while i_hi < j and (\n                    sum_hi > S or sum_hi == S and not A[i_hi]):\n                sum_hi -= A[i_hi]\n                i_hi += 1\n\n            if sum_lo == S:\n                ans += i_hi - i_lo + 1\n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table",

@@ -11,7 +11,27 @@
   "solution": {
     "id": "259",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "79o5Wvyy": [
+      {
+        "code": "class Solution {\n    public boolean hasAlternatingBits(int n) {\n        String bits = Integer.toBinaryString(n);\n        for (int i = 0; i < bits.length() - 1; i++) {\n            if (bits.charAt(i) == bits.charAt(i+1)) {\n                return false;\n            }\n        }\n        return true;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def hasAlternatingBits(self, n):\n        bits = bin(n)\n        return all(bits[i] != bits[i+1]\n                   for i in xrange(len(bits) - 1))",
+        "langSlug": "python"
+      }
+    ],
+    "oFAELrSA": [
+      {
+        "code": "class Solution {\n    public boolean hasAlternatingBits(int n) {\n        int cur = n % 2;\n        n /= 2;\n        while (n > 0) {\n            if (cur == n % 2) return false;\n            cur = n % 2;\n            n /= 2;\n        }\n        return true;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def hasAlternatingBits(self, n):\n        n, cur = divmod(n, 2)\n        while n:\n            if cur == n % 2: return False\n            n, cur = divmod(n, 2)\n        return True",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Bit Manipulation"

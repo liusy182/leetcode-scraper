@@ -11,7 +11,17 @@
   "solution": {
     "id": "579",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "vJC78XQe": [
+      {
+        "code": "class CBTInserter {\n    TreeNode root;\n    Deque<TreeNode> deque;\n    public CBTInserter(TreeNode root) {\n        this.root = root;\n        deque = new LinkedList();\n        Queue<TreeNode> queue = new LinkedList();\n        queue.offer(root);\n\n        // BFS to populate deque\n        while (!queue.isEmpty()) {\n            TreeNode node = queue.poll();\n            if (node.left == null || node.right == null)\n                deque.offerLast(node);\n            if (node.left != null)\n                queue.offer(node.left);\n            if (node.right != null)\n                queue.offer(node.right);\n        }\n    }\n\n    public int insert(int v) {\n        TreeNode node = deque.peekFirst();\n        deque.offerLast(new TreeNode(v));\n        if (node.left == null)\n            node.left = deque.peekLast();\n        else {\n            node.right = deque.peekLast();\n            deque.pollFirst();\n        }\n\n        return node.val;\n    }\n\n    public TreeNode get_root() {\n        return root;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class CBTInserter(object):\n    def __init__(self, root):\n        self.deque = collections.deque()\n        self.root = root\n        q = collections.deque([root])\n        while q:\n            node = q.popleft()\n            if not node.left or not node.right:\n                self.deque.append(node)\n            if node.left:\n                q.append(node.left)\n            if node.right:\n                q.append(node.right)\n\n    def insert(self, v):\n        node = self.deque[0]\n        self.deque.append(TreeNode(v))\n        if not node.left:\n            node.left = self.deque[-1]\n        else:\n            node.right = self.deque[-1]\n            self.deque.popleft()\n        return node.val\n\n    def get_root(self):\n        return self.root",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree"

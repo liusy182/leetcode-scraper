@@ -13,7 +13,27 @@
   "solution": {
     "id": "292",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "mPv7qf7R": [
+      {
+        "code": "class Solution {\n    public ListNode[] splitListToParts(ListNode root, int k) {\n        ListNode cur = root;\n        int N = 0;\n        while (cur != null) {\n            cur = cur.next;\n            N++;\n        }\n\n        int width = N / k, rem = N % k;\n\n        ListNode[] ans = new ListNode[k];\n        cur = root;\n        for (int i = 0; i < k; ++i) {\n            ListNode head = new ListNode(0), write = head;\n            for (int j = 0; j < width + (i < rem ? 1 : 0); ++j) {\n                write = write.next = new ListNode(cur.val);\n                if (cur != null) cur = cur.next;\n            }\n            ans[i] = head.next;\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def splitListToParts(self, root, k):\n        cur = root\n        for N in xrange(1001):\n            if not cur: break\n            cur = cur.next\n        width, remainder = divmod(N, k)\n\n        ans = []\n        cur = root\n        for i in xrange(k):\n            head = write = ListNode(None)\n            for j in xrange(width + (i < remainder)):\n                write.next = write = ListNode(cur.val)\n                if cur: cur = cur.next\n            ans.append(head.next)\n        return ans",
+        "langSlug": "python"
+      }
+    ],
+    "RmD7xooU": [
+      {
+        "code": "class Solution {\n    public ListNode[] splitListToParts(ListNode root, int k) {\n        ListNode cur = root;\n        int N = 0;\n        while (cur != null) {\n            cur = cur.next;\n            N++;\n        }\n\n        int width = N / k, rem = N % k;\n\n        ListNode[] ans = new ListNode[k];\n        cur = root;\n        for (int i = 0; i < k; ++i) {\n            ListNode head = cur;\n            for (int j = 0; j < width + (i < rem ? 1 : 0) - 1; ++j) {\n                if (cur != null) cur = cur.next;\n            }\n            if (cur != null) {\n                ListNode prev = cur;\n                cur = cur.next;\n                prev.next = null;\n            }\n            ans[i] = head;\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def splitListToParts(self, root, k):\n        cur = root\n        for N in xrange(1001):\n            if not cur: break\n            cur = cur.next\n        width, remainder = divmod(N, k)\n\n        ans = []\n        cur = root\n        for i in xrange(k):\n            head = cur\n            for j in xrange(width + (i < remainder) - 1):\n                if cur: cur = cur.next\n            if cur:\n                cur.next, cur = None, cur.next\n            ans.append(head)\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Linked List"

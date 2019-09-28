@@ -11,7 +11,17 @@
   "solution": {
     "id": "361",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "ZnPVAdHR": [
+      {
+        "code": "class Solution {\n    public int longestPalindrome(String s) {\n        int[] count = new int[128];\n        for (char c: s.toCharArray())\n            count[c]++;\n\n        int ans = 0;\n        for (int v: count) {\n            ans += v / 2 * 2;\n            if (ans % 2 == 0 && v % 2 == 1)\n                ans++;\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def longestPalindrome(self, s):\n        ans = 0\n        for v in collections.Counter(s).itervalues():\n            ans += v / 2 * 2\n            if ans % 2 == 0 and v % 2 == 1:\n                ans += 1\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table"

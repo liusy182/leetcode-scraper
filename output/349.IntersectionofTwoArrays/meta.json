@@ -11,7 +11,27 @@
   "solution": {
     "id": "704",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "i5eLapjz": [
+      {
+        "code": "class Solution {\n  public int[] set_intersection(HashSet<Integer> set1, HashSet<Integer> set2) {\n    int [] output = new int[set1.size()];\n    int idx = 0;\n    for (Integer s : set1)\n      if (set2.contains(s)) output[idx++] = s;\n\n    return Arrays.copyOf(output, idx);\n  }\n\n  public int[] intersection(int[] nums1, int[] nums2) {\n    HashSet<Integer> set1 = new HashSet<Integer>();\n    for (Integer n : nums1) set1.add(n);\n    HashSet<Integer> set2 = new HashSet<Integer>();\n    for (Integer n : nums2) set2.add(n);\n\n    if (set1.size() < set2.size()) return set_intersection(set1, set2);\n    else return set_intersection(set2, set1);\n  }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def set_intersection(self, set1, set2):\n        return [x for x in set1 if x in set2]\n        \n    def intersection(self, nums1, nums2):\n        \"\"\"\n        :type nums1: List[int]\n        :type nums2: List[int]\n        :rtype: List[int]\n        \"\"\"  \n        set1 = set(nums1)\n        set2 = set(nums2)\n        \n        if len(set1) < len(set2):\n            return self.set_intersection(set1, set2)\n        else:\n            return self.set_intersection(set2, set1)",
+        "langSlug": "python"
+      }
+    ],
+    "fYrF2xVt": [
+      {
+        "code": "class Solution {\n  public int[] intersection(int[] nums1, int[] nums2) {\n    HashSet<Integer> set1 = new HashSet<Integer>();\n    for (Integer n : nums1) set1.add(n);\n    HashSet<Integer> set2 = new HashSet<Integer>();\n    for (Integer n : nums2) set2.add(n);\n\n    set1.retainAll(set2);\n\n    int [] output = new int[set1.size()];\n    int idx = 0;\n    for (int s : set1) output[idx++] = s;\n    return output;\n  }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def intersection(self, nums1, nums2):\n        \"\"\"\n        :type nums1: List[int]\n        :type nums2: List[int]\n        :rtype: List[int]\n        \"\"\"  \n        set1 = set(nums1)\n        set2 = set(nums2)\n        return list(set2 & set1)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table",

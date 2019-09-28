@@ -11,7 +11,26 @@
   "solution": {
     "id": "150",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "jHmznzhx": [],
+    "QhhbiHR9": [
+      {
+        "code": "int trap(vector<int>& height)\n{\n\tif(height == null)\n\t\treturn 0;\n    int ans = 0;\n    int size = height.size();\n    vector<int> left_max(size), right_max(size);\n    left_max[0] = height[0];\n    for (int i = 1; i < size; i++) {\n        left_max[i] = max(height[i], left_max[i - 1]);\n    }\n    right_max[size - 1] = height[size - 1];\n    for (int i = size - 2; i >= 0; i--) {\n        right_max[i] = max(height[i], right_max[i + 1]);\n    }\n    for (int i = 1; i < size - 1; i++) {\n        ans += min(left_max[i], right_max[i]) - height[i];\n    }\n    return ans;\n}",
+        "langSlug": "cpp"
+      }
+    ],
+    "LnhnH382": [
+      {
+        "code": "int trap(vector<int>& height)\n{\n    int ans = 0, current = 0;\n    stack<int> st;\n    while (current < height.size()) {\n        while (!st.empty() && height[current] > height[st.top()]) {\n            int top = st.top();\n            st.pop();\n            if (st.empty())\n                break;\n            int distance = current - st.top() - 1;\n            int bounded_height = min(height[current], height[st.top()]) - height[top];\n            ans += distance * bounded_height;\n        }\n        st.push(current++);\n    }\n    return ans;\n}",
+        "langSlug": "cpp"
+      }
+    ],
+    "oPWsbm9Q": [
+      {
+        "code": "int trap(vector<int>& height)\n{\n    int left = 0, right = height.size() - 1;\n    int ans = 0;\n    int left_max = 0, right_max = 0;\n    while (left < right) {\n        if (height[left] < height[right]) {\n            height[left] >= left_max ? (left_max = height[left]) : ans += (left_max - height[left]);\n            ++left;\n        }\n        else {\n            height[right] >= right_max ? (right_max = height[right]) : ans += (right_max - height[right]);\n            --right;\n        }\n    }\n    return ans;\n}",
+        "langSlug": "cpp"
+      }
+    ]
   },
   "topicTags": [
     "Array",

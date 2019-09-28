@@ -11,7 +11,17 @@
   "solution": {
     "id": "544",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "DCwCw7ZJ": [
+      {
+        "code": "class Solution {\n    public String orderlyQueue(String S, int K) {\n        if (K == 1) {\n            String ans = S;\n            for (int i = 0; i < S.length(); ++i) {\n                String T = S.substring(i) + S.substring(0, i);\n                if (T.compareTo(ans) < 0) ans = T;\n            }\n            return ans;\n        } else {\n            char[] ca = S.toCharArray();\n            Arrays.sort(ca);\n            return new String(ca);\n        }\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def orderlyQueue(self, S, K):\n        if K == 1:\n            return min(S[i:] + S[:i] for i in range(len(S)))\n        return \"\".join(sorted(S))",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math",

@@ -11,7 +11,17 @@
   "solution": {
     "id": "474",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "6yuMDRxQ": [
+      {
+        "code": "class Solution {\n    public int numMagicSquaresInside(int[][] grid) {\n        int R = grid.length, C = grid[0].length;\n        int ans = 0;\n        for (int r = 0; r < R-2; ++r)\n            for (int c = 0; c < C-2; ++c) {\n                if (grid[r+1][c+1] != 5) continue;  // optional skip\n                if (magic(grid[r][c], grid[r][c+1], grid[r][c+2],\n                          grid[r+1][c], grid[r+1][c+1], grid[r+1][c+2],\n                          grid[r+2][c], grid[r+2][c+1], grid[r+2][c+2]))\n                    ans++;\n            }\n\n        return ans;\n    }\n\n    public boolean magic(int... vals) {\n        int[] count = new int[16];\n        for (int v: vals) count[v]++;\n        for (int v = 1; v <= 9; ++v)\n            if (count[v] != 1)\n                return false;\n\n        return (vals[0] + vals[1] + vals[2] == 15 &&\n                vals[3] + vals[4] + vals[5] == 15 &&\n                vals[6] + vals[7] + vals[8] == 15 &&\n                vals[0] + vals[3] + vals[6] == 15 &&\n                vals[1] + vals[4] + vals[7] == 15 &&\n                vals[2] + vals[5] + vals[8] == 15 &&\n                vals[0] + vals[4] + vals[8] == 15 &&\n                vals[2] + vals[4] + vals[6] == 15);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def numMagicSquaresInside(self, grid):\n        R, C = len(grid), len(grid[0])\n\n        def magic(a,b,c,d,e,f,g,h,i):\n            return (sorted([a,b,c,d,e,f,g,h,i]) == range(1, 10) and\n                (a+b+c == d+e+f == g+h+i == a+d+g ==\n                 b+e+h == c+f+i == a+e+i == c+e+g == 15))\n\n        ans = 0\n        for r in xrange(R-2):\n            for c in xrange(C-2):\n                if grid[r+1][c+1] != 5: continue  # optional skip\n                if magic(grid[r][c], grid[r][c+1], grid[r][c+2],\n                         grid[r+1][c], grid[r+1][c+1], grid[r+1][c+2],\n                         grid[r+2][c], grid[r+2][c+1], grid[r+2][c+2]):\n                    ans += 1\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array"

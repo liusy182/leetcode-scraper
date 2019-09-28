@@ -13,7 +13,17 @@
   "solution": {
     "id": "304",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "yJnnXvTf": [
+      {
+        "code": "class MyCalendarThree {\n    TreeMap<Integer, Integer> delta;\n\n    public MyCalendarThree() {\n        delta = new TreeMap();\n    }\n\n    public int book(int start, int end) {\n        delta.put(start, delta.getOrDefault(start, 0) + 1);\n        delta.put(end, delta.getOrDefault(end, 0) - 1);\n\n        int active = 0, ans = 0;\n        for (int d: delta.values()) {\n            active += d;\n            if (active > ans) ans = active;\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class MyCalendarThree(object):\n\n    def __init__(self):\n        self.delta = collections.Counter()\n\n    def book(self, start, end):\n        self.delta[start] += 1\n        self.delta[end] -= 1\n\n        active = ans = 0\n        for x in sorted(self.delta):\n            active += self.delta[x]\n            if active > ans: ans = active\n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Segment Tree",

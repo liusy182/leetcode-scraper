@@ -11,7 +11,17 @@
   "solution": {
     "id": "620",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "Lornz86n": [
+      {
+        "code": "class Solution {\n    public int[] diStringMatch(String S) {\n        int N = S.length();\n        int lo = 0, hi = N;\n        int[] ans = new int[N + 1];\n        for (int i = 0; i < N; ++i) {\n            if (S.charAt(i) == 'I')\n                ans[i] = lo++;\n            else\n                ans[i] = hi--;\n        }\n\n        ans[N] = lo;\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def diStringMatch(self, S):\n        lo, hi = 0, len(S)\n        ans = []\n        for x in S:\n            if x == 'I':\n                ans.append(lo)\n                lo += 1\n            else:\n                ans.append(hi)\n                hi -= 1\n\n        return ans + [lo]",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math"

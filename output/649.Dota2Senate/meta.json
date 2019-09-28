@@ -11,7 +11,17 @@
   "solution": {
     "id": "333",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "zdvGbwLN": [
+      {
+        "code": "class Solution {\n    public String predictPartyVictory(String senate) {\n        Queue<Integer> queue = new LinkedList();\n        int[] people = new int[]{0, 0};\n        int[] bans = new int[]{0, 0};\n\n        for (char person: senate.toCharArray()) {\n            int x = person == 'R' ? 1 : 0;\n            people[x]++;\n            queue.add(x);\n        }\n\n        while (people[0] > 0 && people[1] > 0) {\n            int x = queue.poll();\n            if (bans[x] > 0) {\n                bans[x]--;\n                people[x]--;\n            } else {\n                bans[x^1]++;\n                queue.add(x);\n            }\n        }\n\n        return people[1] > 0 ? \"Radiant\" : \"Dire\";\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "def predictPartyVictory(self, senate):\n    queue = collections.deque()\n    people, bans = [0, 0], [0, 0]\n\n    for person in senate:\n        x = person == 'R'\n        people[x] += 1\n        queue.append(x)\n\n    while all(people):\n        x = queue.popleft()\n        if bans[x]:\n            bans[x] -= 1\n            people[x] -= 1\n        else:\n            bans[x^1] += 1\n            queue.append(x)\n\n    return \"Radiant\" if people[1] else \"Dire\"",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Greedy"

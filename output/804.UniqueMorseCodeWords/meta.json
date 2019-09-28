@@ -11,7 +11,17 @@
   "solution": {
     "id": "439",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "f4mHEzpq": [
+      {
+        "code": "class Solution {\n    public int uniqueMorseRepresentations(String[] words) {\n        String[] MORSE = new String[]{\".-\",\"-...\",\"-.-.\",\"-..\",\".\",\"..-.\",\"--.\",\n                         \"....\",\"..\",\".---\",\"-.-\",\".-..\",\"--\",\"-.\",\n                         \"---\",\".--.\",\"--.-\",\".-.\",\"...\",\"-\",\"..-\",\n                         \"...-\",\".--\",\"-..-\",\"-.--\",\"--..\"};\n\n        Set<String> seen = new HashSet();\n        for (String word: words) {\n            StringBuilder code = new StringBuilder();\n            for (char c: word.toCharArray())\n                code.append(MORSE[c - 'a']);\n            seen.add(code.toString());\n        }\n\n        return seen.size();\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def uniqueMorseRepresentations(self, words):\n        MORSE = [\".-\",\"-...\",\"-.-.\",\"-..\",\".\",\"..-.\",\"--.\",\n                 \"....\",\"..\",\".---\",\"-.-\",\".-..\",\"--\",\"-.\",\n                 \"---\",\".--.\",\"--.-\",\".-.\",\"...\",\"-\",\"..-\",\n                 \"...-\",\".--\",\"-..-\",\"-.--\",\"--..\"]\n\n        seen = {\"\".join(MORSE[ord(c) - ord('a')] for c in word)\n                for word in words}\n\n        return len(seen)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "String"

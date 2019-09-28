@@ -11,7 +11,17 @@
   "solution": {
     "id": "536",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "MNvnRoUP": [
+      {
+        "code": "class Solution {\n    Map<Integer, List<TreeNode>> memo = new HashMap();\n\n    public List<TreeNode> allPossibleFBT(int N) {\n        if (!memo.containsKey(N)) {\n            List<TreeNode> ans = new LinkedList();\n            if (N == 1) {\n                ans.add(new TreeNode(0));\n            } else if (N % 2 == 1) {\n                for (int x = 0; x < N; ++x) {\n                    int y = N - 1 - x;\n                    for (TreeNode left: allPossibleFBT(x))\n                        for (TreeNode right: allPossibleFBT(y)) {\n                            TreeNode bns = new TreeNode(0);\n                            bns.left = left;\n                            bns.right = right;\n                            ans.add(bns);\n                        }\n                }\n            }\n            memo.put(N, ans);\n        }\n\n        return memo.get(N);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    memo = {0: [], 1: [TreeNode(0)]}\n\n    def allPossibleFBT(self, N):\n        if N not in Solution.memo:\n            ans = []\n            for x in xrange(N):\n                y = N - 1 - x\n                for left in self.allPossibleFBT(x):\n                    for right in self.allPossibleFBT(y):\n                        bns = TreeNode(0)\n                        bns.left = left\n                        bns.right = right\n                        ans.append(bns)\n            Solution.memo[N] = ans\n\n        return Solution.memo[N]",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree",

@@ -11,7 +11,17 @@
   "solution": {
     "id": "449",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "V3u2LbFe": [
+      {
+        "code": "class Solution {\n    public int numComponents(ListNode head, int[] G) {\n        Set<Integer> Gset = new HashSet();\n        for (int x: G) Gset.add(x);\n\n        ListNode cur = head;\n        int ans = 0;\n\n        while (cur != null) {\n            if (Gset.contains(cur.val) &&\n                    (cur.next == null || !Gset.contains(cur.next.val)))\n                ans++;\n            cur = cur.next;\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def numComponents(self, head, G):\n        Gset = set(G)\n        cur = head\n        ans = 0\n        while cur:\n            if (cur.val in Gset and\n                    getattr(cur.next, 'val', None) not in Gset):\n                ans += 1\n            cur = cur.next\n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Linked List"

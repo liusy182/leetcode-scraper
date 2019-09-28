@@ -11,7 +11,25 @@
   "solution": {
     "id": "81",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "tE9iwqVk": [
+      {
+        "code": "int maximumGap(vector<int>& nums)\n{\n    if (nums.empty() || nums.size() < 2)            // check if array is empty or small sized\n        return 0;\n\n    sort(nums.begin(), nums.end());                 // sort the array\n\n    int maxGap = 0;\n\n    for (int i = 0; i < nums.size() - 1; i++)\n        maxGap = max(nums[i + 1] - nums[i], maxGap);\n\n    return maxGap;\n}",
+        "langSlug": "cpp"
+      }
+    ],
+    "Ta7AXDt5": [
+      {
+        "code": "int maximumGap(vector<int>& nums)\n{\n    if (nums.empty() || nums.size() < 2)\n        return 0;\n\n    int maxVal = *max_element(nums.begin(), nums.end());\n\n    int exp = 1;                                 // 1, 10, 100, 1000 ...\n    int radix = 10;                              // base 10 system\n\n    vector<int> aux(nums.size());\n\n    /* LSD Radix Sort */\n    while (maxVal / exp > 0) {                   // Go through all digits from LSD to MSD\n        vector<int> count(radix, 0);\n\n        for (int i = 0; i < nums.size(); i++)    // Counting sort\n            count[(nums[i] / exp) % 10]++;\n\n        for (int i = 1; i < count.size(); i++)   // you could also use partial_sum()\n            count[i] += count[i - 1];\n\n        for (int i = nums.size() - 1; i >= 0; i--)\n            aux[--count[(nums[i] / exp) % 10]] = nums[i];\n\n        for (int i = 0; i < nums.size(); i++)\n            nums[i] = aux[i];\n\n        exp *= 10;\n    }\n\n    int maxGap = 0;\n\n    for (int i = 0; i < nums.size() - 1; i++)\n        maxGap = max(nums[i + 1] - nums[i], maxGap);\n\n    return maxGap;\n}",
+        "langSlug": "cpp"
+      }
+    ],
+    "XPXwrKmS": [
+      {
+        "code": "class Bucket {\npublic:\n    bool used = false;\n    int minval = numeric_limits<int>::max();        // same as INT_MAX\n    int maxval = numeric_limits<int>::min();        // same as INT_MIN\n};\n\nint maximumGap(vector<int>& nums)\n{\n    if (nums.empty() || nums.size() < 2)\n        return 0;\n\n    int mini = *min_element(nums.begin(), nums.end()),\n        maxi = *max_element(nums.begin(), nums.end());\n\n    int bucketSize = max(1, (maxi - mini) / ((int)nums.size() - 1));        // bucket size or capacity\n    int bucketNum = (maxi - mini) / bucketSize + 1;                         // number of buckets\n    vector<Bucket> buckets(bucketNum);\n\n    for (auto&& num : nums) {\n        int bucketIdx = (num - mini) / bucketSize;                          // locating correct bucket\n        buckets[bucketIdx].used = true;\n        buckets[bucketIdx].minval = min(num, buckets[bucketIdx].minval);\n        buckets[bucketIdx].maxval = max(num, buckets[bucketIdx].maxval);\n    }\n\n    int prevBucketMax = mini, maxGap = 0;\n    for (auto&& bucket : buckets) {\n        if (!bucket.used)\n            continue;\n\n        maxGap = max(maxGap, bucket.minval - prevBucketMax);\n        prevBucketMax = bucket.maxval;\n    }\n\n    return maxGap;\n}",
+        "langSlug": "cpp"
+      }
+    ]
   },
   "topicTags": [
     "Sort"

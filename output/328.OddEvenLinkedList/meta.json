@@ -11,7 +11,13 @@
   "solution": {
     "id": "28",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "hwsGSV9j": [
+      {
+        "code": "public class Solution {\n    public ListNode oddEvenList(ListNode head) {\n        if (head == null) return null;\n        ListNode odd = head, even = head.next, evenHead = even;\n        while (even != null && even.next != null) {\n            odd.next = even.next;\n            odd = odd.next;\n            even.next = odd.next;\n            even = even.next;\n        }\n        odd.next = evenHead;\n        return head;\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Linked List"

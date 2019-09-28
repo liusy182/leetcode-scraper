@@ -11,7 +11,17 @@
   "solution": {
     "id": "466",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "2qLJpytD": [
+      {
+        "code": "class Solution {\n    public String findReplaceString(String S, int[] indexes, String[] sources, String[] targets) {\n        int N = S.length();\n        int[] match = new int[N];\n        Arrays.fill(match, -1);\n\n        for (int i = 0; i < indexes.length; ++i) {\n            int ix = indexes[i];\n            if (S.substring(ix, ix + sources[i].length()).equals(sources[i]))\n                match[ix] = i;\n        }\n\n        StringBuilder ans = new StringBuilder();\n        int ix = 0;\n        while (ix < N) {\n            if (match[ix] >= 0) {\n                ans.append(targets[match[ix]]);\n                ix += sources[match[ix]].length();\n            } else {\n                ans.append(S.charAt(ix++));\n            }\n        }\n        return ans.toString();\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def findReplaceString(self, S, indexes, sources, targets):\n        S = list(S)\n        for i, x, y in sorted(zip(indexes, sources, targets), reverse = True):\n            if all(i+k < len(S) and S[i+k] == x[k] for k in xrange(len(x))):\n                S[i:i+len(x)] = list(y)\n\n        return \"\".join(S)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "String"

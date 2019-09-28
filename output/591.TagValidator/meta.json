@@ -11,7 +11,19 @@
   "solution": {
     "id": "153",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "jBPTd4xA": [
+      {
+        "code": "public class Solution {\n    Stack < String > stack = new Stack < > ();\n    boolean contains_tag = false;\n    public boolean isValidTagName(String s, boolean ending) {\n        if (s.length() < 1 || s.length() > 9)\n            return false;\n        for (int i = 0; i < s.length(); i++) {\n            if (!Character.isUpperCase(s.charAt(i)))\n                return false;\n        }\n        if (ending) {\n            if (!stack.isEmpty() && stack.peek().equals(s))\n                stack.pop();\n            else\n                return false;\n        } else {\n            contains_tag = true;\n            stack.push(s);\n        }\n        return true;\n    }\n    public boolean isValidCdata(String s) {\n        return s.indexOf(\"[CDATA[\") == 0;\n    }\n    public boolean isValid(String code) {\n        if (code.charAt(0) != '<' || code.charAt(code.length() - 1) != '>')\n            return false;\n        for (int i = 0; i < code.length(); i++) {\n            boolean ending = false;\n            int closeindex;\n            if(stack.isEmpty() && contains_tag)\n                return false;\n            if (code.charAt(i) == '<') {\n                if (!stack.isEmpty() && code.charAt(i + 1) == '!') {\n                    closeindex = code.indexOf(\"]]>\", i + 1);\n                    if (closeindex < 0 || !isValidCdata(code.substring(i + 2, closeindex)))\n                        return false;\n                } else {\n                    if (code.charAt(i + 1) == '/') {\n                        i++;\n                        ending = true;\n                    }\n                    closeindex = code.indexOf('>', i + 1);\n                    if (closeindex < 0 || !isValidTagName(code.substring(i + 1, closeindex), ending))\n                        return false;\n                }\n                i = closeindex;\n            }\n        }\n        return stack.isEmpty() && contains_tag;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "wacVss6K": [
+      {
+        "code": "import java.util.regex.*;\npublic class Solution {\n    Stack < String > stack = new Stack < > ();\n    boolean contains_tag = false;\n    public boolean isValidTagName(String s, boolean ending) {\n        if (ending) {\n            if (!stack.isEmpty() && stack.peek().equals(s))\n                stack.pop();\n            else\n                return false;\n        } else {\n            contains_tag = true;\n            stack.push(s);\n        }\n        return true;\n    }\n    public boolean isValid(String code) {\n        String regex = \"<[A-Z]{0,9}>([^<]*(<((\\\\/?[A-Z]{1,9}>)|(!\\\\[CDATA\\\\[(.*?)]]>)))?)*\";\n        if (!Pattern.matches(regex, code))\n            return false;\n        for (int i = 0; i < code.length(); i++) {\n            boolean ending = false;\n            if (stack.isEmpty() && contains_tag)\n                return false;\n            if (code.charAt(i) == '<') {\n                if (code.charAt(i + 1) == '!') {\n                    i = code.indexOf(\"]]>\", i + 1);\n                    continue;\n                }\n                if (code.charAt(i + 1) == '/') {\n                    i++;\n                    ending = true;\n                }\n                int closeindex = code.indexOf('>', i + 1);\n                if (closeindex < 0 || !isValidTagName(code.substring(i + 1, closeindex), ending))\n                    return false;\n                i = closeindex;\n            }\n        }\n        return stack.isEmpty();\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "String",

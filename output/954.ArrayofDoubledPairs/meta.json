@@ -11,7 +11,17 @@
   "solution": {
     "id": "636",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "2njGcRUM": [
+      {
+        "code": "class Solution {\n    public boolean canReorderDoubled(int[] A) {\n        // count[x] = the number of occurrences of x in A\n        Map<Integer, Integer> count = new HashMap();\n        for (int x: A)\n            count.put(x, count.getOrDefault(x, 0) + 1);\n\n        // B = A as Integer[], sorted by absolute value\n        Integer[] B = new Integer[A.length];\n        for (int i = 0; i < A.length; ++i)\n            B[i] = A[i];\n        Arrays.sort(B, Comparator.comparingInt(Math::abs));\n\n        for (int x: B) {\n            // If this can't be consumed, skip\n            if (count.get(x) == 0) continue;\n            // If this doesn't have a doubled partner, the answer is false\n            if (count.getOrDefault(2*x, 0) <= 0) return false;\n\n            // Write x, 2*x\n            count.put(x, count.get(x) - 1);\n            count.put(2*x, count.get(2*x) - 1);\n        }\n\n        // If we have written everything, the answer is true\n        return true;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def canReorderDoubled(self, A):\n        count = collections.Counter(A)\n        for x in sorted(A, key = abs):\n            if count[x] == 0: continue\n            if count[2*x] == 0: return False\n            count[x] -= 1\n            count[2*x] -= 1\n\n        return True",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array",

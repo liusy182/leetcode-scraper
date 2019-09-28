@@ -11,7 +11,27 @@
   "solution": {
     "id": "503",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "BShzUaRJ": [
+      {
+        "code": "class Solution {\n    Map<TreeNode, Integer> depth;\n    int max_depth;\n    public TreeNode subtreeWithAllDeepest(TreeNode root) {\n        depth = new HashMap();\n        depth.put(null, -1);\n        dfs(root, null);\n        max_depth = -1;\n        for (Integer d: depth.values())\n            max_depth = Math.max(max_depth, d);\n\n        return answer(root);\n    }\n\n    public void dfs(TreeNode node, TreeNode parent) {\n        if (node != null) {\n            depth.put(node, depth.get(parent) + 1);\n            dfs(node.left, node);\n            dfs(node.right, node);\n        }\n    }\n\n    public TreeNode answer(TreeNode node) {\n        if (node == null || depth.get(node) == max_depth)\n            return node;\n        TreeNode L = answer(node.left),\n                 R = answer(node.right);\n        if (L != null && R != null) return node;\n        if (L != null) return L;\n        if (R != null) return R;\n        return null;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def subtreeWithAllDeepest(self, root):\n        # Tag each node with it's depth.\n        depth = {None: -1}\n        def dfs(node, parent = None):\n            if node:\n                depth[node] = depth[parent] + 1\n                dfs(node.left, node)\n                dfs(node.right, node)\n        dfs(root)\n\n        max_depth = max(depth.itervalues())\n\n        def answer(node):\n            # Return the answer for the subtree at node.\n            if not node or depth.get(node, None) == max_depth:\n                return node\n            L, R = answer(node.left), answer(node.right)\n            return node if L and R else L or R\n\n        return answer(root)",
+        "langSlug": "python"
+      }
+    ],
+    "QAN4y6ev": [
+      {
+        "code": "class Solution {\n    public TreeNode subtreeWithAllDeepest(TreeNode root) {\n        return dfs(root).node;\n    }\n\n    // Return the result of the subtree at this node.\n    public Result dfs(TreeNode node) {\n        if (node == null) return new Result(null, 0);\n        Result L = dfs(node.left),\n               R = dfs(node.right);\n        if (L.dist > R.dist) return new Result(L.node, L.dist + 1);\n        if (L.dist < R.dist) return new Result(R.node, R.dist + 1);\n        return new Result(node, L.dist + 1);\n    }\n}\n\n/**\n * The result of a subtree is:\n *       Result.node: the largest depth node that is equal to or\n *                    an ancestor of all the deepest nodes of this subtree.\n *       Result.dist: the number of nodes in the path from the root\n *                    of this subtree, to the deepest node in this subtree.\n */\nclass Result {\n    TreeNode node;\n    int dist;\n    Result(TreeNode n, int d) {\n        node = n;\n        dist = d;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def subtreeWithAllDeepest(self, root):\n        # The result of a subtree is:\n        # Result.node: the largest depth node that is equal to or\n        #              an ancestor of all the deepest nodes of this subtree.\n        # Result.dist: the number of nodes in the path from the root\n        #              of this subtree, to the deepest node in this subtree.\n        Result = collections.namedtuple(\"Result\", (\"node\", \"dist\"))\n        def dfs(node):\n            # Return the result of the subtree at this node.\n            if not node: return Result(None, 0)\n            L, R = dfs(node.left), dfs(node.right)\n            if L.dist > R.dist: return Result(L.node, L.dist + 1)\n            if L.dist < R.dist: return Result(R.node, R.dist + 1)\n            return Result(node, L.dist + 1)\n\n        return dfs(root).node",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree"

@@ -11,7 +11,13 @@
   "solution": {
     "id": "43",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "KHvbA6CF": [
+      {
+        "code": "public ListNode deleteDuplicates(ListNode head) {\n    ListNode current = head;\n    while (current != null && current.next != null) {\n        if (current.next.val == current.val) {\n            current.next = current.next.next;\n        } else {\n            current = current.next;\n        }\n    }\n    return head;\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Linked List"

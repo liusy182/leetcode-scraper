@@ -11,7 +11,43 @@
   "solution": {
     "id": "185",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "yuGJPYGb": [
+      {
+        "code": "public class Solution {\n    Integer[][] memo = new Integer[1001][1001];\n    public int kInversePairs(int n, int k) {\n        if (n == 0)\n            return 0;\n        if (k == 0)\n            return 1;\n        if (memo[n][k] != null)\n            return memo[n][k];\n        int inv = 0;\n        for (int i = 0; i <= Math.min(k, n - 1); i++)\n            inv = (inv + kInversePairs(n - 1, k - i)) % 1000000007;\n        memo[n][k] = inv;\n        return inv;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "jc3NbwaZ": [
+      {
+        "code": "public class Solution {\n    public int kInversePairs(int n, int k) {\n        int[][] dp = new int[n + 1][k + 1];\n        for (int i = 1; i <= n; i++) {\n            for (int j = 0; j <= k; j++) {\n                if (j == 0)\n                    dp[i][j] = 1;\n                else {\n                    for (int p = 0; p <= Math.min(j, i - 1); p++)\n                        dp[i][j] = (dp[i][j] + dp[i - 1][j - p]) % 1000000007;\n                }\n            }\n        }\n        return dp[n][k];\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "GDndaXt6": [
+      {
+        "code": "public class Solution {\n    public int kInversePairs(int n, int k) {\n        int[][] dp = new int[n + 1][k + 1];\n        int M = 1000000007;\n        for (int i = 1; i <= n; i++) {\n            for (int j = 0; j <= k; j++) {\n                if (j == 0)\n                    dp[i][j] = 1;\n                else {\n                    int val = (dp[i - 1][j] + M - ((j - i) >= 0 ? dp[i - 1][j - i] : 0)) % M;\n                    dp[i][j] = (dp[i][j - 1] + val) % M;\n                }\n            }\n        }\n        return ((dp[n][k] + M - (k > 0 ? dp[n][k - 1] : 0)) % M);\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "XK2QkFyb": [
+      {
+        "code": "public class Solution {\n    public int kInversePairs(int n, int k) {\n        int[][] dp = new int[n + 1][k + 1];\n        int M = 1000000007;\n        for (int i = 1; i <= n; i++) {\n            for (int j = 0; j <= k && j <= i * (i - 1) / 2; j++) {\n                if (i == 1 && j == 0) {\n                    dp[i][j] = 1;\n                    break;\n                } else if (j == 0)\n                    dp[i][j] = 1;\n                else {\n                    int val = (dp[i - 1][j] + M - ((j - i) >= 0 ? dp[i - 1][j - i] : 0)) % M;\n                    dp[i][j] = (dp[i][j - 1] + val) % M;\n                }\n            }\n        }\n        return dp[n][k];\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "Tkq2Z36Y": [
+      {
+        "code": "public class Solution {\n    Integer[][] memo = new Integer[1001][1001];\n    int M = 1000000007;\n    public int kInversePairs(int n, int k) {\n        return ((inv(n, k) + M - (k > 0 ? inv(n, k - 1) : 0)) % M);\n    }\n    public int inv(int n, int k) {\n        if (n == 0)\n            return 0;\n        if (k == 0)\n            return 1;\n        if (memo[n][k] != null)\n            return memo[n][k];\n        int val = (inv(n - 1, k) + M - ((k - n) >= 0 ? inv(n - 1, k - n) : 0)) % M;\n        memo[n][k] = (inv(n, k - 1) + val) % M;\n        return memo[n][k];\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "qZUxznzm": [
+      {
+        "code": "public class Solution {\n    public int kInversePairs(int n, int k) {\n        int[] dp = new int[k + 1];\n        int M = 1000000007;\n        for (int i = 1; i <= n; i++) {\n            int[] temp = new int[k + 1];\n            temp[0] = 1;\n            for (int j = 1; j <= k ; j++) {\n                int val = (dp[j] + M - ((j - i) >= 0 ? dp[j - i] : 0)) % M;\n                temp[j] = (temp[j - 1] + val) % M;\n            }\n            dp = temp;\n        }\n        return ((dp[k] + M - (k > 0 ? dp[k - 1] : 0)) % M);\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming"

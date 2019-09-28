@@ -11,7 +11,17 @@
   "solution": {
     "id": "643",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "HKcoATQ8": [
+      {
+        "code": "class Solution {\n    public int[] prisonAfterNDays(int[] cells, int N) {\n        Map<Integer, Integer> seen = new HashMap();\n\n        // state  = integer representing state of prison\n        int state = 0;\n        for (int i = 0; i < 8; ++i) {\n            if (cells[i] > 0)\n                state ^= 1 << i;\n        }\n\n        // While days remaining, simulate a day\n        while (N > 0) {\n            // If this is a cycle, fast forward by\n            // seen.get(state) - N, the period of the cycle.\n            if (seen.containsKey(state)) {\n                N %= seen.get(state) - N;\n            }\n            seen.put(state, N);\n\n            if (N >= 1) {\n                N--;\n                state = nextDay(state);\n            }\n        }\n\n        // Convert the state back to the required answer.\n        int[] ans = new int[8];\n        for (int i = 0; i < 8; ++i) {\n            if (((state >> i) & 1) > 0) {\n                ans[i] = 1;\n            }\n        }\n\n        return ans;\n    }\n\n    public int nextDay(int state) {\n        int ans = 0;\n\n        // We only loop from 1 to 6 because 0 and 7 are impossible,\n        // as those cells only have one neighbor.\n        for (int i = 1; i <= 6; ++i) {\n            if (((state >> (i-1)) & 1) == ((state >> (i+1)) & 1)) {\n                ans ^= 1 << i;\n            }\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def prisonAfterNDays(self, cells, N):\n        def nextday(cells):\n            return [int(i > 0 and i < 7 and cells[i-1] == cells[i+1])\n                    for i in xrange(8)]\n\n        seen = {}\n        while N > 0:\n            c = tuple(cells)\n            if c in seen:\n                N %= seen[c] - N\n            seen[c] = N\n\n            if N >= 1:\n                N -= 1\n                cells = nextday(cells)\n\n        return cells",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table"

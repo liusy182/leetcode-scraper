@@ -11,7 +11,17 @@
   "solution": {
     "id": "690",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "xhbtbZzk": [
+      {
+        "code": "class Solution {\n    public int brokenCalc(int X, int Y) {\n        int ans = 0;\n        while (Y > X) {\n            ans++;\n            if (Y % 2 == 1)\n                Y++;\n            else\n                Y /= 2;\n        }\n\n        return ans + X - Y;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def brokenCalc(self, X, Y):\n        ans = 0\n        while Y > X:\n            ans += 1\n            if Y%2: Y += 1\n            else: Y /= 2\n\n        return ans + X-Y",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math",

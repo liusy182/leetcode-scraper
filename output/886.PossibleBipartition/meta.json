@@ -11,7 +11,17 @@
   "solution": {
     "id": "529",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "aD5rzLRZ": [
+      {
+        "code": "class Solution {\n    ArrayList<Integer>[] graph;\n    Map<Integer, Integer> color;\n\n    public boolean possibleBipartition(int N, int[][] dislikes) {\n        graph = new ArrayList[N+1];\n        for (int i = 1; i <= N; ++i)\n            graph[i] = new ArrayList();\n\n        for (int[] edge: dislikes) {\n            graph[edge[0]].add(edge[1]);\n            graph[edge[1]].add(edge[0]);\n        }\n\n        color = new HashMap();\n        for (int node = 1; node <= N; ++node)\n            if (!color.containsKey(node) && !dfs(node, 0))\n                return false;\n        return true;\n    }\n\n    public boolean dfs(int node, int c) {\n        if (color.containsKey(node))\n            return color.get(node) == c;\n        color.put(node, c);\n\n        for (int nei: graph[node])\n            if (!dfs(nei, c ^ 1))\n                return false;\n        return true;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def possibleBipartition(self, N, dislikes):\n        graph = collections.defaultdict(list)\n        for u, v in dislikes:\n            graph[u].append(v)\n            graph[v].append(u)\n\n        color = {}\n        def dfs(node, c = 0):\n            if node in color:\n                return color[node] == c\n            color[node] = c\n            return all(dfs(nei, c ^ 1) for nei in graph[node])\n\n        return all(dfs(node)\n                   for node in range(1, N+1)\n                   if node not in color)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Depth-first Search"

@@ -13,7 +13,27 @@
   "solution": {
     "id": "356",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "6FQhQc9V": [
+      {
+        "code": "class Solution {\n    Set<String> seen;\n    StringBuilder ans;\n\n    public String crackSafe(int n, int k) {\n        if (n == 1 && k == 1) return \"0\";\n        seen = new HashSet();\n        ans = new StringBuilder();\n\n        StringBuilder sb = new StringBuilder();\n        for (int i = 0; i < n-1; ++i)\n            sb.append(\"0\");\n        String start = sb.toString();\n\n        dfs(start, k);\n        ans.append(start);\n        return new String(ans);\n    }\n\n    public void dfs(String node, int k) {\n        for (int x = 0; x < k; ++x) {\n            String nei = node + x;\n            if (!seen.contains(nei)) {\n                seen.add(nei);\n                dfs(nei.substring(1), k);\n                ans.append(x);\n            }\n        }\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def crackSafe(self, n, k):\n        seen = set()\n        ans = []\n        def dfs(node):\n            for x in map(str, range(k)):\n                nei = node + x\n                if nei not in seen:\n                    seen.add(nei)\n                    dfs(nei[1:])\n                    ans.append(x)\n\n        dfs(\"0\" * (n-1))\n        return \"\".join(ans) + \"0\" * (n-1)",
+        "langSlug": "python"
+      }
+    ],
+    "Xcx7eTBD": [
+      {
+        "code": "class Solution {\n    public String crackSafe(int n, int k) {\n        int M = (int) Math.pow(k, n-1);\n        int[] P = new int[M * k];\n        for (int i = 0; i < k; ++i)\n            for (int q = 0; q < M; ++q)\n                P[i*M + q] = q*k + i;\n\n        StringBuilder ans = new StringBuilder();\n        for (int i = 0; i < M*k; ++i) {\n            int j = i;\n            while (P[j] >= 0) {\n                ans.append(String.valueOf(j / M));\n                int v = P[j];\n                P[j] = -1;\n                j = v;\n            }\n        }\n\n        for (int i = 0; i < n-1; ++i)\n            ans.append(\"0\");\n        return new String(ans);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def crackSafe(self, n, k):\n        M = k**(n-1)\n        P = [q*k+i for i in xrange(k) for q in xrange(M)]\n        ans = []\n\n        for i in xrange(k**n):\n            j = i\n            while P[j] >= 0:\n                ans.append(str(j / M))\n                P[j], j = -1, P[j]\n\n        return \"\".join(ans) + \"0\" * (n-1)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math",

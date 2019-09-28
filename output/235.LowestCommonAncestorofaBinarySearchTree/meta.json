@@ -11,7 +11,27 @@
   "solution": {
     "id": "644",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "A7ZULghS": [
+      {
+        "code": "class Solution {\n    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {\n\n        // Value of current node or parent node.\n        int parentVal = root.val;\n\n        // Value of p\n        int pVal = p.val;\n\n        // Value of q;\n        int qVal = q.val;\n\n        if (pVal > parentVal && qVal > parentVal) {\n            // If both p and q are greater than parent\n            return lowestCommonAncestor(root.right, p, q);\n        } else if (pVal < parentVal && qVal < parentVal) {\n            // If both p and q are lesser than parent\n            return lowestCommonAncestor(root.left, p, q);\n        } else {\n            // We have found the split point, i.e. the LCA node.\n            return root;\n        }\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def lowestCommonAncestor(self, root, p, q):\n        \"\"\"\n        :type root: TreeNode\n        :type p: TreeNode\n        :type q: TreeNode\n        :rtype: TreeNode\n        \"\"\"\n        # Value of current node or parent node.\n        parent_val = root.val\n\n        # Value of p\n        p_val = p.val\n\n        # Value of q\n        q_val = q.val\n\n        # If both p and q are greater than parent\n        if p_val > parent_val and q_val > parent_val:    \n            return self.lowestCommonAncestor(root.right, p, q)\n        # If both p and q are lesser than parent\n        elif p_val < parent_val and q_val < parent_val:    \n            return self.lowestCommonAncestor(root.left, p, q)\n        # We have found the split point, i.e. the LCA node.\n        else:\n            return root",
+        "langSlug": "python"
+      }
+    ],
+    "PfXQUZfN": [
+      {
+        "code": "class Solution {\n    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {\n\n        // Value of p\n        int pVal = p.val;\n\n        // Value of q;\n        int qVal = q.val;\n\n        // Start from the root node of the tree\n        TreeNode node = root;\n\n        // Traverse the tree\n        while (node != null) {\n\n            // Value of ancestor/parent node.\n            int parentVal = node.val;\n\n            if (pVal > parentVal && qVal > parentVal) {\n                // If both p and q are greater than parent\n                node = node.right;\n            } else if (pVal < parentVal && qVal < parentVal) {\n                // If both p and q are lesser than parent\n                node = node.left;\n            } else {\n                // We have found the split point, i.e. the LCA node.\n                return node;\n            }\n        }\n        return null;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def lowestCommonAncestor(self, root, p, q):\n        \"\"\"\n        :type root: TreeNode\n        :type p: TreeNode\n        :type q: TreeNode\n        :rtype: TreeNode\n        \"\"\"\n\n        # Value of p\n        p_val = p.val\n\n        # Value of q\n        q_val = q.val\n\n        # Start from the root node of the tree\n        node = root\n\n        # Traverse the tree\n        while node:\n\n            # Value of current node or parent node.\n            parent_val = node.val\n\n            if p_val > parent_val and q_val > parent_val:    \n                # If both p and q are greater than parent\n                node = node.right\n            elif p_val < parent_val and q_val < parent_val:\n                # If both p and q are lesser than parent\n                node = node.left\n            else:\n                # We have found the split point, i.e. the LCA node.\n                return node",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree"

@@ -11,7 +11,21 @@
   "solution": {
     "id": "511",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "2esZiYkH": [
+      {
+        "code": "class Solution {\npublic:\n    bool leafSimilar(TreeNode* root1, TreeNode* root2) {\n        vector<int> leaves1;\n        vector<int> leaves2;\n        dfs(root1, leaves1);\n        dfs(root2, leaves2);\n\n        return leaves1 == leaves2;\n    }\n\n    void dfs(TreeNode* node, vector<int>& leaves) {\n        if (node == NULL) return;\n        if (node->left == NULL && node->right == NULL)\n            leaves.push_back(node->val);\n        dfs(node->left, leaves);\n        dfs(node->right, leaves);\n    }\n};",
+        "langSlug": "cpp"
+      },
+      {
+        "code": "class Solution {\n    public boolean leafSimilar(TreeNode root1, TreeNode root2) {\n        List<Integer> leaves1 = new ArrayList();\n        List<Integer> leaves2 = new ArrayList();\n        dfs(root1, leaves1);\n        dfs(root2, leaves2);\n        return leaves1.equals(leaves2);\n    }\n\n    public void dfs(TreeNode node, List<Integer> leafValues) {\n        if (node != null) {\n            if (node.left == null && node.right == null)\n                leafValues.add(node.val);\n            dfs(node.left, leafValues);\n            dfs(node.right, leafValues);\n        }\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def leafSimilar(self, root1, root2):\n        def dfs(node):\n            if node:\n                if not node.left and not node.right:\n                    yield node.val\n                yield from dfs(node.left)\n                yield from dfs(node.right)\n\n        return list(dfs(root1)) == list(dfs(root2))",
+        "langSlug": "python3"
+      }
+    ]
   },
   "topicTags": [
     "Tree",

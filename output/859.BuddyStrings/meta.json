@@ -11,7 +11,17 @@
   "solution": {
     "id": "493",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "3ce2yPsD": [
+      {
+        "code": "class Solution {\n    public boolean buddyStrings(String A, String B) {\n        if (A.length() != B.length()) return false;\n        if (A.equals(B)) {\n            int[] count = new int[26];\n            for (int i = 0; i < A.length(); ++i)\n                count[A.charAt(i) - 'a']++;\n\n            for (int c: count)\n                if (c > 1) return true;\n            return false;\n        } else {\n            int first = -1, second = -1;\n            for (int i = 0; i < A.length(); ++i) {\n                if (A.charAt(i) != B.charAt(i)) {\n                    if (first == -1)\n                        first = i;\n                    else if (second == -1)\n                        second = i;\n                    else\n                        return false;\n                }\n            }\n\n            return (second != -1 && A.charAt(first) == B.charAt(second) &&\n                    A.charAt(second) == B.charAt(first));\n        }\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def buddyStrings(self, A, B):\n        if len(A) != len(B): return False\n        if A == B:\n            seen = set()\n            for a in A:\n                if a in seen:\n                    return True\n                seen.add(a)\n            return False\n        else:\n            pairs = []\n            for a, b in itertools.izip(A, B):\n                if a != b:\n                    pairs.append((a, b))\n                if len(pairs) >= 3: return False\n            return len(pairs) == 2 and pairs[0] == pairs[1][::-1]",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "String"

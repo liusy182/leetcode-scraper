@@ -11,7 +11,19 @@
   "solution": {
     "id": "55",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "gL3JYnab": [
+      {
+        "code": "public class Solution {\n    public int maxArea(int[] height) {\n        int maxarea = 0;\n        for (int i = 0; i < height.length; i++)\n            for (int j = i + 1; j < height.length; j++)\n                maxarea = Math.max(maxarea, Math.min(height[i], height[j]) * (j - i));\n        return maxarea;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "f9MCyxXg": [
+      {
+        "code": "public class Solution {\n    public int maxArea(int[] height) {\n        int maxarea = 0, l = 0, r = height.length - 1;\n        while (l < r) {\n            maxarea = Math.max(maxarea, Math.min(height[l], height[r]) * (r - l));\n            if (height[l] < height[r])\n                l++;\n            else\n                r--;\n        }\n        return maxarea;\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Array",

@@ -11,7 +11,43 @@
   "solution": {
     "id": "520",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "fsou5N8T": [
+      {
+        "code": "class Solution {\npublic:\n    ListNode* middleNode(ListNode* head) {\n        vector<ListNode*> A = {head};\n        while (A.back()->next != NULL)\n            A.push_back(A.back()->next);\n        return A[A.size() / 2];\n    }\n};",
+        "langSlug": "cpp"
+      },
+      {
+        "code": "class Solution {\n    public ListNode middleNode(ListNode head) {\n        ListNode[] A = new ListNode[100];\n        int t = 0;\n        while (head.next != null) {\n            A[t++] = head;\n            head = head.next;\n        }\n        return A[t / 2];\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def middleNode(self, head):\n        A = [head]\n        while A[-1].next:\n            A.append(A[-1].next)\n        return A[len(A) / 2]",
+        "langSlug": "python"
+      },
+      {
+        "code": "var middleNode = function(head) {\n    let A = [head];\n    while (A[A.length - 1].next != null)\n        A.push(A[A.length - 1].next);\n    return A[Math.trunc(A.length / 2)];\n};",
+        "langSlug": "javascript"
+      }
+    ],
+    "brPhWpn3": [
+      {
+        "code": "class Solution {\npublic:\n    ListNode* middleNode(ListNode* head) {\n        ListNode* slow = head;\n        ListNode* fast = head;\n        while (fast != NULL && fast->next != NULL) {\n            slow = slow->next;\n            fast = fast->next->next;\n        }\n        return slow;\n    }\n};",
+        "langSlug": "cpp"
+      },
+      {
+        "code": "class Solution {\n    public ListNode middleNode(ListNode head) {\n        ListNode slow = head, fast = head;\n        while (fast != null && fast.next != null) {\n            slow = slow.next;\n            fast = fast.next.next;\n        }\n        return slow;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def middleNode(self, head):\n        slow = fast = head\n        while fast and fast.next:\n            slow = slow.next\n            fast = fast.next.next\n        return slow",
+        "langSlug": "python"
+      },
+      {
+        "code": "var middleNode = function(head) {\n    slow = fast = head;\n    while (fast && fast.next) {\n        slow = slow.next;\n        fast = fast.next.next;\n    }\n    return slow;\n};",
+        "langSlug": "javascript"
+      }
+    ]
   },
   "topicTags": [
     "Linked List"

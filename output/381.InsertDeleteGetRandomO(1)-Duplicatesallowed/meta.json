@@ -11,7 +11,17 @@
   "solution": {
     "id": "745",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "meFMwZ4g": [
+      {
+        "code": "public class RandomizedCollection {\n    ArrayList<Integer> lst;\n    HashMap<Integer, Set<Integer>> idx;\n    java.util.Random rand = new java.util.Random();\n    /** Initialize your data structure here. */\n\n    public RandomizedCollection() {\n        lst = new ArrayList<Integer>();\n\t      idx = new HashMap<Integer, Set<Integer>>();\n    }\n\n    /** Inserts a value to the collection. Returns true if the collection did not already contain the specified element. */\n    public boolean insert(int val) {\n        if (!idx.containsKey(val)) idx.put(val, new LinkedHashSet<Integer>());\n        idx.get(val).add(lst.size());\n        lst.add(val);\n        return idx.get(val).size() == 1;\n    }\n\n    /** Removes a value from the collection. Returns true if the collection contained the specified element. */\n    public boolean remove(int val) {\n        if (!idx.containsKey(val) || idx.get(val).size() == 0) return false;\n\t      int remove_idx = idx.get(val).iterator().next();\n        idx.get(val).remove(remove_idx);\n        int last = lst.get(lst.size() - 1);\n        lst.set(remove_idx, last);\n        idx.get(last).add(remove_idx);\n        idx.get(last).remove(lst.size() - 1);\n\n\t      lst.remove(lst.size() - 1);\n        return true;\n    }\n\n    /** Get a random element from the collection. */\n    public int getRandom() {\n        return lst.get(rand.nextInt(lst.size()));\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "from collections import defaultdict\nfrom random import choice\n\nclass RandomizedCollection:\n\n    def __init__(self):\n        \"\"\"\n        Initialize your data structure here.\n        \"\"\"\n        self.lst = []\n        self.idx = defaultdict(set)\n\n\n    def insert(self, val: int) -> bool:\n        \"\"\"\n        Inserts a value to the collection. Returns true if the collection did not already contain the specified element.\n        \"\"\"\n        self.idx[val].add(len(self.lst))\n        self.lst.append(val)\n        return len(self.idx[val]) == 1\n\n\n    def remove(self, val: int) -> bool:\n        \"\"\"\n        Removes a value from the collection. Returns true if the collection contained the specified element.\n        \"\"\"\n        if not self.idx[val]: return False\n        remove, last = self.idx[val].pop(), self.lst[-1]\n        self.lst[remove] = last\n        self.idx[last].add(remove)\n        self.idx[last].discard(len(self.lst) - 1)\n\n        self.lst.pop()\n        return True\n\n\n    def getRandom(self) -> int:\n        \"\"\"\n        Get a random element from the collection.\n        \"\"\"\n        return choice(self.lst)\n",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array",

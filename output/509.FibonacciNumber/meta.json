@@ -11,7 +11,91 @@
   "solution": {
     "id": "762",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "LkwrRUoJ": [
+      {
+        "code": "public class Solution {\n    public int fib(int N) {\n        if (N <= 1) {\n            return N;\n        }\n        return fib(N-1) + fib(N-2);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def fib(self, N: int) -> int:\n        if N <= 1:\n            return N\n        return self.fib(N-1) + self.fib(N-2)",
+        "langSlug": "python"
+      },
+      {
+        "code": "func fib(N int) int {\n    if N <= 1 {\n        return N\n    }\n    return fib(N-1) + fib(N-2)\n}",
+        "langSlug": "golang"
+      }
+    ],
+    "D7nAMtfU": [
+      {
+        "code": "class Solution {\n    public int fib(int N) {\n        if (N <= 1) {\n            return N;\n        }\n        return memoize(N);\n    }\n\n    public int memoize(int N) {\n      int[] cache = new int[N + 1];\n      cache[1] = 1;\n\n      for (int i = 2; i <= N; i++) {\n          cache[i] = cache[i-1] + cache[i-2];\n      }\n      return cache[N];\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def fib(self, N: int) -> int:\n        if N <= 1:\n            return N\n        return self.memoize(N)\n\n    def memoize(self, N: int) -> {}:\n        cache = {0: 0, 1: 1}\n\n        # Since range is exclusive and we want to include N, we need to put N+1.\n        for i in range(2, N+1):\n            cache[i] = cache[i-1] + cache[i-2]\n\n        return cache[N]",
+        "langSlug": "python"
+      },
+      {
+        "code": "func fib(N int) int {\n    if N <= 1 {\n        return N\n    }\n    return memoize(N)\n}\n\nfunc memoize(N int) int {\n    cache := map[int]int{0: 0, 1: 1}\n\n    for i := 2; i <= N; i++ {\n        cache[i] = cache[i-1] + cache[i-2]\n    }\n    return cache[N]\n}",
+        "langSlug": "golang"
+      }
+    ],
+    "GNj9PYYG": [
+      {
+        "code": "class Solution {\n    private Integer[] cache = new Integer[31];\n\n    public int fib(int N) {\n        if (N <= 1) {\n            return N;\n        }\n        cache[0] = 0;\n        cache[1] = 1;\n        return memoize(N);\n    }\n\n    public int memoize(int N) {\n      if (cache[N] != null) {\n          return cache[N];\n      }\n      cache[N] = memoize(N-1) + memoize(N-2);\n      return memoize(N);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def fib(self, N: int) -> int:\n        if N <= 1:\n            return N\n        self.cache = {0: 0, 1: 1}\n        return self.memoize(N)\n\n    def memoize(self, N: int) -> {}:\n        if N in self.cache.keys():\n            return self.cache[N]\n        self.cache[N] = self.memoize(N-1) + self.memoize(N-2)\n        return self.memoize(N)",
+        "langSlug": "python"
+      },
+      {
+        "code": "var cache = map[int]int{0: 0, 1: 1}\n\nfunc fib(N int) int {\n    if N <= 1 {\n        return N\n    }\n    return memoize(N)\n}\n\nfunc memoize(N int) int {\n    if _, ok := cache[N]; ok {\n        return cache[N]\n    }\n    cache[N] = memoize(N-1) + memoize(N-2)\n    return memoize(N)\n}",
+        "langSlug": "golang"
+      }
+    ],
+    "SEzLkERR": [
+      {
+        "code": "class Solution {\n    public int fib(int N) {\n        if (N <= 1) {\n            return N;\n        }\n        if (N == 2) {\n            return 1;\n        }\n\n        int current = 0;\n        int prev1 = 1;\n        int prev2 = 1;\n\n        for (int i = 3; i <= N; i++) {\n            current = prev1 + prev2;\n            prev2 = prev1;\n            prev1 = current;\n        }\n        return current;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def fib(self, N: int) -> int:\n        if (N <= 1):\n            return N\n        if (N == 2):\n            return 1\n\n        current = 0\n        prev1 = 1\n        prev2 = 1\n\n        # Since range is exclusive and we want to include N, we need to put N+1.\n        for i in range(3, N+1):\n            current = prev1 + prev2\n            prev2 = prev1\n            prev1 = current\n        return current",
+        "langSlug": "python"
+      },
+      {
+        "code": "func fib(N int) int {\n    if N <= 1 {\n        return N\n    }\n    if N == 2 {\n        return 1\n    }\n\n    current := 0\n    prev1 := 1\n    prev2 := 1\n\n    for i := 3; i <= N; i++ {\n        current = prev1 + prev2\n        prev2 = prev1\n        prev1 = current\n    }\n    return current\n}",
+        "langSlug": "golang"
+      }
+    ],
+    "NCxGpFr2": [
+      {
+        "code": "class Solution {\n    int fib(int N) {\n        if (N <= 1) {\n          return N;\n        }\n        int[][] A = new int[][]{{1, 1}, {1, 0}};\n        matrixPower(A, N-1);\n\n        return A[0][0];\n    }\n\n    void matrixPower(int[][] A, int N) {\n        if (N <= 1) {\n          return;\n        }\n        matrixPower(A, N/2);\n        multiply(A, A);\n\n        int[][] B = new int[][]{{1, 1}, {1, 0}};\n        if (N%2 != 0) {\n            multiply(A, B);\n        }\n    }\n\n    void multiply(int[][] A, int[][] B) {\n        int x = A[0][0] * B[0][0] + A[0][1] * B[1][0];\n        int y = A[0][0] * B[0][1] + A[0][1] * B[1][1];\n        int z = A[1][0] * B[0][0] + A[1][1] * B[1][0];\n        int w = A[1][0] * B[0][1] + A[1][1] * B[1][1];\n\n        A[0][0] = x;\n        A[0][1] = y;\n        A[1][0] = z;\n        A[1][1] = w;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def fib(self, N: int) -> int:\n        if (N <= 1):\n            return N\n\n        A = [[1, 1], [1, 0]]\n        self.matrix_power(A, N-1)\n\n        return A[0][0]\n\n    def matrix_power(self, A: list, N: int):\n        if (N <= 1):\n            return A\n\n        self.matrix_power(A, N//2)\n        self.multiply(A, A)\n        B = [[1, 1], [1, 0]]\n\n        if (N%2 != 0):\n            self.multiply(A, B)\n\n    def multiply(self, A: list, B: list):\n        x = A[0][0] * B[0][0] + A[0][1] * B[1][0]\n        y = A[0][0] * B[0][1] + A[0][1] * B[1][1]\n        z = A[1][0] * B[0][0] + A[1][1] * B[1][0]\n        w = A[1][0] * B[0][1] + A[1][1] * B[1][1]\n\n        A[0][0] = x\n        A[0][1] = y\n        A[1][0] = z\n        A[1][1] = w",
+        "langSlug": "python"
+      },
+      {
+        "code": "func fib(N int) int {\n    if N <= 1 {\n        return N\n    }\n    var A = [2][2]int{\n        {1,1},\n        {1,0},\n    }\n    A = matrixPower(A, N-1)\n    return A[0][0]\n}\n\nfunc matrixPower(A [2][2]int, N int) [2][2]int {\n    if N <= 1 {\n        return A\n    }\n    A = matrixPower(A, N/2)\n    A = multiply(A, A)\n\n    var B = [2][2]int{\n        {1,1},\n        {1,0},\n    }\n    if N%2 != 0 {\n        A = multiply(A, B)\n    }\n\n    return A\n}\n\nfunc multiply(A [2][2]int, B [2][2]int) [2][2]int {\n    x := A[0][0] * B[0][0] + A[0][1] * B[1][0];\n    y := A[0][0] * B[0][1] + A[0][1] * B[1][1];\n    z := A[1][0] * B[0][0] + A[1][1] * B[1][0];\n    w := A[1][0] * B[0][1] + A[1][1] * B[1][1];\n\n    A[0][0] = x;\n    A[0][1] = y;\n    A[1][0] = z;\n    A[1][1] = w;\n\n    return A\n}",
+        "langSlug": "golang"
+      }
+    ],
+    "F8NT7g5D": [
+      {
+        "code": "class Solution {\n    public int fib(int N) {\n        double goldenRatio = (1 + Math.sqrt(5)) / 2;\n        return (int)Math.round(Math.pow(goldenRatio, N)/ Math.sqrt(5));\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "# Contributed by LeetCode user mereck.\nclass Solution:\n  def fib(self, N):\n  \tgolden_ratio = (1 + 5 ** 0.5) / 2\n  \treturn int((golden_ratio ** N + 1) / 5 ** 0.5)",
+        "langSlug": "python"
+      },
+      {
+        "code": "func fib(N int) int {\n    var goldenRatio float64 = float64((1 + math.Sqrt(5)) / 2);\n    return int(math.Round(math.Pow(goldenRatio, float64(N)) / math.Sqrt(5)));\n}",
+        "langSlug": "golang"
+      }
+    ]
   },
   "topicTags": [
     "Array"

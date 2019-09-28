@@ -15,7 +15,19 @@
   "solution": {
     "id": "22",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "5ypGn6XG": [
+      {
+        "code": "public int removeElement(int[] nums, int val) {\n    int i = 0;\n    for (int j = 0; j < nums.length; j++) {\n        if (nums[j] != val) {\n            nums[i] = nums[j];\n            i++;\n        }\n    }\n    return i;\n}",
+        "langSlug": "java"
+      }
+    ],
+    "bNr9hpND": [
+      {
+        "code": "public int removeElement(int[] nums, int val) {\n    int i = 0;\n    int n = nums.length;\n    while (i < n) {\n        if (nums[i] == val) {\n            nums[i] = nums[n - 1];\n            // reduce array size by one\n            n--;\n        } else {\n            i++;\n        }\n    }\n    return n;\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Array",

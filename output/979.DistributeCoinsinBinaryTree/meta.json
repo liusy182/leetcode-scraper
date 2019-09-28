@@ -11,7 +11,17 @@
   "solution": {
     "id": "668",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "9mtBQnVp": [
+      {
+        "code": "class Solution {\n    int ans;\n    public int distributeCoins(TreeNode root) {\n        ans = 0;\n        dfs(root);\n        return ans;\n    }\n\n    public int dfs(TreeNode node) {\n        if (node == null) return 0;\n        int L = dfs(node.left);\n        int R = dfs(node.right);\n        ans += Math.abs(L) + Math.abs(R);\n        return node.val + L + R - 1;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def distributeCoins(self, root):\n        self.ans = 0\n\n        def dfs(node):\n            if not node: return 0\n            L, R = dfs(node.left), dfs(node.right)\n            self.ans += abs(L) + abs(R)\n            return node.val + L + R - 1\n\n        dfs(root)\n        return self.ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree",

@@ -11,7 +11,17 @@
   "solution": {
     "id": "479",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "VyDASsga": [
+      {
+        "code": "class Solution {\n    public boolean isNStraightHand(int[] hand, int W) {\n        TreeMap<Integer, Integer> count = new TreeMap();\n        for (int card: hand) {\n            if (!count.containsKey(card))\n                count.put(card, 1);\n            else\n                count.replace(card, count.get(card) + 1);\n        }\n\n        while (count.size() > 0) {\n            int first = count.firstKey();\n            for (int card = first; card < first + W; ++card) {\n                if (!count.containsKey(card)) return false;\n                int c = count.get(card);\n                if (c == 1) count.remove(card);\n                else count.replace(card, c - 1);\n            }\n        }\n\n        return true;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def isNStraightHand(self, hand, W):\n        count = collections.Counter(hand)\n        while count:\n            m = min(count)\n            for k in xrange(m, m+W):\n                v = count[k]\n                if not v: return False\n                if v == 1:\n                    del count[k]\n                else:\n                    count[k] = v - 1\n\n        return True",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Ordered Map"

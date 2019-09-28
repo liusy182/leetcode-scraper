@@ -11,7 +11,17 @@
   "solution": {
     "id": "502",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "npb7vRxu": [
+      {
+        "code": "class Solution {\n    public int[][] transpose(int[][] A) {\n        int R = A.length, C = A[0].length;\n        int[][] ans = new int[C][R];\n        for (int r = 0; r < R; ++r)\n            for (int c = 0; c < C; ++c) {\n                ans[c][r] = A[r][c];\n            }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def transpose(self, A):\n        R, C = len(A), len(A[0])\n        ans = [[None] * R for _ in xrange(C)]\n        for r, row in enumerate(A):\n            for c, val in enumerate(row):\n                ans[c][r] = val\n        return ans\n\n        #Alternative Solution:\n        #return zip(*A)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array"

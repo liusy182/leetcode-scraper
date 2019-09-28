@@ -11,7 +11,17 @@
   "solution": {
     "id": "451",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "Gdyt4CNE": [
+      {
+        "code": "class Solution { //aw\n    public List<String> ambiguousCoordinates(String S) {\n        List<String> ans = new ArrayList();\n        for (int i = 2; i < S.length()-1; ++i)\n            for (String left: make(S, 1, i))\n                for (String right: make(S, i, S.length()-1))\n                    ans.add(\"(\" + left + \", \" + right + \")\");\n        return ans;\n    }\n\n    public List<String> make(String S, int i, int j) {\n        // Make on S.substring(i, j)\n        List<String> ans = new ArrayList();\n        for (int d = 1; d <= j-i; ++d) {\n            String left = S.substring(i, i+d);\n            String right = S.substring(i+d, j);\n            if ((!left.startsWith(\"0\") || left.equals(\"0\"))\n                    && !right.endsWith(\"0\"))\n                ans.add(left + (d < j-i ? \".\" : \"\") + right);\n        }\n        return ans;\n    }\n}\n",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def ambiguousCoordinates(self, S):\n        def make(frag):\n            N = len(frag)\n            for d in xrange(1, N+1):\n                left = frag[:d]\n                right = frag[d:]\n                if ((not left.startswith('0') or left == '0')\n                        and (not right.endswith('0'))):\n                    yield left + ('.' if d != N else '') + right\n\n        S = S[1:-1]\n        return [\"({}, {})\".format(*cand)\n                for i in xrange(1, len(S))\n                for cand in itertools.product(make(S[:i]), make(S[i:]))]",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "String"

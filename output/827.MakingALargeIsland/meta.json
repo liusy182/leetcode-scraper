@@ -11,7 +11,27 @@
   "solution": {
     "id": "456",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "T2PdhCGT": [
+      {
+        "code": "class Solution {\n    int[] dr = new int[]{-1, 0, 1, 0};\n    int[] dc = new int[]{0, -1, 0, 1};\n\n    public int largestIsland(int[][] grid) {\n        int N = grid.length;\n\n        int ans = 0;\n        boolean hasZero = false;\n        for (int r = 0; r < N; ++r)\n            for (int c = 0; c < N; ++c)\n                if (grid[r][c] == 0) {\n                    hasZero = true;\n                    grid[r][c] = 1;\n                    ans = Math.max(ans, check(grid, r, c));\n                    grid[r][c] = 0;\n                }\n\n        return hasZero ? ans : N*N;\n    }\n\n    public int check(int[][] grid, int r0, int c0) {\n        int N = grid.length;\n        Stack<Integer> stack = new Stack();\n        Set<Integer> seen = new HashSet();\n        stack.push(r0 * N + c0);\n        seen.add(r0 * N + c0);\n\n        while (!stack.isEmpty()) {\n            int code = stack.pop();\n            int r = code / N, c = code % N;\n            for (int k = 0; k < 4; ++k) {\n                int nr = r + dr[k], nc = c + dc[k];\n                if (!seen.contains(nr * N + nc) && 0 <= nr && nr < N &&\n                        0 <= nc && nc < N && grid[nr][nc] == 1) {\n                    stack.push(nr * N + nc);\n                    seen.add(nr * N + nc);\n                }\n            }\n        }\n\n        return seen.size();\n    }\n}\n",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def largestIsland(self, grid):\n        N = len(grid)\n\n        def check(r, c):\n            seen = {(r, c)}\n            stack = [(r, c)]\n            while stack:\n                r, c = stack.pop()\n                for nr, nc in ((r-1, c), (r, c-1), (r+1, c), (r, c+1)):\n                    if (nr, nc) not in seen and 0 <= nr < N and 0 <= nc < N and grid[nr][nc]:\n                        stack.append((nr, nc))\n                        seen.add((nr, nc))\n            return len(seen)\n\n        ans = 0\n        has_zero = False\n        for r, row in enumerate(grid):\n            for c, val in enumerate(row):\n                if val == 0:\n                    has_zero = True\n                    grid[r][c] = 1\n                    ans = max(ans, check(r, c))\n                    grid[r][c] = 0\n\n        return ans if has_zero else N*N",
+        "langSlug": "python"
+      }
+    ],
+    "ZBn4MTj4": [
+      {
+        "code": "class Solution {\n    int[] dr = new int[]{-1, 0, 1, 0};\n    int[] dc = new int[]{0, -1, 0, 1};\n    int[][] grid;\n    int N;\n\n    public int largestIsland(int[][] grid) {\n        this.grid = grid;\n        N = grid.length;\n\n        int index = 2;\n        int[] area = new int[N*N + 2];\n        for (int r = 0; r < N; ++r)\n            for (int c = 0; c < N; ++c)\n                if (grid[r][c] == 1)\n                    area[index] = dfs(r, c, index++);\n\n        int ans = 0;\n        for (int x: area) ans = Math.max(ans, x);\n        for (int r = 0; r < N; ++r)\n            for (int c = 0; c < N; ++c)\n                if (grid[r][c] == 0) {\n                    Set<Integer> seen = new HashSet();\n                    for (Integer move: neighbors(r, c))\n                        if (grid[move / N][move % N] > 1)\n                            seen.add(grid[move / N][move % N]);\n\n                    int bns = 1;\n                    for (int i: seen) bns += area[i];\n                    ans = Math.max(ans, bns);\n                }\n\n        return ans;\n    }\n\n    public int dfs(int r, int c, int index) {\n        int ans = 1;\n        grid[r][c] = index;\n        for (Integer move: neighbors(r, c)) {\n            if (grid[move / N][move % N] == 1) {\n                grid[move / N][move % N] = index;\n                ans += dfs(move / N, move % N, index);\n            }\n        }\n\n        return ans;\n    }\n\n    public List<Integer> neighbors(int r, int c) {\n        List<Integer> ans = new ArrayList();\n        for (int k = 0; k < 4; ++k) {\n            int nr = r + dr[k];\n            int nc = c + dc[k];\n            if (0 <= nr && nr < N && 0 <= nc && nc < N)\n                ans.add(nr * N + nc);\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def largestIsland(self, grid):\n        N = len(grid)\n\n        def neighbors(r, c):\n            for nr, nc in ((r-1, c), (r+1, c), (r, c-1), (r, c+1)):\n                if 0 <= nr < N and 0 <= nc < N:\n                    yield nr, nc\n\n        def dfs(r, c, index):\n            ans = 1\n            grid[r][c] = index\n            for nr, nc in neighbors(r, c):\n                if grid[nr][nc] == 1:\n                    ans += dfs(nr, nc, index)\n            return ans\n\n        area = {}\n        index = 2\n        for r in xrange(N):\n            for c in xrange(N):\n                if grid[r][c] == 1:\n                    area[index] = dfs(r, c, index)\n                    index += 1\n\n        ans = max(area.values() or [0])\n        for r in xrange(N):\n            for c in xrange(N):\n                if grid[r][c] == 0:\n                    seen = {grid[nr][nc] for nr, nc in neighbors(r, c) if grid[nr][nc] > 1}\n                    ans = max(ans, 1 + sum(area[i] for i in seen))\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Depth-first Search"

@@ -11,7 +11,62 @@
   "solution": {
     "id": "45",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "ojoAnJXy": [
+      {
+        "code": "public class Solution {\n    public boolean isPowerOfThree(int n) {\n        if (n < 1) {\n            return false;\n        }\n\n        while (n % 3 == 0) {\n            n /= 3;\n        }\n\n        return n == 1;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "mswCj3De": [
+      {
+        "code": "String baseChange = Integer.toString(number, base);",
+        "langSlug": "java"
+      }
+    ],
+    "T6CmNK28": [
+      {
+        "code": "boolean matches = myString.matches(\"123\");",
+        "langSlug": "java"
+      }
+    ],
+    "mujLkBaw": [
+      {
+        "code": "boolean powerOfThree = baseChange.matches(\"^10*$\")",
+        "langSlug": "java"
+      }
+    ],
+    "Vg5V7RYp": [
+      {
+        "code": "public class Solution {\n    public boolean isPowerOfThree(int n) {\n        return Integer.toString(n, 3).matches(\"^10*$\");\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "rGU5MG2p": [
+      {
+        "code": "public class Solution {\n    public boolean isPowerOfThree(int n) {\n        return (Math.log10(n) / Math.log10(3)) % 1 == 0;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "eVP3xfwb": [
+      {
+        "code": "return (Math.log(n) / Math.log(3) + epsilon) % 1 <= 2 * epsilon;",
+        "langSlug": "java"
+      }
+    ],
+    "2s2CCD3x": [],
+    "P5BpBmpB": [
+      {
+        "code": "public class Solution {\n    public boolean isPowerOfThree(int n) {\n        return n > 0 && 1162261467 % n == 0;\n    }\n}",
+        "langSlug": "java"
+      }
+    ],
+    "7bpZrVLY": [
+      {
+        "code": "public static void main(String[] args) {\n    Solution sol = new Solution();\n    int iterations = 1; // See table header for this value\n    for (int i = 0; i < iterations; i++) {\n        sol.isPowerOfThree(i);\n    }\n}",
+        "langSlug": "java"
+      }
+    ]
   },
   "topicTags": [
     "Math"

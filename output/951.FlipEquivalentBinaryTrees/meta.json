@@ -11,7 +11,27 @@
   "solution": {
     "id": "630",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "wjoLqdDo": [
+      {
+        "code": "class Solution {\n    public boolean flipEquiv(TreeNode root1, TreeNode root2) {\n        if (root1 == root2)\n            return true;\n        if (root1 == null || root2 == null || root1.val != root2.val)\n            return false;\n\n        return (flipEquiv(root1.left, root2.left) && flipEquiv(root1.right, root2.right) ||\n                flipEquiv(root1.left, root2.right) && flipEquiv(root1.right, root2.left));\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def flipEquiv(self, root1, root2):\n        if root1 is root2:\n            return True\n        if not root1 or not root2 or root1.val != root2.val:\n            return False\n\n        return (self.flipEquiv(root1.left, root2.left) and\n                self.flipEquiv(root1.right, root2.right) or\n                self.flipEquiv(root1.left, root2.right) and\n                self.flipEquiv(root1.right, root2.left))",
+        "langSlug": "python"
+      }
+    ],
+    "PZJH2Hcn": [
+      {
+        "code": "class Solution {\n    public boolean flipEquiv(TreeNode root1, TreeNode root2) {\n        List<Integer> vals1 = new ArrayList();\n        List<Integer> vals2 = new ArrayList();\n        dfs(root1, vals1);\n        dfs(root2, vals2);\n        return vals1.equals(vals2);\n    }\n\n    public void dfs(TreeNode node, List<Integer> vals) {\n        if (node != null) {\n            vals.add(node.val);\n            int L = node.left != null ? node.left.val : -1;\n            int R = node.right != null ? node.right.val : -1;\n\n            if (L < R) {\n                dfs(node.left, vals);\n                dfs(node.right, vals);\n            } else {\n                dfs(node.right, vals);\n                dfs(node.left, vals);\n            }\n\n            vals.add(null);\n        }\n    }\n}\n",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution:\n    def flipEquiv(self, root1, root2):\n        def dfs(node):\n            if node:\n                yield node.val\n                L = node.left.val if node.left else -1\n                R = node.right.val if node.right else -1\n                if L < R:\n                    yield from dfs(node.left)\n                    yield from dfs(node.right)\n                else:\n                    yield from dfs(node.right)\n                    yield from dfs(node.left)\n                yield '#'\n\n        return all(x == y for x, y in itertools.zip_longest(\n            dfs(root1), dfs(root2)))",
+        "langSlug": "python3"
+      }
+    ]
   },
   "topicTags": [
     "Tree"

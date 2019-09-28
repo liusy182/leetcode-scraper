@@ -13,7 +13,17 @@
   "solution": {
     "id": "320",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "U88jzmPG": [
+      {
+        "code": "class Solution {\n    public int minSteps(int n) {\n        int ans = 0, d = 2;\n        while (n > 1) {\n            while (n % d == 0) {\n                ans += d;\n                n /= d;\n            }\n            d++;\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def minSteps(self, n):\n        ans = 0\n        d = 2\n        while n > 1:\n            while n % d == 0:\n                ans += d\n                n /= d\n            d += 1\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming"

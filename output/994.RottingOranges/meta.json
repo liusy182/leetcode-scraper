@@ -11,7 +11,17 @@
   "solution": {
     "id": "696",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "8S5VkeTc": [
+      {
+        "code": "class Solution {\n    int[] dr = new int[]{-1, 0, 1, 0};\n    int[] dc = new int[]{0, -1, 0, 1};\n\n    public int orangesRotting(int[][] grid) {\n        int R = grid.length, C = grid[0].length;\n\n        // queue : all starting cells with rotten oranges\n        Queue<Integer> queue = new ArrayDeque();\n        Map<Integer, Integer> depth = new HashMap();\n        for (int r = 0; r < R; ++r)\n            for (int c = 0; c < C; ++c)\n                if (grid[r][c] == 2) {\n                    int code = r * C + c;\n                    queue.add(code);\n                    depth.put(code, 0);\n                }\n\n        int ans = 0;\n        while (!queue.isEmpty()) {\n            int code = queue.remove();\n            int r = code / C, c = code % C;\n            for (int k = 0; k < 4; ++k) {\n                int nr = r + dr[k];\n                int nc = c + dc[k];\n                if (0 <= nr && nr < R && 0 <= nc && nc < C && grid[nr][nc] == 1) {\n                    grid[nr][nc] = 2;\n                    int ncode = nr * C + nc;\n                    queue.add(ncode);\n                    depth.put(ncode, depth.get(code) + 1);\n                    ans = depth.get(ncode);\n                }\n            }\n        }\n\n        for (int[] row: grid)\n            for (int v: row)\n                if (v == 1)\n                    return -1;\n        return ans;\n\n    }\n}\n",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def orangesRotting(self, grid):\n        R, C = len(grid), len(grid[0])\n\n        # queue - all starting cells with rotting oranges\n        queue = collections.deque()\n        for r, row in enumerate(A):\n            for c, val in enumerate(row):\n                if val == 2:\n                    queue.append((r, c, 0))\n\n        def neighbors(r, c):\n            for nr, nc in ((r-1,c),(r,c-1),(r+1,c),(r,c+1)):\n                if 0 <= nr < R and 0 <= nc < C:\n                    yield nr, nc\n\n        d = 0\n        while queue:\n            r, c, d = queue.popleft()\n            for nr, nc in neighbors(r, c):\n                if A[nr][nc] == 1:\n                    A[nr][nc] = 2\n                    queue.append((nr, nc, d+1))\n\n        if any(1 in row for row in A):\n            return -1\n        return d",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Breadth-first Search"

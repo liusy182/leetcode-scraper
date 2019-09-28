@@ -11,7 +11,27 @@
   "solution": {
     "id": "330",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "GsZid6zn": [
+      {
+        "code": "class Solution {\n    public int widthOfBinaryTree(TreeNode root) {\n        Queue<AnnotatedNode> queue = new LinkedList();\n        queue.add(new AnnotatedNode(root, 0, 0));\n        int curDepth = 0, left = 0, ans = 0;\n        while (!queue.isEmpty()) {\n            AnnotatedNode a = queue.poll();\n            if (a.node != null) {\n                queue.add(new AnnotatedNode(a.node.left, a.depth + 1, a.pos * 2));\n                queue.add(new AnnotatedNode(a.node.right, a.depth + 1, a.pos * 2 + 1));\n                if (curDepth != a.depth) {\n                    curDepth = a.depth;\n                    left = a.pos;\n                }\n                ans = Math.max(ans, a.pos - left + 1);\n            }\n        }\n        return ans;\n    }\n}\n\nclass AnnotatedNode {\n    TreeNode node;\n    int depth, pos;\n    AnnotatedNode(TreeNode n, int d, int p) {\n        node = n;\n        depth = d;\n        pos = p;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "def widthOfBinaryTree(self, root):\n    queue = [(root, 0, 0)]\n    cur_depth = left = ans = 0\n    for node, depth, pos in queue:\n        if node:\n            queue.append((node.left, depth+1, pos*2))\n            queue.append((node.right, depth+1, pos*2 + 1))\n            if cur_depth != depth:\n                cur_depth = depth\n                left = pos\n            ans = max(pos - left + 1, ans)\n\n    return ans",
+        "langSlug": "python"
+      }
+    ],
+    "A9iKAcsQ": [
+      {
+        "code": "class Solution {\n    int ans;\n    Map<Integer, Integer> left;\n    public int widthOfBinaryTree(TreeNode root) {\n        ans = 0;\n        left = new HashMap();\n        dfs(root, 0, 0);\n        return ans;\n    }\n    public void dfs(TreeNode root, int depth, int pos) {\n        if (root == null) return;\n        left.computeIfAbsent(depth, x-> pos);\n        ans = Math.max(ans, pos - left.get(depth) + 1);\n        dfs(root.left, depth + 1, 2 * pos);\n        dfs(root.right, depth + 1, 2 * pos + 1);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def widthOfBinaryTree(self, root):\n        self.ans = 0\n        left = {}\n        def dfs(node, depth = 0, pos = 0):\n            if node:\n                left.setdefault(depth, pos)\n                self.ans = max(self.ans, pos - left[depth] + 1)\n                dfs(node.left, depth + 1, pos * 2)\n                dfs(node.right, depth + 1, pos * 2 + 1)\n\n        dfs(root)\n        return self.ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree"

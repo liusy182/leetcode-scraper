@@ -11,7 +11,27 @@
   "solution": {
     "id": "460",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "fkvb227q": [
+      {
+        "code": "class Solution {\n    Map<Character, List<Integer>> index;\n    int[] peek;\n    int N;\n\n    public int uniqueLetterString(String S) {\n        index = new HashMap();\n        peek = new int[26];\n        N = S.length();\n\n        for (int i = 0; i < S.length(); ++i) {\n            char c = S.charAt(i);\n            index.computeIfAbsent(c, x-> new ArrayList<Integer>()).add(i);\n        }\n\n        long cur = 0, ans = 0;\n        for (char c: index.keySet()) {\n            index.get(c).add(N);\n            index.get(c).add(N);\n            cur += get(c);\n        }\n\n        for (char c: S.toCharArray()) {\n            ans += cur;\n            long oldv = get(c);\n            peek[c - 'A']++;\n            cur += get(c) - oldv;\n        }\n        return (int) ans % 1_000_000_007;\n    }\n\n    public long get(char c) {\n        List<Integer> indexes = index.get(c);\n        int i = peek[c - 'A'];\n        return indexes.get(i+1) - indexes.get(i);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def uniqueLetterString(self, S):\n        N = len(S)\n        index = collections.defaultdict(list)\n        peek = collections.defaultdict(int)\n        for i, c in enumerate(S):\n            index[c].append(i)\n        for c in index:\n            index[c].extend([N, N])\n\n        def get(c):\n            return index[c][peek[c] + 1] - index[c][peek[c]]\n\n        ans = 0\n        cur = sum(get(c) for c in index)\n        for i, c in enumerate(S):\n            ans += cur\n            oldv = get(c)\n            peek[c] += 1\n            cur += get(c) - oldv\n        return ans % (10**9 + 7)",
+        "langSlug": "python"
+      }
+    ],
+    "qiRvovcd": [
+      {
+        "code": "class Solution {\n    public int uniqueLetterString(String S) {\n        Map<Character, List<Integer>> index = new HashMap();\n        for (int i = 0; i < S.length(); ++i) {\n            char c = S.charAt(i);\n            index.computeIfAbsent(c, x-> new ArrayList<Integer>()).add(i);\n        }\n\n        long ans = 0;\n        for (List<Integer> A: index.values()) {\n            for (int i = 0; i < A.size(); ++i) {\n                long prev = i > 0 ? A.get(i-1) : -1;\n                long next = i < A.size() - 1 ? A.get(i+1) : S.length();\n                ans += (A.get(i) - prev) * (next - A.get(i));\n            }\n        }\n\n        return (int) ans % 1_000_000_007;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def uniqueLetterString(self, S):\n        index = collections.defaultdict(list)\n        for i, c in enumerate(S):\n            index[c].append(i)\n\n        ans = 0\n        for A in index.values():\n            A = [-1] + A + [len(S)]\n            for i in xrange(1, len(A) - 1):\n                ans += (A[i] - A[i-1]) * (A[i+1] - A[i])\n        return ans % (10**9 + 7)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Two Pointers"

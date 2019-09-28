@@ -13,7 +13,27 @@
   "solution": {
     "id": "385",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "B8GKxQrY": [
+      {
+        "code": "class Solution {\n    public int maxChunksToSorted(int[] arr) {\n        Map<Integer, Integer> count = new HashMap();\n        int ans = 0, nonzero = 0;\n\n        int[] expect = arr.clone();\n        Arrays.sort(expect);\n\n        for (int i = 0; i < arr.length; ++i) {\n            int x = arr[i], y = expect[i];\n\n            count.put(x, count.getOrDefault(x, 0) + 1);\n            if (count.get(x) == 0) nonzero--;\n            if (count.get(x) == 1) nonzero++;\n\n            count.put(y, count.getOrDefault(y, 0) - 1);\n            if (count.get(y) == -1) nonzero++;\n            if (count.get(y) == 0) nonzero--;\n\n            if (nonzero == 0) ans++;\n        }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def maxChunksToSorted(self, arr):\n        count = collections.defaultdict(int)\n        ans = nonzero = 0\n\n        for x, y in zip(arr, sorted(arr))\n            count[x] += 1\n            if count[x] == 0: nonzero -= 1\n            if count[x] == 1: nonzero += 1\n\n            count[y] -= 1\n            if count[y] == -1: nonzero += 1\n            if count[y] == 0: nonzero -= 1\n\n            if nonzero == 0: ans += 1\n\n        return ans",
+        "langSlug": "python"
+      }
+    ],
+    "jLmjinpa": [
+      {
+        "code": "class Solution {\n    public int maxChunksToSorted(int[] arr) {\n        Map<Integer, Integer> count = new HashMap();\n        List<Pair> counted = new ArrayList();\n        for (int x: arr) {\n            count.put(x, count.getOrDefault(x, 0) + 1);\n            counted.add(new Pair(x, count.get(x)));\n        }\n\n        List<Pair> expect = new ArrayList(counted);\n        Collections.sort(expect, (a, b) -> a.compare(b));\n\n        Pair cur = counted.get(0);\n        int ans = 0;\n        for (int i = 0; i < arr.length; ++i) {\n            Pair X = counted.get(i), Y = expect.get(i);\n            if (X.compare(cur) > 0) cur = X;\n            if (cur.compare(Y) == 0) ans++;\n        }\n\n        return ans;\n    }\n}\n\nclass Pair {\n    int val, count;\n    Pair(int v, int c) {\n        val = v; count = c;\n    }\n    int compare(Pair that) {\n        return this.val != that.val ? this.val - that.val : this.count - that.count;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def maxChunksToSorted(self, arr):\n        count = collections.Counter()\n        counted = []\n        for x in arr:\n            count[x] += 1\n            counted.append((x, count[x]))\n\n        ans, cur = 0, None\n        for X, Y in zip(counted, sorted(counted)):\n            cur = max(cur, X)\n            if cur == Y:\n                ans += 1\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array"

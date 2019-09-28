@@ -11,7 +11,17 @@
   "solution": {
     "id": "469",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "x4pmytdi": [
+      {
+        "code": "class Solution {\n    public double new21Game(int N, int K, int W) {\n        double[] dp = new double[N + W + 1];\n        // dp[x] = the answer when Alice has x points\n        for (int k = K; k <= N; ++k)\n            dp[k] = 1.0;\n\n        double S = Math.min(N - K + 1, W);\n        // S = dp[k+1] + dp[k+2] + ... + dp[k+W]\n        for (int k = K - 1; k >= 0; --k) {\n            dp[k] = S / W;\n            S += dp[k] - dp[k + W];\n        }\n        return dp[0];\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def new21Game(self, N, K, W):\n        dp = [0.0] * (N + W + 1)\n        # dp[x] = the answer when Alice has x points\n        for k in xrange(K, N + 1):\n            dp[k] = 1.0\n\n        S = min(N - K + 1, W)\n        # S = dp[k+1] + dp[k+2] + ... + dp[k+W]\n        for k in xrange(K - 1, -1, -1):\n            dp[k] = S / float(W)\n            S += dp[k] - dp[k + W]\n\n        return dp[0]",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Dynamic Programming"

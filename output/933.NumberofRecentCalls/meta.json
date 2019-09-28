@@ -11,7 +11,17 @@
   "solution": {
     "id": "606",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "qZ2BJSqK": [
+      {
+        "code": "class RecentCounter {\n    Queue<Integer> q;\n    public RecentCounter() {\n        q = new LinkedList();\n    }\n\n    public int ping(int t) {\n        q.add(t);\n        while (q.peek() < t - 3000)\n            q.poll();\n        return q.size();\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class RecentCounter(object):\n    def __init__(self):\n        self.q = collections.deque()\n\n    def ping(self, t):\n        self.q.append(t)\n        while self.q[0] < t-3000:\n            self.q.popleft()\n        return len(self.q)",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Queue"

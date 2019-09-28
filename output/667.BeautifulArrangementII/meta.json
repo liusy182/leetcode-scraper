@@ -11,7 +11,27 @@
   "solution": {
     "id": "240",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "JvKeuMXb": [
+      {
+        "code": "class Solution {\n    private ArrayList<ArrayList<Integer>> permutations(int[] nums) {\n        ArrayList<ArrayList<Integer>> ans = new ArrayList<ArrayList<Integer>>();\n        permute(ans, nums, 0);\n        return ans;\n    }\n\n    private void permute(ArrayList<ArrayList<Integer>> ans, int[] nums, int start) {\n        if (start >= nums.length) {\n            ArrayList<Integer> cur = new ArrayList<Integer>();\n            for (int x : nums) cur.add(x);\n            ans.add(cur);\n        } else {\n            for (int i = start; i < nums.length; i++) {\n                swap(nums, start, i);\n                permute(ans, nums, start+1);\n                swap(nums, start, i);\n            }\n        }\n    }\n\n    private void swap(int[] nums, int i, int j) {\n        int temp = nums[i];\n        nums[i] = nums[j];\n        nums[j] = temp;\n    }\n\n    private int numUniqueDiffs(ArrayList<Integer> arr) {\n        boolean[] seen = new boolean[arr.size()];\n        int ans = 0;\n\n        for (int i = 0; i < arr.size() - 1; i++) {\n            int delta = Math.abs(arr.get(i) - arr.get(i+1));\n            if (!seen[delta]) {\n                ans++;\n                seen[delta] = true;\n            }\n        }\n        return ans;\n    }\n\n    public int[] constructArray(int n, int k) {\n        int[] nums = new int[n];\n        for (int i = 0; i < n; i++) {\n            nums[i] = i+1;\n        }\n        for (ArrayList<Integer> cand : permutations(nums)) {\n            if (numUniqueDiffs(cand) == k) {\n                int[] ans = new int[n];\n                int i = 0;\n                for (int x : cand) ans[i++] = x;\n                return ans;\n            }\n        }\n        return null;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def constructArray(self, n, k):\n        seen = [False] * n\n        def num_uniq_diffs(arr):\n            ans = 0\n            for i in range(n):\n                seen[i] = False\n            for i in range(len(arr) - 1):\n                delta = abs(arr[i] - arr[i+1])\n                if not seen[delta]:\n                    ans += 1\n                    seen[delta] = True\n            return ans\n\n        for cand in itertools.permutations(range(1, n+1)):\n            if num_uniq_diffs(cand) == k:\n                return cand",
+        "langSlug": "python"
+      }
+    ],
+    "knXdznYV": [
+      {
+        "code": "class Solution {\n    public int[] constructArray(int n, int k) {\n        int[] ans = new int[n];\n        int c = 0;\n        for (int v = 1; v < n-k; v++) {\n            ans[c++] = v;\n        }\n        for (int i = 0; i <= k; i++) {\n            ans[c++] = (i%2 == 0) ? (n-k + i/2) : (n - i/2);\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def constructArray(self, n, k):\n        ans = list(range(1, n - k))\n        for i in range(k+1):\n            if i % 2 == 0:\n                ans.append(n-k + i//2)\n            else:\n                ans.append(n - i//2)\n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array"

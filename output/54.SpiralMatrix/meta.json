@@ -11,7 +11,27 @@
   "solution": {
     "id": "235",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "62u9UXjz": [
+      {
+        "code": "class Solution {\n    public List<Integer> spiralOrder(int[][] matrix) {\n        List ans = new ArrayList();\n        if (matrix.length == 0) return ans;\n        int R = matrix.length, C = matrix[0].length;\n        boolean[][] seen = new boolean[R][C];\n        int[] dr = {0, 1, 0, -1};\n        int[] dc = {1, 0, -1, 0};\n        int r = 0, c = 0, di = 0;\n        for (int i = 0; i < R * C; i++) {\n            ans.add(matrix[r][c]);\n            seen[r][c] = true;\n            int cr = r + dr[di];\n            int cc = c + dc[di];\n            if (0 <= cr && cr < R && 0 <= cc && cc < C && !seen[cr][cc]){\n                r = cr;\n                c = cc;\n            } else {\n                di = (di + 1) % 4;\n                r += dr[di];\n                c += dc[di];\n            }\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def spiralOrder(self, matrix):\n        if not matrix: return []\n        R, C = len(matrix), len(matrix[0])\n        seen = [[False] * C for _ in matrix]\n        ans = []\n        dr = [0, 1, 0, -1]\n        dc = [1, 0, -1, 0]\n        r = c = di = 0\n        for _ in range(R * C):\n            ans.append(matrix[r][c])\n            seen[r][c] = True\n            cr, cc = r + dr[di], c + dc[di]\n            if 0 <= cr < R and 0 <= cc < C and not seen[cr][cc]:\n                r, c = cr, cc\n            else:\n                di = (di + 1) % 4\n                r, c = r + dr[di], c + dc[di]\n        return ans",
+        "langSlug": "python"
+      }
+    ],
+    "hWE2c3x4": [
+      {
+        "code": "class Solution {\n    public List < Integer > spiralOrder(int[][] matrix) {\n        List ans = new ArrayList();\n        if (matrix.length == 0)\n            return ans;\n        int r1 = 0, r2 = matrix.length - 1;\n        int c1 = 0, c2 = matrix[0].length - 1;\n        while (r1 <= r2 && c1 <= c2) {\n            for (int c = c1; c <= c2; c++) ans.add(matrix[r1][c]);\n            for (int r = r1 + 1; r <= r2; r++) ans.add(matrix[r][c2]);\n            if (r1 < r2 && c1 < c2) {\n                for (int c = c2 - 1; c > c1; c--) ans.add(matrix[r2][c]);\n                for (int r = r2; r > r1; r--) ans.add(matrix[r][c1]);\n            }\n            r1++;\n            r2--;\n            c1++;\n            c2--;\n        }\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def spiralOrder(self, matrix):\n        def spiral_coords(r1, c1, r2, c2):\n            for c in range(c1, c2 + 1):\n                yield r1, c\n            for r in range(r1 + 1, r2 + 1):\n                yield r, c2\n            if r1 < r2 and c1 < c2:\n                for c in range(c2 - 1, c1, -1):\n                    yield r2, c\n                for r in range(r2, r1, -1):\n                    yield r, c1\n\n        if not matrix: return []\n        ans = []\n        r1, r2 = 0, len(matrix) - 1\n        c1, c2 = 0, len(matrix[0]) - 1\n        while r1 <= r2 and c1 <= c2:\n            for r, c in spiral_coords(r1, c1, r2, c2):\n                ans.append(matrix[r][c])\n            r1 += 1; r2 -= 1\n            c1 += 1; c2 -= 1\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array"

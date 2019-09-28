@@ -11,7 +11,17 @@
   "solution": {
     "id": "539",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "jD2jBGjF": [
+      {
+        "code": "class FreqStack {\n    Map<Integer, Integer> freq;\n    Map<Integer, Stack<Integer>> group;\n    int maxfreq;\n\n    public FreqStack() {\n        freq = new HashMap();\n        group = new HashMap();\n        maxfreq = 0;\n    }\n\n    public void push(int x) {\n        int f = freq.getOrDefault(x, 0) + 1;\n        freq.put(x, f);\n        if (f > maxfreq)\n            maxfreq = f;\n\n        group.computeIfAbsent(f, z-> new Stack()).push(x);\n    }\n\n    public int pop() {\n        int x = group.get(maxfreq).pop();\n        freq.put(x, freq.get(x) - 1);\n        if (group.get(maxfreq).size() == 0)\n            maxfreq--;\n        return x;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class FreqStack(object):\n\n    def __init__(self):\n        self.freq = collections.Counter()\n        self.group = collections.defaultdict(list)\n        self.maxfreq = 0\n\n    def push(self, x):\n        f = self.freq[x] + 1\n        self.freq[x] = f\n        if f > self.maxfreq:\n            self.maxfreq = f\n        self.group[f].append(x)\n\n    def pop(self):\n        x = self.group[self.maxfreq].pop()\n        self.freq[x] -= 1\n        if not self.group[self.maxfreq]:\n            self.maxfreq -= 1\n\n        return x",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Hash Table",

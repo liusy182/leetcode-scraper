@@ -11,7 +11,37 @@
   "solution": {
     "id": "546",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "45YrvCAw": [
+      {
+        "code": "class Solution {\n    public boolean isMonotonic(int[] A) {\n        return increasing(A) || decreasing(A);\n    }\n\n    public boolean increasing(int[] A) {\n        for (int i = 0; i < A.length - 1; ++i)\n            if (A[i] > A[i+1]) return false;\n        return true;\n    }\n\n    public boolean decreasing(int[] A) {\n        for (int i = 0; i < A.length - 1; ++i)\n            if (A[i] < A[i+1]) return false;\n        return true;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def isMonotonic(self, A):\n        return (all(A[i] <= A[i+1] for i in xrange(len(A) - 1)) or\n                all(A[i] >= A[i+1] for i in xrange(len(A) - 1)))",
+        "langSlug": "python"
+      }
+    ],
+    "qcBYT2JK": [
+      {
+        "code": "class Solution {\n    public boolean isMonotonic(int[] A) {\n        int store = 0;\n        for (int i = 0; i < A.length - 1; ++i) {\n            int c = Integer.compare(A[i], A[i+1]);\n            if (c != 0) {\n                if (c != store && store != 0)\n                    return false;\n                store = c;\n            }\n        }\n\n        return true;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def isMonotonic(self, A):\n        store = 0\n        for i in xrange(len(A) - 1):\n            c = cmp(A[i], A[i+1])\n            if c:\n                if c != store != 0:\n                    return False\n                store = c\n        return True",
+        "langSlug": "python"
+      }
+    ],
+    "FnWYKTw8": [
+      {
+        "code": "class Solution {\n    public boolean isMonotonic(int[] A) {\n        boolean increasing = true;\n        boolean decreasing = true;\n        for (int i = 0; i < A.length - 1; ++i) {\n            if (A[i] > A[i+1])\n                increasing = false;\n            if (A[i] < A[i+1])\n                decreasing = false;\n        }\n\n        return increasing || decreasing;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def isMonotonic(self, A):\n        increasing = decreasing = True\n\n        for i in xrange(len(A) - 1):\n            if A[i] > A[i+1]:\n                increasing = False\n            if A[i] < A[i+1]:\n                decreasing = False\n\n        return increasing or decreasing",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Array"

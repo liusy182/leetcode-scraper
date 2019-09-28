@@ -11,7 +11,27 @@
   "solution": {
     "id": "323",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "aPKnzzAo": [
+      {
+        "code": "class Solution {\n    public boolean isPossible(int[] nums) {\n        Integer prev = null;\n        int prevCount = 0;\n        Queue<Integer> starts = new LinkedList();\n        int anchor = 0;\n        for (int i = 0; i < nums.length; ++i) {\n            int t = nums[i];\n            if (i == nums.length - 1 || nums[i+1] != t) {\n                int count = i - anchor + 1;\n                if (prev != null && t - prev != 1) {\n                    while (prevCount-- > 0)\n                        if (prev < starts.poll() + 2) return false;\n                    prev = null;\n                }\n\n                if (prev == null || t - prev == 1) {\n                    while (prevCount > count) {\n                        prevCount--;\n                        if (t-1 < starts.poll() + 2)\n                            return false;\n                    }\n                    while (prevCount++ < count)\n                        starts.add(t);\n                }\n                prev = t;\n                prevCount = count;\n                anchor = i+1;\n            }\n        }\n\n        while (prevCount-- > 0)\n            if (nums[nums.length - 1] < starts.poll() + 2)\n                return false;\n        return true;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def isPossible(self, nums):\n        prev, prev_count = None, 0\n        starts = collections.deque()\n        for t, grp in itertools.groupby(nums):\n            count = len(list(grp))\n            if prev is not None and t - prev != 1:\n                for _ in xrange(prev_count):\n                    if prev < starts.popleft() + 2:\n                        return False\n                prev, prev_count = None, 0\n\n            if prev is None or t - prev == 1:\n                if count > prev_count:\n                    for _ in xrange(count - prev_count):\n                        starts.append(t)\n                elif count < prev_count:\n                    for _ in xrange(prev_count - count):\n                        if t-1 < starts.popleft() + 2:\n                            return False\n\n            prev, prev_count = t, count\n\n        return all(nums[-1] >= x+2 for x in starts)",
+        "langSlug": "python"
+      }
+    ],
+    "RErfKTGx": [
+      {
+        "code": "class Solution {\n    public boolean isPossible(int[] nums) {\n        Counter count = new Counter();\n        Counter tails = new Counter();\n        for (int x: nums) count.add(x, 1);\n\n        for (int x: nums) {\n            if (count.get(x) == 0) {\n                continue;\n            } else if (tails.get(x) > 0) {\n                tails.add(x, -1);\n                tails.add(x+1, 1);\n            } else if (count.get(x+1) > 0 && count.get(x+2) > 0) {\n                count.add(x+1, -1);\n                count.add(x+2, -1);\n                tails.add(x+3, 1);\n            } else {\n                return false;\n            }\n            count.add(x, -1);\n        }\n        return true;\n    }\n}\n\nclass Counter extends HashMap<Integer, Integer> {\n    public int get(int k) {\n        return containsKey(k) ? super.get(k) : 0;\n    }\n\n    public void add(int k, int v) {\n        put(k, get(k) + v);\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def isPossible(self, nums):\n        count = collections.Counter(nums)\n        tails = collections.Counter()\n        for x in nums:\n            if count[x] == 0:\n                continue\n            elif tails[x] > 0:\n                tails[x] -= 1\n                tails[x+1] += 1\n            elif count[x+1] > 0 and count[x+2] > 0:\n                count[x+1] -= 1\n                count[x+2] -= 1\n                tails[x+3] += 1\n            else:\n                return False\n            count[x] -= 1\n        return True",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Heap",

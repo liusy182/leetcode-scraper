@@ -11,7 +11,17 @@
   "solution": {
     "id": "658",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "TSMMADqh": [
+      {
+        "code": "class Solution {\n    List<Integer> flipped;\n    int index;\n    int[] voyage;\n\n    public List<Integer> flipMatchVoyage(TreeNode root, int[] voyage) {\n        flipped = new ArrayList();\n        index = 0;\n        this.voyage = voyage;\n\n        dfs(root);\n        if (!flipped.isEmpty() && flipped.get(0) == -1) {\n            flipped.clear();\n            flipped.add(-1);\n        }\n\n        return flipped;\n    }\n\n    public void dfs(TreeNode node) {\n        if (node != null) {\n            if (node.val != voyage[index++]) {\n                flipped.clear();\n                flipped.add(-1);\n                return;\n            }\n\n            if (index < voyage.length && node.left != null &&\n                    node.left.val != voyage[index]) {\n                flipped.add(node.val);\n                dfs(node.right);\n                dfs(node.left);\n            } else {\n                dfs(node.left);\n                dfs(node.right);\n            }\n        }\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def flipMatchVoyage(self, root, voyage):\n        self.flipped = []\n        self.i = 0\n\n        def dfs(node):\n            if node:\n                if node.val != voyage[self.i]:\n                    self.flipped = [-1]\n                    return\n                self.i += 1\n\n                if (self.i < len(voyage) and\n                        node.left and node.left.val != voyage[self.i]):\n                    self.flipped.append(node.val)\n                    dfs(node.right)\n                    dfs(node.left)\n                else:\n                    dfs(node.left)\n                    dfs(node.right)\n\n        dfs(root)\n        if self.flipped and self.flipped[0] == -1:\n            self.flipped = [-1]\n        return self.flipped",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Tree",

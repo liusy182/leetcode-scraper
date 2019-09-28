@@ -11,7 +11,17 @@
   "solution": {
     "id": "537",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "VUyxHYTk": [
+      {
+        "code": "class Solution {\n    public int numSpecialEquivGroups(String[] A) {\n        Set<String> seen = new HashSet();\n        for (String S: A) {\n            int[] count = new int[52];\n            for (int i = 0; i < S.length(); ++i)\n                count[S.charAt(i) - 'a' + 26 * (i % 2)]++;\n            seen.add(Arrays.toString(count));\n        }\n        return seen.size();\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def numSpecialEquivGroups(self, A):\n        def count(A):\n            ans = [0] * 52\n            for i, letter in enumerate(A):\n                ans[ord(letter) - ord('a') + 26 * (i%2)] += 1\n            return tuple(ans)\n\n        return len({count(word) for word in A})",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "String"

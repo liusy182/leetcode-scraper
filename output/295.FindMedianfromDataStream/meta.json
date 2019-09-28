@@ -11,7 +11,37 @@
   "solution": {
     "id": "85",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "uuj7LQjt": [
+      {
+        "code": "class MedianFinder {\n    vector<double> store;\n\npublic:\n    // Adds a number into the data structure.\n    void addNum(int num)\n    {\n        store.push_back(num);\n    }\n\n    // Returns the median of current data stream\n    double findMedian()\n    {\n        sort(store.begin(), store.end());\n\n        int n = store.size();\n        return (n & 1 ? store[n / 2] : (store[n / 2 - 1] + store[n / 2]) * 0.5);\n    }\n};",
+        "langSlug": "cpp"
+      }
+    ],
+    "fzps5txK": [
+      {
+        "code": "class MedianFinder {\n    vector<int> store; // resize-able container\n\npublic:\n    // Adds a number into the data structure.\n    void addNum(int num)\n    {\n        if (store.empty())\n            store.push_back(num);\n        else\n            store.insert(lower_bound(store.begin(), store.end(), num), num);     // binary search and insertion combined\n    }\n\n    // Returns the median of current data stream\n    double findMedian()\n    {\n        int n = store.size();\n        return n & 1 ? store[n / 2] : (store[n / 2 - 1] + store[n / 2]) * 0.5;\n    }\n};",
+        "langSlug": "cpp"
+      }
+    ],
+    "tiYjWic8": [
+      {
+        "code": "class MedianFinder {\n    priority_queue<int> lo;                              // max heap\n    priority_queue<int, vector<int>, greater<int>> hi;   // min heap\n\npublic:\n    // Adds a number into the data structure.\n    void addNum(int num)\n    {\n        lo.push(num);                                    // Add to max heap\n\n        hi.push(lo.top());                               // balancing step\n        lo.pop();\n\n        if (lo.size() < hi.size()) {                     // maintain size property\n            lo.push(hi.top());\n            hi.pop();\n        }\n    }\n\n    // Returns the median of current data stream\n    double findMedian()\n    {\n        return lo.size() > hi.size() ? (double) lo.top() : (lo.top() + hi.top()) * 0.5;\n    }\n};",
+        "langSlug": "cpp"
+      }
+    ],
+    "g6cgUGn5": [
+      {
+        "code": "class MedianFinder {\n    multiset<int> data;\n    multiset<int>::iterator lo_median, hi_median;\n\npublic:\n    MedianFinder()\n        : lo_median(data.end())\n        , hi_median(data.end())\n    {\n    }\n\n    void addNum(int num)\n    {\n        const size_t n = data.size();   // store previous size\n\n        data.insert(num);               // insert into multiset\n\n        if (!n) {\n            // no elements before, one element now\n            lo_median = hi_median = data.begin();\n        }\n        else if (n & 1) {\n            // odd size before (i.e. lo == hi), even size now (i.e. hi = lo + 1)\n\n            if (num < *lo_median)       // num < lo\n                lo_median--;\n            else                        // num >= hi\n                hi_median++;            // insertion at end of equal range\n        }\n        else {\n            // even size before (i.e. hi = lo + 1), odd size now (i.e. lo == hi)\n\n            if (num > *lo_median && num < *hi_median) {\n                lo_median++;                    // num in between lo and hi\n                hi_median--;\n            }\n            else if (num >= *hi_median)         // num inserted after hi\n                lo_median++;\n            else                                // num <= lo < hi\n                lo_median = --hi_median;        // insertion at end of equal range spoils lo\n        }\n    }\n\n    double findMedian()\n    {\n        return (*lo_median + *hi_median) * 0.5;\n    }\n};",
+        "langSlug": "cpp"
+      }
+    ],
+    "PBHKZtFa": [
+      {
+        "code": "class MedianFinder {\n    multiset<int> data;\n    multiset<int>::iterator mid;\n\npublic:\n    MedianFinder()\n        : mid(data.end())\n    {\n    }\n\n    void addNum(int num)\n    {\n        const int n = data.size();\n        data.insert(num);\n\n        if (!n)                                 // first element inserted\n            mid = data.begin();\n        else if (num < *mid)                    // median is decreased\n            mid = (n & 1 ? mid : prev(mid));\n        else                                    // median is increased\n            mid = (n & 1 ? next(mid) : mid);\n    }\n\n    double findMedian()\n    {\n        const int n = data.size();\n        return (*mid + *next(mid, n % 2 - 1)) * 0.5;\n    }\n};",
+        "langSlug": "cpp"
+      }
+    ]
   },
   "topicTags": [
     "Heap",

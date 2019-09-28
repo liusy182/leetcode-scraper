@@ -11,7 +11,17 @@
   "solution": {
     "id": "538",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "JqxzqTG3": [
+      {
+        "code": "class Solution {\n    public int surfaceArea(int[][] grid) {\n        int[] dr = new int[]{0, 1, 0, -1};\n        int[] dc = new int[]{1, 0, -1, 0};\n\n        int N = grid.length;\n        int ans = 0;\n\n        for (int r = 0; r < N; ++r)\n            for (int c = 0; c < N; ++c)\n                if (grid[r][c] > 0) {\n                    ans += 2;\n                    for (int k = 0; k < 4; ++k) {\n                        int nr = r + dr[k];\n                        int nc = c + dc[k];\n                        int nv = 0;\n                        if (0 <= nr && nr < N && 0 <= nc && nc < N)\n                            nv = grid[nr][nc];\n\n                        ans += Math.max(grid[r][c] - nv, 0);\n                    }\n                }\n\n        return ans;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class Solution(object):\n    def surfaceArea(self, grid):\n        N = len(grid)\n\n        ans = 0\n        for r in xrange(N):\n            for c in xrange(N):\n                if grid[r][c]:\n                    ans += 2\n                    for nr, nc in ((r-1, c), (r+1, c), (r, c-1), (r,c+1)):\n                        if 0 <= nr < N and 0 <= nc < N:\n                            nval = grid[nr][nc]\n                        else:\n                            nval = 0\n\n                        ans += max(grid[r][c] - nval, 0)\n\n        return ans",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Math",

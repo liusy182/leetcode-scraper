@@ -11,7 +11,27 @@
   "solution": {
     "id": "568",
     "canSeeDetail": true,
-    "__typename": "ArticleNode"
+    "__typename": "ArticleNode",
+    "vXWSxDmZ": [
+      {
+        "code": "class TopVotedCandidate {\n    List<List<Vote>> A;\n    public TopVotedCandidate(int[] persons, int[] times) {\n        A = new ArrayList();\n        Map<Integer, Integer> count = new HashMap();\n        for (int i = 0; i < persons.length; ++i) {\n            int p = persons[i], t = times[i];\n            int c = count.getOrDefault(p, 0) + 1;\n\n            count.put(p, c);\n            while (A.size() <= c)\n                A.add(new ArrayList<Vote>());\n            A.get(c).add(new Vote(p, t));\n        }\n    }\n\n    public int q(int t) {\n        // Binary search on A[i][0].time for smallest i\n        // such that A[i][0].time > t\n        int lo = 1, hi = A.size();\n        while (lo < hi) {\n            int mi = lo + (hi - lo) / 2;\n            if (A.get(mi).get(0).time <= t)\n                lo = mi + 1;\n            else\n                hi = mi;\n        }\n        int i = lo - 1;\n\n        // Binary search on A[i][j].time for smallest j\n        // such that A[i][j].time > t\n        lo = 0; hi = A.get(i).size();\n        while (lo < hi) {\n            int mi = lo + (hi - lo) / 2;\n            if (A.get(i).get(mi).time <= t)\n                lo = mi + 1;\n            else\n                hi = mi;\n        }\n        int j = Math.max(lo-1, 0);\n        return A.get(i).get(j).person;\n    }\n}\n\nclass Vote {\n    int person, time;\n    Vote(int p, int t) {\n        person = p;\n        time = t;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class TopVotedCandidate(object):\n\n    def __init__(self, persons, times):\n        self.A = []\n        self.count = collections.Counter()\n        for p, t in zip(persons, times):\n            self.count[p] = c = self.count[p] + 1\n            while len(self.A) <= c: self.A.append([])\n            self.A[c].append((t, p))\n\n    def q(self, t):\n        lo, hi = 1, len(self.A)\n        while lo < hi:\n            mi = (lo + hi) / 2\n            if self.A[mi][0][0] <= t:\n                lo = mi + 1\n            else:\n                hi = mi\n        i = lo - 1\n        j = bisect.bisect(self.A[i], (t, float('inf')))\n        return self.A[i][j-1][1]",
+        "langSlug": "python"
+      }
+    ],
+    "fWa6yR8V": [
+      {
+        "code": "class TopVotedCandidate {\n    List<Vote> A;\n    public TopVotedCandidate(int[] persons, int[] times) {\n        A = new ArrayList();\n        Map<Integer, Integer> count = new HashMap();\n        int leader = -1;  // current leader\n        int m = 0;  // current number of votes for leader\n\n        for (int i = 0; i < persons.length; ++i) {\n            int p = persons[i], t = times[i];\n            int c = count.getOrDefault(p, 0) + 1;\n            count.put(p, c);\n\n            if (c >= m) {\n                if (p != leader) {  // lead change\n                    leader = p;\n                    A.add(new Vote(leader, t));\n                }\n\n                if (c > m) m = c;\n            }\n        }\n    }\n\n    public int q(int t) {\n        int lo = 1, hi = A.size();\n        while (lo < hi) {\n            int mi = lo + (hi - lo) / 2;\n            if (A.get(mi).time <= t)\n                lo = mi + 1;\n            else\n                hi = mi;\n        }\n\n        return A.get(lo - 1).person;\n    }\n}\n\nclass Vote {\n    int person, time;\n    Vote(int p, int t) {\n        person = p;\n        time = t;\n    }\n}",
+        "langSlug": "java"
+      },
+      {
+        "code": "class TopVotedCandidate(object):\n    def __init__(self, persons, times):\n        self.A = []\n        count = collections.Counter()\n        leader, m = None, 0  # leader, num votes for leader\n\n        for p, t in itertools.izip(persons, times):\n            count[p] += 1\n            c = count[p]\n            if c >= m:\n                if p != leader:  # lead change\n                    leader = p\n                    self.A.append((t, leader))\n\n                if c > m:\n                    m = c\n\n    def q(self, t):\n        i = bisect.bisect(self.A, (t, float('inf')), 1)\n        return self.A[i-1][1]",
+        "langSlug": "python"
+      }
+    ]
   },
   "topicTags": [
     "Binary Search"
