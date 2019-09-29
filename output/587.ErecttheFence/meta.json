@@ -33,5 +33,9 @@
   },
   "topicTags": [
     "Geometry"
-  ]
+  ],
+  "images": {
+    "erect-the-fence_1.png": "https://assets.leetcode.com/uploads/2018/10/12/erect_the_fence_1.png",
+    "erect-the-fence_2.png": "https://assets.leetcode.com/uploads/2018/10/12/erect_the_fence_2.png"
+  }
 }

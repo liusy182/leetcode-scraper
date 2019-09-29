@@ -12,5 +12,9 @@
   "topicTags": [
     "Heap",
     "Breadth-first Search"
-  ]
+  ],
+  "images": {
+    "trapping-rain-water-ii_1.png": "https://assets.leetcode.com/uploads/2018/10/13/rainwater_empty.png",
+    "trapping-rain-water-ii_2.png": "https://assets.leetcode.com/uploads/2018/10/13/rainwater_fill.png"
+  }
 }

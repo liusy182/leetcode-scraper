@@ -35,5 +35,8 @@
   },
   "topicTags": [
     "Tree"
-  ]
+  ],
+  "images": {
+    "flip-equivalent-binary-trees_1.png": "https://assets.leetcode.com/uploads/2018/11/29/tree_ex.png"
+  }
 }

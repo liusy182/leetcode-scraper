@@ -11,5 +11,8 @@
   "solution": null,
   "topicTags": [
     "Hash Table"
-  ]
+  ],
+  "images": {
+    "island-perimeter_1.png": "https://assets.leetcode.com/uploads/2018/10/12/island.png"
+  }
 }

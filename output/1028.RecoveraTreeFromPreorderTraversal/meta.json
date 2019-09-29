@@ -14,5 +14,10 @@
   "topicTags": [
     "Tree",
     "Depth-first Search"
-  ]
+  ],
+  "images": {
+    "recover-a-tree-from-preorder-traversal_1.png": "https://assets.leetcode.com/uploads/2019/04/08/recover-a-tree-from-preorder-traversal.png",
+    "recover-a-tree-from-preorder-traversal_2.png": "https://assets.leetcode.com/uploads/2019/04/11/screen-shot-2019-04-10-at-114101-pm.png",
+    "recover-a-tree-from-preorder-traversal_3.png": "https://assets.leetcode.com/uploads/2019/04/11/screen-shot-2019-04-10-at-114955-pm.png"
+  }
 }

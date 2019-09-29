@@ -25,5 +25,8 @@
   },
   "topicTags": [
     "Breadth-first Search"
-  ]
+  ],
+  "images": {
+    "rotting-oranges_1.png": "https://assets.leetcode.com/uploads/2019/02/16/oranges.png"
+  }
 }

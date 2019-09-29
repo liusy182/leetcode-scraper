@@ -15,5 +15,8 @@
   },
   "topicTags": [
     "Hash Table"
-  ]
+  ],
+  "images": {
+    "valid-sudoku_1.png": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png"
+  }
 }

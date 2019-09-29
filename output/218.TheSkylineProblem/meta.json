@@ -19,5 +19,8 @@
     "Binary Indexed Tree",
     "Segment Tree",
     "Line Sweep"
-  ]
+  ],
+  "images": {
+    "the-skyline-problem_1.png": "https://assets.leetcode.com/uploads/2018/10/22/skyline2.png"
+  }
 }

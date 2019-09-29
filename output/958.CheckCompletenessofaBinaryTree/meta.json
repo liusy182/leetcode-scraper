@@ -25,5 +25,9 @@
   },
   "topicTags": [
     "Tree"
-  ]
+  ],
+  "images": {
+    "check-completeness-of-a-binary-tree_1.png": "https://assets.leetcode.com/uploads/2018/12/15/complete-binary-tree-1.png",
+    "check-completeness-of-a-binary-tree_2.png": "https://assets.leetcode.com/uploads/2018/12/15/complete-binary-tree-2.png"
+  }
 }

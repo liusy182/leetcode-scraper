@@ -37,5 +37,9 @@
     "Dynamic Programming",
     "Tree",
     "Depth-first Search"
-  ]
+  ],
+  "images": {
+    "binary-tree-cameras_1.png": "https://assets.leetcode.com/uploads/2018/12/29/bst_cameras_01.png",
+    "binary-tree-cameras_2.png": "https://assets.leetcode.com/uploads/2018/12/29/bst_cameras_02.png"
+  }
 }

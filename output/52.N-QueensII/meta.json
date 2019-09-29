@@ -15,5 +15,8 @@
   },
   "topicTags": [
     "Backtracking"
-  ]
+  ],
+  "images": {
+    "n-queens-ii_1.png": "https://assets.leetcode.com/uploads/2018/10/12/8-queens.png"
+  }
 }

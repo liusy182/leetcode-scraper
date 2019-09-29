@@ -13,5 +13,13 @@
   "solution": null,
   "topicTags": [
     "Depth-first Search"
-  ]
+  ],
+  "images": {
+    "insufficient-nodes-in-root-to-leaf-paths_1.png": "https://assets.leetcode.com/uploads/2019/06/05/insufficient-11.png",
+    "insufficient-nodes-in-root-to-leaf-paths_2.png": "https://assets.leetcode.com/uploads/2019/06/05/insufficient-2.png",
+    "insufficient-nodes-in-root-to-leaf-paths_3.png": "https://assets.leetcode.com/uploads/2019/06/05/insufficient-3.png",
+    "insufficient-nodes-in-root-to-leaf-paths_4.png": "https://assets.leetcode.com/uploads/2019/06/05/insufficient-4.png",
+    "insufficient-nodes-in-root-to-leaf-paths_5.png": "https://assets.leetcode.com/uploads/2019/06/11/screen-shot-2019-06-11-at-83301-pm.png",
+    "insufficient-nodes-in-root-to-leaf-paths_6.png": "https://assets.leetcode.com/uploads/2019/06/11/screen-shot-2019-06-11-at-83517-pm.png"
+  }
 }

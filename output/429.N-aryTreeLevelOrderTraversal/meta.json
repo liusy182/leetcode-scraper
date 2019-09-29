@@ -12,5 +12,8 @@
   "topicTags": [
     "Tree",
     "Breadth-first Search"
-  ]
+  ],
+  "images": {
+    "n-ary-tree-level-order-traversal_1.png": "https://assets.leetcode.com/uploads/2018/10/12/narytreeexample.png"
+  }
 }

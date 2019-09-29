@@ -1,0 +1,18 @@
+{
+  "id": "1206",
+  "title": "Design Skiplist",
+  "slug": "design-skiplist",
+  "difficulty": "Hard",
+  "likes": 13,
+  "dislikes": 1,
+  "hints": [],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Design HashSet\", \"titleSlug\": \"design-hashset\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Design HashMap\", \"titleSlug\": \"design-hashmap\", \"difficulty\": \"Easy\", \"translatedTitle\": null}, {\"title\": \"Design Linked List\", \"titleSlug\": \"design-linked-list\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Design"
+  ],
+  "images": {
+    "design-skiplist_1.gif": "https://assets.leetcode.com/uploads/2019/09/27/1506_skiplist.gif"
+  }
+}

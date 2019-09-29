@@ -1,0 +1,19 @@
+{
+  "id": "1208",
+  "title": "Get Equal Substrings Within Budget",
+  "slug": "get-equal-substrings-within-budget",
+  "difficulty": "Medium",
+  "likes": 47,
+  "dislikes": 5,
+  "hints": [
+    "Calculate the differences between a[i] and b[i].",
+    "Use a sliding window to track the longest valid substring."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Array",
+    "Sliding Window"
+  ]
+}

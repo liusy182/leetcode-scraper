@@ -15,5 +15,9 @@
   "topicTags": [
     "Hash Table",
     "String"
-  ]
+  ],
+  "images": {
+    "maximum-number-of-balloons_1.JPG": "https://assets.leetcode.com/uploads/2019/09/05/1536_ex1_upd.JPG",
+    "maximum-number-of-balloons_2.JPG": "https://assets.leetcode.com/uploads/2019/09/05/1536_ex2_upd.JPG"
+  }
 }

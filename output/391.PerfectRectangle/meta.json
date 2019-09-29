@@ -11,5 +11,11 @@
   "solution": null,
   "topicTags": [
     "Line Sweep"
-  ]
+  ],
+  "images": {
+    "perfect-rectangle_1.gif": "https://assets.leetcode.com/uploads/2018/10/22/rectangle_perfect.gif",
+    "perfect-rectangle_2.gif": "https://assets.leetcode.com/uploads/2018/10/22/rectangle_separated.gif",
+    "perfect-rectangle_3.gif": "https://assets.leetcode.com/uploads/2018/10/22/rectangle_hole.gif",
+    "perfect-rectangle_4.gif": "https://assets.leetcode.com/uploads/2018/10/22/rectangle_intersect.gif"
+  }
 }

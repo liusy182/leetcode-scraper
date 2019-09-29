@@ -12,5 +12,8 @@
   "topicTags": [
     "Linked List",
     "Sort"
-  ]
+  ],
+  "images": {
+    "insertion-sort-list_1.gif": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif"
+  }
 }

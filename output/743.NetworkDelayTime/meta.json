@@ -50,5 +50,8 @@
     "Depth-first Search",
     "Breadth-first Search",
     "Graph"
-  ]
+  ],
+  "images": {
+    "network-delay-time_1.png": "https://assets.leetcode.com/uploads/2019/05/23/931_example_1.png"
+  }
 }

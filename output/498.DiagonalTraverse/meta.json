@@ -9,5 +9,8 @@
   "isPaidOnly": false,
   "similarQuestions": "[]",
   "solution": null,
-  "topicTags": []
+  "topicTags": [],
+  "images": {
+    "diagonal-traverse_1.png": "https://assets.leetcode.com/uploads/2018/10/12/diagonal_traverse.png"
+  }
 }

@@ -6015,6 +6015,26 @@
     "titleSlug": "tournament-winners"
   },
   {
+    "questionFrontendId": "1207",
+    "title": "Unique Number of Occurrences",
+    "titleSlug": "unique-number-of-occurrences"
+  },
+  {
+    "questionFrontendId": "1209",
+    "title": "Remove All Adjacent Duplicates in String II",
+    "titleSlug": "remove-all-adjacent-duplicates-in-string-ii"
+  },
+  {
+    "questionFrontendId": "1208",
+    "title": "Get Equal Substrings Within Budget",
+    "titleSlug": "get-equal-substrings-within-budget"
+  },
+  {
+    "questionFrontendId": "1210",
+    "title": "Minimum Moves to Reach Target with Rotations",
+    "titleSlug": "minimum-moves-to-reach-target-with-rotations"
+  },
+  {
     "questionFrontendId": "1204",
     "title": "Last Person to Fit in the Elevator",
     "titleSlug": "last-person-to-fit-in-the-elevator"
@@ -6023,5 +6043,10 @@
     "questionFrontendId": "1205",
     "title": "Monthly Transactions II",
     "titleSlug": "monthly-transactions-ii"
+  },
+  {
+    "questionFrontendId": "1206",
+    "title": "Design Skiplist",
+    "titleSlug": "design-skiplist"
   }
 ]

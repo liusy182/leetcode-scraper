@@ -14,5 +14,8 @@
   "topicTags": [
     "Math",
     "Tree"
-  ]
+  ],
+  "images": {
+    "path-in-zigzag-labelled-binary-tree_1.png": "https://assets.leetcode.com/uploads/2019/06/24/tree.png"
+  }
 }

@@ -13,5 +13,8 @@
     "Divide and Conquer",
     "Dynamic Programming",
     "Depth-first Search"
-  ]
+  ],
+  "images": {
+    "freedom-trail_1.jpg": "https://assets.leetcode.com/uploads/2018/10/22/ring.jpg"
+  }
 }

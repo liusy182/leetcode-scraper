@@ -12,5 +12,8 @@
   "topicTags": [
     "Tree",
     "Depth-first Search"
-  ]
+  ],
+  "images": {
+    "populating-next-right-pointers-in-each-node_1.png": "https://assets.leetcode.com/uploads/2019/02/14/116_sample.png"
+  }
 }

@@ -26,5 +26,9 @@
   "topicTags": [
     "Hash Table",
     "Tree"
-  ]
+  ],
+  "images": {
+    "vertical-order-traversal-of-a-binary-tree_1.PNG": "https://assets.leetcode.com/uploads/2019/01/31/1236_example_1.PNG",
+    "vertical-order-traversal-of-a-binary-tree_2.png": "https://assets.leetcode.com/uploads/2019/01/31/tree2.png"
+  }
 }

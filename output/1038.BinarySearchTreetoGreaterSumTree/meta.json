@@ -13,5 +13,8 @@
   "solution": null,
   "topicTags": [
     "Binary Search Tree"
-  ]
+  ],
+  "images": {
+    "binary-search-tree-to-greater-sum-tree_1.png": "https://assets.leetcode.com/uploads/2019/05/02/tree.png"
+  }
 }

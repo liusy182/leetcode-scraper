@@ -25,5 +25,8 @@
   },
   "topicTags": [
     "Two Pointers"
-  ]
+  ],
+  "images": {
+    "interval-list-intersections_1.png": "https://assets.leetcode.com/uploads/2019/01/30/interval1.png"
+  }
 }

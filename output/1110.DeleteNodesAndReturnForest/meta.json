@@ -12,5 +12,8 @@
   "topicTags": [
     "Tree",
     "Depth-first Search"
-  ]
+  ],
+  "images": {
+    "delete-nodes-and-return-forest_1.png": "https://assets.leetcode.com/uploads/2019/07/01/screen-shot-2019-07-01-at-53836-pm.png"
+  }
 }

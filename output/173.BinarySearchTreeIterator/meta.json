@@ -37,5 +37,8 @@
     "Stack",
     "Tree",
     "Design"
-  ]
+  ],
+  "images": {
+    "binary-search-tree-iterator_1.png": "https://assets.leetcode.com/uploads/2018/12/25/bst-tree.png"
+  }
 }

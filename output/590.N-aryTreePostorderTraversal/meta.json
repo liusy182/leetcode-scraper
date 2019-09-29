@@ -15,5 +15,8 @@
   },
   "topicTags": [
     "Tree"
-  ]
+  ],
+  "images": {
+    "n-ary-tree-postorder-traversal_1.png": "https://assets.leetcode.com/uploads/2018/10/12/narytreeexample.png"
+  }
 }

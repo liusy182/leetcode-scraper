@@ -45,5 +45,8 @@
   },
   "topicTags": [
     "Tree"
-  ]
+  ],
+  "images": {
+    "lowest-common-ancestor-of-a-binary-tree_1.png": "https://assets.leetcode.com/uploads/2018/12/14/binarytree.png"
+  }
 }

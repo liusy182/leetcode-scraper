@@ -35,5 +35,9 @@
   },
   "topicTags": [
     "Tree"
-  ]
+  ],
+  "images": {
+    "univalued-binary-tree_1.png": "https://assets.leetcode.com/uploads/2018/12/28/unival_bst_1.png",
+    "univalued-binary-tree_2.png": "https://assets.leetcode.com/uploads/2018/12/28/unival_bst_2.png"
+  }
 }

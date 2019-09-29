@@ -25,5 +25,8 @@
   },
   "topicTags": [
     "Array"
-  ]
+  ],
+  "images": {
+    "pascals-triangle_1.gif": "https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif"
+  }
 }

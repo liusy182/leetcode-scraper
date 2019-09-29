@@ -25,5 +25,8 @@
   },
   "topicTags": [
     "Dynamic Programming"
-  ]
+  ],
+  "images": {
+    "knight-dialer_1.png": "https://assets.leetcode.com/uploads/2018/10/30/keypad.png"
+  }
 }

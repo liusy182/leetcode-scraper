@@ -30,5 +30,8 @@
   "topicTags": [
     "Array",
     "Dynamic Programming"
-  ]
+  ],
+  "images": {
+    "unique-paths-ii_1.png": "https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png"
+  }
 }

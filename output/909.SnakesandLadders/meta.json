@@ -25,5 +25,8 @@
   },
   "topicTags": [
     "Breadth-first Search"
-  ]
+  ],
+  "images": {
+    "snakes-and-ladders_1.png": "https://assets.leetcode.com/uploads/2018/09/23/snakes.png"
+  }
 }

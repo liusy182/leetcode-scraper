@@ -15,5 +15,8 @@
   },
   "topicTags": [
     "Linked List"
-  ]
+  ],
+  "images": {
+    "delete-node-in-a-linked-list_1.png": "https://assets.leetcode.com/uploads/2018/12/28/237_example.png"
+  }
 }

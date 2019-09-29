@@ -27,5 +27,12 @@
     "Depth-first Search",
     "Union Find",
     "Graph"
-  ]
+  ],
+  "images": {
+    "regions-cut-by-slashes_1.png": "https://assets.leetcode.com/uploads/2018/12/15/1.png",
+    "regions-cut-by-slashes_2.png": "https://assets.leetcode.com/uploads/2018/12/15/2.png",
+    "regions-cut-by-slashes_3.png": "https://assets.leetcode.com/uploads/2018/12/15/3.png",
+    "regions-cut-by-slashes_4.png": "https://assets.leetcode.com/uploads/2018/12/15/4.png",
+    "regions-cut-by-slashes_5.png": "https://assets.leetcode.com/uploads/2018/12/15/5.png"
+  }
 }

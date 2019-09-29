@@ -36,5 +36,8 @@
   "topicTags": [
     "Two Pointers",
     "Dynamic Programming"
-  ]
+  ],
+  "images": {
+    "push-dominoes_1.png": "https://s3-lc-upload.s3.amazonaws.com/uploads/2018/05/18/domino.png"
+  }
 }

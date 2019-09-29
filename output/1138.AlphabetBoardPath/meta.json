@@ -15,5 +15,8 @@
   "topicTags": [
     "Hash Table",
     "String"
-  ]
+  ],
+  "images": {
+    "alphabet-board-path_1.png": "https://assets.leetcode.com/uploads/2019/07/28/azboard.png"
+  }
 }

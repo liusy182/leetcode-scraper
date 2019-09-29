@@ -25,5 +25,10 @@
   },
   "topicTags": [
     "Tree"
-  ]
+  ],
+  "images": {
+    "binary-tree-pruning_1.png": "https://s3-lc-upload.s3.amazonaws.com/uploads/2018/04/06/1028_2.png",
+    "binary-tree-pruning_2.png": "https://s3-lc-upload.s3.amazonaws.com/uploads/2018/04/06/1028_1.png",
+    "binary-tree-pruning_3.png": "https://s3-lc-upload.s3.amazonaws.com/uploads/2018/04/05/1028.png"
+  }
 }

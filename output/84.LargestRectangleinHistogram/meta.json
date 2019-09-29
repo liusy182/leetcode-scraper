@@ -16,5 +16,9 @@
   "topicTags": [
     "Array",
     "Stack"
-  ]
+  ],
+  "images": {
+    "largest-rectangle-in-histogram_1.png": "https://assets.leetcode.com/uploads/2018/10/12/histogram.png",
+    "largest-rectangle-in-histogram_2.png": "https://assets.leetcode.com/uploads/2018/10/12/histogram_area.png"
+  }
 }

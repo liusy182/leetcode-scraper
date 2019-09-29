@@ -13,5 +13,8 @@
   "solution": null,
   "topicTags": [
     "Dynamic Programming"
-  ]
+  ],
+  "images": {
+    "filling-bookcase-shelves_1.png": "https://assets.leetcode.com/uploads/2019/06/24/shelves.png"
+  }
 }

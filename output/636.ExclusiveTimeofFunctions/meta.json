@@ -27,5 +27,8 @@
   },
   "topicTags": [
     "Stack"
-  ]
+  ],
+  "images": {
+    "exclusive-time-of-functions_1.png": "https://assets.leetcode.com/uploads/2019/04/05/diag1b.png"
+  }
 }

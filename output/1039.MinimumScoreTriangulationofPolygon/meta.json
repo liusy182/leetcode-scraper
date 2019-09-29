@@ -13,5 +13,8 @@
   "solution": null,
   "topicTags": [
     "Dynamic Programming"
-  ]
+  ],
+  "images": {
+    "minimum-score-triangulation-of-polygon_1.png": "https://assets.leetcode.com/uploads/2019/05/01/minimum-score-triangulation-of-polygon-1.png"
+  }
 }

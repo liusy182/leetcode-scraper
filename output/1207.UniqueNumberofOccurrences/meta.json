@@ -1,0 +1,18 @@
+{
+  "id": "1207",
+  "title": "Unique Number of Occurrences",
+  "slug": "unique-number-of-occurrences",
+  "difficulty": "Easy",
+  "likes": 16,
+  "dislikes": 2,
+  "hints": [
+    "Find the number of occurrences of each element in the array using a hash map.",
+    "Iterate through the hash map and check if there is a repeated value."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Hash Table"
+  ]
+}

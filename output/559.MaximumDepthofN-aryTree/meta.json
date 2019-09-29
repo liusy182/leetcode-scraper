@@ -17,5 +17,8 @@
     "Tree",
     "Depth-first Search",
     "Breadth-first Search"
-  ]
+  ],
+  "images": {
+    "maximum-depth-of-n-ary-tree_1.png": "https://assets.leetcode.com/uploads/2018/10/12/narytreeexample.png"
+  }
 }

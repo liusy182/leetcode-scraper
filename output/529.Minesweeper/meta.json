@@ -12,5 +12,9 @@
   "topicTags": [
     "Depth-first Search",
     "Breadth-first Search"
-  ]
+  ],
+  "images": {
+    "minesweeper_1.png": "https://assets.leetcode.com/uploads/2018/10/12/minesweeper_example_1.png",
+    "minesweeper_2.png": "https://assets.leetcode.com/uploads/2018/10/12/minesweeper_example_2.png"
+  }
 }

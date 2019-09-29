@@ -15,5 +15,8 @@
   },
   "topicTags": [
     "Dynamic Programming"
-  ]
+  ],
+  "images": {
+    "range-sum-query-2d-immutable_1.png": "https://leetcode.com/static/images/courses/range_sum_query_2d.png"
+  }
 }

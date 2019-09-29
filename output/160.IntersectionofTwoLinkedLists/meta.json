@@ -15,5 +15,11 @@
   },
   "topicTags": [
     "Linked List"
-  ]
+  ],
+  "images": {
+    "intersection-of-two-linked-lists_1.png": "https://assets.leetcode.com/uploads/2018/12/13/160_statement.png",
+    "intersection-of-two-linked-lists_2.png": "https://assets.leetcode.com/uploads/2018/12/13/160_example_1.png",
+    "intersection-of-two-linked-lists_3.png": "https://assets.leetcode.com/uploads/2018/12/13/160_example_2.png",
+    "intersection-of-two-linked-lists_4.png": "https://assets.leetcode.com/uploads/2018/12/13/160_example_3.png"
+  }
 }

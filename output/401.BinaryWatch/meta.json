@@ -15,5 +15,8 @@
   "topicTags": [
     "Backtracking",
     "Bit Manipulation"
-  ]
+  ],
+  "images": {
+    "binary-watch_1.jpg": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Binary_clock_samui_moon.jpg"
+  }
 }

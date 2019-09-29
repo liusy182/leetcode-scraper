@@ -11,5 +11,10 @@
   "solution": null,
   "topicTags": [
     "Array"
-  ]
+  ],
+  "images": {
+    "available-captures-for-rook_1.PNG": "https://assets.leetcode.com/uploads/2019/02/20/1253_example_1_improved.PNG",
+    "available-captures-for-rook_2.PNG": "https://assets.leetcode.com/uploads/2019/02/19/1253_example_2_improved.PNG",
+    "available-captures-for-rook_3.PNG": "https://assets.leetcode.com/uploads/2019/02/20/1253_example_3_improved.PNG"
+  }
 }

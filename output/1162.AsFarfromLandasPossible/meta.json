@@ -17,5 +17,9 @@
   "topicTags": [
     "Breadth-first Search",
     "Graph"
-  ]
+  ],
+  "images": {
+    "as-far-from-land-as-possible_1.JPG": "https://assets.leetcode.com/uploads/2019/05/03/1336_ex1.JPG",
+    "as-far-from-land-as-possible_2.JPG": "https://assets.leetcode.com/uploads/2019/05/03/1336_ex2.JPG"
+  }
 }

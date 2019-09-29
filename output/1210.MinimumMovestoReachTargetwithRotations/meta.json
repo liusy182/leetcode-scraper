@@ -1,0 +1,23 @@
+{
+  "id": "1210",
+  "title": "Minimum Moves to Reach Target with Rotations",
+  "slug": "minimum-moves-to-reach-target-with-rotations",
+  "difficulty": "Hard",
+  "likes": 37,
+  "dislikes": 7,
+  "hints": [
+    "Use BFS to find the answer.",
+    "The state of the BFS is the position (x, y) along with a binary value that specifies if the position is horizontal or vertical."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[]",
+  "solution": null,
+  "topicTags": [
+    "Breadth-first Search"
+  ],
+  "images": {
+    "minimum-moves-to-reach-target-with-rotations_1.png": "https://assets.leetcode.com/uploads/2019/09/24/image-2.png",
+    "minimum-moves-to-reach-target-with-rotations_2.png": "https://assets.leetcode.com/uploads/2019/09/24/image-1.png",
+    "minimum-moves-to-reach-target-with-rotations_3.png": "https://assets.leetcode.com/uploads/2019/09/24/image.png"
+  }
+}

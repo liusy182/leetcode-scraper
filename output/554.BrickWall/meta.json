@@ -15,5 +15,8 @@
   },
   "topicTags": [
     "Hash Table"
-  ]
+  ],
+  "images": {
+    "brick-wall_1.png": "https://assets.leetcode.com/uploads/2018/10/12/brick_wall.png"
+  }
 }

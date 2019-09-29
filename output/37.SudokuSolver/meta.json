@@ -16,5 +16,9 @@
   "topicTags": [
     "Hash Table",
     "Backtracking"
-  ]
+  ],
+  "images": {
+    "sudoku-solver_1.png": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png",
+    "sudoku-solver_2.png": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sudoku-by-L2G-20050714_solution.svg/250px-Sudoku-by-L2G-20050714_solution.svg.png"
+  }
 }

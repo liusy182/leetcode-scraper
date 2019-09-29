@@ -36,5 +36,11 @@
   "topicTags": [
     "Math",
     "Geometry"
-  ]
+  ],
+  "images": {
+    "minimum-area-rectangle-ii_1.png": "https://assets.leetcode.com/uploads/2018/12/21/1a.png",
+    "minimum-area-rectangle-ii_2.png": "https://assets.leetcode.com/uploads/2018/12/22/2.png",
+    "minimum-area-rectangle-ii_3.png": "https://assets.leetcode.com/uploads/2018/12/22/3.png",
+    "minimum-area-rectangle-ii_4.png": "https://assets.leetcode.com/uploads/2018/12/21/4c.png"
+  }
 }

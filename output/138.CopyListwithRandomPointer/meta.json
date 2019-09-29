@@ -21,5 +21,8 @@
   "topicTags": [
     "Hash Table",
     "Linked List"
-  ]
+  ],
+  "images": {
+    "copy-list-with-random-pointer_1.png": "https://discuss.leetcode.com/uploads/files/1470150906153-2yxeznm.png"
+  }
 }

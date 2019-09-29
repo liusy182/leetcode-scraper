@@ -13,5 +13,8 @@
   "solution": null,
   "topicTags": [
     "Tree"
-  ]
+  ],
+  "images": {
+    "sum-of-root-to-leaf-binary-numbers_1.png": "https://assets.leetcode.com/uploads/2019/04/04/sum-of-root-to-leaf-binary-numbers.png"
+  }
 }

@@ -13,5 +13,8 @@
     "Depth-first Search",
     "Breadth-first Search",
     "Graph"
-  ]
+  ],
+  "images": {
+    "clone-graph_1.png": "https://assets.leetcode.com/uploads/2019/02/19/113_sample.png"
+  }
 }

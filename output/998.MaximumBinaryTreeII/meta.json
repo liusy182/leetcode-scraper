@@ -11,5 +11,10 @@
   "solution": null,
   "topicTags": [
     "Tree"
-  ]
+  ],
+  "images": {
+    "maximum-binary-tree-ii_1.png": "https://assets.leetcode.com/uploads/2019/02/21/maximum-binary-tree-1-2.png",
+    "maximum-binary-tree-ii_2.png": "https://assets.leetcode.com/uploads/2019/02/21/maximum-binary-tree-2-2.png",
+    "maximum-binary-tree-ii_3.png": "https://assets.leetcode.com/uploads/2019/02/21/maximum-binary-tree-3-2.png"
+  }
 }

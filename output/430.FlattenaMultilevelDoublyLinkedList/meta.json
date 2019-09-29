@@ -12,5 +12,9 @@
   "topicTags": [
     "Linked List",
     "Depth-first Search"
-  ]
+  ],
+  "images": {
+    "flatten-a-multilevel-doubly-linked-list_1.png": "https://assets.leetcode.com/uploads/2018/10/12/multilevellinkedlist.png",
+    "flatten-a-multilevel-doubly-linked-list_2.png": "https://assets.leetcode.com/uploads/2018/10/12/multilevellinkedlistflattened.png"
+  }
 }

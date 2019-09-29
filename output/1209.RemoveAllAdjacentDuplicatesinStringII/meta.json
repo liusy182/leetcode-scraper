@@ -1,0 +1,18 @@
+{
+  "id": "1209",
+  "title": "Remove All Adjacent Duplicates in String II",
+  "slug": "remove-all-adjacent-duplicates-in-string-ii",
+  "difficulty": "Medium",
+  "likes": 58,
+  "dislikes": 0,
+  "hints": [
+    "Use a stack to store the characters, when there are k same characters, delete them.",
+    "To make it more efficient, use a pair to store the value and the count of each character."
+  ],
+  "isPaidOnly": false,
+  "similarQuestions": "[{\"title\": \"Remove All Adjacent Duplicates In String\", \"titleSlug\": \"remove-all-adjacent-duplicates-in-string\", \"difficulty\": \"Easy\", \"translatedTitle\": null}]",
+  "solution": null,
+  "topicTags": [
+    "Stack"
+  ]
+}

@@ -38,5 +38,9 @@
   "topicTags": [
     "Dynamic Programming",
     "Depth-first Search"
-  ]
+  ],
+  "images": {
+    "out-of-boundary-paths_1.png": "https://assets.leetcode.com/uploads/2018/10/13/out_of_boundary_paths_1.png",
+    "out-of-boundary-paths_2.png": "https://assets.leetcode.com/uploads/2018/10/12/out_of_boundary_paths_2.png"
+  }
 }
