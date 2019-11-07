@@ -174,6 +174,12 @@ def translate_to_mobile():
                 with open(os.path.join(dirname, 'solution.md'), 'r') as g:
                     m['solution']['content'] = g.read()
                     del m['solution']['__typename']
+            
+            # if 'images' in m:
+            #     m['staticImage'] = {}
+            #     for k in m['images'].keys():
+            #         m['staticImage'][k] = "require('../../img/" + k + "')"
+
 
             allcontent.append(m)
     
